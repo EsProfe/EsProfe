@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "infinitive": "hablar",
+    "translations": {
+      "ru": "говорить",
+      "uk": "говорити",
+      "en": "to speak",
+      "es": "hablar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "hablo",
+      "tú": "hablas",
+      "él": "habla",
+      "nosotros": "hablamos",
+      "vosotros": "habláis",
+      "ellos": "hablan"
+    }
+  },
+  {
+    "id": 2,
+    "infinitive": "comer",
+    "translations": {
+      "ru": "есть",
+      "uk": "їсти",
+      "en": "to eat",
+      "es": "comer"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "como",
+      "tú": "comes",
+      "él": "come",
+      "nosotros": "comemos",
+      "vosotros": "coméis",
+      "ellos": "comen"
+    }
+  },
+  {
+    "id": 3,
+    "infinitive": "vivir",
+    "translations": {
+      "ru": "жить",
+      "uk": "жити",
+      "en": "to live",
+      "es": "vivir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "vivo",
+      "tú": "vives",
+      "él": "vive",
+      "nosotros": "vivimos",
+      "vosotros": "vivís",
+      "ellos": "viven"
+    }
+  }
+]
