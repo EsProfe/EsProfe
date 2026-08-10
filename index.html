@@ -79,9 +79,12 @@
             </p>
 
 
-            <!-- Здесь будет задание -->
+            <!-- Режим тренировки -->
 
-            <div class="exercise">
+            <div
+                class="exercise"
+                id="trainingMode"
+            >
 
                 <p id="person">
                     yo
@@ -103,13 +106,82 @@
             </div>
 
 
-            <!-- Следующий глагол -->
+            <!-- Управление тренировкой -->
 
-            <button id="nextVerb">
+            <div class="controls">
 
-                Следующий глагол
+                <button id="nextVerb">
+                    Следующий глагол
+                </button>
 
-            </button>
+                <button id="startTest">
+                    Начать тест
+                </button>
+
+            </div>
+
+
+            <!-- Режим теста -->
+
+            <div
+                class="test-mode"
+                id="testMode"
+                style="display: none;"
+            >
+
+                <p id="testProgress">
+                    Вопрос 1 из 10
+                </p>
+
+                <p id="testPerson">
+                    yo
+                </p>
+
+                <input
+                    type="text"
+                    id="testAnswer"
+                    placeholder="Введите ответ"
+                    autocomplete="off"
+                >
+
+                <button id="testCheck">
+                    Проверить
+                </button>
+
+                <p id="testResult"></p>
+
+            </div>
+
+
+            <!-- Результат теста -->
+
+            <div
+                class="test-result"
+                id="testResultScreen"
+                style="display: none;"
+            >
+
+                <h2 id="testFinished">
+                    Тест завершён
+                </h2>
+
+                <p id="testScore">
+                    0 / 10
+                </p>
+
+                <p id="testPercent">
+                    0%
+                </p>
+
+                <button id="restartTest">
+                    Пройти ещё раз
+                </button>
+
+                <button id="backToTraining">
+                    Вернуться к тренировке
+                </button>
+
+            </div>
 
         </div>
 

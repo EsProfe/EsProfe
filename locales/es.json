@@ -13,5 +13,9 @@
   "verbs": "Verbos:",
   "correctAnswers": "Correctas:",
   "wrongAnswers": "Errores:",
+  "question": "Pregunta",
+  "of": "de",
+  "testFinished": "Test terminado",
+  "result": "Resultado:",
   "footer": "EsProfe © 2026"
 }

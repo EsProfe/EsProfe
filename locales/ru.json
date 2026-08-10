@@ -13,5 +13,9 @@
   "verbs": "Глаголов:",
   "correctAnswers": "Правильных:",
   "wrongAnswers": "Ошибок:",
+  "question": "Вопрос",
+  "of": "из",
+  "testFinished": "Тест завершён",
+  "result": "Результат:",
   "footer": "EsProfe © 2026"
 }

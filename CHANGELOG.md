@@ -1,5 +1,29 @@
 # Changelog
+## [v0.4.0] - 2026-08-10
 
+### Added
+
+- Added a 10-question interactive test mode.
+- Added random selection of verbs and grammatical persons for test questions.
+- Added automatic answer checking in test mode.
+- Added test progress display.
+- Added final test score and percentage.
+- Added the ability to restart the test.
+- Added the ability to return from the test to regular training.
+- Added Enter key support in test mode.
+- Added test interface localization in Russian, Ukrainian, English and Spanish.
+
+### Changed
+
+- Extended `index.html` with test mode and test result sections.
+- Updated `app.js` to support both regular training and test mode.
+- Extended localization files with test-related messages.
+
+### Backup
+
+Created a backup of the working version:
+
+`EsProfe_v0.4.0_test-mode.zip`
 All significant changes to the EsProfe project are documented in this file.
 
 ## [v0.3.0] - 2026-08-10

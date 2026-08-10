@@ -13,5 +13,9 @@
   "verbs": "Дієслів:",
   "correctAnswers": "Правильних:",
   "wrongAnswers": "Помилок:",
+  "question": "Питання",
+  "of": "з",
+  "testFinished": "Тест завершено",
+  "result": "Результат:",
   "footer": "EsProfe © 2026"
 }

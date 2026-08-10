@@ -1,8 +1,8 @@
 "use strict";
 
 // =====================================
-// EsProfe v0.3.0
-// Интерактивный тренажёр спряжения
+// EsProfe v0.4.0
+// Тренировка + режим теста
 // =====================================
 
 let verbs = [];
@@ -23,6 +23,18 @@ let wrongAnswers = 0;
 
 
 // =====================================
+// Переменные теста
+// =====================================
+
+const TEST_LENGTH = 10;
+
+let testQuestion = 0;
+let testCorrect = 0;
+let testWrong = 0;
+let testActive = false;
+
+
+// =====================================
 // Загрузка базы глаголов
 // =====================================
 
@@ -37,10 +49,7 @@ async function loadVerbs() {
             throw new Error("Не удалось загрузить verbs.json");
         }
 
-        const data =
-            await response.json();
-
-        return data;
+        return await response.json();
 
     } catch (error) {
 
@@ -61,6 +70,20 @@ async function loadVerbs() {
 
 
 // =====================================
+// Случайное лицо
+// =====================================
+
+function getRandomPerson() {
+
+    const randomIndex =
+        Math.floor(Math.random() * persons.length);
+
+    return persons[randomIndex];
+
+}
+
+
+// =====================================
 // Показ текущего глагола
 // =====================================
 
@@ -77,36 +100,24 @@ function showVerb() {
         document.getElementById("language").value;
 
 
-    // Инфинитив
-
     document.getElementById("verb").textContent =
         verb.infinitive;
 
-
-    // Перевод
 
     document.getElementById("translation").textContent =
         verb.translations[selectedLanguage] ||
         verb.translations.ru;
 
 
-    // Лицо
-
     document.getElementById("person").textContent =
         currentPerson;
 
 
-    // Очистить поле ответа
-
     document.getElementById("answer").value = "";
 
 
-    // Очистить результат
-
     document.getElementById("result").textContent = "";
 
-
-    // Фокус на поле
 
     document.getElementById("answer").focus();
 
@@ -114,7 +125,7 @@ function showVerb() {
 
 
 // =====================================
-// Проверка ответа
+// Проверка обычной тренировки
 // =====================================
 
 function checkAnswer() {
@@ -134,17 +145,12 @@ function checkAnswer() {
 
 
     const userAnswer =
-        answerInput.value
-            .trim()
-            .toLowerCase();
+        answerInput.value.trim().toLowerCase();
 
 
     const correctAnswer =
-        verb.present[currentPerson]
-            .toLowerCase();
+        verb.present[currentPerson].toLowerCase();
 
-
-    // Пустой ответ
 
     if (userAnswer === "") {
 
@@ -156,8 +162,6 @@ function checkAnswer() {
     }
 
 
-    // Правильный ответ
-
     if (userAnswer === correctAnswer) {
 
         correctAnswers++;
@@ -165,12 +169,7 @@ function checkAnswer() {
         result.textContent =
             `✅ ${translations.correct}`;
 
-    }
-
-
-    // Неправильный ответ
-
-    else {
+    } else {
 
         wrongAnswers++;
 
@@ -188,7 +187,7 @@ function checkAnswer() {
 
 
 // =====================================
-// Статистика
+// Статистика тренировки
 // =====================================
 
 function updateStatus() {
@@ -219,8 +218,6 @@ function nextVerb() {
     }
 
 
-    // Следующий глагол
-
     currentVerb++;
 
     if (currentVerb >= verbs.length) {
@@ -228,15 +225,287 @@ function nextVerb() {
     }
 
 
+    currentPerson =
+        getRandomPerson();
+
+
+    showVerb();
+
+}
+
+
+// =====================================
+// Запуск теста
+// =====================================
+
+function startTest() {
+
+    if (verbs.length === 0) {
+        return;
+    }
+
+
+    testQuestion = 0;
+    testCorrect = 0;
+    testWrong = 0;
+
+    testActive = true;
+
+
+    // Скрываем тренировку
+
+    document.getElementById("trainingMode").style.display =
+        "none";
+
+
+    document.getElementById("nextVerb").style.display =
+        "none";
+
+
+    document.getElementById("startTest").style.display =
+        "none";
+
+
+    // Показываем тест
+
+    document.getElementById("testMode").style.display =
+        "block";
+
+
+    document.getElementById("testResultScreen").style.display =
+        "none";
+
+
+    nextTestQuestion();
+
+}
+
+
+// =====================================
+// Следующий вопрос теста
+// =====================================
+
+function nextTestQuestion() {
+
+    if (!testActive) {
+        return;
+    }
+
+
+    // Проверяем окончание теста
+
+    if (testQuestion >= TEST_LENGTH) {
+
+        finishTest();
+
+        return;
+
+    }
+
+
+    // Случайный глагол
+
+    currentVerb =
+        Math.floor(Math.random() * verbs.length);
+
+
     // Случайное лицо
 
-    const randomPerson =
-        Math.floor(
-            Math.random() * persons.length
+    currentPerson =
+        getRandomPerson();
+
+
+    const verb =
+        verbs[currentVerb];
+
+
+    const selectedLanguage =
+        document.getElementById("language").value;
+
+
+    document.getElementById("verb").textContent =
+        verb.infinitive;
+
+
+    document.getElementById("translation").textContent =
+        verb.translations[selectedLanguage] ||
+        verb.translations.ru;
+
+
+    document.getElementById("testPerson").textContent =
+        currentPerson;
+
+
+    document.getElementById("testProgress").textContent =
+        `${translations.question} ${testQuestion + 1} ${translations.of} ${TEST_LENGTH}`;
+
+
+    document.getElementById("testAnswer").value =
+        "";
+
+
+    document.getElementById("testResult").textContent =
+        "";
+
+
+    document.getElementById("testAnswer").focus();
+
+}
+
+
+// =====================================
+// Проверка ответа теста
+// =====================================
+
+function checkTestAnswer() {
+
+    if (!testActive) {
+        return;
+    }
+
+
+    const answerInput =
+        document.getElementById("testAnswer");
+
+    const result =
+        document.getElementById("testResult");
+
+
+    const userAnswer =
+        answerInput.value.trim().toLowerCase();
+
+
+    if (userAnswer === "") {
+
+        result.textContent =
+            translations.emptyAnswer;
+
+        return;
+
+    }
+
+
+    const verb =
+        verbs[currentVerb];
+
+
+    const correctAnswer =
+        verb.present[currentPerson].toLowerCase();
+
+
+    if (userAnswer === correctAnswer) {
+
+        testCorrect++;
+
+        result.textContent =
+            `✅ ${translations.correct}`;
+
+    } else {
+
+        testWrong++;
+
+        result.textContent =
+            `❌ ${translations.incorrect} ` +
+            `${translations.correctAnswer} ` +
+            `${verb.present[currentPerson]}`;
+
+    }
+
+
+    testQuestion++;
+
+
+    // Небольшая задержка перед следующим вопросом
+
+    setTimeout(() => {
+
+        nextTestQuestion();
+
+    }, 800);
+
+}
+
+
+// =====================================
+// Завершение теста
+// =====================================
+
+function finishTest() {
+
+    testActive = false;
+
+
+    document.getElementById("testMode").style.display =
+        "none";
+
+
+    document.getElementById("testResultScreen").style.display =
+        "block";
+
+
+    const percent =
+        Math.round(
+            (testCorrect / TEST_LENGTH) * 100
         );
 
-    currentPerson =
-        persons[randomPerson];
+
+    document.getElementById("testFinished").textContent =
+        translations.testFinished;
+
+
+    document.getElementById("testScore").textContent =
+        `${testCorrect} / ${TEST_LENGTH}`;
+
+
+    document.getElementById("testPercent").textContent =
+        `${translations.result}: ${percent}%`;
+
+}
+
+
+// =====================================
+// Повторить тест
+// =====================================
+
+function restartTest() {
+
+    startTest();
+
+}
+
+
+// =====================================
+// Вернуться к тренировке
+// =====================================
+
+function backToTraining() {
+
+    testActive = false;
+
+
+    document.getElementById("testMode").style.display =
+        "none";
+
+
+    document.getElementById("testResultScreen").style.display =
+        "none";
+
+
+    document.getElementById("trainingMode").style.display =
+        "block";
+
+
+    document.getElementById("nextVerb").style.display =
+        "inline-block";
+
+
+    document.getElementById("startTest").style.display =
+        "inline-block";
+
+
+    currentVerb = 0;
+
+    currentPerson = getRandomPerson();
 
 
     showVerb();
@@ -256,15 +525,30 @@ async function changeLanguage(language) {
 
     }
 
+
     updateStatus();
 
-    showVerb();
+
+    if (testActive) {
+
+        document.getElementById("testProgress").textContent =
+            `${translations.question} ${testQuestion + 1} ` +
+            `${translations.of} ${TEST_LENGTH}`;
+
+    }
+
+
+    if (!testActive) {
+
+        showVerb();
+
+    }
 
 }
 
 
 // =====================================
-// Инициализация приложения
+// Инициализация
 // =====================================
 
 async function initApp() {
@@ -277,8 +561,6 @@ async function initApp() {
         languageSelector.value || "ru";
 
 
-    // Загружаем язык
-
     if (typeof loadLanguage === "function") {
 
         await loadLanguage(selectedLanguage);
@@ -286,18 +568,16 @@ async function initApp() {
     }
 
 
-    // Загружаем глаголы
-
     verbs =
         await loadVerbs();
 
 
-    // Показываем статистику
-
     updateStatus();
 
 
-    // Показываем первый глагол
+    currentPerson =
+        getRandomPerson();
+
 
     showVerb();
 
@@ -305,11 +585,11 @@ async function initApp() {
 
 
 // =====================================
-// Обработчики событий
+// Обработчики
 // =====================================
 
 
-// Проверка ответа
+// Проверка обычной тренировки
 
 document
     .getElementById("checkAnswer")
@@ -329,6 +609,46 @@ document
     );
 
 
+// Запуск теста
+
+document
+    .getElementById("startTest")
+    .addEventListener(
+        "click",
+        startTest
+    );
+
+
+// Проверка теста
+
+document
+    .getElementById("testCheck")
+    .addEventListener(
+        "click",
+        checkTestAnswer
+    );
+
+
+// Повтор теста
+
+document
+    .getElementById("restartTest")
+    .addEventListener(
+        "click",
+        restartTest
+    );
+
+
+// Возврат к тренировке
+
+document
+    .getElementById("backToTraining")
+    .addEventListener(
+        "click",
+        backToTraining
+    );
+
+
 // Переключение языка
 
 document
@@ -345,7 +665,7 @@ document
     );
 
 
-// Enter = проверить ответ
+// Enter в обычной тренировке
 
 document
     .getElementById("answer")
@@ -356,6 +676,24 @@ document
             if (event.key === "Enter") {
 
                 checkAnswer();
+
+            }
+
+        }
+    );
+
+
+// Enter в тесте
+
+document
+    .getElementById("testAnswer")
+    .addEventListener(
+        "keydown",
+        (event) => {
+
+            if (event.key === "Enter") {
+
+                checkTestAnswer();
 
             }
 
