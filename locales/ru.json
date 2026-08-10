@@ -3,5 +3,15 @@
   "subtitle": "Интерактивная образовательная платформа",
   "next": "Следующий глагол",
   "loading": "Загрузка...",
+  "statusLoading": "Загрузка базы глаголов...",
+  "answerPlaceholder": "Введите ответ",
+  "check": "Проверить",
+  "correct": "Правильно!",
+  "incorrect": "Неправильно!",
+  "correctAnswer": "Правильный ответ:",
+  "emptyAnswer": "Введите ответ.",
+  "verbs": "Глаголов:",
+  "correctAnswers": "Правильных:",
+  "wrongAnswers": "Ошибок:",
   "footer": "EsProfe © 2026"
 }

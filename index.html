@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>EsProfe</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 
 </head>
 
@@ -34,7 +42,10 @@
 
 </header>
 
+
 <main>
+
+    <!-- Главный экран -->
 
     <section class="hero">
 
@@ -48,6 +59,9 @@
 
     </section>
 
+
+    <!-- Тренажёр -->
+
     <section class="trainer">
 
         <div class="card">
@@ -57,10 +71,39 @@
             </h2>
 
             <p id="translation">
-                ...<p id="status">
-    Загрузка базы глаголов...
-</p>
+                ...
             </p>
+
+            <p id="status">
+                Загрузка базы глаголов...
+            </p>
+
+
+            <!-- Здесь будет задание -->
+
+            <div class="exercise">
+
+                <p id="person">
+                    yo
+                </p>
+
+                <input
+                    type="text"
+                    id="answer"
+                    placeholder="Введите ответ"
+                    autocomplete="off"
+                >
+
+                <button id="checkAnswer">
+                    Проверить
+                </button>
+
+                <p id="result"></p>
+
+            </div>
+
+
+            <!-- Следующий глагол -->
 
             <button id="nextVerb">
 
@@ -74,15 +117,17 @@
 
 </main>
 
+
 <footer>
 
     EsProfe © 2026
 
 </footer>
 
-<script src="js/loader.js"></script>
+
 <script src="js/translator.js"></script>
 <script src="js/app.js"></script>
 
 </body>
+
 </html>

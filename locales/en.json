@@ -1,7 +1,17 @@
 {
   "title": "Learn Spanish",
-  "subtitle": "Interactive learning platform",
+  "subtitle": "Interactive educational platform",
   "next": "Next verb",
   "loading": "Loading...",
+  "statusLoading": "Loading verb database...",
+  "answerPlaceholder": "Enter your answer",
+  "check": "Check",
+  "correct": "Correct!",
+  "incorrect": "Incorrect!",
+  "correctAnswer": "Correct answer:",
+  "emptyAnswer": "Enter an answer.",
+  "verbs": "Verbs:",
+  "correctAnswers": "Correct:",
+  "wrongAnswers": "Mistakes:",
   "footer": "EsProfe © 2026"
 }

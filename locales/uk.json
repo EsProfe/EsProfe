@@ -3,5 +3,15 @@
   "subtitle": "Інтерактивна освітня платформа",
   "next": "Наступне дієслово",
   "loading": "Завантаження...",
+  "statusLoading": "Завантаження бази дієслів...",
+  "answerPlaceholder": "Введіть відповідь",
+  "check": "Перевірити",
+  "correct": "Правильно!",
+  "incorrect": "Неправильно!",
+  "correctAnswer": "Правильна відповідь:",
+  "emptyAnswer": "Введіть відповідь.",
+  "verbs": "Дієслів:",
+  "correctAnswers": "Правильних:",
+  "wrongAnswers": "Помилок:",
   "footer": "EsProfe © 2026"
 }

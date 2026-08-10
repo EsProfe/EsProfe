@@ -1,7 +1,17 @@
 {
-  "title": "Aprende español",
+  "title": "Aprendemos español",
   "subtitle": "Plataforma educativa interactiva",
   "next": "Siguiente verbo",
   "loading": "Cargando...",
+  "statusLoading": "Cargando la base de verbos...",
+  "answerPlaceholder": "Escribe tu respuesta",
+  "check": "Comprobar",
+  "correct": "¡Correcto!",
+  "incorrect": "¡Incorrecto!",
+  "correctAnswer": "Respuesta correcta:",
+  "emptyAnswer": "Escribe una respuesta.",
+  "verbs": "Verbos:",
+  "correctAnswers": "Correctas:",
+  "wrongAnswers": "Errores:",
   "footer": "EsProfe © 2026"
 }

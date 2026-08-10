@@ -4,20 +4,72 @@ let translations = {};
 
 async function loadLanguage(lang) {
 
-    const response = await fetch(`locales/${lang}.json`);
+    try {
 
-    translations = await response.json();
+        const response =
+            await fetch(`locales/${lang}.json`);
 
-    document.getElementById("title").textContent =
-        translations.title;
+        if (!response.ok) {
+            throw new Error(
+                `Не удалось загрузить язык: ${lang}`
+            );
+        }
 
-    document.getElementById("subtitle").textContent =
-        translations.subtitle;
+        translations =
+            await response.json();
 
-    document.getElementById("nextVerb").textContent =
-        translations.next;
 
-    document.querySelector("footer").textContent =
-        translations.footer;
+        // Заголовок
+
+        document.getElementById("title").textContent =
+            translations.title;
+
+
+        // Подзаголовок
+
+        document.getElementById("subtitle").textContent =
+            translations.subtitle;
+
+
+        // Кнопка следующего глагола
+
+        document.getElementById("nextVerb").textContent =
+            translations.next;
+
+
+        // Поле ответа
+
+        document.getElementById("answer").placeholder =
+            translations.answerPlaceholder;
+
+
+        // Кнопка проверки
+
+        document.getElementById("checkAnswer").textContent =
+            translations.check;
+
+
+        // Статус загрузки
+
+        if (document.getElementById("status")) {
+
+            document.getElementById("status").textContent =
+                translations.statusLoading;
+
+        }
+
+
+        // Footer
+
+        document.querySelector("footer").textContent =
+            translations.footer;
+
+    }
+
+    catch (error) {
+
+        console.error(error);
+
+    }
 
 }
