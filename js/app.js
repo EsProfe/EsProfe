@@ -164,21 +164,28 @@ function checkAnswer() {
 
     if (userAnswer === correctAnswer) {
 
-        correctAnswers++;
+    correctAnswers++;
 
-        result.textContent =
-            `✅ ${translations.correct}`;
+    result.dataset.type = "correct";
+    result.dataset.answer = "";
 
-    } else {
+    result.textContent =
+        `✅ ${translations.correct}`;
 
-        wrongAnswers++;
+} else {
 
-        result.textContent =
-            `❌ ${translations.incorrect} ` +
-            `${translations.correctAnswer} ` +
-            `${verb.present[currentPerson]}`;
+    wrongAnswers++;
 
-    }
+    result.dataset.type = "incorrect";
+    result.dataset.answer =
+        verb.present[currentPerson];
+
+    result.textContent =
+        `❌ ${translations.incorrect} ` +
+        `${translations.correctAnswer} ` +
+        `${verb.present[currentPerson]}`;
+
+}
 
 
     updateStatus();
@@ -342,7 +349,8 @@ function nextTestQuestion() {
 
     document.getElementById("testAnswer").value =
         "";
-
+document.getElementById("testCheck").textContent =
+    translations.check;
 
     document.getElementById("testResult").textContent =
         "";
@@ -393,23 +401,30 @@ function checkTestAnswer() {
         verb.present[currentPerson].toLowerCase();
 
 
-    if (userAnswer === correctAnswer) {
+  if (userAnswer === correctAnswer) {
 
-        testCorrect++;
+    testCorrect++;
 
-        result.textContent =
-            `✅ ${translations.correct}`;
+    result.dataset.type = "correct";
+    result.dataset.answer = "";
 
-    } else {
+    result.textContent =
+        `✅ ${translations.correct}`;
 
-        testWrong++;
+} else {
 
-        result.textContent =
-            `❌ ${translations.incorrect} ` +
-            `${translations.correctAnswer} ` +
-            `${verb.present[currentPerson]}`;
+    testWrong++;
 
-    }
+    result.dataset.type = "incorrect";
+    result.dataset.answer =
+        verb.present[currentPerson];
+
+    result.textContent =
+        `❌ ${translations.incorrect} ` +
+        `${translations.correctAnswer} ` +
+        `${verb.present[currentPerson]}`;
+
+}
 
 
     testQuestion++;
@@ -441,6 +456,11 @@ function finishTest() {
 
     document.getElementById("testResultScreen").style.display =
         "block";
+        document.getElementById("restartTest").textContent =
+    translations.testAgain;
+
+document.getElementById("backToTraining").textContent =
+    translations.backToTraining;
 
 
     const percent =
@@ -457,8 +477,13 @@ function finishTest() {
         `${testCorrect} / ${TEST_LENGTH}`;
 
 
-    document.getElementById("testPercent").textContent =
-        `${translations.result}: ${percent}%`;
+    const testPercent =
+    document.getElementById("testPercent");
+
+testPercent.dataset.percent = percent;
+
+testPercent.textContent =
+    `${translations.result}: ${percent}%`;
 
 }
 
@@ -525,61 +550,83 @@ async function changeLanguage(language) {
 
     }
 
+    // Обновляем статистику
 
     updateStatus();
 
 
+    // =====================================
+    // Если сейчас идёт тест
+    // =====================================
+
     if (testActive) {
 
-        document.getElementById("testProgress").textContent =
-            `${translations.question} ${testQuestion + 1} ` +
-            `${translations.of} ${TEST_LENGTH}`;
+        const testProgress =
+            document.getElementById("testProgress");
+
+        if (testProgress) {
+
+            testProgress.textContent =
+                `${translations.question} ` +
+                `${testQuestion + 1} ` +
+                `${translations.of} ` +
+                `${TEST_LENGTH}`;
+
+        }
 
     }
 
+
+    // =====================================
+    // Если тест уже завершён
+    // =====================================
+
+    const testResultScreen =
+        document.getElementById("testResultScreen");
+
+    if (
+        !testActive &&
+        testResultScreen &&
+        testResultScreen.style.display === "block"
+    ) {
+
+        const testFinished =
+            document.getElementById("testFinished");
+
+        if (testFinished) {
+
+            testFinished.textContent =
+                translations.testFinished;
+
+        }
+
+
+        const testPercent =
+            document.getElementById("testPercent");
+
+        if (
+            testPercent &&
+            testPercent.dataset.percent
+        ) {
+
+            testPercent.textContent =
+                `${translations.result}: ` +
+                `${testPercent.dataset.percent}%`;
+
+        }
+
+    }
+
+
+    // =====================================
+    // Обычная тренировка
+    // =====================================
 
     if (!testActive) {
 
         showVerb();
 
     }
-
-}
-
-
-// =====================================
-// Инициализация
-// =====================================
-
-async function initApp() {
-
-    const languageSelector =
-        document.getElementById("language");
-
-
-    const selectedLanguage =
-        languageSelector.value || "ru";
-
-
-    if (typeof loadLanguage === "function") {
-
-        await loadLanguage(selectedLanguage);
-
-    }
-
-
-    verbs =
-        await loadVerbs();
-
-
-    updateStatus();
-
-
-    currentPerson =
-        getRandomPerson();
-
-
-    showVerb();
 
 }
 
@@ -664,7 +711,50 @@ document
         }
     );
 
+// =====================================
+// Инициализация приложения
+// =====================================
 
+async function initApp() {
+
+    const languageSelector =
+        document.getElementById("language");
+
+    const selectedLanguage =
+        languageSelector.value || "ru";
+
+
+    // Загружаем язык интерфейса
+
+    if (typeof loadLanguage === "function") {
+
+        await loadLanguage(selectedLanguage);
+
+    }
+
+
+    // Загружаем базу глаголов
+
+    verbs =
+        await loadVerbs();
+
+
+    // Обновляем статистику
+
+    updateStatus();
+
+
+    // Выбираем случайное лицо
+
+    currentPerson =
+        getRandomPerson();
+
+
+    // Показываем первый глагол
+
+    showVerb();
+
+}
 // Enter в обычной тренировке
 
 document

@@ -2,6 +2,8 @@
   "title": "Aprendemos español",
   "subtitle": "Plataforma educativa interactiva",
   "next": "Siguiente verbo",
+  "startTest": "Iniciar test", "testAgain": "Intentarlo de nuevo",
+"backToTraining": "Volver al entrenamiento",
   "loading": "Cargando...",
   "statusLoading": "Cargando la base de verbos...",
   "answerPlaceholder": "Escribe tu respuesta",
