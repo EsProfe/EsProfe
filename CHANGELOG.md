@@ -1,4 +1,13 @@
 # Changelog
+## [v0.4.2] - 2026-08-14
+
+### Fixed
+
+- Fixed localization of the test result buttons when switching interface languages.
+- Fixed `translator.js` so `testAgain` and `backToTraining` are handled consistently.
+- Removed obsolete and malformed test-button localization code from `translator.js`.
+- Ensured the test check button uses the localized `check` value.
+
 ## [v0.4.0] - 2026-08-10
 
 ### Added
