@@ -26,7 +26,7 @@ async function loadLanguage(lang) {
         const title =
             document.getElementById("title");
 
-        if (title) {
+        if (title && translations.title) {
             title.textContent =
                 translations.title;
         }
@@ -35,7 +35,7 @@ async function loadLanguage(lang) {
         const subtitle =
             document.getElementById("subtitle");
 
-        if (subtitle) {
+        if (subtitle && translations.subtitle) {
             subtitle.textContent =
                 translations.subtitle;
         }
@@ -44,25 +44,16 @@ async function loadLanguage(lang) {
         const nextVerb =
             document.getElementById("nextVerb");
 
-        if (nextVerb) {
+        if (nextVerb && translations.next) {
             nextVerb.textContent =
                 translations.next;
-                
-            document.getElementById("startTest").textContent =
-    translations.startTest;
-      // Кнопки экрана результата теста
-
-document.getElementById("testAgain").textContent =
-    translations.testAgain;
-
-document.getElementById("backToTraining").textContent =
-    translations.backToTraining;  }
+        }
 
 
         const answer =
             document.getElementById("answer");
 
-        if (answer) {
+        if (answer && translations.answerPlaceholder) {
             answer.placeholder =
                 translations.answerPlaceholder;
         }
@@ -71,7 +62,7 @@ document.getElementById("backToTraining").textContent =
         const checkAnswer =
             document.getElementById("checkAnswer");
 
-        if (checkAnswer) {
+        if (checkAnswer && translations.check) {
             checkAnswer.textContent =
                 translations.check;
         }
@@ -110,19 +101,16 @@ document.getElementById("backToTraining").textContent =
         const restartTest =
             document.getElementById("restartTest");
 
-        if (restartTest && translations.restartTest) {
+        if (restartTest && translations.testAgain) {
             restartTest.textContent =
-                translations.restartTest;
+                translations.testAgain;
         }
 
 
         const backToTraining =
             document.getElementById("backToTraining");
 
-        if (
-            backToTraining &&
-            translations.backToTraining
-        ) {
+        if (backToTraining && translations.backToTraining) {
             backToTraining.textContent =
                 translations.backToTraining;
         }
@@ -135,7 +123,7 @@ document.getElementById("backToTraining").textContent =
         const testAnswer =
             document.getElementById("testAnswer");
 
-        if (testAnswer) {
+        if (testAnswer && translations.answerPlaceholder) {
             testAnswer.placeholder =
                 translations.answerPlaceholder;
         }
@@ -148,10 +136,7 @@ document.getElementById("backToTraining").textContent =
         const status =
             document.getElementById("status");
 
-        if (
-            status &&
-            translations.statusLoading
-        ) {
+        if (status && translations.statusLoading) {
             status.textContent =
                 translations.statusLoading;
         }
@@ -164,7 +149,7 @@ document.getElementById("backToTraining").textContent =
         const footer =
             document.querySelector("footer");
 
-        if (footer) {
+        if (footer && translations.footer) {
             footer.textContent =
                 translations.footer;
         }
@@ -177,10 +162,7 @@ document.getElementById("backToTraining").textContent =
         const testFinished =
             document.getElementById("testFinished");
 
-        if (
-            testFinished &&
-            translations.testFinished
-        ) {
+        if (testFinished && translations.testFinished) {
             testFinished.textContent =
                 translations.testFinished;
         }
@@ -191,11 +173,12 @@ document.getElementById("backToTraining").textContent =
 
         if (
             testPercent &&
-            testPercent.dataset.percent
+            testPercent.dataset.percent &&
+            translations.result
         ) {
 
             testPercent.textContent =
-                `${translations.result}: ` +
+                `${translations.result} ` +
                 `${testPercent.dataset.percent}%`;
 
         }
@@ -210,7 +193,8 @@ document.getElementById("backToTraining").textContent =
 
         if (
             result &&
-            result.dataset.type === "correct"
+            result.dataset.type === "correct" &&
+            translations.correct
         ) {
 
             result.textContent =
@@ -241,7 +225,8 @@ document.getElementById("backToTraining").textContent =
 
         if (
             testResult &&
-            testResult.dataset.type === "correct"
+            testResult.dataset.type === "correct" &&
+            translations.correct
         ) {
 
             testResult.textContent =
