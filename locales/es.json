@@ -5,6 +5,8 @@
   "startTest": "Iniciar test",
   "testAgain": "Intentarlo de nuevo",
   "backToTraining": "Volver al entrenamiento",
+  "repeatMistakes": "🔁 Repetir errores",
+  "repeatMistakesHint": "Corrige el error",
   "loading": "Cargando...",
   "statusLoading": "Cargando la base de verbos...",
   "loadError": "Error al cargar la base de verbos.",
