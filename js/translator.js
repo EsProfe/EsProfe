@@ -2,10 +2,44 @@
 
 let translations = {};
 
+// =====================================
+// Перевод интерфейса
+// =====================================
+
+function applyTopicCardTranslations() {
+    document.querySelectorAll(".topic-card").forEach((card) => {
+        const titleKey = card.dataset.titleKey || `${card.dataset.topic}Title`;
+        const hintKey = card.dataset.hintKey || `${card.dataset.topic}Hint`;
+
+        const title = card.querySelector("strong");
+        const hint = card.querySelector("small");
+
+        if (title && translations[titleKey]) {
+            title.textContent = translations[titleKey];
+        }
+
+        if (hint && translations[hintKey]) {
+            hint.textContent = translations[hintKey];
+        }
+    });
+
+    const topicLabel = document.getElementById("topicLabel");
+    if (topicLabel && translations.topicLabel) {
+        topicLabel.textContent = translations.topicLabel;
+    }
+
+    const topicHint = document.getElementById("topicHint");
+    if (topicHint && translations.topicHint) {
+        topicHint.textContent = translations.topicHint;
+    }
+}
+
 async function loadLanguage(lang) {
     try {
         const response = await fetch(`locales/${lang}.json`);
-        if (!response.ok) throw new Error(`Не удалось загрузить язык: ${lang}`);
+        if (!response.ok) {
+            throw new Error(`Не удалось загрузить язык: ${lang}`);
+        }
 
         translations = await response.json();
 
@@ -72,7 +106,13 @@ async function loadLanguage(lang) {
             testResult.textContent = `❌ ${translations.incorrect} ${translations.correctAnswer} ${testResult.dataset.answer}`;
         }
 
-        if (typeof updateTopicTexts === "function") updateTopicTexts();
+        // Верхнее меню тем переводим независимо от topics.js.
+        applyTopicCardTranslations();
+
+        // После загрузки нового языка перерисовываем подтемы.
+        if (typeof updateTopicTexts === "function") {
+            updateTopicTexts();
+        }
     } catch (error) {
         console.error("Ошибка загрузки языка:", error);
     }
