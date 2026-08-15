@@ -19,8 +19,12 @@
     <section class="hero">
         <h1 id="title">Изучаем испанский язык</h1>
         <p id="subtitle">Интерактивная образовательная платформа</p>
+
         <div class="topic-menu">
-            <div class="topic-heading"><span class="topic-icon">📚</span><div><h2 id="topicLabel">Выберите тему</h2><p id="topicHint">Начните с нужного раздела</p></div></div>
+            <div class="topic-heading">
+                <span class="topic-icon">📚</span>
+                <div><h2 id="topicLabel">Выберите тему</h2><p id="topicHint">Начните с нужного раздела</p></div>
+            </div>
             <div class="topic-grid" id="topicGrid">
                 <button class="topic-card active" type="button" data-topic="verbs"><span>🔤</span><strong>Глаголы</strong><small>Спряжение</small></button>
                 <button class="topic-card" type="button" data-topic="grammar"><span>📖</span><strong>Грамматика</strong><small>Правила и примеры</small></button>
@@ -28,10 +32,17 @@
                 <button class="topic-card" type="button" data-topic="listening"><span>🎧</span><strong>Аудирование</strong><small>Слушаем и понимаем</small></button>
                 <button class="topic-card" type="button" data-topic="exams"><span>🎯</span><strong>DELE / EOI</strong><small>Подготовка к экзаменам</small></button>
             </div>
+
+            <div class="subtopic-panel" id="subtopicPanel">
+                <div class="subtopic-title" id="subtopicTitle">Глаголы · выберите раздел</div>
+                <div class="subtopic-list" id="subtopicList"></div>
+            </div>
+
             <select id="topicSelector" class="topic-selector-hidden" aria-hidden="true" tabindex="-1"><option value="verbs">verbs</option><option value="grammar">grammar</option><option value="vocabulary">vocabulary</option><option value="listening">listening</option><option value="exams">exams</option></select>
             <p id="topicNotice"></p>
         </div>
     </section>
+
     <section class="trainer">
         <div class="card">
             <h2 id="verb">Загрузка...</h2><p id="translation">...</p><p id="status">Загрузка базы глаголов...</p>
