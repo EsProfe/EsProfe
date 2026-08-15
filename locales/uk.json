@@ -5,6 +5,8 @@
   "startTest": "Почати тест",
   "testAgain": "Пройти ще раз",
   "backToTraining": "Повернутися до тренування",
+  "repeatMistakes": "🔁 Повторити помилки",
+  "repeatMistakesHint": "Виправте помилку",
   "loading": "Завантаження...",
   "statusLoading": "Завантаження бази дієслів...",
   "loadError": "Помилка завантаження бази дієслів.",
