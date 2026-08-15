@@ -2,13 +2,19 @@
 
 // =====================================
 // EsProfe — компактная навигация по темам
-// Тексты берутся из текущего языка интерфейса.
 // =====================================
 
 const topicMap = {
     verbs: {
         titleKey: "verbsTopicTitle",
-        items: [["present", "present", "presentHint"], ["ar", "ar", "arHint"], ["er", "er", "erHint"], ["ir", "ir", "irHint"], ["irregular", "irregular", "irregularHint"], ["test", "test", "testHint"]]
+        items: [
+            ["present", "present", "presentHint"],
+            ["ar", "ar", "arHint"],
+            ["er", "er", "erHint"],
+            ["ir", "ir", "irHint"],
+            ["irregular", "irregular", "irregularHint"],
+            ["test", "test", "testHint"]
+        ]
     },
     grammar: {
         titleKey: "grammarTopicTitle",
@@ -30,6 +36,15 @@ const topicMap = {
 
 function topicText(key, fallback = "") {
     return (typeof translations !== "undefined" && translations[key]) || fallback;
+}
+
+function selectSubtopic(id, label, hint) {
+    const notice = document.getElementById("topicNotice");
+    if (notice) notice.textContent = `${label}: ${hint}`;
+
+    document.dispatchEvent(new CustomEvent("esprofe:subtopic", {
+        detail: { topic: "verbs", subtopic: id }
+    }));
 }
 
 function renderSubtopics(topic) {
@@ -61,8 +76,13 @@ function renderSubtopics(topic) {
         button.addEventListener("click", () => {
             list.querySelectorAll(".subtopic-chip").forEach((item) => item.classList.remove("active"));
             button.classList.add("active");
-            const notice = document.getElementById("topicNotice");
-            if (notice) notice.textContent = `${strong.textContent}: ${small.textContent}`;
+
+            if (topic === "verbs") {
+                selectSubtopic(id, strong.textContent, small.textContent);
+            } else {
+                const notice = document.getElementById("topicNotice");
+                if (notice) notice.textContent = `${strong.textContent}: ${small.textContent}`;
+            }
         });
 
         list.appendChild(button);
@@ -108,3 +128,4 @@ function initTopicMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", initTopicMenu);
+document.addEventListener("esprofe:languageChanged", updateTopicTexts);
