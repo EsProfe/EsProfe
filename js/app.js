@@ -1,13 +1,15 @@
 "use strict";
 
 // =====================================
-// EsProfe v0.4.0
-// Тренировка + режим теста
+// EsProfe v0.5.2
+// Тренировка + режим теста + фильтры тем
 // =====================================
 
 let verbs = [];
+let allVerbs = [];
 let currentVerb = 0;
 let currentPerson = "yo";
+let activeVerbFilter = "present";
 
 const persons = ["yo", "tú", "él", "nosotros", "vosotros", "ellos"];
 let correctAnswers = 0;
@@ -38,6 +40,8 @@ function getRandomPerson() {
 
 function showVerb() {
     if (verbs.length === 0) return;
+
+    if (currentVerb >= verbs.length) currentVerb = 0;
 
     const verb = verbs[currentVerb];
     const selectedLanguage = document.getElementById("language").value;
@@ -201,6 +205,37 @@ function backToTraining() {
     showVerb();
 }
 
+function applyVerbFilter(filter) {
+    activeVerbFilter = filter;
+
+    if (filter === "ar" || filter === "er" || filter === "ir") {
+        verbs = allVerbs.filter((verb) => verb.group === filter.toUpperCase());
+    } else if (filter === "irregular") {
+        verbs = allVerbs.filter((verb) => verb.irregular === true);
+    } else {
+        verbs = [...allVerbs];
+    }
+
+    currentVerb = 0;
+    currentPerson = getRandomPerson();
+    updateStatus();
+    showVerb();
+}
+
+function handleVerbSubtopic(event) {
+    const subtopic = event.detail && event.detail.subtopic;
+    if (!subtopic) return;
+
+    if (subtopic === "test") {
+        startTest();
+        return;
+    }
+
+    if (!testActive) {
+        applyVerbFilter(subtopic);
+    }
+}
+
 async function changeLanguage(language) {
     if (typeof loadLanguage === "function") await loadLanguage(language);
     updateStatus();
@@ -222,6 +257,7 @@ async function changeLanguage(language) {
     }
 
     if (!testActive) showVerb();
+    document.dispatchEvent(new CustomEvent("esprofe:languageChanged"));
 }
 
 document.getElementById("checkAnswer").addEventListener("click", checkAnswer);
@@ -231,6 +267,7 @@ document.getElementById("testCheck").addEventListener("click", checkTestAnswer);
 document.getElementById("restartTest").addEventListener("click", restartTest);
 document.getElementById("backToTraining").addEventListener("click", backToTraining);
 document.getElementById("language").addEventListener("change", (event) => changeLanguage(event.target.value));
+document.addEventListener("esprofe:subtopic", handleVerbSubtopic);
 
 async function initApp() {
     const languageSelector = document.getElementById("language");
@@ -238,7 +275,8 @@ async function initApp() {
 
     if (typeof loadLanguage === "function") await loadLanguage(selectedLanguage);
 
-    verbs = await loadVerbs();
+    allVerbs = await loadVerbs();
+    verbs = [...allVerbs];
     updateStatus();
     currentPerson = getRandomPerson();
     showVerb();
