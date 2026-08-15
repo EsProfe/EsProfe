@@ -98,5 +98,5 @@
   {"id":97,"infinitive":"oír","translations":{"ru":"слышать","uk":"чути","en":"to hear","es":"oír"},"group":"IR","irregular":true,"present":{"yo":"oigo","tú":"oyes","él":"oye","nosotros":"oímos","vosotros":"oís","ellos":"oyen"}},
   {"id":98,"infinitive":"elegir","translations":{"ru":"выбирать","uk":"обирати","en":"to choose","es":"elegir"},"group":"IR","irregular":true,"present":{"yo":"elijo","tú":"eliges","él":"elige","nosotros":"elegimos","vosotros":"elegís","ellos":"eligen"}},
   {"id":99,"infinitive":"reír","translations":{"ru":"смеяться","uk":"сміятися","en":"to laugh","es":"reír"},"group":"IR","irregular":true,"present":{"yo":"río","tú":"ríes","él":"ríe","nosotros":"reímos","vosotros":"reís","ellos":"ríen"}},
-  {"id":100,"infinitive":"gustar","translations":{"ru":"нравиться","uk":"подобатися","en":"to like","es":"gustar"},"group":"AR","irregular":false,"present":{"yo":"gusto","tú":"gustas","él":"gusta","nosotros":"gustamos","vosotros":"gustáis","ellos":"gustan"}}
+  {"id":100,"infinitive":"cantar","translations":{"ru":"петь","uk":"співати","en":"to sing","es":"cantar"},"group":"AR","irregular":false,"present":{"yo":"canto","tú":"cantas","él":"canta","nosotros":"cantamos","vosotros":"cantáis","ellos":"cantan"}}
 ]
