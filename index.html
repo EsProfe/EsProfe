@@ -2,204 +2,93 @@
 <html lang="ru">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EsProfe</title>
-
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header class="header">
 
-    <div class="logo">
-        EsProfe
-    </div>
+    <div class="logo">EsProfe</div>
 
     <div class="language-selector">
-
         <select id="language">
-
             <option value="ru">Русский</option>
             <option value="uk">Українська</option>
             <option value="en">English</option>
             <option value="es">Español</option>
-
         </select>
-
     </div>
 
 </header>
 
-
 <main>
 
-    <!-- Главный экран -->
-
     <section class="hero">
+        <h1 id="title">Изучаем испанский язык</h1>
+        <p id="subtitle">Интерактивная образовательная платформа</p>
 
-        <h1 id="title">
-            Изучаем испанский язык
-        </h1>
-
-        <p id="subtitle">
-            Интерактивная образовательная платформа
-        </p>
-
+        <div class="topic-menu">
+            <label for="topicSelector" id="topicLabel">Тема обучения</label>
+            <select id="topicSelector">
+                <option value="verbs">Спряжение глаголов</option>
+                <option value="grammar">Грамматика</option>
+                <option value="vocabulary">Словарный запас</option>
+                <option value="listening">Аудирование</option>
+                <option value="exams">DELE / EOI</option>
+            </select>
+            <p id="topicNotice"></p>
+        </div>
     </section>
 
-
-    <!-- Тренажёр -->
-
     <section class="trainer">
-
         <div class="card">
 
-            <h2 id="verb">
-                Загрузка...
-            </h2>
+            <h2 id="verb">Загрузка...</h2>
+            <p id="translation">...</p>
+            <p id="status">Загрузка базы глаголов...</p>
 
-            <p id="translation">
-                ...
-            </p>
-
-            <p id="status">
-                Загрузка базы глаголов...
-            </p>
-
-
-            <!-- Режим тренировки -->
-
-            <div
-                class="exercise"
-                id="trainingMode"
-            >
-
-                <p id="person">
-                    yo
-                </p>
-
-                <input
-                    type="text"
-                    id="answer"
-                    placeholder="Введите ответ"
-                    autocomplete="off"
-                >
-
-                <button id="checkAnswer">
-                    Проверить
-                </button>
-
+            <div class="exercise" id="trainingMode">
+                <p id="person">yo</p>
+                <input type="text" id="answer" placeholder="Введите ответ" autocomplete="off">
+                <button id="checkAnswer">Проверить</button>
                 <p id="result"></p>
-
             </div>
-
-
-            <!-- Управление тренировкой -->
 
             <div class="controls">
-
-                <button id="nextVerb">
-                    Следующий глагол
-                </button>
-
-                <button id="startTest">
-                    Начать тест
-                </button>
-
+                <button id="nextVerb">Следующий глагол</button>
+                <button id="startTest">Начать тест</button>
             </div>
 
-
-            <!-- Режим теста -->
-
-            <div
-                class="test-mode"
-                id="testMode"
-                style="display: none;"
-            >
-
-                <p id="testProgress">
-                    Вопрос 1 из 10
-                </p>
-
-                <p id="testPerson">
-                    yo
-                </p>
-
-                <input
-                    type="text"
-                    id="testAnswer"
-                    placeholder="Введите ответ"
-                    autocomplete="off"
-                >
-
-                <button id="testCheck">
-                    Проверить
-                </button>
-
+            <div class="test-mode" id="testMode" style="display: none;">
+                <p id="testProgress">Вопрос 1 из 10</p>
+                <p id="testPerson">yo</p>
+                <input type="text" id="testAnswer" placeholder="Введите ответ" autocomplete="off">
+                <button id="testCheck">Проверить</button>
                 <p id="testResult"></p>
-
             </div>
 
-
-            <!-- Результат теста -->
-
-            <div
-                class="test-result"
-                id="testResultScreen"
-                style="display: none;"
-            >
-
-                <h2 id="testFinished">
-                    Тест завершён
-                </h2>
-
-                <p id="testScore">
-                    0 / 10
-                </p>
-
-                <p id="testPercent">
-                    0%
-                </p>
-
-                <button id="restartTest">
-                    Пройти ещё раз
-                </button>
-
-                <button id="backToTraining">
-                    Вернуться к тренировке
-                </button>
-
+            <div class="test-result" id="testResultScreen" style="display: none;">
+                <h2 id="testFinished">Тест завершён</h2>
+                <p id="testScore">0 / 10</p>
+                <p id="testPercent">0%</p>
+                <button id="restartTest">Пройти ещё раз</button>
+                <button id="backToTraining">Вернуться к тренировке</button>
             </div>
 
         </div>
-
     </section>
 
 </main>
 
-
-<footer>
-
-    EsProfe © 2026
-
-</footer>
-
+<footer>EsProfe © 2026</footer>
 
 <script src="js/translator.js"></script>
+<script src="js/topics.js"></script>
 <script src="js/app.js"></script>
 
 </body>
-
 </html>
