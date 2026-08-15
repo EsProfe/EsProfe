@@ -26,18 +26,16 @@
                 <div><h2 id="topicLabel">Выберите тему</h2><p id="topicHint">Начните с нужного раздела</p></div>
             </div>
             <div class="topic-grid" id="topicGrid">
-                <button class="topic-card active" type="button" data-topic="verbs" data-title-key="verbsTitle" data-hint-key="verbsHint"><span>🔤</span><strong>Глаголы</strong><small>Спряжение</small></button>
-                <button class="topic-card" type="button" data-topic="grammar" data-title-key="grammarTitle" data-hint-key="grammarHint"><span>📖</span><strong>Грамматика</strong><small>Правила и примеры</small></button>
-                <button class="topic-card" type="button" data-topic="vocabulary" data-title-key="vocabularyTitle" data-hint-key="vocabularyHint"><span>🧩</span><strong>Слова</strong><small>Лексика</small></button>
-                <button class="topic-card" type="button" data-topic="listening" data-title-key="listeningTitle" data-hint-key="listeningHint"><span>🎧</span><strong>Аудирование</strong><small>Слушаем и понимаем</small></button>
-                <button class="topic-card" type="button" data-topic="exams" data-title-key="examsTitle" data-hint-key="examsHint"><span>🎯</span><strong>DELE / EOI</strong><small>Подготовка к экзаменам</small></button>
+                <button class="topic-card active" type="button" data-topic="verbs"><span>🔤</span><strong>Глаголы</strong><small>Спряжение</small></button>
+                <button class="topic-card" type="button" data-topic="grammar"><span>📖</span><strong>Грамматика</strong><small>Правила и примеры</small></button>
+                <button class="topic-card" type="button" data-topic="vocabulary"><span>🧩</span><strong>Слова</strong><small>Лексика</small></button>
+                <button class="topic-card" type="button" data-topic="listening"><span>🎧</span><strong>Аудирование</strong><small>Слушаем и понимаем</small></button>
+                <button class="topic-card" type="button" data-topic="exams"><span>🎯</span><strong>DELE / EOI</strong><small>Подготовка к экзаменам</small></button>
             </div>
-
             <div class="subtopic-panel" id="subtopicPanel">
                 <div class="subtopic-title" id="subtopicTitle">Глаголы · выберите раздел</div>
                 <div class="subtopic-list" id="subtopicList"></div>
             </div>
-
             <select id="topicSelector" class="topic-selector-hidden" aria-hidden="true" tabindex="-1"><option value="verbs">verbs</option><option value="grammar">grammar</option><option value="vocabulary">vocabulary</option><option value="listening">listening</option><option value="exams">exams</option></select>
             <p id="topicNotice"></p>
         </div>
@@ -47,7 +45,7 @@
         <div class="card">
             <h2 id="verb">Загрузка...</h2><p id="translation">...</p><p id="status">Загрузка базы глаголов...</p>
             <div class="exercise" id="trainingMode"><p id="person">yo</p><input type="text" id="answer" placeholder="Введите ответ" autocomplete="off"><button id="checkAnswer">Проверить</button><p id="result"></p></div>
-            <div class="controls"><button id="nextVerb">Следующий глагол</button><button id="startTest">Начать тест</button></div>
+            <div class="controls"><button id="nextVerb">Следующий глагол</button><button id="startTest">Начать тест</button><button id="repeatMistakes" type="button" style="display:none;"></button></div>
             <div class="test-mode" id="testMode" style="display:none;"><p id="testProgress">Вопрос 1 из 10</p><p id="testPerson">yo</p><input type="text" id="testAnswer" placeholder="Введите ответ" autocomplete="off"><button id="testCheck">Проверить</button><p id="testResult"></p></div>
             <div class="test-result" id="testResultScreen" style="display:none;"><h2 id="testFinished">Тест завершён</h2><p id="testScore">0 / 10</p><p id="testPercent">0%</p><button id="restartTest">Пройти ещё раз</button><button id="backToTraining">Вернуться к тренировке</button></div>
         </div>
