@@ -1,37 +1,36 @@
 "use strict";
 
 // =====================================
-// EsProfe — выбор темы обучения
+// EsProfe — компактный выбор темы
 // =====================================
 
 function initTopicMenu() {
+    const topicSelector = document.getElementById("topicSelector");
+    const topicCards = document.querySelectorAll(".topic-card");
+    const topicNotice = document.getElementById("topicNotice");
 
-    const topicSelector =
-        document.getElementById("topicSelector");
+    if (!topicSelector || !topicCards.length) return;
 
-    if (!topicSelector) {
-        return;
-    }
+    const messages = {
+        verbs: "Спряжение глаголов",
+        grammar: "Грамматика — материалы добавляются после проверки",
+        vocabulary: "Словарный запас — раздел готовится",
+        listening: "Аудирование — раздел готовится",
+        exams: "DELE / EOI — раздел подготовки готовится"
+    };
 
-    topicSelector.addEventListener("change", (event) => {
+    topicCards.forEach((card) => {
+        card.addEventListener("click", () => {
+            const topic = card.dataset.topic;
+            topicSelector.value = topic;
 
-        const topic = event.target.value;
-        const topicNotice = document.getElementById("topicNotice");
+            topicCards.forEach((item) => item.classList.remove("active"));
+            card.classList.add("active");
 
-        if (!topicNotice) {
-            return;
-        }
-
-        const messages = {
-            verbs: "Тема «Спряжение глаголов» выбрана.",
-            grammar: "Раздел грамматики готовится. Материалы будут добавляться после проверки.",
-            vocabulary: "Раздел словарного запаса готовится.",
-            listening: "Раздел аудирования готовится.",
-            exams: "Раздел подготовки к DELE / EOI готовится."
-        };
-
-        topicNotice.textContent = messages[topic] || "";
-
+            if (topicNotice) {
+                topicNotice.textContent = messages[topic] || "";
+            }
+        });
     });
 }
 
