@@ -5,6 +5,8 @@
   "startTest": "Начать тест",
   "testAgain": "Пройти ещё раз",
   "backToTraining": "Вернуться к тренировке",
+  "repeatMistakes": "🔁 Повторить ошибки",
+  "repeatMistakesHint": "Исправьте ошибку",
   "loading": "Загрузка...",
   "statusLoading": "Загрузка базы глаголов...",
   "loadError": "Ошибка загрузки базы глаголов.",
