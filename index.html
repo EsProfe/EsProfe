@@ -7,53 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="logo">EsProfe</div>
-    <div class="language-selector">
-        <select id="language">
-            <option value="ru">Русский</option><option value="uk">Українська</option><option value="en">English</option><option value="es">Español</option>
-        </select>
-    </div>
-</header>
+<header class="header"><div class="logo">EsProfe</div><div class="language-selector"><select id="language"><option value="ru">Русский</option><option value="uk">Українська</option><option value="en">English</option><option value="es">Español</option></select></div></header>
 <main>
-    <section class="hero">
-        <h1 id="title">Изучаем испанский язык</h1>
-        <p id="subtitle">Интерактивная образовательная платформа</p>
-
-        <section class="progress-panel" id="progressPanel" aria-label="Student progress"></section>
-
-        <div class="topic-menu">
-            <div class="topic-heading">
-                <span class="topic-icon">📚</span>
-                <div><h2 id="topicLabel">Выберите тему</h2><p id="topicHint">Начните с нужного раздела</p></div>
-            </div>
-            <div class="topic-grid" id="topicGrid">
-                <button class="topic-card active" type="button" data-topic="verbs"><span>🔤</span><strong>Глаголы</strong><small>Спряжение</small></button>
-                <button class="topic-card" type="button" data-topic="grammar"><span>📖</span><strong>Грамматика</strong><small>Правила и примеры</small></button>
-                <button class="topic-card" type="button" data-topic="vocabulary"><span>🧩</span><strong>Слова</strong><small>Лексика</small></button>
-                <button class="topic-card" type="button" data-topic="listening"><span>🎧</span><strong>Аудирование</strong><small>Слушаем и понимаем</small></button>
-                <button class="topic-card" type="button" data-topic="exams"><span>🎯</span><strong>DELE / EOI</strong><small>Подготовка к экзаменам</small></button>
-            </div>
-            <div class="subtopic-panel" id="subtopicPanel">
-                <div class="subtopic-title" id="subtopicTitle">Глаголы · выберите раздел</div>
-                <div class="subtopic-list" id="subtopicList"></div>
-            </div>
-            <select id="topicSelector" class="topic-selector-hidden" aria-hidden="true" tabindex="-1"><option value="verbs">verbs</option><option value="grammar">grammar</option><option value="vocabulary">vocabulary</option><option value="listening">listening</option><option value="exams">exams</option></select>
-            <p id="topicNotice"></p>
-        </div>
-    </section>
-
-    <section class="trainer">
-        <div class="card">
-            <h2 id="verb">Загрузка...</h2><p id="translation">...</p><p id="status">Загрузка базы глаголов...</p>
-            <div class="exercise" id="trainingMode"><p id="person">yo</p><input type="text" id="answer" placeholder="Введите ответ" autocomplete="off"><button id="checkAnswer">Проверить</button><p id="result"></p></div>
-            <div class="controls"><button id="nextVerb">Следующий глагол</button><button id="startTest">Начать тест</button><button id="repeatMistakes" type="button" style="display:none;"></button></div>
-            <div class="test-mode" id="testMode" style="display:none;"><p id="testProgress">Вопрос 1 из 10</p><p id="testPerson">yo</p><input type="text" id="testAnswer" placeholder="Введите ответ" autocomplete="off"><button id="testCheck">Проверить</button><p id="testResult"></p></div>
-            <div class="test-result" id="testResultScreen" style="display:none;"><h2 id="testFinished">Тест завершён</h2><p id="testScore">0 / 10</p><p id="testPercent">0%</p><button id="restartTest">Пройти ещё раз</button><button id="backToTraining">Вернуться к тренировке</button></div>
-        </div>
-    </section>
-</main>
-<footer>EsProfe © 2026</footer>
-<script src="js/translator.js"></script><script src="js/progress.js"></script><script src="js/topics.js"></script><script src="js/app.js"></script>
-</body>
-</html>
+<section class="hero">
+<h1 id="title">Изучаем испанский язык</h1><p id="subtitle">Интерактивная образовательная платформа</p>
+<section class="progress-panel" id="progressPanel" aria-label="Student progress"></section>
+<div class="topic-menu"><div class="topic-heading"><span class="topic-icon">📚</span><div><h2 id="topicLabel">Выберите тему</h2><p id="topicHint">Начните с нужного раздела</p></div></div><div class="topic-grid" id="topicGrid"><button class="topic-card active" type="button" data-topic="verbs"><span>🔤</span><strong>Глаголы</strong><small>Спряжение</small></button><button class="topic-card" type="button" data-topic="grammar"><span>📖</span><strong>Грамматика</strong><small>Правила и примеры</small></button><button class="topic-card" type="button" data-topic="vocabulary"><span>🧩</span><strong>Слова</strong><small>Лексика</small></button><button class="topic-card" type="button" data-topic="listening"><span>🎧</span><strong>Аудирование</strong><small>Слушаем и понимаем</small></button><button class="topic-card" type="button" data-topic="exams"><span>🎯</span><strong>DELE / EOI</strong><small>Подготовка к экзаменам</small></button></div><div class="subtopic-panel" id="subtopicPanel"><div class="subtopic-title" id="subtopicTitle"></div><div class="subtopic-list" id="subtopicList"></div></div><select id="topicSelector" class="topic-selector-hidden" aria-hidden="true" tabindex="-1"><option value="verbs">verbs</option><option value="grammar">grammar</option><option value="vocabulary">vocabulary</option><option value="listening">listening</option><option value="exams">exams</option></select><p id="topicNotice"></p></div>
+</section>
+<section class="grammar-section" id="grammarSection" style="display:none"></section>
+<section class="trainer"><div class="card"><h2 id="verb">Загрузка...</h2><p id="translation">...</p><p id="status">Загрузка базы глаголов...</p><div class="exercise" id="trainingMode"><p id="person">yo</p><input type="text" id="answer" placeholder="Введите ответ" autocomplete="off"><button id="checkAnswer">Проверить</button><p id="result"></p></div><div class="controls"><button id="nextVerb">Следующий глагол</button><button id="startTest">Начать тест</button><button id="repeatMistakes" type="button" style="display:none"></button></div><div class="test-mode" id="testMode" style="display:none"><p id="testProgress">Вопрос 1 из 10</p><p id="testPerson">yo</p><input type="text" id="testAnswer" placeholder="Введите ответ" autocomplete="off"><button id="testCheck">Проверить</button><p id="testResult"></p></div><div class="test-result" id="testResultScreen" style="display:none"><h2 id="testFinished">Тест завершён</h2><p id="testScore">0 / 10</p><p id="testPercent">0%</p><button id="restartTest">Пройти ещё раз</button><button id="backToTraining">Вернуться к тренировке</button></div></div></section>
+</main><footer>EsProfe © 2026</footer>
+<script src="js/translator.js"></script><script src="js/progress.js"></script><script src="js/topics.js"></script><script src="js/grammar.js"></script><script src="js/app.js"></script>
+</body></html>
