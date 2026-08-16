@@ -1,4 +1,21 @@
 # Changelog
+## [v0.5.0] - 2026-08-14
+
+### Added
+
+- Added a dedicated grammar lesson for stem-changing verbs.
+- Added the three first stem-change patterns: e → ie, o → ue, e → i.
+- Added examples: pensar, poder and pedir.
+- Added a compact visual "boot" layout that groups the four changing forms and keeps nosotros/vosotros separate.
+- Added interactive switching between the three stem-change patterns.
+- Added a six-question practice mode with Enter key support.
+- Added a result screen for the stem-changing verb lesson.
+- Added multilingual lesson text for Russian, Ukrainian, English and Spanish.
+
+### Design
+
+- The temporary boot visualization is implemented in HTML/CSS so the final approved illustration can be inserted later without changing the lesson logic.
+
 ## [v0.4.2] - 2026-08-14
 
 ### Fixed
