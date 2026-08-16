@@ -1,102 +1,2002 @@
 [
-  {"id":1,"infinitive":"hablar","translations":{"ru":"говорить","uk":"говорити","en":"to speak","es":"hablar"},"group":"AR","irregular":false,"present":{"yo":"hablo","tú":"hablas","él":"habla","nosotros":"hablamos","vosotros":"habláis","ellos":"hablan"}},
-  {"id":2,"infinitive":"trabajar","translations":{"ru":"работать","uk":"працювати","en":"to work","es":"trabajar"},"group":"AR","irregular":false,"present":{"yo":"trabajo","tú":"trabajas","él":"trabaja","nosotros":"trabajamos","vosotros":"trabajáis","ellos":"trabajan"}},
-  {"id":3,"infinitive":"estudiar","translations":{"ru":"учиться","uk":"вчитися","en":"to study","es":"estudiar"},"group":"AR","irregular":false,"present":{"yo":"estudio","tú":"estudias","él":"estudia","nosotros":"estudiamos","vosotros":"estudiáis","ellos":"estudian"}},
-  {"id":4,"infinitive":"mirar","translations":{"ru":"смотреть","uk":"дивитися","en":"to look/watch","es":"mirar"},"group":"AR","irregular":false,"present":{"yo":"miro","tú":"miras","él":"mira","nosotros":"miramos","vosotros":"miráis","ellos":"miran"}},
-  {"id":5,"infinitive":"escuchar","translations":{"ru":"слушать","uk":"слухати","en":"to listen","es":"escuchar"},"group":"AR","irregular":false,"present":{"yo":"escucho","tú":"escuchas","él":"escucha","nosotros":"escuchamos","vosotros":"escucháis","ellos":"escuchan"}},
-  {"id":6,"infinitive":"usar","translations":{"ru":"использовать","uk":"використовувати","en":"to use","es":"usar"},"group":"AR","irregular":false,"present":{"yo":"uso","tú":"usas","él":"usa","nosotros":"usamos","vosotros":"usáis","ellos":"usan"}},
-  {"id":7,"infinitive":"necesitar","translations":{"ru":"нуждаться","uk":"потребувати","en":"to need","es":"necesitar"},"group":"AR","irregular":false,"present":{"yo":"necesito","tú":"necesitas","él":"necesita","nosotros":"necesitamos","vosotros":"necesitáis","ellos":"necesitan"}},
-  {"id":8,"infinitive":"comprar","translations":{"ru":"покупать","uk":"купувати","en":"to buy","es":"comprar"},"group":"AR","irregular":false,"present":{"yo":"compro","tú":"compras","él":"compra","nosotros":"compramos","vosotros":"compráis","ellos":"compran"}},
-  {"id":9,"infinitive":"pagar","translations":{"ru":"платить","uk":"платити","en":"to pay","es":"pagar"},"group":"AR","irregular":false,"present":{"yo":"pago","tú":"pagas","él":"paga","nosotros":"pagamos","vosotros":"pagáis","ellos":"pagan"}},
-  {"id":10,"infinitive":"entrar","translations":{"ru":"входить","uk":"входити","en":"to enter","es":"entrar"},"group":"AR","irregular":false,"present":{"yo":"entro","tú":"entras","él":"entra","nosotros":"entramos","vosotros":"entráis","ellos":"entran"}},
-  {"id":11,"infinitive":"terminar","translations":{"ru":"заканчивать","uk":"закінчувати","en":"to finish","es":"terminar"},"group":"AR","irregular":false,"present":{"yo":"termino","tú":"terminas","él":"termina","nosotros":"terminamos","vosotros":"termináis","ellos":"terminan"}},
-  {"id":12,"infinitive":"cambiar","translations":{"ru":"менять","uk":"змінювати","en":"to change","es":"cambiar"},"group":"AR","irregular":false,"present":{"yo":"cambio","tú":"cambias","él":"cambia","nosotros":"cambiamos","vosotros":"cambiáis","ellos":"cambian"}},
-  {"id":13,"infinitive":"ayudar","translations":{"ru":"помогать","uk":"допомагати","en":"to help","es":"ayudar"},"group":"AR","irregular":false,"present":{"yo":"ayudo","tú":"ayudas","él":"ayuda","nosotros":"ayudamos","vosotros":"ayudáis","ellos":"ayudan"}},
-  {"id":14,"infinitive":"llamar","translations":{"ru":"звонить/называть","uk":"дзвонити/називати","en":"to call/name","es":"llamar"},"group":"AR","irregular":false,"present":{"yo":"llamo","tú":"llamas","él":"llama","nosotros":"llamamos","vosotros":"llamáis","ellos":"llaman"}},
-  {"id":15,"infinitive":"preguntar","translations":{"ru":"спрашивать","uk":"запитувати","en":"to ask","es":"preguntar"},"group":"AR","irregular":false,"present":{"yo":"pregunto","tú":"preguntas","él":"pregunta","nosotros":"preguntamos","vosotros":"preguntáis","ellos":"preguntan"}},
-  {"id":16,"infinitive":"contestar","translations":{"ru":"отвечать","uk":"відповідати","en":"to answer","es":"contestar"},"group":"AR","irregular":false,"present":{"yo":"contesto","tú":"contestas","él":"contesta","nosotros":"contestamos","vosotros":"contestáis","ellos":"contestan"}},
-  {"id":17,"infinitive":"cocinar","translations":{"ru":"готовить","uk":"готувати","en":"to cook","es":"cocinar"},"group":"AR","irregular":false,"present":{"yo":"cocino","tú":"cocinas","él":"cocina","nosotros":"cocinamos","vosotros":"cocináis","ellos":"cocinan"}},
-  {"id":18,"infinitive":"viajar","translations":{"ru":"путешествовать","uk":"подорожувати","en":"to travel","es":"viajar"},"group":"AR","irregular":false,"present":{"yo":"viajo","tú":"viajas","él":"viaja","nosotros":"viajamos","vosotros":"viajáis","ellos":"viajan"}},
-  {"id":19,"infinitive":"descansar","translations":{"ru":"отдыхать","uk":"відпочивати","en":"to rest","es":"descansar"},"group":"AR","irregular":false,"present":{"yo":"descanso","tú":"descansas","él":"descansa","nosotros":"descansamos","vosotros":"descansáis","ellos":"descansan"}},
-  {"id":20,"infinitive":"gustar","translations":{"ru":"нравиться","uk":"подобатися","en":"to like","es":"gustar"},"group":"AR","irregular":false,"present":{"yo":"gusto","tú":"gustas","él":"gusta","nosotros":"gustamos","vosotros":"gustáis","ellos":"gustan"}},
-  {"id":21,"infinitive":"comer","translations":{"ru":"есть","uk":"їсти","en":"to eat","es":"comer"},"group":"ER","irregular":false,"present":{"yo":"como","tú":"comes","él":"come","nosotros":"comemos","vosotros":"coméis","ellos":"comen"}},
-  {"id":22,"infinitive":"beber","translations":{"ru":"пить","uk":"пити","en":"to drink","es":"beber"},"group":"ER","irregular":false,"present":{"yo":"bebo","tú":"bebes","él":"bebe","nosotros":"bebemos","vosotros":"bebéis","ellos":"beben"}},
-  {"id":23,"infinitive":"aprender","translations":{"ru":"учиться/узнавать","uk":"вчитися/дізнаватися","en":"to learn","es":"aprender"},"group":"ER","irregular":false,"present":{"yo":"aprendo","tú":"aprendes","él":"aprende","nosotros":"aprendemos","vosotros":"aprendéis","ellos":"aprenden"}},
-  {"id":24,"infinitive":"vender","translations":{"ru":"продавать","uk":"продавати","en":"to sell","es":"vender"},"group":"ER","irregular":false,"present":{"yo":"vendo","tú":"vendes","él":"vende","nosotros":"vendemos","vosotros":"vendéis","ellos":"venden"}},
-  {"id":25,"infinitive":"correr","translations":{"ru":"бегать","uk":"бігати","en":"to run","es":"correr"},"group":"ER","irregular":false,"present":{"yo":"corro","tú":"corres","él":"corre","nosotros":"corremos","vosotros":"corréis","ellos":"corren"}},
-  {"id":26,"infinitive":"leer","translations":{"ru":"читать","uk":"читати","en":"to read","es":"leer"},"group":"ER","irregular":false,"present":{"yo":"leo","tú":"lees","él":"lee","nosotros":"leemos","vosotros":"leéis","ellos":"leen"}},
-  {"id":27,"infinitive":"comprender","translations":{"ru":"понимать","uk":"розуміти","en":"to understand","es":"comprender"},"group":"ER","irregular":false,"present":{"yo":"comprendo","tú":"comprendes","él":"comprende","nosotros":"comprendemos","vosotros":"comprendéis","ellos":"comprenden"}},
-  {"id":28,"infinitive":"responder","translations":{"ru":"отвечать","uk":"відповідати","en":"to answer","es":"responder"},"group":"ER","irregular":false,"present":{"yo":"respondo","tú":"respondes","él":"responde","nosotros":"respondemos","vosotros":"respondéis","ellos":"responden"}},
-  {"id":29,"infinitive":"deber","translations":{"ru":"быть должным","uk":"бути винним/мусити","en":"must/owe","es":"deber"},"group":"ER","irregular":false,"present":{"yo":"debo","tú":"debes","él":"debe","nosotros":"debemos","vosotros":"debéis","ellos":"deben"}},
-  {"id":30,"infinitive":"prometer","translations":{"ru":"обещать","uk":"обіцяти","en":"to promise","es":"prometer"},"group":"ER","irregular":false,"present":{"yo":"prometo","tú":"prometes","él":"promete","nosotros":"prometemos","vosotros":"prometéis","ellos":"prometen"}},
-  {"id":31,"infinitive":"temer","translations":{"ru":"бояться","uk":"боятися","en":"to fear","es":"temer"},"group":"ER","irregular":false,"present":{"yo":"temo","tú":"temes","él":"teme","nosotros":"tememos","vosotros":"teméis","ellos":"temen"}},
-  {"id":32,"infinitive":"meter","translations":{"ru":"класть/помещать","uk":"класти/поміщати","en":"to put in","es":"meter"},"group":"ER","irregular":false,"present":{"yo":"meto","tú":"metes","él":"mete","nosotros":"metemos","vosotros":"metéis","ellos":"meten"}},
-  {"id":33,"infinitive":"romper","translations":{"ru":"ломать","uk":"ламати","en":"to break","es":"romper"},"group":"ER","irregular":false,"present":{"yo":"rompo","tú":"rompes","él":"rompe","nosotros":"rompemos","vosotros":"rompéis","ellos":"rompen"}},
-  {"id":34,"infinitive":"creer","translations":{"ru":"верить","uk":"вірити","en":"to believe","es":"creer"},"group":"ER","irregular":false,"present":{"yo":"creo","tú":"crees","él":"cree","nosotros":"creemos","vosotros":"creéis","ellos":"creen"}},
-  {"id":35,"infinitive":"perder","translations":{"ru":"терять","uk":"втрачати","en":"to lose","es":"perder"},"group":"ER","irregular":true,"present":{"yo":"pierdo","tú":"pierdes","él":"pierde","nosotros":"perdemos","vosotros":"perdéis","ellos":"pierden"}},
-  {"id":36,"infinitive":"entender","translations":{"ru":"понимать","uk":"розуміти","en":"to understand","es":"entender"},"group":"ER","irregular":true,"present":{"yo":"entiendo","tú":"entiendes","él":"entiende","nosotros":"entendemos","vosotros":"entendéis","ellos":"entienden"}},
-  {"id":37,"infinitive":"querer","translations":{"ru":"хотеть","uk":"хотіти","en":"to want/love","es":"querer"},"group":"ER","irregular":true,"present":{"yo":"quiero","tú":"quieres","él":"quiere","nosotros":"queremos","vosotros":"queréis","ellos":"quieren"}},
-  {"id":38,"infinitive":"poder","translations":{"ru":"мочь","uk":"могти","en":"can/be able","es":"poder"},"group":"ER","irregular":true,"present":{"yo":"puedo","tú":"puedes","él":"puede","nosotros":"podemos","vosotros":"podéis","ellos":"pueden"}},
-  {"id":39,"infinitive":"tener","translations":{"ru":"иметь","uk":"мати","en":"to have","es":"tener"},"group":"ER","irregular":true,"present":{"yo":"tengo","tú":"tienes","él":"tiene","nosotros":"tenemos","vosotros":"tenéis","ellos":"tienen"}},
-  {"id":40,"infinitive":"hacer","translations":{"ru":"делать","uk":"робити","en":"to do/make","es":"hacer"},"group":"ER","irregular":true,"present":{"yo":"hago","tú":"haces","él":"hace","nosotros":"hacemos","vosotros":"hacéis","ellos":"hacen"}},
-  {"id":41,"infinitive":"poner","translations":{"ru":"ставить/класть","uk":"ставити/класти","en":"to put","es":"poner"},"group":"ER","irregular":true,"present":{"yo":"pongo","tú":"pones","él":"pone","nosotros":"ponemos","vosotros":"ponéis","ellos":"ponen"}},
-  {"id":42,"infinitive":"saber","translations":{"ru":"знать","uk":"знати","en":"to know","es":"saber"},"group":"ER","irregular":true,"present":{"yo":"sé","tú":"sabes","él":"sabe","nosotros":"sabemos","vosotros":"sabéis","ellos":"saben"}},
-  {"id":43,"infinitive":"ver","translations":{"ru":"видеть","uk":"бачити","en":"to see","es":"ver"},"group":"ER","irregular":true,"present":{"yo":"veo","tú":"ves","él":"ve","nosotros":"vemos","vosotros":"veis","ellos":"ven"}},
-  {"id":44,"infinitive":"conocer","translations":{"ru":"знать/быть знакомым","uk":"знати/бути знайомим","en":"to know/meet","es":"conocer"},"group":"ER","irregular":true,"present":{"yo":"conozco","tú":"conoces","él":"conoce","nosotros":"conocemos","vosotros":"conocéis","ellos":"conocen"}},
-  {"id":45,"infinitive":"parecer","translations":{"ru":"казаться","uk":"здаватися","en":"to seem","es":"parecer"},"group":"ER","irregular":true,"present":{"yo":"parezco","tú":"pareces","él":"parece","nosotros":"parecemos","vosotros":"parecéis","ellos":"parecen"}},
-  {"id":46,"infinitive":"nacer","translations":{"ru":"рождаться","uk":"народжуватися","en":"to be born","es":"nacer"},"group":"ER","irregular":true,"present":{"yo":"nazco","tú":"naces","él":"nace","nosotros":"nacemos","vosotros":"nacéis","ellos":"nacen"}},
-  {"id":47,"infinitive":"crecer","translations":{"ru":"расти","uk":"рости","en":"to grow","es":"crecer"},"group":"ER","irregular":true,"present":{"yo":"crezco","tú":"creces","él":"crece","nosotros":"crecemos","vosotros":"crecéis","ellos":"crecen"}},
-  {"id":48,"infinitive":"traer","translations":{"ru":"приносить","uk":"приносити","en":"to bring","es":"traer"},"group":"ER","irregular":true,"present":{"yo":"traigo","tú":"traes","él":"trae","nosotros":"traemos","vosotros":"traéis","ellos":"traen"}},
-  {"id":49,"infinitive":"caer","translations":{"ru":"падать","uk":"падати","en":"to fall","es":"caer"},"group":"ER","irregular":true,"present":{"yo":"caigo","tú":"caes","él":"cae","nosotros":"caemos","vosotros":"caéis","ellos":"caen"}},
-  {"id":50,"infinitive":"vivir","translations":{"ru":"жить","uk":"жити","en":"to live","es":"vivir"},"group":"IR","irregular":false,"present":{"yo":"vivo","tú":"vives","él":"vive","nosotros":"vivimos","vosotros":"vivís","ellos":"viven"}},
-  {"id":51,"infinitive":"escribir","translations":{"ru":"писать","uk":"писати","en":"to write","es":"escribir"},"group":"IR","irregular":false,"present":{"yo":"escribo","tú":"escribes","él":"escribe","nosotros":"escribimos","vosotros":"escribís","ellos":"escriben"}},
-  {"id":52,"infinitive":"abrir","translations":{"ru":"открывать","uk":"відкривати","en":"to open","es":"abrir"},"group":"IR","irregular":false,"present":{"yo":"abro","tú":"abres","él":"abre","nosotros":"abrimos","vosotros":"abrís","ellos":"abren"}},
-  {"id":53,"infinitive":"recibir","translations":{"ru":"получать","uk":"отримувати","en":"to receive","es":"recibir"},"group":"IR","irregular":false,"present":{"yo":"recibo","tú":"recibes","él":"recibe","nosotros":"recibimos","vosotros":"recibís","ellos":"reciben"}},
-  {"id":54,"infinitive":"decidir","translations":{"ru":"решать","uk":"вирішувати","en":"to decide","es":"decidir"},"group":"IR","irregular":false,"present":{"yo":"decido","tú":"decides","él":"decide","nosotros":"decidimos","vosotros":"decidís","ellos":"deciden"}},
-  {"id":55,"infinitive":"subir","translations":{"ru":"подниматься","uk":"підніматися","en":"to go up","es":"subir"},"group":"IR","irregular":false,"present":{"yo":"subo","tú":"subes","él":"sube","nosotros":"subimos","vosotros":"subís","ellos":"suben"}},
-  {"id":56,"infinitive":"partir","translations":{"ru":"отправляться/делить","uk":"вирушати/ділити","en":"to leave/split","es":"partir"},"group":"IR","irregular":false,"present":{"yo":"parto","tú":"partes","él":"parte","nosotros":"partimos","vosotros":"partís","ellos":"parten"}},
-  {"id":57,"infinitive":"permitir","translations":{"ru":"позволять","uk":"дозволяти","en":"to allow","es":"permitir"},"group":"IR","irregular":false,"present":{"yo":"permito","tú":"permites","él":"permite","nosotros":"permitimos","vosotros":"permitís","ellos":"permiten"}},
-  {"id":58,"infinitive":"compartir","translations":{"ru":"делиться","uk":"ділитися","en":"to share","es":"compartir"},"group":"IR","irregular":false,"present":{"yo":"comparto","tú":"compartes","él":"comparte","nosotros":"compartimos","vosotros":"compartís","ellos":"comparten"}},
-  {"id":59,"infinitive":"existir","translations":{"ru":"существовать","uk":"існувати","en":"to exist","es":"existir"},"group":"IR","irregular":false,"present":{"yo":"existo","tú":"existes","él":"existe","nosotros":"existimos","vosotros":"existís","ellos":"existen"}},
-  {"id":60,"infinitive":"asistir","translations":{"ru":"посещать","uk":"відвідувати","en":"to attend","es":"asistir"},"group":"IR","irregular":false,"present":{"yo":"asisto","tú":"asistes","él":"asiste","nosotros":"asistimos","vosotros":"asistís","ellos":"asisten"}},
-  {"id":61,"infinitive":"decir","translations":{"ru":"говорить/сказать","uk":"говорити/сказати","en":"to say/tell","es":"decir"},"group":"IR","irregular":true,"present":{"yo":"digo","tú":"dices","él":"dice","nosotros":"decimos","vosotros":"decís","ellos":"dicen"}},
-  {"id":62,"infinitive":"ir","translations":{"ru":"идти/ехать","uk":"йти/їхати","en":"to go","es":"ir"},"group":"IR","irregular":true,"present":{"yo":"voy","tú":"vas","él":"va","nosotros":"vamos","vosotros":"vais","ellos":"van"}},
-  {"id":63,"infinitive":"venir","translations":{"ru":"приходить","uk":"приходити","en":"to come","es":"venir"},"group":"IR","irregular":true,"present":{"yo":"vengo","tú":"vienes","él":"viene","nosotros":"venimos","vosotros":"venís","ellos":"vienen"}},
-  {"id":64,"infinitive":"salir","translations":{"ru":"выходить","uk":"виходити","en":"to leave/go out","es":"salir"},"group":"IR","irregular":true,"present":{"yo":"salgo","tú":"sales","él":"sale","nosotros":"salimos","vosotros":"salís","ellos":"salen"}},
-  {"id":65,"infinitive":"seguir","translations":{"ru":"следовать/продолжать","uk":"слідувати/продовжувати","en":"to follow/continue","es":"seguir"},"group":"IR","irregular":true,"present":{"yo":"sigo","tú":"sigues","él":"sigue","nosotros":"seguimos","vosotros":"seguís","ellos":"siguen"}},
-  {"id":66,"infinitive":"pedir","translations":{"ru":"просить","uk":"просити","en":"to ask for","es":"pedir"},"group":"IR","irregular":true,"present":{"yo":"pido","tú":"pides","él":"pide","nosotros":"pedimos","vosotros":"pedís","ellos":"piden"}},
-  {"id":67,"infinitive":"servir","translations":{"ru":"служить","uk":"служити","en":"to serve","es":"servir"},"group":"IR","irregular":true,"present":{"yo":"sirvo","tú":"sirves","él":"sirve","nosotros":"servimos","vosotros":"servís","ellos":"sirven"}},
-  {"id":68,"infinitive":"dormir","translations":{"ru":"спать","uk":"спати","en":"to sleep","es":"dormir"},"group":"IR","irregular":true,"present":{"yo":"duermo","tú":"duermes","él":"duerme","nosotros":"dormimos","vosotros":"dormís","ellos":"duermen"}},
-  {"id":69,"infinitive":"preferir","translations":{"ru":"предпочитать","uk":"надавати перевагу","en":"to prefer","es":"preferir"},"group":"IR","irregular":true,"present":{"yo":"prefiero","tú":"prefieres","él":"prefiere","nosotros":"preferimos","vosotros":"preferís","ellos":"prefieren"}},
-  {"id":70,"infinitive":"sentir","translations":{"ru":"чувствовать","uk":"відчувати","en":"to feel","es":"sentir"},"group":"IR","irregular":true,"present":{"yo":"siento","tú":"sientes","él":"siente","nosotros":"sentimos","vosotros":"sentís","ellos":"sienten"}},
-  {"id":71,"infinitive":"repetir","translations":{"ru":"повторять","uk":"повторювати","en":"to repeat","es":"repetir"},"group":"IR","irregular":true,"present":{"yo":"repito","tú":"repites","él":"repite","nosotros":"repetimos","vosotros":"repetís","ellos":"repiten"}},
-  {"id":72,"infinitive":"convertir","translations":{"ru":"превращать","uk":"перетворювати","en":"to convert","es":"convertir"},"group":"IR","irregular":true,"present":{"yo":"convierto","tú":"conviertes","él":"convierte","nosotros":"convertimos","vosotros":"convertís","ellos":"convierten"}},
-  {"id":73,"infinitive":"morir","translations":{"ru":"умирать","uk":"помирати","en":"to die","es":"morir"},"group":"IR","irregular":true,"present":{"yo":"muero","tú":"mueres","él":"muere","nosotros":"morimos","vosotros":"morís","ellos":"mueren"}},
-  {"id":74,"infinitive":"jugar","translations":{"ru":"играть","uk":"грати","en":"to play","es":"jugar"},"group":"AR","irregular":true,"present":{"yo":"juego","tú":"juegas","él":"juega","nosotros":"jugamos","vosotros":"jugáis","ellos":"juegan"}},
-  {"id":75,"infinitive":"pensar","translations":{"ru":"думать","uk":"думати","en":"to think","es":"pensar"},"group":"AR","irregular":true,"present":{"yo":"pienso","tú":"piensas","él":"piensa","nosotros":"pensamos","vosotros":"pensáis","ellos":"piensan"}},
-  {"id":76,"infinitive":"encontrar","translations":{"ru":"находить","uk":"знаходити","en":"to find","es":"encontrar"},"group":"AR","irregular":true,"present":{"yo":"encuentro","tú":"encuentras","él":"encuentra","nosotros":"encontramos","vosotros":"encontráis","ellos":"encuentran"}},
-  {"id":77,"infinitive":"volver","translations":{"ru":"возвращаться","uk":"повертатися","en":"to return","es":"volver"},"group":"ER","irregular":true,"present":{"yo":"vuelvo","tú":"vuelves","él":"vuelve","nosotros":"volvemos","vosotros":"volvéis","ellos":"vuelven"}},
-  {"id":78,"infinitive":"llegar","translations":{"ru":"прибывать","uk":"прибувати","en":"to arrive","es":"llegar"},"group":"AR","irregular":false,"present":{"yo":"llego","tú":"llegas","él":"llega","nosotros":"llegamos","vosotros":"llegáis","ellos":"llegan"}},
-  {"id":79,"infinitive":"empezar","translations":{"ru":"начинать","uk":"починати","en":"to begin","es":"empezar"},"group":"AR","irregular":true,"present":{"yo":"empiezo","tú":"empiezas","él":"empieza","nosotros":"empezamos","vosotros":"empezáis","ellos":"empiezan"}},
-  {"id":80,"infinitive":"cerrar","translations":{"ru":"закрывать","uk":"закривати","en":"to close","es":"cerrar"},"group":"AR","irregular":true,"present":{"yo":"cierro","tú":"cierras","él":"cierra","nosotros":"cerramos","vosotros":"cerráis","ellos":"cierran"}},
-  {"id":81,"infinitive":"mostrar","translations":{"ru":"показывать","uk":"показувати","en":"to show","es":"mostrar"},"group":"AR","irregular":true,"present":{"yo":"muestro","tú":"muestras","él":"muestra","nosotros":"mostramos","vosotros":"mostráis","ellos":"muestran"}},
-  {"id":82,"infinitive":"recordar","translations":{"ru":"помнить","uk":"пам'ятати","en":"to remember","es":"recordar"},"group":"AR","irregular":true,"present":{"yo":"recuerdo","tú":"recuerdas","él":"recuerda","nosotros":"recordamos","vosotros":"recordáis","ellos":"recuerdan"}},
-  {"id":83,"infinitive":"contar","translations":{"ru":"считать/рассказывать","uk":"рахувати/розповідати","en":"to count/tell","es":"contar"},"group":"AR","irregular":true,"present":{"yo":"cuento","tú":"cuentas","él":"cuenta","nosotros":"contamos","vosotros":"contáis","ellos":"cuentan"}},
-  {"id":84,"infinitive":"dar","translations":{"ru":"давать","uk":"давати","en":"to give","es":"dar"},"group":"AR","irregular":true,"present":{"yo":"doy","tú":"das","él":"da","nosotros":"damos","vosotros":"dais","ellos":"dan"}},
-  {"id":85,"infinitive":"estar","translations":{"ru":"быть/находиться","uk":"бути/перебувати","en":"to be","es":"estar"},"group":"AR","irregular":true,"present":{"yo":"estoy","tú":"estás","él":"está","nosotros":"estamos","vosotros":"estáis","ellos":"están"}},
-  {"id":86,"infinitive":"llevar","translations":{"ru":"нести/носить","uk":"нести/носити","en":"to carry/wear","es":"llevar"},"group":"AR","irregular":false,"present":{"yo":"llevo","tú":"llevas","él":"lleva","nosotros":"llevamos","vosotros":"lleváis","ellos":"llevan"}},
-  {"id":87,"infinitive":"dejar","translations":{"ru":"оставлять","uk":"залишати","en":"to leave/let","es":"dejar"},"group":"AR","irregular":false,"present":{"yo":"dejo","tú":"dejas","él":"deja","nosotros":"dejamos","vosotros":"dejáis","ellos":"dejan"}},
-  {"id":88,"infinitive":"tomar","translations":{"ru":"брать/принимать","uk":"брати/приймати","en":"to take/drink","es":"tomar"},"group":"AR","irregular":false,"present":{"yo":"tomo","tú":"tomas","él":"toma","nosotros":"tomamos","vosotros":"tomáis","ellos":"toman"}},
-  {"id":89,"infinitive":"pasar","translations":{"ru":"проходить/проводить","uk":"проходити/проводити","en":"to pass/spend","es":"pasar"},"group":"AR","irregular":false,"present":{"yo":"paso","tú":"pasas","él":"pasa","nosotros":"pasamos","vosotros":"pasáis","ellos":"pasan"}},
-  {"id":90,"infinitive":"buscar","translations":{"ru":"искать","uk":"шукати","en":"to look for","es":"buscar"},"group":"AR","irregular":false,"present":{"yo":"busco","tú":"buscas","él":"busca","nosotros":"buscamos","vosotros":"buscáis","ellos":"buscan"}},
-  {"id":91,"infinitive":"cantar","translations":{"ru":"петь","uk":"співати","en":"to sing","es":"cantar"},"group":"AR","irregular":false,"present":{"yo":"canto","tú":"cantas","él":"canta","nosotros":"cantamos","vosotros":"cantáis","ellos":"cantan"}},
-  {"id":92,"infinitive":"bailar","translations":{"ru":"танцевать","uk":"танцювати","en":"to dance","es":"bailar"},"group":"AR","irregular":false,"present":{"yo":"bailo","tú":"bailas","él":"baila","nosotros":"bailamos","vosotros":"bailáis","ellos":"bailan"}},
-  {"id":93,"infinitive":"preparar","translations":{"ru":"готовить/подготавливать","uk":"готувати/підготовлювати","en":"to prepare","es":"preparar"},"group":"AR","irregular":false,"present":{"yo":"preparo","tú":"preparas","él":"prepara","nosotros":"preparamos","vosotros":"preparáis","ellos":"preparan"}},
-  {"id":94,"infinitive":"enseñar","translations":{"ru":"учить/показывать","uk":"навчати/показувати","en":"to teach/show","es":"enseñar"},"group":"AR","irregular":false,"present":{"yo":"enseño","tú":"enseñas","él":"enseña","nosotros":"enseñamos","vosotros":"enseñáis","ellos":"enseñan"}},
-  {"id":95,"infinitive":"ganar","translations":{"ru":"выигрывать/зарабатывать","uk":"вигравати/заробляти","en":"to win/earn","es":"ganar"},"group":"AR","irregular":false,"present":{"yo":"gano","tú":"ganas","él":"gana","nosotros":"ganamos","vosotros":"ganáis","ellos":"ganan"}},
-  {"id":96,"infinitive":"conducir","translations":{"ru":"водить","uk":"керувати автомобілем","en":"to drive","es":"conducir"},"group":"IR","irregular":true,"present":{"yo":"conduzco","tú":"conduces","él":"conduce","nosotros":"conducimos","vosotros":"conducís","ellos":"conducen"}},
-  {"id":97,"infinitive":"oír","translations":{"ru":"слышать","uk":"чути","en":"to hear","es":"oír"},"group":"IR","irregular":true,"present":{"yo":"oigo","tú":"oyes","él":"oye","nosotros":"oímos","vosotros":"oís","ellos":"oyen"}},
-  {"id":98,"infinitive":"elegir","translations":{"ru":"выбирать","uk":"обирати","en":"to choose","es":"elegir"},"group":"IR","irregular":true,"present":{"yo":"elijo","tú":"eliges","él":"elige","nosotros":"elegimos","vosotros":"elegís","ellos":"eligen"}},
-  {"id":99,"infinitive":"reír","translations":{"ru":"смеяться","uk":"сміятися","en":"to laugh","es":"reír"},"group":"IR","irregular":true,"present":{"yo":"río","tú":"ríes","él":"ríe","nosotros":"reímos","vosotros":"reís","ellos":"ríen"}},
-  {"id":100,"infinitive":"cantar","translations":{"ru":"петь","uk":"співати","en":"to sing","es":"cantar"},"group":"AR","irregular":false,"present":{"yo":"canto","tú":"cantas","él":"canta","nosotros":"cantamos","vosotros":"cantáis","ellos":"cantan"}}
+  {
+    "id": 1,
+    "infinitive": "hablar",
+    "translations": {
+      "ru": "говорить",
+      "uk": "говорити",
+      "en": "to speak",
+      "es": "hablar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "hablo",
+      "tú": "hablas",
+      "él": "habla",
+      "nosotros": "hablamos",
+      "vosotros": "habláis",
+      "ellos": "hablan"
+    }
+  },
+  {
+    "id": 2,
+    "infinitive": "trabajar",
+    "translations": {
+      "ru": "работать",
+      "uk": "працювати",
+      "en": "to work",
+      "es": "trabajar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "trabajo",
+      "tú": "trabajas",
+      "él": "trabaja",
+      "nosotros": "trabajamos",
+      "vosotros": "trabajáis",
+      "ellos": "trabajan"
+    }
+  },
+  {
+    "id": 3,
+    "infinitive": "estudiar",
+    "translations": {
+      "ru": "учиться",
+      "uk": "вчитися",
+      "en": "to study",
+      "es": "estudiar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "estudio",
+      "tú": "estudias",
+      "él": "estudia",
+      "nosotros": "estudiamos",
+      "vosotros": "estudiáis",
+      "ellos": "estudian"
+    }
+  },
+  {
+    "id": 4,
+    "infinitive": "mirar",
+    "translations": {
+      "ru": "смотреть",
+      "uk": "дивитися",
+      "en": "to look/watch",
+      "es": "mirar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "miro",
+      "tú": "miras",
+      "él": "mira",
+      "nosotros": "miramos",
+      "vosotros": "miráis",
+      "ellos": "miran"
+    }
+  },
+  {
+    "id": 5,
+    "infinitive": "escuchar",
+    "translations": {
+      "ru": "слушать",
+      "uk": "слухати",
+      "en": "to listen",
+      "es": "escuchar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "escucho",
+      "tú": "escuchas",
+      "él": "escucha",
+      "nosotros": "escuchamos",
+      "vosotros": "escucháis",
+      "ellos": "escuchan"
+    }
+  },
+  {
+    "id": 6,
+    "infinitive": "usar",
+    "translations": {
+      "ru": "использовать",
+      "uk": "використовувати",
+      "en": "to use",
+      "es": "usar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "uso",
+      "tú": "usas",
+      "él": "usa",
+      "nosotros": "usamos",
+      "vosotros": "usáis",
+      "ellos": "usan"
+    }
+  },
+  {
+    "id": 7,
+    "infinitive": "necesitar",
+    "translations": {
+      "ru": "нуждаться",
+      "uk": "потребувати",
+      "en": "to need",
+      "es": "necesitar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "necesito",
+      "tú": "necesitas",
+      "él": "necesita",
+      "nosotros": "necesitamos",
+      "vosotros": "necesitáis",
+      "ellos": "necesitan"
+    }
+  },
+  {
+    "id": 8,
+    "infinitive": "comprar",
+    "translations": {
+      "ru": "покупать",
+      "uk": "купувати",
+      "en": "to buy",
+      "es": "comprar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "compro",
+      "tú": "compras",
+      "él": "compra",
+      "nosotros": "compramos",
+      "vosotros": "compráis",
+      "ellos": "compran"
+    }
+  },
+  {
+    "id": 9,
+    "infinitive": "pagar",
+    "translations": {
+      "ru": "платить",
+      "uk": "платити",
+      "en": "to pay",
+      "es": "pagar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "pago",
+      "tú": "pagas",
+      "él": "paga",
+      "nosotros": "pagamos",
+      "vosotros": "pagáis",
+      "ellos": "pagan"
+    }
+  },
+  {
+    "id": 10,
+    "infinitive": "entrar",
+    "translations": {
+      "ru": "входить",
+      "uk": "входити",
+      "en": "to enter",
+      "es": "entrar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "entro",
+      "tú": "entras",
+      "él": "entra",
+      "nosotros": "entramos",
+      "vosotros": "entráis",
+      "ellos": "entran"
+    }
+  },
+  {
+    "id": 11,
+    "infinitive": "terminar",
+    "translations": {
+      "ru": "заканчивать",
+      "uk": "закінчувати",
+      "en": "to finish",
+      "es": "terminar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "termino",
+      "tú": "terminas",
+      "él": "termina",
+      "nosotros": "terminamos",
+      "vosotros": "termináis",
+      "ellos": "terminan"
+    }
+  },
+  {
+    "id": 12,
+    "infinitive": "cambiar",
+    "translations": {
+      "ru": "менять",
+      "uk": "змінювати",
+      "en": "to change",
+      "es": "cambiar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "cambio",
+      "tú": "cambias",
+      "él": "cambia",
+      "nosotros": "cambiamos",
+      "vosotros": "cambiáis",
+      "ellos": "cambian"
+    }
+  },
+  {
+    "id": 13,
+    "infinitive": "ayudar",
+    "translations": {
+      "ru": "помогать",
+      "uk": "допомагати",
+      "en": "to help",
+      "es": "ayudar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "ayudo",
+      "tú": "ayudas",
+      "él": "ayuda",
+      "nosotros": "ayudamos",
+      "vosotros": "ayudáis",
+      "ellos": "ayudan"
+    }
+  },
+  {
+    "id": 14,
+    "infinitive": "llamar",
+    "translations": {
+      "ru": "звонить/называть",
+      "uk": "дзвонити/називати",
+      "en": "to call/name",
+      "es": "llamar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "llamo",
+      "tú": "llamas",
+      "él": "llama",
+      "nosotros": "llamamos",
+      "vosotros": "llamáis",
+      "ellos": "llaman"
+    }
+  },
+  {
+    "id": 15,
+    "infinitive": "preguntar",
+    "translations": {
+      "ru": "спрашивать",
+      "uk": "запитувати",
+      "en": "to ask",
+      "es": "preguntar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "pregunto",
+      "tú": "preguntas",
+      "él": "pregunta",
+      "nosotros": "preguntamos",
+      "vosotros": "preguntáis",
+      "ellos": "preguntan"
+    }
+  },
+  {
+    "id": 16,
+    "infinitive": "contestar",
+    "translations": {
+      "ru": "отвечать",
+      "uk": "відповідати",
+      "en": "to answer",
+      "es": "contestar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "contesto",
+      "tú": "contestas",
+      "él": "contesta",
+      "nosotros": "contestamos",
+      "vosotros": "contestáis",
+      "ellos": "contestan"
+    }
+  },
+  {
+    "id": 17,
+    "infinitive": "cocinar",
+    "translations": {
+      "ru": "готовить",
+      "uk": "готувати",
+      "en": "to cook",
+      "es": "cocinar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "cocino",
+      "tú": "cocinas",
+      "él": "cocina",
+      "nosotros": "cocinamos",
+      "vosotros": "cocináis",
+      "ellos": "cocinan"
+    }
+  },
+  {
+    "id": 18,
+    "infinitive": "viajar",
+    "translations": {
+      "ru": "путешествовать",
+      "uk": "подорожувати",
+      "en": "to travel",
+      "es": "viajar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "viajo",
+      "tú": "viajas",
+      "él": "viaja",
+      "nosotros": "viajamos",
+      "vosotros": "viajáis",
+      "ellos": "viajan"
+    }
+  },
+  {
+    "id": 19,
+    "infinitive": "descansar",
+    "translations": {
+      "ru": "отдыхать",
+      "uk": "відпочивати",
+      "en": "to rest",
+      "es": "descansar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "descanso",
+      "tú": "descansas",
+      "él": "descansa",
+      "nosotros": "descansamos",
+      "vosotros": "descansáis",
+      "ellos": "descansan"
+    }
+  },
+  {
+    "id": 20,
+    "infinitive": "gustar",
+    "translations": {
+      "ru": "нравиться",
+      "uk": "подобатися",
+      "en": "to like",
+      "es": "gustar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "gusto",
+      "tú": "gustas",
+      "él": "gusta",
+      "nosotros": "gustamos",
+      "vosotros": "gustáis",
+      "ellos": "gustan"
+    }
+  },
+  {
+    "id": 21,
+    "infinitive": "comer",
+    "translations": {
+      "ru": "есть",
+      "uk": "їсти",
+      "en": "to eat",
+      "es": "comer"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "como",
+      "tú": "comes",
+      "él": "come",
+      "nosotros": "comemos",
+      "vosotros": "coméis",
+      "ellos": "comen"
+    }
+  },
+  {
+    "id": 22,
+    "infinitive": "beber",
+    "translations": {
+      "ru": "пить",
+      "uk": "пити",
+      "en": "to drink",
+      "es": "beber"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "bebo",
+      "tú": "bebes",
+      "él": "bebe",
+      "nosotros": "bebemos",
+      "vosotros": "bebéis",
+      "ellos": "beben"
+    }
+  },
+  {
+    "id": 23,
+    "infinitive": "aprender",
+    "translations": {
+      "ru": "учиться/узнавать",
+      "uk": "вчитися/дізнаватися",
+      "en": "to learn",
+      "es": "aprender"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "aprendo",
+      "tú": "aprendes",
+      "él": "aprende",
+      "nosotros": "aprendemos",
+      "vosotros": "aprendéis",
+      "ellos": "aprenden"
+    }
+  },
+  {
+    "id": 24,
+    "infinitive": "vender",
+    "translations": {
+      "ru": "продавать",
+      "uk": "продавати",
+      "en": "to sell",
+      "es": "vender"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "vendo",
+      "tú": "vendes",
+      "él": "vende",
+      "nosotros": "vendemos",
+      "vosotros": "vendéis",
+      "ellos": "venden"
+    }
+  },
+  {
+    "id": 25,
+    "infinitive": "correr",
+    "translations": {
+      "ru": "бегать",
+      "uk": "бігати",
+      "en": "to run",
+      "es": "correr"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "corro",
+      "tú": "corres",
+      "él": "corre",
+      "nosotros": "corremos",
+      "vosotros": "corréis",
+      "ellos": "corren"
+    }
+  },
+  {
+    "id": 26,
+    "infinitive": "leer",
+    "translations": {
+      "ru": "читать",
+      "uk": "читати",
+      "en": "to read",
+      "es": "leer"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "leo",
+      "tú": "lees",
+      "él": "lee",
+      "nosotros": "leemos",
+      "vosotros": "leéis",
+      "ellos": "leen"
+    }
+  },
+  {
+    "id": 27,
+    "infinitive": "comprender",
+    "translations": {
+      "ru": "понимать",
+      "uk": "розуміти",
+      "en": "to understand",
+      "es": "comprender"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "comprendo",
+      "tú": "comprendes",
+      "él": "comprende",
+      "nosotros": "comprendemos",
+      "vosotros": "comprendéis",
+      "ellos": "comprenden"
+    }
+  },
+  {
+    "id": 28,
+    "infinitive": "responder",
+    "translations": {
+      "ru": "отвечать",
+      "uk": "відповідати",
+      "en": "to answer",
+      "es": "responder"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "respondo",
+      "tú": "respondes",
+      "él": "responde",
+      "nosotros": "respondemos",
+      "vosotros": "respondéis",
+      "ellos": "responden"
+    }
+  },
+  {
+    "id": 29,
+    "infinitive": "deber",
+    "translations": {
+      "ru": "быть должным",
+      "uk": "бути винним/мусити",
+      "en": "must/owe",
+      "es": "deber"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "debo",
+      "tú": "debes",
+      "él": "debe",
+      "nosotros": "debemos",
+      "vosotros": "debéis",
+      "ellos": "deben"
+    }
+  },
+  {
+    "id": 30,
+    "infinitive": "prometer",
+    "translations": {
+      "ru": "обещать",
+      "uk": "обіцяти",
+      "en": "to promise",
+      "es": "prometer"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "prometo",
+      "tú": "prometes",
+      "él": "promete",
+      "nosotros": "prometemos",
+      "vosotros": "prometéis",
+      "ellos": "prometen"
+    }
+  },
+  {
+    "id": 31,
+    "infinitive": "temer",
+    "translations": {
+      "ru": "бояться",
+      "uk": "боятися",
+      "en": "to fear",
+      "es": "temer"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "temo",
+      "tú": "temes",
+      "él": "teme",
+      "nosotros": "tememos",
+      "vosotros": "teméis",
+      "ellos": "temen"
+    }
+  },
+  {
+    "id": 32,
+    "infinitive": "meter",
+    "translations": {
+      "ru": "класть/помещать",
+      "uk": "класти/поміщати",
+      "en": "to put in",
+      "es": "meter"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "meto",
+      "tú": "metes",
+      "él": "mete",
+      "nosotros": "metemos",
+      "vosotros": "metéis",
+      "ellos": "meten"
+    }
+  },
+  {
+    "id": 33,
+    "infinitive": "romper",
+    "translations": {
+      "ru": "ломать",
+      "uk": "ламати",
+      "en": "to break",
+      "es": "romper"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "rompo",
+      "tú": "rompes",
+      "él": "rompe",
+      "nosotros": "rompemos",
+      "vosotros": "rompéis",
+      "ellos": "rompen"
+    }
+  },
+  {
+    "id": 34,
+    "infinitive": "creer",
+    "translations": {
+      "ru": "верить",
+      "uk": "вірити",
+      "en": "to believe",
+      "es": "creer"
+    },
+    "group": "ER",
+    "irregular": false,
+    "present": {
+      "yo": "creo",
+      "tú": "crees",
+      "él": "cree",
+      "nosotros": "creemos",
+      "vosotros": "creéis",
+      "ellos": "creen"
+    }
+  },
+  {
+    "id": 35,
+    "infinitive": "perder",
+    "translations": {
+      "ru": "терять",
+      "uk": "втрачати",
+      "en": "to lose",
+      "es": "perder"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "pierdo",
+      "tú": "pierdes",
+      "él": "pierde",
+      "nosotros": "perdemos",
+      "vosotros": "perdéis",
+      "ellos": "pierden"
+    }
+  },
+  {
+    "id": 36,
+    "infinitive": "entender",
+    "translations": {
+      "ru": "понимать",
+      "uk": "розуміти",
+      "en": "to understand",
+      "es": "entender"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "entiendo",
+      "tú": "entiendes",
+      "él": "entiende",
+      "nosotros": "entendemos",
+      "vosotros": "entendéis",
+      "ellos": "entienden"
+    }
+  },
+  {
+    "id": 37,
+    "infinitive": "querer",
+    "translations": {
+      "ru": "хотеть",
+      "uk": "хотіти",
+      "en": "to want/love",
+      "es": "querer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "quiero",
+      "tú": "quieres",
+      "él": "quiere",
+      "nosotros": "queremos",
+      "vosotros": "queréis",
+      "ellos": "quieren"
+    }
+  },
+  {
+    "id": 38,
+    "infinitive": "poder",
+    "translations": {
+      "ru": "мочь",
+      "uk": "могти",
+      "en": "can/be able",
+      "es": "poder"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "puedo",
+      "tú": "puedes",
+      "él": "puede",
+      "nosotros": "podemos",
+      "vosotros": "podéis",
+      "ellos": "pueden"
+    }
+  },
+  {
+    "id": 39,
+    "infinitive": "tener",
+    "translations": {
+      "ru": "иметь",
+      "uk": "мати",
+      "en": "to have",
+      "es": "tener"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "tengo",
+      "tú": "tienes",
+      "él": "tiene",
+      "nosotros": "tenemos",
+      "vosotros": "tenéis",
+      "ellos": "tienen"
+    }
+  },
+  {
+    "id": 40,
+    "infinitive": "hacer",
+    "translations": {
+      "ru": "делать",
+      "uk": "робити",
+      "en": "to do/make",
+      "es": "hacer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "hago",
+      "tú": "haces",
+      "él": "hace",
+      "nosotros": "hacemos",
+      "vosotros": "hacéis",
+      "ellos": "hacen"
+    }
+  },
+  {
+    "id": 41,
+    "infinitive": "poner",
+    "translations": {
+      "ru": "ставить/класть",
+      "uk": "ставити/класти",
+      "en": "to put",
+      "es": "poner"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "pongo",
+      "tú": "pones",
+      "él": "pone",
+      "nosotros": "ponemos",
+      "vosotros": "ponéis",
+      "ellos": "ponen"
+    }
+  },
+  {
+    "id": 42,
+    "infinitive": "saber",
+    "translations": {
+      "ru": "знать",
+      "uk": "знати",
+      "en": "to know",
+      "es": "saber"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "sé",
+      "tú": "sabes",
+      "él": "sabe",
+      "nosotros": "sabemos",
+      "vosotros": "sabéis",
+      "ellos": "saben"
+    }
+  },
+  {
+    "id": 43,
+    "infinitive": "ver",
+    "translations": {
+      "ru": "видеть",
+      "uk": "бачити",
+      "en": "to see",
+      "es": "ver"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "veo",
+      "tú": "ves",
+      "él": "ve",
+      "nosotros": "vemos",
+      "vosotros": "veis",
+      "ellos": "ven"
+    }
+  },
+  {
+    "id": 44,
+    "infinitive": "conocer",
+    "translations": {
+      "ru": "знать/быть знакомым",
+      "uk": "знати/бути знайомим",
+      "en": "to know/meet",
+      "es": "conocer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "conozco",
+      "tú": "conoces",
+      "él": "conoce",
+      "nosotros": "conocemos",
+      "vosotros": "conocéis",
+      "ellos": "conocen"
+    }
+  },
+  {
+    "id": 45,
+    "infinitive": "parecer",
+    "translations": {
+      "ru": "казаться",
+      "uk": "здаватися",
+      "en": "to seem",
+      "es": "parecer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "parezco",
+      "tú": "pareces",
+      "él": "parece",
+      "nosotros": "parecemos",
+      "vosotros": "parecéis",
+      "ellos": "parecen"
+    }
+  },
+  {
+    "id": 46,
+    "infinitive": "nacer",
+    "translations": {
+      "ru": "рождаться",
+      "uk": "народжуватися",
+      "en": "to be born",
+      "es": "nacer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "nazco",
+      "tú": "naces",
+      "él": "nace",
+      "nosotros": "nacemos",
+      "vosotros": "nacéis",
+      "ellos": "nacen"
+    }
+  },
+  {
+    "id": 47,
+    "infinitive": "crecer",
+    "translations": {
+      "ru": "расти",
+      "uk": "рости",
+      "en": "to grow",
+      "es": "crecer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "crezco",
+      "tú": "creces",
+      "él": "crece",
+      "nosotros": "crecemos",
+      "vosotros": "crecéis",
+      "ellos": "crecen"
+    }
+  },
+  {
+    "id": 48,
+    "infinitive": "traer",
+    "translations": {
+      "ru": "приносить",
+      "uk": "приносити",
+      "en": "to bring",
+      "es": "traer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "traigo",
+      "tú": "traes",
+      "él": "trae",
+      "nosotros": "traemos",
+      "vosotros": "traéis",
+      "ellos": "traen"
+    }
+  },
+  {
+    "id": 49,
+    "infinitive": "caer",
+    "translations": {
+      "ru": "падать",
+      "uk": "падати",
+      "en": "to fall",
+      "es": "caer"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "caigo",
+      "tú": "caes",
+      "él": "cae",
+      "nosotros": "caemos",
+      "vosotros": "caéis",
+      "ellos": "caen"
+    }
+  },
+  {
+    "id": 50,
+    "infinitive": "vivir",
+    "translations": {
+      "ru": "жить",
+      "uk": "жити",
+      "en": "to live",
+      "es": "vivir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "vivo",
+      "tú": "vives",
+      "él": "vive",
+      "nosotros": "vivimos",
+      "vosotros": "vivís",
+      "ellos": "viven"
+    }
+  },
+  {
+    "id": 51,
+    "infinitive": "escribir",
+    "translations": {
+      "ru": "писать",
+      "uk": "писати",
+      "en": "to write",
+      "es": "escribir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "escribo",
+      "tú": "escribes",
+      "él": "escribe",
+      "nosotros": "escribimos",
+      "vosotros": "escribís",
+      "ellos": "escriben"
+    }
+  },
+  {
+    "id": 52,
+    "infinitive": "abrir",
+    "translations": {
+      "ru": "открывать",
+      "uk": "відкривати",
+      "en": "to open",
+      "es": "abrir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "abro",
+      "tú": "abres",
+      "él": "abre",
+      "nosotros": "abrimos",
+      "vosotros": "abrís",
+      "ellos": "abren"
+    }
+  },
+  {
+    "id": 53,
+    "infinitive": "recibir",
+    "translations": {
+      "ru": "получать",
+      "uk": "отримувати",
+      "en": "to receive",
+      "es": "recibir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "recibo",
+      "tú": "recibes",
+      "él": "recibe",
+      "nosotros": "recibimos",
+      "vosotros": "recibís",
+      "ellos": "reciben"
+    }
+  },
+  {
+    "id": 54,
+    "infinitive": "decidir",
+    "translations": {
+      "ru": "решать",
+      "uk": "вирішувати",
+      "en": "to decide",
+      "es": "decidir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "decido",
+      "tú": "decides",
+      "él": "decide",
+      "nosotros": "decidimos",
+      "vosotros": "decidís",
+      "ellos": "deciden"
+    }
+  },
+  {
+    "id": 55,
+    "infinitive": "subir",
+    "translations": {
+      "ru": "подниматься",
+      "uk": "підніматися",
+      "en": "to go up",
+      "es": "subir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "subo",
+      "tú": "subes",
+      "él": "sube",
+      "nosotros": "subimos",
+      "vosotros": "subís",
+      "ellos": "suben"
+    }
+  },
+  {
+    "id": 56,
+    "infinitive": "partir",
+    "translations": {
+      "ru": "отправляться/делить",
+      "uk": "вирушати/ділити",
+      "en": "to leave/split",
+      "es": "partir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "parto",
+      "tú": "partes",
+      "él": "parte",
+      "nosotros": "partimos",
+      "vosotros": "partís",
+      "ellos": "parten"
+    }
+  },
+  {
+    "id": 57,
+    "infinitive": "permitir",
+    "translations": {
+      "ru": "позволять",
+      "uk": "дозволяти",
+      "en": "to allow",
+      "es": "permitir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "permito",
+      "tú": "permites",
+      "él": "permite",
+      "nosotros": "permitimos",
+      "vosotros": "permitís",
+      "ellos": "permiten"
+    }
+  },
+  {
+    "id": 58,
+    "infinitive": "compartir",
+    "translations": {
+      "ru": "делиться",
+      "uk": "ділитися",
+      "en": "to share",
+      "es": "compartir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "comparto",
+      "tú": "compartes",
+      "él": "comparte",
+      "nosotros": "compartimos",
+      "vosotros": "compartís",
+      "ellos": "comparten"
+    }
+  },
+  {
+    "id": 59,
+    "infinitive": "existir",
+    "translations": {
+      "ru": "существовать",
+      "uk": "існувати",
+      "en": "to exist",
+      "es": "existir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "existo",
+      "tú": "existes",
+      "él": "existe",
+      "nosotros": "existimos",
+      "vosotros": "existís",
+      "ellos": "existen"
+    }
+  },
+  {
+    "id": 60,
+    "infinitive": "asistir",
+    "translations": {
+      "ru": "посещать",
+      "uk": "відвідувати",
+      "en": "to attend",
+      "es": "asistir"
+    },
+    "group": "IR",
+    "irregular": false,
+    "present": {
+      "yo": "asisto",
+      "tú": "asistes",
+      "él": "asiste",
+      "nosotros": "asistimos",
+      "vosotros": "asistís",
+      "ellos": "asisten"
+    }
+  },
+  {
+    "id": 61,
+    "infinitive": "decir",
+    "translations": {
+      "ru": "говорить/сказать",
+      "uk": "говорити/сказати",
+      "en": "to say/tell",
+      "es": "decir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "digo",
+      "tú": "dices",
+      "él": "dice",
+      "nosotros": "decimos",
+      "vosotros": "decís",
+      "ellos": "dicen"
+    }
+  },
+  {
+    "id": 62,
+    "infinitive": "ir",
+    "translations": {
+      "ru": "идти/ехать",
+      "uk": "йти/їхати",
+      "en": "to go",
+      "es": "ir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "voy",
+      "tú": "vas",
+      "él": "va",
+      "nosotros": "vamos",
+      "vosotros": "vais",
+      "ellos": "van"
+    }
+  },
+  {
+    "id": 63,
+    "infinitive": "venir",
+    "translations": {
+      "ru": "приходить",
+      "uk": "приходити",
+      "en": "to come",
+      "es": "venir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "vengo",
+      "tú": "vienes",
+      "él": "viene",
+      "nosotros": "venimos",
+      "vosotros": "venís",
+      "ellos": "vienen"
+    }
+  },
+  {
+    "id": 64,
+    "infinitive": "salir",
+    "translations": {
+      "ru": "выходить",
+      "uk": "виходити",
+      "en": "to leave/go out",
+      "es": "salir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "salgo",
+      "tú": "sales",
+      "él": "sale",
+      "nosotros": "salimos",
+      "vosotros": "salís",
+      "ellos": "salen"
+    }
+  },
+  {
+    "id": 65,
+    "infinitive": "seguir",
+    "translations": {
+      "ru": "следовать/продолжать",
+      "uk": "слідувати/продовжувати",
+      "en": "to follow/continue",
+      "es": "seguir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "sigo",
+      "tú": "sigues",
+      "él": "sigue",
+      "nosotros": "seguimos",
+      "vosotros": "seguís",
+      "ellos": "siguen"
+    }
+  },
+  {
+    "id": 66,
+    "infinitive": "pedir",
+    "translations": {
+      "ru": "просить",
+      "uk": "просити",
+      "en": "to ask for",
+      "es": "pedir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "pido",
+      "tú": "pides",
+      "él": "pide",
+      "nosotros": "pedimos",
+      "vosotros": "pedís",
+      "ellos": "piden"
+    }
+  },
+  {
+    "id": 67,
+    "infinitive": "servir",
+    "translations": {
+      "ru": "служить",
+      "uk": "служити",
+      "en": "to serve",
+      "es": "servir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "sirvo",
+      "tú": "sirves",
+      "él": "sirve",
+      "nosotros": "servimos",
+      "vosotros": "servís",
+      "ellos": "sirven"
+    }
+  },
+  {
+    "id": 68,
+    "infinitive": "dormir",
+    "translations": {
+      "ru": "спать",
+      "uk": "спати",
+      "en": "to sleep",
+      "es": "dormir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "duermo",
+      "tú": "duermes",
+      "él": "duerme",
+      "nosotros": "dormimos",
+      "vosotros": "dormís",
+      "ellos": "duermen"
+    }
+  },
+  {
+    "id": 69,
+    "infinitive": "preferir",
+    "translations": {
+      "ru": "предпочитать",
+      "uk": "надавати перевагу",
+      "en": "to prefer",
+      "es": "preferir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "prefiero",
+      "tú": "prefieres",
+      "él": "prefiere",
+      "nosotros": "preferimos",
+      "vosotros": "preferís",
+      "ellos": "prefieren"
+    }
+  },
+  {
+    "id": 70,
+    "infinitive": "sentir",
+    "translations": {
+      "ru": "чувствовать",
+      "uk": "відчувати",
+      "en": "to feel",
+      "es": "sentir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "siento",
+      "tú": "sientes",
+      "él": "siente",
+      "nosotros": "sentimos",
+      "vosotros": "sentís",
+      "ellos": "sienten"
+    }
+  },
+  {
+    "id": 71,
+    "infinitive": "repetir",
+    "translations": {
+      "ru": "повторять",
+      "uk": "повторювати",
+      "en": "to repeat",
+      "es": "repetir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "repito",
+      "tú": "repites",
+      "él": "repite",
+      "nosotros": "repetimos",
+      "vosotros": "repetís",
+      "ellos": "repiten"
+    }
+  },
+  {
+    "id": 72,
+    "infinitive": "convertir",
+    "translations": {
+      "ru": "превращать",
+      "uk": "перетворювати",
+      "en": "to convert",
+      "es": "convertir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "convierto",
+      "tú": "conviertes",
+      "él": "convierte",
+      "nosotros": "convertimos",
+      "vosotros": "convertís",
+      "ellos": "convierten"
+    }
+  },
+  {
+    "id": 73,
+    "infinitive": "morir",
+    "translations": {
+      "ru": "умирать",
+      "uk": "помирати",
+      "en": "to die",
+      "es": "morir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "muero",
+      "tú": "mueres",
+      "él": "muere",
+      "nosotros": "morimos",
+      "vosotros": "morís",
+      "ellos": "mueren"
+    }
+  },
+  {
+    "id": 74,
+    "infinitive": "jugar",
+    "translations": {
+      "ru": "играть",
+      "uk": "грати",
+      "en": "to play",
+      "es": "jugar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "juego",
+      "tú": "juegas",
+      "él": "juega",
+      "nosotros": "jugamos",
+      "vosotros": "jugáis",
+      "ellos": "juegan"
+    }
+  },
+  {
+    "id": 75,
+    "infinitive": "pensar",
+    "translations": {
+      "ru": "думать",
+      "uk": "думати",
+      "en": "to think",
+      "es": "pensar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "pienso",
+      "tú": "piensas",
+      "él": "piensa",
+      "nosotros": "pensamos",
+      "vosotros": "pensáis",
+      "ellos": "piensan"
+    }
+  },
+  {
+    "id": 76,
+    "infinitive": "encontrar",
+    "translations": {
+      "ru": "находить",
+      "uk": "знаходити",
+      "en": "to find",
+      "es": "encontrar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "encuentro",
+      "tú": "encuentras",
+      "él": "encuentra",
+      "nosotros": "encontramos",
+      "vosotros": "encontráis",
+      "ellos": "encuentran"
+    }
+  },
+  {
+    "id": 77,
+    "infinitive": "volver",
+    "translations": {
+      "ru": "возвращаться",
+      "uk": "повертатися",
+      "en": "to return",
+      "es": "volver"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "vuelvo",
+      "tú": "vuelves",
+      "él": "vuelve",
+      "nosotros": "volvemos",
+      "vosotros": "volvéis",
+      "ellos": "vuelven"
+    }
+  },
+  {
+    "id": 78,
+    "infinitive": "llegar",
+    "translations": {
+      "ru": "прибывать",
+      "uk": "прибувати",
+      "en": "to arrive",
+      "es": "llegar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "llego",
+      "tú": "llegas",
+      "él": "llega",
+      "nosotros": "llegamos",
+      "vosotros": "llegáis",
+      "ellos": "llegan"
+    }
+  },
+  {
+    "id": 79,
+    "infinitive": "empezar",
+    "translations": {
+      "ru": "начинать",
+      "uk": "починати",
+      "en": "to begin",
+      "es": "empezar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "empiezo",
+      "tú": "empiezas",
+      "él": "empieza",
+      "nosotros": "empezamos",
+      "vosotros": "empezáis",
+      "ellos": "empiezan"
+    }
+  },
+  {
+    "id": 80,
+    "infinitive": "cerrar",
+    "translations": {
+      "ru": "закрывать",
+      "uk": "закривати",
+      "en": "to close",
+      "es": "cerrar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "cierro",
+      "tú": "cierras",
+      "él": "cierra",
+      "nosotros": "cerramos",
+      "vosotros": "cerráis",
+      "ellos": "cierran"
+    }
+  },
+  {
+    "id": 81,
+    "infinitive": "mostrar",
+    "translations": {
+      "ru": "показывать",
+      "uk": "показувати",
+      "en": "to show",
+      "es": "mostrar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "muestro",
+      "tú": "muestras",
+      "él": "muestra",
+      "nosotros": "mostramos",
+      "vosotros": "mostráis",
+      "ellos": "muestran"
+    }
+  },
+  {
+    "id": 82,
+    "infinitive": "recordar",
+    "translations": {
+      "ru": "помнить",
+      "uk": "пам'ятати",
+      "en": "to remember",
+      "es": "recordar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "recuerdo",
+      "tú": "recuerdas",
+      "él": "recuerda",
+      "nosotros": "recordamos",
+      "vosotros": "recordáis",
+      "ellos": "recuerdan"
+    }
+  },
+  {
+    "id": 83,
+    "infinitive": "contar",
+    "translations": {
+      "ru": "считать/рассказывать",
+      "uk": "рахувати/розповідати",
+      "en": "to count/tell",
+      "es": "contar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "cuento",
+      "tú": "cuentas",
+      "él": "cuenta",
+      "nosotros": "contamos",
+      "vosotros": "contáis",
+      "ellos": "cuentan"
+    }
+  },
+  {
+    "id": 84,
+    "infinitive": "dar",
+    "translations": {
+      "ru": "давать",
+      "uk": "давати",
+      "en": "to give",
+      "es": "dar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "doy",
+      "tú": "das",
+      "él": "da",
+      "nosotros": "damos",
+      "vosotros": "dais",
+      "ellos": "dan"
+    }
+  },
+  {
+    "id": 85,
+    "infinitive": "estar",
+    "translations": {
+      "ru": "быть/находиться",
+      "uk": "бути/перебувати",
+      "en": "to be",
+      "es": "estar"
+    },
+    "group": "AR",
+    "irregular": true,
+    "present": {
+      "yo": "estoy",
+      "tú": "estás",
+      "él": "está",
+      "nosotros": "estamos",
+      "vosotros": "estáis",
+      "ellos": "están"
+    }
+  },
+  {
+    "id": 86,
+    "infinitive": "llevar",
+    "translations": {
+      "ru": "нести/носить",
+      "uk": "нести/носити",
+      "en": "to carry/wear",
+      "es": "llevar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "llevo",
+      "tú": "llevas",
+      "él": "lleva",
+      "nosotros": "llevamos",
+      "vosotros": "lleváis",
+      "ellos": "llevan"
+    }
+  },
+  {
+    "id": 87,
+    "infinitive": "dejar",
+    "translations": {
+      "ru": "оставлять",
+      "uk": "залишати",
+      "en": "to leave/let",
+      "es": "dejar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "dejo",
+      "tú": "dejas",
+      "él": "deja",
+      "nosotros": "dejamos",
+      "vosotros": "dejáis",
+      "ellos": "dejan"
+    }
+  },
+  {
+    "id": 88,
+    "infinitive": "tomar",
+    "translations": {
+      "ru": "брать/принимать",
+      "uk": "брати/приймати",
+      "en": "to take/drink",
+      "es": "tomar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "tomo",
+      "tú": "tomas",
+      "él": "toma",
+      "nosotros": "tomamos",
+      "vosotros": "tomáis",
+      "ellos": "toman"
+    }
+  },
+  {
+    "id": 89,
+    "infinitive": "pasar",
+    "translations": {
+      "ru": "проходить/проводить",
+      "uk": "проходити/проводити",
+      "en": "to pass/spend",
+      "es": "pasar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "paso",
+      "tú": "pasas",
+      "él": "pasa",
+      "nosotros": "pasamos",
+      "vosotros": "pasáis",
+      "ellos": "pasan"
+    }
+  },
+  {
+    "id": 90,
+    "infinitive": "buscar",
+    "translations": {
+      "ru": "искать",
+      "uk": "шукати",
+      "en": "to look for",
+      "es": "buscar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "busco",
+      "tú": "buscas",
+      "él": "busca",
+      "nosotros": "buscamos",
+      "vosotros": "buscáis",
+      "ellos": "buscan"
+    }
+  },
+  {
+    "id": 91,
+    "infinitive": "cantar",
+    "translations": {
+      "ru": "петь",
+      "uk": "співати",
+      "en": "to sing",
+      "es": "cantar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "canto",
+      "tú": "cantas",
+      "él": "canta",
+      "nosotros": "cantamos",
+      "vosotros": "cantáis",
+      "ellos": "cantan"
+    }
+  },
+  {
+    "id": 92,
+    "infinitive": "bailar",
+    "translations": {
+      "ru": "танцевать",
+      "uk": "танцювати",
+      "en": "to dance",
+      "es": "bailar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "bailo",
+      "tú": "bailas",
+      "él": "baila",
+      "nosotros": "bailamos",
+      "vosotros": "bailáis",
+      "ellos": "bailan"
+    }
+  },
+  {
+    "id": 93,
+    "infinitive": "preparar",
+    "translations": {
+      "ru": "готовить/подготавливать",
+      "uk": "готувати/підготовлювати",
+      "en": "to prepare",
+      "es": "preparar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "preparo",
+      "tú": "preparas",
+      "él": "prepara",
+      "nosotros": "preparamos",
+      "vosotros": "preparáis",
+      "ellos": "preparan"
+    }
+  },
+  {
+    "id": 94,
+    "infinitive": "enseñar",
+    "translations": {
+      "ru": "учить/показывать",
+      "uk": "навчати/показувати",
+      "en": "to teach/show",
+      "es": "enseñar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "enseño",
+      "tú": "enseñas",
+      "él": "enseña",
+      "nosotros": "enseñamos",
+      "vosotros": "enseñáis",
+      "ellos": "enseñan"
+    }
+  },
+  {
+    "id": 95,
+    "infinitive": "ganar",
+    "translations": {
+      "ru": "выигрывать/зарабатывать",
+      "uk": "вигравати/заробляти",
+      "en": "to win/earn",
+      "es": "ganar"
+    },
+    "group": "AR",
+    "irregular": false,
+    "present": {
+      "yo": "gano",
+      "tú": "ganas",
+      "él": "gana",
+      "nosotros": "ganamos",
+      "vosotros": "ganáis",
+      "ellos": "ganan"
+    }
+  },
+  {
+    "id": 96,
+    "infinitive": "conducir",
+    "translations": {
+      "ru": "водить",
+      "uk": "керувати автомобілем",
+      "en": "to drive",
+      "es": "conducir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "conduzco",
+      "tú": "conduces",
+      "él": "conduce",
+      "nosotros": "conducimos",
+      "vosotros": "conducís",
+      "ellos": "conducen"
+    }
+  },
+  {
+    "id": 97,
+    "infinitive": "oír",
+    "translations": {
+      "ru": "слышать",
+      "uk": "чути",
+      "en": "to hear",
+      "es": "oír"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "oigo",
+      "tú": "oyes",
+      "él": "oye",
+      "nosotros": "oímos",
+      "vosotros": "oís",
+      "ellos": "oyen"
+    }
+  },
+  {
+    "id": 98,
+    "infinitive": "elegir",
+    "translations": {
+      "ru": "выбирать",
+      "uk": "обирати",
+      "en": "to choose",
+      "es": "elegir"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "elijo",
+      "tú": "eliges",
+      "él": "elige",
+      "nosotros": "elegimos",
+      "vosotros": "elegís",
+      "ellos": "eligen"
+    }
+  },
+  {
+    "id": 99,
+    "infinitive": "reír",
+    "translations": {
+      "ru": "смеяться",
+      "uk": "сміятися",
+      "en": "to laugh",
+      "es": "reír"
+    },
+    "group": "IR",
+    "irregular": true,
+    "present": {
+      "yo": "río",
+      "tú": "ríes",
+      "él": "ríe",
+      "nosotros": "reímos",
+      "vosotros": "reís",
+      "ellos": "ríen"
+    }
+  },
+  {
+    "id": 100,
+    "infinitive": "ser",
+    "translations": {
+      "ru": "быть",
+      "uk": "бути",
+      "en": "to be",
+      "es": "ser"
+    },
+    "group": "ER",
+    "irregular": true,
+    "present": {
+      "yo": "soy",
+      "tú": "eres",
+      "él": "es",
+      "nosotros": "somos",
+      "vosotros": "sois",
+      "ellos": "son"
+    }
+  }
 ]
