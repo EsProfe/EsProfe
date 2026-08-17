@@ -1,4 +1,15 @@
 # Changelog
+## [v0.5.2] - 2026-08-14
+
+### Changed
+
+- Extracted the stem-changing conjugation diagram into a dedicated `js/stem-diagram.js` component.
+- Kept stem-changing lesson data and training logic in `js/irregular-grammar.js` while separating presentation from lesson behavior.
+- Reworked the diagram markup so each conjugated form is rendered as one intact word instead of splitting the root and ending into separate lines.
+- Scoped the diagram typography and responsive sizing to the stem-changing component.
+- Kept the rest of the grammar section unchanged; the 2-column × 3-row layout applies only to the stem-changing diagram.
+- Kept Enter key support and the existing three stem-change patterns compatible with the previous version.
+
 ## [v0.5.1] - 2026-08-14
 
 ### Changed
