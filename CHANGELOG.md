@@ -1,4 +1,15 @@
 # Changelog
+## [v0.5.3] - 2026-08-17
+
+### Fixed
+
+- Rebuilt the stem-changing diagram layout using a dedicated `css/stem-diagram.css` file instead of changing the global grammar layout.
+- Fixed the infinitive so it renders as one intact word (`pensar`) with only the root vowel highlighted green.
+- Fixed the conjugated forms so `pienso`, `piensas`, `piensa`, `pensamos`, `pensáis` and `piensan` remain intact words.
+- Replaced the previous CSS boot outline with a dedicated SVG outline to keep the boot shape stable at different sizes.
+- Kept the 2-column × 3-row structure limited to the stem-changing diagram.
+- Kept the existing lesson and practice logic unchanged.
+
 ## [v0.5.2] - 2026-08-14
 
 ### Changed
