@@ -1,4 +1,17 @@
 # Changelog
+## [v0.5.1] - 2026-08-14
+
+### Changed
+
+- Reworked the stem-changing verb visualization into the agreed 2-column × 3-row structure: singular/plural columns and first/second/third person rows.
+- The four changing forms are grouped visually: yo, tú, él/ella/usted and ellos/ellas/ustedes.
+- Nosotros and vosotros remain outside the boot group.
+- Highlighted the unchanged root vowel in nosotros and vosotros in green.
+- Added green arrows connecting the root vowel in nosotros/vosotros with the same vowel in the infinitive.
+- Added the explanatory note that the root vowel in nosotros and vosotros remains the same as in the infinitive.
+- Added the note that present-tense endings remain regular.
+- Kept the lesson logic, three stem-change patterns and six-question practice mode compatible with the previous version.
+
 ## [v0.5.0] - 2026-08-14
 
 ### Added
