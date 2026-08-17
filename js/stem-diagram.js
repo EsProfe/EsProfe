@@ -1,10 +1,6 @@
 "use strict";
 
-/*
- * EsProfe — stem-changing verb diagram component.
- * The component is intentionally isolated from the lesson logic so the
- * conjugation lesson can change without changing the visual diagram.
- */
+/* EsProfe — visual component for stem-changing verb lessons. */
 (function () {
   function highlightFirst(text, value, className) {
     const index = text.indexOf(value);
@@ -22,22 +18,24 @@
   }
 
   window.renderStemDiagram = function renderStemDiagram(lesson, texts) {
+    const infinitive = highlightFirst(lesson.verb, lesson.rootVowel, "stem-root-vowel");
+
     return `
       <div class="stem-diagram" aria-label="Схема спряжения ${lesson.verb}">
         <div class="stem-infinitive">
-          <span>${highlightFirst(lesson.verb, lesson.rootVowel, "stem-root-vowel")}</span>
+          <span class="stem-word">${infinitive}</span>
           <small>(инфинитив)</small>
         </div>
 
         <div class="stem-arrows" aria-hidden="true">
-          <svg viewBox="0 0 700 120" preserveAspectRatio="none">
+          <svg viewBox="0 0 1000 360" preserveAspectRatio="none">
             <defs>
-              <marker id="stemArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <marker id="stemArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
                 <path d="M 0 0 L 10 5 L 0 10 z"></path>
               </marker>
             </defs>
-            <path d="M545 112 C540 75 520 45 410 12" marker-end="url(#stemArrow)"></path>
-            <path d="M625 112 C620 72 585 40 440 12" marker-end="url(#stemArrow)"></path>
+            <path d="M700 300 C700 220 625 145 535 72" marker-end="url(#stemArrow)"></path>
+            <path d="M830 355 C825 250 700 145 555 72" marker-end="url(#stemArrow)"></path>
           </svg>
         </div>
 
@@ -54,7 +52,9 @@
           <div class="boot-cell changed-cell">${renderCell(lesson, 2, true)}</div>
           <div class="boot-cell changed-cell">${renderCell(lesson, 5, true)}</div>
 
-          <div class="boot-outline" aria-hidden="true"></div>
+          <svg class="boot-outline-svg" viewBox="0 0 1000 330" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M35 18 C15 28 14 45 18 70 L18 282 C18 305 34 317 58 318 L520 318 C548 318 560 303 560 280 L560 238 L960 238 C982 238 990 225 990 204 L990 178 C990 160 979 151 960 151 L560 151" />
+          </svg>
         </div>
 
         <div class="boot-note">
