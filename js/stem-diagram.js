@@ -55,25 +55,19 @@
           <div class="stem-column-heading">Множественное число</div>
         </div>
 
-        <div class="stem-body">
-          <div class="stem-row-labels" aria-hidden="true">
-            <div><strong>1-е лицо</strong><small>(yo)</small></div>
-            <div><strong>2-е лицо</strong><small>(tú)</small></div>
-            <div><strong>3-е лицо</strong><small>(él / ella / usted)</small></div>
-          </div>
+        <div class="boot-grid">
+          <div class="boot-cell changed-cell">${renderCell(lesson, 0, true)}</div>
+          <div class="boot-cell unchanged-cell">${renderCell(lesson, 3, false)}</div>
 
-          <div class="boot-grid">
-            <div class="boot-cell changed-cell">${renderCell(lesson, 0, true)}</div>
-            <div class="boot-cell unchanged-cell">${renderCell(lesson, 3, false)}</div>
-            <div class="boot-cell changed-cell">${renderCell(lesson, 1, true)}</div>
-            <div class="boot-cell unchanged-cell">${renderCell(lesson, 4, false)}</div>
-            <div class="boot-cell changed-cell">${renderCell(lesson, 2, true)}</div>
-            <div class="boot-cell changed-cell">${renderCell(lesson, 5, true)}</div>
+          <div class="boot-cell changed-cell">${renderCell(lesson, 1, true)}</div>
+          <div class="boot-cell unchanged-cell">${renderCell(lesson, 4, false)}</div>
 
-            <svg class="boot-outline-svg" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M38 12 C18 22 16 42 18 70 L18 238 C18 262 35 276 60 278 L510 278 C540 278 552 262 552 238 L552 210 L962 210 C982 210 990 196 990 177 L990 166 C990 146 978 134 958 134 L552 134" />
-            </svg>
-          </div>
+          <div class="boot-cell changed-cell">${renderCell(lesson, 2, true)}</div>
+          <div class="boot-cell changed-cell">${renderCell(lesson, 5, true)}</div>
+
+          <svg class="boot-outline-svg" viewBox="0 0 1000 330" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M32 12 C16 20 12 34 14 55 L14 274 C14 298 30 316 55 318 L510 318 C535 318 548 304 548 280 L548 224 L962 224 C982 224 990 212 990 194 L990 176 C990 158 979 146 960 146 L548 146" />
+          </svg>
         </div>
 
         <div class="boot-note">
