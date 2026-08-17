@@ -1,4 +1,15 @@
 # Changelog
+## [v0.6.0] - 2026-08-17
+
+### Changed
+
+- Replaced the fragile HTML/CSS boot visualization with three fixed SVG lesson diagrams.
+- Added one diagram per stem-changing group: `e → ie`, `o → ue`, and `e → i`.
+- The selected diagram is displayed directly below the corresponding stem-change button.
+- Kept the practice logic, six-question assessment, Enter key support and progress recording unchanged.
+- Kept the two-column × three-row layout isolated to these visual diagrams only.
+- The SVG diagrams scale proportionally instead of being rearranged by responsive CSS.
+
 ## [v0.5.5] - 2026-08-17
 
 ### Fixed
