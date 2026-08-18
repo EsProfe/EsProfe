@@ -1,0 +1,28 @@
+{
+  "present-review": {
+    "title": "Повторение presente",
+    "level": "B1",
+    "explanation": {
+      "title": "Presente de indicativo",
+      "text": "В B1 важно уверенно использовать presente: привычные действия, факты, ситуации сейчас и ближайшие планы, если они выражаются настоящим временем.",
+      "examples": [
+        "Trabajo en Alicante.",
+        "Normalmente estudio por la tarde.",
+        "Ahora vivimos en España.",
+        "Mañana salimos temprano."
+      ]
+    },
+    "practice": [
+      {"prompt":"Yo ___ español todos los días.","answer":"estudio"},
+      {"prompt":"Nosotros ___ en España.","answer":"vivimos"},
+      {"prompt":"Ellos ___ mucho trabajo hoy.","answer":"tienen"}
+    ],
+    "assessment": [
+      {"prompt":"Tú ___ español muy bien.","answer":"hablas"},
+      {"prompt":"Nosotros ___ a las ocho.","answer":"comemos"},
+      {"prompt":"Ella ___ en Alicante.","answer":"vive"},
+      {"prompt":"Yo ___ la respuesta.","answer":"sé"},
+      {"prompt":"Ellos ___ mañana.","answer":"salen"}
+    ]
+  }
+}
