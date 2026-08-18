@@ -1,4 +1,23 @@
 # Changelog
+## [v0.7.1] - 2026-08-18
+
+### Added
+
+- Connected the structured B1 curriculum to the Grammar interface.
+- Added `B1 · маршрут` / localized B1 route entry to the Grammar submenu.
+- Added `js/b1-curriculum.js` as a separate B1 curriculum UI layer.
+- Added `css/b1-curriculum.css` for B1 module/topic cards and the lesson-flow display.
+- B1 curriculum is loaded from `data/curriculum-b1.json` at runtime.
+- Added localized B1 menu labels for RU, UK, EN and ES.
+- Added a clear module → topic structure so individual B1 topics can be connected to lessons and trainers later without rewriting the grammar engine.
+
+### Architecture
+
+- Kept the existing `grammar.js` lessons and stem-changing trainer isolated.
+- Kept the B1 curriculum data separate from UI code.
+- Kept B1 UI separate from the existing grammar renderer.
+- Static images remain supported as ordinary lesson assets.
+
 ## [v0.7.0] - 2026-08-18
 
 ### Added
@@ -25,15 +44,3 @@
 - Kept the practice logic, six-question assessment, Enter key support and progress recording unchanged.
 - Kept the two-column × three-row layout isolated to these visual diagrams only.
 - The SVG diagrams scale proportionally instead of being rearranged by responsive CSS.
-
-## [v0.5.5] - 2026-08-17
-
-### Fixed
-
-- Corrected the stem-changing diagram to use exactly two columns: singular and plural.
-- Removed the extra separate 1st/2nd/3rd-person label column that was causing the diagram to differ from the approved scheme.
-- Kept the three person rows inside the six conjugation cells themselves.
-- Corrected the boot outline so it surrounds exactly `yo`, `tú`, `él/ella/usted` and `ellos/ellas/ustedes`.
-- Kept `nosotros` and `vosotros` outside the boot.
-- Kept the green root-vowel highlighting and green arrows to the infinitive.
-- Kept all conjugated forms intact and left the rest of Grammar unchanged.
