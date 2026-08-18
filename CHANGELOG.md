@@ -1,4 +1,20 @@
 # Changelog
+## [v0.7.0] - 2026-08-18
+
+### Added
+
+- Added `data/curriculum-b1.json` as the first structured B1 curriculum map.
+- Defined a common lesson flow: explanation → examples → practice → trainer → assessment → result → review.
+- Added B1 module structure for grammar, vocabulary, skills and assessment.
+- Added planned B1 topics for past tenses, future, conditional, imperative, pronouns, essential subjunctive, por/para, prepositions, comparisons, connectors and B1 skills.
+- Added explicit weak-spots/review stage to the B1 learning route.
+
+### Project direction
+
+- B1 launch target: three weeks.
+- Static instructional images are now treated as normal lesson assets; they do not need to be interactive.
+- Existing functionality remains the base; the project is extended rather than rewritten.
+
 ## [v0.6.0] - 2026-08-17
 
 ### Changed
@@ -21,27 +37,3 @@
 - Kept `nosotros` and `vosotros` outside the boot.
 - Kept the green root-vowel highlighting and green arrows to the infinitive.
 - Kept all conjugated forms intact and left the rest of Grammar unchanged.
-
-## [v0.5.4] - 2026-08-17
-
-### Fixed
-
-- Finalized the stem-changing diagram to match the approved visual layout.
-- Kept the diagram as a dedicated component and did not change the layout of the rest of the Grammar section.
-- Added a clear singular/plural two-column structure with three person rows.
-- Added separate person labels beside the three rows for readability.
-- Kept the red boot outline around exactly the four stem-changing forms.
-- Kept `nosotros` and `vosotros` outside the boot while highlighting their unchanged root vowel in green.
-- Kept the two green arrows connected to the infinitive's root vowel.
-- Kept all conjugated forms as intact words and preserved responsive sizing.
-
-## [v0.5.3] - 2026-08-17
-
-### Fixed
-
-- Rebuilt the stem-changing diagram layout using a dedicated `css/stem-diagram.css` file instead of changing the global grammar layout.
-- Fixed the infinitive so it renders as one intact word (`pensar`) with only the root vowel highlighted green.
-- Fixed the conjugated forms so `pienso`, `piensas`, `piensa`, `pensamos`, `pensáis` and `piensan` remain intact words.
-- Replaced the previous CSS boot outline with a dedicated SVG outline to keep the boot shape stable at different sizes.
-- Kept the 2-column × 3-row structure limited to the stem-changing diagram.
-- Kept the existing lesson and practice logic unchanged.
