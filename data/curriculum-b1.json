@@ -1,0 +1,105 @@
+{
+  "version": "0.1.0",
+  "level": "B1",
+  "title": "Español B1",
+  "description": "Учебный маршрут B1: грамматика, лексика, практика, тренажёры и контроль.",
+  "lessonFlow": ["explanation", "examples", "practice", "trainer", "assessment", "result", "review"],
+  "modules": [
+    {
+      "id": "b1-grammar-01",
+      "title": "Presente y usos avanzados",
+      "topics": [
+        {"id": "present-review", "title": "Повторение presente", "status": "planned"},
+        {"id": "stem-changing", "title": "Отклоняющиеся глаголы", "status": "in-progress"},
+        {"id": "irregular-present", "title": "Неправильные глаголы в presente", "status": "planned"},
+        {"id": "reflexive", "title": "Возвратные глаголы", "status": "planned"},
+        {"id": "periphrases", "title": "Глагольные перифразы", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-grammar-02",
+      "title": "Pasado",
+      "topics": [
+        {"id": "preterite", "title": "Pretérito perfecto simple", "status": "planned"},
+        {"id": "imperfect", "title": "Pretérito imperfecto", "status": "planned"},
+        {"id": "perfect", "title": "Pretérito perfecto compuesto", "status": "planned"},
+        {"id": "past-contrast", "title": "Выбор прошедшего времени", "status": "planned"},
+        {"id": "past-narrative", "title": "Рассказ о прошлом", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-grammar-03",
+      "title": "Futuro y condicional",
+      "topics": [
+        {"id": "future", "title": "Futuro simple", "status": "planned"},
+        {"id": "future-uses", "title": "Употребление futuro", "status": "planned"},
+        {"id": "conditional", "title": "Condicional simple", "status": "planned"},
+        {"id": "future-periphrases", "title": "Ir a + infinitivo и другие конструкции", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-grammar-04",
+      "title": "Imperativo y pronombres",
+      "topics": [
+        {"id": "affirmative-imperative", "title": "Imperativo afirmativo", "status": "planned"},
+        {"id": "negative-imperative", "title": "Imperativo negativo", "status": "planned"},
+        {"id": "object-pronouns", "title": "Прямые и косвенные местоимения", "status": "planned"},
+        {"id": "pronoun-position", "title": "Положение местоимений", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-grammar-05",
+      "title": "Subjuntivo esencial B1",
+      "topics": [
+        {"id": "present-subjunctive", "title": "Presente de subjuntivo", "status": "planned"},
+        {"id": "subjunctive-wishes", "title": "Желания, просьбы и рекомендации", "status": "planned"},
+        {"id": "subjunctive-doubt", "title": "Сомнение и эмоции", "status": "planned"},
+        {"id": "subjunctive-connectors", "title": "Конструкции с que", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-grammar-06",
+      "title": "Связующие конструкции",
+      "topics": [
+        {"id": "por-para", "title": "Por y para", "status": "planned"},
+        {"id": "prepositions", "title": "Основные предлоги", "status": "planned"},
+        {"id": "comparatives", "title": "Comparativos y superlativos", "status": "planned"},
+        {"id": "connectors", "title": "Связки для речи B1", "status": "planned"},
+        {"id": "word-order", "title": "Порядок слов", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-vocabulary",
+      "title": "Лексика B1",
+      "topics": [
+        {"id": "daily-life", "title": "Повседневная жизнь", "status": "planned"},
+        {"id": "work-study", "title": "Работа и обучение", "status": "planned"},
+        {"id": "travel", "title": "Путешествия и услуги", "status": "planned"},
+        {"id": "health", "title": "Здоровье", "status": "planned"},
+        {"id": "society", "title": "Общество и окружающая среда", "status": "planned"},
+        {"id": "opinions", "title": "Мнения и аргументация", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-skills",
+      "title": "Навыки B1",
+      "topics": [
+        {"id": "reading", "title": "Comprensión lectora", "status": "planned"},
+        {"id": "listening", "title": "Comprensión auditiva", "status": "planned"},
+        {"id": "writing", "title": "Expresión escrita", "status": "planned"},
+        {"id": "speaking", "title": "Expresión oral", "status": "planned"},
+        {"id": "mixed-review", "title": "Смешанное повторение B1", "status": "planned"}
+      ]
+    },
+    {
+      "id": "b1-assessment",
+      "title": "Контроль B1",
+      "topics": [
+        {"id": "grammar-check", "title": "Контроль грамматики", "status": "planned"},
+        {"id": "vocabulary-check", "title": "Контроль лексики", "status": "planned"},
+        {"id": "mixed-test", "title": "Итоговый тест B1", "status": "planned"},
+        {"id": "weak-spots", "title": "Повтор слабых мест", "status": "planned"}
+      ]
+    }
+  ]
+}
