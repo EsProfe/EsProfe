@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
-<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2f9e44"/></marker></defs>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2f9e44"/></marker></defs>
 <rect width="1200" height="900" rx="28" fill="#fff"/>
 <text x="48" y="62" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#172033">pensar — e → <tspan fill="#2f9e44">ie</tspan></text>
 <text x="48" y="100" font-family="Arial,sans-serif" font-size="21" fill="#334155">La vocal de la raíz <tspan font-weight="700">e</tspan> cambia a <tspan fill="#2f9e44" font-weight="700">ie</tspan> en cuatro formas. Nosotros y vosotros mantienen la raíz.</text>
 <rect x="485" y="132" width="230" height="120" rx="18" fill="#f4fff0" stroke="#a8d88e" stroke-width="2"/>
 <text x="600" y="187" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700">p<tspan fill="#2f9e44">e</tspan>nsar</text>
 <text x="600" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#64748b">(инфинитив)</text>
-<path d="M530 255 C535 310 470 330 400 365" fill="none" stroke="#2f9e44" stroke-width="4" marker-end="url(#a)"/>
-<path d="M670 255 C675 310 760 330 800 365" fill="none" stroke="#2f9e44" stroke-width="4" marker-end="url(#a)"/>
+<path d="M650 450 C645 355 625 285 610 225" fill="none" stroke="#2f9e44" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M650 585 C655 430 630 300 610 225" fill="none" stroke="#2f9e44" stroke-width="4" marker-end="url(#arrow)"/>
 <rect x="75" y="300" width="510" height="52" rx="12" fill="#f1f6ff" stroke="#c7d9f7"/>
 <rect x="615" y="300" width="510" height="52" rx="12" fill="#f1f6ff" stroke="#c7d9f7"/>
 <text x="330" y="335" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#2457a6">Единственное число</text>
@@ -23,7 +23,8 @@
 <text x="330" y="585" font-size="34" font-weight="700">p<tspan fill="#d62828">ie</tspan>nsas</text><text x="870" y="585" font-size="34" font-weight="700">p<tspan fill="#2f9e44">e</tspan>nsáis</text>
 <text x="330" y="720" font-size="34" font-weight="700">p<tspan fill="#d62828">ie</tspan>nsa</text><text x="870" y="720" font-size="34" font-weight="700">p<tspan fill="#d62828">ie</tspan>nsan</text>
 </g>
-<path d="M92 355 C72 370 72 390 72 420 L72 710 C72 755 100 782 145 782 L545 782 C580 782 595 760 595 730 L595 650 L1080 650 C1115 650 1135 630 1135 600 L1135 590 C1135 565 1115 545 1080 545 L595 545" fill="none" stroke="#e62b2b" stroke-width="6" stroke-linejoin="round"/>
+<!-- Контур «сапожка»: четыре изменяющиеся формы: yo, tú, él/ella/usted и ellos/ellas/ustedes -->
+<path d="M95 355 C78 365 72 380 72 405 L72 720 C72 755 98 782 135 782 L1080 782 C1118 782 1140 760 1140 725 L1140 670 C1140 645 1120 625 1090 625 L595 625 L595 390 C595 370 580 355 560 355 Z" fill="none" stroke="#e62b2b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="90" y="805" width="1020" height="62" rx="14" fill="#fff7e8"/>
 <text x="110" y="832" font-family="Arial,sans-serif" font-size="17" fill="#7a4b00"><tspan font-weight="700">Nosotros y vosotros:</tspan> la vocal de la raíz se mantiene igual que en el infinitivo.</text>
 <text x="110" y="855" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#7a4b00">Las terminaciones siguen siendo las normales del presente.</text>
