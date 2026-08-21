@@ -1,0 +1,174 @@
+{
+  "version": "0.1.0",
+  "level": "A1",
+  "title": "Español A1",
+  "description": "Полный учебный маршрут A1: основы, грамматика, лексика, практика, тренажёры, навыки и контроль.",
+  "lessonFlow": ["explanation", "examples", "practice", "trainer", "assessment", "result", "review"],
+  "modules": [
+    {
+      "id": "a1-foundations-01",
+      "title": "Старт и базовые основы",
+      "topics": [
+        {"id": "alphabet-pronunciation", "title": "Алфавит и произношение", "status": "planned"},
+        {"id": "greetings-farewells", "title": "Приветствия и прощания", "status": "planned"},
+        {"id": "introductions-personal-data", "title": "Знакомство и личные данные", "status": "planned"},
+        {"id": "numbers", "title": "Числа", "status": "planned"},
+        {"id": "date-time", "title": "Дата и время", "status": "planned"},
+        {"id": "countries-nationalities", "title": "Страны и национальности", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-grammar-01",
+      "title": "Артикли, род и число",
+      "topics": [
+        {"id": "definite-articles", "title": "Определённые артикли: el, la, los, las", "status": "planned"},
+        {"id": "indefinite-articles", "title": "Неопределённые артикли: un, una, unos, unas", "status": "planned"},
+        {"id": "noun-gender", "title": "Род существительных", "status": "planned"},
+        {"id": "noun-plural", "title": "Множественное число", "status": "planned"},
+        {"id": "article-noun-agreement", "title": "Согласование артикля и существительного", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-grammar-02",
+      "title": "Местоимения и базовое предложение",
+      "topics": [
+        {"id": "subject-pronouns", "title": "Личные местоимения: yo, tú, él, ella...", "status": "planned"},
+        {"id": "basic-word-order", "title": "Базовый порядок слов", "status": "planned"},
+        {"id": "negation-no", "title": "Отрицание с no", "status": "planned"},
+        {"id": "basic-questions", "title": "Базовые вопросы", "status": "planned"},
+        {"id": "question-words", "title": "Вопросительные слова", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-verbs-01",
+      "title": "Ser, estar и hay",
+      "topics": [
+        {"id": "ser-present", "title": "Ser: формы в presente", "status": "planned"},
+        {"id": "ser-basic-uses", "title": "Ser: базовое употребление", "status": "planned"},
+        {"id": "estar-present", "title": "Estar: формы в presente", "status": "planned"},
+        {"id": "estar-basic-uses", "title": "Estar: базовое употребление", "status": "planned"},
+        {"id": "hay", "title": "Hay: наличие и существование", "status": "planned"},
+        {"id": "ser-estar-hay", "title": "Ser / estar / hay: базовое различие", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-verbs-02",
+      "title": "Presente: правильные глаголы",
+      "topics": [
+        {"id": "present-ar", "title": "Глаголы -AR", "status": "planned"},
+        {"id": "present-er", "title": "Глаголы -ER", "status": "planned"},
+        {"id": "present-ir", "title": "Глаголы -IR", "status": "planned"},
+        {"id": "present-mixed-regular", "title": "Смешанная практика -AR / -ER / -IR", "status": "planned"},
+        {"id": "present-regular-trainer", "title": "Тренажёр правильных глаголов", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-verbs-03",
+      "title": "Основные неправильные глаголы",
+      "topics": [
+        {"id": "tener", "title": "Tener", "status": "planned"},
+        {"id": "ir", "title": "Ir", "status": "planned"},
+        {"id": "hacer", "title": "Hacer", "status": "planned"},
+        {"id": "venir", "title": "Venir", "status": "planned"},
+        {"id": "querer", "title": "Querer", "status": "planned"},
+        {"id": "poder", "title": "Poder", "status": "planned"},
+        {"id": "decir", "title": "Decir", "status": "planned"},
+        {"id": "irregular-present-mixed", "title": "Смешанная практика неправильных глаголов", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-verbs-04",
+      "title": "Возвратные глаголы и распорядок дня",
+      "topics": [
+        {"id": "reflexive-pronouns", "title": "Возвратные местоимения", "status": "planned"},
+        {"id": "reflexive-present", "title": "Возвратные глаголы в presente", "status": "planned"},
+        {"id": "daily-routine", "title": "Распорядок дня", "status": "planned"},
+        {"id": "reflexive-practice", "title": "Практика возвратных глаголов", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-grammar-03",
+      "title": "Описание людей и предметов",
+      "topics": [
+        {"id": "adjectives", "title": "Прилагательные", "status": "planned"},
+        {"id": "adjective-agreement", "title": "Согласование прилагательных", "status": "planned"},
+        {"id": "possessives", "title": "Притяжательные: mi, tu, su...", "status": "planned"},
+        {"id": "demonstratives", "title": "Указательные: este, ese, aquel", "status": "planned"},
+        {"id": "comparisons-basic", "title": "Базовые сравнения", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-grammar-04",
+      "title": "Предлоги и пространство",
+      "topics": [
+        {"id": "prepositions-basic", "title": "Основные предлоги", "status": "planned"},
+        {"id": "location-prepositions", "title": "Предлоги места", "status": "planned"},
+        {"id": "a-de-contractions", "title": "A / de и сокращения al / del", "status": "planned"},
+        {"id": "city-directions", "title": "Город и направление движения", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-grammar-05",
+      "title": "Gustar и базовые конструкции",
+      "topics": [
+        {"id": "gustar", "title": "Gustar", "status": "planned"},
+        {"id": "encantar-interesar", "title": "Encantar / interesar", "status": "planned"},
+        {"id": "ir-a-infinitive", "title": "Ir a + infinitivo", "status": "planned"},
+        {"id": "tener-que", "title": "Tener que + infinitivo", "status": "planned"},
+        {"id": "querer-infinitive", "title": "Querer + infinitivo", "status": "planned"},
+        {"id": "poder-infinitive", "title": "Poder + infinitivo", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-vocabulary",
+      "title": "Лексика A1",
+      "topics": [
+        {"id": "family", "title": "Семья", "status": "planned"},
+        {"id": "home", "title": "Дом", "status": "planned"},
+        {"id": "food-drinks", "title": "Еда и напитки", "status": "planned"},
+        {"id": "shopping", "title": "Покупки и цены", "status": "planned"},
+        {"id": "city-places", "title": "Город и места", "status": "planned"},
+        {"id": "transport", "title": "Транспорт", "status": "planned"},
+        {"id": "daily-routine-vocab", "title": "Повседневные действия", "status": "planned"},
+        {"id": "jobs", "title": "Профессии", "status": "planned"},
+        {"id": "weather-seasons", "title": "Погода и времена года", "status": "planned"},
+        {"id": "free-time", "title": "Свободное время и увлечения", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-communication",
+      "title": "Коммуникация A1",
+      "topics": [
+        {"id": "introduce-yourself", "title": "Представиться и рассказать о себе", "status": "planned"},
+        {"id": "ask-personal-info", "title": "Спросить личную информацию", "status": "planned"},
+        {"id": "order-food", "title": "Заказать еду и напитки", "status": "planned"},
+        {"id": "shopping-dialogue", "title": "Диалог в магазине", "status": "planned"},
+        {"id": "ask-directions", "title": "Спросить дорогу", "status": "planned"},
+        {"id": "talk-routine", "title": "Рассказать о распорядке дня", "status": "planned"},
+        {"id": "make-simple-plans", "title": "Простые планы и договорённости", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-skills",
+      "title": "Навыки A1",
+      "topics": [
+        {"id": "reading", "title": "Comprensión lectora", "status": "planned"},
+        {"id": "listening", "title": "Comprensión auditiva", "status": "planned"},
+        {"id": "writing", "title": "Expresión escrita", "status": "planned"},
+        {"id": "speaking", "title": "Expresión oral", "status": "planned"},
+        {"id": "mixed-review", "title": "Смешанное повторение A1", "status": "planned"}
+      ]
+    },
+    {
+      "id": "a1-assessment",
+      "title": "Контроль A1",
+      "topics": [
+        {"id": "grammar-check", "title": "Контроль грамматики", "status": "planned"},
+        {"id": "vocabulary-check", "title": "Контроль лексики", "status": "planned"},
+        {"id": "skills-check", "title": "Контроль навыков", "status": "planned"},
+        {"id": "final-test", "title": "Итоговый тест A1", "status": "planned"},
+        {"id": "weak-spots", "title": "Слабые места и повторение", "status": "planned"}
+      ]
+    }
+  ]
+}
