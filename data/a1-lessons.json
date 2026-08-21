@@ -1,0 +1,112 @@
+{
+  "alphabet-pronunciation": {
+    "level": "A1",
+    "moduleId": "a1-foundations-01",
+    "nextLessonId": "greetings-farewells",
+    "i18n": {
+      "ru": {
+        "title": "Алфавит и произношение",
+        "goal": "Цель: научиться уверенно читать простые испанские слова и узнавать основные правила произношения.",
+        "intro": "В испанском написание и произношение обычно связаны довольно регулярно. Для начала важнее не выучить названия всех букв, а понять, как они звучат в словах.",
+        "rules": [
+          ["Гласные", "a, e, i, o, u обычно произносятся ясно и стабильно: casa, mesa, vino, foto, luna."],
+          ["H", "Буква h не произносится: hola, hotel, ahora."],
+          ["Ñ", "ñ передаёт звук, близкий к «нь»: España, niño, mañana."],
+          ["J и G", "j всегда звучит как сильный испанский [х]: jamón. g перед e/i звучит так же: gente, Girona; перед a/o/u — как обычное g: gato, goma, gusto."],
+          ["C и Z", "В большей части Испании z и c перед e/i произносятся как [θ], близко к английскому th в think: zapato, cena, cinco. В большей части Латинской Америки они произносятся как [s]. Оба варианта нормативны."],
+          ["R и RR", "Одинарное r между гласными произносится коротко: pero. rr — сильнее: perro. В начале слова r тоже сильное: rojo."],
+          ["Ударение", "Если есть знак ударения, он прямо показывает ударный слог: café, teléfono, también. Базовые правила ударения разберём отдельно дальше."]
+        ],
+        "examplesTitle": "Послушай и прочитай",
+        "practiceTitle": "Попробуй",
+        "trainerTitle": "Потренируйся",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: Приветствия и прощания"
+      },
+      "uk": {
+        "title": "Алфавіт і вимова",
+        "goal": "Мета: навчитися впевнено читати прості іспанські слова й розпізнавати основні правила вимови.",
+        "intro": "В іспанській мові написання і вимова зазвичай досить регулярно пов’язані. Спочатку важливіше не вивчити назви всіх літер, а зрозуміти, як вони звучать у словах.",
+        "rules": [
+          ["Голосні", "a, e, i, o, u зазвичай вимовляються чітко й стабільно: casa, mesa, vino, foto, luna."],
+          ["H", "Літера h не вимовляється: hola, hotel, ahora."],
+          ["Ñ", "ñ передає звук, близький до «нь»: España, niño, mañana."],
+          ["J і G", "j завжди звучить як сильний іспанський [х]: jamón. g перед e/i звучить так само: gente, Girona; перед a/o/u — як звичайне g: gato, goma, gusto."],
+          ["C і Z", "У більшій частині Іспанії z і c перед e/i вимовляються як [θ], близько до англійського th у think: zapato, cena, cinco. У більшій частині Латинської Америки — як [s]. Обидва варіанти нормативні."],
+          ["R і RR", "Одинарне r між голосними коротке: pero. rr — сильніше: perro. На початку слова r теж сильне: rojo."],
+          ["Наголос", "Якщо є знак наголосу, він прямо показує наголошений склад: café, teléfono, también. Базові правила наголосу розберемо окремо далі."]
+        ],
+        "examplesTitle": "Послухай і прочитай",
+        "practiceTitle": "Спробуй",
+        "trainerTitle": "Потренуйся",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: Привітання і прощання"
+      },
+      "en": {
+        "title": "Alphabet and pronunciation",
+        "goal": "Goal: read simple Spanish words confidently and recognize the main pronunciation rules.",
+        "intro": "Spanish spelling and pronunciation are usually quite regular. At the beginning, it is more useful to understand how letters sound in words than to memorize every letter name.",
+        "rules": [
+          ["Vowels", "a, e, i, o, u are normally clear and stable: casa, mesa, vino, foto, luna."],
+          ["H", "The letter h is silent: hola, hotel, ahora."],
+          ["Ñ", "ñ represents the sound heard in words such as España, niño, mañana."],
+          ["J and G", "j has the strong Spanish sound heard in jamón. g before e/i has the same sound: gente, Girona; before a/o/u it has the regular g sound: gato, goma, gusto."],
+          ["C and Z", "In most of Spain, z and c before e/i are pronounced [θ], similar to th in think: zapato, cena, cinco. In most of Latin America they are pronounced [s]. Both are standard."],
+          ["R and RR", "Single r between vowels is short: pero. rr is stronger: perro. Initial r is also strong: rojo."],
+          ["Stress mark", "A written accent directly marks the stressed syllable: café, teléfono, también. Basic stress rules will be studied separately later."]
+        ],
+        "examplesTitle": "Listen and read",
+        "practiceTitle": "Try it",
+        "trainerTitle": "Practise",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: Greetings and farewells"
+      },
+      "es": {
+        "title": "Alfabeto y pronunciación",
+        "goal": "Objetivo: leer con seguridad palabras sencillas en español y reconocer las reglas principales de pronunciación.",
+        "intro": "En español, la relación entre escritura y pronunciación suele ser bastante regular. Al principio es más útil entender cómo suenan las letras dentro de las palabras que memorizar el nombre de todas las letras.",
+        "rules": [
+          ["Vocales", "a, e, i, o, u suelen pronunciarse de forma clara y estable: casa, mesa, vino, foto, luna."],
+          ["H", "La letra h no se pronuncia: hola, hotel, ahora."],
+          ["Ñ", "La ñ aparece en palabras como España, niño, mañana."],
+          ["J y G", "La j tiene el sonido fuerte de jamón. La g ante e/i tiene el mismo sonido: gente, Girona; ante a/o/u conserva el sonido de g: gato, goma, gusto."],
+          ["C y Z", "En la mayor parte de España, z y c ante e/i se pronuncian [θ]: zapato, cena, cinco. En la mayor parte de Hispanoamérica se pronuncian [s]. Las dos pronunciaciones son normativas."],
+          ["R y RR", "La r simple entre vocales es breve: pero. La rr es más fuerte: perro. Al principio de palabra, la r también es fuerte: rojo."],
+          ["Tilde", "La tilde indica directamente la sílaba tónica: café, teléfono, también. Las reglas generales de acentuación se estudiarán más adelante."]
+        ],
+        "examplesTitle": "Escucha y lee",
+        "practiceTitle": "Inténtalo",
+        "trainerTitle": "Practica",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: Saludos y despedidas"
+      }
+    },
+    "examples": [
+      {"word":"hola","focus":"h","tag":"h"},{"word":"mañana","focus":"ñ","tag":"ñ"},{"word":"jamón","focus":"j","tag":"j-g"},{"word":"gente","focus":"ge","tag":"j-g"},{"word":"gato","focus":"ga","tag":"j-g"},{"word":"cinco","focus":"ci","tag":"c-z"},{"word":"zapato","focus":"z","tag":"c-z"},{"word":"pero","focus":"r","tag":"r-rr"},{"word":"perro","focus":"rr","tag":"r-rr"},{"word":"café","focus":"é","tag":"stress"}
+    ],
+    "questionBank": [
+      {"id":"h1","tag":"h","type":"choice","prompt":{"ru":"В каком слове буква h не произносится?","uk":"У якому слові літера h не вимовляється?","en":"In which word is h silent?","es":"¿En qué palabra no se pronuncia la h?"},"options":["hola","gato","mesa"],"answer":"hola"},
+      {"id":"n1","tag":"ñ","type":"choice","prompt":{"ru":"В каком слове есть звук ñ?","uk":"У якому слові є звук ñ?","en":"Which word contains ñ?","es":"¿Qué palabra contiene ñ?"},"options":["niño","vino","cinco"],"answer":"niño"},
+      {"id":"j1","tag":"j-g","type":"choice","prompt":{"ru":"В каком слове g звучит как в gente?","uk":"У якому слові g звучить як у gente?","en":"In which word does g sound as in gente?","es":"¿En qué palabra suena la g como en gente?"},"options":["girasol","gato","goma"],"answer":"girasol"},
+      {"id":"j2","tag":"j-g","type":"choice","prompt":{"ru":"В каком слове g имеет обычный звук g?","uk":"У якому слові g має звичайний звук g?","en":"In which word does g have its regular g sound?","es":"¿En qué palabra tiene la g su sonido habitual?"},"options":["gato","gente","gitano"],"answer":"gato"},
+      {"id":"cz1","tag":"c-z","type":"choice","prompt":{"ru":"Какое слово содержит c перед i?","uk":"Яке слово містить c перед i?","en":"Which word has c before i?","es":"¿Qué palabra tiene c delante de i?"},"options":["cinco","casa","cosa"],"answer":"cinco"},
+      {"id":"cz2","tag":"c-z","type":"choice","prompt":{"ru":"Какое слово содержит z?","uk":"Яке слово містить z?","en":"Which word contains z?","es":"¿Qué palabra contiene z?"},"options":["zapato","sopa","casa"],"answer":"zapato"},
+      {"id":"r1","tag":"r-rr","type":"choice","prompt":{"ru":"В каком слове сильное rr находится между гласными?","uk":"У якому слові сильне rr стоїть між голосними?","en":"Which word has strong rr between vowels?","es":"¿Qué palabra tiene rr fuerte entre vocales?"},"options":["perro","pero","caro"],"answer":"perro"},
+      {"id":"r2","tag":"r-rr","type":"choice","prompt":{"ru":"В каком слове r в начале произносится сильно?","uk":"У якому слові r на початку вимовляється сильно?","en":"Which word begins with a strong r?","es":"¿Qué palabra empieza con r fuerte?"},"options":["rojo","pero","cara"],"answer":"rojo"},
+      {"id":"v1","tag":"vowels","type":"choice","prompt":{"ru":"Какое слово помогает отработать чистый звук a?","uk":"Яке слово допомагає відпрацювати чистий звук a?","en":"Which word practises the clear vowel a?","es":"¿Qué palabra sirve para practicar la vocal a?"},"options":["casa","vino","luna"],"answer":"casa"},
+      {"id":"v2","tag":"vowels","type":"choice","prompt":{"ru":"Какое слово помогает отработать чистый звук u?","uk":"Яке слово допомагає відпрацювати чистий звук u?","en":"Which word practises the clear vowel u?","es":"¿Qué palabra sirve para practicar la vocal u?"},"options":["luna","mesa","foto"],"answer":"luna"},
+      {"id":"s1","tag":"stress","type":"choice","prompt":{"ru":"В каком слове письменное ударение показывает ударный гласный?","uk":"У якому слові письмовий наголос показує наголошений голосний?","en":"Which word uses a written accent to mark stress?","es":"¿Qué palabra lleva tilde para marcar la sílaba tónica?"},"options":["café","casa","mesa"],"answer":"café"},
+      {"id":"s2","tag":"stress","type":"choice","prompt":{"ru":"Какое слово пишется с ударением?","uk":"Яке слово пишеться з наголосом?","en":"Which word is written with an accent mark?","es":"¿Qué palabra se escribe con tilde?"},"options":["teléfono","telefono","casa"],"answer":"teléfono"},
+      {"id":"mix1","tag":"h","type":"choice","prompt":{"ru":"Как правильно прочитать начало слова hotel?","uk":"Як правильно прочитати початок слова hotel?","en":"How should the beginning of hotel be read?","es":"¿Cómo se lee el comienzo de hotel?"},"options":["без звука h","с сильным h","как j"],"answer":"без звука h","answers":{"uk":"без звука h","en":"without an h sound","es":"sin sonido de h"},"optionsByLang":{"uk":["без звука h","із сильним h","як j"],"en":["without an h sound","with a strong h","like j"],"es":["sin sonido de h","con h fuerte","como j"]}},
+      {"id":"mix2","tag":"c-z","type":"choice","prompt":{"ru":"Какие варианты произношения c перед e/i нормативны?","uk":"Які варіанти вимови c перед e/i нормативні?","en":"Which pronunciations of c before e/i are standard?","es":"¿Qué pronunciaciones de c ante e/i son normativas?"},"options":["[θ] в большей части Испании и [s] в большей части Латинской Америки","только [k]","только [t]"],"answer":"[θ] в большей части Испании и [s] в большей части Латинской Америки","answers":{"uk":"[θ] у більшій частині Іспанії та [s] у більшій частині Латинської Америки","en":"[θ] in most of Spain and [s] in most of Latin America","es":"[θ] en la mayor parte de España y [s] en la mayor parte de Hispanoamérica"},"optionsByLang":{"uk":["[θ] у більшій частині Іспанії та [s] у більшій частині Латинської Америки","лише [k]","лише [t]"],"en":["[θ] in most of Spain and [s] in most of Latin America","only [k]","only [t]"],"es":["[θ] en la mayor parte de España y [s] en la mayor parte de Hispanoamérica","solo [k]","solo [t]"]}}
+    ]
+  }
+}
