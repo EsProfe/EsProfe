@@ -1,76 +1,15 @@
 "use strict";
-
-const ESPROFE_STUDENT_KEY = "esprofe_student_v1";
-
-const studentLabels = {
-  ru: { profile:"Личный кабинет", name:"Ученик", level:"Уровень", current:"Сейчас изучаем", continue:"Продолжить", edit:"Изменить имя", save:"Сохранить", placeholder:"Введите имя", localNote:"Прогресс пока хранится на этом устройстве. Позже кабинет будет синхронизироваться между устройствами." },
-  uk: { profile:"Особистий кабінет", name:"Учень", level:"Рівень", current:"Зараз вивчаємо", continue:"Продовжити", edit:"Змінити ім’я", save:"Зберегти", placeholder:"Введіть ім’я", localNote:"Прогрес поки зберігається на цьому пристрої. Пізніше кабінет буде синхронізуватися між пристроями." },
-  en: { profile:"Student profile", name:"Student", level:"Level", current:"Now studying", continue:"Continue", edit:"Edit name", save:"Save", placeholder:"Enter name", localNote:"Progress is currently stored on this device. Later the profile will sync across devices." },
-  es: { profile:"Área personal", name:"Estudiante", level:"Nivel", current:"Ahora estudias", continue:"Continuar", edit:"Cambiar nombre", save:"Guardar", placeholder:"Escribe tu nombre", localNote:"Por ahora, el progreso se guarda en este dispositivo. Más adelante, el perfil se sincronizará entre dispositivos." }
+const ESPROFE_STUDENT_KEY="esprofe_student_v1";
+const studentLabels={
+ru:{profile:"Личный кабинет",name:"Ученик",level:"Уровень",current:"Сейчас",continue:"Продолжить обучение",edit:"Изменить имя",save:"Сохранить",placeholder:"Введите имя",localNote:"Прогресс пока хранится на этом устройстве. Позже кабинет будет синхронизироваться по Student ID.",alphabet:"A1 · Алфавит и произношение",route:"Маршрут курса A1"},
+uk:{profile:"Особистий кабінет",name:"Учень",level:"Рівень",current:"Зараз",continue:"Продовжити навчання",edit:"Змінити ім’я",save:"Зберегти",placeholder:"Введіть ім’я",localNote:"Прогрес поки зберігається на цьому пристрої. Пізніше кабінет буде синхронізуватися за Student ID.",alphabet:"A1 · Алфавіт і вимова",route:"Маршрут курсу A1"},
+en:{profile:"Student profile",name:"Student",level:"Level",current:"Now",continue:"Continue learning",edit:"Edit name",save:"Save",placeholder:"Enter name",localNote:"Progress is currently stored on this device. Later the profile will sync by Student ID.",alphabet:"A1 · Alphabet and pronunciation",route:"A1 course route"},
+es:{profile:"Área personal",name:"Estudiante",level:"Nivel",current:"Ahora",continue:"Continuar aprendiendo",edit:"Cambiar nombre",save:"Guardar",placeholder:"Escribe tu nombre",localNote:"Por ahora, el progreso se guarda en este dispositivo. Más adelante se sincronizará mediante Student ID.",alphabet:"A1 · Alfabeto y pronunciación",route:"Ruta del curso A1"}
 };
-
-function getStudentProfile(){
-  try {
-    return JSON.parse(localStorage.getItem(ESPROFE_STUDENT_KEY)) || { name:"", level:"A1", currentLesson:"a1-01-alphabet", completedLessons:[] };
-  } catch(_){
-    return { name:"", level:"A1", currentLesson:"a1-01-alphabet", completedLessons:[] };
-  }
-}
-
-function saveStudentProfile(profile){
-  localStorage.setItem(ESPROFE_STUDENT_KEY, JSON.stringify(profile));
-  document.dispatchEvent(new CustomEvent("esprofe:studentChanged", { detail:profile }));
-}
-
-function setStudentCurrentLesson(lessonId){
-  const profile=getStudentProfile();
-  profile.currentLesson=lessonId;
-  saveStudentProfile(profile);
-}
-
-function markStudentLessonComplete(lessonId){
-  const profile=getStudentProfile();
-  profile.completedLessons=Array.from(new Set([...(profile.completedLessons||[]), lessonId]));
-  saveStudentProfile(profile);
-}
-
-function getStudentLanguage(){ return document.getElementById("language")?.value || "ru"; }
-
-function renderStudentProfile(){
-  const panel=document.getElementById("studentProfile");
-  if(!panel) return;
-  const lang=getStudentLanguage();
-  const t=studentLabels[lang]||studentLabels.ru;
-  const profile=getStudentProfile();
-  const displayName=profile.name || t.name;
-  panel.innerHTML=`
-    <div class="student-profile-head">
-      <div><span class="student-profile-kicker">👤 ${t.profile}</span><strong>${displayName}</strong></div>
-      <span class="student-level">${t.level} ${profile.level||"A1"}</span>
-    </div>
-    <div class="student-profile-body">
-      <div><small>${t.current}</small><strong id="studentCurrentLessonLabel">A1 · 1. Алфавит и произношение</strong></div>
-      <button type="button" id="studentContinueBtn">${t.continue} →</button>
-    </div>
-    <details class="student-profile-settings">
-      <summary>${t.edit}</summary>
-      <div class="student-name-form"><input id="studentNameInput" type="text" maxlength="40" placeholder="${t.placeholder}" value="${profile.name||""}"><button type="button" id="studentNameSave">${t.save}</button></div>
-      <p>${t.localNote}</p>
-    </details>`;
-  document.getElementById("studentContinueBtn")?.addEventListener("click",()=>document.dispatchEvent(new CustomEvent("esprofe:openLesson",{detail:{lessonId:profile.currentLesson||"a1-01-alphabet"}})));
-  document.getElementById("studentNameSave")?.addEventListener("click",()=>{
-    const next=getStudentProfile();
-    next.name=(document.getElementById("studentNameInput")?.value||"").trim();
-    saveStudentProfile(next);
-    renderStudentProfile();
-  });
-}
-
-document.addEventListener("DOMContentLoaded",renderStudentProfile);
-document.addEventListener("esprofe:languageChanged",renderStudentProfile);
-document.addEventListener("esprofe:studentChanged",renderStudentProfile);
-window.getStudentProfile=getStudentProfile;
-window.saveStudentProfile=saveStudentProfile;
-window.setStudentCurrentLesson=setStudentCurrentLesson;
-window.markStudentLessonComplete=markStudentLessonComplete;
-window.renderStudentProfile=renderStudentProfile;
+function normalizeStudent(p){p=p||{};return{name:p.name||"",level:p.level||"A1",studentId:p.studentId||null,currentLesson:p.currentLesson||"alphabet-pronunciation",completedLessons:Array.isArray(p.completedLessons)?p.completedLessons:[]};}
+function getStudentProfile(){try{return normalizeStudent(JSON.parse(localStorage.getItem(ESPROFE_STUDENT_KEY)));}catch(_){return normalizeStudent({});}}
+function saveStudentProfile(profile){localStorage.setItem(ESPROFE_STUDENT_KEY,JSON.stringify(normalizeStudent(profile)));document.dispatchEvent(new CustomEvent("esprofe:studentChanged",{detail:profile}));}
+function setStudentCurrentLesson(lessonId){const p=getStudentProfile();p.currentLesson=lessonId;saveStudentProfile(p);}
+function markStudentLessonComplete(lessonId,nextLessonId){const p=getStudentProfile();p.completedLessons=Array.from(new Set([...(p.completedLessons||[]),lessonId]));if(nextLessonId)p.currentLesson=nextLessonId;saveStudentProfile(p);}
+function renderStudentProfile(){const panel=document.getElementById("studentProfile");if(!panel)return;const code=document.getElementById("language")?.value||"ru",t=studentLabels[code]||studentLabels.ru,p=getStudentProfile(),display=p.name||t.name,currentLabel=p.currentLesson==="route"?t.route:t.alphabet;panel.innerHTML=`<div class="student-profile-head"><div><span class="student-profile-kicker">👤 ${t.profile}</span><strong>${display}</strong></div><span class="student-level">${t.level} ${p.level}</span></div><div class="student-profile-body"><div><small>${t.current}</small><strong>${currentLabel}</strong></div><button type="button" id="studentContinueBtn">${t.continue} →</button></div><details class="student-profile-settings"><summary>${t.edit}</summary><div class="student-name-form"><input id="studentNameInput" type="text" maxlength="40" placeholder="${t.placeholder}" value="${p.name||""}"><button type="button" id="studentNameSave">${t.save}</button></div><p>${t.localNote}</p></details>`;document.getElementById("studentContinueBtn")?.addEventListener("click",()=>document.dispatchEvent(new CustomEvent("esprofe:progressAction",{detail:{topic:"a1",subtopic:p.currentLesson==="route"?"route":"alphabet-pronunciation"}})));document.getElementById("studentNameSave")?.addEventListener("click",()=>{const n=getStudentProfile();n.name=(document.getElementById("studentNameInput")?.value||"").trim();saveStudentProfile(n);renderStudentProfile();});}
+document.addEventListener("DOMContentLoaded",renderStudentProfile);document.addEventListener("esprofe:languageChanged",renderStudentProfile);document.addEventListener("esprofe:studentChanged",renderStudentProfile);window.getStudentProfile=getStudentProfile;window.saveStudentProfile=saveStudentProfile;window.setStudentCurrentLesson=setStudentCurrentLesson;window.markStudentLessonComplete=markStudentLessonComplete;window.renderStudentProfile=renderStudentProfile;
