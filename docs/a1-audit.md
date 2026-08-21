@@ -5,6 +5,7 @@ Branch: `feature/a1-curriculum-foundation`
 ## Reuse, do not replace
 
 - `js/progress.js`: keep `localStorage` key `esprofe_progress_v1`, existing verb/test/grammar history, weak spots and progress events. Extend it with lesson-level records instead of creating a second progress store.
+- `js/student-profile.js` + `css/student-profile.css`: an early local student-account layer already exists. Reuse it and align its lesson IDs with `curriculum-a1.json`; keep `studentId` as a future server-sync field rather than creating another profile system.
 - `js/learning-route.js`: keep it as the dispatcher for the “Continue learning” action. Extend it to route into A1 lessons.
 - `js/b1-lessons.js`: useful proof of the lesson-flow concept, but it is B1-specific and partly hard-coded. Reuse the concept, not the B1 implementation.
 - `js/b1-curriculum.js`: useful proof of a route view. A1 gets its own data-driven route because A1 is now the primary course and includes grammar, vocabulary and skills, not only grammar.
@@ -19,12 +20,17 @@ Branch: `feature/a1-curriculum-foundation`
 3. The B1 lesson engine has only a shortened flow and Russian hard-coded UI strings; it is not suitable as the A1 foundation unchanged.
 4. There was no shared A1 lesson engine for explanation → examples → practice → trainer → assessment → result → review.
 5. There was no lesson-level progress structure compatible with a future Student ID/account.
+6. The existing student profile used a lesson ID (`a1-01-alphabet`) that did not match the curriculum ID (`alphabet-pronunciation`) and was not connected to the current page. It is now aligned and connected instead of being duplicated.
 
 ## A1 foundation decision
 
 The first A1 lesson uses a shared, data-driven architecture:
 
 `curriculum-a1.json` → `a1-curriculum.js` → `a1-lessons.json` → `a1-lessons.js` → `progress.js`
+
+Student-facing continuation uses:
+
+`student-profile.js` → `learning-route.js` → current A1 lesson / A1 route
 
 Lesson progress is stored under:
 
