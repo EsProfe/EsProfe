@@ -1,4 +1,19 @@
 # Changelog
+## [v0.8.0] - 2026-08-21
+
+### Added
+
+- Added `data/curriculum-a1.json` as the complete structured A1 curriculum map.
+- Defined the A1 route from foundations and pronunciation through grammar, verbs, vocabulary, communication, skills and final assessment.
+- Added a common lesson flow for every A1 topic: explanation → examples → practice → trainer → assessment → result → review.
+- Added dedicated A1 modules for articles, pronouns, ser / estar / hay, regular and irregular present tense, reflexive verbs, adjectives, prepositions and core A1 constructions.
+- Added A1 vocabulary, communication tasks, four language skills and a final weak-spots review stage.
+
+### Project direction
+
+- Development priority is now A1 first, then A2, then B1.
+- Existing trainers and learning sections remain in place and will be connected progressively to the A1 curriculum instead of being rewritten.
+
 ## [v0.7.2] - 2026-08-19
 
 ### Added
