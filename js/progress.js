@@ -1,42 +1,199 @@
 "use strict";
-const ESPROFE_PROGRESS_KEY="esprofe_progress_v1";
-const ESPROFE_LESSON_PASS_PERCENT=80;
-const A1_LESSON_ORDER=["alphabet-pronunciation","greetings-farewells","introductions-personal-data","numbers","date-time","countries-nationalities"];
-const progressLabels={
-ru:{title:"Мой прогресс",mastered:"Освоено",review:"Повторить",weak:"Слабые места",recommendation:"Рекомендация",next:"Продолжить обучение",good:"Материал усвоен",repeat:"Рекомендуется повторение",learnAgain:"Нужно повторить обучение",correct:"Правильных",mistakes:"Ошибок",details:"Подробнее",noWeak:"Пока нет слабых мест",grammar:"Грамматика",topics:"Темы",recent:"Последний результат",route:"Что делать дальше",a1Alphabet:"A1 · Алфавит и произношение",a1Greetings:"A1 · Приветствия и прощания",a1Route:"Маршрут курса A1",reviewNow:"Повторить сейчас",lesson:"Урок",courseProgress:"Прогресс A1",passedLessons:"Пройдено уроков"},
-uk:{title:"Мій прогрес",mastered:"Освоєно",review:"Повторити",weak:"Слабкі місця",recommendation:"Рекомендація",next:"Продовжити навчання",good:"Матеріал засвоєно",repeat:"Рекомендується повторення",learnAgain:"Потрібно повторити навчання",correct:"Правильних",mistakes:"Помилок",details:"Детальніше",noWeak:"Поки немає слабких місць",grammar:"Граматика",topics:"Теми",recent:"Останній результат",route:"Що робити далі",a1Alphabet:"A1 · Алфавіт і вимова",a1Greetings:"A1 · Привітання і прощання",a1Route:"Маршрут курсу A1",reviewNow:"Повторити зараз",lesson:"Урок",courseProgress:"Прогрес A1",passedLessons:"Пройдено уроків"},
-en:{title:"My progress",mastered:"Mastered",review:"Review",weak:"Weak spots",recommendation:"Recommendation",next:"Continue learning",good:"Material mastered",repeat:"Review recommended",learnAgain:"Repeat the lesson",correct:"Correct",mistakes:"Mistakes",details:"Details",noWeak:"No weak spots yet",grammar:"Grammar",topics:"Topics",recent:"Latest result",route:"What to do next",a1Alphabet:"A1 · Alphabet and pronunciation",a1Greetings:"A1 · Greetings and farewells",a1Route:"A1 course route",reviewNow:"Review now",lesson:"Lesson",courseProgress:"A1 progress",passedLessons:"Lessons completed"},
-es:{title:"Mi progreso",mastered:"Dominado",review:"Revisar",weak:"Puntos débiles",recommendation:"Recomendación",next:"Continuar aprendiendo",good:"Material dominado",repeat:"Se recomienda repasar",learnAgain:"Hay que repetir la lección",correct:"Correctas",mistakes:"Errores",details:"Detalles",noWeak:"Todavía no hay puntos débiles",grammar:"Gramática",topics:"Temas",recent:"Último resultado",route:"Qué hacer ahora",a1Alphabet:"A1 · Alfabeto y pronunciación",a1Greetings:"A1 · Saludos y despedidas",a1Route:"Ruta del curso A1",reviewNow:"Repasar ahora",lesson:"Lección",courseProgress:"Progreso A1",passedLessons:"Lecciones superadas"}
+
+const ESPROFE_PROGRESS_KEY = "esprofe_progress_v1";
+const ESPROFE_LESSON_PASS_PERCENT = 80;
+const A1_LESSON_ORDER = [
+  "alphabet-pronunciation",
+  "greetings-farewells",
+  "introductions-personal-data",
+  "numbers",
+  "date-time",
+  "countries-nationalities"
+];
+
+const progressLabels = {
+  ru: { title:"Мой прогресс", course:"Прогресс A1", passed:"Пройдено уроков", weak:"Слабые места", review:"Повторить", noWeak:"Слабых мест нет", recommendation:"Рекомендация", continue:"Продолжить обучение", reviewNow:"Повторить сейчас", lesson:"Урок" },
+  uk: { title:"Мій прогрес", course:"Прогрес A1", passed:"Пройдено уроків", weak:"Слабкі місця", review:"Повторити", noWeak:"Слабких місць немає", recommendation:"Рекомендація", continue:"Продовжити навчання", reviewNow:"Повторити зараз", lesson:"Урок" },
+  en: { title:"My progress", course:"A1 progress", passed:"Lessons completed", weak:"Weak spots", review:"Review", noWeak:"No weak spots", recommendation:"Recommendation", continue:"Continue learning", reviewNow:"Review now", lesson:"Lesson" },
+  es: { title:"Mi progreso", course:"Progreso A1", passed:"Lecciones superadas", weak:"Puntos débiles", review:"Repasar", noWeak:"No hay puntos débiles", recommendation:"Recomendación", continue:"Continuar aprendiendo", reviewNow:"Repasar ahora", lesson:"Lección" }
 };
-const lessonNames={
-"alphabet-pronunciation":{ru:"Алфавит и произношение",uk:"Алфавіт і вимова",en:"Alphabet and pronunciation",es:"Alfabeto y pronunciación"},
-"greetings-farewells":{ru:"Приветствия и прощания",uk:"Привітання і прощання",en:"Greetings and farewells",es:"Saludos y despedidas"}
+
+const lessonNames = {
+  "alphabet-pronunciation": { ru:"Алфавит и произношение", uk:"Алфавіт і вимова", en:"Alphabet and pronunciation", es:"Alfabeto y pronunciación" },
+  "greetings-farewells": { ru:"Приветствия и прощания", uk:"Привітання і прощання", en:"Greetings and farewells", es:"Saludos y despedidas" },
+  "introductions-personal-data": { ru:"Знакомство и личные данные", uk:"Знайомство та особисті дані", en:"Introductions and personal information", es:"Presentaciones y datos personales" }
 };
-const weakNames={
-"alphabet-pronunciation":{vowels:{ru:"Гласные",uk:"Голосні",en:"Vowels",es:"Vocales"},h:{ru:"Немая h",uk:"Німа h",en:"Silent h",es:"H muda"},"ñ":{ru:"Звук ñ",uk:"Звук ñ",en:"The ñ sound",es:"El sonido ñ"},"j-g":{ru:"Произношение j / g",uk:"Вимова j / g",en:"Pronunciation of j / g",es:"Pronunciación de j / g"},"c-z":{ru:"Произношение c / z",uk:"Вимова c / z",en:"Pronunciation of c / z",es:"Pronunciación de c / z"},"r-rr":{ru:"Произношение r / rr",uk:"Вимова r / rr",en:"Pronunciation of r / rr",es:"Pronunciación de r / rr"},stress:{ru:"Ударение",uk:"Наголос",en:"Stress",es:"Acentuación"}},
-"greetings-farewells":{greeting:{ru:"Приветствия",uk:"Привітання",en:"Greetings",es:"Saludos"},daypart:{ru:"Приветствия по времени суток",uk:"Привітання за часом доби",en:"Greetings by time of day",es:"Saludos según la hora"},"how-are-you":{ru:"¿Qué tal? / ¿Cómo estás?",uk:"¿Qué tal? / ¿Cómo estás?",en:"¿Qué tal? / ¿Cómo estás?",es:"¿Qué tal? / ¿Cómo estás?"},farewell:{ru:"Прощания",uk:"Прощання",en:"Farewells",es:"Despedidas"},register:{ru:"tú / usted",uk:"tú / usted",en:"tú / usted",es:"tú / usted"}}
+
+const weakNames = {
+  "alphabet-pronunciation": {
+    vowels:{ru:"Гласные",uk:"Голосні",en:"Vowels",es:"Vocales"},
+    h:{ru:"Немая h",uk:"Німа h",en:"Silent h",es:"H muda"},
+    "ñ":{ru:"Звук ñ",uk:"Звук ñ",en:"The ñ sound",es:"El sonido ñ"},
+    "j-g":{ru:"Произношение j / g",uk:"Вимова j / g",en:"Pronunciation of j / g",es:"Pronunciación de j / g"},
+    "c-z":{ru:"Произношение c / z",uk:"Вимова c / z",en:"Pronunciation of c / z",es:"Pronunciación de c / z"},
+    "r-rr":{ru:"Произношение r / rr",uk:"Вимова r / rr",en:"Pronunciation of r / rr",es:"Pronunciación de r / rr"},
+    stress:{ru:"Ударение",uk:"Наголос",en:"Stress",es:"Acentuación"}
+  },
+  "greetings-farewells": {
+    greeting:{ru:"Приветствия",uk:"Привітання",en:"Greetings",es:"Saludos"},
+    daypart:{ru:"Приветствия по времени суток",uk:"Привітання за часом доби",en:"Greetings by time of day",es:"Saludos según la hora"},
+    "how-are-you":{ru:"¿Qué tal? / ¿Cómo estás?",uk:"¿Qué tal? / ¿Cómo estás?",en:"¿Qué tal? / ¿Cómo estás?",es:"¿Qué tal? / ¿Cómo estás?"},
+    farewell:{ru:"Прощания",uk:"Прощання",en:"Farewells",es:"Despedidas"},
+    register:{ru:"tú / usted",uk:"tú / usted",en:"tú / usted",es:"tú / usted"}
+  }
 };
-function reviewKey(level,lessonId,tag){return `${level}:${lessonId}:${tag}`;}
-function migrateLessonWeakSpots(data){data.reviewQueue=data.reviewQueue||{};Object.entries(data.lessons||{}).forEach(([level,lessons])=>Object.entries(lessons||{}).forEach(([lessonId,lesson])=>Object.entries(lesson?.weakSpots||{}).forEach(([tag,count])=>{if(Number(count)<=0)return;const key=reviewKey(level,lessonId,tag);if(!data.reviewQueue[key])data.reviewQueue[key]={key,level,lessonId,tag,mistakes:Number(count)||1,active:true,updatedAt:lesson.date||new Date().toISOString()};})));return data;}
-function normalizeProgress(data){data=data||{};data.correct=Number(data.correct)||0;data.mistakes=Number(data.mistakes)||0;data.weak=data.weak||{};data.tests=Array.isArray(data.tests)?data.tests:[];data.grammar=data.grammar||{};data.lessons=data.lessons||{};data.reviewQueue=data.reviewQueue||{};return migrateLessonWeakSpots(data);}
-function getProgressData(){try{return normalizeProgress(JSON.parse(localStorage.getItem(ESPROFE_PROGRESS_KEY)));}catch(_){return normalizeProgress({});}}
-function saveProgressData(data){localStorage.setItem(ESPROFE_PROGRESS_KEY,JSON.stringify(normalizeProgress(data)));document.dispatchEvent(new CustomEvent("esprofe:progressChanged"));}
-function progressRecordAnswer(verb,person,isCorrect){const data=getProgressData(),key=`${verb.id??verb.infinitive}:${person}`;if(isCorrect){data.correct++;if(data.weak[key]){data.weak[key].mistakes=Math.max(0,(data.weak[key].mistakes||1)-1);if(data.weak[key].mistakes===0)delete data.weak[key];}}else{data.mistakes++;if(!data.weak[key])data.weak[key]={verb:verb.infinitive,person,mistakes:0};data.weak[key].mistakes++;}saveProgressData(data);renderProgress();}
-function progressRecordTest(percent){const data=getProgressData();data.tests.push({percent,date:new Date().toISOString()});if(data.tests.length>20)data.tests.shift();saveProgressData(data);renderProgress();}
-function progressRecordGrammar(id,percent,personResults){const data=getProgressData();data.grammar[id]={percent,date:new Date().toISOString(),persons:(personResults||[]).map(r=>({correct:r.correct||0,total:r.total||0}))};saveProgressData(data);renderProgress();}
-function syncLessonWeakSpots(data,level,id,weakSpots){const now=new Date().toISOString(),current=weakSpots||{},prefix=`${level}:${id}:`;Object.keys(data.reviewQueue).filter(k=>k.startsWith(prefix)&&!Object.prototype.hasOwnProperty.call(current,data.reviewQueue[k].tag)).forEach(k=>delete data.reviewQueue[k]);Object.entries(current).forEach(([tag,count])=>{if(Number(count)<=0)return;const key=reviewKey(level,id,tag),old=data.reviewQueue[key]||{};data.reviewQueue[key]={...old,key,level,lessonId:id,tag,mistakes:Number(count)||1,active:true,updatedAt:now};});}
-function progressRecordLesson(level,id,result){const data=getProgressData();data.lessons[level]=data.lessons[level]||{};const previous=data.lessons[level][id]||{},percent=Number(result.percent)||0,passed=percent>=ESPROFE_LESSON_PASS_PERCENT;data.lessons[level][id]={...previous,...result,id,level,percent,passed,date:new Date().toISOString()};syncLessonWeakSpots(data,level,id,result.weakSpots||{});saveProgressData(data);if(passed&&window.markStudentLessonComplete)window.markStudentLessonComplete(id,result.nextLessonId);renderProgress();}
-function progressResolveWeakSpot(level,lessonId,tag){const data=getProgressData(),key=reviewKey(level,lessonId,tag);if(data.reviewQueue[key])delete data.reviewQueue[key];const lesson=data.lessons?.[level]?.[lessonId];if(lesson?.weakSpots)delete lesson.weakSpots[tag];saveProgressData(data);renderProgress();}
-function getActiveReviewItems(data,level="A1"){return Object.values(data.reviewQueue||{}).filter(x=>x.active!==false&&x.level===level).sort((a,b)=>(b.mistakes||0)-(a.mistakes||0));}
-function isLessonPassed(level,id,data=getProgressData()){return Number(data.lessons?.[level]?.[id]?.percent||0)>=ESPROFE_LESSON_PASS_PERCENT;}
-function isLessonUnlocked(level,id,data=getProgressData()){if(level!=="A1")return true;const index=A1_LESSON_ORDER.indexOf(id);if(index<=0)return true;return isLessonPassed(level,A1_LESSON_ORDER[index-1],data);}
-function getNextLearningStep(data){for(const id of A1_LESSON_ORDER){if(!isLessonUnlocked("A1",id,data))break;if(!isLessonPassed("A1",id,data)){const titleKey=id==="alphabet-pronunciation"?"a1Alphabet":id==="greetings-farewells"?"a1Greetings":"a1Route";return{type:"study",titleKey,topic:"a1",subtopic:id};}}return{type:"next",titleKey:"a1Route",topic:"a1",subtopic:"route"};}
-function localized(map,key,lang,fallback){return map?.[key]?.[lang]||map?.[key]?.ru||fallback||key;}
-function getA1CourseStats(data){const built=A1_LESSON_ORDER.slice(0,2),passed=built.filter(id=>isLessonPassed("A1",id,data)).length,percents=built.map(id=>Number(data.lessons?.A1?.[id]?.percent||0)).filter(Boolean),latest=percents.length?percents[percents.length-1]:0;return{passed,total:built.length,latest};}
-function getProgressSummary(){const data=getProgressData(),total=data.correct+data.mistakes,mastery=total?Math.round(data.correct/total*100):0,weakEntries=Object.values(data.weak).sort((a,b)=>b.mistakes-a.mistakes),lessonReviews=getActiveReviewItems(data),course=getA1CourseStats(data);let recommendation="start";if(lessonReviews.length)recommendation="repeat";else if(course.latest>=80)recommendation="good";else if(total>0)recommendation="learnAgain";return{data,mastery,weakEntries,lessonReviews,course,recommendation,nextStep:getNextLearningStep(data)};}
-function renderProgress(){const panel=document.getElementById("progressPanel");if(!panel)return;const lang=document.getElementById("language")?.value||"ru",t=progressLabels[lang]||progressLabels.ru,{data,weakEntries,lessonReviews,course,recommendation,nextStep}=getProgressSummary(),recommendationText=recommendation==="good"?t.good:recommendation==="repeat"?t.repeat:recommendation==="learnAgain"?t.learnAgain:t.next,grammarEntries=Object.entries(data.grammar||{}),latestTest=data.tests?.length?data.tests[data.tests.length-1]:null,allWeakCount=weakEntries.length+lessonReviews.length;
-const lessonReviewHtml=lessonReviews.length?`<div class="progress-review-now"><strong>🔁 ${t.review}</strong>${lessonReviews.map(w=>{const lesson=localized(lessonNames,w.lessonId,lang,w.lessonId),name=localized(weakNames[w.lessonId]||{},w.tag,lang,w.tag);return`<button type="button" class="progress-review-card" data-review-level="${w.level}" data-review-lesson="${w.lessonId}" data-review-tag="${w.tag}"><span><small>${t.lesson}: ${lesson}</small><strong>${name}</strong><em>${w.mistakes} ${t.mistakes.toLowerCase()}</em></span><b>${t.reviewNow} →</b></button>`}).join("")}</div>`:`<div class="progress-review-now"><strong>🔁 ${t.review}</strong><span class="progress-empty">${t.noWeak}</span></div>`;
-const weakHtml=weakEntries.length?weakEntries.slice(0,3).map(w=>`<span class="progress-weak-chip">⚠ ${w.verb} · ${w.person} <strong>${w.mistakes}</strong></span>`).join(""):`<span class="progress-empty">${t.noWeak}</span>`,grammarHtml=grammarEntries.length?grammarEntries.map(([id,g])=>`<span class="progress-topic-chip"><strong>${id}</strong> ${g.percent}%</span>`).join(""):"";
-panel.innerHTML=`<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${course.latest}%</strong></div><div class="progress-bar"><span style="width:${course.latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.courseProgress}: ${course.latest}%</span><span>✅ ${t.passedLessons}: ${course.passed}/${course.total}</span><span>🔴 ${t.weak}: ${allWeakCount}</span></div>${lessonReviewHtml}<div class="progress-bottom"><span>${t.recommendation}: <strong>${recommendationText}</strong></span>${latestTest?`<span>${t.recent}: ${latestTest.percent}%</span>`:""}</div><div class="progress-route"><div><strong>🎯 ${t.route}</strong><br><span>${t[nextStep.titleKey]||t.a1Route}</span></div><button type="button" id="progressNextAction">${t.next} →</button></div><details class="progress-details"><summary>${t.details}</summary><div class="progress-detail-section"><strong>${t.weak}</strong><div class="progress-chip-list">${weakHtml}</div></div>${grammarEntries.length?`<div class="progress-detail-section"><strong>${t.grammar} · ${t.topics}</strong><div class="progress-chip-list">${grammarHtml}</div></div>`:""}</details>`;
-document.getElementById("progressNextAction")?.addEventListener("click",()=>document.dispatchEvent(new CustomEvent("esprofe:progressAction",{detail:nextStep})));panel.querySelectorAll("[data-review-lesson]").forEach(b=>b.addEventListener("click",()=>document.dispatchEvent(new CustomEvent("esprofe:reviewWeakSpot",{detail:{level:b.dataset.reviewLevel,lessonId:b.dataset.reviewLesson,tag:b.dataset.reviewTag}}))));}
-document.addEventListener("esprofe:languageChanged",renderProgress);document.addEventListener("DOMContentLoaded",renderProgress);document.getElementById("language")?.addEventListener("change",()=>setTimeout(renderProgress,0));window.ESPROFE_LESSON_PASS_PERCENT=ESPROFE_LESSON_PASS_PERCENT;window.A1_LESSON_ORDER=A1_LESSON_ORDER;window.getProgressData=getProgressData;window.renderProgress=renderProgress;window.progressRecordAnswer=progressRecordAnswer;window.progressRecordTest=progressRecordTest;window.progressRecordGrammar=progressRecordGrammar;window.progressRecordLesson=progressRecordLesson;window.progressResolveWeakSpot=progressResolveWeakSpot;window.getActiveReviewItems=()=>getActiveReviewItems(getProgressData());window.isLessonPassed=isLessonPassed;window.isLessonUnlocked=isLessonUnlocked;window.getNextLearningStep=()=>getNextLearningStep(getProgressData());
+
+function normalizeProgress(data) {
+  data = data || {};
+  data.correct = Number(data.correct) || 0;
+  data.mistakes = Number(data.mistakes) || 0;
+  data.weak = data.weak || {};
+  data.tests = Array.isArray(data.tests) ? data.tests : [];
+  data.grammar = data.grammar || {};
+  data.lessons = data.lessons || {};
+  data.reviewQueue = data.reviewQueue || {};
+
+  Object.entries(data.lessons).forEach(([level, lessons]) => {
+    Object.entries(lessons || {}).forEach(([lessonId, lesson]) => {
+      Object.entries(lesson.weakSpots || {}).forEach(([tag, count]) => {
+        if (Number(count) <= 0) return;
+        const key = `${level}:${lessonId}:${tag}`;
+        if (!data.reviewQueue[key]) data.reviewQueue[key] = { key, level, lessonId, tag, mistakes:Number(count), active:true };
+      });
+    });
+  });
+  return data;
+}
+
+function getProgressData() {
+  try { return normalizeProgress(JSON.parse(localStorage.getItem(ESPROFE_PROGRESS_KEY))); }
+  catch (_) { return normalizeProgress({}); }
+}
+
+function saveProgressData(data) {
+  localStorage.setItem(ESPROFE_PROGRESS_KEY, JSON.stringify(normalizeProgress(data)));
+  document.dispatchEvent(new CustomEvent("esprofe:progressChanged"));
+}
+
+function progressRecordAnswer(verb, person, isCorrect) {
+  const data = getProgressData();
+  const key = `${verb.id ?? verb.infinitive}:${person}`;
+  if (isCorrect) {
+    data.correct++;
+    if (data.weak[key]) {
+      data.weak[key].mistakes = Math.max(0, (data.weak[key].mistakes || 1) - 1);
+      if (!data.weak[key].mistakes) delete data.weak[key];
+    }
+  } else {
+    data.mistakes++;
+    if (!data.weak[key]) data.weak[key] = { verb:verb.infinitive, person, mistakes:0 };
+    data.weak[key].mistakes++;
+  }
+  saveProgressData(data);
+  renderProgress();
+}
+
+function progressRecordTest(percent) {
+  const data = getProgressData();
+  data.tests.push({ percent:Number(percent)||0, date:new Date().toISOString() });
+  if (data.tests.length > 20) data.tests.shift();
+  saveProgressData(data);
+  renderProgress();
+}
+
+function progressRecordGrammar(id, percent, personResults) {
+  const data = getProgressData();
+  data.grammar[id] = { percent:Number(percent)||0, date:new Date().toISOString(), persons:personResults || [] };
+  saveProgressData(data);
+  renderProgress();
+}
+
+function progressRecordLesson(level, id, result) {
+  const data = getProgressData();
+  data.lessons[level] = data.lessons[level] || {};
+  const percent = Number(result.percent) || 0;
+  const weakSpots = result.weakSpots || {};
+  data.lessons[level][id] = { ...(data.lessons[level][id] || {}), ...result, id, level, percent, passed:percent >= ESPROFE_LESSON_PASS_PERCENT, date:new Date().toISOString() };
+
+  const prefix = `${level}:${id}:`;
+  Object.keys(data.reviewQueue).filter(k => k.startsWith(prefix)).forEach(k => delete data.reviewQueue[k]);
+  Object.entries(weakSpots).forEach(([tag,count]) => {
+    if (Number(count) <= 0) return;
+    const key = `${level}:${id}:${tag}`;
+    data.reviewQueue[key] = { key, level, lessonId:id, tag, mistakes:Number(count), active:true };
+  });
+
+  saveProgressData(data);
+  if (percent >= ESPROFE_LESSON_PASS_PERCENT && window.markStudentLessonComplete) window.markStudentLessonComplete(id, result.nextLessonId);
+  renderProgress();
+}
+
+function progressResolveWeakSpot(level, lessonId, tag) {
+  const data = getProgressData();
+  delete data.reviewQueue[`${level}:${lessonId}:${tag}`];
+  if (data.lessons?.[level]?.[lessonId]?.weakSpots) delete data.lessons[level][lessonId].weakSpots[tag];
+  saveProgressData(data);
+  renderProgress();
+}
+
+function isLessonPassed(level, id, data=getProgressData()) {
+  return Number(data.lessons?.[level]?.[id]?.percent || 0) >= ESPROFE_LESSON_PASS_PERCENT;
+}
+
+function isLessonUnlocked(level, id, data=getProgressData()) {
+  if (level !== "A1") return true;
+  const i = A1_LESSON_ORDER.indexOf(id);
+  if (i <= 0) return true;
+  return isLessonPassed(level, A1_LESSON_ORDER[i-1], data);
+}
+
+function getNextLearningStep(data=getProgressData()) {
+  for (const id of A1_LESSON_ORDER) {
+    if (!isLessonUnlocked("A1", id, data)) break;
+    if (!isLessonPassed("A1", id, data)) return { type:"study", topic:"a1", subtopic:id };
+  }
+  return { type:"next", topic:"a1", subtopic:"route" };
+}
+
+function renderProgress() {
+  const panel = document.getElementById("progressPanel");
+  if (!panel) return;
+  const code = document.getElementById("language")?.value || "ru";
+  const t = progressLabels[code] || progressLabels.ru;
+  const data = getProgressData();
+  const built = A1_LESSON_ORDER.slice(0,2);
+  const passed = built.filter(id => isLessonPassed("A1", id, data)).length;
+  const results = built.map(id => Number(data.lessons?.A1?.[id]?.percent || 0)).filter(v => v > 0);
+  const latest = results.length ? results[results.length - 1] : 0;
+  const reviews = Object.values(data.reviewQueue).filter(x => x.active !== false && x.level === "A1");
+  const step = getNextLearningStep(data);
+
+  const reviewHtml = reviews.length ? reviews.map(w => {
+    const lesson = lessonNames[w.lessonId]?.[code] || lessonNames[w.lessonId]?.ru || w.lessonId;
+    const name = weakNames[w.lessonId]?.[w.tag]?.[code] || weakNames[w.lessonId]?.[w.tag]?.ru || w.tag;
+    return `<button type="button" class="progress-review-card" data-review-level="${w.level}" data-review-lesson="${w.lessonId}" data-review-tag="${w.tag}"><span><small>${t.lesson}: ${lesson}</small><strong>${name}</strong><em>${w.mistakes}</em></span><b>${t.reviewNow} →</b></button>`;
+  }).join("") : `<span class="progress-empty">${t.noWeak}</span>`;
+
+  const nextName = lessonNames[step.subtopic]?.[code] || lessonNames[step.subtopic]?.ru || "A1";
+  panel.innerHTML = `<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${latest}%</strong></div><div class="progress-bar"><span style="width:${latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.course}: ${latest}%</span><span>✅ ${t.passed}: ${passed}/${built.length}</span><span>🔴 ${t.weak}: ${reviews.length}</span></div><div class="progress-review-now"><strong>🔁 ${t.review}</strong>${reviewHtml}</div><div class="progress-route"><div><strong>${t.recommendation}</strong><br><span>${nextName}</span></div><button type="button" id="progressNextAction">${t.continue} →</button></div>`;
+
+  document.getElementById("progressNextAction")?.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:progressAction", { detail:step })));
+  panel.querySelectorAll("[data-review-lesson]").forEach(btn => btn.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:reviewWeakSpot", { detail:{ level:btn.dataset.reviewLevel, lessonId:btn.dataset.reviewLesson, tag:btn.dataset.reviewTag } }))));
+}
+
+window.ESPROFE_LESSON_PASS_PERCENT = ESPROFE_LESSON_PASS_PERCENT;
+window.A1_LESSON_ORDER = A1_LESSON_ORDER;
+window.getProgressData = getProgressData;
+window.getNextLearningStep = getNextLearningStep;
+window.renderProgress = renderProgress;
+window.progressRecordAnswer = progressRecordAnswer;
+window.progressRecordTest = progressRecordTest;
+window.progressRecordGrammar = progressRecordGrammar;
+window.progressRecordLesson = progressRecordLesson;
+window.progressResolveWeakSpot = progressResolveWeakSpot;
+window.isLessonPassed = isLessonPassed;
+window.isLessonUnlocked = isLessonUnlocked;
+
+document.addEventListener("DOMContentLoaded", renderProgress);
+document.addEventListener("esprofe:languageChanged", renderProgress);
+document.addEventListener("esprofe:progressChanged", renderProgress);
