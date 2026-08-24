@@ -23,4 +23,16 @@
 <section class="trainer"><div class="card"><h2 id="trainerHeading">Спряжение глаголов</h2><div class="verb-prompt"><p class="verb-prompt-label" id="sourceVerbLabel">Исходный глагол</p><h2 id="verb">Загрузка...</h2><p id="translation">...</p><p class="verb-prompt-label" id="requestedFormLabel">Предлагаемая форма</p><p id="person">yo</p></div><p id="status">Загрузка базы глаголов...</p><div class="exercise" id="trainingMode"><input type="text" id="answer" placeholder="Введите форму глагола" autocomplete="off"><button id="checkAnswer">Проверить</button><p id="result"></p></div><div class="controls"><button id="nextVerb">Следующий глагол</button><button id="startTest">Начать тест</button><button id="repeatMistakes" type="button" style="display:none"></button></div><div class="test-mode" id="testMode" style="display:none"><p id="testProgress">Вопрос 1 из 10</p><p id="testPerson">yo</p><input type="text" id="testAnswer" placeholder="Введите форму глагола" autocomplete="off"><button id="testCheck">Проверить</button><p id="testResult"></p></div><div class="test-result" id="testResultScreen" style="display:none"><h2 id="testFinished">Тест завершён</h2><p id="testScore">0 / 10</p><p id="testPercent">0%</p><button id="restartTest">Пройти ещё раз</button><button id="backToTraining">Вернуться к тренировке</button></div></div></section>
 </main><footer>EsProfe © 2026</footer>
 <script src="js/translator.js"></script><script src="js/progress.js"></script><script src="js/student-profile.js"></script><script src="js/learning-route.js"></script><script src="js/a1-curriculum.js"></script><script src="js/a1-lessons.js"></script><script src="js/topics.js"></script><script src="js/grammar.js"></script><script src="js/grammar-navigation.js"></script><script src="js/stem-diagram.js"></script><script src="js/irregular-grammar.js"></script><script src="js/ser-estar-hay.js"></script><script src="js/articles-grammar.js"></script><script src="js/gender-number-grammar.js"></script><script src="js/adjectives-grammar.js"></script><script src="js/possessives-grammar.js"></script><script src="js/b1-curriculum.js"></script><script src="js/b1-lessons.js"></script><script src="js/section-workspace.js"></script><script src="js/section-workspace-fix.js"></script><script src="js/app.js"></script><script src="js/enter-submit-fix.js"></script>
+<script>
+(function(){
+  function renderLearningHeader(){
+    try{ if(typeof window.renderStudentProfile === 'function') window.renderStudentProfile(); }catch(e){ console.error('student profile render failed',e); }
+    try{ if(typeof window.renderProgress === 'function') window.renderProgress(); }catch(e){ console.error('progress render failed',e); }
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded',renderLearningHeader,{once:true});
+  else renderLearningHeader();
+  window.addEventListener('load',renderLearningHeader,{once:true});
+  document.getElementById('language')?.addEventListener('change',()=>setTimeout(renderLearningHeader,0));
+})();
+</script>
 </body></html>
