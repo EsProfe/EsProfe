@@ -1,2 +1,15 @@
 "use strict";
-document.addEventListener("esprofe:progressAction",event=>{const step=event.detail;if(!step)return;if(step.topic==="a1"){if(step.subtopic==="route")window.openA1Curriculum?.();else window.openA1Lesson?.(step.subtopic||"alphabet-pronunciation");return;}if(step.topic==="grammar")document.dispatchEvent(new CustomEvent("esprofe:subtopic",{detail:{topic:"grammar",subtopic:step.subtopic||"presente"}}));});
+document.addEventListener("esprofe:progressAction",event=>{
+  const step=event.detail;
+  if(!step)return;
+  if(step.type==="review"&&step.topic==="a1"){
+    document.dispatchEvent(new CustomEvent("esprofe:reviewWeakSpot",{detail:{level:"A1",lessonId:step.subtopic,tag:step.tag}}));
+    return;
+  }
+  if(step.topic==="a1"){
+    if(step.subtopic==="route")window.openA1Curriculum?.();
+    else window.openA1Lesson?.(step.subtopic||"alphabet-pronunciation");
+    return;
+  }
+  if(step.topic==="grammar")document.dispatchEvent(new CustomEvent("esprofe:subtopic",{detail:{topic:"grammar",subtopic:step.subtopic||"presente"}}));
+});
