@@ -47,6 +47,7 @@ const stemChangingLessons = {
 
 const stemT = {
   ru: {
+    grammar: "Грамматика",
     title: "Отклоняющиеся глаголы",
     intro: "Изучаем изменение основы: сначала правило, затем тренировка и контроль.",
     rule: "В настоящем времени у некоторых глаголов меняется гласная в основе. Изменение происходит в четырёх формах «сапожка»: yo, tú, él/ella/usted и ellos/ellas/ustedes.",
@@ -66,6 +67,7 @@ const stemT = {
     lesson: "Вернуться к уроку"
   },
   uk: {
+    grammar: "Граматика",
     title: "Дієслова зі зміною основи",
     intro: "Вивчаємо зміну основи: спочатку правило, потім тренування і контроль.",
     rule: "У теперішньому часі в деяких дієсловах змінюється голосна в основі. Зміна відбувається у чотирьох формах «чобітка»: yo, tú, él/ella/usted та ellos/ellas/ustedes.",
@@ -85,6 +87,7 @@ const stemT = {
     lesson: "До уроку"
   },
   en: {
+    grammar: "Grammar",
     title: "Stem-changing verbs",
     intro: "Learn stem changes: first the rule, then practice and assessment.",
     rule: "In the present tense, some verbs change a vowel in the stem. The change occurs in the four boot forms: yo, tú, él/ella/usted and ellos/ellas/ustedes.",
@@ -104,6 +107,7 @@ const stemT = {
     lesson: "Back to lesson"
   },
   es: {
+    grammar: "Gramática",
     title: "Verbos con cambio de raíz",
     intro: "Aprende los cambios de raíz: primero la regla, después la práctica y la evaluación.",
     rule: "En presente, algunos verbos cambian una vocal de la raíz. El cambio aparece en las cuatro formas del «zapato»: yo, tú, él/ella/usted y ellos/ellas/ustedes.",
@@ -148,7 +152,7 @@ function renderStemChangingLesson() {
   root.innerHTML = `
     <div class="grammar-header">
       <div>
-        <div class="grammar-kicker">📖 Грамматика</div>
+        <div class="grammar-kicker">📖 ${st("grammar")}</div>
         <h2>${st("title")}</h2>
         <p>${st("intro")}</p>
       </div>
@@ -240,6 +244,7 @@ function startStemPractice(key) {
       : `❌ ${st("answer")}${lesson.forms[pos]}`;
 
     if (ok) score++;
+    window.EsProfeLearningProgress?.recordPracticeAnswer(ok);
     pos++;
     setTimeout(next, 650);
   };
@@ -273,10 +278,7 @@ function renderStemResult(key, score) {
 
   document.getElementById("stemRepeat").onclick = () => startStemPractice(key);
   document.getElementById("stemLesson").onclick = renderStemChangingLesson;
-
-  if (window.progressRecordGrammar) {
-    window.progressRecordGrammar(`stem_${key}`, percent, []);
-  }
+  window.EsProfeLearningProgress?.recordGrammarResult(`stem_${key}`, percent, []);
 }
 
 const baseRenderGrammar = window.renderGrammar;
