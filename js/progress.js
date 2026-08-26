@@ -108,12 +108,23 @@ function progressRecordGrammar(id, percent, personResults) {
   renderProgress();
 }
 
+function hasActiveLessonWeakSpots(level, lessonId, data=getProgressData()) {
+  return Object.values(data.reviewQueue || {}).some(item => item.active !== false && item.level === level && item.lessonId === lessonId && Number(item.mistakes) > 0);
+}
+
+function isLessonPassed(level, id, data=getProgressData()) {
+  return Number(data.lessons?.[level]?.[id]?.percent || 0) >= ESPROFE_LESSON_PASS_PERCENT;
+}
+
+function isLessonCleared(level, id, data=getProgressData()) {
+  return isLessonPassed(level, id, data) && !hasActiveLessonWeakSpots(level, id, data);
+}
+
 function progressRecordLesson(level, id, result) {
   const data = getProgressData();
   data.lessons[level] = data.lessons[level] || {};
   const percent = Number(result.percent) || 0;
   const weakSpots = result.weakSpots || {};
-  data.lessons[level][id] = { ...(data.lessons[level][id] || {}), ...result, id, level, percent, passed:percent >= ESPROFE_LESSON_PASS_PERCENT, date:new Date().toISOString() };
 
   const prefix = `${level}:${id}:`;
   Object.keys(data.reviewQueue).filter(k => k.startsWith(prefix)).forEach(k => delete data.reviewQueue[k]);
@@ -123,8 +134,12 @@ function progressRecordLesson(level, id, result) {
     data.reviewQueue[key] = { key, level, lessonId:id, tag, mistakes:Number(count), active:true };
   });
 
+  const passed = percent >= ESPROFE_LESSON_PASS_PERCENT;
+  const cleared = passed && !hasActiveLessonWeakSpots(level, id, data);
+  data.lessons[level][id] = { ...(data.lessons[level][id] || {}), ...result, id, level, percent, passed, cleared, date:new Date().toISOString() };
+
   saveProgressData(data);
-  if (percent >= ESPROFE_LESSON_PASS_PERCENT && window.markStudentLessonComplete) window.markStudentLessonComplete(id, result.nextLessonId);
+  if (cleared && window.markStudentLessonComplete) window.markStudentLessonComplete(id, result.nextLessonId);
   renderProgress();
 }
 
@@ -132,25 +147,29 @@ function progressResolveWeakSpot(level, lessonId, tag) {
   const data = getProgressData();
   delete data.reviewQueue[`${level}:${lessonId}:${tag}`];
   if (data.lessons?.[level]?.[lessonId]?.weakSpots) delete data.lessons[level][lessonId].weakSpots[tag];
+  const lesson = data.lessons?.[level]?.[lessonId];
+  if (lesson) lesson.cleared = Number(lesson.percent || 0) >= ESPROFE_LESSON_PASS_PERCENT && !hasActiveLessonWeakSpots(level, lessonId, data);
   saveProgressData(data);
+  if (lesson?.cleared && window.markStudentLessonComplete) window.markStudentLessonComplete(lessonId, lesson.nextLessonId);
   renderProgress();
-}
-
-function isLessonPassed(level, id, data=getProgressData()) {
-  return Number(data.lessons?.[level]?.[id]?.percent || 0) >= ESPROFE_LESSON_PASS_PERCENT;
 }
 
 function isLessonUnlocked(level, id, data=getProgressData()) {
   if (level !== "A1") return true;
   const i = A1_LESSON_ORDER.indexOf(id);
   if (i <= 0) return true;
-  return isLessonPassed(level, A1_LESSON_ORDER[i-1], data);
+  return isLessonCleared(level, A1_LESSON_ORDER[i-1], data);
 }
 
 function getNextLearningStep(data=getProgressData()) {
+  const activeReview = Object.values(data.reviewQueue || {})
+    .filter(item => item.active !== false && item.level === "A1" && Number(item.mistakes) > 0)
+    .sort((a,b) => A1_LESSON_ORDER.indexOf(a.lessonId) - A1_LESSON_ORDER.indexOf(b.lessonId))[0];
+  if (activeReview) return { type:"review", topic:"a1", subtopic:activeReview.lessonId, tag:activeReview.tag };
+
   for (const id of A1_LESSON_ORDER) {
     if (!isLessonUnlocked("A1", id, data)) break;
-    if (!isLessonPassed("A1", id, data)) return { type:"study", topic:"a1", subtopic:id };
+    if (!isLessonCleared("A1", id, data)) return { type:"study", topic:"a1", subtopic:id };
   }
   return { type:"next", topic:"a1", subtopic:"route" };
 }
@@ -162,10 +181,10 @@ function renderProgress() {
   const t = progressLabels[code] || progressLabels.ru;
   const data = getProgressData();
   const built = A1_LESSON_ORDER.slice(0,2);
-  const passed = built.filter(id => isLessonPassed("A1", id, data)).length;
+  const cleared = built.filter(id => isLessonCleared("A1", id, data)).length;
   const results = built.map(id => Number(data.lessons?.A1?.[id]?.percent || 0)).filter(v => v > 0);
   const latest = results.length ? results[results.length - 1] : 0;
-  const reviews = Object.values(data.reviewQueue).filter(x => x.active !== false && x.level === "A1");
+  const reviews = Object.values(data.reviewQueue).filter(x => x.active !== false && x.level === "A1" && Number(x.mistakes) > 0);
   const step = getNextLearningStep(data);
 
   const reviewHtml = reviews.length ? reviews.map(w => {
@@ -175,7 +194,8 @@ function renderProgress() {
   }).join("") : `<span class="progress-empty">${t.noWeak}</span>`;
 
   const nextName = lessonNames[step.subtopic]?.[code] || lessonNames[step.subtopic]?.ru || "A1";
-  panel.innerHTML = `<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${latest}%</strong></div><div class="progress-bar"><span style="width:${latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.course}: ${latest}%</span><span>✅ ${t.passed}: ${passed}/${built.length}</span><span>🔴 ${t.weak}: ${reviews.length}</span></div><div class="progress-review-now"><strong>🔁 ${t.review}</strong>${reviewHtml}</div><div class="progress-route"><div><strong>${t.recommendation}</strong><br><span>${nextName}</span></div><button type="button" id="progressNextAction">${t.continue} →</button></div>`;
+  const actionLabel = step.type === "review" ? t.reviewNow : t.continue;
+  panel.innerHTML = `<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${latest}%</strong></div><div class="progress-bar"><span style="width:${latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.course}: ${latest}%</span><span>✅ ${t.passed}: ${cleared}/${built.length}</span><span>🔴 ${t.weak}: ${reviews.length}</span></div><div class="progress-review-now"><strong>🔁 ${t.review}</strong>${reviewHtml}</div><div class="progress-route"><div><strong>${t.recommendation}</strong><br><span>${nextName}</span></div><button type="button" id="progressNextAction">${actionLabel} →</button></div>`;
 
   document.getElementById("progressNextAction")?.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:progressAction", { detail:step })));
   panel.querySelectorAll("[data-review-lesson]").forEach(btn => btn.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:reviewWeakSpot", { detail:{ level:btn.dataset.reviewLevel, lessonId:btn.dataset.reviewLesson, tag:btn.dataset.reviewTag } }))));
@@ -192,7 +212,9 @@ window.progressRecordGrammar = progressRecordGrammar;
 window.progressRecordLesson = progressRecordLesson;
 window.progressResolveWeakSpot = progressResolveWeakSpot;
 window.isLessonPassed = isLessonPassed;
+window.isLessonCleared = isLessonCleared;
 window.isLessonUnlocked = isLessonUnlocked;
+window.hasActiveLessonWeakSpots = hasActiveLessonWeakSpots;
 
 document.addEventListener("DOMContentLoaded", renderProgress);
 document.addEventListener("esprofe:languageChanged", renderProgress);
