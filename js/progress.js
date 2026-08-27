@@ -40,6 +40,13 @@ const weakNames = {
     "how-are-you":{ru:"¿Qué tal? / ¿Cómo estás?",uk:"¿Qué tal? / ¿Cómo estás?",en:"¿Qué tal? / ¿Cómo estás?",es:"¿Qué tal? / ¿Cómo estás?"},
     farewell:{ru:"Прощания",uk:"Прощання",en:"Farewells",es:"Despedidas"},
     register:{ru:"tú / usted",uk:"tú / usted",en:"tú / usted",es:"tú / usted"}
+  },
+  "introductions-personal-data": {
+    name:{ru:"Имя: Me llamo / Soy",uk:"Ім'я: Me llamo / Soy",en:"Name: Me llamo / Soy",es:"Nombre: Me llamo / Soy"},
+    origin:{ru:"Происхождение: Soy de",uk:"Походження: Soy de",en:"Origin: Soy de",es:"Origen: Soy de"},
+    residence:{ru:"Место жительства: Vivo en",uk:"Місце проживання: Vivo en",en:"Residence: Vivo en",es:"Residencia: Vivo en"},
+    language:{ru:"Языки: Hablo",uk:"Мови: Hablo",en:"Languages: Hablo",es:"Idiomas: Hablo"},
+    register:{ru:"tú / usted",uk:"tú / usted",en:"tú / usted",es:"tú / usted"}
   }
 };
 
@@ -180,7 +187,7 @@ function renderProgress() {
   const code = document.getElementById("language")?.value || "ru";
   const t = progressLabels[code] || progressLabels.ru;
   const data = getProgressData();
-  const built = A1_LESSON_ORDER.slice(0,2);
+  const built = A1_LESSON_ORDER.slice(0,3);
   const cleared = built.filter(id => isLessonCleared("A1", id, data)).length;
   const results = built.map(id => Number(data.lessons?.A1?.[id]?.percent || 0)).filter(v => v > 0);
   const latest = results.length ? results[results.length - 1] : 0;
