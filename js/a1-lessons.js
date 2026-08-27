@@ -1,6 +1,6 @@
 "use strict";
 (function(){
-const DATA_URLS=["data/a1-lessons.json","data/a1-lessons-foundations.json","data/a1-numbers.json"];
+const DATA_URLS=["data/a1-lessons.json","data/a1-lessons-foundations.json","data/a1-numbers.json","data/a1-date-time.json"];
 const PASS=()=>Number(window.ESPROFE_LESSON_PASS_PERCENT||80);
 let lesson=null,stage="explanation",practiceScore=0,trainerScore=0,assessmentScore=0,weak={};
 const root=()=>document.getElementById("grammarSection");
