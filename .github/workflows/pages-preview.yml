@@ -1,9 +1,9 @@
-name: Deploy EsProfe preview to GitHub Pages
+name: Deploy EsProfe to GitHub Pages
 
 on:
   push:
     branches:
-      - feature/a1-curriculum-foundation
+      - main
   workflow_dispatch:
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages-preview
+  group: pages-production
   cancel-in-progress: true
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout preview branch
+      - name: Checkout main
         uses: actions/checkout@v4
 
       - name: Configure Pages
