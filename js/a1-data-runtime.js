@@ -1,7 +1,7 @@
 "use strict";
 (function(){
   const nativeFetch=window.fetch.bind(window);
-  const DATA_VERSION="20260829-1915";
+  const DATA_VERSION="20260830-articles2";
 
   function languageOptionsForCountries(data){
     const lesson=data?.["countries-nationalities"];
@@ -47,6 +47,15 @@
     return data;
   }
 
+  async function mergeArticleModules(originalUrl,data){
+    if(!String(originalUrl).includes("a1-articles.json"))return data;
+    try{
+      const extra=await nativeFetch(`data/a1-indefinite-articles.json?v=${DATA_VERSION}`,{cache:"no-store"});
+      if(extra.ok)return {...data,...await extra.json()};
+    }catch(e){console.error("A1 article module merge failed",e)}
+    return data;
+  }
+
   window.fetch=async function(input,init){
     const originalUrl=typeof input==="string"?input:input?.url;
     if(!originalUrl || !/data\/a1-[^?]+\.json(?:\?|$)/.test(originalUrl)) return nativeFetch(input,init);
@@ -57,7 +66,8 @@
     const type=response.headers.get("content-type")||"";
     if(!type.includes("json") && !freshUrl.includes(".json"))return response;
     try{
-      const data=normalize(originalUrl,await response.clone().json());
+      let data=normalize(originalUrl,await response.clone().json());
+      data=await mergeArticleModules(originalUrl,data);
       return new Response(JSON.stringify(data),{
         status:response.status,
         statusText:response.statusText,
