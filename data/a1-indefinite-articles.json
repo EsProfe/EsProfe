@@ -1,0 +1,79 @@
+{
+  "indefinite-articles": {
+    "level": "A1",
+    "moduleId": "a1-grammar-01",
+    "nextLessonId": "noun-gender",
+    "ruleTags": {"gender":0,"number":1,"use":2,"contrast":3},
+    "i18n": {
+      "ru": {
+        "title":"Неопределённые артикли: un, una, unos, unas",
+        "goal":"Цель: правильно выбирать un, una, unos или unas и понимать, когда неопределённый артикль естественнее определённого.",
+        "intro":"Неопределённый артикль обычно вводит новый, неконкретный или один из многих предметов. Как и определённый артикль, он согласуется с существительным в роде и числе.",
+        "rules":[
+          ["Род: un / una","В единственном числе употребляем un перед существительным мужского рода: un libro, un profesor; una перед существительным женского рода: una casa, una profesora."],
+          ["Число: unos / unas","Во множественном числе unos и unas часто имеют значение «несколько», «какие-то»: unos libros, unas fotos. Они также согласуются с существительным в роде."],
+          ["Когда употребляем","Неопределённый артикль часто нужен, когда предмет упоминается впервые или не уточняется: Tengo un coche. Hay una farmacia aquí."],
+          ["Сравни: un / el","un libro — какая-то книга, одна из многих; el libro — конкретная книга, уже понятная собеседникам. То же различие: una casa / la casa."]
+        ],
+        "examplesTitle":"Послушай и сравни","practiceTitle":"Выбери неопределённый артикль","trainerTitle":"Тренировка un / una / unos / unas","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: Род существительных"
+      },
+      "uk": {
+        "title":"Неозначені артиклі: un, una, unos, unas",
+        "goal":"Мета: правильно обирати un, una, unos або unas і розуміти, коли неозначений артикль природніший за означений.",
+        "intro":"Неозначений артикль зазвичай вводить новий, неконкретний або один із багатьох предметів. Як і означений артикль, він узгоджується з іменником у роді та числі.",
+        "rules":[
+          ["Рід: un / una","В однині вживаємо un перед іменником чоловічого роду: un libro, un profesor; una перед іменником жіночого роду: una casa, una profesora."],
+          ["Число: unos / unas","У множині unos та unas часто означають «кілька», «якісь»: unos libros, unas fotos. Вони також узгоджуються з іменником у роді."],
+          ["Коли вживаємо","Неозначений артикль часто потрібен, коли предмет згадується вперше або не уточнюється: Tengo un coche. Hay una farmacia aquí."],
+          ["Порівняй: un / el","un libro — якась книга, одна з багатьох; el libro — конкретна книга, уже зрозуміла співрозмовникам. Те саме: una casa / la casa."]
+        ],
+        "examplesTitle":"Послухай і порівняй","practiceTitle":"Обери неозначений артикль","trainerTitle":"Тренування un / una / unos / unas","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: Рід іменників"
+      },
+      "en": {
+        "title":"Indefinite articles: un, una, unos, unas",
+        "goal":"Goal: choose un, una, unos or unas correctly and understand when an indefinite article is more natural than a definite one.",
+        "intro":"The indefinite article normally introduces something new, non-specific, or one item among many. Like the definite article, it agrees with the noun in gender and number.",
+        "rules":[
+          ["Gender: un / una","In the singular, use un with a masculine noun: un libro, un profesor; and una with a feminine noun: una casa, una profesora."],
+          ["Number: unos / unas","In the plural, unos and unas often mean “some” or “a few”: unos libros, unas fotos. They also agree with the noun in gender."],
+          ["When to use them","The indefinite article is common when something is mentioned for the first time or is not specific: Tengo un coche. Hay una farmacia aquí."],
+          ["Compare: un / el","un libro means a book, one among many; el libro means the specific book already identifiable to the speakers. Likewise: una casa / la casa."]
+        ],
+        "examplesTitle":"Listen and compare","practiceTitle":"Choose the indefinite article","trainerTitle":"Practise un / una / unos / unas","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: Noun gender"
+      },
+      "es": {
+        "title":"Artículos indeterminados: un, una, unos, unas",
+        "goal":"Objetivo: elegir correctamente un, una, unos o unas y entender cuándo un artículo indeterminado es más natural que uno determinado.",
+        "intro":"El artículo indeterminado suele presentar algo nuevo, no específico o uno entre varios. Igual que el artículo determinado, concuerda con el sustantivo en género y número.",
+        "rules":[
+          ["Género: un / una","En singular usamos un con un sustantivo masculino: un libro, un profesor; y una con uno femenino: una casa, una profesora."],
+          ["Número: unos / unas","En plural, unos y unas suelen expresar una cantidad aproximada o no especificada: unos libros, unas fotos. También concuerdan con el sustantivo en género."],
+          ["Cuándo se usan","El artículo indeterminado es frecuente cuando algo se menciona por primera vez o no es específico: Tengo un coche. Hay una farmacia aquí."],
+          ["Compara: un / el","un libro presenta un libro cualquiera, uno entre varios; el libro identifica un libro concreto ya reconocible para los interlocutores. Igual: una casa / la casa."]
+        ],
+        "examplesTitle":"Escucha y compara","practiceTitle":"Elige el artículo indeterminado","trainerTitle":"Practica un / una / unos / unas","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: Género de los sustantivos"
+      }
+    },
+    "examples":[
+      {"word":"un libro","tag":"gender"},{"word":"una casa","tag":"gender"},{"word":"unos libros","tag":"number"},{"word":"unas fotos","tag":"number"},{"word":"un profesor","tag":"gender"},{"word":"una profesora","tag":"gender"},{"word":"Tengo un coche","tag":"use"},{"word":"Hay una farmacia aquí","tag":"use"},{"word":"un libro / el libro","tag":"contrast"}
+    ],
+    "questionBank":[
+      {"id":"ia1","tag":"gender","prompt":{"ru":"Выбери: ___ libro","uk":"Обери: ___ libro","en":"Choose: ___ libro","es":"Elige: ___ libro"},"options":["un","una","unas"],"answer":"un"},
+      {"id":"ia2","tag":"gender","prompt":{"ru":"Выбери: ___ casa","uk":"Обери: ___ casa","en":"Choose: ___ casa","es":"Elige: ___ casa"},"options":["una","un","unos"],"answer":"una"},
+      {"id":"ia3","tag":"number","prompt":{"ru":"Выбери: ___ libros","uk":"Обери: ___ libros","en":"Choose: ___ libros","es":"Elige: ___ libros"},"options":["unos","un","unas"],"answer":"unos"},
+      {"id":"ia4","tag":"number","prompt":{"ru":"Выбери: ___ fotos","uk":"Обери: ___ fotos","en":"Choose: ___ fotos","es":"Elige: ___ fotos"},"options":["unas","una","unos"],"answer":"unas"},
+      {"id":"ia5","tag":"gender","prompt":{"ru":"Выбери: ___ profesor","uk":"Обери: ___ profesor","en":"Choose: ___ profesor","es":"Elige: ___ profesor"},"options":["un","una","unas"],"answer":"un"},
+      {"id":"ia6","tag":"gender","prompt":{"ru":"Выбери: ___ profesora","uk":"Обери: ___ profesora","en":"Choose: ___ profesora","es":"Elige: ___ profesora"},"options":["una","un","unos"],"answer":"una"},
+      {"id":"ia7","tag":"use","prompt":{"ru":"Ты впервые сообщаешь, что у тебя есть машина: Tengo ___ coche.","uk":"Ти вперше повідомляєш, що маєш машину: Tengo ___ coche.","en":"You mention your car for the first time: Tengo ___ coche.","es":"Mencionas el coche por primera vez: Tengo ___ coche."},"options":["un","el","la"],"answer":"un"},
+      {"id":"ia8","tag":"use","prompt":{"ru":"Речь идёт о какой-то аптеке поблизости: Hay ___ farmacia aquí.","uk":"Йдеться про якусь аптеку поруч: Hay ___ farmacia aquí.","en":"You mean a non-specific pharmacy nearby: Hay ___ farmacia aquí.","es":"Hablas de una farmacia no específica: Hay ___ farmacia aquí."},"options":["una","la","un"],"answer":"una"},
+      {"id":"ia9","tag":"contrast","prompt":{"ru":"Как сказать «какая-то книга / одна из многих»?","uk":"Як сказати «якась книга / одна з багатьох»?","en":"How do you say “a book / one among many”?","es":"¿Cómo dices «un libro cualquiera / uno entre varios»?"},"options":["un libro","el libro","la libro"],"answer":"un libro"},
+      {"id":"ia10","tag":"contrast","prompt":{"ru":"Как сказать «конкретная книга, уже понятная собеседникам»?","uk":"Як сказати «конкретна книга, уже зрозуміла співрозмовникам»?","en":"How do you say “the specific book already identifiable”?","es":"¿Cómo dices «el libro concreto ya identificable»?"},"options":["el libro","un libro","una libro"],"answer":"el libro"},
+      {"id":"ia11","tag":"number","prompt":{"ru":"Как естественно сказать «несколько друзей» (мужчины или смешанная группа)?","uk":"Як природно сказати «кілька друзів» (чоловіки або змішана група)?","en":"How do you naturally say “some friends” (men or a mixed group)?","es":"¿Cómo dices «unos amigos» (grupo masculino o mixto)?"},"options":["unos amigos","unas amigos","un amigos"],"answer":"unos amigos"},
+      {"id":"ia12","tag":"number","prompt":{"ru":"Как естественно сказать «несколько подруг»?","uk":"Як природно сказати «кілька подруг»?","en":"How do you naturally say “some female friends”?","es":"¿Cómo dices «unas amigas»?"},"options":["unas amigas","unos amigas","una amigas"],"answer":"unas amigas"},
+      {"id":"ia13","tag":"use","prompt":{"ru":"Выбери естественное первое упоминание: Veo ___ perro en la calle.","uk":"Обери природне перше згадування: Veo ___ perro en la calle.","en":"Choose the natural first mention: Veo ___ perro en la calle.","es":"Elige la primera mención natural: Veo ___ perro en la calle."},"options":["un","el","la"],"answer":"un"},
+      {"id":"ia14","tag":"contrast","prompt":{"ru":"Какой вариант обозначает уже конкретный дом?","uk":"Який варіант позначає вже конкретний будинок?","en":"Which option refers to an already specific house?","es":"¿Qué opción se refiere a una casa ya específica?"},"options":["la casa","una casa","un casa"],"answer":"la casa"},
+      {"id":"ia15","tag":"gender","prompt":{"ru":"Выбери правильную пару.","uk":"Обери правильну пару.","en":"Choose the correct pair.","es":"Elige la pareja correcta."},"options":["una mano","un mano","unos mano"],"answer":"una mano"},
+      {"id":"ia16","tag":"gender","prompt":{"ru":"Выбери правильную пару.","uk":"Обери правильну пару.","en":"Choose the correct pair.","es":"Elige la pareja correcta."},"options":["un problema","una problema","unas problema"],"answer":"un problema"}
+    ]
+  }
+}
