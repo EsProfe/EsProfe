@@ -1,67 +1,17 @@
 "use strict";
 (function(){
   const nativeFetch=window.fetch.bind(window);
-  const DATA_VERSION="20260830-agreement1";
+  const DATA_VERSION="20260830-pronouns1";
 
   function languageOptionsForCountries(data){
     const lesson=data?.["countries-nationalities"];
     if(!lesson?.questionBank)return data;
     const q=lesson.questionBank.find(x=>x.id==="cn10");
-    if(q){
-      q.optionsByLang={
-        ru:["со строчной буквы / con minúscula","с заглавной буквы / con mayúscula","только сокращениями"],
-        uk:["з малої літери / con minúscula","з великої літери / con mayúscula","лише скороченнями"],
-        en:["with a lowercase letter / con minúscula","with a capital letter / con mayúscula","only as abbreviations"],
-        es:["con minúscula","con mayúscula","solo con abreviaturas"]
-      };
-      q.answers={ru:"со строчной буквы / con minúscula",uk:"з малої літери / con minúscula",en:"with a lowercase letter / con minúscula",es:"con minúscula"};
-    }
+    if(q){q.optionsByLang={ru:["со строчной буквы / con minúscula","с заглавной буквы / con mayúscula","только сокращениями"],uk:["з малої літери / con minúscula","з великої літери / con mayúscula","лише скороченнями"],en:["with a lowercase letter / con minúscula","with a capital letter / con mayúscula","only as abbreviations"],es:["con minúscula","con mayúscula","solo con abreviaturas"]};q.answers={ru:"со строчной буквы / con minúscula",uk:"з малої літери / con minúscula",en:"with a lowercase letter / con minúscula",es:"con minúscula"};}
     return data;
   }
-
-  function addHundredsGenderRule(data){
-    const lesson=data?.numbers;
-    if(!lesson?.i18n)return data;
-    const additions={
-      ru:" Числительные от 200 до 900 согласуются в роде с существительным: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Формы cien/ciento по роду не изменяются.",
-      uk:" Числівники від 200 до 900 узгоджуються в роді з іменником: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Форми cien/ciento за родом не змінюються.",
-      en:" Numerals from 200 to 900 agree in gender with the noun: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Cien/ciento do not change for gender.",
-      es:" Los numerales del 200 al 900 concuerdan en género con el sustantivo: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Cien/ciento no varían en género."
-    };
-    Object.entries(additions).forEach(([code,text])=>{const rule=lesson.i18n?.[code]?.rules?.[2];if(rule&&!rule[1].includes("doscientas páginas"))rule[1]+=text});
-    return data;
-  }
-
-  function normalize(url,data){
-    const path=String(url);
-    if(path.includes("a1-countries-nationalities.json"))return languageOptionsForCountries(data);
-    if(path.includes("a1-numbers.json"))return addHundredsGenderRule(data);
-    return data;
-  }
-
-  async function mergeArticleModules(originalUrl,data){
-    if(!String(originalUrl).includes("a1-articles.json"))return data;
-    let merged={...data};
-    for(const file of ["a1-indefinite-articles.json","a1-noun-gender.json","a1-noun-plural.json","a1-article-noun-agreement.json"]){
-      try{
-        const extra=await nativeFetch(`data/${file}?v=${DATA_VERSION}`,{cache:"no-store"});
-        if(extra.ok)merged={...merged,...await extra.json()};
-      }catch(e){console.error("A1 grammar module merge failed",file,e)}
-    }
-    return merged;
-  }
-
-  window.fetch=async function(input,init){
-    const originalUrl=typeof input==="string"?input:input?.url;
-    if(!originalUrl||!/data\/a1-[^?]+\.json(?:\?|$)/.test(originalUrl))return nativeFetch(input,init);
-    const join=originalUrl.includes("?")?"&":"?";
-    const freshUrl=`${originalUrl}${join}v=${DATA_VERSION}`;
-    const response=await nativeFetch(freshUrl,{...(init||{}),cache:"no-store"});
-    if(!response.ok)return response;
-    try{
-      let data=normalize(originalUrl,await response.clone().json());
-      data=await mergeArticleModules(originalUrl,data);
-      return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{"Content-Type":"application/json; charset=utf-8"}});
-    }catch(e){console.error("A1 data normalization failed",e);return response}
-  };
+  function addHundredsGenderRule(data){const lesson=data?.numbers;if(!lesson?.i18n)return data;const additions={ru:" Числительные от 200 до 900 согласуются в роде с существительным: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Формы cien/ciento по роду не изменяются.",uk:" Числівники від 200 до 900 узгоджуються в роді з іменником: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Форми cien/ciento за родом не змінюються.",en:" Numerals from 200 to 900 agree in gender with the noun: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Cien/ciento do not change for gender.",es:" Los numerales del 200 al 900 concuerdan en género con el sustantivo: doscientos libros, doscientas páginas; quinientos euros, quinientas personas. Cien/ciento no varían en género."};Object.entries(additions).forEach(([code,text])=>{const rule=lesson.i18n?.[code]?.rules?.[2];if(rule&&!rule[1].includes("doscientas páginas"))rule[1]+=text});return data;}
+  function normalize(url,data){const path=String(url);if(path.includes("a1-countries-nationalities.json"))return languageOptionsForCountries(data);if(path.includes("a1-numbers.json"))return addHundredsGenderRule(data);return data;}
+  async function mergeGrammarModules(originalUrl,data){if(!String(originalUrl).includes("a1-articles.json"))return data;let merged={...data};for(const file of ["a1-indefinite-articles.json","a1-noun-gender.json","a1-noun-plural.json","a1-article-noun-agreement.json","a1-subject-pronouns.json"]){try{const extra=await nativeFetch(`data/${file}?v=${DATA_VERSION}`,{cache:"no-store"});if(extra.ok)merged={...merged,...await extra.json()};}catch(e){console.error("A1 grammar module merge failed",file,e)}}return merged;}
+  window.fetch=async function(input,init){const originalUrl=typeof input==="string"?input:input?.url;if(!originalUrl||!/data\/a1-[^?]+\.json(?:\?|$)/.test(originalUrl))return nativeFetch(input,init);const join=originalUrl.includes("?")?"&":"?";const freshUrl=`${originalUrl}${join}v=${DATA_VERSION}`;const response=await nativeFetch(freshUrl,{...(init||{}),cache:"no-store"});if(!response.ok)return response;try{let data=normalize(originalUrl,await response.clone().json());data=await mergeGrammarModules(originalUrl,data);return new Response(JSON.stringify(data),{status:response.status,statusText:response.statusText,headers:{"Content-Type":"application/json; charset=utf-8"}});}catch(e){console.error("A1 data normalization failed",e);return response}};
 })();
