@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "level": "A1",
+  "lessonFiles": [
+    "data/a1-lessons.json",
+    "data/a1-lessons-foundations.json",
+    "data/a1-numbers.json",
+    "data/a1-date-time.json",
+    "data/a1-countries-nationalities.json",
+    "data/a1-pronunciation-k-stress.json",
+    "data/a1-articles.json",
+    "data/a1-indefinite-articles.json",
+    "data/a1-noun-gender.json",
+    "data/a1-noun-plural.json",
+    "data/a1-article-noun-agreement.json",
+    "data/a1-subject-pronouns.json",
+    "data/a1-basic-word-order.json",
+    "data/a1-negation-no.json",
+    "data/a1-basic-questions.json",
+    "data/a1-question-words.json"
+  ],
+  "ready": [
+    "alphabet-pronunciation",
+    "greetings-farewells",
+    "introductions-personal-data",
+    "numbers",
+    "date-time",
+    "countries-nationalities",
+    "definite-articles",
+    "indefinite-articles",
+    "noun-gender",
+    "noun-plural",
+    "article-noun-agreement",
+    "subject-pronouns",
+    "basic-word-order",
+    "negation-no",
+    "basic-questions",
+    "question-words"
+  ],
+  "cards": {
+    "question-words": {
+      "icon": "❓",
+      "ru": ["Вопросительные слова", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"],
+      "uk": ["Питальні слова", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"],
+      "en": ["Question words", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"],
+      "es": ["Palabras interrogativas", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"]
+    }
+  }
+}
