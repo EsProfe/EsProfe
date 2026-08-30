@@ -1,7 +1,7 @@
 "use strict";
 (function(){
   const nativeFetch=window.fetch.bind(window);
-  const DATA_VERSION="20260830-plural1";
+  const DATA_VERSION="20260830-agreement1";
 
   function languageOptionsForCountries(data){
     const lesson=data?.["countries-nationalities"];
@@ -42,7 +42,7 @@
   async function mergeArticleModules(originalUrl,data){
     if(!String(originalUrl).includes("a1-articles.json"))return data;
     let merged={...data};
-    for(const file of ["a1-indefinite-articles.json","a1-noun-gender.json","a1-noun-plural.json"]){
+    for(const file of ["a1-indefinite-articles.json","a1-noun-gender.json","a1-noun-plural.json","a1-article-noun-agreement.json"]){
       try{
         const extra=await nativeFetch(`data/${file}?v=${DATA_VERSION}`,{cache:"no-store"});
         if(extra.ok)merged={...merged,...await extra.json()};
