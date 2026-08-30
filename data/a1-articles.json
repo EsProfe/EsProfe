@@ -1,0 +1,79 @@
+{
+  "definite-articles": {
+    "level": "A1",
+    "moduleId": "a1-grammar-01",
+    "nextLessonId": "indefinite-articles",
+    "ruleTags": {"gender":0,"number":1,"use":2,"exceptions":3},
+    "i18n": {
+      "ru": {
+        "title":"Определённые артикли: el, la, los, las",
+        "goal":"Цель: правильно выбирать el, la, los или las перед знакомым или конкретным существительным.",
+        "intro":"В испанском определённый артикль согласуется с существительным в роде и числе. Поэтому важно видеть сразу две характеристики: мужской или женский род, единственное или множественное число.",
+        "rules":[
+          ["Род: el / la","В единственном числе обычно: el + существительное мужского рода (el libro), la + существительное женского рода (la casa). Род слова нужно запоминать вместе с существительным."],
+          ["Число: los / las","Во множественном числе: los для мужского рода (los libros), las для женского рода (las casas). Артикль и существительное согласуются в числе."],
+          ["Когда употребляем","Определённый артикль употребляется, когда речь идёт о конкретном или уже понятном из ситуации предмете: Cierra la puerta. El profesor está aquí."],
+          ["Важно: не только -o / -a","Окончание часто помогает: libro обычно мужского рода, casa — женского. Но это не абсолютное правило: el día, el problema, la mano. Такие слова лучше учить сразу с артиклем."]
+        ],
+        "examplesTitle":"Послушай и сравни","practiceTitle":"Выбери артикль","trainerTitle":"Тренировка el / la / los / las","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: Неопределённые артикли"
+      },
+      "uk": {
+        "title":"Означені артиклі: el, la, los, las",
+        "goal":"Мета: правильно обирати el, la, los або las перед відомим чи конкретним іменником.",
+        "intro":"В іспанській означений артикль узгоджується з іменником у роді та числі. Тому потрібно одночасно визначати дві характеристики: чоловічий чи жіночий рід, однина чи множина.",
+        "rules":[
+          ["Рід: el / la","В однині зазвичай: el + іменник чоловічого роду (el libro), la + іменник жіночого роду (la casa). Рід слова варто запам’ятовувати разом з іменником."],
+          ["Число: los / las","У множині: los для чоловічого роду (los libros), las для жіночого роду (las casas). Артикль та іменник узгоджуються в числі."],
+          ["Коли вживаємо","Означений артикль уживається, коли йдеться про конкретний або вже зрозумілий із ситуації предмет: Cierra la puerta. El profesor está aquí."],
+          ["Важливо: не лише -o / -a","Закінчення часто допомагає: libro зазвичай чоловічого роду, casa — жіночого. Але це не абсолютне правило: el día, el problema, la mano. Такі слова краще вчити одразу з артиклем."]
+        ],
+        "examplesTitle":"Послухай і порівняй","practiceTitle":"Обери артикль","trainerTitle":"Тренування el / la / los / las","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: Неозначені артиклі"
+      },
+      "en": {
+        "title":"Definite articles: el, la, los, las",
+        "goal":"Goal: choose el, la, los or las correctly before a known or specific noun.",
+        "intro":"In Spanish, the definite article agrees with the noun in gender and number. You therefore need to notice two things at once: masculine or feminine, singular or plural.",
+        "rules":[
+          ["Gender: el / la","In the singular, normally use el with a masculine noun (el libro) and la with a feminine noun (la casa). It is best to learn a noun together with its gender."],
+          ["Number: los / las","In the plural, use los for masculine nouns (los libros) and las for feminine nouns (las casas). Article and noun agree in number."],
+          ["When to use them","The definite article is used for something specific or already clear from the situation: Cierra la puerta. El profesor está aquí."],
+          ["Important: not only -o / -a","Endings often help: libro is normally masculine and casa feminine, but this is not an absolute rule: el día, el problema, la mano. Learn such nouns together with their article."]
+        ],
+        "examplesTitle":"Listen and compare","practiceTitle":"Choose the article","trainerTitle":"Practise el / la / los / las","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: Indefinite articles"
+      },
+      "es": {
+        "title":"Artículos determinados: el, la, los, las",
+        "goal":"Objetivo: elegir correctamente el, la, los o las delante de un sustantivo conocido o concreto.",
+        "intro":"En español, el artículo determinado concuerda con el sustantivo en género y número. Por eso hay que observar dos características a la vez: masculino o femenino, singular o plural.",
+        "rules":[
+          ["Género: el / la","En singular, normalmente usamos el con un sustantivo masculino (el libro) y la con uno femenino (la casa). Conviene aprender el género junto con el sustantivo."],
+          ["Número: los / las","En plural usamos los para el masculino (los libros) y las para el femenino (las casas). El artículo y el sustantivo concuerdan en número."],
+          ["Cuándo se usan","El artículo determinado se usa cuando hablamos de algo concreto o ya identificable por la situación: Cierra la puerta. El profesor está aquí."],
+          ["Importante: no solo -o / -a","La terminación suele ayudar: libro suele ser masculino y casa, femenino, pero no es una regla absoluta: el día, el problema, la mano. Conviene aprender estas palabras junto con su artículo."]
+        ],
+        "examplesTitle":"Escucha y compara","practiceTitle":"Elige el artículo","trainerTitle":"Practica el / la / los / las","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: Artículos indeterminados"
+      }
+    },
+    "examples":[
+      {"word":"el libro","tag":"gender"},{"word":"la casa","tag":"gender"},{"word":"los libros","tag":"number"},{"word":"las casas","tag":"number"},{"word":"el día","tag":"exceptions"},{"word":"el problema","tag":"exceptions"},{"word":"la mano","tag":"exceptions"},{"word":"la puerta","tag":"use"}
+    ],
+    "questionBank":[
+      {"id":"da1","tag":"gender","prompt":{"ru":"Выбери правильный артикль: ___ libro","uk":"Обери правильний артикль: ___ libro","en":"Choose the correct article: ___ libro","es":"Elige el artículo correcto: ___ libro"},"options":["el","la","las"],"answer":"el"},
+      {"id":"da2","tag":"gender","prompt":{"ru":"Выбери правильный артикль: ___ casa","uk":"Обери правильний артикль: ___ casa","en":"Choose the correct article: ___ casa","es":"Elige el artículo correcto: ___ casa"},"options":["la","el","los"],"answer":"la"},
+      {"id":"da3","tag":"number","prompt":{"ru":"Выбери правильный артикль: ___ libros","uk":"Обери правильний артикль: ___ libros","en":"Choose the correct article: ___ libros","es":"Elige el artículo correcto: ___ libros"},"options":["los","el","las"],"answer":"los"},
+      {"id":"da4","tag":"number","prompt":{"ru":"Выбери правильный артикль: ___ casas","uk":"Обери правильний артикль: ___ casas","en":"Choose the correct article: ___ casas","es":"Elige el artículo correcto: ___ casas"},"options":["las","la","los"],"answer":"las"},
+      {"id":"da5","tag":"exceptions","prompt":{"ru":"Как правильно?","uk":"Як правильно?","en":"Which is correct?","es":"¿Cuál es correcto?"},"options":["el día","la día","los día"],"answer":"el día"},
+      {"id":"da6","tag":"exceptions","prompt":{"ru":"Как правильно?","uk":"Як правильно?","en":"Which is correct?","es":"¿Cuál es correcto?"},"options":["el problema","la problema","las problema"],"answer":"el problema"},
+      {"id":"da7","tag":"exceptions","prompt":{"ru":"Как правильно?","uk":"Як правильно?","en":"Which is correct?","es":"¿Cuál es correcto?"},"options":["la mano","el mano","los mano"],"answer":"la mano"},
+      {"id":"da8","tag":"use","prompt":{"ru":"Дверь уже понятна из ситуации. Выбери: Cierra ___ puerta.","uk":"Двері вже зрозумілі із ситуації. Обери: Cierra ___ puerta.","en":"The door is clear from the situation. Choose: Cierra ___ puerta.","es":"La puerta está identificada por la situación. Elige: Cierra ___ puerta."},"options":["la","el","los"],"answer":"la"},
+      {"id":"da9","tag":"gender","prompt":{"ru":"Выбери правильный артикль: ___ profesor","uk":"Обери правильний артикль: ___ profesor","en":"Choose the correct article: ___ profesor","es":"Elige el artículo correcto: ___ profesor"},"options":["el","la","las"],"answer":"el"},
+      {"id":"da10","tag":"gender","prompt":{"ru":"Выбери правильный артикль: ___ profesora","uk":"Обери правильний артикль: ___ profesora","en":"Choose the correct article: ___ profesora","es":"Elige el artículo correcto: ___ profesora"},"options":["la","el","los"],"answer":"la"},
+      {"id":"da11","tag":"number","prompt":{"ru":"Выбери: ___ estudiantes (группа мужчин или смешанная группа)","uk":"Обери: ___ estudiantes (група чоловіків або змішана група)","en":"Choose: ___ estudiantes (men or a mixed group)","es":"Elige: ___ estudiantes (grupo masculino o mixto)"},"options":["los","las","el"],"answer":"los"},
+      {"id":"da12","tag":"number","prompt":{"ru":"Выбери: ___ estudiantes (только женщины)","uk":"Обери: ___ estudiantes (лише жінки)","en":"Choose: ___ estudiantes (women only)","es":"Elige: ___ estudiantes (solo mujeres)"},"options":["las","los","la"],"answer":"las"},
+      {"id":"da13","tag":"number","prompt":{"ru":"Выбери правильную пару во множественном числе.","uk":"Обери правильну пару в множині.","en":"Choose the correct plural pair.","es":"Elige la pareja correcta en plural."},"options":["los coches","el coches","las coches"],"answer":"los coches"},
+      {"id":"da14","tag":"number","prompt":{"ru":"Выбери правильную пару во множественном числе.","uk":"Обери правильну пару в множині.","en":"Choose the correct plural pair.","es":"Elige la pareja correcta en plural."},"options":["las mesas","la mesas","los mesas"],"answer":"las mesas"},
+      {"id":"da15","tag":"use","prompt":{"ru":"Выбери естественный вариант: ___ profesor está aquí.","uk":"Обери природний варіант: ___ profesor está aquí.","en":"Choose the natural option: ___ profesor está aquí.","es":"Elige la opción natural: ___ profesor está aquí."},"options":["El","La","Las"],"answer":"El"},
+      {"id":"da16","tag":"exceptions","prompt":{"ru":"Какой вариант показывает, что род нельзя всегда определять только по окончанию -a?","uk":"Який варіант показує, що рід не завжди можна визначити лише за закінченням -a?","en":"Which option shows that an -a ending does not always determine gender?","es":"¿Qué opción muestra que la terminación -a no siempre determina el género?"},"options":["el día","la casa","la mesa"],"answer":"el día"}
+    ]
+  }
+}
