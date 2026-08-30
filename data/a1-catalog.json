@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "level": "A1",
   "lessonFiles": [
     "data/a1-lessons.json",
@@ -19,31 +19,39 @@
     "data/a1-basic-questions.json",
     "data/a1-question-words.json"
   ],
-  "ready": [
-    "alphabet-pronunciation",
-    "greetings-farewells",
-    "introductions-personal-data",
-    "numbers",
-    "date-time",
-    "countries-nationalities",
-    "definite-articles",
-    "indefinite-articles",
-    "noun-gender",
-    "noun-plural",
-    "article-noun-agreement",
-    "subject-pronouns",
-    "basic-word-order",
-    "negation-no",
-    "basic-questions",
-    "question-words"
-  ],
+  "ready": ["alphabet-pronunciation","greetings-farewells","introductions-personal-data","numbers","date-time","countries-nationalities","definite-articles","indefinite-articles","noun-gender","noun-plural","article-noun-agreement","subject-pronouns","basic-word-order","negation-no","basic-questions","question-words"],
+  "modules": {
+    "a1-foundations-01":{"ru":"Старт и базовые основы","uk":"Старт і базові основи","en":"Getting started","es":"Inicio y bases"},
+    "a1-grammar-01":{"ru":"Артикли, род и число","uk":"Артиклі, рід і число","en":"Articles, gender and number","es":"Artículos, género y número"},
+    "a1-grammar-02":{"ru":"Местоимения и базовое предложение","uk":"Займенники та базове речення","en":"Pronouns and basic sentences","es":"Pronombres y oración básica"},
+    "a1-verbs-01":{"ru":"Ser, estar и hay","uk":"Ser, estar і hay","en":"Ser, estar and hay","es":"Ser, estar y hay"},
+    "a1-verbs-02":{"ru":"Presente: правильные глаголы","uk":"Presente: правильні дієслова","en":"Present: regular verbs","es":"Presente: verbos regulares"},
+    "a1-verbs-03":{"ru":"Основные неправильные глаголы","uk":"Основні неправильні дієслова","en":"Core irregular verbs","es":"Verbos irregulares principales"},
+    "a1-verbs-04":{"ru":"Возвратные глаголы и распорядок дня","uk":"Зворотні дієслова та розпорядок дня","en":"Reflexive verbs and daily routine","es":"Verbos reflexivos y rutina diaria"},
+    "a1-grammar-03":{"ru":"Описание людей и предметов","uk":"Опис людей і предметів","en":"Describing people and things","es":"Descripción de personas y cosas"},
+    "a1-grammar-04":{"ru":"Предлоги и пространство","uk":"Прийменники та простір","en":"Prepositions and space","es":"Preposiciones y espacio"},
+    "a1-grammar-05":{"ru":"Gustar и базовые конструкции","uk":"Gustar і базові конструкції","en":"Gustar and basic structures","es":"Gustar y estructuras básicas"},
+    "a1-vocabulary":{"ru":"Лексика A1","uk":"Лексика A1","en":"A1 vocabulary","es":"Vocabulario A1"},
+    "a1-communication":{"ru":"Коммуникация A1","uk":"Комунікація A1","en":"A1 communication","es":"Comunicación A1"},
+    "a1-skills":{"ru":"Навыки A1","uk":"Навички A1","en":"A1 skills","es":"Destrezas A1"},
+    "a1-assessment":{"ru":"Контроль A1","uk":"Контроль A1","en":"A1 assessment","es":"Evaluación A1"}
+  },
   "cards": {
-    "question-words": {
-      "icon": "❓",
-      "ru": ["Вопросительные слова", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"],
-      "uk": ["Питальні слова", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"],
-      "en": ["Question words", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"],
-      "es": ["Palabras interrogativas", "qué · quién · dónde · cuándo · cómo · cuál · cuánto"]
-    }
+    "alphabet-pronunciation":{"icon":"🔤","ru":["Алфавит и произношение","Буквы · звуки · CA/CO/CU · C/QU/K · ударение и тильда"],"uk":["Алфавіт і вимова","Літери · звуки · CA/CO/CU · C/QU/K · наголос і тильда"],"en":["Alphabet and pronunciation","Letters · sounds · CA/CO/CU · C/QU/K · stress and accents"],"es":["Alfabeto y pronunciación","Letras · sonidos · CA/CO/CU · C/QU/K · acento y tilde"]},
+    "greetings-farewells":{"icon":"👋","ru":["Приветствия и прощания","Hola · buenos días · ¿qué tal? · hasta luego"],"uk":["Привітання і прощання","Hola · buenos días · ¿qué tal? · hasta luego"],"en":["Greetings and farewells","Hola · buenos días · ¿qué tal? · hasta luego"],"es":["Saludos y despedidas","Hola · buenos días · ¿qué tal? · hasta luego"]},
+    "introductions-personal-data":{"icon":"🙋","ru":["Знакомство и личные данные","Имя · возраст · откуда вы · базовая информация о себе"],"uk":["Знайомство та особисті дані","Ім’я · вік · звідки ви · базова інформація про себе"],"en":["Introductions and personal information","Name · age · where you are from · basic personal information"],"es":["Presentaciones y datos personales","Nombre · edad · procedencia · información personal básica"]},
+    "numbers":{"icon":"🔢","ru":["Числа","0–100 · возраст · цены · телефон"],"uk":["Числа","0–100 · вік · ціни · телефон"],"en":["Numbers","0–100 · age · prices · phone numbers"],"es":["Números","0–100 · edad · precios · teléfono"]},
+    "date-time":{"icon":"📅","ru":["Дата и время","Дни недели · месяцы · дата · часы"],"uk":["Дата і час","Дні тижня · місяці · дата · час"],"en":["Date and time","Days · months · dates · telling the time"],"es":["Fecha y hora","Días · meses · fechas · la hora"]},
+    "countries-nationalities":{"icon":"🌍","ru":["Страны и национальности","Страны · национальности · откуда вы"],"uk":["Країни та національності","Країни · національності · звідки ви"],"en":["Countries and nationalities","Countries · nationalities · where you are from"],"es":["Países y nacionalidades","Países · nacionalidades · de dónde eres"]},
+    "definite-articles":{"icon":"🧩","ru":["Определённые артикли","el · la · los · las · род и число"],"uk":["Означені артиклі","el · la · los · las · рід і число"],"en":["Definite articles","el · la · los · las · gender and number"],"es":["Artículos determinados","el · la · los · las · género y número"]},
+    "indefinite-articles":{"icon":"🧩","ru":["Неопределённые артикли","un · una · unos · unas · первое упоминание"],"uk":["Неозначені артиклі","un · una · unos · unas · перша згадка"],"en":["Indefinite articles","un · una · unos · unas · first mention"],"es":["Artículos indeterminados","un · una · unos · unas · primera mención"]},
+    "noun-gender":{"icon":"⚥","ru":["Род существительных","-o / -a · частые окончания · исключения · профессии"],"uk":["Рід іменників","-o / -a · поширені закінчення · винятки · професії"],"en":["Noun gender","-o / -a · common endings · exceptions · professions"],"es":["Género de los sustantivos","-o / -a · terminaciones · excepciones · profesiones"]},
+    "noun-plural":{"icon":"➕","ru":["Множественное число","-s · -es · z → ces · ударение"],"uk":["Множина","-s · -es · z → ces · наголос"],"en":["Plural nouns","-s · -es · z → ces · stress"],"es":["Plural de los sustantivos","-s · -es · z → ces · acentuación"]},
+    "article-noun-agreement":{"icon":"🔗","ru":["Согласование артикля и существительного","el/la/los/las · un/una/unos/unas · род + число"],"uk":["Узгодження артикля та іменника","el/la/los/las · un/una/unos/unas · рід + число"],"en":["Article–noun agreement","el/la/los/las · un/una/unos/unas · gender + number"],"es":["Concordancia entre artículo y sustantivo","el/la/los/las · un/una/unos/unas · género + número"]},
+    "subject-pronouns":{"icon":"👤","ru":["Личные местоимения","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"],"uk":["Особові займенники","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"],"en":["Subject pronouns","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"],"es":["Pronombres personales sujeto","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"]},
+    "basic-word-order":{"icon":"🧱","ru":["Базовый порядок слов","подлежащее · глагол · дополнение · место и время"],"uk":["Базовий порядок слів","підмет · дієслово · додаток · місце й час"],"en":["Basic word order","subject · verb · complement · place and time"],"es":["Orden básico de palabras","sujeto · verbo · complemento · lugar y tiempo"]},
+    "negation-no":{"icon":"🚫","ru":["Отрицание с no","no + глагол · позиция no · простое отрицание"],"uk":["Заперечення з no","no + дієслово · позиція no · просте заперечення"],"en":["Negation with no","no + verb · position of no · simple negation"],"es":["Negación con no","no + verbo · posición de no · negación simple"]},
+    "basic-questions":{"icon":"❓","ru":["Базовые вопросы","¿...? · вопросы да/нет · интонация · краткие ответы"],"uk":["Базові питання","¿...? · питання так/ні · інтонація · короткі відповіді"],"en":["Basic questions","¿...? · yes/no questions · intonation · short answers"],"es":["Preguntas básicas","¿...? · preguntas de sí/no · entonación · respuestas breves"]},
+    "question-words":{"icon":"🔎","ru":["Вопросительные слова","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"],"uk":["Питальні слова","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"],"en":["Question words","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"],"es":["Palabras interrogativas","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"]}
   }
 }
