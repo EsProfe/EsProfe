@@ -1,33 +1,875 @@
 {
   "countries-nationalities": {
-    "level":"A1",
-    "moduleId":"a1-foundations-01",
-    "nextLessonId":"articles-definite-indefinite",
-    "ruleTags":{"country":0,"nationality":1,"gender":2,"origin":3,"language":4},
-    "i18n":{
-      "ru":{"title":"Страны и национальности","goal":"Цель: назвать страну и национальность, спросить и сказать, откуда человек, и правильно согласовать национальность по роду и числу.","intro":"В испанском названия стран пишутся с заглавной буквы, а национальности — обычно со строчной. Для происхождения используем ser de: Soy de Ucrania. Для национальности — ser: Soy ucraniano / ucraniana.","rules":[["Страна и происхождение","¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. Перед большинством названий стран в такой конструкции артикль не нужен."],["Национальность","Используем ser + национальность: Soy español / española. Es italiano / italiana. Национальности в испанском обычно пишутся со строчной буквы."],["Род и число","Многие формы меняются: español → española → españoles → españolas; ucraniano → ucraniana. Формы на -e или согласную могут иметь свои модели: estadounidense; francés → francesa."],["Страна ≠ национальность","España — страна, español/española — национальность. Francia — francés/francesa. Alemania — alemán/alemana. Не смешивай Soy de España и Soy español."],["Языки","Для языка: Hablo español. Hablo ucraniano. Названия языков также обычно пишутся со строчной буквы."]],"examplesTitle":"Послушай страны и фразы","practiceTitle":"Страна или национальность?","trainerTitle":"Потренируйся","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий модуль: Артикли, род и число"},
-      "uk":{"title":"Країни та національності","goal":"Мета: назвати країну й національність, запитати та сказати, звідки людина, і правильно узгодити національність за родом і числом.","intro":"В іспанській назви країн пишуться з великої літери, а національності — зазвичай з малої. Для походження використовуємо ser de: Soy de Ucrania. Для національності — ser: Soy ucraniano / ucraniana.","rules":[["Країна і походження","¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. Перед більшістю назв країн у цій конструкції артикль не потрібен."],["Національність","Використовуємо ser + національність: Soy español / española. Es italiano / italiana. Національності зазвичай пишуться з малої літери."],["Рід і число","Багато форм змінюються: español → española → españoles → españolas; ucraniano → ucraniana. Форми на -e або приголосну можуть мати свої моделі: estadounidense; francés → francesa."],["Країна ≠ національність","España — країна, español/española — національність. Francia — francés/francesa. Alemania — alemán/alemana. Не плутай Soy de España і Soy español."],["Мови","Для мови: Hablo español. Hablo ucraniano. Назви мов також зазвичай пишуться з малої літери."]],"examplesTitle":"Послухай країни та фрази","practiceTitle":"Країна чи національність?","trainerTitle":"Потренуйся","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний модуль: Артиклі, рід і число"},
-      "en":{"title":"Countries and nationalities","goal":"Goal: name countries and nationalities, ask and say where someone is from, and make nationality words agree in gender and number.","intro":"In Spanish, country names begin with a capital letter, while nationalities are normally lowercase. Use ser de for origin: Soy de Ucrania. Use ser + nationality: Soy ucraniano / ucraniana.","rules":[["Country and origin","¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. Most country names do not need an article in this structure."],["Nationality","Use ser + nationality: Soy español / española. Es italiano / italiana. Nationality words are normally lowercase in Spanish."],["Gender and number","Many forms change: español → española → españoles → españolas; ucraniano → ucraniana. Words ending in -e or a consonant may follow other patterns: estadounidense; francés → francesa."],["Country ≠ nationality","España is a country; español/española is a nationality. Francia → francés/francesa. Alemania → alemán/alemana. Keep Soy de España distinct from Soy español."],["Languages","For languages use Hablo español. Hablo ucraniano. Language names are also normally lowercase."]],"examplesTitle":"Listen to countries and phrases","practiceTitle":"Country or nationality?","trainerTitle":"Practise","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next module: Articles, gender and number"},
-      "es":{"title":"Países y nacionalidades","goal":"Objetivo: nombrar países y nacionalidades, preguntar y decir de dónde es una persona y concordar correctamente la nacionalidad en género y número.","intro":"Los nombres de países se escriben con mayúscula; las nacionalidades, normalmente con minúscula. Para el origen usamos ser de: Soy de Ucrania. Para la nacionalidad usamos ser: Soy ucraniano / ucraniana.","rules":[["País y origen","¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. La mayoría de los nombres de países no llevan artículo en esta estructura."],["Nacionalidad","Usamos ser + nacionalidad: Soy español / española. Es italiano / italiana. Las nacionalidades se escriben normalmente con minúscula."],["Género y número","Muchas formas cambian: español → española → españoles → españolas; ucraniano → ucraniana. Las terminadas en -e o consonante pueden seguir otros modelos: estadounidense; francés → francesa."],["País ≠ nacionalidad","España es un país; español/española es una nacionalidad. Francia → francés/francesa. Alemania → alemán/alemana. Distingue Soy de España de Soy español."],["Idiomas","Para los idiomas: Hablo español. Hablo ucraniano. Los nombres de idiomas también se escriben normalmente con minúscula."]],"examplesTitle":"Escucha países y frases","practiceTitle":"¿País o nacionalidad?","trainerTitle":"Practica","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente módulo: Artículos, género y número"}
+    "level": "A1",
+    "moduleId": "a1-foundations-01",
+    "nextLessonId": "articles-definite-indefinite",
+    "ruleTags": {
+      "country": 0,
+      "nationality": 1,
+      "gender": 2,
+      "origin": 3,
+      "language": 4
     },
-    "examples":[{"word":"España — español / española","tag":"nationality"},{"word":"Ucrania — ucraniano / ucraniana","tag":"nationality"},{"word":"Francia — francés / francesa","tag":"gender"},{"word":"Alemania — alemán / alemana","tag":"gender"},{"word":"Italia — italiano / italiana","tag":"nationality"},{"word":"Estados Unidos — estadounidense","tag":"gender"},{"word":"¿De dónde eres? — Soy de España.","tag":"origin"},{"word":"Soy ucraniana y hablo ucraniano y español.","tag":"language"}],
-    "questionBank":[
-      {"id":"cn1","tag":"origin","prompt":{"ru":"Как спросить «Откуда ты?»","uk":"Як запитати «Звідки ти?»","en":"How do you ask 'Where are you from?'","es":"¿Cómo preguntas por el origen de una persona de tú?"},"options":["¿De dónde eres?","¿Dónde estás?","¿Cómo eres?"],"answer":"¿De dónde eres?"},
-      {"id":"cn2","tag":"origin","prompt":{"ru":"Выберите: «Я из Испании». ","uk":"Оберіть: «Я з Іспанії».","en":"Choose: 'I am from Spain.'","es":"Elige la frase correcta."},"options":["Soy de España","Soy España","Estoy de España"],"answer":"Soy de España"},
-      {"id":"cn3","tag":"country","prompt":{"ru":"Что является названием страны?","uk":"Що є назвою країни?","en":"Which is a country name?","es":"¿Cuál es un nombre de país?"},"options":["Francia","francés","francesa"],"answer":"Francia"},
-      {"id":"cn4","tag":"nationality","prompt":{"ru":"Мужчина из Испании: Soy ...","uk":"Чоловік з Іспанії: Soy ...","en":"A man from Spain: Soy ...","es":"Un hombre de España: Soy ..."},"options":["español","española","España"],"answer":"español"},
-      {"id":"cn5","tag":"gender","prompt":{"ru":"Женщина из Испании: Soy ...","uk":"Жінка з Іспанії: Soy ...","en":"A woman from Spain: Soy ...","es":"Una mujer de España: Soy ..."},"options":["española","español","España"],"answer":"española"},
-      {"id":"cn6","tag":"gender","prompt":{"ru":"Женщина из Франции: Es ...","uk":"Жінка з Франції: Es ...","en":"A woman from France: Es ...","es":"Una mujer de Francia: Es ..."},"options":["francesa","francés","Francia"],"answer":"francesa"},
-      {"id":"cn7","tag":"nationality","prompt":{"ru":"Ucrania → ?","uk":"Ucrania → ?","en":"Ucrania → ?","es":"Ucrania → ?"},"options":["ucraniano / ucraniana","Ucrania / ucranio","ucraniés / ucraniesa"],"answer":"ucraniano / ucraniana"},
-      {"id":"cn8","tag":"gender","prompt":{"ru":"Какая форма подходит и мужчине, и женщине?","uk":"Яка форма підходить і чоловікові, і жінці?","en":"Which form can describe both a man and a woman?","es":"¿Qué forma sirve para hombre y mujer?"},"options":["estadounidense","español","italiana"],"answer":"estadounidense"},
-      {"id":"cn9","tag":"country","prompt":{"ru":"Как пишется название страны?","uk":"Як пишеться назва країни?","en":"How is the country name written?","es":"¿Cómo se escribe el nombre del país?"},"options":["España","españa","español"],"answer":"España"},
-      {"id":"cn10","tag":"nationality","prompt":{"ru":"Как обычно пишутся национальности по-испански?","uk":"Як зазвичай пишуться національності іспанською?","en":"How are nationalities normally written in Spanish?","es":"¿Cómo se escriben normalmente las nacionalidades?"},"options":["со строчной буквы / con minúscula","с заглавной буквы / con mayúscula","только сокращениями"],"answer":"со строчной буквы / con minúscula"},
-      {"id":"cn11","tag":"origin","prompt":{"ru":"Вежливая форма: «Откуда Вы?»","uk":"Ввічлива форма: «Звідки Ви?»","en":"Formal: 'Where are you from?'","es":"Forma de usted: ¿...?"},"options":["¿De dónde es usted?","¿De dónde eres usted?","¿Dónde está de usted?"],"answer":"¿De dónde es usted?"},
-      {"id":"cn12","tag":"language","prompt":{"ru":"Выберите правильную фразу о языке.","uk":"Оберіть правильну фразу про мову.","en":"Choose the correct sentence about a language.","es":"Elige la frase correcta sobre un idioma."},"options":["Hablo español","Soy español idioma","Hablo España"],"answer":"Hablo español"},
-      {"id":"cn13","tag":"gender","prompt":{"ru":"Множественное число español (муж./смешанная группа):","uk":"Множина español (чол./змішана група):","en":"Plural of español for a masculine/mixed group:","es":"Plural masculino o mixto de español:"},"options":["españoles","españols","españolas"],"answer":"españoles"},
-      {"id":"cn14","tag":"nationality","prompt":{"ru":"Italia → женщина","uk":"Italia → жінка","en":"Italia → woman","es":"Italia → mujer"},"options":["italiana","italiano","Italia"],"answer":"italiana"},
-      {"id":"cn15","tag":"origin","prompt":{"ru":"Что выражает происхождение, а не национальность?","uk":"Що виражає походження, а не національність?","en":"Which expresses origin rather than nationality?","es":"¿Qué expresa origen y no nacionalidad?"},"options":["Soy de Alemania","Soy alemán","Hablo alemán"],"answer":"Soy de Alemania"},
-      {"id":"cn16","tag":"language","prompt":{"ru":"«Я говорю по-испански»:","uk":"«Я розмовляю іспанською»:","en":"'I speak Spanish':","es":"¿Cómo dices que hablas español?"},"options":["Hablo español","Soy de español","Estoy español"],"answer":"Hablo español"}
-    ]
+    "i18n": {
+      "ru": {
+        "title": "Страны и национальности",
+        "goal": "Цель: назвать страну и национальность, спросить и сказать, откуда человек, и правильно согласовать национальность по роду и числу.",
+        "intro": "В испанском названия стран пишутся с заглавной буквы, а национальности — обычно со строчной. Для происхождения используем ser de: Soy de Ucrania. Для национальности — ser: Soy ucraniano / ucraniana.",
+        "rules": [
+          [
+            "Страна и происхождение",
+            "¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. Перед большинством названий стран в такой конструкции артикль не нужен."
+          ],
+          [
+            "Национальность",
+            "Используем ser + национальность: Soy español / española. Es italiano / italiana. Национальности в испанском обычно пишутся со строчной буквы."
+          ],
+          [
+            "Род и число",
+            "Многие формы меняются: español → española → españoles → españolas; ucraniano → ucraniana. Формы на -e или согласную могут иметь свои модели: estadounidense; francés → francesa."
+          ],
+          [
+            "Страна ≠ национальность",
+            "España — страна, español/española — национальность. Francia — francés/francesa. Alemania — alemán/alemana. Не смешивай Soy de España и Soy español."
+          ],
+          [
+            "Языки",
+            "Для языка: Hablo español. Hablo ucraniano. Названия языков также обычно пишутся со строчной буквы."
+          ]
+        ],
+        "examplesTitle": "Послушай страны и фразы",
+        "practiceTitle": "Страна или национальность?",
+        "trainerTitle": "Потренируйся",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий модуль: Артикли, род и число"
+      },
+      "uk": {
+        "title": "Країни та національності",
+        "goal": "Мета: назвати країну й національність, запитати та сказати, звідки людина, і правильно узгодити національність за родом і числом.",
+        "intro": "В іспанській назви країн пишуться з великої літери, а національності — зазвичай з малої. Для походження використовуємо ser de: Soy de Ucrania. Для національності — ser: Soy ucraniano / ucraniana.",
+        "rules": [
+          [
+            "Країна і походження",
+            "¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. Перед більшістю назв країн у цій конструкції артикль не потрібен."
+          ],
+          [
+            "Національність",
+            "Використовуємо ser + національність: Soy español / española. Es italiano / italiana. Національності зазвичай пишуться з малої літери."
+          ],
+          [
+            "Рід і число",
+            "Багато форм змінюються: español → española → españoles → españolas; ucraniano → ucraniana. Форми на -e або приголосну можуть мати свої моделі: estadounidense; francés → francesa."
+          ],
+          [
+            "Країна ≠ національність",
+            "España — країна, español/española — національність. Francia — francés/francesa. Alemania — alemán/alemana. Не плутай Soy de España і Soy español."
+          ],
+          [
+            "Мови",
+            "Для мови: Hablo español. Hablo ucraniano. Назви мов також зазвичай пишуться з малої літери."
+          ]
+        ],
+        "examplesTitle": "Послухай країни та фрази",
+        "practiceTitle": "Країна чи національність?",
+        "trainerTitle": "Потренуйся",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний модуль: Артиклі, рід і число"
+      },
+      "en": {
+        "title": "Countries and nationalities",
+        "goal": "Goal: name countries and nationalities, ask and say where someone is from, and make nationality words agree in gender and number.",
+        "intro": "In Spanish, country names begin with a capital letter, while nationalities are normally lowercase. Use ser de for origin: Soy de Ucrania. Use ser + nationality: Soy ucraniano / ucraniana.",
+        "rules": [
+          [
+            "Country and origin",
+            "¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. Most country names do not need an article in this structure."
+          ],
+          [
+            "Nationality",
+            "Use ser + nationality: Soy español / española. Es italiano / italiana. Nationality words are normally lowercase in Spanish."
+          ],
+          [
+            "Gender and number",
+            "Many forms change: español → española → españoles → españolas; ucraniano → ucraniana. Words ending in -e or a consonant may follow other patterns: estadounidense; francés → francesa."
+          ],
+          [
+            "Country ≠ nationality",
+            "España is a country; español/española is a nationality. Francia → francés/francesa. Alemania → alemán/alemana. Keep Soy de España distinct from Soy español."
+          ],
+          [
+            "Languages",
+            "For languages use Hablo español. Hablo ucraniano. Language names are also normally lowercase."
+          ]
+        ],
+        "examplesTitle": "Listen to countries and phrases",
+        "practiceTitle": "Country or nationality?",
+        "trainerTitle": "Practise",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next module: Articles, gender and number"
+      },
+      "es": {
+        "title": "Países y nacionalidades",
+        "goal": "Objetivo: nombrar países y nacionalidades, preguntar y decir de dónde es una persona y concordar correctamente la nacionalidad en género y número.",
+        "intro": "Los nombres de países se escriben con mayúscula; las nacionalidades, normalmente con minúscula. Para el origen usamos ser de: Soy de Ucrania. Para la nacionalidad usamos ser: Soy ucraniano / ucraniana.",
+        "rules": [
+          [
+            "País y origen",
+            "¿De dónde eres? — Soy de España. ¿De dónde es usted? — Soy de Ucrania. La mayoría de los nombres de países no llevan artículo en esta estructura."
+          ],
+          [
+            "Nacionalidad",
+            "Usamos ser + nacionalidad: Soy español / española. Es italiano / italiana. Las nacionalidades se escriben normalmente con minúscula."
+          ],
+          [
+            "Género y número",
+            "Muchas formas cambian: español → española → españoles → españolas; ucraniano → ucraniana. Las terminadas en -e o consonante pueden seguir otros modelos: estadounidense; francés → francesa."
+          ],
+          [
+            "País ≠ nacionalidad",
+            "España es un país; español/española es una nacionalidad. Francia → francés/francesa. Alemania → alemán/alemana. Distingue Soy de España de Soy español."
+          ],
+          [
+            "Idiomas",
+            "Para los idiomas: Hablo español. Hablo ucraniano. Los nombres de idiomas también se escriben normalmente con minúscula."
+          ]
+        ],
+        "examplesTitle": "Escucha países y frases",
+        "practiceTitle": "¿País o nacionalidad?",
+        "trainerTitle": "Practica",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente módulo: Artículos, género y número"
+      }
+    },
+    "examples": [
+      {
+        "word": "España — español / española",
+        "tag": "nationality"
+      },
+      {
+        "word": "Ucrania — ucraniano / ucraniana",
+        "tag": "nationality"
+      },
+      {
+        "word": "Francia — francés / francesa",
+        "tag": "gender"
+      },
+      {
+        "word": "Alemania — alemán / alemana",
+        "tag": "gender"
+      },
+      {
+        "word": "Italia — italiano / italiana",
+        "tag": "nationality"
+      },
+      {
+        "word": "Estados Unidos — estadounidense",
+        "tag": "gender"
+      },
+      {
+        "word": "¿De dónde eres? — Soy de España.",
+        "tag": "origin"
+      },
+      {
+        "word": "Soy ucraniana y hablo ucraniano y español.",
+        "tag": "language"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "cn1",
+        "tag": "origin",
+        "prompt": {
+          "ru": "Как спросить «Откуда ты?»",
+          "uk": "Як запитати «Звідки ти?»",
+          "en": "How do you ask 'Where are you from?'",
+          "es": "¿Cómo preguntas de manera informal de dónde es una persona?"
+        },
+        "options": [
+          "¿De dónde eres?",
+          "¿Dónde estás?",
+          "¿Cómo eres?"
+        ],
+        "answer": "¿De dónde eres?"
+      },
+      {
+        "id": "cn2",
+        "tag": "origin",
+        "prompt": {
+          "ru": "Выберите: «Я из Испании». ",
+          "uk": "Оберіть: «Я з Іспанії».",
+          "en": "Choose: 'I am from Spain.'",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Soy de España",
+          "Soy España",
+          "Estoy de España"
+        ],
+        "answer": "Soy de España"
+      },
+      {
+        "id": "cn3",
+        "tag": "country",
+        "prompt": {
+          "ru": "Что является названием страны?",
+          "uk": "Що є назвою країни?",
+          "en": "Which is a country name?",
+          "es": "¿Cuál es un nombre de país?"
+        },
+        "options": [
+          "Francia",
+          "francés",
+          "francesa"
+        ],
+        "answer": "Francia"
+      },
+      {
+        "id": "cn4",
+        "tag": "nationality",
+        "prompt": {
+          "ru": "Мужчина из Испании: Soy ...",
+          "uk": "Чоловік з Іспанії: Soy ...",
+          "en": "A man from Spain: Soy ...",
+          "es": "Un hombre de España: Soy ..."
+        },
+        "options": [
+          "español",
+          "española",
+          "España"
+        ],
+        "answer": "español"
+      },
+      {
+        "id": "cn5",
+        "tag": "gender",
+        "prompt": {
+          "ru": "Женщина из Испании: Soy ...",
+          "uk": "Жінка з Іспанії: Soy ...",
+          "en": "A woman from Spain: Soy ...",
+          "es": "Una mujer de España: Soy ..."
+        },
+        "options": [
+          "española",
+          "español",
+          "España"
+        ],
+        "answer": "española"
+      },
+      {
+        "id": "cn6",
+        "tag": "gender",
+        "prompt": {
+          "ru": "Женщина из Франции: Es ...",
+          "uk": "Жінка з Франції: Es ...",
+          "en": "A woman from France: Es ...",
+          "es": "Una mujer de Francia: Es ..."
+        },
+        "options": [
+          "francesa",
+          "francés",
+          "Francia"
+        ],
+        "answer": "francesa"
+      },
+      {
+        "id": "cn7",
+        "tag": "nationality",
+        "prompt": {
+          "ru": "Ucrania → ?",
+          "uk": "Ucrania → ?",
+          "en": "Ucrania → ?",
+          "es": "Ucrania → ?"
+        },
+        "options": [
+          "ucraniano / ucraniana",
+          "Ucrania / ucranio",
+          "ucraniés / ucraniesa"
+        ],
+        "answer": "ucraniano / ucraniana"
+      },
+      {
+        "id": "cn8",
+        "tag": "gender",
+        "prompt": {
+          "ru": "Какая форма подходит и мужчине, и женщине?",
+          "uk": "Яка форма підходить і чоловікові, і жінці?",
+          "en": "Which form can describe both a man and a woman?",
+          "es": "¿Qué forma sirve para hombre y mujer?"
+        },
+        "options": [
+          "estadounidense",
+          "español",
+          "italiana"
+        ],
+        "answer": "estadounidense"
+      },
+      {
+        "id": "cn9",
+        "tag": "country",
+        "prompt": {
+          "ru": "Как пишется название страны?",
+          "uk": "Як пишеться назва країни?",
+          "en": "How is the country name written?",
+          "es": "¿Cómo se escribe el nombre del país?"
+        },
+        "options": [
+          "España",
+          "españa",
+          "español"
+        ],
+        "answer": "España"
+      },
+      {
+        "id": "cn10",
+        "tag": "nationality",
+        "prompt": {
+          "ru": "Как обычно пишутся национальности по-испански?",
+          "uk": "Як зазвичай пишуться національності іспанською?",
+          "en": "How are nationalities normally written in Spanish?",
+          "es": "¿Cómo se escriben normalmente las nacionalidades?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "со строчной буквы / con minúscula",
+            "с заглавной буквы / con mayúscula",
+            "только сокращениями"
+          ],
+          "uk": [
+            "з малої літери / con minúscula",
+            "з великої літери / con mayúscula",
+            "лише скороченнями"
+          ],
+          "en": [
+            "with a lowercase letter / con minúscula",
+            "with a capital letter / con mayúscula",
+            "only as abbreviations"
+          ],
+          "es": [
+            "con minúscula",
+            "con mayúscula",
+            "solo con abreviaturas"
+          ]
+        },
+        "answers": {
+          "ru": "со строчной буквы / con minúscula",
+          "uk": "з малої літери / con minúscula",
+          "en": "with a lowercase letter / con minúscula",
+          "es": "con minúscula"
+        }
+      },
+      {
+        "id": "cn11",
+        "tag": "origin",
+        "prompt": {
+          "ru": "Вежливая форма: «Откуда Вы?»",
+          "uk": "Ввічлива форма: «Звідки Ви?»",
+          "en": "Formal: 'Where are you from?'",
+          "es": "Forma de usted: ¿...?"
+        },
+        "options": [
+          "¿De dónde es usted?",
+          "¿De dónde eres usted?",
+          "¿Dónde está de usted?"
+        ],
+        "answer": "¿De dónde es usted?"
+      },
+      {
+        "id": "cn12",
+        "tag": "language",
+        "prompt": {
+          "ru": "Выберите правильную фразу о языке.",
+          "uk": "Оберіть правильну фразу про мову.",
+          "en": "Choose the correct sentence about a language.",
+          "es": "Elige la frase correcta sobre un idioma."
+        },
+        "options": [
+          "Hablo español",
+          "Soy español idioma",
+          "Hablo España"
+        ],
+        "answer": "Hablo español"
+      },
+      {
+        "id": "cn13",
+        "tag": "gender",
+        "prompt": {
+          "ru": "Множественное число español (муж./смешанная группа):",
+          "uk": "Множина español (чол./змішана група):",
+          "en": "Plural of español for a masculine/mixed group:",
+          "es": "Plural masculino o mixto de español:"
+        },
+        "options": [
+          "españoles",
+          "españols",
+          "españolas"
+        ],
+        "answer": "españoles"
+      },
+      {
+        "id": "cn14",
+        "tag": "nationality",
+        "prompt": {
+          "ru": "Italia → женщина",
+          "uk": "Italia → жінка",
+          "en": "Italia → woman",
+          "es": "Italia → mujer"
+        },
+        "options": [
+          "italiana",
+          "italiano",
+          "Italia"
+        ],
+        "answer": "italiana"
+      },
+      {
+        "id": "cn15",
+        "tag": "origin",
+        "prompt": {
+          "ru": "Что выражает происхождение, а не национальность?",
+          "uk": "Що виражає походження, а не національність?",
+          "en": "Which expresses origin rather than nationality?",
+          "es": "¿Qué frase expresa el origen y no la nacionalidad?"
+        },
+        "options": [
+          "Soy de Alemania",
+          "Soy alemán",
+          "Hablo alemán"
+        ],
+        "answer": "Soy de Alemania"
+      },
+      {
+        "id": "cn16",
+        "tag": "language",
+        "prompt": {
+          "ru": "«Я говорю по-испански»:",
+          "uk": "«Я розмовляю іспанською»:",
+          "en": "'I speak Spanish':",
+          "es": "¿Cómo dices que hablas español?"
+        },
+        "options": [
+          "Hablo español",
+          "Soy de español",
+          "Estoy español"
+        ],
+        "answer": "Hablo español"
+      }
+    ],
+    "reference": {
+      "i18n": {
+        "ru": {
+          "title": "Страны, столицы и национальности",
+          "intro": "Слушай и запоминай связку: страна → столица → национальность. Сначала — самые полезные страны для общения на A1. Особое внимание: некоторые национальности имеют одну форму для мужчины и женщины.",
+          "country": "Страна",
+          "capital": "Столица",
+          "man": "Мужчина",
+          "woman": "Женщина",
+          "same": "Одинаковая форма для мужчины и женщины",
+          "listen": "Слушать"
+        },
+        "uk": {
+          "title": "Країни, столиці та національності",
+          "intro": "Слухай і запам’ятовуй зв’язку: країна → столиця → національність. Спочатку — найкорисніші країни для спілкування на A1. Особлива увага: деякі національності мають одну форму для чоловіка й жінки.",
+          "country": "Країна",
+          "capital": "Столиця",
+          "man": "Чоловік",
+          "woman": "Жінка",
+          "same": "Однакова форма для чоловіка й жінки",
+          "listen": "Слухати"
+        },
+        "en": {
+          "title": "Countries, capitals and nationalities",
+          "intro": "Listen and learn the link: country → capital → nationality. The most useful countries for A1 communication come first. Pay special attention to nationality words with the same form for men and women.",
+          "country": "Country",
+          "capital": "Capital",
+          "man": "Man",
+          "woman": "Woman",
+          "same": "Same form for men and women",
+          "listen": "Listen"
+        },
+        "es": {
+          "title": "Países, capitales y nacionalidades",
+          "intro": "Escucha y memoriza la relación: país → capital → nacionalidad. Primero aparecen los países más útiles para la comunicación en A1. Presta especial atención a los gentilicios que tienen la misma forma para hombre y mujer.",
+          "country": "País",
+          "capital": "Capital",
+          "man": "Hombre",
+          "woman": "Mujer",
+          "same": "Misma forma para hombre y mujer",
+          "listen": "Escuchar"
+        }
+      },
+      "items": [
+        {
+          "country": "España",
+          "capital": "Madrid",
+          "m": "español",
+          "f": "española",
+          "priority": 1
+        },
+        {
+          "country": "Ucrania",
+          "capital": "Kyiv",
+          "m": "ucraniano",
+          "f": "ucraniana",
+          "priority": 1
+        },
+        {
+          "country": "Francia",
+          "capital": "París",
+          "m": "francés",
+          "f": "francesa",
+          "priority": 1
+        },
+        {
+          "country": "Alemania",
+          "capital": "Berlín",
+          "m": "alemán",
+          "f": "alemana",
+          "priority": 1
+        },
+        {
+          "country": "Italia",
+          "capital": "Roma",
+          "m": "italiano",
+          "f": "italiana",
+          "priority": 1
+        },
+        {
+          "country": "Portugal",
+          "capital": "Lisboa",
+          "m": "portugués",
+          "f": "portuguesa",
+          "priority": 1
+        },
+        {
+          "country": "Reino Unido",
+          "capital": "Londres",
+          "m": "británico",
+          "f": "británica",
+          "priority": 1
+        },
+        {
+          "country": "Estados Unidos",
+          "capital": "Washington D. C.",
+          "m": "estadounidense",
+          "f": "estadounidense",
+          "same": true,
+          "priority": 1
+        },
+        {
+          "country": "Polonia",
+          "capital": "Varsovia",
+          "m": "polaco",
+          "f": "polaca",
+          "priority": 1
+        },
+        {
+          "country": "Rumanía",
+          "capital": "Bucarest",
+          "m": "rumano",
+          "f": "rumana",
+          "priority": 1
+        },
+        {
+          "country": "Marruecos",
+          "capital": "Rabat",
+          "m": "marroquí",
+          "f": "marroquí",
+          "same": true,
+          "priority": 1
+        },
+        {
+          "country": "Argentina",
+          "capital": "Buenos Aires",
+          "m": "argentino",
+          "f": "argentina",
+          "priority": 1
+        },
+        {
+          "country": "México",
+          "capital": "Ciudad de México",
+          "m": "mexicano",
+          "f": "mexicana",
+          "priority": 1
+        },
+        {
+          "country": "Colombia",
+          "capital": "Bogotá",
+          "m": "colombiano",
+          "f": "colombiana",
+          "priority": 1
+        },
+        {
+          "country": "Venezuela",
+          "capital": "Caracas",
+          "m": "venezolano",
+          "f": "venezolana",
+          "priority": 1
+        },
+        {
+          "country": "Brasil",
+          "capital": "Brasilia",
+          "m": "brasileño",
+          "f": "brasileña",
+          "priority": 1
+        },
+        {
+          "country": "China",
+          "capital": "Pekín",
+          "m": "chino",
+          "f": "china",
+          "priority": 1
+        },
+        {
+          "country": "Japón",
+          "capital": "Tokio",
+          "m": "japonés",
+          "f": "japonesa",
+          "priority": 1
+        },
+        {
+          "country": "Canadá",
+          "capital": "Ottawa",
+          "m": "canadiense",
+          "f": "canadiense",
+          "same": true,
+          "priority": 1
+        },
+        {
+          "country": "Bélgica",
+          "capital": "Bruselas",
+          "m": "belga",
+          "f": "belga",
+          "same": true,
+          "priority": 2
+        },
+        {
+          "country": "Países Bajos",
+          "capital": "Ámsterdam",
+          "m": "neerlandés",
+          "f": "neerlandesa",
+          "priority": 2
+        },
+        {
+          "country": "Suiza",
+          "capital": "Berna",
+          "m": "suizo",
+          "f": "suiza",
+          "priority": 2
+        },
+        {
+          "country": "Austria",
+          "capital": "Viena",
+          "m": "austriaco",
+          "f": "austriaca",
+          "priority": 2
+        },
+        {
+          "country": "Irlanda",
+          "capital": "Dublín",
+          "m": "irlandés",
+          "f": "irlandesa",
+          "priority": 2
+        },
+        {
+          "country": "Suecia",
+          "capital": "Estocolmo",
+          "m": "sueco",
+          "f": "sueca",
+          "priority": 2
+        },
+        {
+          "country": "Noruega",
+          "capital": "Oslo",
+          "m": "noruego",
+          "f": "noruega",
+          "priority": 2
+        },
+        {
+          "country": "Dinamarca",
+          "capital": "Copenhague",
+          "m": "danés",
+          "f": "danesa",
+          "priority": 2
+        },
+        {
+          "country": "Finlandia",
+          "capital": "Helsinki",
+          "m": "finlandés",
+          "f": "finlandesa",
+          "priority": 2
+        },
+        {
+          "country": "Chequia",
+          "capital": "Praga",
+          "m": "checo",
+          "f": "checa",
+          "priority": 2
+        },
+        {
+          "country": "Hungría",
+          "capital": "Budapest",
+          "m": "húngaro",
+          "f": "húngara",
+          "priority": 2
+        },
+        {
+          "country": "Grecia",
+          "capital": "Atenas",
+          "m": "griego",
+          "f": "griega",
+          "priority": 2
+        },
+        {
+          "country": "Turquía",
+          "capital": "Ankara",
+          "m": "turco",
+          "f": "turca",
+          "priority": 2
+        },
+        {
+          "country": "Bulgaria",
+          "capital": "Sofía",
+          "m": "búlgaro",
+          "f": "búlgara",
+          "priority": 2
+        },
+        {
+          "country": "Moldavia",
+          "capital": "Chisináu",
+          "m": "moldavo",
+          "f": "moldava",
+          "priority": 2
+        },
+        {
+          "country": "Georgia",
+          "capital": "Tiflis",
+          "m": "georgiano",
+          "f": "georgiana",
+          "priority": 2
+        },
+        {
+          "country": "Israel",
+          "capital": "Jerusalén",
+          "m": "israelí",
+          "f": "israelí",
+          "same": true,
+          "priority": 2
+        },
+        {
+          "country": "India",
+          "capital": "Nueva Delhi",
+          "m": "indio",
+          "f": "india",
+          "priority": 2
+        },
+        {
+          "country": "Corea del Sur",
+          "capital": "Seúl",
+          "m": "surcoreano",
+          "f": "surcoreana",
+          "priority": 2
+        },
+        {
+          "country": "Australia",
+          "capital": "Canberra",
+          "m": "australiano",
+          "f": "australiana",
+          "priority": 2
+        },
+        {
+          "country": "Nueva Zelanda",
+          "capital": "Wellington",
+          "m": "neozelandés",
+          "f": "neozelandesa",
+          "priority": 2
+        },
+        {
+          "country": "Cuba",
+          "capital": "La Habana",
+          "m": "cubano",
+          "f": "cubana",
+          "priority": 2
+        },
+        {
+          "country": "Chile",
+          "capital": "Santiago",
+          "m": "chileno",
+          "f": "chilena",
+          "priority": 2
+        },
+        {
+          "country": "Perú",
+          "capital": "Lima",
+          "m": "peruano",
+          "f": "peruana",
+          "priority": 2
+        },
+        {
+          "country": "Ecuador",
+          "capital": "Quito",
+          "m": "ecuatoriano",
+          "f": "ecuatoriana",
+          "priority": 2
+        },
+        {
+          "country": "Uruguay",
+          "capital": "Montevideo",
+          "m": "uruguayo",
+          "f": "uruguaya",
+          "priority": 2
+        },
+        {
+          "country": "Paraguay",
+          "capital": "Asunción",
+          "m": "paraguayo",
+          "f": "paraguaya",
+          "priority": 2
+        },
+        {
+          "country": "Bolivia",
+          "capital": "Sucre",
+          "m": "boliviano",
+          "f": "boliviana",
+          "priority": 2
+        },
+        {
+          "country": "República Dominicana",
+          "capital": "Santo Domingo",
+          "m": "dominicano",
+          "f": "dominicana",
+          "priority": 2
+        },
+        {
+          "country": "Costa Rica",
+          "capital": "San José",
+          "m": "costarricense",
+          "f": "costarricense",
+          "same": true,
+          "priority": 2
+        },
+        {
+          "country": "Panamá",
+          "capital": "Ciudad de Panamá",
+          "m": "panameño",
+          "f": "panameña",
+          "priority": 2
+        },
+        {
+          "country": "Egipto",
+          "capital": "El Cairo",
+          "m": "egipcio",
+          "f": "egipcia",
+          "priority": 2
+        }
+      ]
+    }
   }
 }

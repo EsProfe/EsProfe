@@ -1,6 +1,6 @@
 # A1 audit — reusable EsProfe components
 
-Branch: `feature/a1-curriculum-foundation`
+Current architecture: `main`, unified A1 catalog v3
 
 ## Reuse, do not replace
 
@@ -24,9 +24,11 @@ Branch: `feature/a1-curriculum-foundation`
 
 ## A1 foundation decision
 
-The first A1 lesson uses a shared, data-driven architecture:
+All ready A1 lessons use a shared, data-driven architecture:
 
-`curriculum-a1.json` → `a1-curriculum.js` → `a1-lessons.json` → `a1-lessons.js` → `progress.js`
+`curriculum-a1.json` + `a1-catalog.json` → `a1-catalog.js` → `a1-curriculum-v2.js` → `a1-lessons-v2.js` → `learning-progress.js`
+
+The catalog is the only readiness/card/file registry. A normal new lesson requires one lesson JSON and one catalog entry. Lesson-specific loaders, card activators, navigation interceptors and DOM-observer patches are not allowed.
 
 Student-facing continuation uses:
 

@@ -1,4 +1,23 @@
 # Changelog
+## [v0.9.0] - 2026-08-31
+
+### Fixed
+
+- Repaired invalid JSON in the A1 Date and time lesson that prevented the unified loader from completing.
+- Removed the duplicate `alphabet-pronunciation` data overlay that replaced the main lesson at runtime.
+- Moved localized nationality options and number agreement explanations into their lesson source files.
+- Corrected several A1 Spanish and Ukrainian teaching prompts found during the philological review.
+
+### Architecture
+
+- Upgraded `data/a1-catalog.json` to version 3: every ready lesson now has one catalog entry containing its file, status, icon and four localized card texts.
+- Changed `js/a1-catalog.js` to load only the selected lesson file and fail explicitly on invalid data instead of silently assembling partial lessons.
+- Moved pronunciation supplements and the countries reference into their owning lesson JSON files.
+- Replaced the countries DOM observer/fetch patch with a renderer called directly by the shared A1 lesson engine.
+- Added localized labels to the seven-stage lesson stepper inside the shared engine.
+- Removed obsolete A1 loaders, card activators, navigation interceptors, data overlays and runtime patches.
+- Added `scripts/validate-a1.mjs` as the pre-deployment gate for JSON/JavaScript syntax, catalog/route consistency, four-language content and question/answer integrity.
+
 ## [v0.8.0] - 2026-08-21
 
 ### Added

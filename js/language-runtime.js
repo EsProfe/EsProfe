@@ -12,7 +12,7 @@
   function reopenA1(){
     if(!activeA1Topic || !document.querySelector('.a1-lesson')) return;
     const stageIndex=currentA1StageIndex();
-    const open=window.EsProfeA1Lessons?.open;
+    const open=window.openA1Lesson;
     if(typeof open!=="function") return;
     Promise.resolve(open(activeA1Topic)).then(()=>{
       if(stageIndex===1){
