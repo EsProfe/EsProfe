@@ -16,7 +16,9 @@ async function text(path) {
 
 async function json(path) {
   try {
-    return JSON.parse(await text(path));
+    const source = await text(path);
+    if (source !== source.normalize("NFC")) fail(`${path}: text is not NFC-normalized`);
+    return JSON.parse(source);
   } catch (error) {
     fail(`${path}: invalid JSON (${error.message})`);
     return null;
@@ -46,6 +48,7 @@ if (catalog && curriculum) {
   if (catalog.level !== "A1") fail("data/a1-catalog.json: expected level A1");
 
   const route = new Map();
+  const routeOrder = [];
   for (const module of curriculum.modules || []) {
     if (!catalog.modules?.[module.id]) fail(`Catalog is missing module ${module.id}`);
     for (const language of LANGUAGES) {
@@ -56,7 +59,14 @@ if (catalog && curriculum) {
     for (const topic of module.topics || []) {
       if (route.has(topic.id)) fail(`Curriculum contains duplicate topic ${topic.id}`);
       route.set(topic.id, module.id);
+      routeOrder.push(topic.id);
     }
+  }
+
+  const readyOrder = Object.keys(catalog.lessons || {});
+  const expectedReadyOrder = routeOrder.filter(id => catalog.lessons?.[id]?.status === "ready");
+  if (readyOrder.join("|") !== expectedReadyOrder.join("|")) {
+    fail("Catalog lesson order does not match the curriculum route");
   }
 
   for (const [id, meta] of Object.entries(catalog.lessons || {})) {
@@ -87,6 +97,11 @@ if (catalog && curriculum) {
     if (!Array.isArray(lesson.questionBank) || lesson.questionBank.length < 10) {
       fail(`${id}: questionBank must contain at least 10 questions`);
     }
+    const routeIndex = routeOrder.indexOf(id);
+    const expectedNext = routeOrder[routeIndex + 1];
+    if (lesson.nextLessonId !== expectedNext) {
+      fail(`${id}: nextLessonId ${lesson.nextLessonId} does not match route ${expectedNext}`);
+    }
     if (lesson.supplements && typeof lesson.supplements !== "object") {
       fail(`${id}: supplements must be an object`);
     }
@@ -111,7 +126,13 @@ if (catalog && curriculum) {
       }
     }
 
+    const questionIds = new Set();
+    const usedTags = new Set();
     for (const question of lesson.questionBank || []) {
+      if (!question.id || questionIds.has(question.id)) fail(`${id}: duplicate or missing question id ${question.id || "(empty)"}`);
+      questionIds.add(question.id);
+      if (!Object.hasOwn(lesson.ruleTags || {}, question.tag)) fail(`${id}/${question.id}: unknown rule tag ${question.tag}`);
+      usedTags.add(question.tag);
       for (const language of LANGUAGES) {
         const prompt = question.prompt?.[language];
         const options = question.optionsByLang?.[language] ?? question.options;
@@ -124,6 +145,9 @@ if (catalog && curriculum) {
         }
       }
     }
+    for (const tag of Object.keys(lesson.ruleTags || {})) {
+      if (!usedTags.has(tag)) fail(`${id}: rule tag ${tag} has no questions`);
+    }
   }
 
   const index = await text("index.html");
@@ -135,6 +159,15 @@ if (catalog && curriculum) {
   }
   if ((await text("js/language-runtime.js")).includes("EsProfeA1Lessons")) {
     fail("js/language-runtime.js: obsolete A1 lesson API is still used");
+  }
+  const catalogRuntime = await text("js/a1-catalog.js");
+  const progressRuntime = await text("js/progress.js");
+  const curriculumRuntime = await text("js/a1-curriculum-v2.js");
+  if (!catalogRuntime.includes("setA1LessonCatalog")) fail("A1 catalog does not initialize sequential progress");
+  if (!progressRuntime.includes("window.setA1LessonCatalog")) fail("Progress does not accept catalog-driven lesson order");
+  if (curriculumRuntime.includes("data.modules.slice(0,3)")) fail("A1 route still limits ready modules to the first three");
+  if (!(await text("js/platform-shell.js")).includes("Учебные материалы A1 с последовательным маршрутом, прогрессом, слабыми местами и рекомендациями для ученика.")) {
+    fail("Home page My course description is outdated");
   }
 }
 

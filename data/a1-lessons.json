@@ -3,6 +3,7 @@
     "level": "A1",
     "moduleId": "a1-foundations-01",
     "nextLessonId": "greetings-farewells",
+    "ruleTags": {"vowels":0,"h":1,"ñ":2,"j-g":3,"c-z":4,"r-rr":5,"stress":6},
     "i18n": {
       "ru": {
         "title": "Алфавит и произношение",

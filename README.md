@@ -12,6 +12,9 @@ EsProfe is a multilingual platform for learning Spanish. The current development
 - `js/a1-curriculum-v2.js` renders Free learning and My course routes.
 - `js/a1-lessons-v2.js` runs every ready lesson through the shared learning cycle.
 - `js/learning-progress.js` and the existing progress/profile modules store results and weak spots.
+- The catalog also initializes the sequential lesson order, so new ready lessons appear in both routes without a separate progress-list edit.
+
+The current catalog contains 22 ready lessons, including the complete six-lesson **Ser / estar / hay** module.
 
 ## Adding a ready A1 lesson
 

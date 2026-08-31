@@ -1,4 +1,24 @@
 # Changelog
+## [v0.10.0] - 2026-08-31
+
+### Added
+
+- Added six complete A1 lessons for **Ser / estar / hay**, each with four-language explanations, examples, practice, trainer, assessment, results and weak-spot review.
+- Added focused lessons for the present-tense forms and basic uses of both `ser` and `estar`, an existence lesson for `hay`, and a final contrast lesson.
+- Added 86 new A1 questions covering forms, written accents, identity, origin, profession, time, location, states, existence and the definite/indefinite contrast.
+
+### Improved
+
+- Made the visible A1 module list catalog-driven, so every module containing a ready lesson is rendered automatically.
+- Made the sequential **My course** order derive from the same ready-lesson catalog used by Free learning.
+- Expanded validation to check lesson order, next-lesson links, rule tags, question IDs and Unicode normalization.
+- Reworded the **My course** description on the home page in all four languages.
+
+### Fixed
+
+- Corrected the countries lesson link to the first articles lesson.
+- Added the missing pronunciation rule-tag map required for accurate weak-spot review.
+
 ## [v0.9.0] - 2026-08-31
 
 ### Fixed

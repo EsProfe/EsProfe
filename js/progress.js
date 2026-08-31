@@ -8,8 +8,36 @@ const A1_LESSON_ORDER = [
   "introductions-personal-data",
   "numbers",
   "date-time",
-  "countries-nationalities"
+  "countries-nationalities",
+  "definite-articles",
+  "indefinite-articles",
+  "noun-gender",
+  "noun-plural",
+  "article-noun-agreement",
+  "subject-pronouns",
+  "basic-word-order",
+  "negation-no",
+  "basic-questions",
+  "question-words"
 ];
+
+let catalogLessonNames = {};
+
+function setA1LessonCatalog(catalog) {
+  const ready = Object.entries(catalog?.lessons || {}).filter(([,meta]) => meta.status === "ready");
+  if (!ready.length) return;
+  A1_LESSON_ORDER.splice(0, A1_LESSON_ORDER.length, ...ready.map(([id]) => id));
+  catalogLessonNames = Object.fromEntries(ready);
+  if (document.readyState !== "loading") renderProgress();
+}
+
+function localizedLessonName(id, code) {
+  return catalogLessonNames[id]?.[code]?.[0]
+    || catalogLessonNames[id]?.ru?.[0]
+    || lessonNames[id]?.[code]
+    || lessonNames[id]?.ru
+    || id;
+}
 
 const progressLabels = {
   ru: { title:"Мой прогресс", course:"Прогресс A1", passed:"Пройдено уроков", weak:"Слабые места", review:"Повторить", noWeak:"Слабых мест нет", recommendation:"Рекомендация", continue:"Продолжить обучение", reviewNow:"Повторить сейчас", lesson:"Урок" },
@@ -187,7 +215,7 @@ function renderProgress() {
   const code = document.getElementById("language")?.value || "ru";
   const t = progressLabels[code] || progressLabels.ru;
   const data = getProgressData();
-  const built = A1_LESSON_ORDER.slice(0,3);
+  const built = A1_LESSON_ORDER;
   const cleared = built.filter(id => isLessonCleared("A1", id, data)).length;
   const results = built.map(id => Number(data.lessons?.A1?.[id]?.percent || 0)).filter(v => v > 0);
   const latest = results.length ? results[results.length - 1] : 0;
@@ -195,12 +223,12 @@ function renderProgress() {
   const step = getNextLearningStep(data);
 
   const reviewHtml = reviews.length ? reviews.map(w => {
-    const lesson = lessonNames[w.lessonId]?.[code] || lessonNames[w.lessonId]?.ru || w.lessonId;
+    const lesson = localizedLessonName(w.lessonId, code);
     const name = weakNames[w.lessonId]?.[w.tag]?.[code] || weakNames[w.lessonId]?.[w.tag]?.ru || w.tag;
     return `<button type="button" class="progress-review-card" data-review-level="${w.level}" data-review-lesson="${w.lessonId}" data-review-tag="${w.tag}"><span><small>${t.lesson}: ${lesson}</small><strong>${name}</strong><em>${w.mistakes}</em></span><b>${t.reviewNow} →</b></button>`;
   }).join("") : `<span class="progress-empty">${t.noWeak}</span>`;
 
-  const nextName = lessonNames[step.subtopic]?.[code] || lessonNames[step.subtopic]?.ru || "A1";
+  const nextName = step.subtopic === "route" ? "A1" : localizedLessonName(step.subtopic, code);
   const actionLabel = step.type === "review" ? t.reviewNow : t.continue;
   panel.innerHTML = `<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${latest}%</strong></div><div class="progress-bar"><span style="width:${latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.course}: ${latest}%</span><span>✅ ${t.passed}: ${cleared}/${built.length}</span><span>🔴 ${t.weak}: ${reviews.length}</span></div><div class="progress-review-now"><strong>🔁 ${t.review}</strong>${reviewHtml}</div><div class="progress-route"><div><strong>${t.recommendation}</strong><br><span>${nextName}</span></div><button type="button" id="progressNextAction">${actionLabel} →</button></div>`;
 
@@ -210,6 +238,7 @@ function renderProgress() {
 
 window.ESPROFE_LESSON_PASS_PERCENT = ESPROFE_LESSON_PASS_PERCENT;
 window.A1_LESSON_ORDER = A1_LESSON_ORDER;
+window.setA1LessonCatalog = setA1LessonCatalog;
 window.getProgressData = getProgressData;
 window.getNextLearningStep = getNextLearningStep;
 window.renderProgress = renderProgress;
