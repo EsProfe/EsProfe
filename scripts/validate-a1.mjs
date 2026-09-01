@@ -105,6 +105,20 @@ if (catalog && curriculum) {
     if (lesson.supplements && typeof lesson.supplements !== "object") {
       fail(`${id}: supplements must be an object`);
     }
+    if (lesson.stemDiagram) {
+      if (!lesson.stemDiagram.infinitive || !lesson.stemDiagram.from || !lesson.stemDiagram.to) {
+        fail(`${id}: stemDiagram identity is incomplete`);
+      }
+      if (!Array.isArray(lesson.stemDiagram.forms) || lesson.stemDiagram.forms.length !== 6) {
+        fail(`${id}: stemDiagram must contain six forms`);
+      }
+      if (!Array.isArray(lesson.stemDiagram.marks) || lesson.stemDiagram.marks.length !== 6) {
+        fail(`${id}: stemDiagram must contain six highlights`);
+      }
+      for (const language of LANGUAGES) {
+        if (!lesson.stemDiagram.note?.[language]) fail(`${id}: stemDiagram ${language} note is missing`);
+      }
+    }
     if (lesson.reference) {
       if (!Array.isArray(lesson.reference.items) || lesson.reference.items.length === 0) {
         fail(`${id}: reference items are missing`);

@@ -11,6 +11,7 @@
 
 - Extended the unified A1 catalog and sequential route to 35 ready lessons.
 - Kept lesson explanations, examples, practice, assessment and weak-spot review synchronized across RU / UK / EN / ES.
+- Restored an adaptive Spanish-labelled boot diagram for the stem-changing lessons `tener`, `venir`, `querer`, `poder` and `decir`.
 
 ## [v0.11.0] - 2026-09-01
 
