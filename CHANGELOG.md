@@ -1,4 +1,17 @@
 # Changelog
+## [v0.12.0] - 2026-09-01
+
+### Added
+
+- Added eight complete A1 lessons for `tener`, `ir`, `hacer`, `venir`, `querer`, `poder`, `decir` and mixed irregular-present practice.
+- Added 100 questions covering verb forms, stem changes, special `yo` forms and essential A1 structures.
+- Added focused teaching for `tener que`, `ir a + infinitive`, `querer/poder + infinitive`, weather with `hacer`, movement with `venir` and reported content with `decir que`.
+
+### Improved
+
+- Extended the unified A1 catalog and sequential route to 35 ready lessons.
+- Kept lesson explanations, examples, practice, assessment and weak-spot review synchronized across RU / UK / EN / ES.
+
 ## [v0.11.0] - 2026-09-01
 
 ### Added
