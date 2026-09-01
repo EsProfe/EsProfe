@@ -1,4 +1,21 @@
 # Changelog
+## [v0.11.0] - 2026-09-01
+
+### Added
+
+- Added five complete A1 lessons for regular present-tense verbs: `-AR`, `-ER`, `-IR`, mixed-pattern practice and a final trainer.
+- Added 66 questions with four-language teaching content, written-accent practice and contrasts between the three conjugation patterns.
+
+### Improved
+
+- Extended the unified A1 catalog and sequential route to 27 ready lessons.
+- Preferred an available `es-ES` voice for A1 lesson audio, with fallback to another installed Spanish voice.
+
+### Fixed
+
+- Forced the pronunciation drill syllables `ca`, `co`, `cu` to be spoken as [ka], [ko], [ku].
+- Restored visual completion of missing-letter words and automatic playback of the correct full word after every answer.
+
 ## [v0.10.0] - 2026-08-31
 
 ### Added

@@ -14,7 +14,7 @@ EsProfe is a multilingual platform for learning Spanish. The current development
 - `js/learning-progress.js` and the existing progress/profile modules store results and weak spots.
 - The catalog also initializes the sequential lesson order, so new ready lessons appear in both routes without a separate progress-list edit.
 
-The current catalog contains 22 ready lessons, including the complete six-lesson **Ser / estar / hay** module.
+The current catalog contains 27 ready lessons, including the complete six-lesson **Ser / estar / hay** module and the five-lesson **Regular present tense** module.
 
 ## Adding a ready A1 lesson
 
