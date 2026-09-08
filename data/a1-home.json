@@ -21,7 +21,7 @@
           ],
           [
             "Предметы",
-            "la mesa — стол\nla silla — стул\nla cama — кровать\nla puerta — дверь\nla ventana — окно"
+            "la mesa — стол\nla silla — стул\nla cama — кровать\nla puerta — дверь\nla ventana — окно\nel sofá — диван\nla televisión — телевизор\nel espejo — зеркало\nla vajilla — посуда\nel escritorio — письменный стол\nla lámpara — лампа\nel armario — шкаф\nla nevera — холодильник\nel horno — духовка\nla lavadora — стиральная машина"
           ],
           [
             "Вопрос",
@@ -51,7 +51,7 @@
           ],
           [
             "Предмети",
-            "la mesa — стіл\nla silla — стілець\nla cama — ліжко\nla puerta — двері\nla ventana — вікно"
+            "la mesa — стіл\nla silla — стілець\nla cama — ліжко\nla puerta — двері\nla ventana — вікно\nel sofá — диван\nla televisión — телевізор\nel espejo — дзеркало\nla vajilla — посуд\nel escritorio — письмовий стіл\nla lámpara — лампа\nel armario — шафа\nla nevera — холодильник\nel horno — духовка\nla lavadora — пральна машина"
           ],
           [
             "Питання",
@@ -81,7 +81,7 @@
           ],
           [
             "Objects",
-            "la mesa — table\nla silla — chair\nla cama — bed\nla puerta — door\nla ventana — window"
+            "la mesa — table\nla silla — chair\nla cama — bed\nla puerta — door\nla ventana — window\nel sofá — sofa\nla televisión — television\nel espejo — mirror\nla vajilla — dishes\nel escritorio — desk\nla lámpara — lamp\nel armario — wardrobe\nla nevera — fridge\nel horno — oven\nla lavadora — washing machine"
           ],
           [
             "Question",
@@ -111,7 +111,7 @@
           ],
           [
             "Objetos",
-            "la mesa\nla silla\nla cama\nla puerta\nla ventana"
+            "la mesa\nla silla\nla cama\nla puerta\nla ventana\nel sofá\nla televisión\nel espejo\nla vajilla\nel escritorio\nla lámpara\nel armario\nla nevera\nel horno\nla lavadora"
           ],
           [
             "Pregunta",
