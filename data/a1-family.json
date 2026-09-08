@@ -17,7 +17,7 @@
         "rules": [
           [
             "Основные слова",
-            "padre — отец · madre — мать · hermano — брат · hermana — сестра · hijo — сын · hija — дочь · abuelo — дедушка · abuela — бабушка · tío — дядя · tía — тётя · sobrino — племянник · sobrina — племянница."
+            "el padre — отец\nla madre — мать\nel hermano — брат\nla hermana — сестра\nel hijo — сын\nla hija — дочь\nel abuelo — дедушка\nla abuela — бабушка\nel tío — дядя\nla tía — тётя\nel sobrino — племянник\nla sobrina — племянница\nla familia — семья\nel / la pariente — родственник / родственница"
           ],
           [
             "Mi / mis",
@@ -47,7 +47,7 @@
         "rules": [
           [
             "Основні слова",
-            "padre — батько · madre — мати · hermano — брат · hermana — сестра · hijo — син · hija — донька · abuelo — дідусь · abuela — бабуся · tío — дядько · tía — тітка · sobrino — племінник · sobrina — племінниця."
+            "el padre — батько\nla madre — мати\nel hermano — брат\nla hermana — сестра\nel hijo — син\nla hija — донька\nel abuelo — дідусь\nla abuela — бабуся\nel tío — дядько\nla tía — тітка\nel sobrino — племінник\nla sobrina — племінниця\nla familia — сім’я\nel / la pariente — родич / родичка"
           ],
           [
             "Mi / mis",
@@ -77,7 +77,7 @@
         "rules": [
           [
             "Core words",
-            "padre — father · madre — mother · hermano — brother · hermana — sister · hijo — son · hija — daughter · abuelo — grandfather · abuela — grandmother · tío — uncle · tía — aunt · sobrino — nephew · sobrina — niece."
+            "el padre — father\nla madre — mother\nel hermano — brother\nla hermana — sister\nel hijo — son\nla hija — daughter\nel abuelo — grandfather\nla abuela — grandmother\nel tío — uncle\nla tía — aunt\nel sobrino — nephew\nla sobrina — niece\nla familia — family\nel / la pariente — relative"
           ],
           [
             "Mi / mis",
@@ -107,7 +107,7 @@
         "rules": [
           [
             "Palabras básicas",
-            "padre · madre · hermano · hermana · hijo · hija · abuelo · abuela · tío · tía · sobrino · sobrina."
+            "el padre\nla madre\nel hermano\nla hermana\nel hijo\nla hija\nel abuelo\nla abuela\nel tío\nla tía\nel sobrino\nla sobrina\nla familia\nel / la pariente"
           ],
           [
             "Mi / mis",
