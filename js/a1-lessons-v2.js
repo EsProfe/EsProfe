@@ -657,6 +657,7 @@
     r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p><div class="a1-rule-grid">${(t.rules || []).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
     document.getElementById("a1Examples").onclick = renderExamples;
     initSupplements();
+    r.querySelectorAll(".a1-vocab-card").forEach((card)=>card.onclick=()=>{card.classList.toggle("is-flipped");speak(card.querySelector("b")?.textContent||"")});
     window.EsProfeA1CountryReference?.render?.(lesson, r);
   }
   function renderExamples() {
