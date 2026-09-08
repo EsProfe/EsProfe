@@ -1,0 +1,315 @@
+{
+  "querer-infinitive": {
+    "level": "A1",
+    "moduleId": "a1-grammar-05",
+    "nextLessonId": "poder-infinitive",
+    "ruleTags": {
+      "form": 0,
+      "person": 1,
+      "question": 2,
+      "negation": 3
+    },
+    "i18n": {
+      "ru": {
+        "title": "Querer + инфинитив",
+        "goal": "Цель: говорить о желаниях и планах с querer + инфинитив.",
+        "intro": "Querer + инфинитив означает «хотеть что-то сделать»: Quiero comer.",
+        "rules": [
+          [
+            "Форма",
+            "quiero / quieres / quiere / queremos / queréis / quieren + инфинитив."
+          ],
+          [
+            "После querer — инфинитив",
+            "Quiero beber, не quiero bebo."
+          ],
+          [
+            "Вопрос",
+            "¿Qué quieres hacer? — Что ты хочешь сделать?"
+          ],
+          [
+            "Отрицание",
+            "No quiero salir hoy. — Я не хочу выходить сегодня."
+          ]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери форму",
+        "trainerTitle": "Тренировка",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: Poder + инфинитив"
+      },
+      "uk": {
+        "title": "Querer + інфінітив",
+        "goal": "Мета: говорити про бажання та плани з querer + інфінітив.",
+        "intro": "Querer + інфінітив означає «хотіти щось зробити»: Quiero comer.",
+        "rules": [
+          [
+            "Форма",
+            "quiero / quieres / quiere / queremos / queréis / quieren + інфінітив."
+          ],
+          [
+            "Після querer — інфінітив",
+            "Quiero beber, не quiero bebo."
+          ],
+          [
+            "Питання",
+            "¿Qué quieres hacer? — Що ти хочеш зробити?"
+          ],
+          [
+            "Заперечення",
+            "No quiero salir hoy. — Я не хочу виходити сьогодні."
+          ]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери форму",
+        "trainerTitle": "Тренування",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: Poder + інфінітив"
+      },
+      "en": {
+        "title": "Querer + infinitive",
+        "goal": "Goal: talk about wishes and plans with querer + infinitive.",
+        "intro": "Querer + infinitive means “to want to do something”: Quiero comer.",
+        "rules": [
+          [
+            "Form",
+            "quiero / quieres / quiere / queremos / queréis / quieren + infinitive."
+          ],
+          [
+            "After querer: infinitive",
+            "Quiero beber, not quiero bebo."
+          ],
+          [
+            "Question",
+            "¿Qué quieres hacer? — What do you want to do?"
+          ],
+          [
+            "Negative",
+            "No quiero salir hoy. — I do not want to go out today."
+          ]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the form",
+        "trainerTitle": "Trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: Poder + infinitive"
+      },
+      "es": {
+        "title": "Querer + infinitivo",
+        "goal": "Objetivo: hablar de deseos y planes con querer + infinitivo.",
+        "intro": "Querer + infinitivo expresa el deseo de hacer algo: Quiero comer.",
+        "rules": [
+          [
+            "Forma",
+            "quiero / quieres / quiere / queremos / queréis / quieren + infinitivo."
+          ],
+          [
+            "Después de querer: infinitivo",
+            "Quiero beber, no quiero bebo."
+          ],
+          [
+            "Pregunta",
+            "¿Qué quieres hacer?"
+          ],
+          [
+            "Negación",
+            "No quiero salir hoy."
+          ]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la forma",
+        "trainerTitle": "Entrenador",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: Poder + infinitivo"
+      }
+    },
+    "examples": [
+      {
+        "word": "Quiero beber agua.",
+        "tag": "form"
+      },
+      {
+        "word": "Queremos aprender español.",
+        "tag": "person"
+      },
+      {
+        "word": "¿Qué quieres hacer?",
+        "tag": "question"
+      },
+      {
+        "word": "No quiero salir hoy.",
+        "tag": "negation"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "qi01",
+        "tag": "form",
+        "prompt": {
+          "ru": "Yo ___ comer algo.",
+          "uk": "Yo ___ comer algo.",
+          "en": "Yo ___ comer algo.",
+          "es": "Yo ___ comer algo."
+        },
+        "options": [
+          "quiero",
+          "quieres",
+          "quieren"
+        ],
+        "answer": "quiero"
+      },
+      {
+        "id": "qi02",
+        "tag": "person",
+        "prompt": {
+          "ru": "Nosotros ___ aprender español.",
+          "uk": "Nosotros ___ aprender español.",
+          "en": "Nosotros ___ aprender español.",
+          "es": "Nosotros ___ aprender español."
+        },
+        "options": [
+          "queremos",
+          "queréis",
+          "quieren"
+        ],
+        "answer": "queremos"
+      },
+      {
+        "id": "qi03",
+        "tag": "form",
+        "prompt": {
+          "ru": "Marta quiere ___ agua.",
+          "uk": "Marta quiere ___ agua.",
+          "en": "Marta quiere ___ agua.",
+          "es": "Marta quiere ___ agua."
+        },
+        "options": [
+          "beber",
+          "bebe",
+          "bebiendo"
+        ],
+        "answer": "beber"
+      },
+      {
+        "id": "qi04",
+        "tag": "person",
+        "prompt": {
+          "ru": "Ellos ___ salir esta tarde.",
+          "uk": "Ellos ___ salir esta tarde.",
+          "en": "Ellos ___ salir esta tarde.",
+          "es": "Ellos ___ salir esta tarde."
+        },
+        "options": [
+          "quieren",
+          "queremos",
+          "queréis"
+        ],
+        "answer": "quieren"
+      },
+      {
+        "id": "qi05",
+        "tag": "question",
+        "prompt": {
+          "ru": "Как спросить «Что ты хочешь сделать?»",
+          "uk": "Як запитати «Що ти хочеш зробити?»",
+          "en": "How do you ask “What do you want to do?”",
+          "es": "Elige la pregunta correcta."
+        },
+        "options": [
+          "¿Qué quieres hacer?",
+          "¿Qué quieres haces?",
+          "¿Qué querer hacer?"
+        ],
+        "answer": "¿Qué quieres hacer?"
+      },
+      {
+        "id": "qi06",
+        "tag": "negation",
+        "prompt": {
+          "ru": "Я не хочу выходить: No ___ salir.",
+          "uk": "Я не хочу виходити: No ___ salir.",
+          "en": "I do not want to go out: No ___ salir.",
+          "es": "No ___ salir."
+        },
+        "options": [
+          "quiero",
+          "quieres",
+          "quiere"
+        ],
+        "answer": "quiero"
+      },
+      {
+        "id": "qi07",
+        "tag": "form",
+        "prompt": {
+          "ru": "Tú ___ comprar pan.",
+          "uk": "Tú ___ comprar pan.",
+          "en": "Tú ___ comprar pan.",
+          "es": "Tú ___ comprar pan."
+        },
+        "options": [
+          "quieres",
+          "quiere",
+          "quiero"
+        ],
+        "answer": "quieres"
+      },
+      {
+        "id": "qi08",
+        "tag": "person",
+        "prompt": {
+          "ru": "Выбери правильную фразу.",
+          "uk": "Обери правильну фразу.",
+          "en": "Choose the correct sentence.",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Queremos ver una película.",
+          "Queremos vemos una película.",
+          "Queremos ver una película?"
+        ],
+        "answer": "Queremos ver una película."
+      },
+      {
+        "id": "qi09",
+        "tag": "question",
+        "prompt": {
+          "ru": "¿Queréis comer? — Sí, ___ .",
+          "uk": "¿Queréis comer? — Sí, ___ .",
+          "en": "¿Queréis comer? — Sí, ___ .",
+          "es": "¿Queréis comer? — Sí, ___ ."
+        },
+        "options": [
+          "queremos comer",
+          "queréis comer",
+          "quieren comer"
+        ],
+        "answer": "queremos comer"
+      },
+      {
+        "id": "qi10",
+        "tag": "negation",
+        "prompt": {
+          "ru": "Ана не хочет работать сегодня.",
+          "uk": "Ана не хоче працювати сьогодні.",
+          "en": "Ana does not want to work today.",
+          "es": "Ana no quiere trabajar hoy."
+        },
+        "options": [
+          "Ana no quiere trabajar hoy.",
+          "Ana no quiere trabaja hoy.",
+          "Ana no quieren trabajar hoy."
+        ],
+        "answer": "Ana no quiere trabajar hoy."
+      }
+    ]
+  }
+}
