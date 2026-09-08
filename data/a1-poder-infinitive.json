@@ -1,0 +1,315 @@
+{
+  "poder-infinitive": {
+    "level": "A1",
+    "moduleId": "a1-grammar-05",
+    "nextLessonId": "family",
+    "ruleTags": {
+      "form": 0,
+      "person": 1,
+      "question": 2,
+      "negation": 3
+    },
+    "i18n": {
+      "ru": {
+        "title": "Poder + инфинитив",
+        "goal": "Цель: говорить о возможности, умении и разрешении.",
+        "intro": "Poder + инфинитив означает «мочь / можно»: Puedo ayudarte.",
+        "rules": [
+          [
+            "Форма",
+            "puedo / puedes / puede / podemos / podéis / pueden + инфинитив."
+          ],
+          [
+            "После poder — инфинитив",
+            "Puedo entrar, не puedo entro."
+          ],
+          [
+            "Вопрос и разрешение",
+            "¿Puedo pasar? — Можно войти?"
+          ],
+          [
+            "Отрицание",
+            "No podemos venir hoy."
+          ]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери форму",
+        "trainerTitle": "Тренировка",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Маршрут A1"
+      },
+      "uk": {
+        "title": "Poder + інфінітив",
+        "goal": "Мета: говорити про можливість, уміння та дозвіл.",
+        "intro": "Poder + інфінітив означає «могти / можна»: Puedo ayudarte.",
+        "rules": [
+          [
+            "Форма",
+            "puedo / puedes / puede / podemos / podéis / pueden + інфінітив."
+          ],
+          [
+            "Після poder — інфінітив",
+            "Puedo entrar, не puedo entro."
+          ],
+          [
+            "Питання й дозвіл",
+            "¿Puedo pasar? — Можна увійти?"
+          ],
+          [
+            "Заперечення",
+            "No podemos venir hoy."
+          ]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери форму",
+        "trainerTitle": "Тренування",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Маршрут A1"
+      },
+      "en": {
+        "title": "Poder + infinitive",
+        "goal": "Goal: talk about ability, possibility and permission.",
+        "intro": "Poder + infinitive means “can / to be able to”: Puedo ayudarte.",
+        "rules": [
+          [
+            "Form",
+            "puedo / puedes / puede / podemos / podéis / pueden + infinitive."
+          ],
+          [
+            "After poder: infinitive",
+            "Puedo entrar, not puedo entro."
+          ],
+          [
+            "Question and permission",
+            "¿Puedo pasar? — May I come in?"
+          ],
+          [
+            "Negative",
+            "No podemos venir hoy."
+          ]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the form",
+        "trainerTitle": "Trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "A1 route"
+      },
+      "es": {
+        "title": "Poder + infinitivo",
+        "goal": "Objetivo: hablar de capacidad, posibilidad y permiso.",
+        "intro": "Poder + infinitivo expresa capacidad o permiso: Puedo ayudarte.",
+        "rules": [
+          [
+            "Forma",
+            "puedo / puedes / puede / podemos / podéis / pueden + infinitivo."
+          ],
+          [
+            "Después de poder: infinitivo",
+            "Puedo entrar, no puedo entro."
+          ],
+          [
+            "Pregunta y permiso",
+            "¿Puedo pasar?"
+          ],
+          [
+            "Negación",
+            "No podemos venir hoy."
+          ]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la forma",
+        "trainerTitle": "Entrenador",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Ruta A1"
+      }
+    },
+    "examples": [
+      {
+        "word": "Puedo ayudarte.",
+        "tag": "form"
+      },
+      {
+        "word": "Podemos hablar mañana.",
+        "tag": "person"
+      },
+      {
+        "word": "¿Puedo pasar?",
+        "tag": "question"
+      },
+      {
+        "word": "No podemos venir hoy.",
+        "tag": "negation"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "pi01",
+        "tag": "form",
+        "prompt": {
+          "ru": "Yo ___ ayudarte.",
+          "uk": "Yo ___ ayudarte.",
+          "en": "Yo ___ ayudarte.",
+          "es": "Yo ___ ayudarte."
+        },
+        "options": [
+          "puedo",
+          "puedes",
+          "pueden"
+        ],
+        "answer": "puedo"
+      },
+      {
+        "id": "pi02",
+        "tag": "person",
+        "prompt": {
+          "ru": "Nosotros ___ hablar mañana.",
+          "uk": "Nosotros ___ hablar mañana.",
+          "en": "Nosotros ___ hablar mañana.",
+          "es": "Nosotros ___ hablar mañana."
+        },
+        "options": [
+          "podemos",
+          "podéis",
+          "pueden"
+        ],
+        "answer": "podemos"
+      },
+      {
+        "id": "pi03",
+        "tag": "form",
+        "prompt": {
+          "ru": "Marta puede ___ ahora.",
+          "uk": "Marta puede ___ ahora.",
+          "en": "Marta puede ___ ahora.",
+          "es": "Marta puede ___ ahora."
+        },
+        "options": [
+          "venir",
+          "viene",
+          "viniendo"
+        ],
+        "answer": "venir"
+      },
+      {
+        "id": "pi04",
+        "tag": "person",
+        "prompt": {
+          "ru": "Ellos ___ estudiar aquí.",
+          "uk": "Ellos ___ estudiar aquí.",
+          "en": "Ellos ___ study here.",
+          "es": "Ellos ___ estudiar aquí."
+        },
+        "options": [
+          "pueden",
+          "podemos",
+          "podéis"
+        ],
+        "answer": "pueden"
+      },
+      {
+        "id": "pi05",
+        "tag": "question",
+        "prompt": {
+          "ru": "Как спросить «Можно войти?»",
+          "uk": "Як запитати «Можна увійти?»",
+          "en": "How do you ask “May I come in?”",
+          "es": "Elige la pregunta correcta."
+        },
+        "options": [
+          "¿Puedo pasar?",
+          "¿Puedo paso?",
+          "¿Puede pasar yo?"
+        ],
+        "answer": "¿Puedo pasar?"
+      },
+      {
+        "id": "pi06",
+        "tag": "negation",
+        "prompt": {
+          "ru": "Мы не можем прийти сегодня: No ___ venir hoy.",
+          "uk": "Ми не можемо прийти сьогодні: No ___ venir hoy.",
+          "en": "We cannot come today: No ___ venir hoy.",
+          "es": "No ___ venir hoy."
+        },
+        "options": [
+          "podemos",
+          "pueden",
+          "podéis"
+        ],
+        "answer": "podemos"
+      },
+      {
+        "id": "pi07",
+        "tag": "form",
+        "prompt": {
+          "ru": "Tú ___ abrir la puerta.",
+          "uk": "Tú ___ abrir la puerta.",
+          "en": "Tú ___ abrir la puerta.",
+          "es": "Tú ___ abrir la puerta."
+        },
+        "options": [
+          "puedes",
+          "puede",
+          "puedo"
+        ],
+        "answer": "puedes"
+      },
+      {
+        "id": "pi08",
+        "tag": "person",
+        "prompt": {
+          "ru": "Выбери правильную фразу.",
+          "uk": "Обери правильну фразу.",
+          "en": "Choose the correct sentence.",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Podemos ver una película.",
+          "Podemos vemos una película.",
+          "Podemos ver una película?"
+        ],
+        "answer": "Podemos ver una película."
+      },
+      {
+        "id": "pi09",
+        "tag": "question",
+        "prompt": {
+          "ru": "¿Podéis ayudarme? — Sí, ___ .",
+          "uk": "¿Podéis ayudarme? — Sí, ___ .",
+          "en": "¿Podéis ayudarme? — Sí, ___ .",
+          "es": "¿Podéis ayudarme? — Sí, ___ ."
+        },
+        "options": [
+          "podemos ayudarte",
+          "podéis ayudarte",
+          "pueden ayudarte"
+        ],
+        "answer": "podemos ayudarte"
+      },
+      {
+        "id": "pi10",
+        "tag": "negation",
+        "prompt": {
+          "ru": "Ана не может остаться сегодня.",
+          "uk": "Ана не може залишитися сьогодні.",
+          "en": "Ana cannot stay today.",
+          "es": "Ana no puede quedarse hoy."
+        },
+        "options": [
+          "Ana no puede quedarse hoy.",
+          "Ana no puede queda hoy.",
+          "Ana no pueden quedarse hoy."
+        ],
+        "answer": "Ana no puede quedarse hoy."
+      }
+    ]
+  }
+}
