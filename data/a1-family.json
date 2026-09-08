@@ -17,7 +17,7 @@
         "rules": [
           [
             "Основные слова",
-            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela."
+            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela, tío, tía, sobrino, sobrina."
           ],
           [
             "Mi / mis",
@@ -47,7 +47,7 @@
         "rules": [
           [
             "Основні слова",
-            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela."
+            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela, tío, tía, sobrino, sobrina."
           ],
           [
             "Mi / mis",
@@ -77,7 +77,7 @@
         "rules": [
           [
             "Core words",
-            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela."
+            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela, tío, tía, sobrino, sobrina."
           ],
           [
             "Mi / mis",
@@ -107,7 +107,7 @@
         "rules": [
           [
             "Palabras básicas",
-            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela."
+            "madre, padre, hermano, hermana, hijo, hija, abuelo, abuela, tío, tía, sobrino, sobrina."
           ],
           [
             "Mi / mis",
@@ -145,7 +145,7 @@
         "tag": "question"
       },
       {
-        "word": "Mi abuelo vive en Valencia.",
+        "word": "Mi tío vive en Valencia.",
         "tag": "description"
       }
     ],
