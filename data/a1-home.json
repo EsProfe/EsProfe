@@ -131,7 +131,7 @@
         "nextTitle": "Siguiente lección: Comida y bebidas"
       }
     },
-    "flashcards": [["la casa","дом","будинок","house","casa","🏠"],["el piso","квартира","квартира","flat","piso","🏢"],["la cocina","кухня","кухня","kitchen","cocina","🍳"],["el baño","ванная","ванна кімната","bathroom","baño","🛁"],["el dormitorio","спальня","спальня","bedroom","dormitorio","🛏️"],["el salón","гостиная","вітальня","living room","salón","🛋️"],["el ascensor","лифт","ліфт","lift","ascensor","🛗"],["el balcón","балкон","балкон","balcony","balcón","🌿"],["la escalera","лестница","сходи","stairs","escalera","🪜"],["el sofá","диван","диван","sofa","sofá","🛋️"]],
+    "flashcards": [["la casa","дом","будинок","house","casa","🏠"],["el piso","квартира","квартира","flat","piso","🏢"],["la cocina","кухня","кухня","kitchen","cocina","🍳"],["el baño","ванная","ванна кімната","bathroom","baño","🛁"],["el dormitorio","спальня","спальня","bedroom","dormitorio","🛏️"],["el salón","гостиная","вітальня","living room","salón","🛋️"],["el ascensor","лифт","ліфт","lift","ascensor","↕️"],["el balcón","балкон","балкон","balcony","balcón","🌿"],["la escalera","лестница","сходи","stairs","escalera","🪜"],["el sofá","диван","диван","sofa","sofá","🛋️"]],
     "examples": [
       {
         "word": "La cocina está aquí.",
