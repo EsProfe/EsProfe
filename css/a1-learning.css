@@ -201,6 +201,7 @@
 .a1-rule-grid p,
 .a1-review-card p {
   margin: 0;
+  white-space: pre-line;
 }
 .a1-review-card {
   margin: 10px 0;
