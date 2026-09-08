@@ -13,7 +13,7 @@
       "ru": {
         "title": "Querer + инфинитив",
         "goal": "Цель: говорить о желаниях и планах с querer + инфинитив.",
-        "intro": "Querer + инфинитив означает «хотеть что-то сделать»: Quiero comer.",
+        "intro": "Querer + инфинитив означает «хотеть что-то сделать»: Quiero aprender español.",
         "rules": [
           [
             "Форма",
@@ -21,7 +21,7 @@
           ],
           [
             "После querer — инфинитив",
-            "Quiero beber, не quiero bebo."
+            "Quiero ver una película, не quiero veo una película."
           ],
           [
             "Вопрос",
@@ -43,7 +43,7 @@
       "uk": {
         "title": "Querer + інфінітив",
         "goal": "Мета: говорити про бажання та плани з querer + інфінітив.",
-        "intro": "Querer + інфінітив означає «хотіти щось зробити»: Quiero comer.",
+        "intro": "Querer + інфінітив означає «хотіти щось зробити»: Quiero aprender español.",
         "rules": [
           [
             "Форма",
@@ -51,7 +51,7 @@
           ],
           [
             "Після querer — інфінітив",
-            "Quiero beber, не quiero bebo."
+            "Quiero ver una película, не quiero veo una película."
           ],
           [
             "Питання",
@@ -73,7 +73,7 @@
       "en": {
         "title": "Querer + infinitive",
         "goal": "Goal: talk about wishes and plans with querer + infinitive.",
-        "intro": "Querer + infinitive means “to want to do something”: Quiero comer.",
+        "intro": "Querer + infinitive means “to want to do something”: Quiero aprender español.",
         "rules": [
           [
             "Form",
@@ -81,7 +81,7 @@
           ],
           [
             "After querer: infinitive",
-            "Quiero beber, not quiero bebo."
+            "Quiero ver una película, not quiero veo una película."
           ],
           [
             "Question",
@@ -103,7 +103,7 @@
       "es": {
         "title": "Querer + infinitivo",
         "goal": "Objetivo: hablar de deseos y planes con querer + infinitivo.",
-        "intro": "Querer + infinitivo expresa el deseo de hacer algo: Quiero comer.",
+        "intro": "Querer + infinitivo expresa el deseo de hacer algo: Quiero aprender español.",
         "rules": [
           [
             "Forma",
@@ -111,7 +111,7 @@
           ],
           [
             "Después de querer: infinitivo",
-            "Quiero beber, no quiero bebo."
+            "Quiero ver una película, no quiero veo una película."
           ],
           [
             "Pregunta",
@@ -133,7 +133,7 @@
     },
     "examples": [
       {
-        "word": "Quiero beber agua.",
+        "word": "Quiero aprender español.",
         "tag": "form"
       },
       {
@@ -154,10 +154,10 @@
         "id": "qi01",
         "tag": "form",
         "prompt": {
-          "ru": "Yo ___ comer algo.",
-          "uk": "Yo ___ comer algo.",
-          "en": "Yo ___ comer algo.",
-          "es": "Yo ___ comer algo."
+          "ru": "Yo ___ aprender español.",
+          "uk": "Yo ___ aprender español.",
+          "en": "Yo ___ aprender español.",
+          "es": "Yo ___ aprender español."
         },
         "options": [
           "quiero",
@@ -186,17 +186,17 @@
         "id": "qi03",
         "tag": "form",
         "prompt": {
-          "ru": "Marta quiere ___ agua.",
-          "uk": "Marta quiere ___ agua.",
-          "en": "Marta quiere ___ agua.",
-          "es": "Marta quiere ___ agua."
+          "ru": "Marta quiere ___ una película.",
+          "uk": "Marta quiere ___ una película.",
+          "en": "Marta quiere ___ una película.",
+          "es": "Marta quiere ___ una película."
         },
         "options": [
-          "beber",
-          "bebe",
-          "bebiendo"
+          "ver",
+          "ve",
+          "viendo"
         ],
-        "answer": "beber"
+        "answer": "ver"
       },
       {
         "id": "qi04",
@@ -282,17 +282,17 @@
         "id": "qi09",
         "tag": "question",
         "prompt": {
-          "ru": "¿Queréis comer? — Sí, ___ .",
-          "uk": "¿Queréis comer? — Sí, ___ .",
-          "en": "¿Queréis comer? — Sí, ___ .",
-          "es": "¿Queréis comer? — Sí, ___ ."
+          "ru": "¿Queréis ir al cine? — Sí, ___ .",
+          "uk": "¿Queréis ir al cine? — Sí, ___ .",
+          "en": "¿Queréis ir al cine? — Sí, ___ .",
+          "es": "¿Queréis ir al cine? — Sí, ___ ."
         },
         "options": [
-          "queremos comer",
-          "queréis comer",
-          "quieren comer"
+          "queremos ir al cine",
+          "queréis ir al cine",
+          "quieren ir al cine"
         ],
-        "answer": "queremos comer"
+        "answer": "queremos ir al cine"
       },
       {
         "id": "qi10",
