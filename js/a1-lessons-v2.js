@@ -668,7 +668,11 @@
     r.querySelectorAll("[data-word]").forEach(
       (b) => (b.onclick = () => speak(b.dataset.word)),
     );
-    document.getElementById("a1Start").onclick = () => runStage("practice", 6);
+    document.getElementById("a1Start").onclick = () => lesson.flashcards ? runVocabularyDrill() : runStage("practice", 6);
+  }
+  function runVocabularyDrill() {
+    remember("practice"); const r=root(), cards=shuffle(lesson.flashcards||[]).slice(0,6), n={ru:1,uk:2,en:3,es:4}[lang()]||1; let i=0,score=0;
+    function show(){if(i>=cards.length){practiceScore=score;return runStage("trainer",8)}const forward=i<3,card=cards[i],prompt=forward?card[0]:card[n],answer=forward?card[n]:card[0],opts=shuffle([answer,...shuffle(cards.filter(x=>x!==card).map(x=>forward?x[n]:x[0])).slice(0,2)]);r.innerHTML=`<div class="a1-lesson">${stepper("practice")}<div class="a1-kicker">A1 · ${esc((lesson.i18n?.[lang()]||lesson.i18n?.ru).practiceTitle)}</div><div class="a1-question-card"><div class="a1-counter">${i+1} / ${cards.length}</div><span class="a1-vocab-drill-icon">${card[5]}</span><h2>${esc(prompt)}</h2><p>${esc(forward?({ru:"Выбери перевод",uk:"Обери переклад",en:"Choose the translation",es:"Elige la traducción"}[lang()]||""):({ru:"Выбери испанское слово",uk:"Обери іспанське слово",en:"Choose the Spanish word",es:"Elige la palabra en español"}[lang()]||""))}</p><div class="a1-options">${opts.map((o,k)=>`<button class="a1-option" data-vocab="${k}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;r.querySelectorAll("[data-vocab]").forEach(b=>b.onclick=()=>{const ok=opts[+b.dataset.vocab]===answer;if(ok)score++;else weak.vocabulary=(weak.vocabulary||0)+1;document.getElementById("a1Feedback").textContent=ok?`✅ ${U().correct}`:`❌ ${U().wrong}: ${answer}`;r.querySelectorAll("[data-vocab]").forEach(x=>x.disabled=true);setTimeout(()=>{i++;show()},650)})}show()
   }
   function localizedOptions(q) {
     const raw = q.optionsByLang?.[lang()] ?? q.optionsByLang?.ru ?? q.options;
