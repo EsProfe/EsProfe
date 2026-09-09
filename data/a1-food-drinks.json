@@ -21,7 +21,7 @@
           ],
           [
             "Количество",
-            "un café, una botella de agua, dos bocadillos."
+            "una taza de café — чашка кофе\nun vaso de agua — стакан воды\nuna copa de vino — бокал вина\nuna jarra de cerveza — кружка пива\nuna botella de agua — бутылка воды\nun kilo de manzanas — килограмм яблок\nmedio kilo de tomates — полкило помидоров\nun manojo de cebollas — пучок лука\nun racimo de uvas — гроздь винограда\nuna barra de pan — буханка / батон хлеба"
           ],
           [
             "Вопрос",
@@ -51,7 +51,7 @@
           ],
           [
             "Кількість",
-            "un café, una botella de agua, dos bocadillos."
+            "una taza de café — чашка кави\nun vaso de agua — склянка води\nuna copa de vino — келих вина\nuna jarra de cerveza — кухоль пива\nuna botella de agua — пляшка води\nun kilo de manzanas — кілограм яблук\nmedio kilo de tomates — пів кіло помідорів\nun manojo de cebollas — пучок цибулі\nun racimo de uvas — гроно винограду\nuna barra de pan — буханка / батон хліба"
           ],
           [
             "Питання",
@@ -81,7 +81,7 @@
           ],
           [
             "Quantity",
-            "un café, una botella de agua, dos bocadillos."
+            "una taza de café — a cup of coffee\nun vaso de agua — a glass of water\nuna copa de vino — a glass of wine\nuna jarra de cerveza — a beer mug\nuna botella de agua — a bottle of water\nun kilo de manzanas — a kilo of apples\nmedio kilo de tomates — half a kilo of tomatoes\nun manojo de cebollas — a bunch of onions\nun racimo de uvas — a bunch of grapes\nuna barra de pan — a loaf of bread"
           ],
           [
             "Question",
@@ -111,7 +111,7 @@
           ],
           [
             "Cantidad",
-            "un café, una botella de agua, dos bocadillos."
+            "una taza de café\nun vaso de agua\nuna copa de vino\nuna jarra de cerveza\nuna botella de agua\nun kilo de manzanas\nmedio kilo de tomates\nun manojo de cebollas\nun racimo de uvas\nuna barra de pan"
           ],
           [
             "Pregunta",
