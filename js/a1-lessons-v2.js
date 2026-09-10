@@ -712,7 +712,7 @@
       }
       const q = items[i],
         opts = shuffle(localizedOptions(q));
-      r.innerHTML = `<div class="a1-lesson">${stepper(kind)}<div class="a1-kicker">A1 · ${esc(title)}</div><div class="a1-question-card"><div class="a1-counter">${i + 1} / ${items.length}</div><h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" class="a1-option" data-option-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      r.innerHTML = `<div class="a1-lesson">${stepper(kind)}<div class="a1-kicker">A1 · ${esc(title)}</div><div class="a1-question-card"><div class="a1-counter">${i + 1} / ${items.length}</div><h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><p class="a1-task-hint">${esc(({ru:"Выберите один правильный вариант.",uk:"Оберіть один правильний варіант.",en:"Choose one correct answer.",es:"Elige una respuesta correcta."})[lang()]||"")}</p><div class="a1-options">${opts.map((o, n) => `<button type="button" class="a1-option" data-option-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
       r.querySelectorAll("[data-option-index]").forEach(
         (b) => (b.onclick = () => check(q, opts[+b.dataset.optionIndex])),
       );
