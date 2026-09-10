@@ -128,7 +128,7 @@
         {"id": "food-drinks", "title": "Еда и напитки", "status": "planned"},
         {"id": "shopping", "title": "Покупки и цены", "status": "planned"},
         {"id": "city-places", "title": "Город и места", "status": "ready"},
-        {"id": "transport", "title": "Транспорт", "status": "planned"},
+        {"id": "transport", "title": "Транспорт", "status": "ready"},
         {"id": "daily-routine-vocab", "title": "Повседневные действия", "status": "planned"},
         {"id": "jobs", "title": "Профессии", "status": "planned"},
         {"id": "weather-seasons", "title": "Погода и времена года", "status": "planned"},
