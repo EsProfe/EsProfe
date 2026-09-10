@@ -131,7 +131,7 @@
         {"id": "transport", "title": "Транспорт", "status": "ready"},
         {"id": "daily-routine-vocab", "title": "Повседневные действия", "status": "ready"},
         {"id": "jobs", "title": "Профессии", "status": "ready"},
-        {"id": "weather-seasons", "title": "Погода и времена года", "status": "planned"},
+        {"id": "weather-seasons", "title": "Погода и времена года", "status": "ready"},
         {"id": "free-time", "title": "Свободное время и увлечения", "status": "planned"}
       ]
     },
