@@ -9,6 +9,7 @@
     trainerScore = 0,
     assessmentScore = 0,
     weak = {},
+    usedQuestionIds = new Set(),
     lastOpen = "";
   const root = () => document.getElementById("grammarSection"),
     lang = () => document.getElementById("language")?.value || "ru",
@@ -548,7 +549,7 @@
     const t={ru:["Семейное дерево","дедушка","бабушка","отец","мать","дядя","тётя","брат","сестра","я","племянница","племянник","сын","дочь"],uk:["Родинне дерево","дідусь","бабуся","батько","мати","дядько","тітка","брат","сестра","я","племінниця","племінник","син","донька"],en:["Family tree","grandfather","grandmother","father","mother","uncle","aunt","brother","sister","I","niece","nephew","son","daughter"],es:["Árbol familiar","abuelo","abuela","padre","madre","tío","tía","hermano","hermana","yo","sobrina","sobrino","hijo","hija"]}[lang()]||[];const items=[[1,"👴","el abuelo",1,1],[2,"👵","la abuela",1,2],[1,"👴","el abuelo",1,4],[2,"👵","la abuela",1,5],[3,"👨","el padre",2,1],[4,"👩","la madre",2,3],[5,"👨‍🦱","el tío",2,4],[6,"👩","la tía",2,5],[7,"👦","el hermano",3,1],[8,"👧","la hermana",3,2],[9,"🙂","yo",3,3],[10,"👧","la sobrina",3,4],[11,"👦","el sobrino",3,5],[12,"👦","el hijo",4,3],[13,"👧","la hija",4,4]];return `<section class="a1-family-tree-visual"><h3>${esc(t[0])}</h3><div class="a1-family-layout">${items.map(([i,icon,word,row,col])=>`<article style="grid-row:${row};grid-column:${col}"><span>${icon}</span><b>${word}</b><small>${esc(t[i])}</small></article>`).join("")}</div></section>`}
   function cityVisualHTML() {
     if (lesson?.id === "family") return familyTreeHTML();
-    if (lesson?.flashcards) { const cards=lesson.flashcards||[], n={ru:1,uk:2,en:3,es:4}[lang()]||1,stair='<svg width="30" height="30" viewBox="0 0 48 48" aria-label="stairs"><path d="M5 40h10V30h10V20h10V10h8" fill="none" stroke="#1b55c9" stroke-width="5"/></svg>',coins='<svg width="30" height="30" viewBox="0 0 48 48" aria-label="coins"><ellipse cx="23" cy="33" rx="15" ry="7" fill="#f6c344" stroke="#b77a05" stroke-width="2"/><path d="M8 27v6c0 4 30 5 30 0v-6" fill="#ffd968" stroke="#b77a05" stroke-width="2"/><ellipse cx="23" cy="27" rx="15" ry="7" fill="#ffe388" stroke="#b77a05" stroke-width="2"/><path d="M23 23v8m-3-5h6" stroke="#b77a05" stroke-width="2" stroke-linecap="round"/></svg>'; return `<section class="a1-vocab-cards"><h3>🧠 ${esc(({ru:"Карточки: нажми и вспомни перевод",uk:"Картки: натисни й згадай переклад",en:"Flashcards: tap and recall the translation",es:"Tarjetas: pulsa y recuerda la traducción"})[lang()]||"")}</h3><div>${cards.map(([word,...rest])=>`<button type="button" class="a1-vocab-card" data-card><span>${word==="la escalera"?stair:word==="el cambio"?coins:rest[4]}</span><b>${esc(word)}</b><small>${esc(rest[n-1])}</small></button>`).join("")}</div></section>`; }
+    if (lesson?.flashcards) { const cards=lesson.flashcards||[], n={ru:1,uk:2,en:3,es:4}[lang()]||1,stair='<svg width="30" height="30" viewBox="0 0 48 48" aria-label="stairs"><path d="M5 40h10V30h10V20h10V10h8" fill="none" stroke="#1b55c9" stroke-width="5"/></svg>',pass='<svg width="32" height="30" viewBox="0 0 48 48" aria-label="travel pass"><rect x="6" y="10" width="36" height="28" rx="4" fill="#e7f0ff" stroke="#1b55c9" stroke-width="2"/><path d="M11 19h26M11 25h16M11 31h11" stroke="#1b55c9" stroke-width="2"/><circle cx="35" cy="29" r="4" fill="#4ba86c"/></svg>',coins='<svg width="30" height="30" viewBox="0 0 48 48" aria-label="coins"><ellipse cx="23" cy="33" rx="15" ry="7" fill="#f6c344" stroke="#b77a05" stroke-width="2"/><path d="M8 27v6c0 4 30 5 30 0v-6" fill="#ffd968" stroke="#b77a05" stroke-width="2"/><ellipse cx="23" cy="27" rx="15" ry="7" fill="#ffe388" stroke="#b77a05" stroke-width="2"/><path d="M23 23v8m-3-5h6" stroke="#b77a05" stroke-width="2" stroke-linecap="round"/></svg>'; return `<section class="a1-vocab-cards"><h3>🧠 ${esc(({ru:"Карточки: нажми и вспомни перевод",uk:"Картки: натисни й згадай переклад",en:"Flashcards: tap and recall the translation",es:"Tarjetas: pulsa y recuerda la traducción"})[lang()]||"")}</h3><div>${cards.map(([word,...rest])=>`<button type="button" class="a1-vocab-card" data-card><span>${word==="la escalera"?stair:word==="el cambio"?coins:word==="el abono de transporte"?pass:rest[4]}</span><b>${esc(word)}</b><small>${esc(rest[n-1])}</small></button>`).join("")}</div></section>`; }
     if (lesson?.id !== "city-directions") return "";
     const t = {
       ru: [
@@ -685,10 +686,13 @@
     remember(kind);
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru,
-      items = shuffle(lesson.questionBank || []).slice(
+      bank = shuffle(lesson.questionBank || []),
+      fresh = bank.filter((q) => !usedQuestionIds.has(q.id)),
+      items = [...fresh, ...bank.filter((q) => usedQuestionIds.has(q.id))].slice(
         0,
-        Math.min(count, (lesson.questionBank || []).length),
+        Math.min(count, bank.length),
       );
+    items.forEach((q) => usedQuestionIds.add(q.id));
     let i = 0,
       score = 0;
     const title =
@@ -761,6 +765,7 @@
     document.getElementById("a1Repeat").onclick = () => {
       practiceScore = trainerScore = assessmentScore = 0;
       weak = {};
+      usedQuestionIds = new Set();
       stageTrail = [];
       stage = "";
       renderExplanation();
