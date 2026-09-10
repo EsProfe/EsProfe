@@ -1,6 +1,6 @@
 "use strict";
 (function(){
-  const CATALOG_URL="data/a1-catalog.json?v=20260910-jobs1";
+  const CATALOG_URL="data/a1-catalog.json?v=20260910-weather1";
   let catalogPromise=null,lessonsPromise=null;
   const filePromises=new Map();
   async function json(url){const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw new Error(`A1 load failed: ${url}`);return r.json()}
