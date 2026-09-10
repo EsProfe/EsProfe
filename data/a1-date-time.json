@@ -18,11 +18,11 @@
         "rules": [
           [
             "Дни недели",
-            "lunes\nmartes\nmiércoles\njueves\nviernes\nsábado\ndomingo\n\nВ испанском дни недели обычно пишутся со строчной буквы.\nlos lunes = по понедельникам."
+            "lunes — понедельник\nmartes — вторник\nmiércoles — среда\njueves — четверг\nviernes — пятница\nsábado — суббота\ndomingo — воскресенье\n\nВ испанском дни недели обычно пишутся со строчной буквы.\nlos lunes = по понедельникам."
           ],
           [
             "Месяцы",
-            "enero\nfebrero\nmarzo\nabril\nmayo\njunio\njulio\nagosto\nseptiembre\noctubre\nnoviembre\ndiciembre\n\nНазвания месяцев тоже обычно пишутся со строчной буквы."
+            "enero — январь\nfebrero — февраль\nmarzo — март\nabril — апрель\nmayo — май\njunio — июнь\njulio — июль\nagosto — август\nseptiembre — сентябрь\noctubre — октябрь\nnoviembre — ноябрь\ndiciembre — декабрь\n\nНазвания месяцев тоже обычно пишутся со строчной буквы."
           ],
           [
             "Дата",
@@ -52,11 +52,11 @@
         "rules": [
           [
             "Дні тижня",
-            "lunes\nmartes\nmiércoles\njueves\nviernes\nsábado\ndomingo\n\nВ іспанській назви днів тижня зазвичай пишуться з малої літери.\nlos lunes = щопонеділка."
+            "lunes — понеділок\nmartes — вівторок\nmiércoles — середа\njueves — четвер\nviernes — п’ятниця\nsábado — субота\ndomingo — неділя\n\nВ іспанській назви днів тижня зазвичай пишуться з малої літери.\nlos lunes = щопонеділка."
           ],
           [
             "Місяці",
-            "enero\nfebrero\nmarzo\nabril\nmayo\njunio\njulio\nagosto\nseptiembre\noctubre\nnoviembre\ndiciembre\n\nНазви місяців також пишуться з малої літери."
+            "enero — січень\nfebrero — лютий\nmarzo — березень\nabril — квітень\nmayo — травень\njunio — червень\njulio — липень\nagosto — серпень\nseptiembre — вересень\noctubre — жовтень\nnoviembre — листопад\ndiciembre — грудень\n\nНазви місяців також пишуться з малої літери."
           ],
           [
             "Дата",
@@ -86,11 +86,11 @@
         "rules": [
           [
             "Days of the week",
-            "lunes\nmartes\nmiércoles\njueves\nviernes\nsábado\ndomingo\n\nIn Spanish, weekdays are normally written in lowercase.\nlos lunes = on Mondays."
+            "lunes — Monday\nmartes — Tuesday\nmiércoles — Wednesday\njueves — Thursday\nviernes — Friday\nsábado — Saturday\ndomingo — Sunday\n\nIn Spanish, weekdays are normally written in lowercase.\nlos lunes = on Mondays."
           ],
           [
             "Months",
-            "enero\nfebrero\nmarzo\nabril\nmayo\njunio\njulio\nagosto\nseptiembre\noctubre\nnoviembre\ndiciembre\n\nMonth names are also normally lowercase."
+            "enero — January\nfebrero — February\nmarzo — March\nabril — April\nmayo — May\njunio — June\njulio — July\nagosto — August\nseptiembre — September\noctubre — October\nnoviembre — November\ndiciembre — December\n\nMonth names are also normally lowercase."
           ],
           [
             "Dates",
