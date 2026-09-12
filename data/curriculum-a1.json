@@ -139,9 +139,9 @@
       "id": "a1-communication",
       "title": "Коммуникация A1",
       "topics": [
-        {"id": "introduce-yourself", "title": "Представиться и рассказать о себе", "status": "planned"},
-        {"id": "ask-personal-info", "title": "Спросить личную информацию", "status": "planned"},
-        {"id": "order-food", "title": "Заказать еду и напитки", "status": "planned"},
+        {"id": "introduce-yourself", "title": "Представиться и рассказать о себе", "status": "ready"},
+        {"id": "ask-personal-info", "title": "Спросить личную информацию", "status": "ready"},
+        {"id": "order-food", "title": "Заказать еду и напитки", "status": "ready"},
         {"id": "shopping-dialogue", "title": "Диалог в магазине", "status": "planned"},
         {"id": "ask-directions", "title": "Спросить дорогу", "status": "planned"},
         {"id": "talk-routine", "title": "Рассказать о распорядке дня", "status": "planned"},
