@@ -1,0 +1,114 @@
+{
+  "order-food": {
+    "level": "A1",
+    "moduleId": "a1-communication",
+    "nextLessonId": "shopping-dialogue",
+    "ruleTags": {"order": 0, "drink": 1, "politeness": 2, "bill": 3},
+    "i18n": {
+      "ru": {
+        "title": "Заказать еду и напитки",
+        "goal": "Цель: вежливо заказать еду, напиток и попросить счёт в кафе.",
+        "intro": "В кафе в Испании естественно использовать вежливые готовые фразы, а не буквально «я хочу есть/пить».",
+        "rules": [
+          ["Заказ", "¿Qué va a tomar? — Что Вы будете заказывать?\nPara mí, una tortilla, por favor. — Мне тортилью, пожалуйста.\nQuisiera un café con leche, por favor. — Я бы хотел(а) кофе с молоком, пожалуйста."],
+          ["Напиток", "¿Para beber? — Что будете пить?\nAgua, por favor. — Воду, пожалуйста.\nUna botella de agua, por favor. — Бутылку воды, пожалуйста."],
+          ["Вежливо", "Por favor. — Пожалуйста.\nGracias. — Спасибо.\n¿Me pone un té, por favor? — Можно мне чай, пожалуйста?"],
+          ["Счёт", "La cuenta, por favor. — Счёт, пожалуйста.\n¿Puedo pagar con tarjeta? — Можно заплатить картой?\n— Buenas, ¿qué va a tomar?\n— Para mí, una ensalada y agua, por favor."]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери фразу для ситуации",
+        "trainerTitle": "Тренировка заказа",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: покупки"
+      },
+      "uk": {
+        "title": "Замовити їжу й напої",
+        "goal": "Мета: ввічливо замовити їжу, напій і попросити рахунок у кафе.",
+        "intro": "У кафе в Іспанії природно використовувати ввічливі готові фрази, а не буквально «я хочу їсти/пити».",
+        "rules": [
+          ["Замовлення", "¿Qué va a tomar? — Що Ви будете замовляти?\nPara mí, una tortilla, por favor. — Мені тортилью, будь ласка.\nQuisiera un café con leche, por favor. — Я хотів(-ла) б каву з молоком, будь ласка."],
+          ["Напій", "¿Para beber? — Що будете пити?\nAgua, por favor. — Воду, будь ласка.\nUna botella de agua, por favor. — Пляшку води, будь ласка."],
+          ["Ввічливо", "Por favor. — Будь ласка.\nGracias. — Дякую.\n¿Me pone un té, por favor? — Можна мені чай, будь ласка?"],
+          ["Рахунок", "La cuenta, por favor. — Рахунок, будь ласка.\n¿Puedo pagar con tarjeta? — Можна заплатити карткою?\n— Buenas, ¿qué va a tomar?\n— Para mí, una ensalada y agua, por favor."]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери фразу для ситуації",
+        "trainerTitle": "Тренування замовлення",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: покупки"
+      },
+      "en": {
+        "title": "Order food and drinks",
+        "goal": "Goal: politely order food, a drink and ask for the bill in a café.",
+        "intro": "In a Spanish café, use natural polite set phrases rather than literally saying “I want to eat/drink”.",
+        "rules": [
+          ["Ordering", "¿Qué va a tomar? — What would you like to order?\nPara mí, una tortilla, por favor. — A tortilla for me, please.\nQuisiera un café con leche, por favor. — I would like a coffee with milk, please."],
+          ["A drink", "¿Para beber? — What would you like to drink?\nAgua, por favor. — Water, please.\nUna botella de agua, por favor. — A bottle of water, please."],
+          ["Politeness", "Por favor. — Please.\nGracias. — Thank you.\n¿Me pone un té, por favor? — Could I have a tea, please?"],
+          ["The bill", "La cuenta, por favor. — The bill, please.\n¿Puedo pagar con tarjeta? — Can I pay by card?\n— Buenas, ¿qué va a tomar?\n— Para mí, una ensalada y agua, por favor."]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the phrase for the situation",
+        "trainerTitle": "Ordering trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: shopping"
+      },
+      "es": {
+        "title": "Pedir comida y bebida",
+        "goal": "Objetivo: pedir con educación comida, bebida y la cuenta en una cafetería.",
+        "intro": "En una cafetería española usamos frases corteses y naturales, no hace falta decir literalmente «quiero comer/beber».",
+        "rules": [
+          ["Pedir", "¿Qué va a tomar?\nPara mí, una tortilla, por favor.\nQuisiera un café con leche, por favor."],
+          ["Bebida", "¿Para beber?\nAgua, por favor.\nUna botella de agua, por favor."],
+          ["Cortesía", "Por favor.\nGracias.\n¿Me pone un té, por favor?"],
+          ["La cuenta", "La cuenta, por favor.\n¿Puedo pagar con tarjeta?\n— Buenas, ¿qué va a tomar?\n— Para mí, una ensalada y agua, por favor."]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la frase para la situación",
+        "trainerTitle": "Entrenamiento para pedir",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: compras"
+      }
+    },
+    "flashcards": [
+      ["la mesa", "столик", "столик", "table", "mesa", "🪑"],
+      ["la carta", "меню со списком блюд", "меню зі списком страв", "menu", "carta", "📋"],
+      ["el camarero / la camarera", "официант / официантка", "офіціант / офіціантка", "waiter / waitress", "camarero / camarera", "🧑‍🍳"],
+      ["para mí", "мне, для меня", "мені, для мене", "for me", "para mí", "🙋"],
+      ["para beber", "что пить", "що пити", "to drink", "para beber", "🥤"],
+      ["una tortilla", "тортилья", "тортилья", "Spanish omelette", "tortilla", "🍳"],
+      ["un café con leche", "кофе с молоком", "кава з молоком", "coffee with milk", "café con leche", "☕"],
+      ["la cuenta", "счёт", "рахунок", "bill", "cuenta", "🧾"],
+      ["con tarjeta", "картой", "карткою", "by card", "con tarjeta", "💳"],
+      ["por favor", "пожалуйста", "будь ласка", "please", "por favor", "🙏"]
+    ],
+    "examples": [
+      {"word": "Para mí, una tortilla, por favor.", "tag": "order"},
+      {"word": "Quisiera un café con leche.", "tag": "order"},
+      {"word": "¿Para beber? — Agua, por favor.", "tag": "drink"},
+      {"word": "La cuenta, por favor. ¿Puedo pagar con tarjeta?", "tag": "bill"}
+    ],
+    "questionBank": [
+      {"id": "of1", "tag": "order", "prompt": {"ru": "Выберите естественный заказ в кафе.", "uk": "Оберіть природне замовлення в кафе.", "en": "Choose a natural café order.", "es": "Elige un pedido natural en una cafetería."}, "options": ["Para mí, una tortilla, por favor.", "Tengo comer una tortilla.", "Soy una tortilla, por favor."], "answer": "Para mí, una tortilla, por favor."},
+      {"id": "of2", "tag": "order", "prompt": {"ru": "«Я бы хотел(а) кофе с молоком, пожалуйста».", "uk": "«Я хотів(-ла) б каву з молоком, будь ласка».", "en": "“I would like a coffee with milk, please.”", "es": "Elige la frase correcta."}, "options": ["Quisiera un café con leche, por favor.", "Quiero un café leche es.", "Tengo café con leche."], "answer": "Quisiera un café con leche, por favor."},
+      {"id": "of3", "tag": "drink", "prompt": {"ru": "Официант спрашивает: ¿Para beber? Выберите ответ.", "uk": "Офіціант запитує: ¿Para beber? Оберіть відповідь.", "en": "The waiter asks: ¿Para beber? Choose the answer.", "es": "¿Para beber?"}, "options": ["Una botella de agua, por favor.", "La cuenta, por favor.", "La mesa, por favor."], "answer": "Una botella de agua, por favor."},
+      {"id": "of4", "tag": "politeness", "prompt": {"ru": "Как вежливо попросить чай?", "uk": "Як ввічливо попросити чай?", "en": "How do you politely ask for tea?", "es": "Elige la petición educada."}, "options": ["¿Me pone un té, por favor?", "Soy un té.", "¿Tengo un té?"], "answer": "¿Me pone un té, por favor?"},
+      {"id": "of5", "tag": "bill", "prompt": {"ru": "«Счёт, пожалуйста».", "uk": "«Рахунок, будь ласка».", "en": "“The bill, please.”", "es": "Elige la frase correcta."}, "options": ["La cuenta, por favor.", "La carta, por favor.", "La mesa, por favor."], "answer": "La cuenta, por favor."},
+      {"id": "of6", "tag": "bill", "prompt": {"ru": "Как спросить, можно ли заплатить картой?", "uk": "Як запитати, чи можна заплатити карткою?", "en": "How do you ask if you can pay by card?", "es": "Elige la pregunta correcta."}, "options": ["¿Puedo pagar con tarjeta?", "¿Soy pagar con tarjeta?", "¿Tengo pagar con tarjeta?"], "answer": "¿Puedo pagar con tarjeta?"},
+      {"id": "of7", "tag": "order", "prompt": {"ru": "Что означает para mí?", "uk": "Що означає para mí?", "en": "What does para mí mean?", "es": "¿Qué significa para mí?"}, "options": ["мне, для меня", "счёт", "напиток"], "answer": "мне, для меня"},
+      {"id": "of8", "tag": "drink", "prompt": {"ru": "Дополните: ¿___ beber?", "uk": "Доповніть: ¿___ beber?", "en": "Complete: ¿___ beber?", "es": "Completa: ¿___ beber?"}, "options": ["Para", "Con", "De"], "answer": "Para"},
+      {"id": "of9", "tag": "politeness", "prompt": {"ru": "Выберите вежливое слово «пожалуйста».", "uk": "Оберіть ввічливе слово «будь ласка».", "en": "Choose the polite word “please”.", "es": "Elige la palabra de cortesía."}, "options": ["Por favor.", "Gracias.", "Perdón."], "answer": "Por favor."},
+      {"id": "of10", "tag": "order", "prompt": {"ru": "Официант: ¿Qué va a tomar? Что означает вопрос?", "uk": "Офіціант: ¿Qué va a tomar? Що означає запитання?", "en": "Waiter: ¿Qué va a tomar? What does it mean?", "es": "¿Qué va a tomar?"}, "options": ["Что Вы будете заказывать?", "Где находится кафе?", "Сколько стоит счёт?"], "answer": "Что Вы будете заказывать?"},
+      {"id": "of11", "tag": "drink", "prompt": {"ru": "Выберите фразу с напитком.", "uk": "Оберіть фразу з напоєм.", "en": "Choose the phrase with a drink.", "es": "Elige la frase con bebida."}, "options": ["Un café con leche, por favor.", "Una mesa, por favor.", "La cuenta, por favor."], "answer": "Un café con leche, por favor."},
+      {"id": "of12", "tag": "bill", "prompt": {"ru": "Что такое la carta в кафе?", "uk": "Що таке la carta в кафе?", "en": "What is la carta in a café?", "es": "¿Qué es la carta en una cafetería?"}, "options": ["меню со списком блюд", "счёт", "столик"], "answer": "меню со списком блюд"}
+    ]
+  }
+}
