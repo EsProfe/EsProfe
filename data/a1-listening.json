@@ -1,0 +1,114 @@
+{
+  "listening": {
+    "level": "A1",
+    "moduleId": "a1-skills",
+    "nextLessonId": "writing",
+    "ruleTags": {"person": 0, "place": 1, "time": 2, "intention": 3},
+    "i18n": {
+      "ru": {
+        "title": "Аудирование: короткие реплики",
+        "goal": "Цель: понимать на слух простые испанские реплики о человеке, месте, времени и планах.",
+        "intro": "Слушайте фразу два раза. Не пытайтесь понять каждое слово: сначала уловите человека, место, время или действие.",
+        "rules": [
+          ["Кто", "Me llamo Lucía y trabajo en un hotel.\nСпросите себя: как зовут человека? Где он работает?"],
+          ["Где", "Estoy en la estación, delante de la entrada.\nСначала найдите место, затем ориентир."],
+          ["Когда", "El tren sale a las ocho y cuarto.\nСлушайте число и слово a las."],
+          ["План", "Esta tarde voy a estudiar español en casa.\nКонструкция voy a + инфинитив говорит о ближайшем плане."]
+        ],
+        "examplesTitle": "Слушай реплики",
+        "practiceTitle": "Пойми на слух",
+        "trainerTitle": "Тренировка аудирования",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: письмо"
+      },
+      "uk": {
+        "title": "Аудіювання: короткі репліки",
+        "goal": "Мета: розуміти на слух прості іспанські репліки про людину, місце, час і плани.",
+        "intro": "Прослухайте фразу двічі. Не намагайтеся зрозуміти кожне слово: спочатку вловіть людину, місце, час або дію.",
+        "rules": [
+          ["Хто", "Me llamo Lucía y trabajo en un hotel.\nЗапитайте себе: як звати людину? Де вона працює?"],
+          ["Де", "Estoy en la estación, delante de la entrada.\nСпочатку знайдіть місце, потім орієнтир."],
+          ["Коли", "El tren sale a las ocho y cuarto.\nСлухайте число й слово a las."],
+          ["План", "Esta tarde voy a estudiar español en casa.\nКонструкція voy a + інфінітив говорить про найближчий план."]
+        ],
+        "examplesTitle": "Слухай репліки",
+        "practiceTitle": "Зрозумій на слух",
+        "trainerTitle": "Тренування аудіювання",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: письмо"
+      },
+      "en": {
+        "title": "Listening: short utterances",
+        "goal": "Goal: understand simple Spanish utterances about a person, place, time and plans.",
+        "intro": "Listen to the sentence twice. Do not try to understand every word: first catch the person, place, time or action.",
+        "rules": [
+          ["Who", "Me llamo Lucía y trabajo en un hotel.\nAsk yourself: what is the person’s name? Where does she work?"],
+          ["Where", "Estoy en la estación, delante de la entrada.\nFirst find the place, then the landmark."],
+          ["When", "El tren sale a las ocho y cuarto.\nListen for the number and the words a las."],
+          ["A plan", "Esta tarde voy a estudiar español en casa.\nThe construction voy a + infinitive expresses a near plan."]
+        ],
+        "examplesTitle": "Listen to the utterances",
+        "practiceTitle": "Understand by ear",
+        "trainerTitle": "Listening trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: writing"
+      },
+      "es": {
+        "title": "Comprensión auditiva: frases breves",
+        "goal": "Objetivo: comprender frases sencillas sobre una persona, un lugar, la hora y los planes.",
+        "intro": "Escucha la frase dos veces. No intentes entender cada palabra: primero capta la persona, el lugar, la hora o la acción.",
+        "rules": [
+          ["Quién", "Me llamo Lucía y trabajo en un hotel.\nPregúntate: ¿cómo se llama? ¿Dónde trabaja?"],
+          ["Dónde", "Estoy en la estación, delante de la entrada.\nBusca primero el lugar y después el punto de referencia."],
+          ["Cuándo", "El tren sale a las ocho y cuarto.\nEscucha el número y las palabras a las."],
+          ["Un plan", "Esta tarde voy a estudiar español en casa.\nVoy a + infinitivo expresa un plan cercano."]
+        ],
+        "examplesTitle": "Escucha las frases",
+        "practiceTitle": "Comprende al escuchar",
+        "trainerTitle": "Entrenamiento auditivo",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: expresión escrita"
+      }
+    },
+    "flashcards": [
+      ["la entrada", "вход", "вхід", "entrance", "entrada", "🚪"],
+      ["el tren sale", "поезд отправляется", "поїзд відправляється", "the train leaves", "tren sale", "🚆"],
+      ["y cuarto", "четверть", "чверть", "quarter past", "y cuarto", "🕗"],
+      ["esta tarde", "сегодня днём", "сьогодні вдень", "this afternoon", "esta tarde", "🌇"],
+      ["escuchar", "слушать", "слухати", "listen", "escuchar", "👂"],
+      ["repetir", "повторять", "повторювати", "repeat", "repetir", "🔁"],
+      ["la persona", "человек", "людина", "person", "persona", "🧑"],
+      ["el lugar", "место", "місце", "place", "lugar", "📍"],
+      ["la hora", "время, час", "час, година", "time", "hora", "🕒"],
+      ["el plan", "план", "план", "plan", "plan", "📅"]
+    ],
+    "examples": [
+      {"word":"Me llamo Lucía y trabajo en un hotel.","tag":"person"},
+      {"word":"Estoy en la estación, delante de la entrada.","tag":"place"},
+      {"word":"El tren sale a las ocho y cuarto.","tag":"time"},
+      {"word":"Esta tarde voy a estudiar español en casa.","tag":"intention"}
+    ],
+    "questionBank": [
+      {"id":"li1","tag":"person","prompt":{"ru":"Прослушайте: «Me llamo Lucía y trabajo en un hotel». Как зовут человека?","uk":"Прослухайте: «Me llamo Lucía y trabajo en un hotel». Як звати людину?","en":"Listen: “Me llamo Lucía y trabajo en un hotel.” What is the person’s name?","es":"Escucha. ¿Cómo se llama la persona?"},"options":["Lucía","Marta","Daniel"],"answer":"Lucía"},
+      {"id":"li2","tag":"person","prompt":{"ru":"Где работает Лусия?","uk":"Де працює Лусія?","en":"Where does Lucía work?","es":"¿Dónde trabaja Lucía?"},"options":["En un hotel.","En una estación.","En un museo."],"answer":"En un hotel."},
+      {"id":"li3","tag":"place","prompt":{"ru":"Прослушайте: «Estoy en la estación, delante de la entrada». Где человек?","uk":"Прослухайте: «Estoy en la estación, delante de la entrada». Де людина?","en":"Listen: “Estoy en la estación, delante de la entrada.” Where is the person?","es":"¿Dónde está la persona?"},"options":["En la estación.","En la cafetería.","En el supermercado."],"answer":"En la estación."},
+      {"id":"li4","tag":"place","prompt":{"ru":"Где именно у станции?","uk":"Де саме біля станції?","en":"Where exactly at the station?","es":"¿Dónde exactamente?"},"options":["Delante de la entrada.","Dentro del tren.","Junto al museo."],"answer":"Delante de la entrada."},
+      {"id":"li5","tag":"time","prompt":{"ru":"Прослушайте: «El tren sale a las ocho y cuarto». Во сколько поезд?","uk":"Прослухайте: «El tren sale a las ocho y cuarto». О котрій поїзд?","en":"Listen: “El tren sale a las ocho y cuarto.” What time does the train leave?","es":"¿A qué hora sale el tren?"},"options":["A las ocho y cuarto.","A las ocho y media.","A las siete y cuarto."],"answer":"A las ocho y cuarto."},
+      {"id":"li6","tag":"time","prompt":{"ru":"Что означает y cuarto?","uk":"Що означає y cuarto?","en":"What does y cuarto mean?","es":"¿Qué significa y cuarto?"},"options":["четверть","половина","ровно"],"answer":"четверть"},
+      {"id":"li7","tag":"intention","prompt":{"ru":"Прослушайте: «Esta tarde voy a estudiar español en casa». Когда человек будет учить испанский?","uk":"Прослухайте: «Esta tarde voy a estudiar español en casa». Коли людина вчитиме іспанську?","en":"Listen: “Esta tarde voy a estudiar español en casa.” When will the person study Spanish?","es":"¿Cuándo va a estudiar español?"},"options":["Esta tarde.","Por la mañana.","El domingo."],"answer":"Esta tarde."},
+      {"id":"li8","tag":"intention","prompt":{"ru":"Где будет учить испанский?","uk":"Де вчитиме іспанську?","en":"Where will the person study Spanish?","es":"¿Dónde va a estudiar español?"},"options":["En casa.","En el hotel.","En la estación."],"answer":"En casa."},
+      {"id":"li9","tag":"intention","prompt":{"ru":"Какой ближайший план выражает voy a + infinitivo?","uk":"Який найближчий план виражає voy a + infinitivo?","en":"Which near plan uses voy a + infinitive?","es":"Elige el plan correcto."},"options":["Voy a llamar a Marta.","Soy llamar a Marta.","Estoy llamar a Marta."],"answer":"Voy a llamar a Marta."},
+      {"id":"li10","tag":"person","prompt":{"ru":"Как лучше слушать короткую реплику?","uk":"Як краще слухати коротку репліку?","en":"How should you listen to a short utterance?","es":"Elige la estrategia correcta."},"options":["Сначала найти ключевую информацию.","Переводить каждое слово.","Сразу выбирать случайный ответ."],"answer":"Сначала найти ключевую информацию."},
+      {"id":"li11","tag":"place","prompt":{"ru":"Выберите фразу с ориентиром «перед входом».","uk":"Оберіть фразу з орієнтиром «перед входом».","en":"Choose the phrase with the landmark “in front of the entrance”.","es":"Elige la frase correcta."},"options":["Delante de la entrada.","A las ocho y cuarto.","Esta tarde."],"answer":"Delante de la entrada."},
+      {"id":"li12","tag":"time","prompt":{"ru":"Что нужно искать в реплике о времени?","uk":"Що треба шукати в репліці про час?","en":"What should you look for in an utterance about time?","es":"¿Qué buscas en una frase sobre la hora?"},"options":["Число и a las.","Только имя человека.","Название страны."],"answer":"Число и a las."}
+    ]
+  }
+}
