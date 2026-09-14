@@ -188,9 +188,12 @@
   function selectSpanishVoice() {
     if (!window.speechSynthesis) return null;
     const voices = window.speechSynthesis.getVoices();
+    const locale = (voice) =>
+      String(voice.lang || "").replace("_", "-").toLowerCase();
     spanishVoice =
-      voices.find((v) => /^es-ES$/i.test(v.lang)) ||
-      voices.find((v) => /^es(?:-|$)/i.test(v.lang)) ||
+      voices.find((v) => locale(v) === "es-es") ||
+      voices.find((v) => locale(v).startsWith("es-")) ||
+      voices.find((v) => locale(v) === "es") ||
       null;
     return spanishVoice;
   }
@@ -213,6 +216,21 @@
     x.rate = 0.78;
     const voice = spanishVoice || selectSpanishVoice();
     if (voice) x.voice = voice;
+    else {
+      // Never silently use the computer's default English voice for Spanish.
+      // A delayed retry covers browsers that load voices only after the first click.
+      setTimeout(() => {
+        const delayedVoice = spanishVoice || selectSpanishVoice();
+        if (!delayedVoice) return;
+        const retry = new SpeechSynthesisUtterance(text);
+        retry.lang = "es-ES";
+        retry.rate = 0.78;
+        retry.voice = delayedVoice;
+        window.speechSynthesis.cancel();
+        window.speechSynthesis.speak(retry);
+      }, 120);
+      return;
+    }
     window.speechSynthesis.speak(x);
   }
   function setView() {
