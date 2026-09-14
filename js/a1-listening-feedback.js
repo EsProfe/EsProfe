@@ -44,8 +44,9 @@
       try{
         window.speechSynthesis?.cancel();
         const u=new SpeechSynthesisUtterance(completed);
-        u.lang="es-ES";u.rate=.8;
-        window.speechSynthesis?.speak(u);
+        const voices=window.speechSynthesis?.getVoices?.()||[];
+        const voice=voices.find(v=>String(v.lang||"").replace("_","-").toLowerCase()==="es-es")||voices.find(v=>String(v.lang||"").replace("_","-").toLowerCase().startsWith("es-"));
+        if(voice){u.lang="es-ES";u.voice=voice;u.rate=.8;window.speechSynthesis?.speak(u);}
       }catch(_){ }
 
       setTimeout(()=>{
