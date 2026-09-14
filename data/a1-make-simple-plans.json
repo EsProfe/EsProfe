@@ -1,0 +1,114 @@
+{
+  "make-simple-plans": {
+    "level": "A1",
+    "moduleId": "a1-communication",
+    "nextLessonId": "reading",
+    "ruleTags": {"invite": 0, "time": 1, "agree": 2, "change": 3},
+    "i18n": {
+      "ru": {
+        "title": "Простые планы и договорённости",
+        "goal": "Цель: предложить встречу, договориться о времени и вежливо изменить план.",
+        "intro": "В разговоре о планах нужны короткие готовые модели: предложите, уточните время и подтвердите договорённость.",
+        "rules": [
+          ["Предложить", "¿Quedamos el sábado? — Встретимся в субботу?\n¿Te apetece tomar un café? — Хочешь выпить кофе?\n¿Vamos al cine esta tarde? — Пойдём в кино сегодня днём?"],
+          ["Время и место", "¿A qué hora quedamos? — Во сколько встретимся?\nA las seis, delante del museo. — В шесть, перед музеем.\nNos vemos en la estación. — Увидимся на станции."],
+          ["Согласиться", "Sí, genial. — Да, отлично.\nMe va muy bien. — Мне очень подходит.\nDe acuerdo, hasta mañana. — Договорились, до завтра."],
+          ["Изменить план", "Lo siento, no puedo. — Извини, я не могу.\n¿Quedamos otro día? — Встретимся в другой день?\n¿Te va bien el domingo? — Тебе подходит воскресенье?"]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери фразу для ситуации",
+        "trainerTitle": "Тренировка договорённости",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: чтение"
+      },
+      "uk": {
+        "title": "Прості плани й домовленості",
+        "goal": "Мета: запропонувати зустріч, домовитися про час і ввічливо змінити план.",
+        "intro": "У розмові про плани потрібні короткі готові моделі: запропонуйте, уточніть час і підтвердьте домовленість.",
+        "rules": [
+          ["Запропонувати", "¿Quedamos el sábado? — Зустрінемося в суботу?\n¿Te apetece tomar un café? — Хочеш випити кави?\n¿Vamos al cine esta tarde? — Підемо в кіно сьогодні вдень?"],
+          ["Час і місце", "¿A qué hora quedamos? — О котрій зустрінемося?\nA las seis, delante del museo. — О шостій, перед музеєм.\nNos vemos en la estación. — Побачимося на станції."],
+          ["Погодитися", "Sí, genial. — Так, чудово.\nMe va muy bien. — Мені дуже підходить.\nDe acuerdo, hasta mañana. — Домовилися, до завтра."],
+          ["Змінити план", "Lo siento, no puedo. — Вибач, я не можу.\n¿Quedamos otro día? — Зустрінемося іншого дня?\n¿Te va bien el domingo? — Тобі підходить неділя?"]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери фразу для ситуації",
+        "trainerTitle": "Тренування домовленості",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: читання"
+      },
+      "en": {
+        "title": "Simple plans and arrangements",
+        "goal": "Goal: suggest meeting, agree on a time and politely change a plan.",
+        "intro": "For plans, use short ready-made patterns: make a suggestion, fix the time and confirm the arrangement.",
+        "rules": [
+          ["Make a suggestion", "¿Quedamos el sábado? — Shall we meet on Saturday?\n¿Te apetece tomar un café? — Would you like to have a coffee?\n¿Vamos al cine esta tarde? — Shall we go to the cinema this afternoon?"],
+          ["Time and place", "¿A qué hora quedamos? — What time shall we meet?\nA las seis, delante del museo. — At six, in front of the museum.\nNos vemos en la estación. — See you at the station."],
+          ["Agree", "Sí, genial. — Yes, great.\nMe va muy bien. — That works very well for me.\nDe acuerdo, hasta mañana. — Agreed, see you tomorrow."],
+          ["Change a plan", "Lo siento, no puedo. — Sorry, I can’t.\n¿Quedamos otro día? — Shall we meet another day?\n¿Te va bien el domingo? — Does Sunday work for you?"]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the phrase for the situation",
+        "trainerTitle": "Arrangement trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: reading"
+      },
+      "es": {
+        "title": "Planes y acuerdos sencillos",
+        "goal": "Objetivo: proponer quedar, acordar la hora y cambiar un plan con educación.",
+        "intro": "Para hablar de planes usa modelos breves: propone algo, concreta la hora y confirma el acuerdo.",
+        "rules": [
+          ["Proponer", "¿Quedamos el sábado?\n¿Te apetece tomar un café?\n¿Vamos al cine esta tarde?"],
+          ["Hora y lugar", "¿A qué hora quedamos?\nA las seis, delante del museo.\nNos vemos en la estación."],
+          ["Aceptar", "Sí, genial.\nMe va muy bien.\nDe acuerdo, hasta mañana."],
+          ["Cambiar el plan", "Lo siento, no puedo.\n¿Quedamos otro día?\n¿Te va bien el domingo?"]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la frase para la situación",
+        "trainerTitle": "Entrenamiento de acuerdos",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: comprensión lectora"
+      }
+    },
+    "flashcards": [
+      ["quedar", "встречаться, договориться о встрече", "зустрічатися, домовитися про зустріч", "meet, arrange to meet", "quedar", "🤝"],
+      ["¿te apetece...?", "хочешь...?", "хочеш...?", "would you like...?", "te apetece", "💬"],
+      ["a qué hora", "во сколько", "о котрій", "what time", "a qué hora", "🕕"],
+      ["delante de", "перед", "перед", "in front of", "delante de", "📍"],
+      ["nos vemos", "увидимся", "побачимося", "see you", "nos vemos", "👋"],
+      ["me va bien", "мне подходит", "мені підходить", "works for me", "me va bien", "✅"],
+      ["de acuerdo", "договорились", "домовилися", "agreed", "de acuerdo", "👍"],
+      ["lo siento", "извини, мне жаль", "вибач, мені шкода", "sorry", "lo siento", "🙏"],
+      ["otro día", "в другой день", "іншого дня", "another day", "otro día", "📅"],
+      ["el domingo", "в воскресенье", "у неділю", "on Sunday", "domingo", "☀️"]
+    ],
+    "examples": [
+      {"word":"¿Quedamos el sábado?","tag":"invite"},
+      {"word":"¿A qué hora quedamos? — A las seis.","tag":"time"},
+      {"word":"Sí, genial. Me va muy bien.","tag":"agree"},
+      {"word":"Lo siento, no puedo. ¿Quedamos otro día?","tag":"change"}
+    ],
+    "questionBank": [
+      {"id":"sp1","tag":"invite","prompt":{"ru":"«Встретимся в субботу?»","uk":"«Зустрінемося в суботу?»","en":"“Shall we meet on Saturday?”","es":"Elige la frase correcta."},"options":["¿Quedamos el sábado?","¿Estamos el sábado?","¿Tenemos sábado?"],"answer":"¿Quedamos el sábado?"},
+      {"id":"sp2","tag":"invite","prompt":{"ru":"«Хочешь выпить кофе?»","uk":"«Хочеш випити кави?»","en":"“Would you like to have a coffee?”","es":"Elige la pregunta correcta."},"options":["¿Te apetece tomar un café?","¿Te gusta tomar café es?","¿Tienes café tomar?"],"answer":"¿Te apetece tomar un café?"},
+      {"id":"sp3","tag":"invite","prompt":{"ru":"«Пойдём в кино сегодня днём?»","uk":"«Підемо в кіно сьогодні вдень?»","en":"“Shall we go to the cinema this afternoon?”","es":"Elige la frase correcta."},"options":["¿Vamos al cine esta tarde?","¿Somos al cine esta tarde?","¿Vamos cine es tarde?"],"answer":"¿Vamos al cine esta tarde?"},
+      {"id":"sp4","tag":"time","prompt":{"ru":"«Во сколько встретимся?»","uk":"«О котрій зустрінемося?»","en":"“What time shall we meet?”","es":"Elige la pregunta correcta."},"options":["¿A qué hora quedamos?","¿Qué hora quedamos?","¿Dónde hora quedamos?"],"answer":"¿A qué hora quedamos?"},
+      {"id":"sp5","tag":"time","prompt":{"ru":"«В шесть, перед музеем».","uk":"«О шостій, перед музеєм».","en":"“At six, in front of the museum.”","es":"Elige la frase correcta."},"options":["A las seis, delante del museo.","A seis, museo delante.","En seis del museo."],"answer":"A las seis, delante del museo."},
+      {"id":"sp6","tag":"time","prompt":{"ru":"«Увидимся на станции».","uk":"«Побачимося на станції».","en":"“See you at the station.”","es":"Elige la frase correcta."},"options":["Nos vemos en la estación.","Nos vemos a estación.","Estamos estación."],"answer":"Nos vemos en la estación."},
+      {"id":"sp7","tag":"agree","prompt":{"ru":"Как ответить «Да, отлично»?","uk":"Як відповісти «Так, чудово»?","en":"How do you answer “Yes, great”?","es":"Elige la frase correcta."},"options":["Sí, genial.","Sí, lo siento.","No, de estación."],"answer":"Sí, genial."},
+      {"id":"sp8","tag":"agree","prompt":{"ru":"«Мне очень подходит».","uk":"«Мені дуже підходить».","en":"“That works very well for me.”","es":"Elige la frase correcta."},"options":["Me va muy bien.","Me tiene muy bien.","Me estoy muy bien."],"answer":"Me va muy bien."},
+      {"id":"sp9","tag":"agree","prompt":{"ru":"«Договорились, до завтра».","uk":"«Домовилися, до завтра».","en":"“Agreed, see you tomorrow.”","es":"Elige la frase correcta."},"options":["De acuerdo, hasta mañana.","De mañana, acuerdo.","Estoy acuerdo mañana."],"answer":"De acuerdo, hasta mañana."},
+      {"id":"sp10","tag":"change","prompt":{"ru":"«Извини, я не могу».","uk":"«Вибач, я не можу».","en":"“Sorry, I can’t.”","es":"Elige la frase correcta."},"options":["Lo siento, no puedo.","Lo siento, no tengo.","Perdón, no soy."],"answer":"Lo siento, no puedo."},
+      {"id":"sp11","tag":"change","prompt":{"ru":"«Встретимся в другой день?»","uk":"«Зустрінемося іншого дня?»","en":"“Shall we meet another day?”","es":"Elige la pregunta correcta."},"options":["¿Quedamos otro día?","¿Quedamos otra hora?","¿Estamos otro día?"],"answer":"¿Quedamos otro día?"},
+      {"id":"sp12","tag":"change","prompt":{"ru":"«Тебе подходит воскресенье?»","uk":"«Тобі підходить неділя?»","en":"“Does Sunday work for you?”","es":"Elige la pregunta correcta."},"options":["¿Te va bien el domingo?","¿Te tiene domingo?","¿Es domingo tú?"],"answer":"¿Te va bien el domingo?"}
+    ]
+  }
+}
