@@ -1,0 +1,114 @@
+{
+  "shopping-dialogue": {
+    "level": "A1",
+    "moduleId": "a1-communication",
+    "nextLessonId": "ask-directions",
+    "ruleTags": {"item": 0, "size": 1, "price": 2, "payment": 3},
+    "i18n": {
+      "ru": {
+        "title": "Диалог в магазине",
+        "goal": "Цель: спросить о товаре, размере, цене и оплате в магазине.",
+        "intro": "В магазине полезнее учить не отдельные слова, а короткие готовые фразы для реальной покупки.",
+        "rules": [
+          ["Товар", "Busco una camiseta. — Я ищу футболку.\n¿Tiene este vestido en azul? — У Вас есть это платье синего цвета?\nQuiero ver esos zapatos, por favor. — Я хочу посмотреть те туфли, пожалуйста."],
+          ["Размер и примерка", "¿Qué talla usa? — Какой размер Вы носите?\nUso la talla M. — Я ношу размер M.\n¿Puedo probarme esta chaqueta? — Можно примерить эту куртку?\n¿Dónde está el probador? — Где примерочная?"],
+          ["Цена", "¿Cuánto cuesta? — Сколько это стоит?\nCuesta treinta euros. — Это стоит тридцать евро.\n¿Tiene algo más barato? — У Вас есть что-то дешевле?"],
+          ["Оплата", "Me lo llevo. — Я это беру.\n¿Puedo pagar con tarjeta? — Можно заплатить картой?\n— ¿Qué talla usa?\n— La M, por favor.\n— Aquí tiene."]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери фразу для ситуации",
+        "trainerTitle": "Тренировка покупки",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: спросить дорогу"
+      },
+      "uk": {
+        "title": "Діалог у магазині",
+        "goal": "Мета: запитати про товар, розмір, ціну й оплату в магазині.",
+        "intro": "У магазині корисніше вчити не окремі слова, а короткі готові фрази для реальної покупки.",
+        "rules": [
+          ["Товар", "Busco una camiseta. — Я шукаю футболку.\n¿Tiene este vestido en azul? — У Вас є ця сукня синього кольору?\nQuiero ver esos zapatos, por favor. — Я хочу подивитися на ті туфлі, будь ласка."],
+          ["Розмір і примірка", "¿Qué talla usa? — Який розмір Ви носите?\nUso la talla M. — Я ношу розмір M.\n¿Puedo probarme esta chaqueta? — Можна приміряти цю куртку?\n¿Dónde está el probador? — Де примірочна?"],
+          ["Ціна", "¿Cuánto cuesta? — Скільки це коштує?\nCuesta treinta euros. — Це коштує тридцять євро.\n¿Tiene algo más barato? — У Вас є щось дешевше?"],
+          ["Оплата", "Me lo llevo. — Я це беру.\n¿Puedo pagar con tarjeta? — Можна заплатити карткою?\n— ¿Qué talla usa?\n— La M, por favor.\n— Aquí tiene."]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери фразу для ситуації",
+        "trainerTitle": "Тренування покупки",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: запитати дорогу"
+      },
+      "en": {
+        "title": "A dialogue in a shop",
+        "goal": "Goal: ask about an item, size, price and payment in a shop.",
+        "intro": "In a shop, it is more useful to learn short ready-made phrases than isolated words.",
+        "rules": [
+          ["An item", "Busco una camiseta. — I am looking for a T-shirt.\n¿Tiene este vestido en azul? — Do you have this dress in blue?\nQuiero ver esos zapatos, por favor. — I would like to see those shoes, please."],
+          ["Size and fitting", "¿Qué talla usa? — What size do you wear?\nUso la talla M. — I wear size M.\n¿Puedo probarme esta chaqueta? — Can I try on this jacket?\n¿Dónde está el probador? — Where is the fitting room?"],
+          ["Price", "¿Cuánto cuesta? — How much does it cost?\nCuesta treinta euros. — It costs thirty euros.\n¿Tiene algo más barato? — Do you have anything cheaper?"],
+          ["Payment", "Me lo llevo. — I will take it.\n¿Puedo pagar con tarjeta? — Can I pay by card?\n— ¿Qué talla usa?\n— La M, por favor.\n— Aquí tiene."]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the phrase for the situation",
+        "trainerTitle": "Shopping trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: ask for directions"
+      },
+      "es": {
+        "title": "Diálogo en una tienda",
+        "goal": "Objetivo: preguntar por un artículo, la talla, el precio y el pago en una tienda.",
+        "intro": "En una tienda es más útil aprender frases breves ya hechas que palabras aisladas.",
+        "rules": [
+          ["El artículo", "Busco una camiseta.\n¿Tiene este vestido en azul?\nQuiero ver esos zapatos, por favor."],
+          ["Talla y prueba", "¿Qué talla usa?\nUso la talla M.\n¿Puedo probarme esta chaqueta?\n¿Dónde está el probador?"],
+          ["Precio", "¿Cuánto cuesta?\nCuesta treinta euros.\n¿Tiene algo más barato?"],
+          ["Pago", "Me lo llevo.\n¿Puedo pagar con tarjeta?\n— ¿Qué talla usa?\n— La M, por favor.\n— Aquí tiene."]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la frase para la situación",
+        "trainerTitle": "Entrenamiento de compra",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: pedir indicaciones"
+      }
+    },
+    "flashcards": [
+      ["la camiseta", "футболка", "футболка", "T-shirt", "camiseta", "👕"],
+      ["el vestido", "платье", "сукня", "dress", "vestido", "👗"],
+      ["los zapatos", "туфли, обувь", "туфлі, взуття", "shoes", "zapatos", "👞"],
+      ["la talla", "размер", "розмір", "size", "talla", "📏"],
+      ["el probador", "примерочная", "примірочна", "fitting room", "probador", "🚪"],
+      ["el precio", "цена", "ціна", "price", "precio", "🏷️"],
+      ["más barato", "дешевле", "дешевше", "cheaper", "más barato", "💶"],
+      ["me lo llevo", "я это беру", "я це беру", "I will take it", "me lo llevo", "🛍️"],
+      ["con tarjeta", "картой", "карткою", "by card", "con tarjeta", "💳"],
+      ["aquí tiene", "вот, пожалуйста", "ось, будь ласка", "here you are", "aquí tiene", "🤲"]
+    ],
+    "examples": [
+      {"word": "Busco una camiseta.", "tag": "item"},
+      {"word": "¿Puedo probarme esta chaqueta?", "tag": "size"},
+      {"word": "¿Cuánto cuesta? — Cuesta treinta euros.", "tag": "price"},
+      {"word": "Me lo llevo. ¿Puedo pagar con tarjeta?", "tag": "payment"}
+    ],
+    "questionBank": [
+      {"id":"sd1","tag":"item","prompt":{"ru":"«Я ищу футболку».","uk":"«Я шукаю футболку».","en":"“I am looking for a T-shirt.”","es":"Elige la frase correcta."},"options":["Busco una camiseta.","Soy una camiseta.","Tengo buscar camiseta."],"answer":"Busco una camiseta."},
+      {"id":"sd2","tag":"item","prompt":{"ru":"Как попросить посмотреть те туфли?","uk":"Як попросити подивитися на ті туфлі?","en":"How do you ask to see those shoes?","es":"Elige la frase correcta."},"options":["Quiero ver esos zapatos, por favor.","Quiero esos zapatos cuesta.","Tengo ver esos zapatos."],"answer":"Quiero ver esos zapatos, por favor."},
+      {"id":"sd3","tag":"size","prompt":{"ru":"«Какой размер Вы носите?»","uk":"«Який розмір Ви носите?»","en":"“What size do you wear?”","es":"Elige la pregunta correcta."},"options":["¿Qué talla usa?","¿Qué talla tiene?","¿Cuál talla es?"],"answer":"¿Qué talla usa?"},
+      {"id":"sd4","tag":"size","prompt":{"ru":"«Можно примерить эту куртку?»","uk":"«Можна приміряти цю куртку?»","en":"“Can I try on this jacket?”","es":"Elige la frase correcta."},"options":["¿Puedo probarme esta chaqueta?","¿Soy probar esta chaqueta?","¿Tengo esta chaqueta?"],"answer":"¿Puedo probarme esta chaqueta?"},
+      {"id":"sd5","tag":"size","prompt":{"ru":"Где примерочная?","uk":"Де примірочна?","en":"Where is the fitting room?","es":"Elige la pregunta correcta."},"options":["¿Dónde está el probador?","¿Cuánto está el probador?","¿Qué probador usa?"],"answer":"¿Dónde está el probador?"},
+      {"id":"sd6","tag":"price","prompt":{"ru":"«Сколько это стоит?»","uk":"«Скільки це коштує?»","en":"“How much does it cost?”","es":"Elige la pregunta correcta."},"options":["¿Cuánto cuesta?","¿Cuánto usa?","¿Qué cuesta?"],"answer":"¿Cuánto cuesta?"},
+      {"id":"sd7","tag":"price","prompt":{"ru":"Дополните: Cuesta ___ euros.","uk":"Доповніть: Cuesta ___ euros.","en":"Complete: Cuesta ___ euros.","es":"Completa: Cuesta ___ euros."},"options":["treinta","talla","tarjeta"],"answer":"treinta"},
+      {"id":"sd8","tag":"price","prompt":{"ru":"«У Вас есть что-то дешевле?»","uk":"«У Вас є щось дешевше?»","en":"“Do you have anything cheaper?”","es":"Elige la frase correcta."},"options":["¿Tiene algo más barato?","¿Tiene más talla?","¿Tiene algo tarjeta?"],"answer":"¿Tiene algo más barato?"},
+      {"id":"sd9","tag":"payment","prompt":{"ru":"«Я это беру».","uk":"«Я це беру».","en":"“I will take it.”","es":"Elige la frase correcta."},"options":["Me lo llevo.","Me lo cuesta.","Me lo prueba."],"answer":"Me lo llevo."},
+      {"id":"sd10","tag":"payment","prompt":{"ru":"Как спросить, можно ли заплатить картой?","uk":"Як запитати, чи можна заплатити карткою?","en":"How do you ask if you can pay by card?","es":"Elige la pregunta correcta."},"options":["¿Puedo pagar con tarjeta?","¿Puedo tarjeta pagar es?","¿Soy pagar tarjeta?"],"answer":"¿Puedo pagar con tarjeta?"},
+      {"id":"sd11","tag":"item","prompt":{"ru":"Выберите вопрос о синем платье.","uk":"Оберіть питання про синю сукню.","en":"Choose the question about a blue dress.","es":"Elige la pregunta correcta."},"options":["¿Tiene este vestido en azul?","¿Tiene este vestido cuesta?","¿Está vestido azul?"],"answer":"¿Tiene este vestido en azul?"},
+      {"id":"sd12","tag":"payment","prompt":{"ru":"Продавец передаёт товар. Что он говорит?","uk":"Продавець передає товар. Що він каже?","en":"The shop assistant hands you the item. What do they say?","es":"Elige la frase correcta."},"options":["Aquí tiene.","La cuenta, por favor.","Para beber."],"answer":"Aquí tiene."}
+    ]
+  }
+}
