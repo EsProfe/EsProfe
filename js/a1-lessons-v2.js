@@ -749,7 +749,12 @@
       }
       const q = items[i],
         opts = shuffle(localizedOptions(q));
-      r.innerHTML = `<div class="a1-lesson">${stepper(kind)}<div class="a1-kicker">A1 · ${esc(title)}</div><div class="a1-question-card"><div class="a1-counter">${i + 1} / ${items.length}</div><h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><p class="a1-task-hint">${esc(({ru:"Выберите один правильный вариант.",uk:"Оберіть один правильний варіант.",en:"Choose one correct answer.",es:"Elige una respuesta correcta."})[lang()]||"")}</p><div class="a1-options">${opts.map((o, n) => `<button type="button" class="a1-option" data-option-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      const audio = q.audio
+        ? `<button type="button" class="a1-audio" id="a1Listen">🔊 ${esc(U().listen)}</button>`
+        : "";
+      r.innerHTML = `<div class="a1-lesson">${stepper(kind)}<div class="a1-kicker">A1 · ${esc(title)}</div><div class="a1-question-card"><div class="a1-counter">${i + 1} / ${items.length}</div>${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><p class="a1-task-hint">${esc(({ru:"Выберите один правильный вариант.",uk:"Оберіть один правильний варіант.",en:"Choose one correct answer.",es:"Elige una respuesta correcta."})[lang()]||"")}</p><div class="a1-options">${opts.map((o, n) => `<button type="button" class="a1-option" data-option-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      document.getElementById("a1Listen")?.addEventListener("click", () => speak(q.audio));
+      if (q.audio) setTimeout(() => speak(q.audio), 0);
       r.querySelectorAll("[data-option-index]").forEach(
         (b) => (b.onclick = () => check(q, opts[+b.dataset.optionIndex])),
       );
@@ -759,9 +764,10 @@
         ok = value === answer;
       if (ok) score++;
       else weak[q.tag] = (weak[q.tag] || 0) + 1;
+      const transcript = q.audio ? ` · ${q.audio}` : "";
       document.getElementById("a1Feedback").textContent = ok
-        ? `✅ ${U().correct}`
-        : `❌ ${U().wrong}: ${answer}`;
+        ? `✅ ${U().correct}${transcript}`
+        : `❌ ${U().wrong}: ${answer}${transcript}`;
       r.querySelectorAll("[data-option-index]").forEach(
         (b) => (b.disabled = true),
       );
@@ -839,7 +845,10 @@
     const q = shuffle(pool)[0],
       opts = shuffle(localizedOptions(q)),
       rule = ruleForTag(tag);
-    r.innerHTML = `<div class="a1-lesson">${stepper("review")}<article class="a1-review-card"><h3>${esc(rule[0])}</h3><p>${esc(rule[1])}</p></article><div class="a1-question-card"><h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" data-weak-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+    const audio = q.audio ? `<button type="button" class="a1-audio" id="a1Listen">🔊 ${esc(U().listen)}</button>` : "";
+    r.innerHTML = `<div class="a1-lesson">${stepper("review")}<article class="a1-review-card"><h3>${esc(rule[0])}</h3><p>${esc(rule[1])}</p></article><div class="a1-question-card">${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" data-weak-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+    document.getElementById("a1Listen")?.addEventListener("click", () => speak(q.audio));
+    if (q.audio) setTimeout(() => speak(q.audio), 0);
     r.querySelectorAll("[data-weak-index]").forEach(
       (b) =>
         (b.onclick = () => {
