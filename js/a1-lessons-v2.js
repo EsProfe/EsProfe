@@ -190,7 +190,18 @@
     const voices = window.speechSynthesis.getVoices();
     const locale = (voice) =>
       String(voice.lang || "").replace("_", "-").toLowerCase();
+    const name = (voice) => String(voice.name || "").toLowerCase();
+    const isSpanish = (voice) => {
+      const language = locale(voice);
+      return language === "es" || language.startsWith("es-");
+    };
     spanishVoice =
+      // Use an installed Spanish male voice when it is available. Microsoft Pablo
+      // is the standard Spanish (Spain) male Windows voice; all fallbacks remain Spanish.
+      voices.find((v) => isSpanish(v) && /microsoft\s+pablo|\bpablo\b/.test(name(v))) ||
+      voices.find((v) => isSpanish(v) && /microsoft\s+raul|\braul\b/.test(name(v))) ||
+      // Microsoft Laura is the Spanish (Spain) female Windows voice installed here.
+      voices.find((v) => isSpanish(v) && /microsoft\s+laura|\blaura\b/.test(name(v))) ||
       voices.find((v) => locale(v) === "es-es") ||
       voices.find((v) => locale(v).startsWith("es-")) ||
       voices.find((v) => locale(v) === "es") ||
