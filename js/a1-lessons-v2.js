@@ -223,10 +223,12 @@
       ? teachingSyllables[String(word).toLowerCase()] || word
       : word;
     const x = new SpeechSynthesisUtterance(text);
+    // Do not inherit the browser/UI language: every lesson utterance is Spanish
+    // from Spain, even when the Windows and platform interfaces are Russian.
+    x.lang = "es-ES";
     x.rate = 0.78;
     const voice = spanishVoice || selectSpanishVoice();
     if (voice) {
-      x.lang = voice.lang;
       x.voice = voice;
     }
     else {
@@ -237,7 +239,7 @@
         if (!delayedVoice) return;
         const retry = new SpeechSynthesisUtterance(text);
         retry.rate = 0.78;
-        retry.lang = delayedVoice.lang;
+        retry.lang = "es-ES";
         retry.voice = delayedVoice;
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(retry);
