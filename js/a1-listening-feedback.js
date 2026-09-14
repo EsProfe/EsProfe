@@ -49,7 +49,7 @@
         const name=v=>String(v.name||"").toLowerCase();
         const isSpanish=v=>locale(v)==="es"||locale(v).startsWith("es-");
         const voice=voices.find(v=>isSpanish(v)&&/microsoft\s+pablo|\bpablo\b/.test(name(v)))||voices.find(v=>isSpanish(v)&&/microsoft\s+raul|\braul\b/.test(name(v)))||voices.find(v=>isSpanish(v)&&/microsoft\s+laura|\blaura\b/.test(name(v)))||voices.find(v=>locale(v)==="es-es")||voices.find(v=>locale(v).startsWith("es-"));
-        if(voice){u.lang=voice.lang;u.voice=voice;u.rate=.8;window.speechSynthesis?.speak(u);}
+        if(voice){u.lang="es-ES";u.voice=voice;u.rate=.8;window.speechSynthesis?.speak(u);}
       }catch(_){ }
 
       setTimeout(()=>{
