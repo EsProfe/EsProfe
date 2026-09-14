@@ -46,7 +46,7 @@
         const u=new SpeechSynthesisUtterance(completed);
         const voices=window.speechSynthesis?.getVoices?.()||[];
         const voice=voices.find(v=>String(v.lang||"").replace("_","-").toLowerCase()==="es-es")||voices.find(v=>String(v.lang||"").replace("_","-").toLowerCase().startsWith("es-"));
-        if(voice){u.lang="es-ES";u.voice=voice;u.rate=.8;window.speechSynthesis?.speak(u);}
+        if(voice){u.lang=voice.lang;u.voice=voice;u.rate=.8;window.speechSynthesis?.speak(u);}
       }catch(_){ }
 
       setTimeout(()=>{
