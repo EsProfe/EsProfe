@@ -1,0 +1,114 @@
+{
+  "reading": {
+    "level": "A1",
+    "moduleId": "a1-skills",
+    "nextLessonId": "listening",
+    "ruleTags": {"message": 0, "time": 1, "place": 2, "meaning": 3},
+    "i18n": {
+      "ru": {
+        "title": "Чтение: короткие сообщения",
+        "goal": "Цель: понимать простые объявления, сообщения и заметки на испанском языке.",
+        "intro": "Не переводите текст слово за словом. Сначала найдите: кто пишет, где, когда и что нужно сделать.",
+        "rules": [
+          ["Сообщение", "Hola, Marta. Estoy en la cafetería de la plaza.\nTe espero hasta las seis.\n— Daniel\nСначала найдите человека, место и время."],
+          ["Объявление", "HORARIO\nLunes a viernes: 9:00–20:00\nSábados: 10:00–14:00\nCerrado los domingos.\nИщите дни, часы и слово cerrado."],
+          ["Заметка", "Mamá: hay comida en la nevera.\nVuelvo a casa a las ocho.\n— Папа\nКто вернётся? Когда? Что есть дома?"],
+          ["Полезные слова", "abierto — открыт\ncerrado — закрыт\nhasta — до\ndesde — с\nhoy — сегодня\nmañana — завтра"]
+        ],
+        "examplesTitle": "Прочитай модели",
+        "practiceTitle": "Пойми главное",
+        "trainerTitle": "Тренировка чтения",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: аудирование"
+      },
+      "uk": {
+        "title": "Читання: короткі повідомлення",
+        "goal": "Мета: розуміти прості оголошення, повідомлення й нотатки іспанською.",
+        "intro": "Не перекладайте текст слово за словом. Спочатку знайдіть: хто пише, де, коли й що треба зробити.",
+        "rules": [
+          ["Повідомлення", "Hola, Marta. Estoy en la cafetería de la plaza.\nTe espero hasta las seis.\n— Daniel\nСпочатку знайдіть людину, місце й час."],
+          ["Оголошення", "HORARIO\nLunes a viernes: 9:00–20:00\nSábados: 10:00–14:00\nCerrado los domingos.\nШукайте дні, години й слово cerrado."],
+          ["Нотатка", "Mamá: hay comida en la nevera.\nVuelvo a casa a las ocho.\n— Papá\nХто повернеться? Коли? Що є вдома?"],
+          ["Корисні слова", "abierto — відкрито\ncerrado — зачинено\nhasta — до\ndesde — з\nhoy — сьогодні\nmañana — завтра"]
+        ],
+        "examplesTitle": "Прочитай моделі",
+        "practiceTitle": "Зрозумій головне",
+        "trainerTitle": "Тренування читання",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: аудіювання"
+      },
+      "en": {
+        "title": "Reading: short messages",
+        "goal": "Goal: understand simple notices, messages and notes in Spanish.",
+        "intro": "Do not translate word by word. First find: who is writing, where, when and what needs to be done.",
+        "rules": [
+          ["A message", "Hola, Marta. Estoy en la cafetería de la plaza.\nTe espero hasta las seis.\n— Daniel\nFirst find the person, place and time."],
+          ["A notice", "HORARIO\nLunes a viernes: 9:00–20:00\nSábados: 10:00–14:00\nCerrado los domingos.\nLook for days, times and the word cerrado."],
+          ["A note", "Mamá: hay comida en la nevera.\nVuelvo a casa a las ocho.\n— Papá\nWho will return? When? What is at home?"],
+          ["Useful words", "abierto — open\ncerrado — closed\nhasta — until\ndesde — from\nhoy — today\nmañana — tomorrow"]
+        ],
+        "examplesTitle": "Read the models",
+        "practiceTitle": "Find the main idea",
+        "trainerTitle": "Reading trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: listening"
+      },
+      "es": {
+        "title": "Comprensión lectora: mensajes breves",
+        "goal": "Objetivo: comprender anuncios, mensajes y notas sencillas en español.",
+        "intro": "No traduzcas palabra por palabra. Primero busca: quién escribe, dónde, cuándo y qué hay que hacer.",
+        "rules": [
+          ["Un mensaje", "Hola, Marta. Estoy en la cafetería de la plaza.\nTe espero hasta las seis.\n— Daniel\nBusca primero la persona, el lugar y la hora."],
+          ["Un anuncio", "HORARIO\nLunes a viernes: 9:00–20:00\nSábados: 10:00–14:00\nCerrado los domingos.\nBusca los días, las horas y la palabra cerrado."],
+          ["Una nota", "Mamá: hay comida en la nevera.\nVuelvo a casa a las ocho.\n— Papá\n¿Quién vuelve? ¿Cuándo? ¿Qué hay en casa?"],
+          ["Palabras útiles", "abierto\ncerrado\nhasta\ndesde\nhoy\nmañana"]
+        ],
+        "examplesTitle": "Lee los modelos",
+        "practiceTitle": "Comprende lo principal",
+        "trainerTitle": "Entrenamiento de lectura",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: comprensión auditiva"
+      }
+    },
+    "flashcards": [
+      ["el horario", "расписание, часы работы", "розклад, години роботи", "opening hours", "horario", "🕒"],
+      ["abierto", "открыт", "відкрито", "open", "abierto", "🟢"],
+      ["cerrado", "закрыт", "зачинено", "closed", "cerrado", "🔴"],
+      ["hasta", "до", "до", "until", "hasta", "⏳"],
+      ["desde", "с", "з", "from", "desde", "↔️"],
+      ["hoy", "сегодня", "сьогодні", "today", "hoy", "📅"],
+      ["mañana", "завтра", "завтра", "tomorrow", "mañana", "➡️"],
+      ["esperar", "ждать", "чекати", "wait", "esperar", "⌛"],
+      ["la nevera", "холодильник", "холодильник", "fridge", "nevera", "🧊"],
+      ["el aviso", "объявление, уведомление", "оголошення, повідомлення", "notice", "aviso", "📌"]
+    ],
+    "examples": [
+      {"word":"Hola, Marta. Estoy en la cafetería de la plaza. Te espero hasta las seis.","tag":"message"},
+      {"word":"Lunes a viernes: 9:00–20:00. Cerrado los domingos.","tag":"time"},
+      {"word":"Estoy en la cafetería de la plaza.","tag":"place"},
+      {"word":"Hay comida en la nevera.","tag":"meaning"}
+    ],
+    "questionBank": [
+      {"id":"re1","tag":"message","prompt":{"ru":"Прочитайте: «Hola, Marta. Estoy en la cafetería de la plaza. Te espero hasta las seis. — Daniel». Кто пишет сообщение?","uk":"Прочитайте: «Hola, Marta. Estoy en la cafetería de la plaza. Te espero hasta las seis. — Daniel». Хто пише повідомлення?","en":"Read: “Hola, Marta. Estoy en la cafetería de la plaza. Te espero hasta las seis. — Daniel”. Who writes the message?","es":"Lee el mensaje. ¿Quién escribe?"},"options":["Daniel","Marta","El camarero"],"answer":"Daniel"},
+      {"id":"re2","tag":"place","prompt":{"ru":"Где находится Даниэль? «Estoy en la cafetería de la plaza».","uk":"Де перебуває Даніель? «Estoy en la cafetería de la plaza».","en":"Where is Daniel? “Estoy en la cafetería de la plaza.”","es":"¿Dónde está Daniel?"},"options":["En la cafetería de la plaza.","En la estación.","En el museo."],"answer":"En la cafetería de la plaza."},
+      {"id":"re3","tag":"time","prompt":{"ru":"До которого часа Даниэль ждёт Марту? «Te espero hasta las seis».","uk":"До котрої години Даніель чекає Марту? «Te espero hasta las seis».","en":"Until what time does Daniel wait for Marta? “Te espero hasta las seis.”","es":"¿Hasta qué hora espera Daniel a Marta?"},"options":["Hasta las seis.","Hasta las ocho.","Hasta las nueve."],"answer":"Hasta las seis."},
+      {"id":"re4","tag":"time","prompt":{"ru":"Прочитайте расписание: «Lunes a viernes: 9:00–20:00». Когда оно открыто?","uk":"Прочитайте розклад: «Lunes a viernes: 9:00–20:00». Коли воно відчинене?","en":"Read the schedule: “Lunes a viernes: 9:00–20:00”. When is it open?","es":"Lee el horario. ¿Cuándo está abierto?"},"options":["De lunes a viernes, de 9:00 a 20:00.","Los domingos, de 9:00 a 20:00.","Los sábados, hasta las 20:00."],"answer":"De lunes a viernes, de 9:00 a 20:00."},
+      {"id":"re5","tag":"time","prompt":{"ru":"«Cerrado los domingos» означает:","uk":"«Cerrado los domingos» означає:","en":"“Cerrado los domingos” means:","es":"¿Qué significa «Cerrado los domingos»?"},"options":["По воскресеньям закрыто.","По воскресеньям открыто.","Открыто до воскресенья."],"answer":"По воскресеньям закрыто."},
+      {"id":"re6","tag":"time","prompt":{"ru":"В субботу часы работы: «10:00–14:00». Во сколько закрывается место?","uk":"У суботу години роботи: «10:00–14:00». О котрій зачиняється місце?","en":"On Saturday the opening hours are “10:00–14:00”. What time does it close?","es":"El sábado: 10:00–14:00. ¿A qué hora cierra?"},"options":["A las catorce.","A las diez.","A las veinte."],"answer":"A las catorce."},
+      {"id":"re7","tag":"meaning","prompt":{"ru":"Прочитайте: «Mamá: hay comida en la nevera». Что есть дома?","uk":"Прочитайте: «Mamá: hay comida en la nevera». Що є вдома?","en":"Read: “Mamá: hay comida en la nevera.” What is at home?","es":"¿Qué hay en casa?"},"options":["Comida en la nevera.","Una cafetería.","Un museo."],"answer":"Comida en la nevera."},
+      {"id":"re8","tag":"time","prompt":{"ru":"«Vuelvo a casa a las ocho». Когда папа вернётся домой?","uk":"«Vuelvo a casa a las ocho». Коли тато повернеться додому?","en":"“Vuelvo a casa a las ocho.” When will Dad return home?","es":"¿Cuándo vuelve papá a casa?"},"options":["A las ocho.","A las seis.","Por la mañana."],"answer":"A las ocho."},
+      {"id":"re9","tag":"meaning","prompt":{"ru":"Что означает hasta?","uk":"Що означає hasta?","en":"What does hasta mean?","es":"¿Qué significa hasta?"},"options":["до","с","сегодня"],"answer":"до"},
+      {"id":"re10","tag":"meaning","prompt":{"ru":"Что означает desde?","uk":"Що означає desde?","en":"What does desde mean?","es":"¿Qué significa desde?"},"options":["с","до","завтра"],"answer":"с"},
+      {"id":"re11","tag":"message","prompt":{"ru":"Прочитайте: «Nos vemos mañana en la estación». Какова договорённость?","uk":"Прочитайте: «Nos vemos mañana en la estación». Яка домовленість?","en":"Read: “Nos vemos mañana en la estación.” What is the arrangement?","es":"¿Cuál es el acuerdo?"},"options":["Встретиться завтра на станции.","Встретиться сегодня в музее.","Ждать дома до восьми."],"answer":"Встретиться завтра на станции."},
+      {"id":"re12","tag":"place","prompt":{"ru":"В выражении «en la cafetería de la plaza» какое место названо?","uk":"У виразі «en la cafetería de la plaza» яке місце названо?","en":"In “en la cafetería de la plaza”, what place is named?","es":"¿Qué lugar se nombra?"},"options":["Кафе на площади.","Аптека рядом с банком.","Станция у музея."],"answer":"Кафе на площади."}
+    ]
+  }
+}
