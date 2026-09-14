@@ -145,7 +145,7 @@
         {"id": "shopping-dialogue", "title": "Диалог в магазине", "status": "ready"},
         {"id": "ask-directions", "title": "Спросить дорогу", "status": "ready"},
         {"id": "talk-routine", "title": "Рассказать о распорядке дня", "status": "ready"},
-        {"id": "make-simple-plans", "title": "Простые планы и договорённости", "status": "planned"}
+        {"id": "make-simple-plans", "title": "Простые планы и договорённости", "status": "ready"}
       ]
     },
     {
