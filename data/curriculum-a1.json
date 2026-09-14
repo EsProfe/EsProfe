@@ -154,7 +154,7 @@
       "topics": [
         {"id": "reading", "title": "Comprensión lectora", "status": "ready"},
         {"id": "listening", "title": "Comprensión auditiva", "status": "ready"},
-        {"id": "writing", "title": "Expresión escrita", "status": "planned"},
+        {"id": "writing", "title": "Expresión escrita", "status": "ready"},
         {"id": "speaking", "title": "Expresión oral", "status": "planned"},
         {"id": "mixed-review", "title": "Смешанное повторение A1", "status": "planned"}
       ]
