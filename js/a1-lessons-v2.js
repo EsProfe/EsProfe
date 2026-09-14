@@ -212,10 +212,12 @@
       ? teachingSyllables[String(word).toLowerCase()] || word
       : word;
     const x = new SpeechSynthesisUtterance(text);
-    x.lang = "es-ES";
     x.rate = 0.78;
     const voice = spanishVoice || selectSpanishVoice();
-    if (voice) x.voice = voice;
+    if (voice) {
+      x.lang = voice.lang;
+      x.voice = voice;
+    }
     else {
       // Never silently use the computer's default English voice for Spanish.
       // A delayed retry covers browsers that load voices only after the first click.
@@ -223,8 +225,8 @@
         const delayedVoice = spanishVoice || selectSpanishVoice();
         if (!delayedVoice) return;
         const retry = new SpeechSynthesisUtterance(text);
-        retry.lang = "es-ES";
         retry.rate = 0.78;
+        retry.lang = delayedVoice.lang;
         retry.voice = delayedVoice;
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(retry);
