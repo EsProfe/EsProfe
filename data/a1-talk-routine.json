@@ -1,0 +1,114 @@
+{
+  "talk-routine": {
+    "level": "A1",
+    "moduleId": "a1-communication",
+    "nextLessonId": "make-simple-plans",
+    "ruleTags": {"time": 0, "sequence": 1, "routine": 2, "question": 3},
+    "i18n": {
+      "ru": {
+        "title": "Рассказать о распорядке дня",
+        "goal": "Цель: коротко рассказать о своём обычном дне и спросить о распорядке собеседника.",
+        "intro": "Для понятного рассказа называйте время и соединяйте действия словами primero, después и por la noche.",
+        "rules": [
+          ["Время", "Me levanto a las siete. — Я встаю в семь.\nTrabajo por la mañana. — Я работаю утром.\nPor la noche veo una serie. — Вечером я смотрю сериал."],
+          ["Последовательность", "Primero desayuno. — Сначала я завтракаю.\nDespués voy al trabajo. — Потом я иду на работу.\nLuego vuelvo a casa. — Затем я возвращаюсь домой."],
+          ["Короткий рассказ", "Normalmente me levanto a las siete.\nDespués desayuno y voy al trabajo.\nPor la tarde estudio español.\nPor la noche ceno en casa."],
+          ["Вопрос", "¿A qué hora te levantas? — Во сколько ты встаёшь?\n¿Qué haces por la tarde? — Что ты делаешь днём?\n¿Trabajas los sábados? — Ты работаешь по субботам?"]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери фразу для ситуации",
+        "trainerTitle": "Тренировка рассказа",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: простые планы и договорённости"
+      },
+      "uk": {
+        "title": "Розповісти про розпорядок дня",
+        "goal": "Мета: коротко розповісти про свій звичайний день і запитати про розпорядок співрозмовника.",
+        "intro": "Для зрозумілої розповіді називайте час і поєднуйте дії словами primero, después і por la noche.",
+        "rules": [
+          ["Час", "Me levanto a las siete. — Я встаю о сьомій.\nTrabajo por la mañana. — Я працюю вранці.\nPor la noche veo una serie. — Увечері я дивлюся серіал."],
+          ["Послідовність", "Primero desayuno. — Спочатку я снідаю.\nDespués voy al trabajo. — Потім я йду на роботу.\nLuego vuelvo a casa. — Потім я повертаюся додому."],
+          ["Коротка розповідь", "Normalmente me levanto a las siete.\nDespués desayuno y voy al trabajo.\nPor la tarde estudio español.\nPor la noche ceno en casa."],
+          ["Запитання", "¿A qué hora te levantas? — О котрій ти встаєш?\n¿Qué haces por la tarde? — Що ти робиш удень?\n¿Trabajas los sábados? — Ти працюєш по суботах?"]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери фразу для ситуації",
+        "trainerTitle": "Тренування розповіді",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: прості плани й домовленості"
+      },
+      "en": {
+        "title": "Talk about your daily routine",
+        "goal": "Goal: briefly describe your usual day and ask about another person’s routine.",
+        "intro": "For a clear story, name the time and link actions with primero, después and por la noche.",
+        "rules": [
+          ["Time", "Me levanto a las siete. — I get up at seven.\nTrabajo por la mañana. — I work in the morning.\nPor la noche veo una serie. — I watch a series in the evening."],
+          ["Sequence", "Primero desayuno. — First I have breakfast.\nDespués voy al trabajo. — Then I go to work.\nLuego vuelvo a casa. — Then I return home."],
+          ["A short story", "Normalmente me levanto a las siete.\nDespués desayuno y voy al trabajo.\nPor la tarde estudio español.\nPor la noche ceno en casa."],
+          ["Question", "¿A qué hora te levantas? — What time do you get up?\n¿Qué haces por la tarde? — What do you do in the afternoon?\n¿Trabajas los sábados? — Do you work on Saturdays?"]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the phrase for the situation",
+        "trainerTitle": "Story trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: simple plans and arrangements"
+      },
+      "es": {
+        "title": "Hablar de la rutina diaria",
+        "goal": "Objetivo: contar brevemente un día normal y preguntar por la rutina de otra persona.",
+        "intro": "Para que el relato sea claro, di la hora y une las acciones con primero, después y por la noche.",
+        "rules": [
+          ["Tiempo", "Me levanto a las siete.\nTrabajo por la mañana.\nPor la noche veo una serie."],
+          ["Secuencia", "Primero desayuno.\nDespués voy al trabajo.\nLuego vuelvo a casa."],
+          ["Relato breve", "Normalmente me levanto a las siete.\nDespués desayuno y voy al trabajo.\nPor la tarde estudio español.\nPor la noche ceno en casa."],
+          ["Pregunta", "¿A qué hora te levantas?\n¿Qué haces por la tarde?\n¿Trabajas los sábados?"]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la frase para la situación",
+        "trainerTitle": "Entrenamiento del relato",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: planes y acuerdos sencillos"
+      }
+    },
+    "flashcards": [
+      ["a las siete", "в семь", "о сьомій", "at seven", "a las siete", "🕖"],
+      ["por la mañana", "утром", "вранці", "in the morning", "por la mañana", "🌅"],
+      ["por la tarde", "днём, во второй половине дня", "удень, у другій половині дня", "in the afternoon", "por la tarde", "🌇"],
+      ["por la noche", "вечером, ночью", "увечері, уночі", "in the evening, at night", "por la noche", "🌙"],
+      ["primero", "сначала", "спочатку", "first", "primero", "1️⃣"],
+      ["después", "потом", "потім", "then, afterwards", "después", "➡️"],
+      ["luego", "затем", "потім", "then", "luego", "🔜"],
+      ["volver a casa", "возвращаться домой", "повертатися додому", "return home", "volver a casa", "🏠"],
+      ["estudiar español", "учить испанский", "вивчати іспанську", "study Spanish", "estudiar español", "📚"],
+      ["cenar", "ужинать", "вечеряти", "have dinner", "cenar", "🍽️"]
+    ],
+    "examples": [
+      {"word":"Me levanto a las siete.","tag":"time"},
+      {"word":"Primero desayuno y después voy al trabajo.","tag":"sequence"},
+      {"word":"Por la tarde estudio español.","tag":"routine"},
+      {"word":"¿A qué hora te levantas?","tag":"question"}
+    ],
+    "questionBank": [
+      {"id":"rt1","tag":"time","prompt":{"ru":"«Я встаю в семь».","uk":"«Я встаю о сьомій».","en":"“I get up at seven.”","es":"Elige la frase correcta."},"options":["Me levanto a las siete.","Me levanto por siete.","Soy levanto siete."],"answer":"Me levanto a las siete."},
+      {"id":"rt2","tag":"time","prompt":{"ru":"«Утром я работаю».","uk":"«Вранці я працюю».","en":"“I work in the morning.”","es":"Elige la frase correcta."},"options":["Trabajo por la mañana.","Trabajo a la mañana.","Soy trabajo mañana."],"answer":"Trabajo por la mañana."},
+      {"id":"rt3","tag":"time","prompt":{"ru":"«Вечером я смотрю сериал».","uk":"«Увечері я дивлюся серіал».","en":"“I watch a series in the evening.”","es":"Elige la frase correcta."},"options":["Por la noche veo una serie.","Por la tarde soy una serie.","A noche veo serie es."],"answer":"Por la noche veo una serie."},
+      {"id":"rt4","tag":"sequence","prompt":{"ru":"Как сказать «сначала»?","uk":"Як сказати «спочатку»?","en":"How do you say “first”?","es":"Elige la palabra correcta."},"options":["Primero.","Después.","Luego."],"answer":"Primero."},
+      {"id":"rt5","tag":"sequence","prompt":{"ru":"Дополните: Primero desayuno. ___ voy al trabajo.","uk":"Доповніть: Primero desayuno. ___ voy al trabajo.","en":"Complete: Primero desayuno. ___ voy al trabajo.","es":"Completa: Primero desayuno. ___ voy al trabajo."},"options":["Después","Cerca","Lejos"],"answer":"Después"},
+      {"id":"rt6","tag":"sequence","prompt":{"ru":"«Затем я возвращаюсь домой».","uk":"«Потім я повертаюся додому».","en":"“Then I return home.”","es":"Elige la frase correcta."},"options":["Luego vuelvo a casa.","Luego soy casa.","Después casa vuelvo es."],"answer":"Luego vuelvo a casa."},
+      {"id":"rt7","tag":"routine","prompt":{"ru":"«Днём я учу испанский».","uk":"«Удень я вивчаю іспанську».","en":"“I study Spanish in the afternoon.”","es":"Elige la frase correcta."},"options":["Por la tarde estudio español.","Por la tarde estudio a español.","En tarde soy español."],"answer":"Por la tarde estudio español."},
+      {"id":"rt8","tag":"routine","prompt":{"ru":"Как сказать «ужинать»?","uk":"Як сказати «вечеряти»?","en":"How do you say “have dinner”?","es":"Elige la palabra correcta."},"options":["cenar","desayunar","trabajar"],"answer":"cenar"},
+      {"id":"rt9","tag":"question","prompt":{"ru":"«Во сколько ты встаёшь?»","uk":"«О котрій ти встаєш?»","en":"“What time do you get up?”","es":"Elige la pregunta correcta."},"options":["¿A qué hora te levantas?","¿Qué hora te levantas?","¿Dónde te levantas hora?"],"answer":"¿A qué hora te levantas?"},
+      {"id":"rt10","tag":"question","prompt":{"ru":"«Что ты делаешь днём?»","uk":"«Що ти робиш удень?»","en":"“What do you do in the afternoon?”","es":"Elige la pregunta correcta."},"options":["¿Qué haces por la tarde?","¿Qué hora haces tarde?","¿Dónde haces la tarde?"],"answer":"¿Qué haces por la tarde?"},
+      {"id":"rt11","tag":"question","prompt":{"ru":"«Ты работаешь по субботам?»","uk":"«Ти працюєш по суботах?»","en":"“Do you work on Saturdays?”","es":"Elige la pregunta correcta."},"options":["¿Trabajas los sábados?","¿Trabaja sábados?","¿Tienes trabajo sábados?"],"answer":"¿Trabajas los sábados?"},
+      {"id":"rt12","tag":"routine","prompt":{"ru":"Выберите естественный короткий рассказ о дне.","uk":"Оберіть природну коротку розповідь про день.","en":"Choose a natural short story about a day.","es":"Elige el relato correcto."},"options":["Primero desayuno. Después voy al trabajo.","Primero soy desayuno. Después trabajo voy.","Desayuno primero está trabajo."],"answer":"Primero desayuno. Después voy al trabajo."}
+    ]
+  }
+}
