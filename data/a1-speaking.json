@@ -1,0 +1,131 @@
+{
+  "speaking": {
+    "level": "A1",
+    "moduleId": "a1-skills",
+    "nextLessonId": "mixed-review",
+    "ruleTags": {
+      "greeting": 0,
+      "personalInfo": 1,
+      "request": 2,
+      "plan": 3,
+      "closing": 4
+    },
+    "i18n": {
+      "ru": {
+        "title": "Говорение: короткие диалоги",
+        "goal": "Цель: уверенно отвечать в простом разговоре — поздороваться, представиться, попросить, договориться и попрощаться.",
+        "intro": "Не пытайтесь строить длинные фразы. Для A1 достаточно готовой короткой реплики, сказанной ясно и в нужной ситуации.",
+        "rules": [
+          ["Приветствие", "Hola. / Buenos días.\nПосле приветствия можно спросить: ¿Qué tal?"],
+          ["О себе", "Me llamo Sofía.\nSoy de Polonia y vivo en Madrid."],
+          ["Просьба", "¿Puedes repetir, por favor?\n¿Me ayudas, por favor?"],
+          ["План", "¿Te apetece ir al cine?\nSí, genial. / Lo siento, no puedo."],
+          ["Прощание", "Hasta luego.\nQue tengas un buen día."]
+        ],
+        "examplesTitle": "Произнеси короткие реплики",
+        "practiceTitle": "Выбери реплику для ситуации",
+        "trainerTitle": "Тренировка диалогов",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: смешанное повторение A1"
+      },
+      "uk": {
+        "title": "Говоріння: короткі діалоги",
+        "goal": "Мета: впевнено відповідати в простій розмові — привітатися, представитися, попросити, домовитися й попрощатися.",
+        "intro": "Не намагайтеся будувати довгі фрази. Для A1 достатньо готової короткої репліки, сказаної чітко й у потрібній ситуації.",
+        "rules": [
+          ["Привітання", "Hola. / Buenos días.\nПісля привітання можна запитати: ¿Qué tal?"],
+          ["Про себе", "Me llamo Sofía.\nSoy de Polonia y vivo en Madrid."],
+          ["Прохання", "¿Puedes repetir, por favor?\n¿Me ayudas, por favor?"],
+          ["План", "¿Te apetece ir al cine?\nSí, genial. / Lo siento, no puedo."],
+          ["Прощання", "Hasta luego.\nQue tengas un buen día."]
+        ],
+        "examplesTitle": "Скажи короткі репліки",
+        "practiceTitle": "Обери репліку для ситуації",
+        "trainerTitle": "Тренування діалогів",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: змішане повторення A1"
+      },
+      "en": {
+        "title": "Speaking: short dialogues",
+        "goal": "Goal: respond confidently in a simple conversation — greet, introduce yourself, make a request, arrange a plan and say goodbye.",
+        "intro": "Do not try to make long sentences. At A1, one ready-made short phrase, said clearly in the right situation, is enough.",
+        "rules": [
+          ["Greeting", "Hola. / Buenos días.\nAfter a greeting, you can ask: ¿Qué tal?"],
+          ["About yourself", "Me llamo Sofía.\nSoy de Polonia y vivo en Madrid."],
+          ["A request", "¿Puedes repetir, por favor?\n¿Me ayudas, por favor?"],
+          ["A plan", "¿Te apetece ir al cine?\nSí, genial. / Lo siento, no puedo."],
+          ["Goodbye", "Hasta luego.\nQue tengas un buen día."]
+        ],
+        "examplesTitle": "Say the short replies",
+        "practiceTitle": "Choose a reply for the situation",
+        "trainerTitle": "Dialogue trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: mixed A1 review"
+      },
+      "es": {
+        "title": "Expresión oral: diálogos breves",
+        "goal": "Objetivo: responder con seguridad en una conversación sencilla: saludar, presentarte, pedir algo, quedar y despedirte.",
+        "intro": "No intentes formar frases largas. En A1 basta una frase corta preparada, dicha con claridad y en la situación adecuada.",
+        "rules": [
+          ["Saludo", "Hola. / Buenos días.\nDespués del saludo puedes preguntar: ¿Qué tal?"],
+          ["Sobre ti", "Me llamo Sofía.\nSoy de Polonia y vivo en Madrid."],
+          ["Una petición", "¿Puedes repetir, por favor?\n¿Me ayudas, por favor?"],
+          ["Un plan", "¿Te apetece ir al cine?\nSí, genial. / Lo siento, no puedo."],
+          ["Despedida", "Hasta luego.\nQue tengas un buen día."]
+        ],
+        "examplesTitle": "Di las frases breves",
+        "practiceTitle": "Elige una respuesta para la situación",
+        "trainerTitle": "Entrenamiento de diálogos",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: repaso mixto A1"
+      }
+    },
+    "flashcards": [
+      ["buenos días", "доброе утро / добрый день", "добрий ранок / добрий день", "good morning / good day", "buenos días", "☀️"],
+      ["¿qué tal?", "как дела?", "як справи?", "how are things?", "qué tal", "💬"],
+      ["me llamo…", "меня зовут…", "мене звати…", "my name is…", "me llamo", "🪪"],
+      ["mucho gusto", "очень приятно", "дуже приємно", "nice to meet you", "mucho gusto", "🤝"],
+      ["¿puedes repetir?", "можешь повторить?", "можеш повторити?", "can you repeat?", "puedes repetir", "🔁"],
+      ["por favor", "пожалуйста", "будь ласка", "please", "por favor", "🙏"],
+      ["¿me ayudas?", "ты мне поможешь?", "ти мені допоможеш?", "can you help me?", "me ayudas", "🆘"],
+      ["¿te apetece…?", "тебе хочется…?", "тобі хочеться…?", "do you feel like…?", "te apetece", "🎬"],
+      ["lo siento", "извини", "вибач", "sorry", "lo siento", "😔"],
+      ["hasta luego", "до скорого", "до зустрічі", "see you later", "hasta luego", "👋"]
+    ],
+    "examples": [
+      {"word": "— Buenos días. ¿Qué tal?\n— Muy bien, gracias.", "tag": "greeting"},
+      {"word": "— Hola, me llamo Sofía.\n— Mucho gusto, Sofía.", "tag": "personalInfo"},
+      {"word": "— ¿Puedes repetir, por favor?\n— Sí, claro.", "tag": "request"},
+      {"word": "— ¿Te apetece ir al cine el sábado?\n— Sí, genial.", "tag": "plan"},
+      {"word": "— Hasta luego.\n— Igualmente, que tengas un buen día.", "tag": "closing"}
+    ],
+    "questionBank": [
+      {"id":"sp1","tag":"greeting","audio":"Buenos días. ¿Qué tal?","speakOut":true,"prompt":{"ru":"Как ответить на приветствие?","uk":"Як відповісти на привітання?","en":"How do you answer the greeting?","es":"¿Cómo respondes al saludo?"},"options":["Muy bien, gracias.","En tren.","Hasta ayer."],"answer":"Muy bien, gracias."},
+      {"id":"sp2","tag":"greeting","audio":"Hola, Pablo.","speakOut":true,"prompt":{"ru":"Какая естественная ответная реплика?","uk":"Яка природна репліка-відповідь?","en":"Which reply is natural?","es":"¿Qué respuesta es natural?"},"options":["Hola, Marta.","Soy hola.","A las nueve."],"answer":"Hola, Marta."},
+      {"id":"sp3","tag":"personalInfo","audio":"Hola, me llamo David.","speakOut":true,"prompt":{"ru":"Как вежливо продолжить знакомство?","uk":"Як ввічливо продовжити знайомство?","en":"How do you politely continue the introduction?","es":"¿Cómo continúas la presentación con educación?"},"options":["Mucho gusto, David.","Tengo David.","Hasta luego, ayer."],"answer":"Mucho gusto, David."},
+      {"id":"sp4","tag":"personalInfo","audio":"Mucho gusto.","speakOut":true,"prompt":{"ru":"Что можно ответить?","uk":"Що можна відповісти?","en":"What can you reply?","es":"¿Qué puedes responder?"},"options":["Igualmente.","A las ocho.","En autobús."],"answer":"Igualmente."},
+      {"id":"sp5","tag":"request","audio":"¿Puedes repetir, por favor?","speakOut":true,"prompt":{"ru":"Как естественно согласиться повторить?","uk":"Як природно погодитися повторити?","en":"How do you naturally agree to repeat?","es":"¿Cómo aceptas repetir de forma natural?"},"options":["Sí, claro.","Soy claro.","No tengo repetir."],"answer":"Sí, claro."},
+      {"id":"sp6","tag":"request","audio":"¿Me ayudas, por favor?","speakOut":true,"prompt":{"ru":"Какая вежливая ответная реплика подходит?","uk":"Яка ввічлива репліка-відповідь підходить?","en":"Which polite reply fits?","es":"¿Qué respuesta educada encaja?"},"options":["Sí, por supuesto.","¿Dónde ayuda?","Tengo ayuda."],"answer":"Sí, por supuesto."},
+      {"id":"sp7","tag":"plan","audio":"¿Te apetece ir al cine el sábado?","speakOut":true,"prompt":{"ru":"Вы хотите принять предложение. Что скажете?","uk":"Ви хочете прийняти пропозицію. Що скажете?","en":"You want to accept the suggestion. What do you say?","es":"Quieres aceptar la propuesta. ¿Qué dices?"},"options":["Sí, genial.","No soy.","¿Qué cuesta?"],"answer":"Sí, genial."},
+      {"id":"sp8","tag":"plan","audio":"¿Te apetece tomar un café mañana?","speakOut":true,"prompt":{"ru":"Вы не можете прийти. Как ответить вежливо?","uk":"Ви не можете прийти. Як ввічливо відповісти?","en":"You cannot come. How do you answer politely?","es":"No puedes ir. ¿Cómo respondes con educación?"},"options":["Lo siento, no puedo.","No puedo soy.","Hasta no."],"answer":"Lo siento, no puedo."},
+      {"id":"sp9","tag":"plan","audio":"¿Quedamos a las seis delante del museo?","speakOut":true,"prompt":{"ru":"Как подтвердить время и место?","uk":"Як підтвердити час і місце?","en":"How do you confirm the time and place?","es":"¿Cómo confirmas la hora y el lugar?"},"options":["Sí, nos vemos allí.","Soy allí.","¿Dónde seis?"],"answer":"Sí, nos vemos allí."},
+      {"id":"sp10","tag":"closing","audio":"Hasta luego.","speakOut":true,"prompt":{"ru":"Как ответить при прощании?","uk":"Як відповісти під час прощання?","en":"How do you answer when saying goodbye?","es":"¿Cómo respondes al despedirte?"},"options":["Hasta luego.","Buenos días.","Por favor."],"answer":"Hasta luego."},
+      {"id":"sp11","tag":"closing","audio":"Que tengas un buen día.","speakOut":true,"prompt":{"ru":"Какая тёплая ответная реплика подходит?","uk":"Яка тепла репліка-відповідь підходить?","en":"Which warm reply fits?","es":"¿Qué respuesta amable encaja?"},"options":["Igualmente, gracias.","Tengo un día.","Ayer, por favor."],"answer":"Igualmente, gracias."},
+      {"id":"sp12","tag":"greeting","audio":"Buenas tardes.","speakOut":true,"prompt":{"ru":"Как ответить знакомому вечером?","uk":"Як відповісти знайомому ввечері?","en":"How do you reply to an acquaintance in the evening?","es":"¿Cómo respondes a una persona conocida por la tarde?"},"options":["Buenas tardes.","Buenos días.","Buenas noches, hasta mañana."],"answer":"Buenas tardes."},
+      {"id":"sp13","tag":"personalInfo","audio":"¿De dónde eres?","speakOut":true,"prompt":{"ru":"Как ответить: «Я из Польши»?","uk":"Як відповісти: «Я з Польщі»?","en":"How do you answer: “I am from Poland”?","es":"¿Cómo respondes: «Soy de Polonia»?"},"options":["Soy de Polonia.","Estoy Polonia.","Tengo Polonia."],"answer":"Soy de Polonia."},
+      {"id":"sp14","tag":"personalInfo","audio":"¿Dónde vives?","speakOut":true,"prompt":{"ru":"Как ответить: «Я живу в Лиссабоне»?","uk":"Як відповісти: «Я живу в Лісабоні»?","en":"How do you answer: “I live in Lisbon”?","es":"¿Cómo respondes: «Vivo en Lisboa»?"},"options":["Vivo en Lisboa.","Soy Lisboa.","Tengo en Lisboa."],"answer":"Vivo en Lisboa."},
+      {"id":"sp15","tag":"request","audio":"¿Cómo se dice “ticket” en español?","speakOut":true,"prompt":{"ru":"Как ответить полезно и естественно?","uk":"Як відповісти корисно й природно?","en":"How do you answer helpfully and naturally?","es":"¿Cómo respondes de forma útil y natural?"},"options":["Se dice billete.","Es decir billete.","Dice tú billete."],"answer":"Se dice billete."},
+      {"id":"sp16","tag":"request","audio":"Perdona, ¿dónde está la farmacia?","speakOut":true,"prompt":{"ru":"Как дать простой ответ?","uk":"Як дати просту відповідь?","en":"How do you give a simple answer?","es":"¿Cómo das una respuesta sencilla?"},"options":["Está junto al banco.","Es junto banco.","Tiene banco."],"answer":"Está junto al banco."},
+      {"id":"sp17","tag":"plan","audio":"¿Vamos al mercado esta tarde?","speakOut":true,"prompt":{"ru":"Как предложить другое время?","uk":"Як запропонувати інший час?","en":"How do you suggest another time?","es":"¿Cómo propones otro momento?"},"options":["¿Y mañana por la mañana?","Soy mañana.","¿Qué mañana eres?"],"answer":"¿Y mañana por la mañana?"},
+      {"id":"sp18","tag":"closing","audio":"Muchas gracias por tu ayuda.","speakOut":true,"prompt":{"ru":"Что ответить на благодарность?","uk":"Що відповісти на подяку?","en":"What do you reply to thanks?","es":"¿Qué respondes a un agradecimiento?"},"options":["De nada.","No gracias.","Hasta ayuda."],"answer":"De nada."}
+    ]
+  }
+}
