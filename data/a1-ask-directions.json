@@ -1,0 +1,114 @@
+{
+  "ask-directions": {
+    "level": "A1",
+    "moduleId": "a1-communication",
+    "nextLessonId": "talk-routine",
+    "ruleTags": {"ask": 0, "location": 1, "direction": 2, "distance": 3},
+    "i18n": {
+      "ru": {
+        "title": "Спросить дорогу",
+        "goal": "Цель: вежливо спросить, где находится место, и понять короткое объяснение дороги.",
+        "intro": "Сначала вежливо обратитесь к человеку, затем назовите нужное место. Запоминайте вопрос вместе с готовым ответом.",
+        "rules": [
+          ["Начать вопрос", "Perdone, ¿dónde está la farmacia? — Извините, где аптека?\nDisculpe, ¿cómo se llega a la estación? — Извините, как пройти к станции?\n¿Hay un supermercado cerca de aquí? — Здесь поблизости есть супермаркет?"],
+          ["Где находится", "Está en la calle Mayor. — Она на улице Майор.\nEstá junto al banco. — Она рядом с банком.\nEstá enfrente de la plaza. — Она напротив площади."],
+          ["Направление", "Todo recto. — Всё прямо.\nGire a la derecha en la esquina. — Поверните направо за угол.\nTome la primera calle a la izquierda. — Поверните на первую улицу налево."],
+          ["Далеко или близко", "¿Está lejos? — Это далеко?\nNo, está muy cerca. — Нет, очень близко.\nEstá a cinco minutos a pie. — Это в пяти минутах пешком."]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери фразу для ситуации",
+        "trainerTitle": "Тренировка маршрута",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: рассказать о распорядке дня"
+      },
+      "uk": {
+        "title": "Запитати дорогу",
+        "goal": "Мета: ввічливо запитати, де знаходиться місце, і зрозуміти коротке пояснення дороги.",
+        "intro": "Спочатку ввічливо зверніться до людини, потім назвіть потрібне місце. Запам’ятовуйте запитання разом із готовою відповіддю.",
+        "rules": [
+          ["Почати запитання", "Perdone, ¿dónde está la farmacia? — Вибачте, де аптека?\nDisculpe, ¿cómo se llega a la estación? — Вибачте, як пройти до станції?\n¿Hay un supermercado cerca de aquí? — Тут поблизу є супермаркет?"],
+          ["Де знаходиться", "Está en la calle Mayor. — Вона на вулиці Майор.\nEstá junto al banco. — Вона поруч із банком.\nEstá enfrente de la plaza. — Вона навпроти площі."],
+          ["Напрямок", "Todo recto. — Усе прямо.\nGire a la derecha en la esquina. — Поверніть праворуч за ріг.\nTome la primera calle a la izquierda. — Поверніть на першу вулицю ліворуч."],
+          ["Далеко чи близько", "¿Está lejos? — Це далеко?\nNo, está muy cerca. — Ні, дуже близько.\nEstá a cinco minutos a pie. — Це за п’ять хвилин пішки."]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери фразу для ситуації",
+        "trainerTitle": "Тренування маршруту",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: розповісти про розпорядок дня"
+      },
+      "en": {
+        "title": "Ask for directions",
+        "goal": "Goal: politely ask where a place is and understand short directions.",
+        "intro": "First politely address the person, then name the place you need. Learn the question together with a ready-made answer.",
+        "rules": [
+          ["Start the question", "Perdone, ¿dónde está la farmacia? — Excuse me, where is the pharmacy?\nDisculpe, ¿cómo se llega a la estación? — Excuse me, how do I get to the station?\n¿Hay un supermercado cerca de aquí? — Is there a supermarket near here?"],
+          ["Location", "Está en la calle Mayor. — It is on Calle Mayor.\nEstá junto al banco. — It is next to the bank.\nEstá enfrente de la plaza. — It is opposite the square."],
+          ["Direction", "Todo recto. — Straight ahead.\nGire a la derecha en la esquina. — Turn right at the corner.\nTome la primera calle a la izquierda. — Take the first street on the left."],
+          ["Far or near", "¿Está lejos? — Is it far?\nNo, está muy cerca. — No, it is very close.\nEstá a cinco minutos a pie. — It is five minutes away on foot."]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the phrase for the situation",
+        "trainerTitle": "Route trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: talk about your daily routine"
+      },
+      "es": {
+        "title": "Pedir indicaciones",
+        "goal": "Objetivo: preguntar con educación dónde está un lugar y entender indicaciones breves.",
+        "intro": "Primero dirígete a la persona con educación y después nombra el lugar. Aprende la pregunta junto con una respuesta preparada.",
+        "rules": [
+          ["Empezar la pregunta", "Perdone, ¿dónde está la farmacia?\nDisculpe, ¿cómo se llega a la estación?\n¿Hay un supermercado cerca de aquí?"],
+          ["Ubicación", "Está en la calle Mayor.\nEstá junto al banco.\nEstá enfrente de la plaza."],
+          ["Dirección", "Todo recto.\nGire a la derecha en la esquina.\nTome la primera calle a la izquierda."],
+          ["Lejos o cerca", "¿Está lejos?\nNo, está muy cerca.\nEstá a cinco minutos a pie."]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la frase para la situación",
+        "trainerTitle": "Entrenamiento de ruta",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: hablar de la rutina diaria"
+      }
+    },
+    "flashcards": [
+      ["perdone", "извините", "вибачте", "excuse me", "perdone", "🙏"],
+      ["¿dónde está...?", "где находится...?", "де знаходиться...?", "where is...?", "dónde está", "📍"],
+      ["¿cómo se llega a...?", "как пройти к...?", "як пройти до...?", "how do I get to...?", "cómo se llega", "🧭"],
+      ["cerca", "близко", "близько", "near", "cerca", "📌"],
+      ["lejos", "далеко", "далеко", "far", "lejos", "🔭"],
+      ["todo recto", "всё прямо", "усе прямо", "straight ahead", "todo recto", "⬆️"],
+      ["gire a la derecha", "поверните направо", "поверніть праворуч", "turn right", "gire a la derecha", "➡️"],
+      ["a la izquierda", "налево", "ліворуч", "on the left", "a la izquierda", "⬅️"],
+      ["la esquina", "угол", "ріг", "corner", "esquina", "↪️"],
+      ["a pie", "пешком", "пішки", "on foot", "a pie", "🚶"]
+    ],
+    "examples": [
+      {"word":"Perdone, ¿dónde está la farmacia?","tag":"ask"},
+      {"word":"¿Hay un supermercado cerca de aquí?","tag":"location"},
+      {"word":"Todo recto y gire a la derecha en la esquina.","tag":"direction"},
+      {"word":"No está lejos: está a cinco minutos a pie.","tag":"distance"}
+    ],
+    "questionBank": [
+      {"id":"ad1","tag":"ask","prompt":{"ru":"«Извините, где аптека?»","uk":"«Вибачте, де аптека?»","en":"“Excuse me, where is the pharmacy?”","es":"Elige la pregunta correcta."},"options":["Perdone, ¿dónde está la farmacia?","Perdone, ¿qué farmacia está?","¿Dónde farmacia tiene?"],"answer":"Perdone, ¿dónde está la farmacia?"},
+      {"id":"ad2","tag":"ask","prompt":{"ru":"Как спросить, как пройти к станции?","uk":"Як запитати, як пройти до станції?","en":"How do you ask how to get to the station?","es":"Elige la pregunta correcta."},"options":["¿Cómo se llega a la estación?","¿Qué estación se llega?","¿Dónde llegar estación?"],"answer":"¿Cómo se llega a la estación?"},
+      {"id":"ad3","tag":"location","prompt":{"ru":"«Здесь поблизости есть супермаркет?»","uk":"«Тут поблизу є супермаркет?»","en":"“Is there a supermarket near here?”","es":"Elige la pregunta correcta."},"options":["¿Hay un supermercado cerca de aquí?","¿Está supermercado aquí?","¿Tiene cerca supermercado?"],"answer":"¿Hay un supermercado cerca de aquí?"},
+      {"id":"ad4","tag":"location","prompt":{"ru":"«Он рядом с банком».","uk":"«Він поруч із банком».","en":"“It is next to the bank.”","es":"Elige la frase correcta."},"options":["Está junto al banco.","Está banco junto.","Es junto de banco."],"answer":"Está junto al banco."},
+      {"id":"ad5","tag":"location","prompt":{"ru":"Что означает enfrente de la plaza?","uk":"Що означає enfrente de la plaza?","en":"What does enfrente de la plaza mean?","es":"¿Qué significa enfrente de la plaza?"},"options":["напротив площади","рядом с площадью","за площадью"],"answer":"напротив площади"},
+      {"id":"ad6","tag":"direction","prompt":{"ru":"«Всё прямо».","uk":"«Усе прямо».","en":"“Straight ahead.”","es":"Elige la frase correcta."},"options":["Todo recto.","Todo derecha.","Todo cerca."],"answer":"Todo recto."},
+      {"id":"ad7","tag":"direction","prompt":{"ru":"«Поверните направо за угол».","uk":"«Поверніть праворуч за ріг».","en":"“Turn right at the corner.”","es":"Elige la frase correcta."},"options":["Gire a la derecha en la esquina.","Gire la esquina todo.","Está a derecha esquina."],"answer":"Gire a la derecha en la esquina."},
+      {"id":"ad8","tag":"direction","prompt":{"ru":"Дополните: Tome la primera calle ___ la izquierda.","uk":"Доповніть: Tome la primera calle ___ la izquierda.","en":"Complete: Tome la primera calle ___ la izquierda.","es":"Completa: Tome la primera calle ___ la izquierda."},"options":["a","en","de"],"answer":"a"},
+      {"id":"ad9","tag":"distance","prompt":{"ru":"«Это далеко?»","uk":"«Це далеко?»","en":"“Is it far?”","es":"Elige la pregunta correcta."},"options":["¿Está lejos?","¿Es lejos?","¿Tiene lejos?"],"answer":"¿Está lejos?"},
+      {"id":"ad10","tag":"distance","prompt":{"ru":"«Это в пяти минутах пешком».","uk":"«Це за п’ять хвилин пішки».","en":"“It is five minutes away on foot.”","es":"Elige la frase correcta."},"options":["Está a cinco minutos a pie.","Es cinco minutos pie.","Tiene cinco minutos a."],"answer":"Está a cinco minutos a pie."},
+      {"id":"ad11","tag":"ask","prompt":{"ru":"Как вежливо начать вопрос к незнакомому человеку?","uk":"Як ввічливо почати запитання до незнайомої людини?","en":"How do you politely start a question to a stranger?","es":"Elige la palabra correcta."},"options":["Perdone.","Gracias.","Hasta luego."],"answer":"Perdone."},
+      {"id":"ad12","tag":"distance","prompt":{"ru":"«Нет, очень близко».","uk":"«Ні, дуже близько».","en":"“No, it is very close.”","es":"Elige la frase correcta."},"options":["No, está muy cerca.","No, es muy lejos.","No, tiene cerca."],"answer":"No, está muy cerca."}
+    ]
+  }
+}
