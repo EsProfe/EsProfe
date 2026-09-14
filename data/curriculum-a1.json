@@ -143,7 +143,7 @@
         {"id": "ask-personal-info", "title": "Спросить личную информацию", "status": "ready"},
         {"id": "order-food", "title": "Заказать еду и напитки", "status": "ready"},
         {"id": "shopping-dialogue", "title": "Диалог в магазине", "status": "ready"},
-        {"id": "ask-directions", "title": "Спросить дорогу", "status": "planned"},
+        {"id": "ask-directions", "title": "Спросить дорогу", "status": "ready"},
         {"id": "talk-routine", "title": "Рассказать о распорядке дня", "status": "planned"},
         {"id": "make-simple-plans", "title": "Простые планы и договорённости", "status": "planned"}
       ]
