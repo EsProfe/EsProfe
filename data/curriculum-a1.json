@@ -152,7 +152,7 @@
       "id": "a1-skills",
       "title": "Навыки A1",
       "topics": [
-        {"id": "reading", "title": "Comprensión lectora", "status": "planned"},
+        {"id": "reading", "title": "Comprensión lectora", "status": "ready"},
         {"id": "listening", "title": "Comprensión auditiva", "status": "planned"},
         {"id": "writing", "title": "Expresión escrita", "status": "planned"},
         {"id": "speaking", "title": "Expresión oral", "status": "planned"},
