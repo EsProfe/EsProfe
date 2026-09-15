@@ -163,7 +163,7 @@
       "id": "a1-assessment",
       "title": "Контроль A1",
       "topics": [
-        {"id": "grammar-check", "title": "Контроль грамматики", "status": "planned"},
+        {"id": "grammar-check", "title": "Контроль грамматики", "status": "ready"},
         {"id": "vocabulary-check", "title": "Контроль лексики", "status": "planned"},
         {"id": "skills-check", "title": "Контроль навыков", "status": "planned"},
         {"id": "final-test", "title": "Итоговый тест A1", "status": "planned"},
