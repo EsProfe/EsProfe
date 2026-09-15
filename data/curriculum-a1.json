@@ -164,7 +164,7 @@
       "title": "Контроль A1",
       "topics": [
         {"id": "grammar-check", "title": "Контроль грамматики", "status": "ready"},
-        {"id": "vocabulary-check", "title": "Контроль лексики", "status": "planned"},
+        {"id": "vocabulary-check", "title": "Контроль лексики", "status": "ready"},
         {"id": "skills-check", "title": "Контроль навыков", "status": "planned"},
         {"id": "final-test", "title": "Итоговый тест A1", "status": "planned"},
         {"id": "weak-spots", "title": "Слабые места и повторение", "status": "planned"}
