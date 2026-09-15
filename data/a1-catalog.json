@@ -1,4 +1,8 @@
-{"ru":"Старт и базовые основы","uk":"Старт і базові основи","en":"Getting started","es":"Inicio y bases"},
+{
+  "version": 3,
+  "level": "A1",
+  "modules": {
+    "a1-foundations-01": {"ru":"Старт и базовые основы","uk":"Старт і базові основи","en":"Getting started","es":"Inicio y bases"},
     "a1-grammar-01": {"ru":"Артикли, род и число","uk":"Артиклі, рід і число","en":"Articles, gender and number","es":"Artículos, género y número"},
     "a1-grammar-02": {"ru":"Местоимения и базовое предложение","uk":"Займенники та базове речення","en":"Pronouns and basic sentences","es":"Pronombres y oración básica"},
     "a1-verbs-01": {"ru":"Ser, estar и hay","uk":"Ser, estar і hay","en":"Ser, estar and hay","es":"Ser, estar y hay"},
