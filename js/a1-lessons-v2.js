@@ -219,13 +219,16 @@
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
     const teachingSyllables = { ca: "cá", co: "có", cu: "cú" };
-    // A standalone "sale" can be interpreted as English by some Windows voices.
-    // The accent is used only as a Spanish phonetic cue for TTS; the written form stays "sale".
-    const spanishPronunciation = { sale: "sále" };
+    // Windows can interpret "sale" as English, including inside a Spanish phrase.
+    // The accent is a TTS-only Spanish phonetic cue; text shown to the learner is never changed.
     const rawText = String(word ?? "").trim();
+    const spokenSpanish = rawText.replace(
+      /(^|[^\\p{L}])sale(?=$|[^\\p{L}])/giu,
+      "$1sále",
+    );
     const text = syllable
       ? teachingSyllables[rawText.toLowerCase()] || rawText
-      : spanishPronunciation[rawText.toLowerCase()] || rawText;
+      : spokenSpanish;
     const x = new SpeechSynthesisUtterance(text);
     // Do not inherit the browser/UI language: every lesson utterance is Spanish
     // from Spain, even when the Windows and platform interfaces are Russian.
