@@ -223,7 +223,7 @@
     // The accent is a TTS-only Spanish phonetic cue; text shown to the learner is never changed.
     const rawText = String(word ?? "").trim();
     const spokenSpanish = rawText.replace(
-      /(^|[^\\p{L}])sale(?=$|[^\\p{L}])/giu,
+      /(^|[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ])sale(?=$|[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ])/gi,
       "$1sále",
     );
     const text = syllable
