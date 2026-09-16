@@ -1,0 +1,673 @@
+{
+  "weak-spots": {
+    "level": "A1",
+    "moduleId": "a1-assessment",
+    "ruleTags": {
+      "forms": 0,
+      "everyday": 1,
+      "place": 2,
+      "understanding": 3
+    },
+    "i18n": {
+      "ru": {
+        "title": "Слабые места: повторение A1",
+        "goal": "Цель: закрепить зоны, в которых чаще всего ошибаются на уровне A1.",
+        "intro": "Здесь смешаны задания из разных тем. Решайте по смыслу ситуации, а не по привычному расположению ответов.",
+        "rules": [
+          [
+            "Формы и согласование",
+            "Проверьте лицо глагола, род и число слов."
+          ],
+          [
+            "Повседневные ситуации",
+            "Выберите естественную фразу для дома, кафе, магазина или дня."
+          ],
+          [
+            "Место и движение",
+            "Estar — место; hay — наличие; a — направление; en — транспорт."
+          ],
+          [
+            "Понимание",
+            "В чтении и аудировании сначала найдите главное: кто, где, когда, что делает."
+          ]
+        ],
+        "examplesTitle": "Перед повторением",
+        "practiceTitle": "Повторяем",
+        "trainerTitle": "Тренируем слабые места",
+        "assessmentTitle": "Проверяем закрепление",
+        "resultTitle": "Результат повторения",
+        "reviewTitle": "Что ещё повторить",
+        "nextTitle": "A1 завершён: возвращайтесь к нужным урокам по маршруту"
+      },
+      "uk": {
+        "title": "Слабкі місця: повторення A1",
+        "goal": "Мета: закріпити зони, у яких найчастіше виникають помилки на рівні A1.",
+        "intro": "Тут змішані завдання з різних тем. Розв’язуйте за змістом ситуації, а не за звичним порядком відповідей.",
+        "rules": [
+          [
+            "Форми й узгодження",
+            "Перевірте особу дієслова, рід і число слів."
+          ],
+          [
+            "Повсякденні ситуації",
+            "Оберіть природну фразу для дому, кафе, магазину або дня."
+          ],
+          [
+            "Місце й рух",
+            "Estar — місце; hay — наявність; a — напрямок; en — транспорт."
+          ],
+          [
+            "Розуміння",
+            "У читанні й аудіюванні спершу знайдіть головне: хто, де, коли, що робить."
+          ]
+        ],
+        "examplesTitle": "Перед повторенням",
+        "practiceTitle": "Повторюємо",
+        "trainerTitle": "Тренуємо слабкі місця",
+        "assessmentTitle": "Перевіряємо закріплення",
+        "resultTitle": "Результат повторення",
+        "reviewTitle": "Що ще повторити",
+        "nextTitle": "A1 завершено: повертайтеся до потрібних уроків маршруту"
+      },
+      "en": {
+        "title": "Weak areas: A1 review",
+        "goal": "Goal: consolidate the areas where A1 learners most often make mistakes.",
+        "intro": "Tasks from different topics are mixed here. Solve them from the meaning, not from the familiar position of an option.",
+        "rules": [
+          [
+            "Forms and agreement",
+            "Check the verb person and the gender and number of words."
+          ],
+          [
+            "Everyday situations",
+            "Choose the natural phrase for home, a café, a shop or daily life."
+          ],
+          [
+            "Place and movement",
+            "Estar is location; hay is existence; a is direction; en is transport."
+          ],
+          [
+            "Understanding",
+            "In reading and listening, first find the key point: who, where, when and what happens."
+          ]
+        ],
+        "examplesTitle": "Before the review",
+        "practiceTitle": "Review",
+        "trainerTitle": "Weak areas trainer",
+        "assessmentTitle": "Check retention",
+        "resultTitle": "Review result",
+        "reviewTitle": "What to review again",
+        "nextTitle": "A1 complete: return to any lesson through the route"
+      },
+      "es": {
+        "title": "Puntos débiles: repaso A1",
+        "goal": "Objetivo: consolidar las áreas en las que se cometen más errores en A1.",
+        "intro": "Aquí se mezclan tareas de temas diferentes. Resuelve por el sentido de la situación, no por la posición habitual de una opción.",
+        "rules": [
+          [
+            "Formas y concordancia",
+            "Comprueba la persona del verbo, el género y el número."
+          ],
+          [
+            "Situaciones cotidianas",
+            "Elige la frase natural para casa, una cafetería, una tienda o el día a día."
+          ],
+          [
+            "Lugar y movimiento",
+            "Estar expresa lugar; hay, existencia; a, dirección; en, transporte."
+          ],
+          [
+            "Comprensión",
+            "En lectura y audición, busca primero lo esencial: quién, dónde, cuándo y qué hace."
+          ]
+        ],
+        "examplesTitle": "Antes del repaso",
+        "practiceTitle": "Repasamos",
+        "trainerTitle": "Entrenamiento de puntos débiles",
+        "assessmentTitle": "Comprueba la consolidación",
+        "resultTitle": "Resultado del repaso",
+        "reviewTitle": "Qué repasar otra vez",
+        "nextTitle": "A1 terminado: vuelve a cualquier lección desde el itinerario"
+      }
+    },
+    "examples": [
+      {
+        "word": "(yo) tengo hambre, pero mi hermana tiene sed.",
+        "tag": "forms"
+      },
+      {
+        "word": "Quiero probarme estos zapatos, por favor.",
+        "tag": "everyday"
+      },
+      {
+        "word": "El hotel está frente a la estación.",
+        "tag": "place"
+      },
+      {
+        "word": "Escucha la frase primero; el texto aparece después.",
+        "tag": "understanding"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "ws1",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(tú) ___ (poder) venir mañana.",
+          "uk": "(tú) ___ (poder) venir mañana.",
+          "en": "(tú) ___ (poder) venir mañana.",
+          "es": "(tú) ___ (poder) venir mañana."
+        },
+        "options": [
+          "puedes",
+          "puede",
+          "podemos"
+        ],
+        "answer": "puedes"
+      },
+      {
+        "id": "ws2",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(yo) ___ (hacer) la compra los viernes.",
+          "uk": "(yo) ___ (hacer) la compra los viernes.",
+          "en": "(yo) ___ (hacer) la compra los viernes.",
+          "es": "(yo) ___ (hacer) la compra los viernes."
+        },
+        "options": [
+          "hago",
+          "hace",
+          "hacemos"
+        ],
+        "answer": "hago"
+      },
+      {
+        "id": "ws3",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(ella) ___ (levantarse) temprano.",
+          "uk": "(ella) ___ (levantarse) temprano.",
+          "en": "(ella) ___ (levantarse) temprano.",
+          "es": "(ella) ___ (levantarse) temprano."
+        },
+        "options": [
+          "se levanta",
+          "me levanto",
+          "nos levantamos"
+        ],
+        "answer": "se levanta"
+      },
+      {
+        "id": "ws4",
+        "tag": "forms",
+        "prompt": {
+          "ru": "___ chica y ___ chicos son estudiantes.",
+          "uk": "___ chica y ___ chicos son estudiantes.",
+          "en": "___ chica y ___ chicos son estudiantes.",
+          "es": "___ chica y ___ chicos son estudiantes."
+        },
+        "options": [
+          "La / los",
+          "El / las",
+          "La / las"
+        ],
+        "answer": "La / los"
+      },
+      {
+        "id": "ws5",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Mi padre y yo ___ en Málaga.",
+          "uk": "Mi padre y yo ___ en Málaga.",
+          "en": "Mi father and I ___ in Málaga.",
+          "es": "Mi padre y yo ___ en Málaga."
+        },
+        "options": [
+          "vivimos",
+          "viven",
+          "vivo"
+        ],
+        "answer": "vivimos"
+      },
+      {
+        "id": "ws6",
+        "tag": "forms",
+        "prompt": {
+          "ru": "¿___ tú de Chile? — No, soy de Perú.",
+          "uk": "¿___ tú de Chile? — No, soy de Perú.",
+          "en": "¿___ tú de Chile? — No, soy de Perú.",
+          "es": "¿___ tú de Chile? — No, soy de Perú."
+        },
+        "options": [
+          "Eres",
+          "Estás",
+          "Hay"
+        ],
+        "answer": "Eres"
+      },
+      {
+        "id": "ws7",
+        "tag": "everyday",
+        "prompt": {
+          "ru": "Вы голодны. Что естественно сказать?",
+          "uk": "Ви голодні. Що природно сказати?",
+          "en": "You are hungry. What is natural to say?",
+          "es": "Tienes hambre. ¿Qué es natural decir?"
+        },
+        "options": [
+          "Tengo hambre.",
+          "Quiero comer ahora mismo.",
+          "Soy hambre."
+        ],
+        "answer": "Tengo hambre."
+      },
+      {
+        "id": "ws8",
+        "tag": "everyday",
+        "prompt": {
+          "ru": "Как вежливо попросить примерочную?",
+          "uk": "Як ввічливо попросити примірювальну?",
+          "en": "How do you politely ask for the fitting room?",
+          "es": "¿Cómo pides el probador con educación?"
+        },
+        "options": [
+          "¿Dónde está el probador?",
+          "¿Qué es el probador?",
+          "¿Soy el probador?"
+        ],
+        "answer": "¿Dónde está el probador?"
+      },
+      {
+        "id": "ws9",
+        "tag": "everyday",
+        "prompt": {
+          "ru": "Вы хотите чашку кофе. Что заказать?",
+          "uk": "Ви хочете чашку кави. Що замовити?",
+          "en": "You want a cup of coffee. What do you order?",
+          "es": "Quieres una taza de café. ¿Qué pides?"
+        },
+        "options": [
+          "Una taza de café, por favor.",
+          "Un vaso de café, por favor.",
+          "Un kilo de café, por favor."
+        ],
+        "answer": "Una taza de café, por favor."
+      },
+      {
+        "id": "ws10",
+        "tag": "everyday",
+        "prompt": {
+          "ru": "Продавец говорит: «Son treinta euros». О чём речь?",
+          "uk": "Продавець каже: «Son treinta euros». Про що йдеться?",
+          "en": "The shop assistant says “Son treinta euros.” What are they saying?",
+          "es": "La dependienta dice «Son treinta euros». ¿De qué habla?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "О цене.",
+            "О размере.",
+            "О времени."
+          ],
+          "uk": [
+            "Про ціну.",
+            "Про розмір.",
+            "Про час."
+          ],
+          "en": [
+            "About the price.",
+            "About the size.",
+            "About the time."
+          ],
+          "es": [
+            "Del precio.",
+            "De la talla.",
+            "De la hora."
+          ]
+        },
+        "answers": {
+          "ru": "О цене.",
+          "uk": "Про ціну.",
+          "en": "About the price.",
+          "es": "Del precio."
+        }
+      },
+      {
+        "id": "ws11",
+        "tag": "everyday",
+        "prompt": {
+          "ru": "Как сказать: «Мне нравится эта квартира»?",
+          "uk": "Як сказати: «Мені подобається ця квартира»?",
+          "en": "How do you say “I like this flat”?",
+          "es": "¿Cómo dices «I like this flat»?"
+        },
+        "options": [
+          "Me gusta este piso.",
+          "Yo gusto este piso.",
+          "Me gustan este piso."
+        ],
+        "answer": "Me gusta este piso."
+      },
+      {
+        "id": "ws12",
+        "tag": "everyday",
+        "prompt": {
+          "ru": "Как сказать, что сегодня идёт дождь?",
+          "uk": "Як сказати, що сьогодні йде дощ?",
+          "en": "How do you say that it is raining today?",
+          "es": "¿Cómo dices que hoy llueve?"
+        },
+        "options": [
+          "Hoy llueve.",
+          "Hoy hace lluvia.",
+          "Hoy es lluvia."
+        ],
+        "answer": "Hoy llueve."
+      },
+      {
+        "id": "ws13",
+        "tag": "place",
+        "prompt": {
+          "ru": "Аптека находится напротив музея.",
+          "uk": "Аптека розташована навпроти музею.",
+          "en": "The pharmacy is opposite the museum.",
+          "es": "La farmacia está enfrente del museo."
+        },
+        "options": [
+          "La farmacia está frente al museo.",
+          "La farmacia es frente al museo.",
+          "Hay la farmacia frente museo."
+        ],
+        "answer": "La farmacia está frente al museo."
+      },
+      {
+        "id": "ws14",
+        "tag": "place",
+        "prompt": {
+          "ru": "Как сказать: «Я иду пешком»?",
+          "uk": "Як сказати: «Я йду пішки»?",
+          "en": "How do you say “I go on foot”?",
+          "es": "¿Cómo dices «I go on foot»?"
+        },
+        "options": [
+          "Voy a pie.",
+          "Voy en pie.",
+          "Voy de pie."
+        ],
+        "answer": "Voy a pie."
+      },
+      {
+        "id": "ws15",
+        "tag": "place",
+        "prompt": {
+          "ru": "Как сказать: «Они едут на трамвае»?",
+          "uk": "Як сказати: «Вони їдуть трамваєм»?",
+          "en": "How do you say “They go by tram”?",
+          "es": "¿Cómo dices «They go by tram»?"
+        },
+        "options": [
+          "Van en tranvía.",
+          "Van a tranvía.",
+          "Van de tranvía."
+        ],
+        "answer": "Van en tranvía."
+      },
+      {
+        "id": "ws16",
+        "tag": "place",
+        "prompt": {
+          "ru": "В доме есть лифт. Какая фраза верна?",
+          "uk": "У будинку є ліфт. Яка фраза правильна?",
+          "en": "There is a lift in the building. Which sentence is correct?",
+          "es": "Hay un ascensor en el edificio. ¿Qué frase es correcta?"
+        },
+        "options": [
+          "Hay un ascensor.",
+          "Está un ascensor.",
+          "Es un ascensor."
+        ],
+        "answer": "Hay un ascensor."
+      },
+      {
+        "id": "ws17",
+        "tag": "place",
+        "prompt": {
+          "ru": "Как дать указание «Поверните за угол»?",
+          "uk": "Як дати вказівку «Поверніть за ріг»?",
+          "en": "How do you give the direction “Turn the corner”?",
+          "es": "¿Cómo das la indicación «Turn the corner»?"
+        },
+        "options": [
+          "Gira en la esquina.",
+          "Vas en la esquina.",
+          "Eres la esquina."
+        ],
+        "answer": "Gira en la esquina."
+      },
+      {
+        "id": "ws18",
+        "tag": "place",
+        "prompt": {
+          "ru": "Как спросить, где находится автовокзал?",
+          "uk": "Як запитати, де знаходиться автовокзал?",
+          "en": "How do you ask where the bus station is?",
+          "es": "¿Cómo preguntas dónde está la estación de autobuses?"
+        },
+        "options": [
+          "¿Dónde está la estación de autobuses?",
+          "¿Qué es la estación de autobuses?",
+          "¿Cuándo estación de autobuses?"
+        ],
+        "answer": "¿Dónde está la estación de autobuses?"
+      },
+      {
+        "id": "ws19",
+        "tag": "understanding",
+        "prompt": {
+          "ru": "«Se alquila habitación». Что это означает?",
+          "uk": "«Se alquila habitación». Що це означає?",
+          "en": "“Se alquila habitación.” What does it mean?",
+          "es": "«Se alquila habitación». ¿Qué significa?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Сдаётся комната.",
+            "Продаётся дом.",
+            "Закрыта гостиница."
+          ],
+          "uk": [
+            "Здається кімната.",
+            "Продається будинок.",
+            "Готель зачинено."
+          ],
+          "en": [
+            "A room is for rent.",
+            "A house is for sale.",
+            "The hotel is closed."
+          ],
+          "es": [
+            "Se puede alquilar una habitación.",
+            "Se vende una casa.",
+            "El hotel está cerrado."
+          ]
+        },
+        "answers": {
+          "ru": "Сдаётся комната.",
+          "uk": "Здається кімната.",
+          "en": "A room is for rent.",
+          "es": "Se puede alquilar una habitación."
+        }
+      },
+      {
+        "id": "ws20",
+        "tag": "understanding",
+        "prompt": {
+          "ru": "«Último piso». Что означает piso?",
+          "uk": "«Último piso». Що означає piso?",
+          "en": "“Último piso.” What does piso mean here?",
+          "es": "«Último piso». ¿Qué significa piso aquí?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Этаж.",
+            "Пол.",
+            "Квартира."
+          ],
+          "uk": [
+            "Поверх.",
+            "Підлога.",
+            "Квартира."
+          ],
+          "en": [
+            "Floor/storey.",
+            "Ground/floor surface.",
+            "Flat."
+          ],
+          "es": [
+            "La planta de un edificio.",
+            "El suelo.",
+            "Un apartamento."
+          ]
+        },
+        "answers": {
+          "ru": "Этаж.",
+          "uk": "Поверх.",
+          "en": "Floor/storey.",
+          "es": "La planta de un edificio."
+        }
+      },
+      {
+        "id": "ws21",
+        "tag": "understanding",
+        "audio": "La clase de español empieza el jueves a las nueve.",
+        "prompt": {
+          "ru": "Когда начинается занятие?",
+          "uk": "Коли починається заняття?",
+          "en": "When does the class start?",
+          "es": "¿Cuándo empieza la clase?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "В четверг в 9:00.",
+            "Во вторник в 9:00.",
+            "В четверг в 19:00."
+          ],
+          "uk": [
+            "У четвер о 9:00.",
+            "У вівторок о 9:00.",
+            "У четвер о 19:00."
+          ],
+          "en": [
+            "On Thursday at 9:00.",
+            "On Tuesday at 9:00.",
+            "On Thursday at 19:00."
+          ],
+          "es": [
+            "El jueves a las 9:00.",
+            "El martes a las 9:00.",
+            "El jueves a las 19:00."
+          ]
+        },
+        "answers": {
+          "ru": "В четверг в 9:00.",
+          "uk": "У четвер о 9:00.",
+          "en": "On Thursday at 9:00.",
+          "es": "El jueves a las 9:00."
+        }
+      },
+      {
+        "id": "ws22",
+        "tag": "understanding",
+        "audio": "Mañana voy al médico porque me duele la cabeza.",
+        "prompt": {
+          "ru": "Куда человек идёт завтра?",
+          "uk": "Куди людина йде завтра?",
+          "en": "Where is the person going tomorrow?",
+          "es": "¿Adónde va la persona mañana?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "К врачу.",
+            "В аптеку за хлебом.",
+            "В кино."
+          ],
+          "uk": [
+            "До лікаря.",
+            "В аптеку по хліб.",
+            "У кіно."
+          ],
+          "en": [
+            "To the doctor.",
+            "To the pharmacy for bread.",
+            "To the cinema."
+          ],
+          "es": [
+            "Al médico.",
+            "A la farmacia a comprar pan.",
+            "Al cine."
+          ]
+        },
+        "answers": {
+          "ru": "К врачу.",
+          "uk": "До лікаря.",
+          "en": "To the doctor.",
+          "es": "Al médico."
+        }
+      },
+      {
+        "id": "ws23",
+        "tag": "understanding",
+        "audio": "El vuelo a Roma sale de la puerta doce.",
+        "prompt": {
+          "ru": "Откуда отправляется рейс?",
+          "uk": "Звідки відправляється рейс?",
+          "en": "Where does the flight leave from?",
+          "es": "¿De dónde sale el vuelo?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Из выхода 12.",
+            "Из автобуса 12.",
+            "Из Рима."
+          ],
+          "uk": [
+            "Із виходу 12.",
+            "Із автобуса 12.",
+            "Із Рима."
+          ],
+          "en": [
+            "From gate 12.",
+            "From bus 12.",
+            "From Rome."
+          ],
+          "es": [
+            "De la puerta 12.",
+            "Del autobús 12.",
+            "De Roma."
+          ]
+        },
+        "answers": {
+          "ru": "Из выхода 12.",
+          "uk": "Із виходу 12.",
+          "en": "From gate 12.",
+          "es": "De la puerta 12."
+        }
+      },
+      {
+        "id": "ws24",
+        "tag": "understanding",
+        "prompt": {
+          "ru": "Какой ответ подходит на вопрос: «¿Cómo te llamas?»",
+          "uk": "Яка відповідь підходить до запитання: «¿Cómo te llamas?»",
+          "en": "Which answer fits the question “¿Cómo te llamas?”",
+          "es": "¿Qué respuesta encaja con «¿Cómo te llamas?»"
+        },
+        "options": [
+          "Me llamo Olivia.",
+          "Soy de Colombia.",
+          "Tengo treinta años."
+        ],
+        "answer": "Me llamo Olivia."
+      }
+    ]
+  }
+}
