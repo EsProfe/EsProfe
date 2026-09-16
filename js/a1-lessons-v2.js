@@ -909,6 +909,9 @@
       if (lastOpen !== token) return;
       if (!x) throw new Error(`A1 lesson not found: ${id}`);
       lesson = x;
+      // Every vocabulary lesson uses the same sequence: preview with translation,
+      // then active recall in both directions with delayed retries for mistakes.
+      if (Array.isArray(lesson.flashcards)) lesson.activeRecall = true;
       stage = "";
       stageTrail = [];
       practiceScore = trainerScore = assessmentScore = 0;
