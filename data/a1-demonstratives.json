@@ -463,12 +463,34 @@
           "en": "What does aquel express?",
           "es": "¿Qué expresa aquel?"
         },
-        "options": [
-          "Предмет далеко от обоих",
-          "Предмет рядом со мной",
-          "Предмет у собеседника"
-        ],
-        "answer": "Предмет далеко от обоих"
+        "optionsByLang": {
+          "ru": [
+            "Предмет далеко от обоих.",
+            "Предмет рядом со мной.",
+            "Предмет у собеседника."
+          ],
+          "uk": [
+            "Предмет далеко від обох.",
+            "Предмет біля мене.",
+            "Предмет біля співрозмовника."
+          ],
+          "en": [
+            "Something far from both speakers.",
+            "Something near me.",
+            "Something near the listener."
+          ],
+          "es": [
+            "Algo lejos de los dos.",
+            "Algo cerca de mí.",
+            "Algo cerca del oyente."
+          ]
+        },
+        "answers": {
+          "ru": "Предмет далеко от обоих.",
+          "uk": "Предмет далеко від обох.",
+          "en": "Something far from both speakers.",
+          "es": "Algo lejos de los dos."
+        }
       },
       {
         "id": "de20",
