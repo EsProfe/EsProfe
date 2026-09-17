@@ -654,7 +654,7 @@
               "k"
             ],
             "answer": "c",
-            "icon": "🇨🇺"
+            "flagCode": "cu"
           },
           {
             "word": "queso",
@@ -732,6 +732,116 @@
             ],
             "answer": "k",
             "icon": "⚖️"
+          },
+          {
+            "word": "cama",
+            "display": "_ama",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "c",
+            "icon": "🛏️"
+          },
+          {
+            "word": "comida",
+            "display": "_omida",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "c",
+            "icon": "🍽️"
+          },
+          {
+            "word": "cubo",
+            "display": "_ubo",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "c",
+            "icon": "🧊"
+          },
+          {
+            "word": "querer",
+            "display": "_erer",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "qu",
+            "icon": "❤️"
+          },
+          {
+            "word": "quién",
+            "display": "_ién",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "qu",
+            "icon": "❓"
+          },
+          {
+            "word": "esquina",
+            "display": "es_ina",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "qu",
+            "icon": "↪️"
+          },
+          {
+            "word": "máquina",
+            "display": "má_ina",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "qu",
+            "icon": "⚙️"
+          },
+          {
+            "word": "cocina",
+            "display": "_ocina",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "c",
+            "icon": "🍳"
+          },
+          {
+            "word": "bocadillo",
+            "display": "bo_adillo",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "c",
+            "icon": "🥪"
+          },
+          {
+            "word": "kiwi",
+            "display": "_iwi",
+            "options": [
+              "c",
+              "qu",
+              "k"
+            ],
+            "answer": "k",
+            "icon": "🥝"
           }
         ]
       },
