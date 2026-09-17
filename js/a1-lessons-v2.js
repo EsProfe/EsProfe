@@ -808,9 +808,13 @@
       if (ok) score++;
       else weak[q.tag] = (weak[q.tag] || 0) + 1;
       const transcript = q.audio ? ` · ${q.audio}` : "";
-      document.getElementById("a1Feedback").textContent = ok
+      const explanation =
+        q.explanation?.[lang()] ?? q.explanation?.ru ?? "";
+      const feedback = ok
         ? `✅ ${U().correct}${transcript}`
         : `❌ ${U().wrong}: ${answer}${transcript}`;
+      document.getElementById("a1Feedback").innerHTML =
+        `${esc(feedback)}${explanation ? `<br><span class="a1-answer-explanation">${esc(explanation)}</span>` : ""}`;
       r.querySelectorAll("[data-option-index]").forEach(
         (b) => (b.disabled = true),
       );
