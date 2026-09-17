@@ -467,7 +467,7 @@
         "tag": "choice",
         "prompt": {
           "ru": "Una película ___.",
-          "uk": "Una pel·lícula ___.",
+          "uk": "Una película ___.",
           "en": "Una película ___.",
           "es": "Una película ___."
         },
