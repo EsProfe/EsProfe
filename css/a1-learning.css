@@ -1461,3 +1461,11 @@
   font-size: 2.55rem;
   line-height: 1;
 }
+
+.a1-word-flag {
+  display: block;
+  width: 58px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgb(16 24 40 / 18%);
+}
