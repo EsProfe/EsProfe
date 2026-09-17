@@ -1449,3 +1449,15 @@
     transform: rotate(90deg);
   }
 }
+
+.a1-word-visual {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border: 1px solid #bfd4f4;
+  border-radius: 18px;
+  background: #f4f8ff;
+  font-size: 2.55rem;
+  line-height: 1;
+}
