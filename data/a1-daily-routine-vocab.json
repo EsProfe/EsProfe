@@ -1,1 +1,597 @@
-{"daily-routine-vocab":{"level":"A1","moduleId":"a1-vocabulary","nextLessonId":"jobs","ruleTags":{"vocabulary":0,"time":1,"sequence":2,"routine":3},"i18n":{"ru":{"title":"Повседневные действия","goal":"Цель: рассказать о простом распорядке дня.","intro":"Запоминайте действия с временем: Me levanto a las siete. Después desayuno.","rules":[["Основные слова","levantarse — вставать\ndespertarse — просыпаться\nducharse — принимать душ\nvestirse — одеваться\ndesayunar — завтракать\nir a trabajar — идти / ехать на работу\nir a clase — идти на занятия\ncomer — обедать, есть\nvolver a casa — возвращаться домой\nhacer la compra — делать покупки\ncocinar — готовить\ncenar — ужинать\nver la televisión — смотреть телевизор\nacostarse — ложиться спать\ndormir — спать"],["Время","Por la mañana — утром\nPor la tarde — днём, вечером\nPor la noche — ночью, вечером"],["Последовательность","Primero… — сначала…\nDespués… — потом…\nLuego… — затем…"],["Модель","Me levanto a las siete y desayuno en casa."]],"examplesTitle":"Послушай модели","practiceTitle":"Выбери слово","trainerTitle":"Тренировка","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: профессии"},"uk":{"title":"Повсякденні дії","goal":"Мета: розповісти про простий розпорядок дня.","intro":"Запам’ятовуйте дії з часом: Me levanto a las siete. Después desayuno.","rules":[["Основні слова","levantarse — вставати\ndespertarse — прокидатися\nducharse — приймати душ\nvestirse — одягатися\ndesayunar — снідати\nir a trabajar — іти / їхати на роботу\nir a clase — іти на заняття\ncomer — обідати, їсти\nvolver a casa — повертатися додому\nhacer la compra — робити покупки\ncocinar — готувати\ncenar — вечеряти\nver la televisión — дивитися телевізор\nacostarse — лягати спати\ndormir — спати"],["Час","Por la mañana — вранці\nPor la tarde — удень, увечері\nPor la noche — уночі, увечері"],["Послідовність","Primero… — спочатку…\nDespués… — потім…\nLuego… — потім, далі…"],["Модель","Me levanto a las siete y desayuno en casa."]],"examplesTitle":"Послухай моделі","practiceTitle":"Обери слово","trainerTitle":"Тренування","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: професії"},"en":{"title":"Daily activities","goal":"Goal: talk about a simple daily routine.","intro":"Learn actions with time: Me levanto a las siete. Después desayuno.","rules":[["Core words","levantarse — get up\ndespertarse — wake up\nducharse — have a shower\nvestirse — get dressed\ndesayunar — have breakfast\nir a trabajar — go to work\nir a clase — go to class\ncomer — have lunch, eat\nvolver a casa — return home\nhacer la compra — do the shopping\ncocinar — cook\ncenar — have dinner\nver la televisión — watch television\nacostarse — go to bed\ndormir — sleep"],["Time","Por la mañana — in the morning\nPor la tarde — in the afternoon/evening\nPor la noche — at night"],["Sequence","Primero… — first…\nDespués… — afterwards…\nLuego… — then…"],["Model","Me levanto a las siete y desayuno en casa."]],"examplesTitle":"Listen to the patterns","practiceTitle":"Choose the word","trainerTitle":"Trainer","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: jobs"},"es":{"title":"Las actividades diarias","goal":"Objetivo: hablar de una rutina diaria sencilla.","intro":"Aprende las acciones con tiempo: Me levanto a las siete. Después desayuno.","rules":[["Palabras básicas","levantarse\ndespertarse\nducharse\nvestirse\ndesayunar\nir a trabajar\nir a clase\ncomer\nvolver a casa\nhacer la compra\ncocinar\ncenar\nver la televisión\nacostarse\ndormir"],["Tiempo","Por la mañana\nPor la tarde\nPor la noche"],["Secuencia","Primero…\nDespués…\nLuego…"],["Modelo","Me levanto a las siete y desayuno en casa."]],"examplesTitle":"Escucha los modelos","practiceTitle":"Elige la palabra","trainerTitle":"Entrenador","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: profesiones"}},"flashcards":[["levantarse","вставать","вставати","get up","levantarse","🌅"],["despertarse","просыпаться","прокидатися","wake up","despertarse","⏰"],["ducharse","принимать душ","приймати душ","have a shower","ducharse","🚿"],["vestirse","одеваться","одягатися","get dressed","vestirse","👔"],["desayunar","завтракать","снідати","have breakfast","desayunar","🥐"],["ir a trabajar","идти / ехать на работу","іти / їхати на роботу","go to work","ir a trabajar","💼"],["ir a clase","идти на занятия","іти на заняття","go to class","ir a clase","🎓"],["comer","обедать, есть","обідати, їсти","have lunch, eat","comer","🍽️"],["volver a casa","возвращаться домой","повертатися додому","return home","volver a casa","🏠"],["hacer la compra","делать покупки","робити покупки","do the shopping","hacer la compra","🛒"],["cocinar","готовить","готувати","cook","cocinar","🍳"],["cenar","ужинать","вечеряти","have dinner","cenar","🥗"],["ver la televisión","смотреть телевизор","дивитися телевізор","watch television","ver la televisión","📺"],["acostarse","ложиться спать","лягати спати","go to bed","acostarse","🛏️"],["dormir","спать","спати","sleep","dormir","😴"]],"examples":[{"word":"Me levanto a las siete.","tag":"routine"},{"word":"Después desayuno en casa.","tag":"sequence"},{"word":"Por la tarde vuelvo a casa.","tag":"time"},{"word":"Por la noche me acuesto temprano.","tag":"routine"}],"questionBank":[{"id":"dr01","tag":"vocabulary","prompt":{"ru":"Выбери слово: «принимать душ».","uk":"Обери слово: «приймати душ».","en":"Choose the word: “have a shower”.","es":"Elige la expresión correcta."},"options":["ducharse","dormir","cenar"],"answer":"ducharse"},{"id":"dr02","tag":"routine","prompt":{"ru":"Выбери форму: (yo) ___ (levantarse) a las siete.","uk":"Обери форму: (yo) ___ (levantarse) a las siete.","en":"Choose the form: (yo) ___ (levantarse) a las siete.","es":"Elige la forma: (yo) ___ (levantarse) a las siete."},"options":["me levanto","te levantas","se levanta"],"answer":"me levanto"},{"id":"dr03","tag":"sequence","prompt":{"ru":"«Потом завтракаю»: ___ desayuno.","uk":"«Потім снідаю»: ___ desayuno.","en":"“Then I have breakfast”: ___ desayuno.","es":"Completa: ___ desayuno."},"options":["Después","Por la noche","A las siete"],"answer":"Después"},{"id":"dr04","tag":"time","prompt":{"ru":"Утром: ___ la mañana.","uk":"Вранці: ___ la mañana.","en":"In the morning: ___ la mañana.","es":"Por ___ mañana."},"options":["por","en","a"],"answer":"por"},{"id":"dr05","tag":"vocabulary","prompt":{"ru":"«Возвращаться домой»","uk":"«Повертатися додому»","en":"“Return home”","es":"Elige la expresión correcta."},"options":["volver a casa","ir a clase","hacer la compra"],"answer":"volver a casa"},{"id":"dr06","tag":"routine","prompt":{"ru":"Выбери форму: (yo) ___ (acostarse) temprano.","uk":"Обери форму: (yo) ___ (acostarse) temprano.","en":"Choose the form: (yo) ___ (acostarse) temprano.","es":"Elige la forma: (yo) ___ (acostarse) temprano."},"options":["me acuesto","me acuestas","me acostamos"],"answer":"me acuesto"},{"id":"dr07","tag":"vocabulary","prompt":{"ru":"Voy al supermercado: voy a ___.","uk":"Voy al supermercado: voy a ___.","en":"Voy al supermercado: voy a ___.","es":"Voy al supermercado: voy a ___."},"options":["hacer la compra","ver la televisión","dormir"],"answer":"hacer la compra"},{"id":"dr08","tag":"time","prompt":{"ru":"Вечером / ночью: Por la ___.","uk":"Увечері / вночі: Por la ___.","en":"At night: Por la ___.","es":"Por la ___."},"options":["noche","mañana","clase"],"answer":"noche"},{"id":"dr09","tag":"sequence","prompt":{"ru":"Сначала: ___.","uk":"Спочатку: ___.","en":"First: ___.","es":"Primero: ___."},"options":["Primero","Luego","Noche"],"answer":"Primero"},{"id":"dr10","tag":"vocabulary","prompt":{"ru":"«Идти на занятия»","uk":"«Іти на заняття»","en":"“Go to class”","es":"Elige la expresión correcta."},"options":["ir a clase","ir a trabajar","volver a casa"],"answer":"ir a clase"}]}}
+{
+  "daily-routine-vocab": {
+    "examples": [
+      {
+        "tag": "routine",
+        "word": "Me levanto a las siete."
+      },
+      {
+        "tag": "sequence",
+        "word": "Después desayuno en casa."
+      },
+      {
+        "tag": "time",
+        "word": "Por la tarde vuelvo a casa."
+      },
+      {
+        "tag": "routine",
+        "word": "Por la noche me acuesto temprano."
+      }
+    ],
+    "flashcards": [
+      [
+        "levantarse",
+        "вставать",
+        "вставати",
+        "get up",
+        "levantarse",
+        "🌅"
+      ],
+      [
+        "despertarse",
+        "просыпаться",
+        "прокидатися",
+        "wake up",
+        "despertarse",
+        "⏰"
+      ],
+      [
+        "ducharse",
+        "принимать душ",
+        "приймати душ",
+        "have a shower",
+        "ducharse",
+        "🚿"
+      ],
+      [
+        "vestirse",
+        "одеваться",
+        "одягатися",
+        "get dressed",
+        "vestirse",
+        "👔"
+      ],
+      [
+        "desayunar",
+        "завтракать",
+        "снідати",
+        "have breakfast",
+        "desayunar",
+        "🥐"
+      ],
+      [
+        "ir a trabajar",
+        "идти / ехать на работу",
+        "іти / їхати на роботу",
+        "go to work",
+        "ir a trabajar",
+        "💼"
+      ],
+      [
+        "ir a clase",
+        "идти на занятия",
+        "іти на заняття",
+        "go to class",
+        "ir a clase",
+        "🎓"
+      ],
+      [
+        "comer",
+        "обедать, есть",
+        "обідати, їсти",
+        "have lunch, eat",
+        "comer",
+        "🍽️"
+      ],
+      [
+        "volver a casa",
+        "возвращаться домой",
+        "повертатися додому",
+        "return home",
+        "volver a casa",
+        "🏠"
+      ],
+      [
+        "hacer la compra",
+        "делать покупки",
+        "робити покупки",
+        "do the shopping",
+        "hacer la compra",
+        "🛒"
+      ],
+      [
+        "cocinar",
+        "готовить",
+        "готувати",
+        "cook",
+        "cocinar",
+        "🍳"
+      ],
+      [
+        "cenar",
+        "ужинать",
+        "вечеряти",
+        "have dinner",
+        "cenar",
+        "🥗"
+      ],
+      [
+        "ver la televisión",
+        "смотреть телевизор",
+        "дивитися телевізор",
+        "watch television",
+        "ver la televisión",
+        "📺"
+      ],
+      [
+        "acostarse",
+        "ложиться спать",
+        "лягати спати",
+        "go to bed",
+        "acostarse",
+        "🛏️"
+      ],
+      [
+        "dormir",
+        "спать",
+        "спати",
+        "sleep",
+        "dormir",
+        "😴"
+      ]
+    ],
+    "i18n": {
+      "en": {
+        "assessmentTitle": "Check yourself",
+        "examplesTitle": "Listen to the patterns",
+        "goal": "Goal: talk about a simple daily routine.",
+        "intro": "Learn actions with time: Me levanto a las siete. Después desayuno.",
+        "nextTitle": "Next lesson: jobs",
+        "practiceTitle": "Choose the word",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "rules": [
+          [
+            "Core words",
+            "levantarse — get up\ndespertarse — wake up\nducharse — have a shower\nvestirse — get dressed\ndesayunar — have breakfast\nir a trabajar — go to work\nir a clase — go to class\ncomer — have lunch, eat\nvolver a casa — return home\nhacer la compra — do the shopping\ncocinar — cook\ncenar — have dinner\nver la televisión — watch television\nacostarse — go to bed\ndormir — sleep"
+          ],
+          [
+            "Time",
+            "Por la mañana — in the morning\nPor la tarde — in the afternoon/evening\nPor la noche — at night"
+          ],
+          [
+            "Sequence",
+            "Primero… — first…\nDespués… — afterwards…\nLuego… — then…"
+          ],
+          [
+            "Model",
+            "Me levanto a las siete y desayuno en casa."
+          ]
+        ],
+        "title": "Daily activities",
+        "trainerTitle": "Trainer"
+      },
+      "es": {
+        "assessmentTitle": "Compruébalo",
+        "examplesTitle": "Escucha los modelos",
+        "goal": "Objetivo: hablar de una rutina diaria sencilla.",
+        "intro": "Aprende las acciones con tiempo: Me levanto a las siete. Después desayuno.",
+        "nextTitle": "Siguiente lección: profesiones",
+        "practiceTitle": "Elige la palabra",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "rules": [
+          [
+            "Palabras básicas",
+            "levantarse\ndespertarse\nducharse\nvestirse\ndesayunar\nir a trabajar\nir a clase\ncomer\nvolver a casa\nhacer la compra\ncocinar\ncenar\nver la televisión\nacostarse\ndormir"
+          ],
+          [
+            "Tiempo",
+            "Por la mañana\nPor la tarde\nPor la noche"
+          ],
+          [
+            "Secuencia",
+            "Primero…\nDespués…\nLuego…"
+          ],
+          [
+            "Modelo",
+            "Me levanto a las siete y desayuno en casa."
+          ]
+        ],
+        "title": "Las actividades diarias",
+        "trainerTitle": "Entrenador"
+      },
+      "ru": {
+        "assessmentTitle": "Проверь себя",
+        "examplesTitle": "Послушай модели",
+        "goal": "Цель: рассказать о простом распорядке дня.",
+        "intro": "Запоминайте действия с временем: Me levanto a las siete. Después desayuno.",
+        "nextTitle": "Следующий урок: профессии",
+        "practiceTitle": "Выбери слово",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "rules": [
+          [
+            "Основные слова",
+            "levantarse — вставать\ndespertarse — просыпаться\nducharse — принимать душ\nvestirse — одеваться\ndesayunar — завтракать\nir a trabajar — идти / ехать на работу\nir a clase — идти на занятия\ncomer — обедать, есть\nvolver a casa — возвращаться домой\nhacer la compra — делать покупки\ncocinar — готовить\ncenar — ужинать\nver la televisión — смотреть телевизор\nacostarse — ложиться спать\ndormir — спать"
+          ],
+          [
+            "Время",
+            "Por la mañana — утром\nPor la tarde — днём, вечером\nPor la noche — ночью, вечером"
+          ],
+          [
+            "Последовательность",
+            "Primero… — сначала…\nDespués… — потом…\nLuego… — затем…"
+          ],
+          [
+            "Модель",
+            "Me levanto a las siete y desayuno en casa."
+          ]
+        ],
+        "title": "Повседневные действия",
+        "trainerTitle": "Тренировка"
+      },
+      "uk": {
+        "assessmentTitle": "Перевір себе",
+        "examplesTitle": "Послухай моделі",
+        "goal": "Мета: розповісти про простий розпорядок дня.",
+        "intro": "Запам’ятовуйте дії з часом: Me levanto a las siete. Después desayuno.",
+        "nextTitle": "Наступний урок: професії",
+        "practiceTitle": "Обери слово",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "rules": [
+          [
+            "Основні слова",
+            "levantarse — вставати\ndespertarse — прокидатися\nducharse — приймати душ\nvestirse — одягатися\ndesayunar — снідати\nir a trabajar — іти / їхати на роботу\nir a clase — іти на заняття\ncomer — обідати, їсти\nvolver a casa — повертатися додому\nhacer la compra — робити покупки\ncocinar — готувати\ncenar — вечеряти\nver la televisión — дивитися телевізор\nacostarse — лягати спати\ndormir — спати"
+          ],
+          [
+            "Час",
+            "Por la mañana — вранці\nPor la tarde — удень, увечері\nPor la noche — уночі, увечері"
+          ],
+          [
+            "Послідовність",
+            "Primero… — спочатку…\nDespués… — потім…\nLuego… — потім, далі…"
+          ],
+          [
+            "Модель",
+            "Me levanto a las siete y desayuno en casa."
+          ]
+        ],
+        "title": "Повсякденні дії",
+        "trainerTitle": "Тренування"
+      }
+    },
+    "level": "A1",
+    "moduleId": "a1-vocabulary",
+    "nextLessonId": "jobs",
+    "questionBank": [
+      {
+        "answer": "ducharse",
+        "id": "dr01",
+        "options": [
+          "ducharse",
+          "dormir",
+          "cenar"
+        ],
+        "prompt": {
+          "en": "Choose the word: “have a shower”.",
+          "es": "Elige la expresión correcta.",
+          "ru": "Выбери слово: «принимать душ».",
+          "uk": "Обери слово: «приймати душ»."
+        },
+        "tag": "vocabulary"
+      },
+      {
+        "answer": "me levanto",
+        "id": "dr02",
+        "options": [
+          "me levanto",
+          "te levantas",
+          "se levanta"
+        ],
+        "prompt": {
+          "en": "Choose the form: (yo) ___ (levantarse) a las siete.",
+          "es": "Elige la forma: (yo) ___ (levantarse) a las siete.",
+          "ru": "Выбери форму: (yo) ___ (levantarse) a las siete.",
+          "uk": "Обери форму: (yo) ___ (levantarse) a las siete."
+        },
+        "tag": "routine"
+      },
+      {
+        "answer": "Después",
+        "id": "dr03",
+        "options": [
+          "Después",
+          "Por la noche",
+          "A las siete"
+        ],
+        "prompt": {
+          "en": "“Then I have breakfast”: ___ desayuno.",
+          "es": "Completa: ___ desayuno.",
+          "ru": "«Потом завтракаю»: ___ desayuno.",
+          "uk": "«Потім снідаю»: ___ desayuno."
+        },
+        "tag": "sequence"
+      },
+      {
+        "answer": "por",
+        "id": "dr04",
+        "options": [
+          "por",
+          "en",
+          "a"
+        ],
+        "prompt": {
+          "en": "In the morning: ___ la mañana.",
+          "es": "Por ___ mañana.",
+          "ru": "Утром: ___ la mañana.",
+          "uk": "Вранці: ___ la mañana."
+        },
+        "tag": "time"
+      },
+      {
+        "answer": "volver a casa",
+        "id": "dr05",
+        "options": [
+          "volver a casa",
+          "ir a clase",
+          "hacer la compra"
+        ],
+        "prompt": {
+          "en": "“Return home”",
+          "es": "Elige la expresión correcta.",
+          "ru": "«Возвращаться домой»",
+          "uk": "«Повертатися додому»"
+        },
+        "tag": "vocabulary"
+      },
+      {
+        "answer": "me acuesto",
+        "id": "dr06",
+        "options": [
+          "me acuesto",
+          "me acuestas",
+          "me acostamos"
+        ],
+        "prompt": {
+          "en": "Choose the form: (yo) ___ (acostarse) temprano.",
+          "es": "Elige la forma: (yo) ___ (acostarse) temprano.",
+          "ru": "Выбери форму: (yo) ___ (acostarse) temprano.",
+          "uk": "Обери форму: (yo) ___ (acostarse) temprano."
+        },
+        "tag": "routine"
+      },
+      {
+        "answer": "hacer la compra",
+        "id": "dr07",
+        "options": [
+          "hacer la compra",
+          "ver la televisión",
+          "dormir"
+        ],
+        "prompt": {
+          "en": "Voy al supermercado: voy a ___.",
+          "es": "Voy al supermercado: voy a ___.",
+          "ru": "Voy al supermercado: voy a ___.",
+          "uk": "Voy al supermercado: voy a ___."
+        },
+        "tag": "vocabulary"
+      },
+      {
+        "answer": "noche",
+        "id": "dr08",
+        "options": [
+          "noche",
+          "mañana",
+          "clase"
+        ],
+        "prompt": {
+          "en": "At night: Por la ___.",
+          "es": "Por la ___.",
+          "ru": "Вечером / ночью: Por la ___.",
+          "uk": "Увечері / вночі: Por la ___."
+        },
+        "tag": "time"
+      },
+      {
+        "answer": "Primero",
+        "id": "dr09",
+        "options": [
+          "Primero",
+          "Luego",
+          "Noche"
+        ],
+        "prompt": {
+          "en": "First: ___.",
+          "es": "Primero: ___.",
+          "ru": "Сначала: ___.",
+          "uk": "Спочатку: ___."
+        },
+        "tag": "sequence"
+      },
+      {
+        "answer": "ir a clase",
+        "id": "dr10",
+        "options": [
+          "ir a clase",
+          "ir a trabajar",
+          "volver a casa"
+        ],
+        "prompt": {
+          "en": "“Go to class”",
+          "es": "Elige la expresión correcta.",
+          "ru": "«Идти на занятия»",
+          "uk": "«Іти на заняття»"
+        },
+        "tag": "vocabulary"
+      },
+      {
+        "id": "dr11",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Готовить»",
+          "uk": "«Готувати»",
+          "en": "“Cook”",
+          "es": "Elige la expresión correcta."
+        },
+        "options": [
+          "cocinar",
+          "cenar",
+          "dormir"
+        ],
+        "answer": "cocinar"
+      },
+      {
+        "id": "dr12",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Выбери форму: (tú) ___ (vestirse).",
+          "uk": "Обери форму: (tú) ___ (vestirse).",
+          "en": "Choose the form: (tú) ___ (vestirse).",
+          "es": "Elige la forma: (tú) ___ (vestirse)."
+        },
+        "options": [
+          "te vistes",
+          "me visto",
+          "se viste"
+        ],
+        "answer": "te vistes"
+      },
+      {
+        "id": "dr13",
+        "tag": "time",
+        "prompt": {
+          "ru": "Днём: Por la ___.",
+          "uk": "Удень: Por la ___.",
+          "en": "In the afternoon: Por la ___.",
+          "es": "Por la ___."
+        },
+        "options": [
+          "tarde",
+          "mañana",
+          "noche"
+        ],
+        "answer": "tarde"
+      },
+      {
+        "id": "dr14",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Затем: ___.",
+          "uk": "Потім: ___.",
+          "en": "Then: ___.",
+          "es": "Completa: ___."
+        },
+        "options": [
+          "Luego",
+          "Primero",
+          "Noche"
+        ],
+        "answer": "Luego"
+      },
+      {
+        "id": "dr15",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Ужинать»",
+          "uk": "«Вечеряти»",
+          "en": "“Have dinner”",
+          "es": "Elige la expresión correcta."
+        },
+        "options": [
+          "cenar",
+          "comer",
+          "despertarse"
+        ],
+        "answer": "cenar"
+      },
+      {
+        "id": "dr16",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Выбери форму: (ella) ___ (despertarse) temprano.",
+          "uk": "Обери форму: (ella) ___ (despertarse) temprano.",
+          "en": "Choose the form: (ella) ___ (despertarse) temprano.",
+          "es": "Elige la forma: (ella) ___ (despertarse) temprano."
+        },
+        "options": [
+          "se despierta",
+          "me despierto",
+          "te despiertas"
+        ],
+        "answer": "se despierta"
+      },
+      {
+        "id": "dr17",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Смотреть телевизор»",
+          "uk": "«Дивитися телевізор»",
+          "en": "“Watch television”",
+          "es": "Elige la expresión correcta."
+        },
+        "options": [
+          "ver la televisión",
+          "hacer la compra",
+          "ir a clase"
+        ],
+        "answer": "ver la televisión"
+      },
+      {
+        "id": "dr18",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Выбери форму: (nosotros) ___ (comer) en casa.",
+          "uk": "Обери форму: (nosotros) ___ (comer) en casa.",
+          "en": "Choose the form: (nosotros) ___ (comer) en casa.",
+          "es": "Elige la forma: (nosotros) ___ (comer) en casa."
+        },
+        "options": [
+          "comemos",
+          "comen",
+          "comes"
+        ],
+        "answer": "comemos"
+      },
+      {
+        "id": "dr19",
+        "tag": "time",
+        "prompt": {
+          "ru": "Выбери естественную фразу.",
+          "uk": "Обери природну фразу.",
+          "en": "Choose the natural phrase.",
+          "es": "Elige la frase natural."
+        },
+        "options": [
+          "Por la mañana desayuno.",
+          "Por el mañana desayuno.",
+          "En la mañana desayuno."
+        ],
+        "answer": "Por la mañana desayuno."
+      },
+      {
+        "id": "dr20",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Выбери естественную последовательность.",
+          "uk": "Обери природну послідовність.",
+          "en": "Choose the natural sequence.",
+          "es": "Elige la secuencia natural."
+        },
+        "options": [
+          "Primero me ducho y luego desayuno.",
+          "Después primero desayuno.",
+          "Luego por la mañana."
+        ],
+        "answer": "Primero me ducho y luego desayuno."
+      }
+    ],
+    "ruleTags": {
+      "routine": 3,
+      "sequence": 2,
+      "time": 1,
+      "vocabulary": 0
+    }
+  }
+}
