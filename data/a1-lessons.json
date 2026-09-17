@@ -3,7 +3,15 @@
     "level": "A1",
     "moduleId": "a1-foundations-01",
     "nextLessonId": "greetings-farewells",
-    "ruleTags": {"vowels":0,"h":1,"ñ":2,"j-g":3,"c-z":4,"r-rr":5,"stress":6},
+    "ruleTags": {
+      "vowels": 0,
+      "h": 1,
+      "ñ": 2,
+      "j-g": 3,
+      "c-z": 4,
+      "r-rr": 5,
+      "stress": 6
+    },
     "i18n": {
       "ru": {
         "title": "Алфавит и произношение",
@@ -623,7 +631,8 @@
               "qu",
               "k"
             ],
-            "answer": "c"
+            "answer": "c",
+            "icon": "🏠"
           },
           {
             "word": "cosa",
@@ -633,7 +642,8 @@
               "qu",
               "k"
             ],
-            "answer": "c"
+            "answer": "c",
+            "icon": "🎁"
           },
           {
             "word": "Cuba",
@@ -643,7 +653,8 @@
               "qu",
               "k"
             ],
-            "answer": "c"
+            "answer": "c",
+            "icon": "🇨🇺"
           },
           {
             "word": "queso",
@@ -653,7 +664,8 @@
               "qu",
               "k"
             ],
-            "answer": "qu"
+            "answer": "qu",
+            "icon": "🧀"
           },
           {
             "word": "quince",
@@ -663,7 +675,8 @@
               "qu",
               "k"
             ],
-            "answer": "qu"
+            "answer": "qu",
+            "icon": "1️⃣5️⃣"
           },
           {
             "word": "paquete",
@@ -673,7 +686,8 @@
               "qu",
               "k"
             ],
-            "answer": "qu"
+            "answer": "qu",
+            "icon": "📦"
           },
           {
             "word": "cuatro",
@@ -683,7 +697,8 @@
               "qu",
               "k"
             ],
-            "answer": "c"
+            "answer": "c",
+            "icon": "4️⃣"
           },
           {
             "word": "cuando",
@@ -693,7 +708,8 @@
               "qu",
               "k"
             ],
-            "answer": "c"
+            "answer": "c",
+            "icon": "⏰"
           },
           {
             "word": "tequila",
@@ -703,7 +719,8 @@
               "qu",
               "k"
             ],
-            "answer": "qu"
+            "answer": "qu",
+            "icon": "🍹"
           },
           {
             "word": "kilo",
@@ -713,7 +730,8 @@
               "qu",
               "k"
             ],
-            "answer": "k"
+            "answer": "k",
+            "icon": "⚖️"
           }
         ]
       },
