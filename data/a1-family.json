@@ -436,17 +436,17 @@
         "id": "fa19",
         "tag": "question",
         "prompt": {
-          "ru": "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
-          "uk": "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
-          "en": "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
-          "es": "¿Tienes hijos? — Sí, tengo un hijo y una hija."
+          "ru": "Выбери правильный ответ на вопрос «¿Tienes hijos?»",
+          "uk": "Обери правильну відповідь на запитання «¿Tienes hijos?»",
+          "en": "Choose the correct answer to “¿Tienes hijos?”",
+          "es": "Elige la respuesta correcta a «¿Tienes hijos?»"
         },
         "options": [
-          "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
-          "¿Tienes hijos? — Sí, tengo un hijo y una hija?",
-          "¿Tienes hijos? — Sí, tengo un hija y un hijo."
+          "Sí, tengo un hijo y una hija.",
+          "Sí, tengo un hijo y una hija?",
+          "Sí, tengo una hija y un hijo."
         ],
-        "answer": "¿Tienes hijos? — Sí, tengo un hijo y una hija."
+        "answer": "Sí, tengo un hijo y una hija."
       },
       {
         "id": "fa20",
