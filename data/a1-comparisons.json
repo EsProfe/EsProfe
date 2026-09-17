@@ -1,24 +1,497 @@
 {
   "comparisons-basic": {
-    "level":"A1","moduleId":"a1-grammar-03","nextLessonId":"prepositions-basic","ruleTags":{"more":0,"less":1,"equal":2,"context":3},
-    "i18n":{
-      "ru":{"title":"Базовые сравнения","goal":"Цель: сравнивать людей, предметы и места с más, menos и tan… como.","intro":"Чтобы сравнить признак, используем: más + прилагательное + que, menos + прилагательное + que, tan + прилагательное + como.","rules":[["Больше","más + прилагательное + que: Madrid es más grande que Elche."],["Меньше","menos + прилагательное + que: Este coche es menos caro que aquel."],["Такой же","tan + прилагательное + como: Ana es tan amable como Marta."],["Модели целиком","Учите фразы как готовые модели: más grande que, menos interesante que, tan fácil como."]],"examplesTitle":"Послушай сравнения","practiceTitle":"Выбери сравнительную модель","trainerTitle":"Тренировка сравнений","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: основные предлоги"},
-      "uk":{"title":"Базові порівняння","goal":"Мета: порівнювати людей, предмети й місця з más, menos і tan… como.","intro":"Щоб порівняти ознаку, використовуємо: más + прикметник + que, menos + прикметник + que, tan + прикметник + como.","rules":[["Більше","más + прикметник + que: Madrid es más grande que Elche."],["Менше","menos + прикметник + que: Este coche es menos caro que aquel."],["Такий самий","tan + прикметник + como: Ana es tan amable como Marta."],["Цілі моделі","Вчи фрази як готові моделі: más grande que, menos interesante que, tan fácil como."]],"examplesTitle":"Послухай порівняння","practiceTitle":"Обери порівняльну модель","trainerTitle":"Тренування порівнянь","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: основні прийменники"},
-      "en":{"title":"Basic comparisons","goal":"Goal: compare people, things and places with más, menos and tan… como.","intro":"To compare a quality, use más + adjective + que, menos + adjective + que, or tan + adjective + como.","rules":[["More","más + adjective + que: Madrid es más grande que Elche."],["Less","menos + adjective + que: Este coche es menos caro que aquel."],["As… as","tan + adjective + como: Ana es tan amable como Marta."],["Whole patterns","Learn complete patterns: más grande que, menos interesante que, tan fácil como."]],"examplesTitle":"Listen to comparisons","practiceTitle":"Choose the comparison pattern","trainerTitle":"Comparison trainer","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: basic prepositions"},
-      "es":{"title":"Comparaciones básicas","goal":"Objetivo: comparar personas, cosas y lugares con más, menos y tan… como.","intro":"Para comparar una cualidad usamos más + adjetivo + que, menos + adjetivo + que o tan + adjetivo + como.","rules":[["Más","más + adjetivo + que: Madrid es más grande que Elche."],["Menos","menos + adjetivo + que: Este coche es menos caro que aquel."],["Igualdad","tan + adjetivo + como: Ana es tan amable como Marta."],["Modelos completos","Aprende modelos completos: más grande que, menos interesante que, tan fácil como."]],"examplesTitle":"Escucha comparaciones","practiceTitle":"Elige el modelo de comparación","trainerTitle":"Entrenador de comparaciones","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: preposiciones básicas"}
+    "level": "A1",
+    "moduleId": "a1-grammar-03",
+    "nextLessonId": "prepositions-basic",
+    "ruleTags": {
+      "more": 0,
+      "less": 1,
+      "equal": 2,
+      "context": 3
     },
-    "examples":[{"word":"Madrid es más grande que Elche.","tag":"more"},{"word":"Este coche es menos caro que aquel.","tag":"less"},{"word":"Ana es tan amable como Marta.","tag":"equal"},{"word":"Esta película es más interesante que esa.","tag":"context"}],
-    "questionBank":[
-      {"id":"co01","tag":"more","prompt":{"ru":"Madrid es ___ grande que Elche.","uk":"Madrid es ___ grande que Elche.","en":"Madrid es ___ grande que Elche.","es":"Madrid es ___ grande que Elche."},"options":["más","menos","tan"],"answer":"más"},
-      {"id":"co02","tag":"more","prompt":{"ru":"El coche es más caro ___ la bicicleta.","uk":"El coche es más caro ___ la bicicleta.","en":"El coche es más caro ___ la bicicleta.","es":"El coche es más caro ___ la bicicleta."},"options":["que","como","de"],"answer":"que"},
-      {"id":"co03","tag":"less","prompt":{"ru":"Эта сумка весит 2 кг, а та — 4 кг. Esta mochila es ___ pesada que esa.","uk":"Ця сумка важить 2 кг, а та — 4 кг. Esta mochila es ___ pesada que esa.","en":"This backpack weighs 2 kg and that one weighs 4 kg. Esta mochila es ___ pesada que esa.","es":"Esta mochila pesa 2 kilos y esa pesa 4. Esta mochila es ___ pesada que esa."},"options":["menos","más","tan"],"answer":"menos"},
-      {"id":"co04","tag":"less","prompt":{"ru":"Un hotel es menos barato ___ un hostal.","uk":"Un hotel es menos barato ___ un hostal.","en":"A hotel is less cheap ___ a hostel.","es":"Un hotel es menos barato ___ un hostal."},"options":["que","como","a"],"answer":"que"},
-      {"id":"co05","tag":"equal","prompt":{"ru":"Ana es ___ amable como Marta.","uk":"Ana es ___ amable como Marta.","en":"Ana is ___ amable como Marta.","es":"Ana es ___ amable como Marta."},"options":["tan","más","menos"],"answer":"tan"},
-      {"id":"co06","tag":"equal","prompt":{"ru":"Este libro es tan interesante ___ ese.","uk":"Este libro es tan interesante ___ ese.","en":"This book is as interesting ___ that one.","es":"Este libro es tan interesante ___ ese."},"options":["como","que","de"],"answer":"como"},
-      {"id":"co07","tag":"context","prompt":{"ru":"Выбери правильное сравнение.","uk":"Обери правильне порівняння.","en":"Choose the correct comparison.","es":"Elige la comparación correcta."},"options":["El coche es más rápido que la bicicleta.","El coche es más rápido como la bicicleta.","El coche es tan rápido que la bicicleta."],"answer":"El coche es más rápido que la bicicleta."},
-      {"id":"co08","tag":"context","prompt":{"ru":"Выбери правильное сравнение.","uk":"Обери правильне порівняння.","en":"Choose the correct comparison.","es":"Elige la comparación correcta."},"options":["Mi casa es tan grande como tu casa.","Mi casa es tan grande que tu casa.","Mi casa es más grande como tu casa."],"answer":"Mi casa es tan grande como tu casa."},
-      {"id":"co09","tag":"more","prompt":{"ru":"Что означает más pequeño que?","uk":"Що означає más pequeño que?","en":"What does más pequeño que mean?","es":"¿Qué significa más pequeño que?"},"optionsByLang":{"ru":["меньше, чем","больше, чем","такой же, как"],"uk":["менший, ніж","більший, ніж","такий самий, як"],"en":["smaller than","bigger than","as… as"],"es":["de tamaño menor que","de tamaño mayor que","igual de tamaño que"]},"answers":{"ru":"меньше, чем","uk":"менший, ніж","en":"smaller than","es":"de tamaño menor que"}},
-      {"id":"co10","tag":"equal","prompt":{"ru":"Какой шаблон означает «такой же …, как»?","uk":"Який шаблон означає «такий самий …, як»?","en":"Which pattern means “as… as”?","es":"¿Qué modelo significa igualdad?"},"options":["tan + adjetivo + como","más + adjetivo + que","menos + adjetivo + que"],"answer":"tan + adjetivo + como"}
+    "i18n": {
+      "ru": {
+        "title": "Базовые сравнения",
+        "goal": "Цель: сравнивать людей, предметы и места с más, menos и tan… como.",
+        "intro": "Чтобы сравнить признак, используем: más + прилагательное + que, menos + прилагательное + que, tan + прилагательное + como.",
+        "rules": [
+          [
+            "Больше",
+            "más + прилагательное + que: Madrid es más grande que Elche."
+          ],
+          [
+            "Меньше",
+            "menos + прилагательное + que: Este coche es menos caro que aquel."
+          ],
+          [
+            "Такой же",
+            "tan + прилагательное + como: Ana es tan amable como Marta."
+          ],
+          [
+            "Модели целиком",
+            "Учите фразы как готовые модели: más grande que, menos interesante que, tan fácil como."
+          ]
+        ],
+        "examplesTitle": "Послушай сравнения",
+        "practiceTitle": "Выбери сравнительную модель",
+        "trainerTitle": "Тренировка сравнений",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: основные предлоги"
+      },
+      "uk": {
+        "title": "Базові порівняння",
+        "goal": "Мета: порівнювати людей, предмети й місця з más, menos і tan… como.",
+        "intro": "Щоб порівняти ознаку, використовуємо: más + прикметник + que, menos + прикметник + que, tan + прикметник + como.",
+        "rules": [
+          [
+            "Більше",
+            "más + прикметник + que: Madrid es más grande que Elche."
+          ],
+          [
+            "Менше",
+            "menos + прикметник + que: Este coche es menos caro que aquel."
+          ],
+          [
+            "Такий самий",
+            "tan + прикметник + como: Ana es tan amable como Marta."
+          ],
+          [
+            "Цілі моделі",
+            "Вчи фрази як готові моделі: más grande que, menos interesante que, tan fácil como."
+          ]
+        ],
+        "examplesTitle": "Послухай порівняння",
+        "practiceTitle": "Обери порівняльну модель",
+        "trainerTitle": "Тренування порівнянь",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: основні прийменники"
+      },
+      "en": {
+        "title": "Basic comparisons",
+        "goal": "Goal: compare people, things and places with más, menos and tan… como.",
+        "intro": "To compare a quality, use más + adjective + que, menos + adjective + que, or tan + adjective + como.",
+        "rules": [
+          [
+            "More",
+            "más + adjective + que: Madrid es más grande que Elche."
+          ],
+          [
+            "Less",
+            "menos + adjective + que: Este coche es menos caro que aquel."
+          ],
+          [
+            "As… as",
+            "tan + adjective + como: Ana es tan amable como Marta."
+          ],
+          [
+            "Whole patterns",
+            "Learn complete patterns: más grande que, menos interesante que, tan fácil como."
+          ]
+        ],
+        "examplesTitle": "Listen to comparisons",
+        "practiceTitle": "Choose the comparison pattern",
+        "trainerTitle": "Comparison trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: basic prepositions"
+      },
+      "es": {
+        "title": "Comparaciones básicas",
+        "goal": "Objetivo: comparar personas, cosas y lugares con más, menos y tan… como.",
+        "intro": "Para comparar una cualidad usamos más + adjetivo + que, menos + adjetivo + que o tan + adjetivo + como.",
+        "rules": [
+          [
+            "Más",
+            "más + adjetivo + que: Madrid es más grande que Elche."
+          ],
+          [
+            "Menos",
+            "menos + adjetivo + que: Este coche es menos caro que aquel."
+          ],
+          [
+            "Igualdad",
+            "tan + adjetivo + como: Ana es tan amable como Marta."
+          ],
+          [
+            "Modelos completos",
+            "Aprende modelos completos: más grande que, menos interesante que, tan fácil como."
+          ]
+        ],
+        "examplesTitle": "Escucha comparaciones",
+        "practiceTitle": "Elige el modelo de comparación",
+        "trainerTitle": "Entrenador de comparaciones",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: preposiciones básicas"
+      }
+    },
+    "examples": [
+      {
+        "word": "Madrid es más grande que Elche.",
+        "tag": "more"
+      },
+      {
+        "word": "Este coche es menos caro que aquel.",
+        "tag": "less"
+      },
+      {
+        "word": "Ana es tan amable como Marta.",
+        "tag": "equal"
+      },
+      {
+        "word": "Esta película es más interesante que esa.",
+        "tag": "context"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "co01",
+        "tag": "more",
+        "prompt": {
+          "ru": "Madrid es ___ grande que Elche.",
+          "uk": "Madrid es ___ grande que Elche.",
+          "en": "Madrid es ___ grande que Elche.",
+          "es": "Madrid es ___ grande que Elche."
+        },
+        "options": [
+          "más",
+          "menos",
+          "tan"
+        ],
+        "answer": "más"
+      },
+      {
+        "id": "co02",
+        "tag": "more",
+        "prompt": {
+          "ru": "El coche es más caro ___ la bicicleta.",
+          "uk": "El coche es más caro ___ la bicicleta.",
+          "en": "El coche es más caro ___ la bicicleta.",
+          "es": "El coche es más caro ___ la bicicleta."
+        },
+        "options": [
+          "que",
+          "como",
+          "de"
+        ],
+        "answer": "que"
+      },
+      {
+        "id": "co03",
+        "tag": "less",
+        "prompt": {
+          "ru": "Эта сумка весит 2 кг, а та — 4 кг. Esta mochila es ___ pesada que esa.",
+          "uk": "Ця сумка важить 2 кг, а та — 4 кг. Esta mochila es ___ pesada que esa.",
+          "en": "This backpack weighs 2 kg and that one weighs 4 kg. Esta mochila es ___ pesada que esa.",
+          "es": "Esta mochila pesa 2 kilos y esa pesa 4. Esta mochila es ___ pesada que esa."
+        },
+        "options": [
+          "menos",
+          "más",
+          "tan"
+        ],
+        "answer": "menos"
+      },
+      {
+        "id": "co04",
+        "tag": "less",
+        "prompt": {
+          "ru": "Un hotel es menos barato ___ un hostal.",
+          "uk": "Un hotel es menos barato ___ un hostal.",
+          "en": "A hotel is less cheap ___ a hostel.",
+          "es": "Un hotel es menos barato ___ un hostal."
+        },
+        "options": [
+          "que",
+          "como",
+          "a"
+        ],
+        "answer": "que"
+      },
+      {
+        "id": "co05",
+        "tag": "equal",
+        "prompt": {
+          "ru": "Ana es ___ amable como Marta.",
+          "uk": "Ana es ___ amable como Marta.",
+          "en": "Ana is ___ amable como Marta.",
+          "es": "Ana es ___ amable como Marta."
+        },
+        "options": [
+          "tan",
+          "más",
+          "menos"
+        ],
+        "answer": "tan"
+      },
+      {
+        "id": "co06",
+        "tag": "equal",
+        "prompt": {
+          "ru": "Este libro es tan interesante ___ ese.",
+          "uk": "Este libro es tan interesante ___ ese.",
+          "en": "This book is as interesting ___ that one.",
+          "es": "Este libro es tan interesante ___ ese."
+        },
+        "options": [
+          "como",
+          "que",
+          "de"
+        ],
+        "answer": "como"
+      },
+      {
+        "id": "co07",
+        "tag": "context",
+        "prompt": {
+          "ru": "Выбери правильное сравнение.",
+          "uk": "Обери правильне порівняння.",
+          "en": "Choose the correct comparison.",
+          "es": "Elige la comparación correcta."
+        },
+        "options": [
+          "El coche es más rápido que la bicicleta.",
+          "El coche es más rápido como la bicicleta.",
+          "El coche es tan rápido que la bicicleta."
+        ],
+        "answer": "El coche es más rápido que la bicicleta."
+      },
+      {
+        "id": "co08",
+        "tag": "context",
+        "prompt": {
+          "ru": "Выбери правильное сравнение.",
+          "uk": "Обери правильне порівняння.",
+          "en": "Choose the correct comparison.",
+          "es": "Elige la comparación correcta."
+        },
+        "options": [
+          "Mi casa es tan grande como tu casa.",
+          "Mi casa es tan grande que tu casa.",
+          "Mi casa es más grande como tu casa."
+        ],
+        "answer": "Mi casa es tan grande como tu casa."
+      },
+      {
+        "id": "co09",
+        "tag": "more",
+        "prompt": {
+          "ru": "Что означает más pequeño que?",
+          "uk": "Що означає más pequeño que?",
+          "en": "What does más pequeño que mean?",
+          "es": "¿Qué significa más pequeño que?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "меньше, чем",
+            "больше, чем",
+            "такой же, как"
+          ],
+          "uk": [
+            "менший, ніж",
+            "більший, ніж",
+            "такий самий, як"
+          ],
+          "en": [
+            "smaller than",
+            "bigger than",
+            "as… as"
+          ],
+          "es": [
+            "de tamaño menor que",
+            "de tamaño mayor que",
+            "igual de tamaño que"
+          ]
+        },
+        "answers": {
+          "ru": "меньше, чем",
+          "uk": "менший, ніж",
+          "en": "smaller than",
+          "es": "de tamaño menor que"
+        }
+      },
+      {
+        "id": "co10",
+        "tag": "equal",
+        "prompt": {
+          "ru": "Какой шаблон означает «такой же …, как»?",
+          "uk": "Який шаблон означає «такий самий …, як»?",
+          "en": "Which pattern means “as… as”?",
+          "es": "¿Qué modelo significa igualdad?"
+        },
+        "options": [
+          "tan + adjetivo + como",
+          "más + adjetivo + que",
+          "menos + adjetivo + que"
+        ],
+        "answer": "tan + adjetivo + como"
+      },
+      {
+        "id": "co11",
+        "tag": "more",
+        "prompt": {
+          "ru": "La playa es ___ tranquila que el centro.",
+          "uk": "La playa є ___ спокійною, ніж центр.",
+          "en": "The beach is ___ tranquila que the centre.",
+          "es": "La playa es ___ tranquila que el centro."
+        },
+        "options": [
+          "más",
+          "menos",
+          "tan"
+        ],
+        "answer": "más"
+      },
+      {
+        "id": "co12",
+        "tag": "more",
+        "prompt": {
+          "ru": "Esta calle es más corta ___ aquella.",
+          "uk": "Ця вулиця коротша ___ та.",
+          "en": "This street is shorter ___ that one.",
+          "es": "Esta calle es más corta ___ aquella."
+        },
+        "options": [
+          "que",
+          "como",
+          "a"
+        ],
+        "answer": "que"
+      },
+      {
+        "id": "co13",
+        "tag": "less",
+        "prompt": {
+          "ru": "El autobús es ___ rápido que el tren.",
+          "uk": "Автобус є ___ швидким, ніж поїзд.",
+          "en": "The bus is ___ rápido than the train.",
+          "es": "El autobús es ___ rápido que el tren."
+        },
+        "options": [
+          "menos",
+          "más",
+          "tan"
+        ],
+        "answer": "menos"
+      },
+      {
+        "id": "co14",
+        "tag": "less",
+        "prompt": {
+          "ru": "Mi habitación es menos grande ___ el salón.",
+          "uk": "Моя кімната менш велика ___ вітальня.",
+          "en": "My room is less big ___ the living room.",
+          "es": "Mi habitación es menos grande ___ el salón."
+        },
+        "options": [
+          "que",
+          "como",
+          "de"
+        ],
+        "answer": "que"
+      },
+      {
+        "id": "co15",
+        "tag": "equal",
+        "prompt": {
+          "ru": "Luis es ___ alto como Pablo.",
+          "uk": "Луїс такий же високий, як Пабло.",
+          "en": "Luis is ___ alto as Pablo.",
+          "es": "Luis es ___ alto como Pablo."
+        },
+        "options": [
+          "tan",
+          "más",
+          "menos"
+        ],
+        "answer": "tan"
+      },
+      {
+        "id": "co16",
+        "tag": "equal",
+        "prompt": {
+          "ru": "El café es tan bueno ___ el restaurante.",
+          "uk": "Кафе таке ж добре, як ресторан.",
+          "en": "The café is as good ___ the restaurant.",
+          "es": "El café es tan bueno ___ el restaurante."
+        },
+        "options": [
+          "como",
+          "que",
+          "de"
+        ],
+        "answer": "como"
+      },
+      {
+        "id": "co17",
+        "tag": "context",
+        "prompt": {
+          "ru": "Выбери правильное сравнение цены.",
+          "uk": "Обери правильне порівняння ціни.",
+          "en": "Choose the correct price comparison.",
+          "es": "Elige la comparación correcta."
+        },
+        "options": [
+          "El museo es más barato que el teatro.",
+          "El museo es más barato como el teatro.",
+          "El museo es tan barato que el teatro."
+        ],
+        "answer": "El museo es más barato que el teatro."
+      },
+      {
+        "id": "co18",
+        "tag": "context",
+        "prompt": {
+          "ru": "Выбери правильное сравнение людей.",
+          "uk": "Обери правильне порівняння людей.",
+          "en": "Choose the correct comparison of people.",
+          "es": "Elige la comparación correcta."
+        },
+        "options": [
+          "Marta es menos tímida que Ana.",
+          "Marta es menos tímida como Ana.",
+          "Marta es tan tímida que Ana."
+        ],
+        "answer": "Marta es menos tímida que Ana."
+      },
+      {
+        "id": "co19",
+        "tag": "more",
+        "prompt": {
+          "ru": "Какой шаблон означает «более …, чем»?",
+          "uk": "Який шаблон означає «більш …, ніж»?",
+          "en": "Which pattern means “more… than”?",
+          "es": "¿Qué modelo significa «más… que»?"
+        },
+        "options": [
+          "más + adjetivo + que",
+          "tan + adjetivo + como",
+          "menos + adjetivo + como"
+        ],
+        "answer": "más + adjetivo + que"
+      },
+      {
+        "id": "co20",
+        "tag": "context",
+        "prompt": {
+          "ru": "Выбери естественную фразу.",
+          "uk": "Обери природну фразу.",
+          "en": "Choose the natural sentence.",
+          "es": "Elige la frase natural."
+        },
+        "options": [
+          "Esta película es tan divertida como esa.",
+          "Esta película es tan divertida que esa.",
+          "Esta película es más divertida como esa."
+        ],
+        "answer": "Esta película es tan divertida como esa."
+      }
     ]
   }
 }
