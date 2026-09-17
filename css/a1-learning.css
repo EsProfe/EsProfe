@@ -1469,3 +1469,11 @@
   border-radius: 5px;
   box-shadow: 0 1px 3px rgb(16 24 40 / 18%);
 }
+
+.a1-answer-explanation {
+  display: inline-block;
+  margin-top: 8px;
+  color: #344054;
+  font-weight: 600;
+  line-height: 1.45;
+}
