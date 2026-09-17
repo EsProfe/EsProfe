@@ -1,79 +1,33 @@
 {
   "family": {
-    "level": "A1",
-    "moduleId": "a1-vocabulary",
-    "nextLessonId": "home",
-    "ruleTags": {
-      "vocabulary": 0,
-      "possessive": 1,
-      "question": 2,
-      "description": 3
-    },
+    "examples": [
+      {
+        "tag": "vocabulary",
+        "word": "Mi madre se llama Ana."
+      },
+      {
+        "tag": "possessive",
+        "word": "Tengo dos hermanos."
+      },
+      {
+        "tag": "question",
+        "word": "¿Tienes hermanos?"
+      },
+      {
+        "tag": "description",
+        "word": "Mi tío vive en Valencia."
+      }
+    ],
     "i18n": {
-      "ru": {
-        "title": "Семья",
-        "goal": "Цель: назвать членов семьи и кратко рассказать о своей семье.",
-        "intro": "Запоминай слова в готовых фразах: mi madre, mi hermano, tengo dos hermanas.",
-        "rules": [
-          [
-            "Основные слова",
-            "el padre — отец\nla madre — мать\nel hermano — брат\nla hermana — сестра\nel hijo — сын\nla hija — дочь\nel abuelo — дедушка\nla abuela — бабушка\nel tío — дядя\nla tía — тётя\nel sobrino — племянник\nla sobrina — племянница\nla familia — семья\nel / la pariente — родственник / родственница"
-          ],
-          [
-            "Mi / mis",
-            "Mi перед одним предметом: mi madre; mis перед несколькими: mis hermanos."
-          ],
-          [
-            "Вопрос",
-            "¿Tienes hermanos? — У тебя есть братья или сёстры?"
-          ],
-          [
-            "Описание",
-            "Mi padre se llama Carlos. Tengo una hermana."
-          ]
-        ],
-        "examplesTitle": "Послушай модели",
-        "practiceTitle": "Выбери слово",
-        "trainerTitle": "Тренировка",
-        "assessmentTitle": "Проверь себя",
-        "resultTitle": "Результат",
-        "reviewTitle": "Что повторить",
-        "nextTitle": "Следующий урок: Дом"
-      },
-      "uk": {
-        "title": "Сім’я",
-        "goal": "Мета: назвати членів сім’ї та коротко розповісти про свою сім’ю.",
-        "intro": "Запам’ятовуй слова в готових фразах: mi madre, mi hermano, tengo dos hermanas.",
-        "rules": [
-          [
-            "Основні слова",
-            "el padre — батько\nla madre — мати\nel hermano — брат\nla hermana — сестра\nel hijo — син\nla hija — донька\nel abuelo — дідусь\nla abuela — бабуся\nel tío — дядько\nla tía — тітка\nel sobrino — племінник\nla sobrina — племінниця\nla familia — сім’я\nel / la pariente — родич / родичка"
-          ],
-          [
-            "Mi / mis",
-            "Mi перед одним предметом: mi madre; mis перед кількома: mis hermanos."
-          ],
-          [
-            "Питання",
-            "¿Tienes hermanos? — У тебе є брати або сестри?"
-          ],
-          [
-            "Опис",
-            "Mi padre se llama Carlos. Tengo una hermana."
-          ]
-        ],
-        "examplesTitle": "Послухай моделі",
-        "practiceTitle": "Обери слово",
-        "trainerTitle": "Тренування",
-        "assessmentTitle": "Перевір себе",
-        "resultTitle": "Результат",
-        "reviewTitle": "Що повторити",
-        "nextTitle": "Наступний урок: Дім"
-      },
       "en": {
-        "title": "Family",
+        "assessmentTitle": "Check yourself",
+        "examplesTitle": "Listen to the patterns",
         "goal": "Goal: name family members and briefly describe your family.",
         "intro": "Learn words in useful phrases: mi madre, mi hermano, tengo dos hermanas.",
+        "nextTitle": "Next lesson: Home",
+        "practiceTitle": "Choose the word",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
         "rules": [
           [
             "Core words",
@@ -92,18 +46,18 @@
             "Mi padre se llama Carlos. Tengo una hermana."
           ]
         ],
-        "examplesTitle": "Listen to the patterns",
-        "practiceTitle": "Choose the word",
-        "trainerTitle": "Trainer",
-        "assessmentTitle": "Check yourself",
-        "resultTitle": "Result",
-        "reviewTitle": "What to review",
-        "nextTitle": "Next lesson: Home"
+        "title": "Family",
+        "trainerTitle": "Trainer"
       },
       "es": {
-        "title": "La familia",
+        "assessmentTitle": "Compruébalo",
+        "examplesTitle": "Escucha los modelos",
         "goal": "Objetivo: nombrar a los miembros de la familia y hablar brevemente de ella.",
         "intro": "Aprende las palabras en frases útiles: mi madre, mi hermano, tengo dos hermanas.",
+        "nextTitle": "Siguiente lección: La casa",
+        "practiceTitle": "Elige la palabra",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
         "rules": [
           [
             "Palabras básicas",
@@ -122,194 +76,400 @@
             "Mi padre se llama Carlos. Tengo una hermana."
           ]
         ],
-        "examplesTitle": "Escucha los modelos",
-        "practiceTitle": "Elige la palabra",
-        "trainerTitle": "Entrenador",
-        "assessmentTitle": "Compruébalo",
-        "resultTitle": "Resultado",
-        "reviewTitle": "Qué repasar",
-        "nextTitle": "Siguiente lección: La casa"
+        "title": "La familia",
+        "trainerTitle": "Entrenador"
+      },
+      "ru": {
+        "assessmentTitle": "Проверь себя",
+        "examplesTitle": "Послушай модели",
+        "goal": "Цель: назвать членов семьи и кратко рассказать о своей семье.",
+        "intro": "Запоминай слова в готовых фразах: mi madre, mi hermano, tengo dos hermanas.",
+        "nextTitle": "Следующий урок: Дом",
+        "practiceTitle": "Выбери слово",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "rules": [
+          [
+            "Основные слова",
+            "el padre — отец\nla madre — мать\nel hermano — брат\nla hermana — сестра\nel hijo — сын\nla hija — дочь\nel abuelo — дедушка\nla abuela — бабушка\nel tío — дядя\nla tía — тётя\nel sobrino — племянник\nla sobrina — племянница\nla familia — семья\nel / la pariente — родственник / родственница"
+          ],
+          [
+            "Mi / mis",
+            "Mi перед одним предметом: mi madre; mis перед несколькими: mis hermanos."
+          ],
+          [
+            "Вопрос",
+            "¿Tienes hermanos? — У тебя есть братья или сёстры?"
+          ],
+          [
+            "Описание",
+            "Mi padre se llama Carlos. Tengo una hermana."
+          ]
+        ],
+        "title": "Семья",
+        "trainerTitle": "Тренировка"
+      },
+      "uk": {
+        "assessmentTitle": "Перевір себе",
+        "examplesTitle": "Послухай моделі",
+        "goal": "Мета: назвати членів сім’ї та коротко розповісти про свою сім’ю.",
+        "intro": "Запам’ятовуй слова в готових фразах: mi madre, mi hermano, tengo dos hermanas.",
+        "nextTitle": "Наступний урок: Дім",
+        "practiceTitle": "Обери слово",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "rules": [
+          [
+            "Основні слова",
+            "el padre — батько\nla madre — мати\nel hermano — брат\nla hermana — сестра\nel hijo — син\nla hija — донька\nel abuelo — дідусь\nla abuela — бабуся\nel tío — дядько\nla tía — тітка\nel sobrino — племінник\nla sobrina — племінниця\nla familia — сім’я\nel / la pariente — родич / родичка"
+          ],
+          [
+            "Mi / mis",
+            "Mi перед одним предметом: mi madre; mis перед кількома: mis hermanos."
+          ],
+          [
+            "Питання",
+            "¿Tienes hermanos? — У тебе є брати або сестри?"
+          ],
+          [
+            "Опис",
+            "Mi padre se llama Carlos. Tengo una hermana."
+          ]
+        ],
+        "title": "Сім’я",
+        "trainerTitle": "Тренування"
       }
     },
-    "examples": [
-      {
-        "word": "Mi madre se llama Ana.",
-        "tag": "vocabulary"
-      },
-      {
-        "word": "Tengo dos hermanos.",
-        "tag": "possessive"
-      },
-      {
-        "word": "¿Tienes hermanos?",
-        "tag": "question"
-      },
-      {
-        "word": "Mi tío vive en Valencia.",
-        "tag": "description"
-      }
-    ],
+    "level": "A1",
+    "moduleId": "a1-vocabulary",
+    "nextLessonId": "home",
     "questionBank": [
       {
+        "answer": "abuela",
         "id": "fa01",
-        "tag": "vocabulary",
-        "prompt": {
-          "ru": "Mi ___ es la madre de mi madre.",
-          "uk": "Mi ___ es la madre de mi madre.",
-          "en": "Mi ___ is my mother’s mother.",
-          "es": "Mi ___ es la madre de mi madre."
-        },
         "options": [
           "abuela",
           "hermana",
           "hija"
         ],
-        "answer": "abuela"
+        "prompt": {
+          "en": "Mi ___ is my mother’s mother.",
+          "es": "Mi ___ es la madre de mi madre.",
+          "ru": "Mi ___ es la madre de mi madre.",
+          "uk": "Mi ___ es la madre de mi madre."
+        },
+        "tag": "vocabulary"
       },
       {
+        "answer": "hermanos",
         "id": "fa02",
-        "tag": "possessive",
-        "prompt": {
-          "ru": "Tengo dos ___.",
-          "uk": "Tengo dos ___.",
-          "en": "I have two ___.",
-          "es": "Tengo dos ___."
-        },
         "options": [
           "hermanos",
           "hermano",
           "hermanas?"
         ],
-        "answer": "hermanos"
+        "prompt": {
+          "en": "I have two ___.",
+          "es": "Tengo dos ___.",
+          "ru": "Tengo dos ___.",
+          "uk": "Tengo dos ___."
+        },
+        "tag": "possessive"
       },
       {
+        "answer": "hermano",
         "id": "fa03",
-        "tag": "vocabulary",
-        "prompt": {
-          "ru": "El hijo de mi madre es mi ___.",
-          "uk": "El hijo de mi madre es mi ___.",
-          "en": "My mother’s son is my ___.",
-          "es": "El hijo de mi madre es mi ___."
-        },
         "options": [
           "hermano",
           "padre",
           "abuelo"
         ],
-        "answer": "hermano"
+        "prompt": {
+          "en": "My mother’s son is my ___.",
+          "es": "El hijo de mi madre es mi ___.",
+          "ru": "El hijo de mi madre es mi ___.",
+          "uk": "El hijo de mi madre es mi ___."
+        },
+        "tag": "vocabulary"
       },
       {
+        "answer": "Mi",
         "id": "fa04",
-        "tag": "possessive",
-        "prompt": {
-          "ru": "___ padre se llama Luis.",
-          "uk": "___ padre se llama Luis.",
-          "en": "___ father’s name is Luis.",
-          "es": "___ padre se llama Luis."
-        },
         "options": [
           "Mi",
           "Mis",
           "Nuestra"
         ],
-        "answer": "Mi"
+        "prompt": {
+          "en": "___ father’s name is Luis.",
+          "es": "___ padre se llama Luis.",
+          "ru": "___ padre se llama Luis.",
+          "uk": "___ padre se llama Luis."
+        },
+        "tag": "possessive"
       },
       {
+        "answer": "¿Tienes hermanos?",
         "id": "fa05",
-        "tag": "question",
-        "prompt": {
-          "ru": "Как спросить «У тебя есть братья или сёстры?»",
-          "uk": "Як запитати «У тебе є брати або сестри?»",
-          "en": "How do you ask “Do you have brothers or sisters?”",
-          "es": "Elige la pregunta correcta."
-        },
         "options": [
           "¿Tienes hermanos?",
           "¿Tienes hermano?",
           "¿Tiene hermanos tú?"
         ],
-        "answer": "¿Tienes hermanos?"
+        "prompt": {
+          "en": "How do you ask “Do you have brothers or sisters?”",
+          "es": "Elige la pregunta correcta.",
+          "ru": "Как спросить «У тебя есть братья или сёстры?»",
+          "uk": "Як запитати «У тебе є брати або сестри?»"
+        },
+        "tag": "question"
       },
       {
+        "answer": "Mi abuelo vive en Valencia.",
         "id": "fa06",
-        "tag": "description",
-        "prompt": {
-          "ru": "Мой дедушка живёт в Валенсии.",
-          "uk": "Мій дідусь живе у Валенсії.",
-          "en": "My grandfather lives in Valencia.",
-          "es": "Mi abuelo vive en Valencia."
-        },
         "options": [
           "Mi abuelo vive en Valencia.",
           "Mi abuelo viven en Valencia.",
           "Mi abuela vive en Valencia."
         ],
-        "answer": "Mi abuelo vive en Valencia."
+        "prompt": {
+          "en": "My grandfather lives in Valencia.",
+          "es": "Mi abuelo vive en Valencia.",
+          "ru": "Мой дедушка живёт в Валенсии.",
+          "uk": "Мій дідусь живе у Валенсії."
+        },
+        "tag": "description"
       },
       {
+        "answer": "hermana",
         "id": "fa07",
-        "tag": "vocabulary",
-        "prompt": {
-          "ru": "La hija de mi madre es mi ___.",
-          "uk": "La hija de mi madre es mi ___.",
-          "en": "My mother’s daughter is my ___.",
-          "es": "La hija de mi madre es mi ___."
-        },
         "options": [
           "hermana",
           "madre",
           "abuela"
         ],
-        "answer": "hermana"
+        "prompt": {
+          "en": "My mother’s daughter is my ___.",
+          "es": "La hija de mi madre es mi ___.",
+          "ru": "La hija de mi madre es mi ___.",
+          "uk": "La hija de mi madre es mi ___."
+        },
+        "tag": "vocabulary"
       },
       {
+        "answer": "Mi hermana se llama Marta.",
         "id": "fa08",
-        "tag": "description",
-        "prompt": {
-          "ru": "Выбери правильную фразу.",
-          "uk": "Обери правильну фразу.",
-          "en": "Choose the correct sentence.",
-          "es": "Elige la frase correcta."
-        },
         "options": [
           "Mi hermana se llama Marta.",
           "Mi hermana se llaman Marta.",
           "Mi hermana llama Marta."
         ],
-        "answer": "Mi hermana se llama Marta."
+        "prompt": {
+          "en": "Choose the correct sentence.",
+          "es": "Elige la frase correcta.",
+          "ru": "Выбери правильную фразу.",
+          "uk": "Обери правильну фразу."
+        },
+        "tag": "description"
       },
       {
+        "answer": "Se llama Pedro",
         "id": "fa09",
-        "tag": "question",
-        "prompt": {
-          "ru": "¿Cómo se llama tu padre? — ___ .",
-          "uk": "¿Cómo se llama tu padre? — ___ .",
-          "en": "¿Cómo se llama tu padre? — ___ .",
-          "es": "¿Cómo se llama tu padre? — ___ ."
-        },
         "options": [
           "Se llama Pedro",
           "Me llamo Pedro",
           "Se llamas Pedro"
         ],
-        "answer": "Se llama Pedro"
+        "prompt": {
+          "en": "¿Cómo se llama tu padre? — ___ .",
+          "es": "¿Cómo se llama tu padre? — ___ .",
+          "ru": "¿Cómo se llama tu padre? — ___ .",
+          "uk": "¿Cómo se llama tu padre? — ___ ."
+        },
+        "tag": "question"
       },
       {
+        "answer": "hermanas",
         "id": "fa10",
-        "tag": "possessive",
-        "prompt": {
-          "ru": "У меня две сестры: Tengo dos ___.",
-          "uk": "У мене дві сестри: Tengo dos ___.",
-          "en": "I have two sisters: Tengo dos ___.",
-          "es": "Tengo dos ___."
-        },
         "options": [
           "hermanas",
           "hermana",
           "hermanos"
         ],
-        "answer": "hermanas"
+        "prompt": {
+          "en": "I have two sisters: Tengo dos ___.",
+          "es": "Tengo dos ___.",
+          "ru": "У меня две сестры: Tengo dos ___.",
+          "uk": "У мене дві сестри: Tengo dos ___."
+        },
+        "tag": "possessive"
+      },
+      {
+        "id": "fa11",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "El hermano de mi padre es mi ___.",
+          "uk": "El hermano de mi padre es mi ___.",
+          "en": "El hermano de mi padre es mi ___.",
+          "es": "El hermano de mi padre es mi ___."
+        },
+        "options": [
+          "tío",
+          "sobrino",
+          "abuelo"
+        ],
+        "answer": "tío"
+      },
+      {
+        "id": "fa12",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "La hermana de mi madre es mi ___.",
+          "uk": "La hermana de mi madre es mi ___.",
+          "en": "La hermana de mi madre es mi ___.",
+          "es": "La hermana de mi madre es mi ___."
+        },
+        "options": [
+          "tía",
+          "prima",
+          "hija"
+        ],
+        "answer": "tía"
+      },
+      {
+        "id": "fa13",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "El hijo de mi hermano es mi ___.",
+          "uk": "El hijo de mi hermano es mi ___.",
+          "en": "El hijo de mi hermano es mi ___.",
+          "es": "El hijo de mi hermano es mi ___."
+        },
+        "options": [
+          "sobrino",
+          "tío",
+          "padre"
+        ],
+        "answer": "sobrino"
+      },
+      {
+        "id": "fa14",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "La hija de mi hermana es mi ___.",
+          "uk": "La hija de mi hermana es mi ___.",
+          "en": "La hija de mi hermana es mi ___.",
+          "es": "La hija de mi hermana es mi ___."
+        },
+        "options": [
+          "sobrina",
+          "abuela",
+          "madre"
+        ],
+        "answer": "sobrina"
+      },
+      {
+        "id": "fa15",
+        "tag": "possessive",
+        "prompt": {
+          "ru": "___ padres viven en Elche.",
+          "uk": "___ padres viven en Elche.",
+          "en": "___ padres viven en Elche.",
+          "es": "___ padres viven en Elche."
+        },
+        "options": [
+          "Mis",
+          "Mi",
+          "Nuestra"
+        ],
+        "answer": "Mis"
+      },
+      {
+        "id": "fa16",
+        "tag": "question",
+        "prompt": {
+          "ru": "¿Cómo se llama tu hermana? — ___ .",
+          "uk": "¿Cómo se llama tu hermana? — ___ .",
+          "en": "¿Cómo se llama tu hermana? — ___ .",
+          "es": "¿Cómo se llama tu hermana? — ___ ."
+        },
+        "options": [
+          "Se llama Ana",
+          "Me llamo Ana",
+          "Se llaman Ana"
+        ],
+        "answer": "Se llama Ana"
+      },
+      {
+        "id": "fa17",
+        "tag": "description",
+        "prompt": {
+          "ru": "Mi tía ___ en Alicante.",
+          "uk": "Mi tía ___ en Alicante.",
+          "en": "Mi tía ___ en Alicante.",
+          "es": "Mi tía ___ en Alicante."
+        },
+        "options": [
+          "vive",
+          "viven",
+          "vivo"
+        ],
+        "answer": "vive"
+      },
+      {
+        "id": "fa18",
+        "tag": "description",
+        "prompt": {
+          "ru": "Mis abuelos ___ en España.",
+          "uk": "Mis abuelos ___ en España.",
+          "en": "Mis abuelos ___ en España.",
+          "es": "Mis abuelos ___ en España."
+        },
+        "options": [
+          "viven",
+          "vive",
+          "vivo"
+        ],
+        "answer": "viven"
+      },
+      {
+        "id": "fa19",
+        "tag": "question",
+        "prompt": {
+          "ru": "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
+          "uk": "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
+          "en": "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
+          "es": "¿Tienes hijos? — Sí, tengo un hijo y una hija."
+        },
+        "options": [
+          "¿Tienes hijos? — Sí, tengo un hijo y una hija.",
+          "¿Tienes hijos? — Sí, tengo un hijo y una hija?",
+          "¿Tienes hijos? — Sí, tengo un hija y un hijo."
+        ],
+        "answer": "¿Tienes hijos? — Sí, tengo un hijo y una hija."
+      },
+      {
+        "id": "fa20",
+        "tag": "possessive",
+        "prompt": {
+          "ru": "___ familia es pequeña.",
+          "uk": "___ familia es pequeña.",
+          "en": "___ familia es pequeña.",
+          "es": "___ familia es pequeña."
+        },
+        "options": [
+          "Mi",
+          "Mis",
+          "Tu"
+        ],
+        "answer": "Mi"
       }
-    ]
+    ],
+    "ruleTags": {
+      "description": 3,
+      "possessive": 1,
+      "question": 2,
+      "vocabulary": 0
+    }
   }
 }
