@@ -663,8 +663,8 @@
     let i = 0;
     function show() {
       const q = items[i];
-      const visual = q.flagCode
-        ? `<span class="a1-word-visual"><img class="a1-word-flag" src="https://flagcdn.com/80x60/${esc(q.flagCode)}.png" width="80" height="60" alt="${esc(q.word)}" loading="lazy"></span>`
+      const visual = q.flagSrc
+        ? `<span class="a1-word-visual"><img class="a1-word-flag" src="${esc(q.flagSrc)}" width="80" height="60" alt="${esc(q.word)}"></span>`
         : q.icon
           ? `<span class="a1-word-visual" role="img" aria-label="${esc(q.word)}">${esc(q.icon)}</span>`
           : "";
