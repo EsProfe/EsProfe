@@ -661,7 +661,10 @@
     let i = 0;
     function show() {
       const q = k.items[i];
-      box.innerHTML = `<div class="a1-listen-card"><div class="a1-counter">${i + 1} / ${k.items.length}</div><button type="button" class="a1-audio" id="kAudio">${U().listen}</button><strong class="a1-gapword">${esc(q.display)}</strong><div class="a1-inline-options">${q.options.map((o) => `<button type="button" data-k-answer="${esc(o)}">${esc(o)}</button>`).join("")}</div><p id="kFeedback" aria-live="polite"></p></div>`;
+      const visual = q.icon
+        ? `<span class="a1-word-visual" role="img" aria-label="${esc(q.word)}">${esc(q.icon)}</span>`
+        : "";
+      box.innerHTML = `<div class="a1-listen-card"><div class="a1-counter">${i + 1} / ${k.items.length}</div>${visual}<button type="button" class="a1-audio" id="kAudio">${U().listen}</button><strong class="a1-gapword">${esc(q.display)}</strong><div class="a1-inline-options">${q.options.map((o) => `<button type="button" data-k-answer="${esc(o)}">${esc(o)}</button>`).join("")}</div><p id="kFeedback" aria-live="polite"></p></div>`;
       document.getElementById("kAudio").onclick = () => speak(q.word);
       box.querySelectorAll("[data-k-answer]").forEach(
         (b) =>
