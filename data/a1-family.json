@@ -452,15 +452,15 @@
         "id": "fa20",
         "tag": "possessive",
         "prompt": {
-          "ru": "___ familia es pequeña.",
-          "uk": "___ familia es pequeña.",
-          "en": "___ familia es pequeña.",
-          "es": "___ familia es pequeña."
+          "ru": "(yo) ___ familia es pequeña.",
+          "uk": "(yo) ___ familia es pequeña.",
+          "en": "(yo) ___ familia es pequeña.",
+          "es": "(yo) ___ familia es pequeña."
         },
         "options": [
           "Mi",
-          "Mis",
-          "Tu"
+          "Tu",
+          "Mis"
         ],
         "answer": "Mi"
       }
