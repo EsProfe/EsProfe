@@ -657,14 +657,18 @@
       );
     const k = lesson?.supplements?.kSound,
       box = document.getElementById("kExercise");
-    if (!k || !box) return;
+    if (!k || !box || !Array.isArray(k.items) || !k.items.length) return;
+    // A new random order is created every time the exercise is opened.
+    const items = shuffle(k.items);
     let i = 0;
     function show() {
-      const q = k.items[i];
-      const visual = q.icon
-        ? `<span class="a1-word-visual" role="img" aria-label="${esc(q.word)}">${esc(q.icon)}</span>`
-        : "";
-      box.innerHTML = `<div class="a1-listen-card"><div class="a1-counter">${i + 1} / ${k.items.length}</div>${visual}<button type="button" class="a1-audio" id="kAudio">${U().listen}</button><strong class="a1-gapword">${esc(q.display)}</strong><div class="a1-inline-options">${q.options.map((o) => `<button type="button" data-k-answer="${esc(o)}">${esc(o)}</button>`).join("")}</div><p id="kFeedback" aria-live="polite"></p></div>`;
+      const q = items[i];
+      const visual = q.flagCode
+        ? `<span class="a1-word-visual"><img class="a1-word-flag" src="https://flagcdn.com/80x60/${esc(q.flagCode)}.png" width="80" height="60" alt="${esc(q.word)}" loading="lazy"></span>`
+        : q.icon
+          ? `<span class="a1-word-visual" role="img" aria-label="${esc(q.word)}">${esc(q.icon)}</span>`
+          : "";
+      box.innerHTML = `<div class="a1-listen-card"><div class="a1-counter">${i + 1} / ${items.length}</div>${visual}<button type="button" class="a1-audio" id="kAudio">${U().listen}</button><strong class="a1-gapword">${esc(q.display)}</strong><div class="a1-inline-options">${q.options.map((o) => `<button type="button" data-k-answer="${esc(o)}">${esc(o)}</button>`).join("")}</div><p id="kFeedback" aria-live="polite"></p></div>`;
       document.getElementById("kAudio").onclick = () => speak(q.word);
       box.querySelectorAll("[data-k-answer]").forEach(
         (b) =>
@@ -683,7 +687,7 @@
               .forEach((x) => (x.disabled = true));
             speak(q.word);
             setTimeout(() => {
-              i = (i + 1) % k.items.length;
+              i = (i + 1) % items.length;
               show();
             }, 2500);
           }),
