@@ -309,6 +309,166 @@
           "a lado del"
         ],
         "answer": "al lado del"
+      },
+      {
+        "id": "cd11",
+        "tag": "ask",
+        "prompt": {
+          "ru": "Как вежливо спросить, где аптека?",
+          "uk": "Як ввічливо запитати, де аптека?",
+          "en": "How do you politely ask where the pharmacy is?",
+          "es": "¿Cómo preguntas con cortesía dónde está la farmacia?"
+        },
+        "options": [
+          "Perdona, ¿dónde está la farmacia?",
+          "La farmacia gira.",
+          "¿Dónde llega la farmacia?"
+        ],
+        "answer": "Perdona, ¿dónde está la farmacia?"
+      },
+      {
+        "id": "cd12",
+        "tag": "ask",
+        "prompt": {
+          "ru": "Как спросить путь к площади?",
+          "uk": "Як запитати шлях до площі?",
+          "en": "How do you ask for the way to the square?",
+          "es": "¿Cómo preguntas cómo llegar a la plaza?"
+        },
+        "options": [
+          "¿Cómo llego a la plaza?",
+          "¿Cómo está la plaza?",
+          "¿Dónde giro la plaza?"
+        ],
+        "answer": "¿Cómo llego a la plaza?"
+      },
+      {
+        "id": "cd13",
+        "tag": "straight",
+        "prompt": {
+          "ru": "Идите прямо до банка: Sigue ___ el banco.",
+          "uk": "Ідіть прямо до банку: Sigue ___ el banco.",
+          "en": "Go straight to the bank: Sigue ___ el banco.",
+          "es": "Sigue ___ el banco."
+        },
+        "options": [
+          "recto hasta",
+          "derecha hasta",
+          "cerca de"
+        ],
+        "answer": "recto hasta"
+      },
+      {
+        "id": "cd14",
+        "tag": "turn",
+        "prompt": {
+          "ru": "Поверни направо на перекрёстке.",
+          "uk": "Поверни праворуч на перехресті.",
+          "en": "Turn right at the crossroads.",
+          "es": "Gira a la derecha en el cruce."
+        },
+        "options": [
+          "Gira a la derecha.",
+          "Sigue a la derecha.",
+          "Llega a la derecha."
+        ],
+        "answer": "Gira a la derecha."
+      },
+      {
+        "id": "cd15",
+        "tag": "turn",
+        "prompt": {
+          "ru": "После банка поверни налево.",
+          "uk": "Після банку поверни ліворуч.",
+          "en": "After the bank, turn left.",
+          "es": "Después del banco, gira a la izquierda."
+        },
+        "options": [
+          "Después del banco, gira a la izquierda.",
+          "Después del banco, sigue izquierda.",
+          "Después del banco, llega izquierda."
+        ],
+        "answer": "Después del banco, gira a la izquierda."
+      },
+      {
+        "id": "cd16",
+        "tag": "location",
+        "prompt": {
+          "ru": "Почта напротив супермаркета.",
+          "uk": "Пошта навпроти супермаркету.",
+          "en": "The post office is opposite the supermarket.",
+          "es": "La oficina de correos está enfrente del supermercado."
+        },
+        "options": [
+          "La oficina de correos está enfrente del supermercado.",
+          "La oficina de correos está al supermercado.",
+          "La oficina de correos gira del supermercado."
+        ],
+        "answer": "La oficina de correos está enfrente del supermercado."
+      },
+      {
+        "id": "cd17",
+        "tag": "location",
+        "prompt": {
+          "ru": "El hotel está ___ estación.",
+          "uk": "El hotel está ___ estación.",
+          "en": "The hotel is near the station: El hotel está ___ estación.",
+          "es": "El hotel está ___ estación."
+        },
+        "options": [
+          "cerca de la",
+          "cerca la",
+          "enfrente la"
+        ],
+        "answer": "cerca de la"
+      },
+      {
+        "id": "cd18",
+        "tag": "straight",
+        "prompt": {
+          "ru": "Выбери естественный маршрут.",
+          "uk": "Обери природний маршрут.",
+          "en": "Choose the natural route.",
+          "es": "Elige el recorrido natural."
+        },
+        "options": [
+          "Sigue recto y gira a la izquierda.",
+          "Sigue izquierda y recto.",
+          "Gira recto a la izquierda."
+        ],
+        "answer": "Sigue recto y gira a la izquierda."
+      },
+      {
+        "id": "cd19",
+        "tag": "ask",
+        "prompt": {
+          "ru": "Как попросить повторить указание?",
+          "uk": "Як попросити повторити вказівку?",
+          "en": "How do you ask someone to repeat a direction?",
+          "es": "¿Cómo pides que repitan una indicación?"
+        },
+        "options": [
+          "¿Puede repetir, por favor?",
+          "¿Puede gira, por favor?",
+          "¿Dónde repetir, por favor?"
+        ],
+        "answer": "¿Puede repetir, por favor?"
+      },
+      {
+        "id": "cd20",
+        "tag": "location",
+        "prompt": {
+          "ru": "Музей рядом с площадью.",
+          "uk": "Музей поруч із площею.",
+          "en": "The museum is next to the square.",
+          "es": "El museo está al lado de la plaza."
+        },
+        "options": [
+          "El museo está al lado de la plaza.",
+          "El museo está al plaza lado.",
+          "El museo sigue la plaza."
+        ],
+        "answer": "El museo está al lado de la plaza."
       }
     ]
   }
