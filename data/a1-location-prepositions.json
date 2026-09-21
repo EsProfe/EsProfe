@@ -137,10 +137,10 @@
         "id": "lp01",
         "tag": "position",
         "prompt": {
-          "ru": "El gato está ___ la mesa.",
-          "uk": "El gato está ___ la mesa.",
-          "en": "El gato está ___ la mesa.",
-          "es": "El gato está ___ la mesa."
+          "ru": "Кот находится под столом. Выбери предлог: El gato está ___ la mesa.",
+          "uk": "Кіт під столом. Обери прийменник: El gato está ___ la mesa.",
+          "en": "The cat is under the table. Choose the preposition: El gato está ___ la mesa.",
+          "es": "El gato está en la parte inferior de la mesa. Elige la preposición: El gato está ___ la mesa."
         },
         "options": [
           "debajo de",
@@ -153,10 +153,10 @@
         "id": "lp02",
         "tag": "position",
         "prompt": {
-          "ru": "La lámpara está ___ la mesa.",
-          "uk": "La lámpara está ___ la mesa.",
-          "en": "La lámpara está ___ la mesa.",
-          "es": "La lámpara está ___ la mesa."
+          "ru": "Лампа стоит на столе. Выбери предлог: La lámpara está ___ la mesa.",
+          "uk": "Лампа стоїть на столі. Обери прийменник: La lámpara está ___ la mesa.",
+          "en": "The lamp is on the table. Choose the preposition: La lámpara está ___ la mesa.",
+          "es": "La lámpara está en la parte superior de la mesa. Elige la preposición: La lámpara está ___ la mesa."
         },
         "options": [
           "sobre",
@@ -169,10 +169,10 @@
         "id": "lp03",
         "tag": "relation",
         "prompt": {
-          "ru": "El banco está ___ la farmacia y el café.",
-          "uk": "El banco está ___ la farmacia y el café.",
-          "en": "El banco está ___ la farmacia y el café.",
-          "es": "El banco está ___ la farmacia y el café."
+          "ru": "Банк находится между аптекой и кафе. Выбери предлог: El banco está ___ la farmacia y el café.",
+          "uk": "Банк розташований між аптекою та кафе. Обери прийменник: El banco está ___ la farmacia y el café.",
+          "en": "The bank is between the pharmacy and the café. Choose the preposition: El banco está ___ la farmacia y el café.",
+          "es": "El banco está en medio de la farmacia y el café. Elige la preposición: El banco está ___ la farmacia y el café."
         },
         "options": [
           "entre",
@@ -265,10 +265,10 @@
         "id": "lp09",
         "tag": "relation",
         "prompt": {
-          "ru": "El baño está ___ dormitorio.",
-          "uk": "El baño está ___ dormitorio.",
-          "en": "El baño está ___ dormitorio.",
-          "es": "El baño está ___ dormitorio."
+          "ru": "Ванная находится рядом со спальней. Выбери правильную форму: El baño está ___ dormitorio.",
+          "uk": "Ванна кімната поруч зі спальнею. Обери правильну форму: El baño está ___ dormitorio.",
+          "en": "The bathroom is next to the bedroom. Choose the correct form: El baño está ___ dormitorio.",
+          "es": "El baño está junto al dormitorio. Elige la forma correcta: El baño está ___ dormitorio."
         },
         "options": [
           "al lado del",
