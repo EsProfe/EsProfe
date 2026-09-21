@@ -445,6 +445,25 @@
       ];
     return `<section class="a1-image-visual"><h3>${esc(t[0])}</h3><p>${esc(t[1])}</p><div class="a1-distance-visual">${cells.map(([place, meaning, model, icon]) => `<article><strong>${esc(place)}</strong><small>${esc(meaning)}</small><b>${esc(model)}</b><span>${icon}</span></article>`).join("")}</div></section>`;
   }
+  function tenerExpressionVisualHTML() {
+    if (lesson?.id !== "tener") return "";
+    const t = {
+      ru: ["TENER: ощущения и возраст", "В испанском с tener говорят о голоде, жажде, сне, жаре, холоде и возрасте.", "быть голодным", "хотеть пить", "хотеть спать", "испытывать жару", "испытывать холод", "быть в возрасте … лет"],
+      uk: ["TENER: відчуття й вік", "Іспанською з tener говорять про голод, спрагу, сон, спеку, холод і вік.", "бути голодним", "відчувати спрагу", "хотіти спати", "відчувати спеку", "відчувати холод", "мати … років"],
+      en: ["TENER: sensations and age", "Spanish uses tener for hunger, thirst, sleepiness, heat, cold and age.", "be hungry", "be thirsty", "be sleepy", "feel hot", "feel cold", "be … years old"],
+      es: ["TENER: sensaciones y edad", "En español usamos tener para hablar de hambre, sed, sueño, calor, frío y edad.", "tener hambre", "tener sed", "tener sueño", "tener calor", "tener frío", "tener … años"],
+    }[lang()] || [];
+    const cards = [
+      ["🍽️", "tener hambre", t[2]],
+      ["💧", "tener sed", t[3]],
+      ["😴", "tener sueño", t[4]],
+      ["☀️", "tener calor", t[5]],
+      ["❄️", "tener frío", t[6]],
+      ["🎂", "tener … años", t[7]],
+    ];
+    return `<section class="a1-tener-visual" aria-label="${esc(t[0])}"><h3>${esc(t[0])}</h3><p>${esc(t[1])}</p><div class="a1-tener-grid">${cards.map(([icon, phrase, meaning]) => `<article><span aria-hidden="true">${icon}</span><b>${esc(phrase)}</b><small>${esc(meaning)}</small></article>`).join("")}</div></section>`;
+  }
+
   function prepositionVisualHTML() {
     if (lesson?.id !== "prepositions-basic") return "";
     const t = {
@@ -702,7 +721,7 @@
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru;
     if (!t) return;
-    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p><div class="a1-rule-grid">${(t.rules || []).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
+    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p><div class="a1-rule-grid">${(t.rules || []).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${tenerExpressionVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
     document.getElementById("a1Examples").onclick = renderExamples;
     initSupplements();
     const vocabCards=[...r.querySelectorAll(".a1-vocab-card")];
