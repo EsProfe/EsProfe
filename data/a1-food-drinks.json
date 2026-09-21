@@ -131,7 +131,88 @@
         "nextTitle": "Siguiente lección: Compras y precios"
       }
     },
-    "flashcards": [["el pan","хлеб","хліб","bread","pan","🍞"],["el agua","вода","вода","water","agua","💧"],["el café","кофе","кава","coffee","café","☕"],["la leche","молоко","молоко","milk","leche","🥛"],["el té","чай","чай","tea","té","🍵"],["la manzana","яблоко","яблуко","apple","manzana","🍎"],["el plátano","банан","банан","banana","plátano","🍌"],["el pollo","курица","курка","chicken","pollo","🍗"],["la ensalada","салат","салат","salad","ensalada","🥗"],["el queso","сыр","сир","cheese","queso","🧀"]],
+    "flashcards": [
+      [
+        "el pan",
+        "хлеб",
+        "хліб",
+        "bread",
+        "pan",
+        "🍞"
+      ],
+      [
+        "el agua",
+        "вода",
+        "вода",
+        "water",
+        "agua",
+        "💧"
+      ],
+      [
+        "el café",
+        "кофе",
+        "кава",
+        "coffee",
+        "café",
+        "☕"
+      ],
+      [
+        "la leche",
+        "молоко",
+        "молоко",
+        "milk",
+        "leche",
+        "🥛"
+      ],
+      [
+        "el té",
+        "чай",
+        "чай",
+        "tea",
+        "té",
+        "🍵"
+      ],
+      [
+        "la manzana",
+        "яблоко",
+        "яблуко",
+        "apple",
+        "manzana",
+        "🍎"
+      ],
+      [
+        "el plátano",
+        "банан",
+        "банан",
+        "banana",
+        "plátano",
+        "🍌"
+      ],
+      [
+        "el pollo",
+        "курица",
+        "курка",
+        "chicken",
+        "pollo",
+        "🍗"
+      ],
+      [
+        "la ensalada",
+        "салат",
+        "салат",
+        "salad",
+        "ensalada",
+        "🥗"
+      ],
+      [
+        "el queso",
+        "сыр",
+        "сир",
+        "cheese",
+        "queso",
+        "🧀"
+      ]
+    ],
     "examples": [
       {
         "word": "Tengo hambre.",
@@ -310,6 +391,166 @@
           "carne"
         ],
         "answer": "fruta"
+      },
+      {
+        "id": "fd11",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Tengo hambre. Quiero ___.",
+          "uk": "Я голодний. Хочу ___.",
+          "en": "I am hungry. I want ___.",
+          "es": "Tengo hambre. Quiero ___."
+        },
+        "options": [
+          "comer",
+          "beber",
+          "dormir"
+        ],
+        "answer": "comer"
+      },
+      {
+        "id": "fd12",
+        "tag": "quantity",
+        "prompt": {
+          "ru": "Un vaso de ___.",
+          "uk": "Склянка ___.",
+          "en": "A glass of ___.",
+          "es": "Un vaso de ___."
+        },
+        "options": [
+          "zumo",
+          "pan",
+          "arroz"
+        ],
+        "answer": "zumo"
+      },
+      {
+        "id": "fd13",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "El queso es un ___.",
+          "uk": "Сир — це ___.",
+          "en": "Cheese is a ___.",
+          "es": "El queso es un ___."
+        },
+        "options": [
+          "alimento",
+          "bebida",
+          "fruta"
+        ],
+        "answer": "alimento"
+      },
+      {
+        "id": "fd14",
+        "tag": "order",
+        "prompt": {
+          "ru": "Для меня один бутерброд, пожалуйста.",
+          "uk": "Для мене один бутерброд, будь ласка.",
+          "en": "For me, one sandwich, please.",
+          "es": "Para mí, un bocadillo, por favor."
+        },
+        "options": [
+          "Para mí, un bocadillo, por favor.",
+          "Para yo, un bocadillo, por favor.",
+          "Para mí, una bocadillo, por favor."
+        ],
+        "answer": "Para mí, un bocadillo, por favor."
+      },
+      {
+        "id": "fd15",
+        "tag": "question",
+        "prompt": {
+          "ru": "Как спросить «Ты хочешь есть?»",
+          "uk": "Як запитати «Ти хочеш їсти?»",
+          "en": "How do you ask “Do you want to eat?”",
+          "es": "Elige la pregunta correcta."
+        },
+        "options": [
+          "¿Quieres comer?",
+          "¿Quieres comes?",
+          "¿Querer comer?"
+        ],
+        "answer": "¿Quieres comer?"
+      },
+      {
+        "id": "fd16",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Bebemos ___.",
+          "uk": "Ми п’ємо ___.",
+          "en": "We drink ___.",
+          "es": "Bebemos ___."
+        },
+        "options": [
+          "agua",
+          "carne",
+          "pan"
+        ],
+        "answer": "agua"
+      },
+      {
+        "id": "fd17",
+        "tag": "quantity",
+        "prompt": {
+          "ru": "Quiero una ___ de café.",
+          "uk": "Я хочу чашку кави.",
+          "en": "I want a cup of coffee.",
+          "es": "Quiero una ___ de café."
+        },
+        "options": [
+          "taza",
+          "botella",
+          "plato"
+        ],
+        "answer": "taza"
+      },
+      {
+        "id": "fd18",
+        "tag": "order",
+        "prompt": {
+          "ru": "Выбери правильный заказ.",
+          "uk": "Обери правильне замовлення.",
+          "en": "Choose the correct order.",
+          "es": "Elige el pedido correcto."
+        },
+        "options": [
+          "Dos aguas, por favor.",
+          "Dos agua, por favor.",
+          "Dos aguas por favora."
+        ],
+        "answer": "Dos aguas, por favor."
+      },
+      {
+        "id": "fd19",
+        "tag": "question",
+        "prompt": {
+          "ru": "¿Qué quieres comer? — ___ .",
+          "uk": "Що ти хочеш з’їсти? — ___ .",
+          "en": "What do you want to eat? — ___.",
+          "es": "¿Qué quieres comer? — ___."
+        },
+        "options": [
+          "Quiero una ensalada.",
+          "Quieres una ensalada.",
+          "Quiere una ensalada."
+        ],
+        "answer": "Quiero una ensalada."
+      },
+      {
+        "id": "fd20",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "El arroz es un ___.",
+          "uk": "Рис — це ___.",
+          "en": "Rice is a ___.",
+          "es": "El arroz es un ___."
+        },
+        "options": [
+          "alimento",
+          "bebida",
+          "fruta"
+        ],
+        "answer": "alimento"
       }
     ]
   }
