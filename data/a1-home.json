@@ -391,6 +391,166 @@
           "puerta"
         ],
         "answer": "silla"
+      },
+      {
+        "id": "ho11",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Кухня»",
+          "uk": "«Кухня»",
+          "en": "“Kitchen”",
+          "es": "Elige la palabra correcta."
+        },
+        "options": [
+          "cocina",
+          "baño",
+          "dormitorio"
+        ],
+        "answer": "cocina"
+      },
+      {
+        "id": "ho12",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Ванная комната»",
+          "uk": "«Ванна кімната»",
+          "en": "“Bathroom”",
+          "es": "Elige la palabra correcta."
+        },
+        "options": [
+          "baño",
+          "salón",
+          "cocina"
+        ],
+        "answer": "baño"
+      },
+      {
+        "id": "ho13",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Выбери слово, которое подходит: Dormimos en el ___.",
+          "uk": "Обери слово, яке підходить: Dormimos en el ___.",
+          "en": "Choose the word that fits: Dormimos en el ___.",
+          "es": "Dormimos en el ___."
+        },
+        "options": [
+          "dormitorio",
+          "balcón",
+          "garaje"
+        ],
+        "answer": "dormitorio"
+      },
+      {
+        "id": "ho14",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Диван»",
+          "uk": "«Диван»",
+          "en": "“Sofa”",
+          "es": "Elige la palabra correcta."
+        },
+        "options": [
+          "sofá",
+          "espejo",
+          "techo"
+        ],
+        "answer": "sofá"
+      },
+      {
+        "id": "ho15",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Выбери слово, которое подходит: Miramos la televisión en el ___.",
+          "uk": "Обери слово, яке підходить: Miramos la televisión en el ___.",
+          "en": "Choose the word that fits: Miramos la televisión en el ___.",
+          "es": "Miramos la televisión en el ___."
+        },
+        "options": [
+          "salón",
+          "baño",
+          "ascensor"
+        ],
+        "answer": "salón"
+      },
+      {
+        "id": "ho16",
+        "tag": "location",
+        "prompt": {
+          "ru": "Выбери правильное испанское предложение: «Книга на столе».",
+          "uk": "Обери правильне іспанське речення: «Книжка на столі».",
+          "en": "Choose the correct Spanish sentence: “The book is on the table.”",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "El libro está sobre la mesa.",
+          "El libro es sobre la mesa.",
+          "El libro está en la mesa."
+        ],
+        "answer": "El libro está sobre la mesa."
+      },
+      {
+        "id": "ho17",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Балкон»",
+          "uk": "«Балкон»",
+          "en": "“Balcony”",
+          "es": "Elige la palabra correcta."
+        },
+        "options": [
+          "balcón",
+          "techo",
+          "suelo"
+        ],
+        "answer": "balcón"
+      },
+      {
+        "id": "ho18",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Выбери слово, которое подходит: El espejo está en el ___.",
+          "uk": "Обери слово, яке підходить: El espejo está en el ___.",
+          "en": "Choose the word that fits: El espejo está en el ___.",
+          "es": "El espejo está en el ___."
+        },
+        "options": [
+          "baño",
+          "garaje",
+          "ascensor"
+        ],
+        "answer": "baño"
+      },
+      {
+        "id": "ho19",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "«Лестница»",
+          "uk": "«Сходи»",
+          "en": "“Stairs”",
+          "es": "Elige la palabra correcta."
+        },
+        "options": [
+          "escaleras",
+          "paredes",
+          "plato"
+        ],
+        "answer": "escaleras"
+      },
+      {
+        "id": "ho20",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Выбери правильную форму: El ascensor está en el ___ piso.",
+          "uk": "Обери правильну форму: El ascensor está en el ___ piso.",
+          "en": "Choose the correct form: El ascensor está en el ___ piso.",
+          "es": "El ascensor está en el ___ piso."
+        },
+        "options": [
+          "primer",
+          "primera",
+          "primero"
+        ],
+        "answer": "primer"
       }
     ],
     "activeRecall": true
