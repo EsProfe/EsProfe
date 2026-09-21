@@ -721,6 +721,19 @@
     }
     show();
   }
+  function questionWordsVisualHTML(t) {
+    const layout = t.questionWordTables;
+    if (lesson?.id !== "question-words" || !layout) return "";
+    const table = (title, rows, kind) =>
+      `<article class="a1-question-words-table a1-question-words-${kind}"><h3>${esc(title)}</h3><div>${rows
+        .map(([left, right]) => `<p><b>${esc(left)}</b><span>${esc(right)}</span></p>`)
+        .join("")}</div></article>`;
+    return `<div class="a1-question-words-grid">${table(
+      t.rules?.[0]?.[0] || "",
+      layout.words || [],
+      "words",
+    )}${table(t.rules?.[1]?.[0] || "", layout.questions || [], "questions")}</div>`;
+  }
   function renderExplanation() {
     if (!lesson) return;
     remember("explanation");
@@ -728,7 +741,7 @@
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru;
     if (!t) return;
-    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p><div class="a1-rule-grid">${(t.rules || []).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${tenerExpressionVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
+    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p>${questionWordsVisualHTML(t)}<div class="a1-rule-grid">${(t.questionWordTables ? (t.rules || []).slice(2) : (t.rules || [])).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${tenerExpressionVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
     document.getElementById("a1Examples").onclick = renderExamples;
     initSupplements();
     const vocabCards=[...r.querySelectorAll(".a1-vocab-card")];
