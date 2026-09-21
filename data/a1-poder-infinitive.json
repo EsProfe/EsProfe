@@ -309,6 +309,166 @@
           "Ana no pueden quedarse hoy."
         ],
         "answer": "Ana no puede quedarse hoy."
+      },
+      {
+        "id": "po11",
+        "tag": "conjugation",
+        "prompt": {
+          "ru": "Выбери правильную форму: (yo) ___ hablar español.",
+          "uk": "Обери правильну форму: (yo) ___ hablar español.",
+          "en": "Choose the correct form: (yo) ___ hablar español.",
+          "es": "(yo) ___ hablar español."
+        },
+        "options": [
+          "puedo",
+          "puedes",
+          "puede"
+        ],
+        "answer": "puedo"
+      },
+      {
+        "id": "po12",
+        "tag": "conjugation",
+        "prompt": {
+          "ru": "Выбери правильную форму: (tú) ___ abrir la puerta.",
+          "uk": "Обери правильну форму: (tú) ___ abrir la puerta.",
+          "en": "Choose the correct form: (tú) ___ abrir la puerta.",
+          "es": "(tú) ___ abrir la puerta."
+        },
+        "options": [
+          "puedes",
+          "puedo",
+          "pueden"
+        ],
+        "answer": "puedes"
+      },
+      {
+        "id": "po13",
+        "tag": "conjugation",
+        "prompt": {
+          "ru": "Выбери правильную форму: (ella) no ___ venir hoy.",
+          "uk": "Обери правильну форму: (ella) no ___ venir hoy.",
+          "en": "Choose the correct form: (ella) no ___ venir hoy.",
+          "es": "(ella) no ___ venir hoy."
+        },
+        "options": [
+          "puede",
+          "puedo",
+          "podemos"
+        ],
+        "answer": "puede"
+      },
+      {
+        "id": "po14",
+        "tag": "conjugation",
+        "prompt": {
+          "ru": "Выбери правильную форму: (nosotros) ___ esperar aquí.",
+          "uk": "Обери правильну форму: (nosotros) ___ esperar aquí.",
+          "en": "Choose the correct form: (nosotros) ___ esperar aquí.",
+          "es": "(nosotros) ___ esperar aquí."
+        },
+        "options": [
+          "podemos",
+          "podéis",
+          "pueden"
+        ],
+        "answer": "podemos"
+      },
+      {
+        "id": "po15",
+        "tag": "conjugation",
+        "prompt": {
+          "ru": "Выбери правильную форму: (vosotros) ___ sentaros aquí.",
+          "uk": "Обери правильну форму: (vosotros) ___ sentaros aquí.",
+          "en": "Choose the correct form: (vosotros) ___ sentaros aquí.",
+          "es": "(vosotros) ___ sentaros aquí."
+        },
+        "options": [
+          "podéis",
+          "podemos",
+          "pueden"
+        ],
+        "answer": "podéis"
+      },
+      {
+        "id": "po16",
+        "tag": "structure",
+        "prompt": {
+          "ru": "Выбери правильное испанское предложение: «Мы можем заплатить картой».",
+          "uk": "Обери правильне іспанське речення: «Ми можемо заплатити карткою».",
+          "en": "Choose the correct Spanish sentence: “We can pay by card.”",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Podemos pagar con tarjeta.",
+          "Podemos pagamos con tarjeta.",
+          "Podemos a pagar con tarjeta."
+        ],
+        "answer": "Podemos pagar con tarjeta."
+      },
+      {
+        "id": "po17",
+        "tag": "infinitive",
+        "prompt": {
+          "ru": "Выбери правильную форму: ¿Puedes ___ más despacio?",
+          "uk": "Обери правильну форму: ¿Puedes ___ más despacio?",
+          "en": "Choose the correct form: ¿Puedes ___ más despacio?",
+          "es": "¿Puedes ___ más despacio?"
+        },
+        "options": [
+          "hablar",
+          "hablas",
+          "hablando"
+        ],
+        "answer": "hablar"
+      },
+      {
+        "id": "po18",
+        "tag": "negation",
+        "prompt": {
+          "ru": "Выбери правильное испанское предложение: «Сегодня мы не можем прийти».",
+          "uk": "Обери правильне іспанське речення: «Сьогодні ми не можемо прийти».",
+          "en": "Choose the correct Spanish sentence: “We cannot come today.”",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Hoy no podemos venir.",
+          "Hoy no podemos venimos.",
+          "Hoy no podemos a venir."
+        ],
+        "answer": "Hoy no podemos venir."
+      },
+      {
+        "id": "po19",
+        "tag": "question",
+        "prompt": {
+          "ru": "Выбери правильный вопрос: «Можете ли вы помочь мне?» (обращение на вы к нескольким людям)",
+          "uk": "Обери правильне запитання: «Чи можете ви мені допомогти?» (звертання до кількох людей)",
+          "en": "Choose the correct question: “Can you help me?” (addressing several people)",
+          "es": "Elige la pregunta correcta."
+        },
+        "options": [
+          "¿Podéis ayudarme?",
+          "¿Podemos ayudarme?",
+          "¿Podéis ayudáisme?"
+        ],
+        "answer": "¿Podéis ayudarme?"
+      },
+      {
+        "id": "po20",
+        "tag": "conjugation",
+        "prompt": {
+          "ru": "Выбери правильную форму: (ellos) ___ nadar muy bien.",
+          "uk": "Обери правильну форму: (ellos) ___ nadar muy bien.",
+          "en": "Choose the correct form: (ellos) ___ nadar muy bien.",
+          "es": "(ellos) ___ nadar muy bien."
+        },
+        "options": [
+          "pueden",
+          "podemos",
+          "podéis"
+        ],
+        "answer": "pueden"
       }
     ]
   }
