@@ -1494,15 +1494,16 @@
 .a1-tener-grid b { color: #123b7a; font-size: 1.02rem; }
 .a1-tener-grid small { color: #526174; font-weight: 600; }
 .a1-tener-visual h4 { margin: 24px 0 10px; color: #123b7a; font-size: 1.05rem; }
-.a1-tener-extra { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; }
-.a1-tener-extra article { display: grid; grid-template-columns: 26px minmax(0, 1.25fr) minmax(0, 1fr); align-items: center; column-gap: 8px; min-width: 0; padding: 9px 4px; border-bottom: 1px solid #dbe7f7; font-family: inherit; font-size: .95rem; line-height: 1.35; }
-.a1-tener-extra article:last-child { border-bottom-color: #dbe7f7; }
+.a1-tener-extra { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.a1-tener-extra section { display: grid; align-content: start; padding: 10px 14px; border: 1px solid #c9dcf6; border-radius: 14px; background: #fff; }
+.a1-tener-extra section > div { display: grid; grid-template-columns: 26px minmax(0, 1.25fr) minmax(0, 1fr); align-items: center; column-gap: 8px; min-width: 0; padding: 9px 0; border-bottom: 1px solid #dbe7f7; font-family: inherit; font-size: .95rem; line-height: 1.35; }
+.a1-tener-extra section > div:last-child { border-bottom: 0; }
 .a1-tener-extra span { grid-column: 1; font-size: 1.15rem; line-height: 1; }
 .a1-tener-extra b, .a1-tener-extra small { min-width: 0; font-family: inherit; font-size: inherit; line-height: inherit; }
 .a1-tener-extra b { grid-column: 2; color: #123b7a; font-weight: 700; }
 .a1-tener-extra small { grid-column: 3; color: #526174; font-weight: 500; }
-@media (max-width: 760px) { .a1-tener-extra { grid-template-columns: 1fr; gap: 0; } }
-@media (max-width: 620px) { .a1-tener-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a1-tener-extra article { grid-template-columns: 24px minmax(0, 1.2fr) minmax(0, 1fr); font-size: .88rem; column-gap: 6px; } }
+@media (max-width: 760px) { .a1-tener-extra { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .a1-tener-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a1-tener-extra section > div { grid-template-columns: 24px minmax(0, 1.2fr) minmax(0, 1fr); font-size: .88rem; column-gap: 6px; } }
 
 
 .a1-tener-illustration {
