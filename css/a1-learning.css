@@ -1515,3 +1515,49 @@
   background: #fff;
   box-shadow: 0 8px 22px rgb(16 24 40 / 8%);
 }
+
+
+/* Question words: paired columns keep the prompt and its meaning aligned. */
+.a1-question-words-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 12px;
+}
+.a1-question-words-table {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #d7e2f0;
+  border-radius: 14px;
+  background: #fff;
+}
+.a1-question-words-table h3 { margin: 0 0 10px; color: #172033; }
+.a1-question-words-table > div { display: grid; gap: 0; }
+.a1-question-words-table p {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  margin: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #e4edf8;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+.a1-question-words-table p:last-child { border-bottom: 0; }
+.a1-question-words-table b,
+.a1-question-words-table span { min-width: 0; font: inherit; }
+.a1-question-words-table b { color: #123b7a; font-weight: 700; }
+.a1-question-words-table span { color: #344054; font-weight: 500; }
+@media (max-width: 720px) {
+  .a1-question-words-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 460px) {
+  .a1-question-words-table { padding: 12px; }
+  .a1-question-words-table p {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 8px;
+    font-size: .94rem;
+  }
+}
