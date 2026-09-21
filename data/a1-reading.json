@@ -431,34 +431,12 @@
           "en": "On Saturday the opening hours are “10:00–14:00”. What time does it close?",
           "es": "El sábado: 10:00–14:00. ¿A qué hora cierra?"
         },
-        "optionsByLang": {
-          "ru": [
-            "14:00",
-            "10:00",
-            "20:00"
-          ],
-          "uk": [
-            "14:00",
-            "10:00",
-            "20:00"
-          ],
-          "en": [
-            "14:00",
-            "10:00",
-            "20:00"
-          ],
-          "es": [
-            "14:00",
-            "10:00",
-            "20:00"
-          ]
-        },
-        "answers": {
-          "ru": "14:00",
-          "uk": "14:00",
-          "en": "14:00",
-          "es": "14:00"
-        }
+        "options": [
+          "A las catorce.",
+          "A las diez.",
+          "A las veinte."
+        ],
+        "answer": "A las catorce."
       },
       {
         "id": "re7",
