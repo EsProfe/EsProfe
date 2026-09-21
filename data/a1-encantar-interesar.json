@@ -404,10 +404,10 @@
         "id": "ei17",
         "tag": "meaning",
         "prompt": {
-          "ru": "Me encanta cocinar.",
-          "uk": "Me encanta cocinar.",
-          "en": "Me encanta cocinar.",
-          "es": "Me encanta cocinar."
+          "ru": "Выбери правильное испанское предложение: «Я люблю готовить».",
+          "uk": "Обери правильне іспанське речення: «Я люблю готувати».",
+          "en": "Choose the correct Spanish sentence: “I love cooking.”",
+          "es": "Elige la frase correcta: «Me encanta cocinar»."
         },
         "options": [
           "Me encanta cocinar.",
@@ -420,10 +420,10 @@
         "id": "ei18",
         "tag": "meaning",
         "prompt": {
-          "ru": "Nos interesan los idiomas.",
-          "uk": "Nos interesan los idiomas.",
-          "en": "Nos interesan los idiomas.",
-          "es": "Nos interesan los idiomas."
+          "ru": "Выбери правильное испанское предложение: «Нас интересуют языки».",
+          "uk": "Обери правильне іспанське речення: «Нас цікавлять мови».",
+          "en": "Choose the correct Spanish sentence: “Languages interest us.”",
+          "es": "Elige la frase correcta: «Nos interesan los idiomas»."
         },
         "options": [
           "Nos interesan los idiomas.",
