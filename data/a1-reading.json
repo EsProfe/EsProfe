@@ -241,12 +241,34 @@
           "en": "Read: “Hola, Marta. Estoy en la cafetería de la plaza. Te espero hasta las seis. — Daniel”. Who writes the message?",
           "es": "Lee el mensaje. ¿Quién escribe?"
         },
-        "options": [
-          "Daniel",
-          "Marta",
-          "El camarero"
-        ],
-        "answer": "Daniel"
+        "optionsByLang": {
+          "ru": [
+            "Даниэль",
+            "Марта",
+            "Официант"
+          ],
+          "uk": [
+            "Даніель",
+            "Марта",
+            "Офіціант"
+          ],
+          "en": [
+            "Daniel",
+            "Marta",
+            "The waiter"
+          ],
+          "es": [
+            "Daniel",
+            "Marta",
+            "El camarero"
+          ]
+        },
+        "answers": {
+          "ru": "Даниэль",
+          "uk": "Даніель",
+          "en": "Daniel",
+          "es": "Daniel"
+        }
       },
       {
         "id": "re2",
@@ -257,12 +279,34 @@
           "en": "Where is Daniel? “Estoy en la cafetería de la plaza.”",
           "es": "¿Dónde está Daniel?"
         },
-        "options": [
-          "En la cafetería de la plaza.",
-          "En la estación.",
-          "En el museo."
-        ],
-        "answer": "En la cafetería de la plaza."
+        "optionsByLang": {
+          "ru": [
+            "В кафе на площади.",
+            "На станции.",
+            "В музее."
+          ],
+          "uk": [
+            "У кафе на площі.",
+            "На станції.",
+            "У музеї."
+          ],
+          "en": [
+            "At the café in the square.",
+            "At the station.",
+            "At the museum."
+          ],
+          "es": [
+            "En la cafetería de la plaza.",
+            "En la estación.",
+            "En el museo."
+          ]
+        },
+        "answers": {
+          "ru": "В кафе на площади.",
+          "uk": "У кафе на площі.",
+          "en": "At the café in the square.",
+          "es": "En la cafetería de la plaza."
+        }
       },
       {
         "id": "re3",
@@ -311,12 +355,34 @@
           "en": "Read the schedule: “Lunes a viernes: 9:00–20:00”. When is it open?",
           "es": "Lee el horario. ¿Cuándo está abierto?"
         },
-        "options": [
-          "De lunes a viernes, de 9:00 a 20:00.",
-          "Los domingos, de 9:00 a 20:00.",
-          "Los sábados, hasta las 20:00."
-        ],
-        "answer": "De lunes a viernes, de 9:00 a 20:00."
+        "optionsByLang": {
+          "ru": [
+            "С понедельника по пятницу, 9:00–20:00.",
+            "По воскресеньям, 9:00–20:00.",
+            "По субботам до 20:00."
+          ],
+          "uk": [
+            "З понеділка по п’ятницю, 9:00–20:00.",
+            "Щонеділі, 9:00–20:00.",
+            "Щосуботи до 20:00."
+          ],
+          "en": [
+            "Monday to Friday, 9:00–20:00.",
+            "On Sundays, 9:00–20:00.",
+            "On Saturdays until 20:00."
+          ],
+          "es": [
+            "De lunes a viernes, de 9:00 a 20:00.",
+            "Los domingos, de 9:00 a 20:00.",
+            "Los sábados, hasta las 20:00."
+          ]
+        },
+        "answers": {
+          "ru": "С понедельника по пятницу, 9:00–20:00.",
+          "uk": "З понеділка по п’ятницю, 9:00–20:00.",
+          "en": "Monday to Friday, 9:00–20:00.",
+          "es": "De lunes a viernes, de 9:00 a 20:00."
+        }
       },
       {
         "id": "re5",
@@ -327,12 +393,34 @@
           "en": "“Cerrado los domingos” means:",
           "es": "¿Qué significa «Cerrado los domingos»?"
         },
-        "options": [
-          "По воскресеньям закрыто.",
-          "По воскресеньям открыто.",
-          "Открыто до воскресенья."
-        ],
-        "answer": "По воскресеньям закрыто."
+        "optionsByLang": {
+          "ru": [
+            "По воскресеньям закрыто.",
+            "По воскресеньям открыто.",
+            "Открыто до воскресенья."
+          ],
+          "uk": [
+            "Щонеділі зачинено.",
+            "Щонеділі відчинено.",
+            "Відчинено до неділі."
+          ],
+          "en": [
+            "Closed on Sundays.",
+            "Open on Sundays.",
+            "Open until Sunday."
+          ],
+          "es": [
+            "Cerrado los domingos.",
+            "Abierto los domingos.",
+            "Abierto hasta el domingo."
+          ]
+        },
+        "answers": {
+          "ru": "По воскресеньям закрыто.",
+          "uk": "Щонеділі зачинено.",
+          "en": "Closed on Sundays.",
+          "es": "Cerrado los domingos."
+        }
       },
       {
         "id": "re6",
@@ -381,12 +469,34 @@
           "en": "Read: “Mamá: hay comida en la nevera.” What is at home?",
           "es": "¿Qué hay en casa?"
         },
-        "options": [
-          "Comida en la nevera.",
-          "Una cafetería.",
-          "Un museo."
-        ],
-        "answer": "Comida en la nevera."
+        "optionsByLang": {
+          "ru": [
+            "Еда в холодильнике.",
+            "Кафе.",
+            "Музей."
+          ],
+          "uk": [
+            "Їжа в холодильнику.",
+            "Кафе.",
+            "Музей."
+          ],
+          "en": [
+            "Food in the fridge.",
+            "A café.",
+            "A museum."
+          ],
+          "es": [
+            "Comida en la nevera.",
+            "Una cafetería.",
+            "Un museo."
+          ]
+        },
+        "answers": {
+          "ru": "Еда в холодильнике.",
+          "uk": "Їжа в холодильнику.",
+          "en": "Food in the fridge.",
+          "es": "Comida en la nevera."
+        }
       },
       {
         "id": "re8",
@@ -435,12 +545,34 @@
           "en": "What does hasta mean?",
           "es": "¿Qué significa hasta?"
         },
-        "options": [
-          "до",
-          "с",
-          "сегодня"
-        ],
-        "answer": "до"
+        "optionsByLang": {
+          "ru": [
+            "до",
+            "с",
+            "сегодня"
+          ],
+          "uk": [
+            "до",
+            "з",
+            "сьогодні"
+          ],
+          "en": [
+            "until",
+            "from",
+            "today"
+          ],
+          "es": [
+            "hasta",
+            "desde",
+            "hoy"
+          ]
+        },
+        "answers": {
+          "ru": "до",
+          "uk": "до",
+          "en": "until",
+          "es": "hasta"
+        }
       },
       {
         "id": "re10",
@@ -451,12 +583,34 @@
           "en": "What does desde mean?",
           "es": "¿Qué significa desde?"
         },
-        "options": [
-          "с",
-          "до",
-          "завтра"
-        ],
-        "answer": "с"
+        "optionsByLang": {
+          "ru": [
+            "с",
+            "до",
+            "завтра"
+          ],
+          "uk": [
+            "з",
+            "до",
+            "завтра"
+          ],
+          "en": [
+            "from",
+            "until",
+            "tomorrow"
+          ],
+          "es": [
+            "desde",
+            "hasta",
+            "mañana"
+          ]
+        },
+        "answers": {
+          "ru": "с",
+          "uk": "з",
+          "en": "from",
+          "es": "desde"
+        }
       },
       {
         "id": "re11",
@@ -467,12 +621,34 @@
           "en": "Read: “Nos vemos mañana en la estación.” What is the arrangement?",
           "es": "¿Cuál es el acuerdo?"
         },
-        "options": [
-          "Встретиться завтра на станции.",
-          "Встретиться сегодня в музее.",
-          "Ждать дома до восьми."
-        ],
-        "answer": "Встретиться завтра на станции."
+        "optionsByLang": {
+          "ru": [
+            "Встретиться завтра на станции.",
+            "Встретиться сегодня в музее.",
+            "Ждать дома до восьми."
+          ],
+          "uk": [
+            "Зустрітися завтра на станції.",
+            "Зустрітися сьогодні в музеї.",
+            "Чекати вдома до восьмої."
+          ],
+          "en": [
+            "Meet tomorrow at the station.",
+            "Meet today at the museum.",
+            "Wait at home until eight."
+          ],
+          "es": [
+            "Quedar mañana en la estación.",
+            "Quedar hoy en el museo.",
+            "Esperar en casa hasta las ocho."
+          ]
+        },
+        "answers": {
+          "ru": "Встретиться завтра на станции.",
+          "uk": "Зустрітися завтра на станції.",
+          "en": "Meet tomorrow at the station.",
+          "es": "Quedar mañana en la estación."
+        }
       },
       {
         "id": "re12",
@@ -483,12 +659,34 @@
           "en": "In “en la cafetería de la plaza”, what place is named?",
           "es": "¿Qué lugar se nombra?"
         },
-        "options": [
-          "Кафе на площади.",
-          "Аптека рядом с банком.",
-          "Станция у музея."
-        ],
-        "answer": "Кафе на площади."
+        "optionsByLang": {
+          "ru": [
+            "Кафе на площади.",
+            "Аптека рядом с банком.",
+            "Станция у музея."
+          ],
+          "uk": [
+            "Кафе на площі.",
+            "Аптека поруч із банком.",
+            "Станція біля музею."
+          ],
+          "en": [
+            "A café in the square.",
+            "A pharmacy next to the bank.",
+            "A station by the museum."
+          ],
+          "es": [
+            "La cafetería de la plaza.",
+            "Una farmacia junto al banco.",
+            "La estación junto al museo."
+          ]
+        },
+        "answers": {
+          "ru": "Кафе на площади.",
+          "uk": "Кафе на площі.",
+          "en": "A café in the square.",
+          "es": "La cafetería de la plaza."
+        }
       }
     ]
   }
