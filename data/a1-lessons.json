@@ -475,6 +475,11 @@
             "sin sonido de h",
             "con h fuerte",
             "como j"
+          ],
+          "ru": [
+            "без звука h",
+            "с сильным h",
+            "как j"
           ]
         }
       },
@@ -514,6 +519,11 @@
             "[θ] en la mayor parte de España y [s] en la mayor parte de Hispanoamérica",
             "solo [k]",
             "solo [t]"
+          ],
+          "ru": [
+            "[θ] в большей части Испании и [s] в большей части Латинской Америки",
+            "только [k]",
+            "только [t]"
           ]
         }
       }
