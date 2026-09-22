@@ -1561,3 +1561,45 @@
     font-size: .94rem;
   }
 }
+
+
+/* Numbers: each Spanish form is paired with its interface-language meaning. */
+.a1-numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 12px;
+}
+.a1-numbers-table {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #d7e2f0;
+  border-radius: 14px;
+  background: #fff;
+}
+.a1-numbers-table h3 { margin: 0 0 10px; color: #172033; }
+.a1-numbers-table > div { display: grid; gap: 0; }
+.a1-numbers-table p {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr);
+  gap: 12px;
+  align-items: baseline;
+  margin: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #e4edf8;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.32;
+}
+.a1-numbers-table p:last-child { border-bottom: 0; }
+.a1-numbers-table b,
+.a1-numbers-table span { min-width: 0; font: inherit; }
+.a1-numbers-table b { color: #123b7a; font-weight: 700; }
+.a1-numbers-table span { color: #344054; font-weight: 500; }
+@media (max-width: 720px) {
+  .a1-numbers-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 460px) {
+  .a1-numbers-table { padding: 12px; }
+  .a1-numbers-table p { gap: 8px; font-size: .94rem; }
+}
