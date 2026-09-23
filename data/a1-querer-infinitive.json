@@ -309,6 +309,166 @@
           "Ana no quieren trabajar hoy."
         ],
         "answer": "Ana no quiere trabajar hoy."
+      },
+      {
+        "id": "qi11",
+        "tag": "form",
+        "prompt": {
+          "ru": "(vosotros) ___ ver una serie.",
+          "uk": "(vosotros) ___ ver una serie.",
+          "en": "(vosotros) ___ ver una serie.",
+          "es": "(vosotros) ___ ver una serie."
+        },
+        "options": [
+          "queréis",
+          "queremos",
+          "quieren"
+        ],
+        "answer": "queréis"
+      },
+      {
+        "id": "qi12",
+        "tag": "form",
+        "prompt": {
+          "ru": "(ella) ___ aprender español.",
+          "uk": "(ella) ___ aprender español.",
+          "en": "(ella) ___ aprender español.",
+          "es": "(ella) ___ aprender español."
+        },
+        "options": [
+          "quiere",
+          "quiero",
+          "queremos"
+        ],
+        "answer": "quiere"
+      },
+      {
+        "id": "qi13",
+        "tag": "form",
+        "prompt": {
+          "ru": "(yo) quiero ___ (viajar) a Valencia.",
+          "uk": "(yo) quiero ___ (viajar) a Valencia.",
+          "en": "(yo) quiero ___ (viajar) a Valencia.",
+          "es": "(yo) quiero ___ (viajar) a Valencia."
+        },
+        "options": [
+          "viajar",
+          "viajo",
+          "viajando"
+        ],
+        "answer": "viajar"
+      },
+      {
+        "id": "qi14",
+        "tag": "form",
+        "prompt": {
+          "ru": "(ellos) quieren ___ (visitar) el museo.",
+          "uk": "(ellos) quieren ___ (visitar) el museo.",
+          "en": "(ellos) quieren ___ (visitar) el museo.",
+          "es": "(ellos) quieren ___ (visitar) el museo."
+        },
+        "options": [
+          "visitar",
+          "visitan",
+          "visitando"
+        ],
+        "answer": "visitar"
+      },
+      {
+        "id": "qi15",
+        "tag": "form",
+        "prompt": {
+          "ru": "¿Quieres ver una película?",
+          "uk": "¿Quieres ver una película?",
+          "en": "¿Quieres ver una película?",
+          "es": "¿Quieres ver una película?"
+        },
+        "options": [
+          "¿Quieres ver una película?",
+          "¿Quieres ves una película?",
+          "¿Quieres ver una película"
+        ],
+        "answer": "¿Quieres ver una película?"
+      },
+      {
+        "id": "qi16",
+        "tag": "form",
+        "prompt": {
+          "ru": "(nosotros) No ___ salir hoy.",
+          "uk": "(nosotros) No ___ salir hoy.",
+          "en": "(nosotros) No ___ salir hoy.",
+          "es": "(nosotros) No ___ salir hoy."
+        },
+        "options": [
+          "queremos",
+          "queréis",
+          "quieren"
+        ],
+        "answer": "queremos"
+      },
+      {
+        "id": "qi17",
+        "tag": "form",
+        "prompt": {
+          "ru": "(tú) ___ llamar a Carlos.",
+          "uk": "(tú) ___ llamar a Carlos.",
+          "en": "(tú) ___ llamar a Carlos.",
+          "es": "(tú) ___ llamar a Carlos."
+        },
+        "options": [
+          "quieres",
+          "quiere",
+          "quiero"
+        ],
+        "answer": "quieres"
+      },
+      {
+        "id": "qi18",
+        "tag": "form",
+        "prompt": {
+          "ru": "Mi amiga quiere ___.",
+          "uk": "Mi amiga quiere ___.",
+          "en": "Mi amiga quiere ___.",
+          "es": "Mi amiga quiere ___."
+        },
+        "options": [
+          "estudiar",
+          "estudia",
+          "estudiando"
+        ],
+        "answer": "estudiar"
+      },
+      {
+        "id": "qi19",
+        "tag": "form",
+        "prompt": {
+          "ru": "¿Queréis ir al cine? — Sí, ___.",
+          "uk": "¿Queréis ir al cine? — Sí, ___.",
+          "en": "¿Queréis ir al cine? — Sí, ___.",
+          "es": "¿Queréis ir al cine? — Sí, ___."
+        },
+        "options": [
+          "queremos ir al cine",
+          "queréis ir al cine",
+          "quieren ir al cine"
+        ],
+        "answer": "queremos ir al cine"
+      },
+      {
+        "id": "qi20",
+        "tag": "form",
+        "prompt": {
+          "ru": "Luis no ___ ver la televisión.",
+          "uk": "Luis no ___ ver la televisión.",
+          "en": "Luis no ___ ver la televisión.",
+          "es": "Luis no ___ ver la televisión."
+        },
+        "options": [
+          "quiere",
+          "quieres",
+          "quieren"
+        ],
+        "answer": "quiere"
       }
     ]
   }
