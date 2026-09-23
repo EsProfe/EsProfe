@@ -1846,3 +1846,124 @@
   .a1-stepper button { min-width: 96px; font-size: .74rem; }
   .a1-question-card h2 { font-size: 1.36rem; }
 }
+
+
+/* A1 route card system: predictable scan order and equal visual weight. */
+.a1-route {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0;
+}
+.a1-route-summary,
+.a1-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px 18px;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 17px 18px;
+  border: 1px solid var(--a1-line);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffffff, #f8fbff);
+  box-shadow: 0 3px 10px rgb(28 62 105 / 3%);
+}
+.a1-module {
+  margin: 18px 0;
+  padding: 19px;
+  border-color: var(--a1-line);
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(28 62 105 / 3%);
+}
+.a1-module-head {
+  min-height: 48px;
+  gap: 13px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e8eef6;
+}
+.a1-module-head > span {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+}
+.a1-module-head strong,
+.a1-module-head h2,
+.a1-module-head h3 {
+  margin: 0;
+  color: var(--a1-ink);
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+.a1-topic-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 13px;
+  margin-top: 16px;
+}
+.a1-topic-card {
+  min-height: 154px;
+  padding: 16px;
+  border-color: var(--a1-line);
+  border-radius: 16px;
+  box-shadow: none;
+}
+.a1-topic-card.ready {
+  background: #fff;
+  border-color: #bfd4f3;
+}
+.a1-topic-card.ready:hover {
+  transform: translateY(-2px);
+  border-color: #6ea3ec;
+  box-shadow: 0 8px 18px rgb(28 62 105 / 9%);
+}
+.a1-topic-card.done {
+  background: #fbfffc;
+  border-color: #b9dfc2;
+}
+.a1-topic-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--a1-blue-soft);
+}
+.a1-topic-copy {
+  min-height: 120px;
+  gap: 8px;
+}
+.a1-topic-copy strong {
+  font-size: 1.03rem;
+  line-height: 1.26;
+}
+.a1-topic-description {
+  font-size: .91rem;
+  line-height: 1.4;
+}
+.a1-topic-card small {
+  padding-top: 2px;
+  font-size: .82rem;
+}
+.a1-future-modules {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+.a1-future-module {
+  min-height: 70px;
+  padding: 12px 13px;
+  border-color: #e1e9f3;
+  border-radius: 13px;
+}
+@media (max-width: 760px) {
+  .a1-route { padding: 0; }
+  .a1-route-summary,
+  .a1-flow {
+    grid-template-columns: 1fr;
+    margin-bottom: 14px;
+    padding: 15px;
+  }
+  .a1-module {
+    margin: 14px 0;
+    padding: 15px;
+    border-radius: 17px;
+  }
+  .a1-topic-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 13px; }
+  .a1-topic-card { min-height: 132px; }
+  .a1-topic-copy { min-height: 0; }
+}
