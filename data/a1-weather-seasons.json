@@ -1,1 +1,590 @@
-{"weather-seasons":{"level":"A1","moduleId":"a1-vocabulary","nextLessonId":"free-time","ruleTags":{"weather":0,"season":1,"temperature":2,"question":3,"vocabulary":4},"i18n":{"ru":{"title":"Погода и времена года","goal":"Цель: описать простую погоду и назвать время года.","intro":"Для погоды в испанском часто используется hacer, hay и estar: Hace sol. Hay nubes. Está nublado.","rules":[["Основные слова","el sol — солнце\nla lluvia — дождь\nla nieve — снег\nel viento — ветер\nlas nubes — облака\nel calor — жара\nel frío — холод\nla tormenta — гроза\nel paraguas — зонт\nel abrigo — пальто"],["Времена года","la primavera — весна\nel verano — лето\nel otoño — осень\nel invierno — зима"],["HACE + погода","Для погоды используем hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nНо:\nLlueve. — Идёт дождь.\nNieva. — Идёт снег."],["Вопрос","¿Qué tiempo hace? — Какая погода?"]],"examplesTitle":"Послушай модели","practiceTitle":"Выбери слово","trainerTitle":"Тренировка","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: свободное время"},"uk":{"title":"Погода й пори року","goal":"Мета: описати просту погоду та назвати пору року.","intro":"Для погоди в іспанській часто використовуються hacer, hay та estar: Hace sol. Hay nubes. Está nublado.","rules":[["Основні слова","el sol — сонце\nla lluvia — дощ\nla nieve — сніг\nel viento — вітер\nlas nubes — хмари\nel calor — спека\nel frío — холод\nla tormenta — гроза\nel paraguas — парасолька\nel abrigo — пальто"],["Пори року","la primavera — весна\nel verano — літо\nel otoño — осінь\nel invierno — зима"],["HACE + погода","Для погоди використовуємо hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nАле:\nLlueve. — Іде дощ.\nNieva. — Іде сніг."],["Питання","¿Qué tiempo hace? — Яка погода?"]],"examplesTitle":"Послухай моделі","practiceTitle":"Обери слово","trainerTitle":"Тренування","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: вільний час"},"en":{"title":"Weather and seasons","goal":"Goal: describe simple weather and name a season.","intro":"Spanish often uses hacer, hay and estar for weather: Hace sol. Hay nubes. Está nublado.","rules":[["Core words","el sol — sun\nla lluvia — rain\nla nieve — snow\nel viento — wind\nlas nubes — clouds\nel calor — heat\nel frío — cold\nla tormenta — storm\nel paraguas — umbrella\nel abrigo — coat"],["Seasons","la primavera — spring\nel verano — summer\nel otoño — autumn\nel invierno — winter"],["HACE + weather","For weather use hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nBut:\nLlueve. — It is raining.\nNieva. — It is snowing."],["Question","¿Qué tiempo hace? — What is the weather like?"]],"examplesTitle":"Listen to the patterns","practiceTitle":"Choose the word","trainerTitle":"Trainer","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: free time"},"es":{"title":"El tiempo y las estaciones","goal":"Objetivo: describir el tiempo sencillo y nombrar una estación.","intro":"Para hablar del tiempo usamos a menudo hacer, hay y estar: Hace sol. Hay nubes. Está nublado.","rules":[["Palabras básicas","el sol\nla lluvia\nla nieve\nel viento\nlas nubes\nel calor\nel frío\nla tormenta\nel paraguas\nel abrigo"],["Las estaciones","la primavera\nel verano\nel otoño\nel invierno"],["HACE + tiempo","Para hablar del tiempo usamos hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nPero:\nLlueve.\nNieva."],["Pregunta","¿Qué tiempo hace?"]],"examplesTitle":"Escucha los modelos","practiceTitle":"Elige la palabra","trainerTitle":"Entrenador","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: tiempo libre"}},"flashcards":[["el sol","солнце","сонце","sun","sol","☀️"],["la lluvia","дождь","дощ","rain","lluvia","🌧️"],["la nieve","снег","сніг","snow","nieve","❄️"],["el viento","ветер","вітер","wind","viento","💨"],["las nubes","облака","хмари","clouds","nubes","☁️"],["el calor","жара","спека","heat","calor","🥵"],["el frío","холод","холод","cold","frío","🥶"],["la tormenta","гроза","гроза","storm","tormenta","⛈️"],["el paraguas","зонт","парасолька","umbrella","paraguas","☂️"],["el abrigo","пальто","пальто","coat","abrigo","🧥"],["la primavera","весна","весна","spring","primavera","🌸"],["el verano","лето","літо","summer","verano","🏖️"],["el otoño","осень","осінь","autumn","otoño","🍂"],["el invierno","зима","зима","winter","⛄","🎄"]],"examples":[{"word":"Hoy hace sol.","tag":"weather"},{"word":"En invierno hace frío.","tag":"temperature"},{"word":"Llueve mucho en otoño.","tag":"weather"},{"word":"¿Qué tiempo hace?","tag":"question"}],"questionBank":[{"id":"we01","tag":"weather","prompt":{"ru":"Солнечно: ___ sol.","uk":"Сонячно: ___ sol.","en":"It is sunny: ___ sol.","es":"___ sol."},"options":["Hace","Hay","Está"],"answer":"Hace"},{"id":"we02","tag":"weather","prompt":{"ru":"«Идёт дождь»","uk":"«Іде дощ»","en":"“It is raining”","es":"Elige la frase correcta."},"options":["Llueve.","Hace lluvia.","Está lluvia."],"answer":"Llueve."},{"id":"we03","tag":"temperature","prompt":{"ru":"Холодно: Hace ___.","uk":"Холодно: Hace ___.","en":"It is cold: Hace ___.","es":"Hace ___."},"options":["frío","sol","nubes"],"answer":"frío"},{"id":"we04","tag":"season","prompt":{"ru":"Лето: el ___.","uk":"Літо: el ___.","en":"Summer: el ___.","es":"El ___."},"options":["verano","invierno","otoño"],"answer":"verano"},{"id":"we05","tag":"question","prompt":{"ru":"Как спросить «Какая погода?»","uk":"Як запитати «Яка погода?»","en":"How do you ask “What is the weather like?”","es":"Elige la pregunta correcta."},"options":["¿Qué tiempo hace?","¿Qué hace tiempo?","¿Dónde tiempo hace?"],"answer":"¿Qué tiempo hace?"},{"id":"we06","tag":"weather","prompt":{"ru":"Hay ___: облачно.","uk":"Hay ___: хмарно.","en":"Hay ___: it is cloudy.","es":"Hay ___."},"options":["nubes","viento","calor"],"answer":"nubes"},{"id":"we07","tag":"season","prompt":{"ru":"Зима: el ___.","uk":"Зима: el ___.","en":"Winter: el ___.","es":"El ___."},"options":["invierno","verano","otoño"],"answer":"invierno"},{"id":"we08","tag":"vocabulary","prompt":{"ru":"Что берём в дождь?","uk":"Що беремо в дощ?","en":"What do we take in the rain?","es":"¿Qué llevamos cuando llueve?"},"options":["El paraguas.","El abrigo.","El sol."],"answer":"El paraguas."},{"id":"we09","tag":"temperature","prompt":{"ru":"«Жарко»: Hace ___.","uk":"«Спекотно»: Hace ___.","en":"“It is hot”: Hace ___.","es":"Hace ___."},"options":["calor","nieve","paraguas"],"answer":"calor"},{"id":"we10","tag":"season","prompt":{"ru":"Весна: la ___.","uk":"Весна: la ___.","en":"Spring: la ___.","es":"La ___."},"options":["primavera","tormenta","lluvia"],"answer":"primavera"}]}}
+{
+  "weather-seasons": {
+    "level": "A1",
+    "moduleId": "a1-vocabulary",
+    "nextLessonId": "free-time",
+    "ruleTags": {
+      "weather": 0,
+      "season": 1,
+      "temperature": 2,
+      "question": 3,
+      "vocabulary": 4
+    },
+    "i18n": {
+      "ru": {
+        "title": "Погода и времена года",
+        "goal": "Цель: описать простую погоду и назвать время года.",
+        "intro": "Для погоды в испанском часто используется hacer, hay и estar: Hace sol. Hay nubes. Está nublado.",
+        "rules": [
+          [
+            "Основные слова",
+            "el sol — солнце\nla lluvia — дождь\nla nieve — снег\nel viento — ветер\nlas nubes — облака\nel calor — жара\nel frío — холод\nla tormenta — гроза\nel paraguas — зонт\nel abrigo — пальто"
+          ],
+          [
+            "Времена года",
+            "la primavera — весна\nel verano — лето\nel otoño — осень\nel invierno — зима"
+          ],
+          [
+            "HACE + погода",
+            "Для погоды используем hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nНо:\nLlueve. — Идёт дождь.\nNieva. — Идёт снег."
+          ],
+          [
+            "Вопрос",
+            "¿Qué tiempo hace? — Какая погода?"
+          ]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери слово",
+        "trainerTitle": "Тренировка",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: свободное время"
+      },
+      "uk": {
+        "title": "Погода й пори року",
+        "goal": "Мета: описати просту погоду та назвати пору року.",
+        "intro": "Для погоди в іспанській часто використовуються hacer, hay та estar: Hace sol. Hay nubes. Está nublado.",
+        "rules": [
+          [
+            "Основні слова",
+            "el sol — сонце\nla lluvia — дощ\nla nieve — сніг\nel viento — вітер\nlas nubes — хмари\nel calor — спека\nel frío — холод\nla tormenta — гроза\nel paraguas — парасолька\nel abrigo — пальто"
+          ],
+          [
+            "Пори року",
+            "la primavera — весна\nel verano — літо\nel otoño — осінь\nel invierno — зима"
+          ],
+          [
+            "HACE + погода",
+            "Для погоди використовуємо hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nАле:\nLlueve. — Іде дощ.\nNieva. — Іде сніг."
+          ],
+          [
+            "Питання",
+            "¿Qué tiempo hace? — Яка погода?"
+          ]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери слово",
+        "trainerTitle": "Тренування",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: вільний час"
+      },
+      "en": {
+        "title": "Weather and seasons",
+        "goal": "Goal: describe simple weather and name a season.",
+        "intro": "Spanish often uses hacer, hay and estar for weather: Hace sol. Hay nubes. Está nublado.",
+        "rules": [
+          [
+            "Core words",
+            "el sol — sun\nla lluvia — rain\nla nieve — snow\nel viento — wind\nlas nubes — clouds\nel calor — heat\nel frío — cold\nla tormenta — storm\nel paraguas — umbrella\nel abrigo — coat"
+          ],
+          [
+            "Seasons",
+            "la primavera — spring\nel verano — summer\nel otoño — autumn\nel invierno — winter"
+          ],
+          [
+            "HACE + weather",
+            "For weather use hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nBut:\nLlueve. — It is raining.\nNieva. — It is snowing."
+          ],
+          [
+            "Question",
+            "¿Qué tiempo hace? — What is the weather like?"
+          ]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the word",
+        "trainerTitle": "Trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: free time"
+      },
+      "es": {
+        "title": "El tiempo y las estaciones",
+        "goal": "Objetivo: describir el tiempo sencillo y nombrar una estación.",
+        "intro": "Para hablar del tiempo usamos a menudo hacer, hay y estar: Hace sol. Hay nubes. Está nublado.",
+        "rules": [
+          [
+            "Palabras básicas",
+            "el sol\nla lluvia\nla nieve\nel viento\nlas nubes\nel calor\nel frío\nla tormenta\nel paraguas\nel abrigo"
+          ],
+          [
+            "Las estaciones",
+            "la primavera\nel verano\nel otoño\nel invierno"
+          ],
+          [
+            "HACE + tiempo",
+            "Para hablar del tiempo usamos hace + calor / frío / sol / viento:\nHace calor.\nHace frío.\nHace sol.\nHace viento.\nPero:\nLlueve.\nNieva."
+          ],
+          [
+            "Pregunta",
+            "¿Qué tiempo hace?"
+          ]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la palabra",
+        "trainerTitle": "Entrenador",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: tiempo libre"
+      }
+    },
+    "flashcards": [
+      [
+        "el sol",
+        "солнце",
+        "сонце",
+        "sun",
+        "sol",
+        "☀️"
+      ],
+      [
+        "la lluvia",
+        "дождь",
+        "дощ",
+        "rain",
+        "lluvia",
+        "🌧️"
+      ],
+      [
+        "la nieve",
+        "снег",
+        "сніг",
+        "snow",
+        "nieve",
+        "❄️"
+      ],
+      [
+        "el viento",
+        "ветер",
+        "вітер",
+        "wind",
+        "viento",
+        "💨"
+      ],
+      [
+        "las nubes",
+        "облака",
+        "хмари",
+        "clouds",
+        "nubes",
+        "☁️"
+      ],
+      [
+        "el calor",
+        "жара",
+        "спека",
+        "heat",
+        "calor",
+        "🥵"
+      ],
+      [
+        "el frío",
+        "холод",
+        "холод",
+        "cold",
+        "frío",
+        "🥶"
+      ],
+      [
+        "la tormenta",
+        "гроза",
+        "гроза",
+        "storm",
+        "tormenta",
+        "⛈️"
+      ],
+      [
+        "el paraguas",
+        "зонт",
+        "парасолька",
+        "umbrella",
+        "paraguas",
+        "☂️"
+      ],
+      [
+        "el abrigo",
+        "пальто",
+        "пальто",
+        "coat",
+        "abrigo",
+        "🧥"
+      ],
+      [
+        "la primavera",
+        "весна",
+        "весна",
+        "spring",
+        "primavera",
+        "🌸"
+      ],
+      [
+        "el verano",
+        "лето",
+        "літо",
+        "summer",
+        "verano",
+        "🏖️"
+      ],
+      [
+        "el otoño",
+        "осень",
+        "осінь",
+        "autumn",
+        "otoño",
+        "🍂"
+      ],
+      [
+        "el invierno",
+        "зима",
+        "зима",
+        "winter",
+        "⛄",
+        "🎄"
+      ]
+    ],
+    "examples": [
+      {
+        "word": "Hoy hace sol.",
+        "tag": "weather"
+      },
+      {
+        "word": "En invierno hace frío.",
+        "tag": "temperature"
+      },
+      {
+        "word": "Llueve mucho en otoño.",
+        "tag": "weather"
+      },
+      {
+        "word": "¿Qué tiempo hace?",
+        "tag": "question"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "we01",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Солнечно: ___ sol.",
+          "uk": "Сонячно: ___ sol.",
+          "en": "It is sunny: ___ sol.",
+          "es": "___ sol."
+        },
+        "options": [
+          "Hace",
+          "Hay",
+          "Está"
+        ],
+        "answer": "Hace"
+      },
+      {
+        "id": "we02",
+        "tag": "weather",
+        "prompt": {
+          "ru": "«Идёт дождь»",
+          "uk": "«Іде дощ»",
+          "en": "“It is raining”",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Llueve.",
+          "Hace lluvia.",
+          "Está lluvia."
+        ],
+        "answer": "Llueve."
+      },
+      {
+        "id": "we03",
+        "tag": "temperature",
+        "prompt": {
+          "ru": "Холодно: Hace ___.",
+          "uk": "Холодно: Hace ___.",
+          "en": "It is cold: Hace ___.",
+          "es": "Hace ___."
+        },
+        "options": [
+          "frío",
+          "sol",
+          "nubes"
+        ],
+        "answer": "frío"
+      },
+      {
+        "id": "we04",
+        "tag": "season",
+        "prompt": {
+          "ru": "Лето: el ___.",
+          "uk": "Літо: el ___.",
+          "en": "Summer: el ___.",
+          "es": "El ___."
+        },
+        "options": [
+          "verano",
+          "invierno",
+          "otoño"
+        ],
+        "answer": "verano"
+      },
+      {
+        "id": "we05",
+        "tag": "question",
+        "prompt": {
+          "ru": "Как спросить «Какая погода?»",
+          "uk": "Як запитати «Яка погода?»",
+          "en": "How do you ask “What is the weather like?”",
+          "es": "Elige la pregunta correcta."
+        },
+        "options": [
+          "¿Qué tiempo hace?",
+          "¿Qué hace tiempo?",
+          "¿Dónde tiempo hace?"
+        ],
+        "answer": "¿Qué tiempo hace?"
+      },
+      {
+        "id": "we06",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Hay ___: облачно.",
+          "uk": "Hay ___: хмарно.",
+          "en": "Hay ___: it is cloudy.",
+          "es": "Hay ___."
+        },
+        "options": [
+          "nubes",
+          "viento",
+          "calor"
+        ],
+        "answer": "nubes"
+      },
+      {
+        "id": "we07",
+        "tag": "season",
+        "prompt": {
+          "ru": "Зима: el ___.",
+          "uk": "Зима: el ___.",
+          "en": "Winter: el ___.",
+          "es": "El ___."
+        },
+        "options": [
+          "invierno",
+          "verano",
+          "otoño"
+        ],
+        "answer": "invierno"
+      },
+      {
+        "id": "we08",
+        "tag": "vocabulary",
+        "prompt": {
+          "ru": "Что берём в дождь?",
+          "uk": "Що беремо в дощ?",
+          "en": "What do we take in the rain?",
+          "es": "¿Qué llevamos cuando llueve?"
+        },
+        "options": [
+          "El paraguas.",
+          "El abrigo.",
+          "El sol."
+        ],
+        "answer": "El paraguas."
+      },
+      {
+        "id": "we09",
+        "tag": "temperature",
+        "prompt": {
+          "ru": "«Жарко»: Hace ___.",
+          "uk": "«Спекотно»: Hace ___.",
+          "en": "“It is hot”: Hace ___.",
+          "es": "Hace ___."
+        },
+        "options": [
+          "calor",
+          "nieve",
+          "paraguas"
+        ],
+        "answer": "calor"
+      },
+      {
+        "id": "we10",
+        "tag": "season",
+        "prompt": {
+          "ru": "Весна: la ___.",
+          "uk": "Весна: la ___.",
+          "en": "Spring: la ___.",
+          "es": "La ___."
+        },
+        "options": [
+          "primavera",
+          "tormenta",
+          "lluvia"
+        ],
+        "answer": "primavera"
+      },
+      {
+        "id": "we11",
+        "tag": "weather",
+        "prompt": {
+          "ru": "___ viento.",
+          "uk": "___ viento.",
+          "en": "___ viento.",
+          "es": "___ viento."
+        },
+        "options": [
+          "Hace",
+          "Hay",
+          "Es"
+        ],
+        "answer": "Hace"
+      },
+      {
+        "id": "we12",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Elige: it is snowing.",
+          "uk": "Elige: it is snowing.",
+          "en": "Elige: it is snowing.",
+          "es": "Elige: it is snowing."
+        },
+        "options": [
+          "Nieva.",
+          "Hace nieve.",
+          "Está nieve."
+        ],
+        "answer": "Nieva."
+      },
+      {
+        "id": "we13",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Hace ___: it is cool.",
+          "uk": "Hace ___: it is cool.",
+          "en": "Hace ___: it is cool.",
+          "es": "Hace ___: it is cool."
+        },
+        "options": [
+          "fresco",
+          "calor",
+          "sol"
+        ],
+        "answer": "fresco"
+      },
+      {
+        "id": "we14",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Autumn: el ___.",
+          "uk": "Autumn: el ___.",
+          "en": "Autumn: el ___.",
+          "es": "Autumn: el ___."
+        },
+        "options": [
+          "otoño",
+          "verano",
+          "invierno"
+        ],
+        "answer": "otoño"
+      },
+      {
+        "id": "we15",
+        "tag": "weather",
+        "prompt": {
+          "ru": "¿Qué tiempo hace? — ___.",
+          "uk": "¿Qué tiempo hace? — ___.",
+          "en": "¿Qué tiempo hace? — ___.",
+          "es": "¿Qué tiempo hace? — ___."
+        },
+        "options": [
+          "Hace buen tiempo.",
+          "Tengo buen tiempo.",
+          "Soy buen tiempo."
+        ],
+        "answer": "Hace buen tiempo."
+      },
+      {
+        "id": "we16",
+        "tag": "weather",
+        "prompt": {
+          "ru": "How do you say “It is raining today”?",
+          "uk": "How do you say “It is raining today”?",
+          "en": "How do you say “It is raining today”?",
+          "es": "How do you say “It is raining today”?"
+        },
+        "options": [
+          "Hoy llueve.",
+          "Hoy hace lluvia.",
+          "Hoy está lluvia."
+        ],
+        "answer": "Hoy llueve."
+      },
+      {
+        "id": "we17",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Which season comes after spring?",
+          "uk": "Which season comes after spring?",
+          "en": "Which season comes after spring?",
+          "es": "Which season comes after spring?"
+        },
+        "options": [
+          "el verano",
+          "el invierno",
+          "el otoño"
+        ],
+        "answer": "el verano"
+      },
+      {
+        "id": "we18",
+        "tag": "weather",
+        "prompt": {
+          "ru": "¿Qué llevamos cuando hace frío?",
+          "uk": "¿Qué llevamos cuando hace frío?",
+          "en": "¿Qué llevamos cuando hace frío?",
+          "es": "¿Qué llevamos cuando hace frío?"
+        },
+        "options": [
+          "El abrigo.",
+          "El paraguas.",
+          "El sol."
+        ],
+        "answer": "El abrigo."
+      },
+      {
+        "id": "we19",
+        "tag": "weather",
+        "prompt": {
+          "ru": "Elige la frase correcta.",
+          "uk": "Elige la frase correcta.",
+          "en": "Elige la frase correcta.",
+          "es": "Elige la frase correcta."
+        },
+        "options": [
+          "Hoy hace mucho calor.",
+          "Hoy es mucho calor.",
+          "Hoy hay mucho calor."
+        ],
+        "answer": "Hoy hace mucho calor."
+      },
+      {
+        "id": "we20",
+        "tag": "weather",
+        "prompt": {
+          "ru": "¿Cómo preguntas si está lloviendo?",
+          "uk": "¿Cómo preguntas si está lloviendo?",
+          "en": "¿Cómo preguntas si está lloviendo?",
+          "es": "¿Cómo preguntas si está lloviendo?"
+        },
+        "options": [
+          "¿Llueve?",
+          "¿Hace lluvia?",
+          "¿Está lluvia?"
+        ],
+        "answer": "¿Llueve?"
+      }
+    ]
+  }
+}
