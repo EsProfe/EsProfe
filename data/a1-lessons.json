@@ -458,7 +458,8 @@
         "answers": {
           "uk": "без звуку h",
           "en": "without an h sound",
-          "es": "sin sonido de h"
+          "es": "sin sonido de h",
+          "ru": "без звука h"
         },
         "optionsByLang": {
           "uk": [
@@ -502,7 +503,8 @@
         "answers": {
           "uk": "[θ] у більшій частині Іспанії та [s] у більшій частині Латинської Америки",
           "en": "[θ] in most of Spain and [s] in most of Latin America",
-          "es": "[θ] en la mayor parte de España y [s] en la mayor parte de Hispanoamérica"
+          "es": "[θ] en la mayor parte de España y [s] en la mayor parte de Hispanoamérica",
+          "ru": "[θ] в большей части Испании и [s] в большей части Латинской Америки"
         },
         "optionsByLang": {
           "uk": [
