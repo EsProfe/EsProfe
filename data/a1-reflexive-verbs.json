@@ -3,94 +3,1864 @@
     "level": "A1",
     "moduleId": "a1-verbs-04",
     "nextLessonId": "reflexive-present",
-    "ruleTags": {"forms": 0, "position": 1, "agreement": 2, "meaning": 3},
+    "ruleTags": {
+      "forms": 0,
+      "position": 1,
+      "agreement": 2,
+      "meaning": 3
+    },
     "i18n": {
-      "ru": {"title":"Возвратные местоимения: me, te, se, nos, os, se","goal":"Цель: узнавать возвратные местоимения и выбирать их по лицу подлежащего.","intro":"Возвратное местоимение показывает, что действие направлено на самого исполнителя: me llamo Ana — «я называю себя Аной». В испанском оно меняется вместе с лицом глагола.","rules":[["Шесть форм","me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."],["Перед спрягаемой формой","В presente местоимение обычно стоит перед глаголом: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."],["Местоимение и лицо совпадают","Выбирай местоимение по лицу: nosotros nos llamamos; ellas se llaman. Se одинаково для 3-го лица единственного и множественного числа."],["Не переводим механически","На A1 запоминаем частые модели целиком: llamarse, levantarse, acostarse, ducharse."]],"examplesTitle":"Послушай возвратные модели","practiceTitle":"Выбери возвратное местоимение","trainerTitle":"Тренировка возвратных местоимений","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: возвратные глаголы в presente"},
-      "uk": {"title":"Зворотні займенники: me, te, se, nos, os, se","goal":"Мета: упізнавати зворотні займенники та обирати їх за особою підмета.","intro":"Зворотний займенник показує, що дія спрямована на самого виконавця: me llamo Ana — «я називаю себе Аною». В іспанській він змінюється разом з особою дієслова.","rules":[["Шість форм","me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."],["Перед дієвідмінюваною формою","У presente займенник зазвичай стоїть перед дієсловом: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."],["Займенник і особа збігаються","Обирай займенник за особою: nosotros nos llamamos; ellas se llaman. Se однакове для 3-ї особи однини й множини."],["Не перекладаємо механічно","На A1 запам’ятовуємо часті моделі цілком: llamarse, levantarse, acostarse, ducharse."]],"examplesTitle":"Послухай зворотні моделі","practiceTitle":"Обери зворотний займенник","trainerTitle":"Тренування зворотних займенників","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: зворотні дієслова в presente"},
-      "en": {"title":"Reflexive pronouns: me, te, se, nos, os, se","goal":"Goal: recognise reflexive pronouns and choose them according to the subject.","intro":"A reflexive pronoun shows that the action returns to its performer: me llamo Ana literally means “I call myself Ana”. In Spanish, it changes with the person of the verb.","rules":[["Six forms","me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."],["Before the conjugated verb","In the present tense the pronoun normally comes before the verb: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."],["The pronoun matches the person","Choose the pronoun by person: nosotros nos llamamos; ellas se llaman. Se is used for both singular and plural third person."],["Do not translate mechanically","At A1, learn frequent patterns as whole units: llamarse, levantarse, acostarse, ducharse."]],"examplesTitle":"Listen to reflexive patterns","practiceTitle":"Choose the reflexive pronoun","trainerTitle":"Reflexive-pronoun trainer","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: reflexive verbs in the present tense"},
-      "es": {"title":"Pronombres reflexivos: me, te, se, nos, os, se","goal":"Objetivo: reconocer los pronombres reflexivos y elegirlos según el sujeto.","intro":"Un pronombre reflexivo indica que la acción recae sobre quien la realiza: me llamo Ana. En español cambia con la persona del verbo.","rules":[["Seis formas","me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."],["Delante del verbo conjugado","En presente el pronombre suele ir delante del verbo: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."],["El pronombre concuerda con la persona","Elige el pronombre según la persona: nosotros nos llamamos; ellas se llaman. Se sirve para la tercera persona singular y plural."],["No traduzcas de forma mecánica","En A1 conviene aprender modelos frecuentes completos: llamarse, levantarse, acostarse, ducharse."]],"examplesTitle":"Escucha modelos reflexivos","practiceTitle":"Elige el pronombre reflexivo","trainerTitle":"Entrenador de pronombres reflexivos","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: verbos reflexivos en presente"}
+      "ru": {
+        "title": "Возвратные местоимения: me, te, se, nos, os, se",
+        "goal": "Цель: узнавать возвратные местоимения и выбирать их по лицу подлежащего.",
+        "intro": "Возвратное местоимение показывает, что действие направлено на самого исполнителя: me llamo Ana — «я называю себя Аной». В испанском оно меняется вместе с лицом глагола.",
+        "rules": [
+          [
+            "Шесть форм",
+            "me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."
+          ],
+          [
+            "Перед спрягаемой формой",
+            "В presente местоимение обычно стоит перед глаголом: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."
+          ],
+          [
+            "Местоимение и лицо совпадают",
+            "Выбирай местоимение по лицу: nosotros nos llamamos; ellas se llaman. Se одинаково для 3-го лица единственного и множественного числа."
+          ],
+          [
+            "Не переводим механически",
+            "На A1 запоминаем частые модели целиком: llamarse, levantarse, acostarse, ducharse."
+          ]
+        ],
+        "examplesTitle": "Послушай возвратные модели",
+        "practiceTitle": "Выбери возвратное местоимение",
+        "trainerTitle": "Тренировка возвратных местоимений",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: возвратные глаголы в presente"
+      },
+      "uk": {
+        "title": "Зворотні займенники: me, te, se, nos, os, se",
+        "goal": "Мета: упізнавати зворотні займенники та обирати їх за особою підмета.",
+        "intro": "Зворотний займенник показує, що дія спрямована на самого виконавця: me llamo Ana — «я називаю себе Аною». В іспанській він змінюється разом з особою дієслова.",
+        "rules": [
+          [
+            "Шість форм",
+            "me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."
+          ],
+          [
+            "Перед дієвідмінюваною формою",
+            "У presente займенник зазвичай стоїть перед дієсловом: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."
+          ],
+          [
+            "Займенник і особа збігаються",
+            "Обирай займенник за особою: nosotros nos llamamos; ellas se llaman. Se однакове для 3-ї особи однини й множини."
+          ],
+          [
+            "Не перекладаємо механічно",
+            "На A1 запам’ятовуємо часті моделі цілком: llamarse, levantarse, acostarse, ducharse."
+          ]
+        ],
+        "examplesTitle": "Послухай зворотні моделі",
+        "practiceTitle": "Обери зворотний займенник",
+        "trainerTitle": "Тренування зворотних займенників",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: зворотні дієслова в presente"
+      },
+      "en": {
+        "title": "Reflexive pronouns: me, te, se, nos, os, se",
+        "goal": "Goal: recognise reflexive pronouns and choose them according to the subject.",
+        "intro": "A reflexive pronoun shows that the action returns to its performer: me llamo Ana literally means “I call myself Ana”. In Spanish, it changes with the person of the verb.",
+        "rules": [
+          [
+            "Six forms",
+            "me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."
+          ],
+          [
+            "Before the conjugated verb",
+            "In the present tense the pronoun normally comes before the verb: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."
+          ],
+          [
+            "The pronoun matches the person",
+            "Choose the pronoun by person: nosotros nos llamamos; ellas se llaman. Se is used for both singular and plural third person."
+          ],
+          [
+            "Do not translate mechanically",
+            "At A1, learn frequent patterns as whole units: llamarse, levantarse, acostarse, ducharse."
+          ]
+        ],
+        "examplesTitle": "Listen to reflexive patterns",
+        "practiceTitle": "Choose the reflexive pronoun",
+        "trainerTitle": "Reflexive-pronoun trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: reflexive verbs in the present tense"
+      },
+      "es": {
+        "title": "Pronombres reflexivos: me, te, se, nos, os, se",
+        "goal": "Objetivo: reconocer los pronombres reflexivos y elegirlos según el sujeto.",
+        "intro": "Un pronombre reflexivo indica que la acción recae sobre quien la realiza: me llamo Ana. En español cambia con la persona del verbo.",
+        "rules": [
+          [
+            "Seis formas",
+            "me — yo; te — tú; se — él/ella/usted; nos — nosotros/as; os — vosotros/as; se — ellos/ellas/ustedes."
+          ],
+          [
+            "Delante del verbo conjugado",
+            "En presente el pronombre suele ir delante del verbo: Me llamo Ana. ¿Te levantas temprano? No se llama Pablo."
+          ],
+          [
+            "El pronombre concuerda con la persona",
+            "Elige el pronombre según la persona: nosotros nos llamamos; ellas se llaman. Se sirve para la tercera persona singular y plural."
+          ],
+          [
+            "No traduzcas de forma mecánica",
+            "En A1 conviene aprender modelos frecuentes completos: llamarse, levantarse, acostarse, ducharse."
+          ]
+        ],
+        "examplesTitle": "Escucha modelos reflexivos",
+        "practiceTitle": "Elige el pronombre reflexivo",
+        "trainerTitle": "Entrenador de pronombres reflexivos",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: verbos reflexivos en presente"
+      }
     },
     "examples": [
-      {"word":"Me llamo Ana.","tag":"forms"},{"word":"¿Cómo te llamas?","tag":"forms"},{"word":"Luis se levanta temprano.","tag":"position"},{"word":"Nos levantamos a las siete.","tag":"agreement"},{"word":"¿Os ducháis por la mañana?","tag":"agreement"},{"word":"Ellas se acuestan tarde.","tag":"meaning"}
+      {
+        "word": "Me llamo Ana.",
+        "tag": "forms"
+      },
+      {
+        "word": "¿Cómo te llamas?",
+        "tag": "forms"
+      },
+      {
+        "word": "Luis se levanta temprano.",
+        "tag": "position"
+      },
+      {
+        "word": "Nos levantamos a las siete.",
+        "tag": "agreement"
+      },
+      {
+        "word": "¿Os ducháis por la mañana?",
+        "tag": "agreement"
+      },
+      {
+        "word": "Ellas se acuestan tarde.",
+        "tag": "meaning"
+      }
     ],
     "questionBank": [
-      {"id":"rp01","tag":"forms","prompt":{"ru":"Yo ___ llamo Ana.","uk":"Yo ___ llamo Ana.","en":"Yo ___ llamo Ana.","es":"Yo ___ llamo Ana."},"options":["me","te","se"],"answer":"me"},
-      {"id":"rp02","tag":"forms","prompt":{"ru":"Tú ___ llamas Pablo.","uk":"Tú ___ llamas Pablo.","en":"Tú ___ llamas Pablo.","es":"Tú ___ llamas Pablo."},"options":["te","me","nos"],"answer":"te"},
-      {"id":"rp03","tag":"forms","prompt":{"ru":"Ella ___ llama Marta.","uk":"Ella ___ llama Marta.","en":"Ella ___ llama Marta.","es":"Ella ___ llama Marta."},"options":["se","te","os"],"answer":"se"},
-      {"id":"rp04","tag":"forms","prompt":{"ru":"Nosotros ___ levantamos temprano.","uk":"Nosotros ___ levantamos temprano.","en":"Nosotros ___ levantamos temprano.","es":"Nosotros ___ levantamos temprano."},"options":["nos","os","se"],"answer":"nos"},
-      {"id":"rp05","tag":"forms","prompt":{"ru":"Vosotros ___ acostáis tarde.","uk":"Vosotros ___ acostáis tarde.","en":"Vosotros ___ acostáis tarde.","es":"Vosotros ___ acostáis tarde."},"options":["os","nos","se"],"answer":"os"},
-      {"id":"rp06","tag":"forms","prompt":{"ru":"Ellos ___ duchan por la mañana.","uk":"Ellos ___ duchan por la mañana.","en":"Ellos ___ duchan por la mañana.","es":"Ellos ___ duchan por la mañana."},"options":["se","te","me"],"answer":"se"},
-      {"id":"rp07","tag":"position","prompt":{"ru":"Выбери правильный порядок слов.","uk":"Обери правильний порядок слів.","en":"Choose the correct word order.","es":"Elige el orden correcto."},"options":["Me levanto a las siete.","Levanto me a las siete.","Me a las siete levanto."],"answer":"Me levanto a las siete."},
-      {"id":"rp08","tag":"position","prompt":{"ru":"Выбери правильное отрицание.","uk":"Обери правильне заперечення.","en":"Choose the correct negative sentence.","es":"Elige la negación correcta."},"options":["No se llama Pedro.","Se no llama Pedro.","No llama se Pedro."],"answer":"No se llama Pedro."},
-      {"id":"rp09","tag":"agreement","prompt":{"ru":"Какая фраза соответствует ellos?","uk":"Яка фраза відповідає ellos?","en":"Which sentence matches ellos?","es":"¿Qué frase corresponde a ellos?"},"options":["Ellos se llaman Luis y Paco.","Ellos nos llaman Luis y Paco.","Ellos os llaman Luis y Paco."],"answer":"Ellos se llaman Luis y Paco."},
-      {"id":"rp10","tag":"agreement","prompt":{"ru":"Какая форма соответствует nosotros?","uk":"Яка форма відповідає nosotros?","en":"Which form matches nosotros?","es":"¿Qué forma corresponde a nosotros?"},"options":["Nos levantamos.","Os levantamos.","Se levantamos."],"answer":"Nos levantamos."},
-      {"id":"rp11","tag":"meaning","prompt":{"ru":"Что означает Me llamo Ana?","uk":"Що означає Me llamo Ana?","en":"What does Me llamo Ana mean?","es":"¿Qué significa Me llamo Ana?"},"optionsByLang":{"ru":["Меня зовут Ана.","Я вижу Ану.","Ана зовёт меня."],"uk":["Мене звати Ана.","Я бачу Ану.","Ана кличе мене."],"en":["My name is Ana.","I see Ana.","Ana calls me."],"es":["Mi nombre es Ana.","Veo a Ana.","Ana me llama."]},"answers":{"ru":"Меня зовут Ана.","uk":"Мене звати Ана.","en":"My name is Ana.","es":"Mi nombre es Ana."}},
-      {"id":"rp12","tag":"meaning","prompt":{"ru":"Какой глагол обычно учат с возвратным местоимением?","uk":"Яке дієслово зазвичай вчать зі зворотним займенником?","en":"Which verb is commonly learned with a reflexive pronoun?","es":"¿Qué verbo se aprende normalmente con pronombre reflexivo?"},"options":["levantarse","comer","tener"],"answer":"levantarse"}
+      {
+        "id": "rp01",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Yo ___ llamo Ana.",
+          "uk": "Yo ___ llamo Ana.",
+          "en": "Yo ___ llamo Ana.",
+          "es": "Yo ___ llamo Ana."
+        },
+        "options": [
+          "me",
+          "te",
+          "se"
+        ],
+        "answer": "me"
+      },
+      {
+        "id": "rp02",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Tú ___ llamas Pablo.",
+          "uk": "Tú ___ llamas Pablo.",
+          "en": "Tú ___ llamas Pablo.",
+          "es": "Tú ___ llamas Pablo."
+        },
+        "options": [
+          "te",
+          "me",
+          "nos"
+        ],
+        "answer": "te"
+      },
+      {
+        "id": "rp03",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Ella ___ llama Marta.",
+          "uk": "Ella ___ llama Marta.",
+          "en": "Ella ___ llama Marta.",
+          "es": "Ella ___ llama Marta."
+        },
+        "options": [
+          "se",
+          "te",
+          "os"
+        ],
+        "answer": "se"
+      },
+      {
+        "id": "rp04",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Nosotros ___ levantamos temprano.",
+          "uk": "Nosotros ___ levantamos temprano.",
+          "en": "Nosotros ___ levantamos temprano.",
+          "es": "Nosotros ___ levantamos temprano."
+        },
+        "options": [
+          "nos",
+          "os",
+          "se"
+        ],
+        "answer": "nos"
+      },
+      {
+        "id": "rp05",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Vosotros ___ acostáis tarde.",
+          "uk": "Vosotros ___ acostáis tarde.",
+          "en": "Vosotros ___ acostáis tarde.",
+          "es": "Vosotros ___ acostáis tarde."
+        },
+        "options": [
+          "os",
+          "nos",
+          "se"
+        ],
+        "answer": "os"
+      },
+      {
+        "id": "rp06",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Ellos ___ duchan por la mañana.",
+          "uk": "Ellos ___ duchan por la mañana.",
+          "en": "Ellos ___ duchan por la mañana.",
+          "es": "Ellos ___ duchan por la mañana."
+        },
+        "options": [
+          "se",
+          "te",
+          "me"
+        ],
+        "answer": "se"
+      },
+      {
+        "id": "rp07",
+        "tag": "position",
+        "prompt": {
+          "ru": "Выбери правильный порядок слов.",
+          "uk": "Обери правильний порядок слів.",
+          "en": "Choose the correct word order.",
+          "es": "Elige el orden correcto."
+        },
+        "options": [
+          "Me levanto a las siete.",
+          "Levanto me a las siete.",
+          "Me a las siete levanto."
+        ],
+        "answer": "Me levanto a las siete."
+      },
+      {
+        "id": "rp08",
+        "tag": "position",
+        "prompt": {
+          "ru": "Выбери правильное отрицание.",
+          "uk": "Обери правильне заперечення.",
+          "en": "Choose the correct negative sentence.",
+          "es": "Elige la negación correcta."
+        },
+        "options": [
+          "No se llama Pedro.",
+          "Se no llama Pedro.",
+          "No llama se Pedro."
+        ],
+        "answer": "No se llama Pedro."
+      },
+      {
+        "id": "rp09",
+        "tag": "agreement",
+        "prompt": {
+          "ru": "Какая фраза соответствует ellos?",
+          "uk": "Яка фраза відповідає ellos?",
+          "en": "Which sentence matches ellos?",
+          "es": "¿Qué frase corresponde a ellos?"
+        },
+        "options": [
+          "Ellos se llaman Luis y Paco.",
+          "Ellos nos llaman Luis y Paco.",
+          "Ellos os llaman Luis y Paco."
+        ],
+        "answer": "Ellos se llaman Luis y Paco."
+      },
+      {
+        "id": "rp10",
+        "tag": "agreement",
+        "prompt": {
+          "ru": "Какая форма соответствует nosotros?",
+          "uk": "Яка форма відповідає nosotros?",
+          "en": "Which form matches nosotros?",
+          "es": "¿Qué forma corresponde a nosotros?"
+        },
+        "options": [
+          "Nos levantamos.",
+          "Os levantamos.",
+          "Se levantamos."
+        ],
+        "answer": "Nos levantamos."
+      },
+      {
+        "id": "rp11",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Что означает Me llamo Ana?",
+          "uk": "Що означає Me llamo Ana?",
+          "en": "What does Me llamo Ana mean?",
+          "es": "¿Qué significa Me llamo Ana?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Меня зовут Ана.",
+            "Я вижу Ану.",
+            "Ана зовёт меня."
+          ],
+          "uk": [
+            "Мене звати Ана.",
+            "Я бачу Ану.",
+            "Ана кличе мене."
+          ],
+          "en": [
+            "My name is Ana.",
+            "I see Ana.",
+            "Ana calls me."
+          ],
+          "es": [
+            "Mi nombre es Ana.",
+            "Veo a Ana.",
+            "Ana me llama."
+          ]
+        },
+        "answers": {
+          "ru": "Меня зовут Ана.",
+          "uk": "Мене звати Ана.",
+          "en": "My name is Ana.",
+          "es": "Mi nombre es Ana."
+        }
+      },
+      {
+        "id": "rp12",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Какой глагол обычно учат с возвратным местоимением?",
+          "uk": "Яке дієслово зазвичай вчать зі зворотним займенником?",
+          "en": "Which verb is commonly learned with a reflexive pronoun?",
+          "es": "¿Qué verbo se aprende normalmente con pronombre reflexivo?"
+        },
+        "options": [
+          "levantarse",
+          "comer",
+          "tener"
+        ],
+        "answer": "levantarse"
+      }
     ]
   },
-  "reflexive-present":{
-    "level":"A1","moduleId":"a1-verbs-04","nextLessonId":"daily-routine","ruleTags":{"structure":0,"forms":1,"spelling":2,"meaning":3},
-    "i18n":{
-      "ru":{"title":"Возвратные глаголы в presente","goal":"Цель: строить формы возвратных глаголов в настоящем времени.","intro":"Возвратный глагол состоит из местоимения и спрягаемой формы: me levanto, te levantas, se levanta. Спрягается сам глагол; местоимение выбирается по лицу.","rules":[["Две части","levantarse → me levanto. Убираем -se для спряжения: levant- + -o; возвратное местоимение ставим перед формой."],["Шесть лиц","me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."],["Ударение","В vosotros: os levantáis, os ducháis. Местоимение не меняет окончания глагола."],["Частые модели","llamarse, levantarse, ducharse и acostarse описывают человека и его ежедневные действия."]],"examplesTitle":"Послушай формы возвратных глаголов","practiceTitle":"Выбери форму","trainerTitle":"Тренировка возвратных глаголов","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: распорядок дня"},
-      "uk":{"title":"Зворотні дієслова в presente","goal":"Мета: утворювати форми зворотних дієслів у теперішньому часі.","intro":"Зворотне дієслово складається із займенника та дієвідмінюваної форми: me levanto, te levantas, se levanta. Дієслово відмінюється, а займенник обираємо за особою.","rules":[["Дві частини","levantarse → me levanto. Для відмінювання прибираємо -se: levant- + -o; займенник ставимо перед формою."],["Шість осіб","me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."],["Наголос","У vosotros: os levantáis, os ducháis. Займенник не змінює закінчення дієслова."],["Часті моделі","llamarse, levantarse, ducharse та acostarse описують людину й її щоденні дії."]],"examplesTitle":"Послухай форми зворотних дієслів","practiceTitle":"Обери форму","trainerTitle":"Тренування зворотних дієслів","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: розпорядок дня"},
-      "en":{"title":"Reflexive verbs in the present tense","goal":"Goal: form reflexive verbs in the present tense.","intro":"A reflexive verb has a pronoun and a conjugated form: me levanto, te levantas, se levanta. Conjugate the verb; choose the pronoun for the person.","rules":[["Two parts","levantarse → me levanto. Remove -se to conjugate: levant- + -o; place the reflexive pronoun before the form."],["Six persons","me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."],["Written accent","With vosotros: os levantáis, os ducháis. The pronoun does not change the verb ending."],["Frequent patterns","llamarse, levantarse, ducharse and acostarse describe a person and daily actions."]],"examplesTitle":"Listen to reflexive verb forms","practiceTitle":"Choose the form","trainerTitle":"Reflexive verb trainer","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: daily routine"},
-      "es":{"title":"Verbos reflexivos en presente","goal":"Objetivo: formar verbos reflexivos en presente.","intro":"Un verbo reflexivo tiene un pronombre y una forma conjugada: me levanto, te levantas, se levanta. Se conjuga el verbo y se elige el pronombre según la persona.","rules":[["Dos partes","levantarse → me levanto. Quitamos -se para conjugar: levant- + -o; el pronombre va delante de la forma."],["Seis personas","me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."],["Acento gráfico","Con vosotros: os levantáis, os ducháis. El pronombre no cambia la terminación verbal."],["Modelos frecuentes","llamarse, levantarse, ducharse y acostarse describen a una persona y sus acciones diarias."]],"examplesTitle":"Escucha formas de verbos reflexivos","practiceTitle":"Elige la forma","trainerTitle":"Entrenador de verbos reflexivos","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: rutina diaria"}},
-    "examples":[{"word":"Me levanto a las siete.","tag":"structure"},{"word":"¿Te duchas por la mañana?","tag":"forms"},{"word":"Nos acostamos tarde.","tag":"forms"},{"word":"Os levantáis temprano.","tag":"spelling"},{"word":"Ellas se llaman Marta y Elena.","tag":"meaning"}],
-    "questionBank":[
-      {"id":"rv01","tag":"structure","prompt":{"ru":"Yo ___ a las siete.","uk":"Yo ___ a las siete.","en":"Yo ___ a las siete.","es":"Yo ___ a las siete."},"options":["me levanto","levanto me","se levanto"],"answer":"me levanto"},
-      {"id":"rv02","tag":"forms","prompt":{"ru":"Tú ___ temprano.","uk":"Tú ___ temprano.","en":"Tú ___ temprano.","es":"Tú ___ temprano."},"options":["te levantas","te levantan","nos levantamos"],"answer":"te levantas"},
-      {"id":"rv03","tag":"forms","prompt":{"ru":"Ana ___ a las ocho.","uk":"Ana ___ a las ocho.","en":"Ana ___ a las ocho.","es":"Ana ___ a las ocho."},"options":["se levanta","se levantan","te levantas"],"answer":"se levanta"},
-      {"id":"rv04","tag":"forms","prompt":{"ru":"Nosotros ___ por la mañana.","uk":"Nosotros ___ por la mañana.","en":"Nosotros ___ por la mañana.","es":"Nosotros ___ por la mañana."},"options":["nos duchamos","os ducháis","se ducha"],"answer":"nos duchamos"},
-      {"id":"rv05","tag":"spelling","prompt":{"ru":"Выбери форму vosotros.","uk":"Обери форму vosotros.","en":"Choose the vosotros form.","es":"Elige la forma de vosotros."},"options":["os levantáis","os levantais","se levantáis"],"answer":"os levantáis"},
-      {"id":"rv06","tag":"forms","prompt":{"ru":"Ellos ___ tarde.","uk":"Ellos ___ tarde.","en":"Ellos ___ tarde.","es":"Ellos ___ tarde."},"options":["se acuestan","se acostamos","os acostáis"],"answer":"se acuestan"},
-      {"id":"rv07","tag":"structure","prompt":{"ru":"Выбери правильную форму.","uk":"Обери правильну форму.","en":"Choose the correct form.","es":"Elige la forma correcta."},"options":["Me llamo Pablo.","Llamo me Pablo.","Se llamo Pablo."],"answer":"Me llamo Pablo."},
-      {"id":"rv08","tag":"meaning","prompt":{"ru":"Что означает Nos acostamos tarde?","uk":"Що означає Nos acostamos tarde?","en":"What does Nos acostamos tarde mean?","es":"¿Qué significa Nos acostamos tarde?"},"optionsByLang":{"ru":["Мы поздно ложимся.","Мы поздно встаём.","Они поздно ложатся."],"uk":["Ми пізно лягаємо.","Ми пізно встаємо.","Вони пізно лягають."],"en":["We go to bed late.","We get up late.","They go to bed late."],"es":["Nos vamos a la cama tarde.","Nos levantamos tarde.","Ellos se acuestan tarde."]},"answers":{"ru":"Мы поздно ложимся.","uk":"Ми пізно лягаємо.","en":"We go to bed late.","es":"Nos vamos a la cama tarde."}},
-      {"id":"rv09","tag":"spelling","prompt":{"ru":"Как пишется форма ducharse для vosotros?","uk":"Як пишеться форма ducharse для vosotros?","en":"How is the vosotros form of ducharse written?","es":"¿Cómo se escribe la forma de vosotros de ducharse?"},"options":["os ducháis","os duchais","os duchaís"],"answer":"os ducháis"},
-      {"id":"rv10","tag":"meaning","prompt":{"ru":"Какой вариант естественный?","uk":"Який варіант природний?","en":"Which option is natural?","es":"¿Qué opción es natural?"},"options":["¿A qué hora te levantas?","¿A qué hora levantas te?","¿A qué hora se levantas?"],"answer":"¿A qué hora te levantas?"}
+  "reflexive-present": {
+    "level": "A1",
+    "moduleId": "a1-verbs-04",
+    "nextLessonId": "daily-routine",
+    "ruleTags": {
+      "structure": 0,
+      "forms": 1,
+      "spelling": 2,
+      "meaning": 3
+    },
+    "i18n": {
+      "ru": {
+        "title": "Возвратные глаголы в presente",
+        "goal": "Цель: строить формы возвратных глаголов в настоящем времени.",
+        "intro": "Возвратный глагол состоит из местоимения и спрягаемой формы: me levanto, te levantas, se levanta. Спрягается сам глагол; местоимение выбирается по лицу.",
+        "rules": [
+          [
+            "Две части",
+            "levantarse → me levanto. Убираем -se для спряжения: levant- + -o; возвратное местоимение ставим перед формой."
+          ],
+          [
+            "Шесть лиц",
+            "me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."
+          ],
+          [
+            "Ударение",
+            "В vosotros: os levantáis, os ducháis. Местоимение не меняет окончания глагола."
+          ],
+          [
+            "Частые модели",
+            "llamarse, levantarse, ducharse и acostarse описывают человека и его ежедневные действия."
+          ]
+        ],
+        "examplesTitle": "Послушай формы возвратных глаголов",
+        "practiceTitle": "Выбери форму",
+        "trainerTitle": "Тренировка возвратных глаголов",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: распорядок дня"
+      },
+      "uk": {
+        "title": "Зворотні дієслова в presente",
+        "goal": "Мета: утворювати форми зворотних дієслів у теперішньому часі.",
+        "intro": "Зворотне дієслово складається із займенника та дієвідмінюваної форми: me levanto, te levantas, se levanta. Дієслово відмінюється, а займенник обираємо за особою.",
+        "rules": [
+          [
+            "Дві частини",
+            "levantarse → me levanto. Для відмінювання прибираємо -se: levant- + -o; займенник ставимо перед формою."
+          ],
+          [
+            "Шість осіб",
+            "me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."
+          ],
+          [
+            "Наголос",
+            "У vosotros: os levantáis, os ducháis. Займенник не змінює закінчення дієслова."
+          ],
+          [
+            "Часті моделі",
+            "llamarse, levantarse, ducharse та acostarse описують людину й її щоденні дії."
+          ]
+        ],
+        "examplesTitle": "Послухай форми зворотних дієслів",
+        "practiceTitle": "Обери форму",
+        "trainerTitle": "Тренування зворотних дієслів",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: розпорядок дня"
+      },
+      "en": {
+        "title": "Reflexive verbs in the present tense",
+        "goal": "Goal: form reflexive verbs in the present tense.",
+        "intro": "A reflexive verb has a pronoun and a conjugated form: me levanto, te levantas, se levanta. Conjugate the verb; choose the pronoun for the person.",
+        "rules": [
+          [
+            "Two parts",
+            "levantarse → me levanto. Remove -se to conjugate: levant- + -o; place the reflexive pronoun before the form."
+          ],
+          [
+            "Six persons",
+            "me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."
+          ],
+          [
+            "Written accent",
+            "With vosotros: os levantáis, os ducháis. The pronoun does not change the verb ending."
+          ],
+          [
+            "Frequent patterns",
+            "llamarse, levantarse, ducharse and acostarse describe a person and daily actions."
+          ]
+        ],
+        "examplesTitle": "Listen to reflexive verb forms",
+        "practiceTitle": "Choose the form",
+        "trainerTitle": "Reflexive verb trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: daily routine"
+      },
+      "es": {
+        "title": "Verbos reflexivos en presente",
+        "goal": "Objetivo: formar verbos reflexivos en presente.",
+        "intro": "Un verbo reflexivo tiene un pronombre y una forma conjugada: me levanto, te levantas, se levanta. Se conjuga el verbo y se elige el pronombre según la persona.",
+        "rules": [
+          [
+            "Dos partes",
+            "levantarse → me levanto. Quitamos -se para conjugar: levant- + -o; el pronombre va delante de la forma."
+          ],
+          [
+            "Seis personas",
+            "me levanto · te levantas · se levanta · nos levantamos · os levantáis · se levantan."
+          ],
+          [
+            "Acento gráfico",
+            "Con vosotros: os levantáis, os ducháis. El pronombre no cambia la terminación verbal."
+          ],
+          [
+            "Modelos frecuentes",
+            "llamarse, levantarse, ducharse y acostarse describen a una persona y sus acciones diarias."
+          ]
+        ],
+        "examplesTitle": "Escucha formas de verbos reflexivos",
+        "practiceTitle": "Elige la forma",
+        "trainerTitle": "Entrenador de verbos reflexivos",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: rutina diaria"
+      }
+    },
+    "examples": [
+      {
+        "word": "Me levanto a las siete.",
+        "tag": "structure"
+      },
+      {
+        "word": "¿Te duchas por la mañana?",
+        "tag": "forms"
+      },
+      {
+        "word": "Nos acostamos tarde.",
+        "tag": "forms"
+      },
+      {
+        "word": "Os levantáis temprano.",
+        "tag": "spelling"
+      },
+      {
+        "word": "Ellas se llaman Marta y Elena.",
+        "tag": "meaning"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "rv01",
+        "tag": "structure",
+        "prompt": {
+          "ru": "Yo ___ a las siete.",
+          "uk": "Yo ___ a las siete.",
+          "en": "Yo ___ a las siete.",
+          "es": "Yo ___ a las siete."
+        },
+        "options": [
+          "me levanto",
+          "levanto me",
+          "se levanto"
+        ],
+        "answer": "me levanto"
+      },
+      {
+        "id": "rv02",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Tú ___ temprano.",
+          "uk": "Tú ___ temprano.",
+          "en": "Tú ___ temprano.",
+          "es": "Tú ___ temprano."
+        },
+        "options": [
+          "te levantas",
+          "te levantan",
+          "nos levantamos"
+        ],
+        "answer": "te levantas"
+      },
+      {
+        "id": "rv03",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Ana ___ a las ocho.",
+          "uk": "Ana ___ a las ocho.",
+          "en": "Ana ___ a las ocho.",
+          "es": "Ana ___ a las ocho."
+        },
+        "options": [
+          "se levanta",
+          "se levantan",
+          "te levantas"
+        ],
+        "answer": "se levanta"
+      },
+      {
+        "id": "rv04",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Nosotros ___ por la mañana.",
+          "uk": "Nosotros ___ por la mañana.",
+          "en": "Nosotros ___ por la mañana.",
+          "es": "Nosotros ___ por la mañana."
+        },
+        "options": [
+          "nos duchamos",
+          "os ducháis",
+          "se ducha"
+        ],
+        "answer": "nos duchamos"
+      },
+      {
+        "id": "rv05",
+        "tag": "spelling",
+        "prompt": {
+          "ru": "Выбери форму vosotros.",
+          "uk": "Обери форму vosotros.",
+          "en": "Choose the vosotros form.",
+          "es": "Elige la forma de vosotros."
+        },
+        "options": [
+          "os levantáis",
+          "os levantais",
+          "se levantáis"
+        ],
+        "answer": "os levantáis"
+      },
+      {
+        "id": "rv06",
+        "tag": "forms",
+        "prompt": {
+          "ru": "Ellos ___ tarde.",
+          "uk": "Ellos ___ tarde.",
+          "en": "Ellos ___ tarde.",
+          "es": "Ellos ___ tarde."
+        },
+        "options": [
+          "se acuestan",
+          "se acostamos",
+          "os acostáis"
+        ],
+        "answer": "se acuestan"
+      },
+      {
+        "id": "rv07",
+        "tag": "structure",
+        "prompt": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form.",
+          "es": "Elige la forma correcta."
+        },
+        "options": [
+          "Me llamo Pablo.",
+          "Llamo me Pablo.",
+          "Se llamo Pablo."
+        ],
+        "answer": "Me llamo Pablo."
+      },
+      {
+        "id": "rv08",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Что означает Nos acostamos tarde?",
+          "uk": "Що означає Nos acostamos tarde?",
+          "en": "What does Nos acostamos tarde mean?",
+          "es": "¿Qué significa Nos acostamos tarde?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Мы поздно ложимся.",
+            "Мы поздно встаём.",
+            "Они поздно ложатся."
+          ],
+          "uk": [
+            "Ми пізно лягаємо.",
+            "Ми пізно встаємо.",
+            "Вони пізно лягають."
+          ],
+          "en": [
+            "We go to bed late.",
+            "We get up late.",
+            "They go to bed late."
+          ],
+          "es": [
+            "Nos vamos a la cama tarde.",
+            "Nos levantamos tarde.",
+            "Ellos se acuestan tarde."
+          ]
+        },
+        "answers": {
+          "ru": "Мы поздно ложимся.",
+          "uk": "Ми пізно лягаємо.",
+          "en": "We go to bed late.",
+          "es": "Nos vamos a la cama tarde."
+        }
+      },
+      {
+        "id": "rv09",
+        "tag": "spelling",
+        "prompt": {
+          "ru": "Как пишется форма ducharse для vosotros?",
+          "uk": "Як пишеться форма ducharse для vosotros?",
+          "en": "How is the vosotros form of ducharse written?",
+          "es": "¿Cómo se escribe la forma de vosotros de ducharse?"
+        },
+        "options": [
+          "os ducháis",
+          "os duchais",
+          "os duchaís"
+        ],
+        "answer": "os ducháis"
+      },
+      {
+        "id": "rv10",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Какой вариант естественный?",
+          "uk": "Який варіант природний?",
+          "en": "Which option is natural?",
+          "es": "¿Qué opción es natural?"
+        },
+        "options": [
+          "¿A qué hora te levantas?",
+          "¿A qué hora levantas te?",
+          "¿A qué hora se levantas?"
+        ],
+        "answer": "¿A qué hora te levantas?"
+      },
+      {
+        "id": "rv11",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(yo) ___ (ducharse) antes del trabajo.",
+          "uk": "(yo) ___ (ducharse) antes del trabajo.",
+          "en": "(yo) ___ (ducharse) antes del trabajo.",
+          "es": "(yo) ___ (ducharse) antes del trabajo."
+        },
+        "options": [
+          "me ducho",
+          "te duchas",
+          "se ducha"
+        ],
+        "answer": "me ducho"
+      },
+      {
+        "id": "rv12",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(tú) ___ (llamarse) Laura.",
+          "uk": "(tú) ___ (llamarse) Laura.",
+          "en": "(tú) ___ (llamarse) Laura.",
+          "es": "(tú) ___ (llamarse) Laura."
+        },
+        "options": [
+          "te llamas",
+          "me llamo",
+          "se llama"
+        ],
+        "answer": "te llamas"
+      },
+      {
+        "id": "rv13",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(él) ___ (acostarse) a las once.",
+          "uk": "(él) ___ (acostarse) a las once.",
+          "en": "(él) ___ (acostarse) a las once.",
+          "es": "(él) ___ (acostarse) a las once."
+        },
+        "options": [
+          "se acuesta",
+          "se acuestan",
+          "nos acostamos"
+        ],
+        "answer": "se acuesta"
+      },
+      {
+        "id": "rv14",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(nosotros) ___ (llamarse) Ana y Diego.",
+          "uk": "(nosotros) ___ (llamarse) Ana y Diego.",
+          "en": "(nosotros) ___ (llamarse) Ana y Diego.",
+          "es": "(nosotros) ___ (llamarse) Ana y Diego."
+        },
+        "options": [
+          "nos llamamos",
+          "os llamáis",
+          "se llaman"
+        ],
+        "answer": "nos llamamos"
+      },
+      {
+        "id": "rv15",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(vosotros) ___ (acostarse) tarde.",
+          "uk": "(vosotros) ___ (acostarse) tarde.",
+          "en": "(vosotros) ___ (acostarse) tarde.",
+          "es": "(vosotros) ___ (acostarse) tarde."
+        },
+        "options": [
+          "os acostáis",
+          "os acuestan",
+          "nos acostamos"
+        ],
+        "answer": "os acostáis"
+      },
+      {
+        "id": "rv16",
+        "tag": "forms",
+        "prompt": {
+          "ru": "(ellas) ___ (ducharse) por la mañana.",
+          "uk": "(ellas) ___ (ducharse) por la mañana.",
+          "en": "(ellas) ___ (ducharse) por la mañana.",
+          "es": "(ellas) ___ (ducharse) por la mañana."
+        },
+        "options": [
+          "se duchan",
+          "te duchas",
+          "nos duchamos"
+        ],
+        "answer": "se duchan"
+      },
+      {
+        "id": "rv17",
+        "tag": "structure",
+        "prompt": {
+          "ru": "Elige la frase correcta: yo + llamarse.",
+          "uk": "Elige la frase correcta: yo + llamarse.",
+          "en": "Elige la frase correcta: yo + llamarse.",
+          "es": "Elige la frase correcta: yo + llamarse."
+        },
+        "options": [
+          "Me llamo Sofía.",
+          "Se llamo Sofía.",
+          "Llamo me Sofía."
+        ],
+        "answer": "Me llamo Sofía."
+      },
+      {
+        "id": "rv18",
+        "tag": "spelling",
+        "prompt": {
+          "ru": "Elige la forma correcta: vosotros + acostarse.",
+          "uk": "Elige la forma correcta: vosotros + acostarse.",
+          "en": "Elige la forma correcta: vosotros + acostarse.",
+          "es": "Elige la forma correcta: vosotros + acostarse."
+        },
+        "options": [
+          "os acostáis",
+          "os acostais",
+          "os acostaís"
+        ],
+        "answer": "os acostáis"
+      },
+      {
+        "id": "rv19",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "nosotros + levantarse + temprano:",
+          "uk": "nosotros + levantarse + temprano:",
+          "en": "nosotros + levantarse + temprano:",
+          "es": "nosotros + levantarse + temprano:"
+        },
+        "options": [
+          "Nos levantamos temprano.",
+          "Nos levantan temprano.",
+          "Nos levantamos tempranos."
+        ],
+        "answer": "Nos levantamos temprano."
+      },
+      {
+        "id": "rv20",
+        "tag": "structure",
+        "prompt": {
+          "ru": "Elige la pregunta correcta.",
+          "uk": "Elige la pregunta correcta.",
+          "en": "Elige la pregunta correcta.",
+          "es": "Elige la pregunta correcta."
+        },
+        "options": [
+          "¿A qué hora os acostáis?",
+          "¿A qué hora os acostais?",
+          "¿A qué hora acostáis os?"
+        ],
+        "answer": "¿A qué hora os acostáis?"
+      }
     ]
   },
   "daily-routine": {
-    "level":"A1","moduleId":"a1-verbs-04","nextLessonId":"reflexive-practice","ruleTags":{"time":0,"sequence":1,"reflexive":2,"routine":3},
-    "i18n":{
-      "ru":{"title":"Распорядок дня","goal":"Цель: рассказать о своём обычном дне, используя время и последовательность действий.","intro":"Чтобы описать день, называй время, части дня и действия по порядку. Возвратные глаголы: me levanto, me ducho, me acuesto; обычные: desayuno, trabajo, ceno.","rules":[["Время","a las siete — в семь; por la mañana — утром; por la tarde — днём / вечером; por la noche — ночью, вечером."],["Порядок действий","primero — сначала; después / luego — затем. Они помогают рассказать день последовательно."],["Возвратные и обычные глаголы","me levanto, me ducho, me acuesto — с местоимением; desayuno, trabajo, ceno — без него."],["Естественный рассказ","Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."]],"examplesTitle":"Послушай рассказ о дне","practiceTitle":"Выбери слово или форму","trainerTitle":"Тренировка: распорядок дня","assessmentTitle":"Проверь себя","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Следующий урок: практика возвратных глаголов"},
-      "uk":{"title":"Розпорядок дня","goal":"Мета: розповісти про свій звичайний день, використовуючи час і послідовність дій.","intro":"Щоб описати день, називай час, частини дня та дії по черзі. Зворотні дієслова: me levanto, me ducho, me acuesto; звичайні: desayuno, trabajo, ceno.","rules":[["Час","a las siete — о сьомій; por la mañana — вранці; por la tarde — удень / увечері; por la noche — уночі, увечері."],["Послідовність дій","primero — спочатку; después / luego — потім. Вони допомагають розповісти про день послідовно."],["Зворотні та звичайні дієслова","me levanto, me ducho, me acuesto — із займенником; desayuno, trabajo, ceno — без нього."],["Природна розповідь","Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."]],"examplesTitle":"Послухай розповідь про день","practiceTitle":"Обери слово або форму","trainerTitle":"Тренування: розпорядок дня","assessmentTitle":"Перевір себе","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Наступний урок: практика зворотних дієслів"},
-      "en":{"title":"Daily routine","goal":"Goal: talk about your usual day with time expressions and a sequence of actions.","intro":"To describe a day, name the time, part of the day and actions in order. Reflexive verbs are me levanto, me ducho, me acuesto; regular daily actions are desayuno, trabajo, ceno.","rules":[["Time","a las siete — at seven; por la mañana — in the morning; por la tarde — in the afternoon / evening; por la noche — at night, in the evening."],["Sequence","primero — first; después / luego — then. These words make your account easy to follow."],["Reflexive and regular verbs","me levanto, me ducho, me acuesto use a pronoun; desayuno, trabajo, ceno do not."],["A natural account","Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."]],"examplesTitle":"Listen to a daily routine","practiceTitle":"Choose the word or form","trainerTitle":"Daily-routine trainer","assessmentTitle":"Check yourself","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Next lesson: reflexive verb practice"},
-      "es":{"title":"Rutina diaria","goal":"Objetivo: hablar de la rutina diaria usando expresiones de tiempo y una secuencia de acciones.","intro":"Para describir el día, di la hora, la parte del día y las acciones en orden. Los verbos reflexivos son me levanto, me ducho, me acuesto; las acciones habituales son desayuno, trabajo, ceno.","rules":[["La hora","a las siete; por la mañana; por la tarde; por la noche."],["La secuencia","primero; después / luego. Estas palabras organizan el relato del día."],["Verbos reflexivos y no reflexivos","me levanto, me ducho, me acuesto llevan pronombre; desayuno, trabajo, ceno no lo llevan."],["Un relato natural","Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."]],"examplesTitle":"Escucha una rutina diaria","practiceTitle":"Elige la palabra o la forma","trainerTitle":"Entrenador de rutina diaria","assessmentTitle":"Compruébalo","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Siguiente lección: práctica de verbos reflexivos"}
+    "level": "A1",
+    "moduleId": "a1-verbs-04",
+    "nextLessonId": "reflexive-practice",
+    "ruleTags": {
+      "time": 0,
+      "sequence": 1,
+      "reflexive": 2,
+      "routine": 3
     },
-    "examples":[{"word":"Me levanto a las siete.","tag":"time"},{"word":"Primero desayuno; después trabajo.","tag":"sequence"},{"word":"Por la tarde vuelvo a casa.","tag":"routine"},{"word":"Por la noche me acuesto a las once.","tag":"reflexive"}],
-    "questionBank":[
-      {"id":"dr01","tag":"time","prompt":{"ru":"Me levanto ___ siete.","uk":"Me levanto ___ siete.","en":"Me levanto ___ siete.","es":"Me levanto ___ siete."},"options":["a las","en las","por las"],"answer":"a las"},
-      {"id":"dr02","tag":"time","prompt":{"ru":"Как сказать «утром»?","uk":"Як сказати «вранці»?","en":"How do you say “in the morning”?","es":"¿Cómo se dice “in the morning”?"},"options":["por la mañana","por la noche","a la tarde"],"answer":"por la mañana"},
-      {"id":"dr03","tag":"sequence","prompt":{"ru":"Выбери естественный порядок.","uk":"Обери природний порядок.","en":"Choose the natural sequence.","es":"Elige la secuencia natural."},"options":["Primero desayuno; después trabajo.","Después desayuno; primero trabajo.","Primero me desayuno; después me trabajo."],"answer":"Primero desayuno; después trabajo."},
-      {"id":"dr04","tag":"sequence","prompt":{"ru":"Как сказать «затем»?","uk":"Як сказати «потім»?","en":"How do you say “then”?","es":"¿Cómo se dice “then”?"},"options":["después","primero","siempre"],"answer":"después"},
-      {"id":"dr05","tag":"reflexive","prompt":{"ru":"(yo) ___ a las once.","uk":"(yo) ___ a las once.","en":"(yo) ___ a las once.","es":"(yo) ___ a las once."},"options":["me acuesto","me acuesta","se acuesto"],"answer":"me acuesto"},
-      {"id":"dr06","tag":"reflexive","prompt":{"ru":"Какая форма возвратная?","uk":"Яка форма зворотна?","en":"Which form is reflexive?","es":"¿Qué forma es reflexiva?"},"options":["Me ducho.","Desayuno.","Trabajo."],"answer":"Me ducho."},
-      {"id":"dr07","tag":"routine","prompt":{"ru":"(yo) Por la tarde ___ a casa.","uk":"(yo) Por la tarde ___ a casa.","en":"(yo) Por la tarde ___ a casa.","es":"(yo) Por la tarde ___ a casa."},"options":["vuelvo","vuelve","volvemos"],"answer":"vuelvo"},
-      {"id":"dr08","tag":"routine","prompt":{"ru":"Выбери естественную фразу.","uk":"Обери природну фразу.","en":"Choose the natural sentence.","es":"Elige la frase natural."},"options":["Por la noche ceno.","Por la noche desayuno.","Por la noche me desayuno."],"answer":"Por la noche ceno."},
-      {"id":"dr09","tag":"time","prompt":{"ru":"Что означает Por la tarde?","uk":"Що означає Por la tarde?","en":"What does Por la tarde mean?","es":"¿Qué significa Por la tarde?"},"optionsByLang":{"ru":["Днём / вечером.","Утром.","В семь часов."],"uk":["Удень / увечері.","Вранці.","О сьомій годині."],"en":["In the afternoon / evening.","In the morning.","At seven o’clock."],"es":["Durante la tarde.","Durante la mañana.","A las siete."]},"answers":{"ru":"Днём / вечером.","uk":"Удень / увечері.","en":"In the afternoon / evening.","es":"Durante la tarde."}},
-      {"id":"dr10","tag":"routine","prompt":{"ru":"Какой рассказ логичный?","uk":"Яка розповідь логічна?","en":"Which account is logical?","es":"¿Qué relato es lógico?"},"options":["Primero me levanto; después desayuno.","Primero me acuesto; después me levanto a las siete.","Primero trabajo; después me levanto."],"answer":"Primero me levanto; después desayuno."}
+    "i18n": {
+      "ru": {
+        "title": "Распорядок дня",
+        "goal": "Цель: рассказать о своём обычном дне, используя время и последовательность действий.",
+        "intro": "Чтобы описать день, называй время, части дня и действия по порядку. Возвратные глаголы: me levanto, me ducho, me acuesto; обычные: desayuno, trabajo, ceno.",
+        "rules": [
+          [
+            "Время",
+            "a las siete — в семь; por la mañana — утром; por la tarde — днём / вечером; por la noche — ночью, вечером."
+          ],
+          [
+            "Порядок действий",
+            "primero — сначала; después / luego — затем. Они помогают рассказать день последовательно."
+          ],
+          [
+            "Возвратные и обычные глаголы",
+            "me levanto, me ducho, me acuesto — с местоимением; desayuno, trabajo, ceno — без него."
+          ],
+          [
+            "Естественный рассказ",
+            "Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."
+          ]
+        ],
+        "examplesTitle": "Послушай рассказ о дне",
+        "practiceTitle": "Выбери слово или форму",
+        "trainerTitle": "Тренировка: распорядок дня",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: практика возвратных глаголов"
+      },
+      "uk": {
+        "title": "Розпорядок дня",
+        "goal": "Мета: розповісти про свій звичайний день, використовуючи час і послідовність дій.",
+        "intro": "Щоб описати день, називай час, частини дня та дії по черзі. Зворотні дієслова: me levanto, me ducho, me acuesto; звичайні: desayuno, trabajo, ceno.",
+        "rules": [
+          [
+            "Час",
+            "a las siete — о сьомій; por la mañana — вранці; por la tarde — удень / увечері; por la noche — уночі, увечері."
+          ],
+          [
+            "Послідовність дій",
+            "primero — спочатку; después / luego — потім. Вони допомагають розповісти про день послідовно."
+          ],
+          [
+            "Зворотні та звичайні дієслова",
+            "me levanto, me ducho, me acuesto — із займенником; desayuno, trabajo, ceno — без нього."
+          ],
+          [
+            "Природна розповідь",
+            "Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."
+          ]
+        ],
+        "examplesTitle": "Послухай розповідь про день",
+        "practiceTitle": "Обери слово або форму",
+        "trainerTitle": "Тренування: розпорядок дня",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: практика зворотних дієслів"
+      },
+      "en": {
+        "title": "Daily routine",
+        "goal": "Goal: talk about your usual day with time expressions and a sequence of actions.",
+        "intro": "To describe a day, name the time, part of the day and actions in order. Reflexive verbs are me levanto, me ducho, me acuesto; regular daily actions are desayuno, trabajo, ceno.",
+        "rules": [
+          [
+            "Time",
+            "a las siete — at seven; por la mañana — in the morning; por la tarde — in the afternoon / evening; por la noche — at night, in the evening."
+          ],
+          [
+            "Sequence",
+            "primero — first; después / luego — then. These words make your account easy to follow."
+          ],
+          [
+            "Reflexive and regular verbs",
+            "me levanto, me ducho, me acuesto use a pronoun; desayuno, trabajo, ceno do not."
+          ],
+          [
+            "A natural account",
+            "Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."
+          ]
+        ],
+        "examplesTitle": "Listen to a daily routine",
+        "practiceTitle": "Choose the word or form",
+        "trainerTitle": "Daily-routine trainer",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: reflexive verb practice"
+      },
+      "es": {
+        "title": "Rutina diaria",
+        "goal": "Objetivo: hablar de la rutina diaria usando expresiones de tiempo y una secuencia de acciones.",
+        "intro": "Para describir el día, di la hora, la parte del día y las acciones en orden. Los verbos reflexivos son me levanto, me ducho, me acuesto; las acciones habituales son desayuno, trabajo, ceno.",
+        "rules": [
+          [
+            "La hora",
+            "a las siete; por la mañana; por la tarde; por la noche."
+          ],
+          [
+            "La secuencia",
+            "primero; después / luego. Estas palabras organizan el relato del día."
+          ],
+          [
+            "Verbos reflexivos y no reflexivos",
+            "me levanto, me ducho, me acuesto llevan pronombre; desayuno, trabajo, ceno no lo llevan."
+          ],
+          [
+            "Un relato natural",
+            "Primero me levanto. Después desayuno. Por la tarde vuelvo a casa. Por la noche me acuesto."
+          ]
+        ],
+        "examplesTitle": "Escucha una rutina diaria",
+        "practiceTitle": "Elige la palabra o la forma",
+        "trainerTitle": "Entrenador de rutina diaria",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: práctica de verbos reflexivos"
+      }
+    },
+    "examples": [
+      {
+        "word": "Me levanto a las siete.",
+        "tag": "time"
+      },
+      {
+        "word": "Primero desayuno; después trabajo.",
+        "tag": "sequence"
+      },
+      {
+        "word": "Por la tarde vuelvo a casa.",
+        "tag": "routine"
+      },
+      {
+        "word": "Por la noche me acuesto a las once.",
+        "tag": "reflexive"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "dr01",
+        "tag": "time",
+        "prompt": {
+          "ru": "Me levanto ___ siete.",
+          "uk": "Me levanto ___ siete.",
+          "en": "Me levanto ___ siete.",
+          "es": "Me levanto ___ siete."
+        },
+        "options": [
+          "a las",
+          "en las",
+          "por las"
+        ],
+        "answer": "a las"
+      },
+      {
+        "id": "dr02",
+        "tag": "time",
+        "prompt": {
+          "ru": "Как сказать «утром»?",
+          "uk": "Як сказати «вранці»?",
+          "en": "How do you say “in the morning”?",
+          "es": "¿Cómo se dice “in the morning”?"
+        },
+        "options": [
+          "por la mañana",
+          "por la noche",
+          "a la tarde"
+        ],
+        "answer": "por la mañana"
+      },
+      {
+        "id": "dr03",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Выбери естественный порядок.",
+          "uk": "Обери природний порядок.",
+          "en": "Choose the natural sequence.",
+          "es": "Elige la secuencia natural."
+        },
+        "options": [
+          "Primero desayuno; después trabajo.",
+          "Después desayuno; primero trabajo.",
+          "Primero me desayuno; después me trabajo."
+        ],
+        "answer": "Primero desayuno; después trabajo."
+      },
+      {
+        "id": "dr04",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Как сказать «затем»?",
+          "uk": "Як сказати «потім»?",
+          "en": "How do you say “then”?",
+          "es": "¿Cómo se dice “then”?"
+        },
+        "options": [
+          "después",
+          "primero",
+          "siempre"
+        ],
+        "answer": "después"
+      },
+      {
+        "id": "dr05",
+        "tag": "reflexive",
+        "prompt": {
+          "ru": "(yo) ___ a las once.",
+          "uk": "(yo) ___ a las once.",
+          "en": "(yo) ___ a las once.",
+          "es": "(yo) ___ a las once."
+        },
+        "options": [
+          "me acuesto",
+          "me acuesta",
+          "se acuesto"
+        ],
+        "answer": "me acuesto"
+      },
+      {
+        "id": "dr06",
+        "tag": "reflexive",
+        "prompt": {
+          "ru": "Какая форма возвратная?",
+          "uk": "Яка форма зворотна?",
+          "en": "Which form is reflexive?",
+          "es": "¿Qué forma es reflexiva?"
+        },
+        "options": [
+          "Me ducho.",
+          "Desayuno.",
+          "Trabajo."
+        ],
+        "answer": "Me ducho."
+      },
+      {
+        "id": "dr07",
+        "tag": "routine",
+        "prompt": {
+          "ru": "(yo) Por la tarde ___ a casa.",
+          "uk": "(yo) Por la tarde ___ a casa.",
+          "en": "(yo) Por la tarde ___ a casa.",
+          "es": "(yo) Por la tarde ___ a casa."
+        },
+        "options": [
+          "vuelvo",
+          "vuelve",
+          "volvemos"
+        ],
+        "answer": "vuelvo"
+      },
+      {
+        "id": "dr08",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Выбери естественную фразу.",
+          "uk": "Обери природну фразу.",
+          "en": "Choose the natural sentence.",
+          "es": "Elige la frase natural."
+        },
+        "options": [
+          "Por la noche ceno.",
+          "Por la noche desayuno.",
+          "Por la noche me desayuno."
+        ],
+        "answer": "Por la noche ceno."
+      },
+      {
+        "id": "dr09",
+        "tag": "time",
+        "prompt": {
+          "ru": "Что означает Por la tarde?",
+          "uk": "Що означає Por la tarde?",
+          "en": "What does Por la tarde mean?",
+          "es": "¿Qué significa Por la tarde?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Днём / вечером.",
+            "Утром.",
+            "В семь часов."
+          ],
+          "uk": [
+            "Удень / увечері.",
+            "Вранці.",
+            "О сьомій годині."
+          ],
+          "en": [
+            "In the afternoon / evening.",
+            "In the morning.",
+            "At seven o’clock."
+          ],
+          "es": [
+            "Durante la tarde.",
+            "Durante la mañana.",
+            "A las siete."
+          ]
+        },
+        "answers": {
+          "ru": "Днём / вечером.",
+          "uk": "Удень / увечері.",
+          "en": "In the afternoon / evening.",
+          "es": "Durante la tarde."
+        }
+      },
+      {
+        "id": "dr10",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Какой рассказ логичный?",
+          "uk": "Яка розповідь логічна?",
+          "en": "Which account is logical?",
+          "es": "¿Qué relato es lógico?"
+        },
+        "options": [
+          "Primero me levanto; después desayuno.",
+          "Primero me acuesto; después me levanto a las siete.",
+          "Primero trabajo; después me levanto."
+        ],
+        "answer": "Primero me levanto; después desayuno."
+      },
+      {
+        "id": "dr11",
+        "tag": "time",
+        "prompt": {
+          "ru": "Trabajo ___ la mañana.",
+          "uk": "Trabajo ___ la mañana.",
+          "en": "Trabajo ___ la mañana.",
+          "es": "Trabajo ___ la mañana."
+        },
+        "options": [
+          "por",
+          "a",
+          "de"
+        ],
+        "answer": "por"
+      },
+      {
+        "id": "dr12",
+        "tag": "time",
+        "prompt": {
+          "ru": "¿Cómo se dice “at night”?",
+          "uk": "¿Cómo se dice “at night”?",
+          "en": "¿Cómo se dice “at night”?",
+          "es": "¿Cómo se dice “at night”?"
+        },
+        "options": [
+          "por la noche",
+          "por la mañana",
+          "a la noche"
+        ],
+        "answer": "por la noche"
+      },
+      {
+        "id": "dr13",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "¿Cómo se dice “first”?",
+          "uk": "¿Cómo se dice “first”?",
+          "en": "¿Cómo se dice “first”?",
+          "es": "¿Cómo se dice “first”?"
+        },
+        "options": [
+          "primero",
+          "después",
+          "nunca"
+        ],
+        "answer": "primero"
+      },
+      {
+        "id": "dr14",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Elige una secuencia lógica.",
+          "uk": "Elige una secuencia lógica.",
+          "en": "Elige una secuencia lógica.",
+          "es": "Elige una secuencia lógica."
+        },
+        "options": [
+          "Primero desayuno; después voy al trabajo.",
+          "Primero ceno; después desayuno.",
+          "Después me levanto; primero duermo."
+        ],
+        "answer": "Primero desayuno; después voy al trabajo."
+      },
+      {
+        "id": "dr15",
+        "tag": "reflexive",
+        "prompt": {
+          "ru": "(tú) ___ (levantarse) a las seis.",
+          "uk": "(tú) ___ (levantarse) a las seis.",
+          "en": "(tú) ___ (levantarse) a las seis.",
+          "es": "(tú) ___ (levantarse) a las seis."
+        },
+        "options": [
+          "te levantas",
+          "me levanto",
+          "se levantan"
+        ],
+        "answer": "te levantas"
+      },
+      {
+        "id": "dr16",
+        "tag": "reflexive",
+        "prompt": {
+          "ru": "(nosotros) ___ (acostarse) a las diez.",
+          "uk": "(nosotros) ___ (acostarse) a las diez.",
+          "en": "(nosotros) ___ (acostarse) a las diez.",
+          "es": "(nosotros) ___ (acostarse) a las diez."
+        },
+        "options": [
+          "nos acostamos",
+          "os acostáis",
+          "se acuestan"
+        ],
+        "answer": "nos acostamos"
+      },
+      {
+        "id": "dr17",
+        "tag": "routine",
+        "prompt": {
+          "ru": "(ella) Por la tarde ___ (volver) a casa.",
+          "uk": "(ella) Por la tarde ___ (volver) a casa.",
+          "en": "(ella) Por la tarde ___ (volver) a casa.",
+          "es": "(ella) Por la tarde ___ (volver) a casa."
+        },
+        "options": [
+          "vuelve",
+          "vuelvo",
+          "volvemos"
+        ],
+        "answer": "vuelve"
+      },
+      {
+        "id": "dr18",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Elige la frase natural.",
+          "uk": "Elige la frase natural.",
+          "en": "Elige la frase natural.",
+          "es": "Elige la frase natural."
+        },
+        "options": [
+          "Por la noche ceno.",
+          "Por la noche desayuno.",
+          "Por la noche me ceno."
+        ],
+        "answer": "Por la noche ceno."
+      },
+      {
+        "id": "dr19",
+        "tag": "time",
+        "prompt": {
+          "ru": "A las ocho significa:",
+          "uk": "A las ocho significa:",
+          "en": "A las ocho significa:",
+          "es": "A las ocho significa:"
+        },
+        "options": [
+          "at eight",
+          "in the morning",
+          "at night"
+        ],
+        "answer": "at eight"
+      },
+      {
+        "id": "dr20",
+        "tag": "routine",
+        "prompt": {
+          "ru": "Elige una rutina natural.",
+          "uk": "Elige una rutina natural.",
+          "en": "Elige una rutina natural.",
+          "es": "Elige una rutina natural."
+        },
+        "options": [
+          "Me levanto, me ducho y desayuno.",
+          "Me acuesto, me levanto y duermo.",
+          "Desayuno por la noche y ceno por la mañana."
+        ],
+        "answer": "Me levanto, me ducho y desayuno."
+      }
     ]
   },
-  "reflexive-practice":{
-    "level":"A1","moduleId":"a1-verbs-04","nextLessonId":"adjectives","ruleTags":{"person":0,"form":1,"sequence":2,"meaning":3},
-    "i18n":{
-      "ru":{"title":"Практика возвратных глаголов","goal":"Цель: уверенно выбирать возвратное местоимение и форму глагола в рассказе о дне.","intro":"В каждом задании лицо и инфинитив указаны явно. Сначала выбери местоимение, затем форму глагола: (yo) me levanto; (ellos) se acuestan.","rules":[["Лицо","yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."],["Инфинитив","В скобках дан инфинитив: levantarse, ducharse, acostarse. В ответе ставим местоимение перед глаголом."],["Рассказ о дне","Соединяй действия словами primero, después, luego и выражениями времени."],["Самопроверка","Сначала проверь лицо, затем окончание и местоимение."]],"examplesTitle":"Послушай модели","practiceTitle":"Выбери правильную форму","trainerTitle":"Итоговая тренировка","assessmentTitle":"Контроль","resultTitle":"Результат","reviewTitle":"Что повторить","nextTitle":"Блок завершён"},
-      "uk":{"title":"Практика зворотних дієслів","goal":"Мета: упевнено обирати зворотний займенник і форму дієслова в розповіді про день.","intro":"У кожному завданні особа й інфінітив вказані явно. Спочатку обери займенник, потім форму: (yo) me levanto; (ellos) se acuestan.","rules":[["Особа","yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."],["Інфінітив","У дужках дано інфінітив. У відповіді займенник стоїть перед дієсловом."],["Розповідь про день","Поєднуй дії словами primero, después, luego та виразами часу."],["Самоперевірка","Спершу перевір особу, потім закінчення й займенник."]],"examplesTitle":"Послухай моделі","practiceTitle":"Обери правильну форму","trainerTitle":"Підсумкове тренування","assessmentTitle":"Контроль","resultTitle":"Результат","reviewTitle":"Що повторити","nextTitle":"Блок завершено"},
-      "en":{"title":"Reflexive verb practice","goal":"Goal: confidently choose the reflexive pronoun and verb form in a daily-routine account.","intro":"Every task explicitly gives the person and infinitive. First choose the pronoun, then the form: (yo) me levanto; (ellos) se acuestan.","rules":[["Person","yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."],["Infinitive","The infinitive appears in brackets. In the answer, put the pronoun before the verb."],["A daily account","Link actions with primero, después, luego and time expressions."],["Self-check","Check the person, then the ending and pronoun."]],"examplesTitle":"Listen to the patterns","practiceTitle":"Choose the correct form","trainerTitle":"Final trainer","assessmentTitle":"Check","resultTitle":"Result","reviewTitle":"What to review","nextTitle":"Module complete"},
-      "es":{"title":"Práctica de verbos reflexivos","goal":"Objetivo: elegir con seguridad el pronombre reflexivo y la forma verbal al hablar de la rutina diaria.","intro":"Cada ejercicio indica claramente la persona y el infinitivo. Primero elige el pronombre y después la forma: (yo) me levanto; (ellos) se acuestan.","rules":[["La persona","yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."],["El infinitivo","El infinitivo aparece entre paréntesis. En la respuesta, el pronombre va delante del verbo."],["La rutina","Une las acciones con primero, después, luego y expresiones de tiempo."],["Autocorrección","Comprueba la persona, la terminación y el pronombre."]],"examplesTitle":"Escucha los modelos","practiceTitle":"Elige la forma correcta","trainerTitle":"Entrenador final","assessmentTitle":"Control","resultTitle":"Resultado","reviewTitle":"Qué repasar","nextTitle":"Módulo terminado"}
+  "reflexive-practice": {
+    "level": "A1",
+    "moduleId": "a1-verbs-04",
+    "nextLessonId": "adjectives",
+    "ruleTags": {
+      "person": 0,
+      "form": 1,
+      "sequence": 2,
+      "meaning": 3
     },
-    "examples":[{"word":"(yo) Me levanto a las siete.","tag":"person"},{"word":"(tú) ¿Te duchas por la mañana?","tag":"form"},{"word":"(nosotros) Después nos acostamos.","tag":"sequence"},{"word":"(ellos) Se acuestan tarde.","tag":"meaning"}],
-    "questionBank":[
-      {"id":"rx01","tag":"person","prompt":{"ru":"(yo) ___ (levantarse) a las siete.","uk":"(yo) ___ (levantarse) a las siete.","en":"(yo) ___ (levantarse) a las siete.","es":"(yo) ___ (levantarse) a las siete."},"options":["me levanto","te levantas","se levanta"],"answer":"me levanto"},
-      {"id":"rx02","tag":"person","prompt":{"ru":"(tú) ___ (ducharse) por la mañana.","uk":"(tú) ___ (ducharse) por la mañana.","en":"(tú) ___ (ducharse) por la mañana.","es":"(tú) ___ (ducharse) por la mañana."},"options":["te duchas","me ducho","se ducha"],"answer":"te duchas"},
-      {"id":"rx03","tag":"form","prompt":{"ru":"(él) ___ (acostarse) tarde.","uk":"(él) ___ (acostarse) tarde.","en":"(él) ___ (acostarse) late.","es":"(él) ___ (acostarse) tarde."},"options":["se acuesta","se acuestan","te acuestas"],"answer":"se acuesta"},
-      {"id":"rx04","tag":"form","prompt":{"ru":"(nosotros) ___ (levantarse) temprano.","uk":"(nosotros) ___ (levantarse) temprano.","en":"(nosotros) ___ (levantarse) early.","es":"(nosotros) ___ (levantarse) temprano."},"options":["nos levantamos","os levantáis","se levantan"],"answer":"nos levantamos"},
-      {"id":"rx05","tag":"form","prompt":{"ru":"(vosotros) ___ (ducharse) por la noche.","uk":"(vosotros) ___ (ducharse) por la noche.","en":"(vosotros) ___ (ducharse) at night.","es":"(vosotros) ___ (ducharse) por la noche."},"options":["os ducháis","os duchais","nos duchamos"],"answer":"os ducháis"},
-      {"id":"rx06","tag":"person","prompt":{"ru":"(ellos) ___ (llamarse) Ana y Pablo.","uk":"(ellos) ___ (llamarse) Ana y Pablo.","en":"(ellos) ___ (llamarse) Ana y Pablo.","es":"(ellos) ___ (llamarse) Ana y Pablo."},"options":["se llaman","nos llamamos","os llamáis"],"answer":"se llaman"},
-      {"id":"rx07","tag":"sequence","prompt":{"ru":"Выбери логичную последовательность.","uk":"Обери логічну послідовність.","en":"Choose the logical sequence.","es":"Elige la secuencia lógica."},"options":["Primero me levanto; después desayuno.","Primero me acuesto; después desayuno.","Después me levanto; primero desayuno."],"answer":"Primero me levanto; después desayuno."},
-      {"id":"rx08","tag":"sequence","prompt":{"ru":"Как сказать «затем я иду домой»?","uk":"Як сказати «потім я йду додому»?","en":"How do you say “then I go home”?","es":"¿Cómo se dice “then I go home”? "},"options":["Después vuelvo a casa.","Primero vuelvo a casa después.","Después me vuelvo a casa."],"answer":"Después vuelvo a casa."},
-      {"id":"rx09","tag":"meaning","prompt":{"ru":"Что означает (nosotros) nos acostamos a las once?","uk":"Що означає (nosotros) nos acostamos a las once?","en":"What does (nosotros) nos acostamos a las once mean?","es":"¿Qué significa (nosotros) nos acostamos a las once?"},"optionsByLang":{"ru":["Мы ложимся в одиннадцать.","Мы встаём в одиннадцать.","Они ложатся в одиннадцать."],"uk":["Ми лягаємо об одинадцятій.","Ми встаємо об одинадцятій.","Вони лягають об одинадцятій."],"en":["We go to bed at eleven.","We get up at eleven.","They go to bed at eleven."],"es":["Vamos a la cama a las once.","Nos levantamos a las once.","Van a la cama a las once."]},"answers":{"ru":"Мы ложимся в одиннадцать.","uk":"Ми лягаємо об одинадцятій.","en":"We go to bed at eleven.","es":"Vamos a la cama a las once."}},
-      {"id":"rx10","tag":"meaning","prompt":{"ru":"Какая фраза естественная?","uk":"Яка фраза природна?","en":"Which sentence is natural?","es":"¿Qué frase es natural?"},"options":["Por la noche me acuesto.","Por la noche acuesto me.","Por la noche me acuesto yo a casa."],"answer":"Por la noche me acuesto."}
+    "i18n": {
+      "ru": {
+        "title": "Практика возвратных глаголов",
+        "goal": "Цель: уверенно выбирать возвратное местоимение и форму глагола в рассказе о дне.",
+        "intro": "В каждом задании лицо и инфинитив указаны явно. Сначала выбери местоимение, затем форму глагола: (yo) me levanto; (ellos) se acuestan.",
+        "rules": [
+          [
+            "Лицо",
+            "yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."
+          ],
+          [
+            "Инфинитив",
+            "В скобках дан инфинитив: levantarse, ducharse, acostarse. В ответе ставим местоимение перед глаголом."
+          ],
+          [
+            "Рассказ о дне",
+            "Соединяй действия словами primero, después, luego и выражениями времени."
+          ],
+          [
+            "Самопроверка",
+            "Сначала проверь лицо, затем окончание и местоимение."
+          ]
+        ],
+        "examplesTitle": "Послушай модели",
+        "practiceTitle": "Выбери правильную форму",
+        "trainerTitle": "Итоговая тренировка",
+        "assessmentTitle": "Контроль",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Блок завершён"
+      },
+      "uk": {
+        "title": "Практика зворотних дієслів",
+        "goal": "Мета: упевнено обирати зворотний займенник і форму дієслова в розповіді про день.",
+        "intro": "У кожному завданні особа й інфінітив вказані явно. Спочатку обери займенник, потім форму: (yo) me levanto; (ellos) se acuestan.",
+        "rules": [
+          [
+            "Особа",
+            "yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."
+          ],
+          [
+            "Інфінітив",
+            "У дужках дано інфінітив. У відповіді займенник стоїть перед дієсловом."
+          ],
+          [
+            "Розповідь про день",
+            "Поєднуй дії словами primero, después, luego та виразами часу."
+          ],
+          [
+            "Самоперевірка",
+            "Спершу перевір особу, потім закінчення й займенник."
+          ]
+        ],
+        "examplesTitle": "Послухай моделі",
+        "practiceTitle": "Обери правильну форму",
+        "trainerTitle": "Підсумкове тренування",
+        "assessmentTitle": "Контроль",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Блок завершено"
+      },
+      "en": {
+        "title": "Reflexive verb practice",
+        "goal": "Goal: confidently choose the reflexive pronoun and verb form in a daily-routine account.",
+        "intro": "Every task explicitly gives the person and infinitive. First choose the pronoun, then the form: (yo) me levanto; (ellos) se acuestan.",
+        "rules": [
+          [
+            "Person",
+            "yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."
+          ],
+          [
+            "Infinitive",
+            "The infinitive appears in brackets. In the answer, put the pronoun before the verb."
+          ],
+          [
+            "A daily account",
+            "Link actions with primero, después, luego and time expressions."
+          ],
+          [
+            "Self-check",
+            "Check the person, then the ending and pronoun."
+          ]
+        ],
+        "examplesTitle": "Listen to the patterns",
+        "practiceTitle": "Choose the correct form",
+        "trainerTitle": "Final trainer",
+        "assessmentTitle": "Check",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Module complete"
+      },
+      "es": {
+        "title": "Práctica de verbos reflexivos",
+        "goal": "Objetivo: elegir con seguridad el pronombre reflexivo y la forma verbal al hablar de la rutina diaria.",
+        "intro": "Cada ejercicio indica claramente la persona y el infinitivo. Primero elige el pronombre y después la forma: (yo) me levanto; (ellos) se acuestan.",
+        "rules": [
+          [
+            "La persona",
+            "yo → me; tú → te; él/ella/usted → se; nosotros/as → nos; vosotros/as → os; ellos/ellas/ustedes → se."
+          ],
+          [
+            "El infinitivo",
+            "El infinitivo aparece entre paréntesis. En la respuesta, el pronombre va delante del verbo."
+          ],
+          [
+            "La rutina",
+            "Une las acciones con primero, después, luego y expresiones de tiempo."
+          ],
+          [
+            "Autocorrección",
+            "Comprueba la persona, la terminación y el pronombre."
+          ]
+        ],
+        "examplesTitle": "Escucha los modelos",
+        "practiceTitle": "Elige la forma correcta",
+        "trainerTitle": "Entrenador final",
+        "assessmentTitle": "Control",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Módulo terminado"
+      }
+    },
+    "examples": [
+      {
+        "word": "(yo) Me levanto a las siete.",
+        "tag": "person"
+      },
+      {
+        "word": "(tú) ¿Te duchas por la mañana?",
+        "tag": "form"
+      },
+      {
+        "word": "(nosotros) Después nos acostamos.",
+        "tag": "sequence"
+      },
+      {
+        "word": "(ellos) Se acuestan tarde.",
+        "tag": "meaning"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "rx01",
+        "tag": "person",
+        "prompt": {
+          "ru": "(yo) ___ (levantarse) a las siete.",
+          "uk": "(yo) ___ (levantarse) a las siete.",
+          "en": "(yo) ___ (levantarse) a las siete.",
+          "es": "(yo) ___ (levantarse) a las siete."
+        },
+        "options": [
+          "me levanto",
+          "te levantas",
+          "se levanta"
+        ],
+        "answer": "me levanto"
+      },
+      {
+        "id": "rx02",
+        "tag": "person",
+        "prompt": {
+          "ru": "(tú) ___ (ducharse) por la mañana.",
+          "uk": "(tú) ___ (ducharse) por la mañana.",
+          "en": "(tú) ___ (ducharse) por la mañana.",
+          "es": "(tú) ___ (ducharse) por la mañana."
+        },
+        "options": [
+          "te duchas",
+          "me ducho",
+          "se ducha"
+        ],
+        "answer": "te duchas"
+      },
+      {
+        "id": "rx03",
+        "tag": "form",
+        "prompt": {
+          "ru": "(él) ___ (acostarse) tarde.",
+          "uk": "(él) ___ (acostarse) tarde.",
+          "en": "(él) ___ (acostarse) late.",
+          "es": "(él) ___ (acostarse) tarde."
+        },
+        "options": [
+          "se acuesta",
+          "se acuestan",
+          "te acuestas"
+        ],
+        "answer": "se acuesta"
+      },
+      {
+        "id": "rx04",
+        "tag": "form",
+        "prompt": {
+          "ru": "(nosotros) ___ (levantarse) temprano.",
+          "uk": "(nosotros) ___ (levantarse) temprano.",
+          "en": "(nosotros) ___ (levantarse) early.",
+          "es": "(nosotros) ___ (levantarse) temprano."
+        },
+        "options": [
+          "nos levantamos",
+          "os levantáis",
+          "se levantan"
+        ],
+        "answer": "nos levantamos"
+      },
+      {
+        "id": "rx05",
+        "tag": "form",
+        "prompt": {
+          "ru": "(vosotros) ___ (ducharse) por la noche.",
+          "uk": "(vosotros) ___ (ducharse) por la noche.",
+          "en": "(vosotros) ___ (ducharse) at night.",
+          "es": "(vosotros) ___ (ducharse) por la noche."
+        },
+        "options": [
+          "os ducháis",
+          "os duchais",
+          "nos duchamos"
+        ],
+        "answer": "os ducháis"
+      },
+      {
+        "id": "rx06",
+        "tag": "person",
+        "prompt": {
+          "ru": "(ellos) ___ (llamarse) Ana y Pablo.",
+          "uk": "(ellos) ___ (llamarse) Ana y Pablo.",
+          "en": "(ellos) ___ (llamarse) Ana y Pablo.",
+          "es": "(ellos) ___ (llamarse) Ana y Pablo."
+        },
+        "options": [
+          "se llaman",
+          "nos llamamos",
+          "os llamáis"
+        ],
+        "answer": "se llaman"
+      },
+      {
+        "id": "rx07",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Выбери логичную последовательность.",
+          "uk": "Обери логічну послідовність.",
+          "en": "Choose the logical sequence.",
+          "es": "Elige la secuencia lógica."
+        },
+        "options": [
+          "Primero me levanto; después desayuno.",
+          "Primero me acuesto; después desayuno.",
+          "Después me levanto; primero desayuno."
+        ],
+        "answer": "Primero me levanto; después desayuno."
+      },
+      {
+        "id": "rx08",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Как сказать «затем я иду домой»?",
+          "uk": "Як сказати «потім я йду додому»?",
+          "en": "How do you say “then I go home”?",
+          "es": "¿Cómo se dice “then I go home”? "
+        },
+        "options": [
+          "Después vuelvo a casa.",
+          "Primero vuelvo a casa después.",
+          "Después me vuelvo a casa."
+        ],
+        "answer": "Después vuelvo a casa."
+      },
+      {
+        "id": "rx09",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Что означает (nosotros) nos acostamos a las once?",
+          "uk": "Що означає (nosotros) nos acostamos a las once?",
+          "en": "What does (nosotros) nos acostamos a las once mean?",
+          "es": "¿Qué significa (nosotros) nos acostamos a las once?"
+        },
+        "optionsByLang": {
+          "ru": [
+            "Мы ложимся в одиннадцать.",
+            "Мы встаём в одиннадцать.",
+            "Они ложатся в одиннадцать."
+          ],
+          "uk": [
+            "Ми лягаємо об одинадцятій.",
+            "Ми встаємо об одинадцятій.",
+            "Вони лягають об одинадцятій."
+          ],
+          "en": [
+            "We go to bed at eleven.",
+            "We get up at eleven.",
+            "They go to bed at eleven."
+          ],
+          "es": [
+            "Vamos a la cama a las once.",
+            "Nos levantamos a las once.",
+            "Van a la cama a las once."
+          ]
+        },
+        "answers": {
+          "ru": "Мы ложимся в одиннадцать.",
+          "uk": "Ми лягаємо об одинадцятій.",
+          "en": "We go to bed at eleven.",
+          "es": "Vamos a la cama a las once."
+        }
+      },
+      {
+        "id": "rx10",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Какая фраза естественная?",
+          "uk": "Яка фраза природна?",
+          "en": "Which sentence is natural?",
+          "es": "¿Qué frase es natural?"
+        },
+        "options": [
+          "Por la noche me acuesto.",
+          "Por la noche acuesto me.",
+          "Por la noche me acuesto yo a casa."
+        ],
+        "answer": "Por la noche me acuesto."
+      },
+      {
+        "id": "rx11",
+        "tag": "person",
+        "prompt": {
+          "ru": "(yo) ___ (llamarse) Pablo.",
+          "uk": "(yo) ___ (llamarse) Pablo.",
+          "en": "(yo) ___ (llamarse) Pablo.",
+          "es": "(yo) ___ (llamarse) Pablo."
+        },
+        "options": [
+          "me llamo",
+          "te llamas",
+          "se llama"
+        ],
+        "answer": "me llamo"
+      },
+      {
+        "id": "rx12",
+        "tag": "person",
+        "prompt": {
+          "ru": "(tú) ___ (acostarse) a las diez.",
+          "uk": "(tú) ___ (acostarse) a las diez.",
+          "en": "(tú) ___ (acostarse) a las diez.",
+          "es": "(tú) ___ (acostarse) a las diez."
+        },
+        "options": [
+          "te acuestas",
+          "me acuesto",
+          "se acuesta"
+        ],
+        "answer": "te acuestas"
+      },
+      {
+        "id": "rx13",
+        "tag": "form",
+        "prompt": {
+          "ru": "(ella) ___ (ducharse) antes de salir.",
+          "uk": "(ella) ___ (ducharse) antes de salir.",
+          "en": "(ella) ___ (ducharse) antes de salir.",
+          "es": "(ella) ___ (ducharse) antes de salir."
+        },
+        "options": [
+          "se ducha",
+          "nos duchamos",
+          "os ducháis"
+        ],
+        "answer": "se ducha"
+      },
+      {
+        "id": "rx14",
+        "tag": "form",
+        "prompt": {
+          "ru": "(nosotros) ___ (levantarse) temprano.",
+          "uk": "(nosotros) ___ (levantarse) temprano.",
+          "en": "(nosotros) ___ (levantarse) temprano.",
+          "es": "(nosotros) ___ (levantarse) temprano."
+        },
+        "options": [
+          "nos levantamos",
+          "se levantan",
+          "os levantáis"
+        ],
+        "answer": "nos levantamos"
+      },
+      {
+        "id": "rx15",
+        "tag": "form",
+        "prompt": {
+          "ru": "(vosotros) ___ (llamarse) Marta y Luis.",
+          "uk": "(vosotros) ___ (llamarse) Marta y Luis.",
+          "en": "(vosotros) ___ (llamarse) Marta y Luis.",
+          "es": "(vosotros) ___ (llamarse) Marta y Luis."
+        },
+        "options": [
+          "os llamáis",
+          "nos llamamos",
+          "se llaman"
+        ],
+        "answer": "os llamáis"
+      },
+      {
+        "id": "rx16",
+        "tag": "person",
+        "prompt": {
+          "ru": "(ellos) ___ (acostarse) tarde.",
+          "uk": "(ellos) ___ (acostarse) tarde.",
+          "en": "(ellos) ___ (acostarse) tarde.",
+          "es": "(ellos) ___ (acostarse) tarde."
+        },
+        "options": [
+          "se acuestan",
+          "te acuestas",
+          "nos acostamos"
+        ],
+        "answer": "se acuestan"
+      },
+      {
+        "id": "rx17",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Elige qué ocurre primero.",
+          "uk": "Elige qué ocurre primero.",
+          "en": "Elige qué ocurre primero.",
+          "es": "Elige qué ocurre primero."
+        },
+        "options": [
+          "Primero me levanto; después me ducho.",
+          "Primero me acuesto; después me levanto.",
+          "Después desayuno; primero ceno."
+        ],
+        "answer": "Primero me levanto; después me ducho."
+      },
+      {
+        "id": "rx18",
+        "tag": "sequence",
+        "prompt": {
+          "ru": "Elige el orden correcto.",
+          "uk": "Elige el orden correcto.",
+          "en": "Elige el orden correcto.",
+          "es": "Elige el orden correcto."
+        },
+        "options": [
+          "Después vuelvo a casa.",
+          "Después a casa vuelvo me.",
+          "Después me vuelvo a casa."
+        ],
+        "answer": "Después vuelvo a casa."
+      },
+      {
+        "id": "rx19",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "ellos + acostarse + tarde:",
+          "uk": "ellos + acostarse + tarde:",
+          "en": "ellos + acostarse + tarde:",
+          "es": "ellos + acostarse + tarde:"
+        },
+        "options": [
+          "Ellos se acuestan tarde.",
+          "Ellos se acuestan tardos.",
+          "Ellos acuestan se tarde."
+        ],
+        "answer": "Ellos se acuestan tarde."
+      },
+      {
+        "id": "rx20",
+        "tag": "meaning",
+        "prompt": {
+          "ru": "Elige una pregunta natural.",
+          "uk": "Elige una pregunta natural.",
+          "en": "Elige una pregunta natural.",
+          "es": "Elige una pregunta natural."
+        },
+        "options": [
+          "¿A qué hora te duchas?",
+          "¿A qué hora duchas te?",
+          "¿A qué hora te duchan?"
+        ],
+        "answer": "¿A qué hora te duchas?"
+      }
     ]
   }
 }
