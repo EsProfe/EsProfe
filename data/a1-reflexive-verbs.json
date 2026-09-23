@@ -1226,10 +1226,10 @@
         "id": "dr12",
         "tag": "time",
         "prompt": {
-          "ru": "¿Cómo se dice “at night”?",
-          "uk": "¿Cómo se dice “at night”?",
-          "en": "¿Cómo se dice “at night”?",
-          "es": "¿Cómo se dice “at night”?"
+          "ru": "Выбери выражение «ночью».",
+          "uk": "Обери вираз «уночі».",
+          "en": "Choose the expression for “at night.”",
+          "es": "Elige la expresión para «por la noche»."
         },
         "options": [
           "por la noche",
@@ -1242,10 +1242,10 @@
         "id": "dr13",
         "tag": "sequence",
         "prompt": {
-          "ru": "¿Cómo se dice “first”?",
-          "uk": "¿Cómo se dice “first”?",
-          "en": "¿Cómo se dice “first”?",
-          "es": "¿Cómo se dice “first”?"
+          "ru": "Выбери слово «сначала».",
+          "uk": "Обери слово «спочатку».",
+          "en": "Choose the word “first.”",
+          "es": "Elige la palabra «primero»."
         },
         "options": [
           "primero",
@@ -1338,17 +1338,45 @@
         "id": "dr19",
         "tag": "time",
         "prompt": {
-          "ru": "A las ocho significa:",
-          "uk": "A las ocho significa:",
-          "en": "A las ocho significa:",
-          "es": "A las ocho significa:"
+          "ru": "Что означает A las ocho?",
+          "uk": "Що означає A las ocho?",
+          "en": "What does A las ocho mean?",
+          "es": "¿Qué significa A las ocho?"
         },
         "options": [
-          "at eight",
-          "in the morning",
-          "at night"
+          "В восемь",
+          "Утром",
+          "Ночью"
         ],
-        "answer": "at eight"
+        "answer": "В восемь",
+        "optionsByLang": {
+          "ru": [
+            "В восемь",
+            "Утром",
+            "Ночью"
+          ],
+          "uk": [
+            "О восьмій",
+            "Вранці",
+            "Уночі"
+          ],
+          "en": [
+            "At eight",
+            "In the morning",
+            "At night"
+          ],
+          "es": [
+            "A las ocho",
+            "Por la mañana",
+            "Por la noche"
+          ]
+        },
+        "answers": {
+          "ru": "В восемь",
+          "uk": "О восьмій",
+          "en": "At eight",
+          "es": "A las ocho"
+        }
       },
       {
         "id": "dr20",
