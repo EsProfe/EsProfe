@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "locales": [
+    "ru",
+    "uk",
+    "en",
+    "es"
+  ],
+  "levels": {
+    "A1": {
+      "order": 1,
+      "status": "active"
+    },
+    "A2": {
+      "order": 2,
+      "status": "planned"
+    },
+    "B1": {
+      "order": 3,
+      "status": "planned"
+    },
+    "B2": {
+      "order": 4,
+      "status": "planned"
+    }
+  },
+  "tracks": {
+    "route": {
+      "order": 1,
+      "labels": {
+        "ru": "Учиться по уровню",
+        "uk": "Навчатися за рівнем",
+        "en": "Learn by level",
+        "es": "Aprender por nivel"
+      }
+    },
+    "verbs": {
+      "order": 2,
+      "labels": {
+        "ru": "Глаголы",
+        "uk": "Дієслова",
+        "en": "Verbs",
+        "es": "Verbos"
+      }
+    },
+    "grammar": {
+      "order": 3,
+      "labels": {
+        "ru": "Грамматика",
+        "uk": "Граматика",
+        "en": "Grammar",
+        "es": "Gramática"
+      }
+    },
+    "vocabulary": {
+      "order": 4,
+      "labels": {
+        "ru": "Лексика",
+        "uk": "Лексика",
+        "en": "Vocabulary",
+        "es": "Vocabulario"
+      }
+    },
+    "communication": {
+      "order": 5,
+      "labels": {
+        "ru": "Общение",
+        "uk": "Спілкування",
+        "en": "Communication",
+        "es": "Comunicación"
+      }
+    },
+    "skills": {
+      "order": 6,
+      "labels": {
+        "ru": "Навыки",
+        "uk": "Навички",
+        "en": "Skills",
+        "es": "Destrezas"
+      }
+    },
+    "exams": {
+      "order": 7,
+      "labels": {
+        "ru": "Экзамены",
+        "uk": "Іспити",
+        "en": "Exams",
+        "es": "Exámenes"
+      }
+    }
+  },
+  "contentTypes": [
+    "lesson",
+    "vocabulary",
+    "reading",
+    "listening",
+    "dialogue",
+    "story",
+    "assessment"
+  ],
+  "catalogSources": [
+    {
+      "level": "A1",
+      "path": "data/a1-catalog.json",
+      "status": "active"
+    },
+    {
+      "level": "A2",
+      "path": "data/a2-catalog.json",
+      "status": "planned"
+    },
+    {
+      "level": "B1",
+      "path": "data/b1-catalog.json",
+      "status": "planned"
+    },
+    {
+      "level": "B2",
+      "path": "data/b2-catalog.json",
+      "status": "planned"
+    }
+  ],
+  "learningModes": {
+    "free": {
+      "registrationRequired": false,
+      "usesSharedCatalog": true
+    },
+    "course": {
+      "registrationRequired": true,
+      "usesSharedCatalog": true,
+      "features": [
+        "profile",
+        "cloudProgress",
+        "history",
+        "recommendations",
+        "review"
+      ]
+    }
+  },
+  "accountContract": {
+    "profileFields": [
+      "studentId",
+      "displayName",
+      "email",
+      "interfaceLanguage",
+      "currentLevel",
+      "goals",
+      "createdAt"
+    ],
+    "consentFields": [
+      "newsletter",
+      "productUpdates",
+      "analytics"
+    ],
+    "progressFields": [
+      "studentId",
+      "level",
+      "lessonId",
+      "status",
+      "attempts",
+      "percent",
+      "weakSpots",
+      "updatedAt"
+    ],
+    "subscriptionFields": [
+      "studentId",
+      "planId",
+      "status",
+      "startedAt",
+      "expiresAt"
+    ],
+    "rule": "Payment is optional and independent from registration."
+  },
+  "lessonContract": {
+    "stableFields": [
+      "id",
+      "level",
+      "status",
+      "file"
+    ],
+    "taxonomyFields": [
+      "tracks",
+      "topic",
+      "subtopic",
+      "contentType",
+      "tags"
+    ],
+    "searchFields": [
+      "es",
+      "ru",
+      "uk",
+      "en",
+      "tags"
+    ],
+    "rules": [
+      "A lesson has one stable id and one source JSON file.",
+      "A lesson can appear in several tracks without copying its learning content.",
+      "Progress is stored by level and stable lesson id.",
+      "Every published lesson has searchable metadata in all four interface languages."
+    ]
+  },
+  "search": {
+    "minimumQueryLength": 2,
+    "defaultFilters": [
+      "level",
+      "track",
+      "contentType"
+    ],
+    "localPageSearch": true,
+    "globalSearch": true
+  }
+}
