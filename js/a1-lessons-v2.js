@@ -734,6 +734,18 @@
       "words",
     )}${table(t.rules?.[1]?.[0] || "", layout.questions || [], "questions")}</div>`;
   }
+  function pronounTableHTML(t) {
+    const table = t.pronounTable;
+    if (lesson?.id !== "subject-pronouns" || !table) return "";
+    const column = (title, rows) =>
+      `<article class="a1-pronoun-column"><h3>${esc(title)}</h3><div>${(rows || [])
+        .map(([pronoun, meaning]) => `<p><b>${esc(pronoun)}</b><span>${esc(meaning)}</span></p>`)
+        .join("")}</div></article>`;
+    return `<section class="a1-pronoun-grid" aria-label="${esc(t.title)}">${column(
+      table.singularTitle,
+      table.singular,
+    )}${column(table.pluralTitle, table.plural)}</section>`;
+  }
   function numbersVisualHTML(t) {
     const layout = t.numberTables;
     if (lesson?.id !== "numbers" || !layout) return "";
@@ -753,7 +765,7 @@
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru;
     if (!t) return;
-    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p>${questionWordsVisualHTML(t)}${numbersVisualHTML(t)}<div class="a1-rule-grid">${(t.questionWordTables ? (t.rules || []).slice(2) : t.numberTables ? (t.rules || []).slice(3) : (t.rules || [])).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${tenerExpressionVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
+    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.title)}</div><h2>${esc(t.title)}</h2><p class="a1-goal">${esc(t.goal)}</p><p>${esc(t.intro)}</p>${questionWordsVisualHTML(t)}${numbersVisualHTML(t)}${pronounTableHTML(t)}<div class="a1-rule-grid">${(t.questionWordTables ? (t.rules || []).slice(2) : t.numberTables ? (t.rules || []).slice(3) : t.pronounTable ? (t.rules || []).filter((_, index) => index !== 0 && index !== 2) : (t.rules || [])).map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div>${reflexiveVisualHTML()}${tenerExpressionVisualHTML()}${possessiveFormsHTML()}${possessiveVisualHTML()}${demonstrativeVisualHTML()}${prepositionVisualHTML()}${locationVisualHTML()}${cityVisualHTML()}${bootDiagramHTML()}${supplementHTML()}<button class="grammar-primary a1-main" id="a1Examples">${U().examples}</button></div>`;
     document.getElementById("a1Examples").onclick = renderExamples;
     initSupplements();
     const vocabCards=[...r.querySelectorAll(".a1-vocab-card")];
