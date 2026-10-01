@@ -41,7 +41,13 @@ const stemChangingLessons = {
     persons: ["yo", "tú", "él / ella / usted", "nosotros / nosotras", "vosotros / vosotras", "ellos / ellas / ustedes"],
     forms: ["pido", "pides", "pide", "pedimos", "pedís", "piden"],
     changedVowel: "i",
-    rootVowel: "e"
+    rootVowel: "e",
+    related: [{
+      verb: "decir",
+      forms: ["digo", "dices", "dice", "decimos", "decís", "dicen"],
+      changedVowel: "i",
+      rootVowel: "e"
+    }]
   }
 };
 
@@ -64,7 +70,8 @@ const stemT = {
     good: "Хорошо, но стоит повторить ошибки.",
     again: "Материал пока усвоен недостаточно. Повторите правило и тренировку.",
     repeat: "Повторить",
-    lesson: "Вернуться к уроку"
+    lesson: "Вернуться к уроку",
+    related: "Ещё один глагол с этим чередованием"
   },
   uk: {
     grammar: "Граматика",
@@ -84,7 +91,8 @@ const stemT = {
     good: "Добре, але варто повторити помилки.",
     again: "Матеріал поки засвоєно недостатньо. Повторіть правило і тренування.",
     repeat: "Повторити",
-    lesson: "До уроку"
+    lesson: "До уроку",
+    related: "Ще одне дієслово з таким чергуванням"
   },
   en: {
     grammar: "Grammar",
@@ -104,7 +112,8 @@ const stemT = {
     good: "Good, but review your mistakes.",
     again: "The material is not mastered yet. Review the rule and practise again.",
     repeat: "Repeat",
-    lesson: "Back to lesson"
+    lesson: "Back to lesson",
+    related: "Another verb with this stem change"
   },
   es: {
     grammar: "Gramática",
@@ -124,7 +133,8 @@ const stemT = {
     good: "Bien, pero repasa los errores.",
     again: "El material aún no está dominado. Repite la regla y practica de nuevo.",
     repeat: "Repetir",
-    lesson: "Volver a la lección"
+    lesson: "Volver a la lección",
+    related: "Otro verbo con este cambio de raíz"
   }
 };
 
@@ -171,6 +181,7 @@ function renderStemChangingLesson() {
       <h3>${lesson.verb} — ${lesson.title[stemLang()]}</h3>
       <p>${lesson.description[stemLang()]}</p>
       ${window.renderStemDiagram(lesson, texts)}
+      ${(lesson.related || []).map(example => `\n        <section class="stem-related-example">\n          <h4>${st("related")}: ${example.verb} — ${lesson.title[stemLang()]}</h4>\n          ${window.renderStemDiagram(example, texts)}\n        </section>\n      `).join("")}
     </div>
 
     <button class="grammar-primary" id="stemPractice">${st("practice")}</button>
