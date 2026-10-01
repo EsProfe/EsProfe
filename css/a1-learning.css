@@ -1967,3 +1967,50 @@
   .a1-topic-card { min-height: 132px; }
   .a1-topic-copy { min-height: 0; }
 }
+
+
+/* Subject pronouns: paired columns keep the full paradigm easy to scan. */
+.a1-pronoun-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.a1-pronoun-column {
+  border: 1px solid #d7e3f5;
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+.a1-pronoun-column h3 {
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 1rem;
+  background: #f2f7ff;
+  color: #113f79;
+}
+.a1-pronoun-column > div {
+  padding: 6px 14px;
+}
+.a1-pronoun-column p {
+  display: grid;
+  grid-template-columns: minmax(112px, 1fr) minmax(0, 1.5fr);
+  gap: 12px;
+  align-items: baseline;
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #edf2fa;
+  line-height: 1.35;
+}
+.a1-pronoun-column p:last-child { border-bottom: 0; }
+.a1-pronoun-column b,
+.a1-pronoun-column span {
+  font: inherit;
+}
+.a1-pronoun-column b { color: #0c2d5b; }
+.a1-pronoun-column span { color: #425a78; }
+
+@media (max-width: 640px) {
+  .a1-pronoun-grid { grid-template-columns: 1fr; gap: 10px; }
+  .a1-pronoun-column p { grid-template-columns: minmax(104px, .9fr) minmax(0, 1.35fr); }
+}
