@@ -38,7 +38,51 @@
         "assessmentTitle": "Проверь себя",
         "resultTitle": "Результат",
         "reviewTitle": "Что повторить",
-        "nextTitle": "Следующий урок: Базовый порядок слов"
+        "nextTitle": "Следующий урок: Базовый порядок слов",
+        "pronounTable": {
+          "singularTitle": "Единственное число",
+          "pluralTitle": "Множественное число",
+          "singular": [
+            [
+              "yo",
+              "я"
+            ],
+            [
+              "tú",
+              "ты"
+            ],
+            [
+              "él",
+              "он"
+            ],
+            [
+              "ella",
+              "она"
+            ],
+            [
+              "usted",
+              "Вы (вежливо)"
+            ]
+          ],
+          "plural": [
+            [
+              "nosotros / nosotras",
+              "мы"
+            ],
+            [
+              "vosotros / vosotras",
+              "вы (неформально, Испания)"
+            ],
+            [
+              "ellos / ellas",
+              "они"
+            ],
+            [
+              "ustedes",
+              "вы (множественное)"
+            ]
+          ]
+        }
       },
       "uk": {
         "title": "Особові займенники: yo, tú, él, ella...",
@@ -68,7 +112,51 @@
         "assessmentTitle": "Перевір себе",
         "resultTitle": "Результат",
         "reviewTitle": "Що повторити",
-        "nextTitle": "Наступний урок: Базовий порядок слів"
+        "nextTitle": "Наступний урок: Базовий порядок слів",
+        "pronounTable": {
+          "singularTitle": "Однина",
+          "pluralTitle": "Множина",
+          "singular": [
+            [
+              "yo",
+              "я"
+            ],
+            [
+              "tú",
+              "ти"
+            ],
+            [
+              "él",
+              "він"
+            ],
+            [
+              "ella",
+              "вона"
+            ],
+            [
+              "usted",
+              "Ви (ввічливо)"
+            ]
+          ],
+          "plural": [
+            [
+              "nosotros / nosotras",
+              "ми"
+            ],
+            [
+              "vosotros / vosotras",
+              "ви (неформально, Іспанія)"
+            ],
+            [
+              "ellos / ellas",
+              "вони"
+            ],
+            [
+              "ustedes",
+              "ви (множина)"
+            ]
+          ]
+        }
       },
       "en": {
         "title": "Subject pronouns: yo, tú, él, ella...",
@@ -98,7 +186,51 @@
         "assessmentTitle": "Check yourself",
         "resultTitle": "Result",
         "reviewTitle": "What to review",
-        "nextTitle": "Next lesson: Basic word order"
+        "nextTitle": "Next lesson: Basic word order",
+        "pronounTable": {
+          "singularTitle": "Singular",
+          "pluralTitle": "Plural",
+          "singular": [
+            [
+              "yo",
+              "I"
+            ],
+            [
+              "tú",
+              "you (informal)"
+            ],
+            [
+              "él",
+              "he"
+            ],
+            [
+              "ella",
+              "she"
+            ],
+            [
+              "usted",
+              "you (formal)"
+            ]
+          ],
+          "plural": [
+            [
+              "nosotros / nosotras",
+              "we"
+            ],
+            [
+              "vosotros / vosotras",
+              "you (informal, Spain)"
+            ],
+            [
+              "ellos / ellas",
+              "they"
+            ],
+            [
+              "ustedes",
+              "you (plural)"
+            ]
+          ]
+        }
       },
       "es": {
         "title": "Pronombres personales sujeto: yo, tú, él, ella...",
@@ -128,7 +260,51 @@
         "assessmentTitle": "Compruébalo",
         "resultTitle": "Resultado",
         "reviewTitle": "Qué repasar",
-        "nextTitle": "Siguiente lección: Orden básico de palabras"
+        "nextTitle": "Siguiente lección: Orden básico de palabras",
+        "pronounTable": {
+          "singularTitle": "Singular",
+          "pluralTitle": "Plural",
+          "singular": [
+            [
+              "yo",
+              "primera persona"
+            ],
+            [
+              "tú",
+              "segunda persona informal"
+            ],
+            [
+              "él",
+              "masculino"
+            ],
+            [
+              "ella",
+              "femenino"
+            ],
+            [
+              "usted",
+              "tratamiento formal"
+            ]
+          ],
+          "plural": [
+            [
+              "nosotros / nosotras",
+              "primera persona plural"
+            ],
+            [
+              "vosotros / vosotras",
+              "tratamiento informal, España"
+            ],
+            [
+              "ellos / ellas",
+              "tercera persona plural"
+            ],
+            [
+              "ustedes",
+              "tratamiento plural"
+            ]
+          ]
+        }
       }
     },
     "examples": [
