@@ -1,5 +1,13 @@
 # Changelog
 
+## [Spanish home palettes] - 2026-10-10
+
+- Added an original Spanish village vignette within the welcome block, scaled down on phones.
+- Added three home-only palettes with warm backgrounds, Spanish color accents and subtle hover feedback.
+- Added a four-language comparison picker at `?design=1`; regular visitors see the default Spanish palette without design controls.
+- Preserved compact dimensions and lesson feedback colors; respected reduced-motion preferences.
+
+
 ## [Compact home] - 2026-10-10
 
 - Reduced home-page typography, header height and spacing; placed subject entry and learning-method blocks side by side on wide screens.

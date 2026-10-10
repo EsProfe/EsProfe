@@ -74,3 +74,63 @@ html[data-learning-mode="home"] footer{padding:7px 12px;font-size:11px;line-heig
   html[data-learning-mode="home"] .home-path-card p{font-size:13px}
   html[data-learning-mode="home"] .home-quick-card small{font-size:11px}
 }
+
+/* Spanish home palettes. These tokens never recolor lesson feedback. */
+html[data-home-palette="sol"]{--home-accent:#b82430;--home-hover:#951b27;--home-gold:#f4c34b;--home-soft:#fff4df;--home-line:#ead6bd;--home-bg:#fcf8f2;--home-ink:#35252a;--home-muted:#6f6267}
+html[data-home-palette="mar"]{--home-accent:#1762ad;--home-hover:#124e8c;--home-gold:#eda743;--home-soft:#edf6fc;--home-line:#c9dfe9;--home-bg:#f5fafc;--home-ink:#16364c;--home-muted:#526c7c}
+html[data-home-palette="tierra"]{--home-accent:#a3452e;--home-hover:#833623;--home-gold:#c2a34c;--home-soft:#f8eee4;--home-line:#e5d2be;--home-bg:#fbf7f1;--home-ink:#3d3029;--home-muted:#716459}
+html[data-learning-mode="home"] body{background:var(--home-bg);color:var(--home-ink)}
+html[data-learning-mode="home"] .home-welcome{position:relative;border-color:var(--home-line);background:radial-gradient(ellipse at 100% 0%,var(--home-soft),transparent 52%),#fff;box-shadow:0 6px 20px rgb(89 55 29 / 5%)}
+html[data-learning-mode="home"] .home-welcome::before{content:"";position:absolute;inset:0 0 auto;height:4px;border-radius:16px 16px 0 0;background:linear-gradient(90deg,var(--home-accent) 0 25%,var(--home-gold) 25% 75%,var(--home-accent) 75%)}
+html[data-learning-mode="home"] .home-eyebrow{color:var(--home-accent)}
+html[data-learning-mode="home"] .home-lead,
+html[data-learning-mode="home"] .home-path-card p,
+html[data-learning-mode="home"] .home-section-head p,
+html[data-learning-mode="home"] .home-quick-card small{color:var(--home-muted)}
+html[data-learning-mode="home"] .home-path-card:first-child{background:var(--home-soft);border-color:var(--home-line)}
+html[data-learning-mode="home"] .home-path-card:last-child{background:#fff;border-color:var(--home-line)}
+html[data-learning-mode="home"] .home-path-card button{background:var(--home-accent);transition:background .16s ease,box-shadow .16s ease}
+html[data-learning-mode="home"] .home-path-card button:hover{background:var(--home-hover);box-shadow:0 3px 8px rgb(89 55 29 / 13%)}
+html[data-learning-mode="home"] .platform-nav-button.active{background:var(--home-soft);color:var(--home-accent)}
+html[data-learning-mode="home"] .platform-nav-button:hover{background:var(--home-soft);color:var(--home-accent)}
+html[data-learning-mode="home"] .header-login{border-color:var(--home-accent);color:var(--home-accent)}
+html[data-learning-mode="home"] .header-login:hover{background:var(--home-soft)}
+html[data-learning-mode="home"] .home-quick-card{border-color:var(--home-line);border-top:3px solid var(--home-gold);color:var(--home-ink);transition:background .16s ease,border-color .16s ease}
+html[data-learning-mode="home"] .home-quick-card:hover{background:var(--home-soft);border-color:var(--home-accent)}
+html[data-learning-mode="home"] .home-method{border-color:var(--home-line);background:var(--home-soft);color:var(--home-ink)}
+html[data-learning-mode="home"] .home-method i{color:var(--home-accent)}
+html[data-learning-mode="home"] .home-path-card button:focus-visible,
+html[data-learning-mode="home"] .home-quick-card:focus-visible,
+.home-palette-picker button:focus-visible{outline:2px solid var(--home-accent);outline-offset:3px}
+.home-topline{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.home-palette-picker{display:flex;gap:4px;flex-wrap:wrap}
+.home-palette-picker[hidden]{display:none}
+.home-palette-picker button{display:inline-flex;align-items:center;gap:5px;padding:3px 6px;border:1px solid transparent;border-radius:6px;background:#fff;color:#514b4b;font-size:10px;line-height:14px}
+.home-palette-picker button[aria-pressed="true"]{border-color:var(--home-accent);color:var(--home-accent)}
+.palette-swatch{width:13px;height:13px;border-radius:50%;border:1px solid rgb(0 0 0 / 8%)}
+.palette-sol{background:linear-gradient(90deg,#b82430 50%,#f4c34b 50%)}
+.palette-mar{background:linear-gradient(90deg,#1762ad 50%,#eda743 50%)}
+.palette-tierra{background:linear-gradient(90deg,#a3452e 50%,#c2a34c 50%)}
+@media(prefers-reduced-motion:reduce){
+  html[data-learning-mode="home"] button{transition:none}
+}
+
+/* Illustration fits within the existing welcome block, above the path cards. */
+html[data-learning-mode="home"] .home-spanish-vignette{position:absolute;right:20px;top:18px;width:clamp(170px,19vw,240px);height:150px;object-fit:contain;pointer-events:none}
+html[data-learning-mode="home"] .home-topline,
+html[data-learning-mode="home"] .home-welcome h1,
+html[data-learning-mode="home"] .home-lead{margin-right:260px}
+html[data-learning-mode="home"] .home-topline{min-height:20px}
+html[data-learning-mode="home"] .home-paths{position:relative}
+@media(max-width:1100px){
+  html[data-learning-mode="home"] .home-spanish-vignette{width:165px;height:125px;right:14px}
+  html[data-learning-mode="home"] .home-topline,
+  html[data-learning-mode="home"] .home-welcome h1,
+  html[data-learning-mode="home"] .home-lead{margin-right:175px}
+}
+@media(max-width:650px){
+  html[data-learning-mode="home"] .home-spanish-vignette{width:76px;height:45px;right:12px;top:10px}
+  html[data-learning-mode="home"] .home-topline{margin-right:82px;min-height:32px}
+  html[data-learning-mode="home"] .home-welcome h1,
+  html[data-learning-mode="home"] .home-lead{margin-right:0}
+}
