@@ -1,5 +1,10 @@
 # Changelog
 
+## [Compact home] - 2026-10-10
+
+- Reduced home-page typography, header height and spacing; placed subject entry and learning-method blocks side by side on wide screens.
+- Retained all text and actions, with responsive wrapping and normal scrolling when screen space is insufficient.
+
 ## [A1 architecture checkpoint] - 2026-10-10
 
 - Connected saved weak-spot recommendations to the common A1 lesson engine and progress resolver.
