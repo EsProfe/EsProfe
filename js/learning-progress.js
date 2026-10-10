@@ -3,7 +3,8 @@
 const legacy={
   grammar:window.progressRecordGrammar,
   lesson:window.progressRecordLesson,
-  test:window.progressRecordTest
+  test:window.progressRecordTest,
+  resolve:window.progressResolveWeakSpot
 };
 function mode(){return document.documentElement.dataset.learningMode||"home"}
 function isFree(){return mode()==="free"}
@@ -13,9 +14,10 @@ function recordPracticeBatch(correct,total){if(!isFree())return;const good=Math.
 function recordGrammarResult(id,percent,details){if(isCourse()&&legacy.grammar)legacy.grammar(id,percent,details||[])}
 function recordLessonResult(level,id,result){if(isCourse()&&legacy.lesson)legacy.lesson(level,id,result)}
 function recordTestResult(percent){if(isCourse()&&legacy.test)legacy.test(percent)}
+function clearWeakSpot(level,id,tag){if(isCourse()&&legacy.resolve)legacy.resolve(level,id,tag)}
 // Compatibility bridge: old trainers can keep calling the legacy globals without leaking free-session data into permanent student progress.
 window.progressRecordGrammar=recordGrammarResult;
 window.progressRecordLesson=recordLessonResult;
 window.progressRecordTest=recordTestResult;
-window.EsProfeLearningProgress={mode,isFree,isCourse,recordPracticeAnswer,recordPracticeBatch,recordGrammarResult,recordLessonResult,recordTestResult};
+window.EsProfeLearningProgress={mode,isFree,isCourse,recordPracticeAnswer,recordPracticeBatch,recordGrammarResult,recordLessonResult,recordTestResult,clearWeakSpot};
 })();

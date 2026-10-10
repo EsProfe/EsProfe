@@ -7,7 +7,9 @@
       "place": 0,
       "direction": 1,
       "origin": 2,
-      "company": 3
+      "company": 3,
+      "purpose": 3,
+      "time": 4
     },
     "i18n": {
       "ru": {
@@ -30,6 +32,10 @@
           [
             "Con, sin, para",
             "con amigos — с друзьями; sin azúcar — без сахара; para ti — для тебя."
+          ],
+          [
+            "Время: por la mañana",
+            "Для частей дня используем por: Trabajo por la mañana. Estudio por la tarde. Ceno por la noche."
           ]
         ],
         "examplesTitle": "Послушай предлоги в моделях",
@@ -60,6 +66,10 @@
           [
             "Con, sin, para",
             "con amigos — з друзями; sin azúcar — без цукру; para ti — для тебе."
+          ],
+          [
+            "Час: por la mañana",
+            "Для частин дня вживаємо por: Trabajo por la mañana. Estudio por la tarde. Ceno por la noche."
           ]
         ],
         "examplesTitle": "Послухай прийменники в моделях",
@@ -90,6 +100,10 @@
           [
             "Con, sin, para",
             "con amigos; sin azúcar; para ti."
+          ],
+          [
+            "Time: por la mañana",
+            "Use por for parts of the day: Trabajo por la mañana. Estudio por la tarde. Ceno por la noche."
           ]
         ],
         "examplesTitle": "Listen to preposition patterns",
@@ -120,6 +134,10 @@
           [
             "Con, sin, para",
             "con amigos; sin azúcar; para ti."
+          ],
+          [
+            "Tiempo: por la mañana",
+            "Usamos por con las partes del día: Trabajo por la mañana. Estudio por la tarde. Ceno por la noche."
           ]
         ],
         "examplesTitle": "Escucha modelos con preposiciones",

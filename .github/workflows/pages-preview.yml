@@ -25,6 +25,17 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate A1 data and runtime
+        run: |
+          node scripts/validate-a1.mjs
+          node --test scripts/a1-runtime.test.mjs
+          git diff --check
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 

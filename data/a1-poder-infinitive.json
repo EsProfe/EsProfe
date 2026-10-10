@@ -5,9 +5,12 @@
     "nextLessonId": "family",
     "ruleTags": {
       "form": 0,
-      "person": 1,
+      "person": 0,
       "question": 2,
-      "negation": 3
+      "negation": 3,
+      "conjugation": 0,
+      "structure": 0,
+      "infinitive": 1
     },
     "i18n": {
       "ru": {

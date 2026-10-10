@@ -981,9 +981,9 @@
         }),
     );
   }
-  async function open(id) {
+  async function open(id, { reviewTag } = {}) {
     if (!id) return;
-    const token = id + ":" + Date.now();
+    const token = {};
     lastOpen = token;
     try {
       const x = await window.EsProfeA1Catalog.lesson(id);
@@ -996,9 +996,19 @@
       stage = "";
       stageTrail = [];
       practiceScore = trainerScore = assessmentScore = 0;
+      usedQuestionIds = new Set();
       weak = {};
-      renderExplanation();
+      if (reviewTag) {
+        setView();
+        const saved = window.getProgressData?.();
+        for (const item of Object.values(saved?.reviewQueue || {})) {
+          if (item.level === "A1" && item.lessonId === id && item.active !== false && item.mistakes > 0) weak[item.tag] = item.mistakes;
+        }
+        renderReview();
+        if (weak[reviewTag]) runWeak(reviewTag);
+      } else renderExplanation();
     } catch (e) {
+      if (lastOpen !== token) return;
       console.error(e);
       if (root())
         root().innerHTML = `<div class="a1-lesson"><p>Урок пока недоступен.</p></div>`;
@@ -1025,6 +1035,10 @@
     if (target && !target.disabled) openStage(target.dataset.a1Step);
   });
   document.addEventListener("esprofe:a1Topic", onTopic);
+  document.addEventListener("esprofe:reviewWeakSpot", (event) => {
+    const { level, lessonId, tag } = event.detail || {};
+    if (level === "A1" && lessonId && tag) open(lessonId, { reviewTag: tag });
+  });
   document.addEventListener("esprofe:languageChanged", () => {
     if (lesson && document.querySelector(".a1-lesson")) {
       const oldTrail = stageTrail;

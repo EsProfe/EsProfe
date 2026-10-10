@@ -161,6 +161,11 @@ if (catalog && curriculum) {
     }
     for (const tag of Object.keys(lesson.ruleTags || {})) {
       if (!usedTags.has(tag)) fail(`${id}: rule tag ${tag} has no questions`);
+      const index = lesson.ruleTags[tag];
+      for (const language of LANGUAGES) {
+        const rule = lesson.i18n?.[language]?.rules?.[index];
+        if (!Number.isInteger(index) || !Array.isArray(rule) || rule.length !== 2 || rule.some(value => !value)) fail(`${id}/${tag}: ${language} review rule is invalid`);
+      }
     }
   }
 
@@ -180,8 +185,9 @@ if (catalog && curriculum) {
   if (!catalogRuntime.includes("setA1LessonCatalog")) fail("A1 catalog does not initialize sequential progress");
   if (!progressRuntime.includes("window.setA1LessonCatalog")) fail("Progress does not accept catalog-driven lesson order");
   if (curriculumRuntime.includes("data.modules.slice(0,3)")) fail("A1 route still limits ready modules to the first three");
-  if (!(await text("js/platform-shell.js")).includes("Учебные материалы A1 с последовательным маршрутом, прогрессом, слабыми местами и рекомендациями для ученика.")) {
-    fail("Home page My course description is outdated");
+  const shell = await text("js/platform-shell.js");
+  for (const language of LANGUAGES) {
+    if (!shell.includes(`copy.${language}.personalText=`)) fail(`Home page: ${language} approved personal profile description is missing`);
   }
 }
 

@@ -1,4 +1,15 @@
 # Changelog
+
+## [A1 architecture checkpoint] - 2026-10-10
+
+- Connected saved weak-spot recommendations to the common A1 lesson engine and progress resolver.
+- Kept free learning separate from personal assessment and review data.
+- Preserved assessment attempt history and removed the hard-coded progress order in favor of the catalog.
+- Restored teaching-rule links for existing question tags without renaming published IDs.
+- Removed duplicate A1 route language refresh ownership.
+- Added regression checks and made data/runtime validation a deployment prerequisite.
+- Updated the current catalog counts; final manual content, audio and desktop/mobile QA remain separate acceptance steps.
+
 ## [v0.12.0] - 2026-09-01
 
 ### Added

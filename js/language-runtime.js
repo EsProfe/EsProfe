@@ -12,9 +12,6 @@
     document.documentElement.lang=document.getElementById('language')?.value||'ru';
     // A1 owns its own language refresh. Keeping it here as well used to reset
     // the lesson twice and could send the learner back to the explanation step.
-    if(document.querySelector('.a1-route') && typeof window.openA1Curriculum==='function'){
-      window.openA1Curriculum({mode:document.documentElement.dataset.learningMode||'course'});
-    }
     if(document.querySelector('.b1-lesson')) reopenB1();
     else if(document.querySelector('.b1-modules') && typeof window.openB1Curriculum==='function') window.openB1Curriculum();
   }

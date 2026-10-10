@@ -57,3 +57,11 @@ Full flow:
 7. review
 
 The lesson is multilingual, responsive, uses randomized question selection, records weak tags, and can use browser Spanish speech synthesis for pronunciation examples.
+
+## 2026-10-10 architecture checkpoint
+
+Catalog: 81 ready lessons. The progress order now has no separate fallback list. Saved review recommendations enter the shared lesson engine; resolving a weak tag updates the existing progress store and unlocks the next lesson when the 80% threshold and review requirements are met. Free-session review cannot clear personal weak spots. Assessment history is retained as `progress.lessons.A1[lessonId].attempts`, with original errors preserved after review. Existing single-result records migrate on their next attempt.
+
+Validation now checks that every teaching tag points to a translated rule. Runtime regression checks exercise all registered lesson files, sequential access, storage reload, mode separation, attempt history and saved review entry. The Pages workflow runs these checks before deployment.
+
+This checkpoint does not certify manual review of every exercise, recorded audio, or browser layout on desktop/mobile.

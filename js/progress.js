@@ -2,24 +2,7 @@
 
 const ESPROFE_PROGRESS_KEY = "esprofe_progress_v1";
 const ESPROFE_LESSON_PASS_PERCENT = 80;
-const A1_LESSON_ORDER = [
-  "alphabet-pronunciation",
-  "greetings-farewells",
-  "introductions-personal-data",
-  "numbers",
-  "date-time",
-  "countries-nationalities",
-  "definite-articles",
-  "indefinite-articles",
-  "noun-gender",
-  "noun-plural",
-  "article-noun-agreement",
-  "subject-pronouns",
-  "basic-word-order",
-  "negation-no",
-  "basic-questions",
-  "question-words"
-];
+const A1_LESSON_ORDER = [];
 
 let catalogLessonNames = {};
 
@@ -34,8 +17,6 @@ function setA1LessonCatalog(catalog) {
 function localizedLessonName(id, code) {
   return catalogLessonNames[id]?.[code]?.[0]
     || catalogLessonNames[id]?.ru?.[0]
-    || lessonNames[id]?.[code]
-    || lessonNames[id]?.ru
     || id;
 }
 
@@ -44,12 +25,6 @@ const progressLabels = {
   uk: { title:"Мій прогрес", course:"Прогрес A1", passed:"Пройдено уроків", weak:"Слабкі місця", review:"Повторити", noWeak:"Слабких місць немає", recommendation:"Рекомендація", continue:"Продовжити навчання", reviewNow:"Повторити зараз", lesson:"Урок" },
   en: { title:"My progress", course:"A1 progress", passed:"Lessons completed", weak:"Weak spots", review:"Review", noWeak:"No weak spots", recommendation:"Recommendation", continue:"Continue learning", reviewNow:"Review now", lesson:"Lesson" },
   es: { title:"Mi progreso", course:"Progreso A1", passed:"Lecciones superadas", weak:"Puntos débiles", review:"Repasar", noWeak:"No hay puntos débiles", recommendation:"Recomendación", continue:"Continuar aprendiendo", reviewNow:"Repasar ahora", lesson:"Lección" }
-};
-
-const lessonNames = {
-  "alphabet-pronunciation": { ru:"Алфавит и произношение", uk:"Алфавіт і вимова", en:"Alphabet and pronunciation", es:"Alfabeto y pronunciación" },
-  "greetings-farewells": { ru:"Приветствия и прощания", uk:"Привітання і прощання", en:"Greetings and farewells", es:"Saludos y despedidas" },
-  "introductions-personal-data": { ru:"Знакомство и личные данные", uk:"Знайомство та особисті дані", en:"Introductions and personal information", es:"Presentaciones y datos personales" }
 };
 
 const weakNames = {
@@ -171,7 +146,11 @@ function progressRecordLesson(level, id, result) {
 
   const passed = percent >= ESPROFE_LESSON_PASS_PERCENT;
   const cleared = passed && !hasActiveLessonWeakSpots(level, id, data);
-  data.lessons[level][id] = { ...(data.lessons[level][id] || {}), ...result, id, level, percent, passed, cleared, date:new Date().toISOString() };
+  const previous = data.lessons[level][id];
+  const attempts = Array.isArray(previous?.attempts) ? [...previous.attempts] : previous ? [{ ...previous }] : [];
+  const attempt = { ...result, weakSpots:{ ...weakSpots }, percent, date:new Date().toISOString() };
+  attempts.push(attempt);
+  data.lessons[level][id] = { ...previous, ...attempt, id, level, passed, cleared, attempts };
 
   saveProgressData(data);
   if (cleared && window.markStudentLessonComplete) window.markStudentLessonComplete(id, result.nextLessonId);
@@ -192,7 +171,8 @@ function progressResolveWeakSpot(level, lessonId, tag) {
 function isLessonUnlocked(level, id, data=getProgressData()) {
   if (level !== "A1") return true;
   const i = A1_LESSON_ORDER.indexOf(id);
-  if (i <= 0) return true;
+  if (i < 0) return false;
+  if (i === 0) return true;
   return isLessonCleared(level, A1_LESSON_ORDER[i-1], data);
 }
 

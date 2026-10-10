@@ -14,7 +14,9 @@ EsProfe is a multilingual platform for learning Spanish. The current development
 - `js/learning-progress.js` and the existing progress/profile modules store results and weak spots.
 - The catalog also initializes the sequential lesson order, so new ready lessons appear in both routes without a separate progress-list edit.
 
-The current catalog contains 35 ready lessons, including the complete **Ser / estar / hay**, **Regular present tense** and **Core irregular verbs** modules.
+The current catalog contains **81 ready A1 lessons**, **1311 questions** and **60 source files** (checked 2026-10-10). Catalog readiness records availability; it does not certify final manual teaching review or audio quality.
+
+The catalog alone supplies the sequential progress order. Personal review uses the shared A1 engine and resolves saved weak spots; free learning cannot alter personal results. Assessment attempts remain in the existing `esprofe_progress_v1` store alongside the current result.
 
 ## Adding a ready A1 lesson
 
@@ -30,10 +32,11 @@ Before every publication:
 
 ```bash
 node scripts/validate-a1.mjs
+node --test scripts/a1-runtime.test.mjs
 git diff --check
 ```
 
-After the checks pass, commit and push to `main`, wait for GitHub Pages deployment, and test the published route before requesting user verification.
+GitHub Pages runs the same validation and regression checks before deployment. After the checks pass, commit and push to `main`, wait for deployment, and test the published route at https://esprofe.es/ before requesting user verification.
 
 ## Development rules
 
