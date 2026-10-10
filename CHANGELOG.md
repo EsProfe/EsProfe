@@ -4,7 +4,7 @@
 
 - Added an original Spanish village vignette within the welcome block, scaled down on phones.
 - Added three home-only palettes with warm backgrounds, Spanish color accents and subtle hover feedback.
-- Added a four-language comparison picker at `?design=1`; regular visitors see the default Spanish palette without design controls.
+- Added a four-language comparison picker at `?design=1`; regular visitors see the user-approved Mediterranean blue palette without design controls.
 - Preserved compact dimensions and lesson feedback colors; respected reduced-motion preferences.
 
 

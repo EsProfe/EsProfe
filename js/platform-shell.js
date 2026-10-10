@@ -17,7 +17,7 @@ const paletteNames={
   es:{label:"Comparar estilos",sol:"España",mar:"Mediterráneo",tierra:"Terracota"}
 };
 const designParams=new URLSearchParams(window.location.search);
-let palette=["sol","mar","tierra"].includes(designParams.get("palette"))?designParams.get("palette"):"sol";
+let palette=["sol","mar","tierra"].includes(designParams.get("palette"))?designParams.get("palette"):"mar";
 document.documentElement.dataset.homePalette=palette;
 function renderPalette(){
   const picker=document.getElementById("homePalettePicker");
