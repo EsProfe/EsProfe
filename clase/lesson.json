@@ -1,0 +1,1128 @@
+{
+  "lessonId": "football-adjective-agreement",
+  "version": 1,
+  "D": {
+    "ru": {
+      "lang": "Язык",
+      "preview": "Уроки с преподавателем",
+      "names": [
+        "Начало",
+        "Слова",
+        "Правило",
+        "Разминка",
+        "Матч",
+        "Новая модель",
+        "Исправления",
+        "Твои примеры",
+        "Результат"
+      ],
+      "title": "Ты — тренер футбольной команды!",
+      "intro": "Описывай игроков и команды, выбирай правильные формы и забивай голы.",
+      "goal": "Согласование прилагательных · начинающий · 45 минут",
+      "start": "Начать урок",
+      "next": "Далее",
+      "back": "Назад",
+      "check": "Проверить",
+      "continue": "Следующее задание",
+      "ready": "Готово — дальше",
+      "task": "Задание",
+      "of": "из",
+      "goals": "Голы",
+      "pick": "Выбери ответ.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Пока неверно. Правильный ответ:",
+      "why": "Посмотри на род и число существительного.",
+      "read": "Прочитай предложение вслух.",
+      "words": "Нажми на слово, чтобы скрыть или открыть перевод. Затем попробуй вспомнить его самостоятельно.",
+      "rule": "Прилагательное согласуется с существительным по роду и числу. Окончания не обязательно совпадают.",
+      "one": "Один",
+      "many": "Несколько",
+      "masc": "Мужской род",
+      "fem": "Женский род",
+      "unchanged": "Grande, alegre, triste, pobre, fuerte, débil не меняются по роду. Для образования множественного числа к словам grande, alegre, triste, pobre, fuerte добавляем -s, а к слову débil добавляем -es: débil → débiles.",
+      "warm": "Напиши нужную форму прилагательного.",
+      "match": "Выбери правильную форму, затем прочитай предложение вслух.",
+      "newintro": "Представляем игрока и команду. Прилагательное ставим после существительного.",
+      "formula": "Имя / название + es + un/una + существительное + прилагательное",
+      "note": "Un — мужской род, una — женский. El equipo — мужского рода. Здесь España означает футбольную сборную.",
+      "selectType": "Выбери форму",
+      "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
+      "write": "Составь полное предложение по подсказке.",
+      "fix": "Тренер перепутал формы! Напиши всё предложение правильно.",
+      "answer": "Твой ответ",
+      "own": "Составь три предложения о своём игроке, футболистке и команде. Используй три разных прилагательных.",
+      "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
+      "finish": "Завершить урок",
+      "result": "Матч завершён!",
+      "first": "Верно с первой попытки",
+      "attempts": "Проверено заданий",
+      "review": "Повторить ошибки",
+      "allright": "Все проверенные задания выполнены правильно!",
+      "pending": "Не все задания пройдены. Можно вернуться к любому этапу.",
+      "home": "Домашнее задание",
+      "hw": "Напиши шесть предложений: об одном игроке, одной футболистке, нескольких игроках, нескольких футболистках; представь игрока по имени и команду. Используй минимум четыре разных прилагательных.",
+      "saved": "Прогресс и ошибки сохраняются в этом браузере на этом устройстве.",
+      "repeat": "Повторение ошибок",
+      "reviewdone": "Ошибки разобраны!",
+      "empty": "Сначала введи ответ.",
+      "ownempty": "Напиши три предложения перед завершением.",
+      "viewown": "Твои предложения",
+      "reset": "Пройти заново",
+      "resetask": "Начать заново и очистить ответы?",
+      "reveal": "Перевод",
+      "scorehint": "Голы считаются за первый правильный ответ в блоке «Матч».",
+      "speech": "Скажи вслух",
+      "practice": "Практика",
+      "modelstart": "Перейти к упражнениям",
+      "newmeaning": [
+        "Месси — хороший игрок.",
+        "Алексия — хорошая футболистка.",
+        "Испания — сильная команда."
+      ]
+    },
+    "uk": {
+      "lang": "Мова",
+      "preview": "Уроки з викладачем",
+      "names": [
+        "Початок",
+        "Слова",
+        "Правило",
+        "Розминка",
+        "Матч",
+        "Нова модель",
+        "Виправлення",
+        "Твої приклади",
+        "Результат"
+      ],
+      "title": "Ти — тренер футбольної команди!",
+      "intro": "Описуй гравців і команди, обирай правильні форми та забивай голи.",
+      "goal": "Узгодження прикметників · початківець · 45 хвилин",
+      "start": "Почати урок",
+      "next": "Далі",
+      "back": "Назад",
+      "check": "Перевірити",
+      "continue": "Наступне завдання",
+      "ready": "Готово — далі",
+      "task": "Завдання",
+      "of": "із",
+      "goals": "Голи",
+      "pick": "Обери відповідь.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Поки неправильно. Правильна відповідь:",
+      "why": "Подивись на рід і число іменника.",
+      "read": "Прочитай речення вголос.",
+      "words": "Натисни слово, щоб приховати або відкрити переклад. Потім спробуй пригадати його самостійно.",
+      "rule": "Прикметник узгоджується з іменником у роді та числі. Закінчення не обов’язково однакові.",
+      "one": "Один",
+      "many": "Кілька",
+      "masc": "Чоловічий рід",
+      "fem": "Жіночий рід",
+      "unchanged": "Grande, alegre, triste, pobre, fuerte, débil не змінюються за родом. Для утворення множини до слів grande, alegre, triste, pobre, fuerte додаємо -s, а до слова débil додаємо -es: débil → débiles.",
+      "warm": "Напиши потрібну форму прикметника.",
+      "match": "Обери правильну форму, потім прочитай речення вголос.",
+      "newintro": "Представляємо гравця та команду. Прикметник ставимо після іменника.",
+      "formula": "Ім’я / назва + es + un/una + іменник + прикметник",
+      "note": "Un — чоловічий рід, una — жіночий. El equipo — чоловічого роду. Тут España означає футбольну збірну.",
+      "selectType": "Обери форму",
+      "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
+      "write": "Склади повне речення за підказкою.",
+      "fix": "Тренер переплутав форми! Напиши все речення правильно.",
+      "answer": "Твоя відповідь",
+      "own": "Склади три речення про свого гравця, футболістку та команду. Використай три різні прикметники.",
+      "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
+      "finish": "Завершити урок",
+      "result": "Матч завершено!",
+      "first": "Правильно з першої спроби",
+      "attempts": "Перевірено завдань",
+      "review": "Повторити помилки",
+      "allright": "Усі перевірені завдання виконано правильно!",
+      "pending": "Пройдено не всі завдання. Можна повернутися до будь-якого етапу.",
+      "home": "Домашнє завдання",
+      "hw": "Напиши шість речень: про одного гравця, одну футболістку, кількох гравців, кількох футболісток; представ гравця на ім’я та команду. Використай щонайменше чотири різні прикметники.",
+      "saved": "Прогрес і помилки зберігаються в цьому браузері на цьому пристрої.",
+      "repeat": "Повторення помилок",
+      "reviewdone": "Помилки опрацьовано!",
+      "empty": "Спочатку введи відповідь.",
+      "ownempty": "Напиши три речення перед завершенням.",
+      "viewown": "Твої речення",
+      "reset": "Пройти ще раз",
+      "resetask": "Почати знову та очистити відповіді?",
+      "reveal": "Переклад",
+      "scorehint": "Голи нараховуються за першу правильну відповідь у блоці «Матч».",
+      "speech": "Скажи вголос",
+      "practice": "Практика",
+      "modelstart": "Перейти до вправ",
+      "newmeaning": [
+        "Мессі — хороший гравець.",
+        "Алексія — хороша футболістка.",
+        "Іспанія — сильна команда."
+      ]
+    },
+    "en": {
+      "lang": "Language",
+      "preview": "Teacher-led lessons",
+      "names": [
+        "Start",
+        "Words",
+        "Rule",
+        "Warm-up",
+        "Match",
+        "New pattern",
+        "Corrections",
+        "Your examples",
+        "Results"
+      ],
+      "title": "You are the football coach!",
+      "intro": "Describe players and teams, choose the correct forms and score goals.",
+      "goal": "Adjective agreement · beginner · 45 minutes",
+      "start": "Start lesson",
+      "next": "Next",
+      "back": "Back",
+      "check": "Check answer",
+      "continue": "Next question",
+      "ready": "Ready — continue",
+      "task": "Question",
+      "of": "of",
+      "goals": "Goals",
+      "pick": "Choose an answer.",
+      "correct": "Goal! Correct.",
+      "wrong": "Not quite. The correct answer is:",
+      "why": "Check the noun’s gender and number.",
+      "read": "Read the sentence aloud.",
+      "words": "Click a word to hide or reveal its translation. Then try to recall it yourself.",
+      "rule": "An adjective agrees with its noun in gender and number. Their endings do not have to match.",
+      "one": "Singular",
+      "many": "Plural",
+      "masc": "Masculine",
+      "fem": "Feminine",
+      "unchanged": "Grande, alegre, triste, pobre, fuerte, débil do not change for gender. To form the plural, add -s to grande, alegre, triste, pobre, fuerte, and add -es to débil: débil → débiles.",
+      "warm": "Write the correct adjective form.",
+      "match": "Choose the correct form, then read the sentence aloud.",
+      "newintro": "Introduce a player and a team. Put the adjective after the noun.",
+      "formula": "Name + es + un/una + noun + adjective",
+      "note": "Un is masculine; una is feminine. El equipo is masculine. Here España means the national football team.",
+      "selectType": "Choose the form",
+      "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
+      "write": "Write a complete sentence using the prompts.",
+      "fix": "The coach mixed up the forms! Write the whole sentence correctly.",
+      "answer": "Your answer",
+      "own": "Write three sentences about your player, female player and team. Use three different adjectives.",
+      "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
+      "finish": "Finish lesson",
+      "result": "Full time!",
+      "first": "Correct on the first try",
+      "attempts": "Questions checked",
+      "review": "Practise mistakes",
+      "allright": "All checked questions were answered correctly!",
+      "pending": "Some questions are still unfinished. You can return to any stage.",
+      "home": "Homework",
+      "hw": "Write six sentences: about one male player, one female player, several male players and several female players; introduce a named player and a team. Use at least four different adjectives.",
+      "saved": "Progress and mistakes are saved in this browser on this device.",
+      "repeat": "Mistake practice",
+      "reviewdone": "Mistake practice complete!",
+      "empty": "Enter an answer first.",
+      "ownempty": "Write three sentences before finishing.",
+      "viewown": "Your sentences",
+      "reset": "Start again",
+      "resetask": "Restart and clear all answers?",
+      "reveal": "Translation",
+      "scorehint": "Goals count first-attempt correct answers in the Match section.",
+      "speech": "Say it aloud",
+      "practice": "Practice",
+      "modelstart": "Start the exercises",
+      "newmeaning": [
+        "Messi is a good player.",
+        "Alexia is a good player.",
+        "Spain is a strong team."
+      ]
+    }
+  },
+  "vocab": [
+    [
+      "el equipo",
+      "команда",
+      "team",
+      "команда"
+    ],
+    [
+      "grande",
+      "великий",
+      "big",
+      "большой"
+    ],
+    [
+      "pequeño",
+      "маленький",
+      "small",
+      "маленький"
+    ],
+    [
+      "alegre",
+      "веселий",
+      "cheerful",
+      "весёлый"
+    ],
+    [
+      "triste",
+      "сумний",
+      "sad",
+      "грустный"
+    ],
+    [
+      "hermoso",
+      "красивий",
+      "beautiful",
+      "красивый"
+    ],
+    [
+      "feo",
+      "некрасивий",
+      "ugly",
+      "некрасивый"
+    ],
+    [
+      "rico",
+      "багатий",
+      "rich",
+      "богатый"
+    ],
+    [
+      "pobre",
+      "бідний",
+      "poor",
+      "бедный"
+    ],
+    [
+      "bueno",
+      "хороший",
+      "good",
+      "хороший"
+    ],
+    [
+      "malo",
+      "поганий",
+      "bad",
+      "плохой"
+    ],
+    [
+      "fuerte",
+      "сильний",
+      "strong",
+      "сильный"
+    ],
+    [
+      "débil",
+      "слабкий",
+      "weak",
+      "слабый"
+    ]
+  ],
+  "football": [
+    [
+      "el jugador / la jugadora",
+      "гравець / гравчиня",
+      "male / female player",
+      "игрок / футболистка"
+    ],
+    [
+      "el equipo",
+      "команда",
+      "team",
+      "команда"
+    ],
+    [
+      "el árbitro",
+      "арбітр",
+      "referee",
+      "судья"
+    ],
+    [
+      "el portero",
+      "воротар",
+      "goalkeeper",
+      "вратарь"
+    ],
+    [
+      "el delantero / la delantera",
+      "нападник / нападниця",
+      "forward",
+      "нападающий / нападающая"
+    ],
+    [
+      "el defensa / la defensa",
+      "захисник / захисниця",
+      "defender",
+      "защитник / защитница"
+    ],
+    [
+      "el centrocampista / la centrocampista",
+      "півзахисник / півзахисниця",
+      "midfielder",
+      "полузащитник / полузащитница"
+    ],
+    [
+      "la camiseta",
+      "футболка",
+      "shirt",
+      "футболка"
+    ],
+    [
+      "las botas",
+      "бутси",
+      "football boots",
+      "бутсы"
+    ],
+    [
+      "el estadio",
+      "стадіон",
+      "stadium",
+      "стадион"
+    ]
+  ],
+  "groups": {
+    "3": [
+      {
+        "id": "w0",
+        "p": "el jugador + pequeño",
+        "a": "pequeño",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w1",
+        "p": "la jugadora + pequeño",
+        "a": "pequeña",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w2",
+        "p": "los jugadores + pequeño",
+        "a": "pequeños",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w3",
+        "p": "las jugadoras + pequeño",
+        "a": "pequeñas",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w4",
+        "p": "el equipo + grande",
+        "a": "grande",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w5",
+        "p": "los equipos + grande",
+        "a": "grandes",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w6",
+        "p": "la jugadora + fuerte",
+        "a": "fuerte",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w7",
+        "p": "las jugadoras + fuerte",
+        "a": "fuertes",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w8",
+        "p": "el jugador + débil",
+        "a": "débil",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "w9",
+        "p": "las jugadoras + débil",
+        "a": "débiles",
+        "o": null,
+        "type": "input"
+      }
+    ],
+    "4": [
+      {
+        "id": "m0",
+        "p": "El árbitro es ___.",
+        "a": "bueno",
+        "o": [
+          "bueno",
+          "buena",
+          "buenos"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m1",
+        "p": "La jugadora es ___.",
+        "a": "buena",
+        "o": [
+          "bueno",
+          "buena",
+          "buenas"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m2",
+        "p": "Los delanteros son ___.",
+        "a": "pequeños",
+        "o": [
+          "pequeñas",
+          "pequeños",
+          "pequeño"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m3",
+        "p": "Las defensoras son ___.",
+        "a": "pequeñas",
+        "o": [
+          "pequeños",
+          "pequeñas",
+          "pequeña"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m4",
+        "p": "El estadio es ___.",
+        "a": "grande",
+        "o": [
+          "grande",
+          "grandes"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m5",
+        "p": "Las jugadoras son ___.",
+        "a": "alegres",
+        "o": [
+          "alegre",
+          "alegres"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m6",
+        "p": "La camiseta es ___.",
+        "a": "hermosa",
+        "o": [
+          "hermoso",
+          "hermosa",
+          "hermosas"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m7",
+        "p": "Los jugadores son ___.",
+        "a": "tristes",
+        "o": [
+          "triste",
+          "tristes"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m8",
+        "p": "El portero es ___.",
+        "a": "malo",
+        "o": [
+          "mala",
+          "malo",
+          "malos"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m9",
+        "p": "Las botas son ___.",
+        "a": "feas",
+        "o": [
+          "feo",
+          "fea",
+          "feas"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m10",
+        "p": "El centrocampista es ___.",
+        "a": "pobre",
+        "o": [
+          "pobre",
+          "pobres"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m11",
+        "p": "Las delanteras son ___.",
+        "a": "ricas",
+        "o": [
+          "rico",
+          "rica",
+          "ricas"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m12",
+        "p": "La jugadora es ___.",
+        "a": "débil",
+        "o": [
+          "débil",
+          "débiles"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "m13",
+        "p": "Los jugadores son ___.",
+        "a": "débiles",
+        "o": [
+          "débil",
+          "débiles"
+        ],
+        "type": "choice"
+      }
+    ],
+    "5": [
+      {
+        "id": "n0",
+        "p": "Messi es un jugador ___.",
+        "a": "bueno",
+        "o": [
+          "bueno",
+          "buena"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "n1",
+        "p": "Alexia es una jugadora ___.",
+        "a": "buena",
+        "o": [
+          "bueno",
+          "buena"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "n2",
+        "p": "España es un equipo ___.",
+        "a": "fuerte",
+        "o": [
+          "fuerte",
+          "fuertes"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "n3",
+        "p": "Marta es una delantera ___.",
+        "a": "pequeña",
+        "o": [
+          "pequeño",
+          "pequeña"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "b0",
+        "p": "",
+        "a": "Messi es un jugador bueno.",
+        "o": [
+          "bueno",
+          "Messi",
+          "un jugador",
+          "es"
+        ],
+        "type": "build"
+      },
+      {
+        "id": "b1",
+        "p": "",
+        "a": "Alexia es una jugadora buena.",
+        "o": [
+          "una jugadora",
+          "buena",
+          "Alexia",
+          "es"
+        ],
+        "type": "build"
+      },
+      {
+        "id": "b2",
+        "p": "",
+        "a": "España es un equipo fuerte.",
+        "o": [
+          "fuerte",
+          "un equipo",
+          "es",
+          "España"
+        ],
+        "type": "build"
+      },
+      {
+        "id": "b3",
+        "p": "",
+        "a": "Marta es una delantera pequeña.",
+        "o": [
+          "es",
+          "Marta",
+          "pequeña",
+          "una delantera"
+        ],
+        "type": "build"
+      },
+      {
+        "id": "s0",
+        "p": "Leo · portero · bueno",
+        "a": "Leo es un portero bueno.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "s1",
+        "p": "Ana · jugadora · fuerte",
+        "a": "Ana es una jugadora fuerte.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "s2",
+        "p": "El equipo de Pablo · equipo · pequeño",
+        "a": "El equipo de Pablo es un equipo pequeño.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "n4",
+        "p": "Leo es un portero ___.",
+        "a": "débil",
+        "o": [
+          "débil",
+          "débiles"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "n5",
+        "p": "Ana es una jugadora ___.",
+        "a": "fuerte",
+        "o": [
+          "fuerte",
+          "fuertes"
+        ],
+        "type": "choice"
+      },
+      {
+        "id": "b4",
+        "p": "",
+        "a": "Leo es un portero débil.",
+        "o": [
+          "débil",
+          "Leo",
+          "un portero",
+          "es"
+        ],
+        "type": "build"
+      },
+      {
+        "id": "b5",
+        "p": "",
+        "a": "Ana es una jugadora fuerte.",
+        "o": [
+          "una jugadora",
+          "fuerte",
+          "Ana",
+          "es"
+        ],
+        "type": "build"
+      }
+    ],
+    "6": [
+      {
+        "id": "f0",
+        "p": "La jugadora es bueno.",
+        "a": "La jugadora es buena.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "f1",
+        "p": "Los jugadores son pequeña.",
+        "a": "Los jugadores son pequeños.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "f2",
+        "p": "Las camisetas son hermoso.",
+        "a": "Las camisetas son hermosas.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "f3",
+        "p": "Los estadios son grande.",
+        "a": "Los estadios son grandes.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "f4",
+        "p": "Ana es un jugadora fuerte.",
+        "a": "Ana es una jugadora fuerte.",
+        "o": null,
+        "type": "input"
+      },
+      {
+        "id": "f5",
+        "p": "Leo es un portero buena.",
+        "a": "Leo es un portero bueno.",
+        "o": null,
+        "type": "input"
+      }
+    ]
+  },
+  "X": {
+    "ru": {
+      "goal": "Ворота",
+      "drag": "Перетащи слово в ворота. На телефоне: нажми слово, затем ворота.",
+      "dropdown": "Или выбери из списка",
+      "choose": "— выбери —",
+      "selected": "В воротах",
+      "your": "Твой вариант",
+      "literal": "Буквально, с сохранением ошибки",
+      "right": "Правильное предложение",
+      "meaning": "Перевод",
+      "contrast": "Антонимы: fuerte ↔ débil",
+      "explain": "В английском переводе род прилагательного не виден; сравни испанские окончания.",
+      "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
+    },
+    "uk": {
+      "goal": "Ворота",
+      "drag": "Перетягни слово у ворота. На телефоні: натисни слово, потім ворота.",
+      "dropdown": "Або обери зі списку",
+      "choose": "— обери —",
+      "selected": "У воротах",
+      "your": "Твій варіант",
+      "literal": "Буквально, зі збереженням помилки",
+      "right": "Правильне речення",
+      "meaning": "Переклад",
+      "contrast": "Антоніми: fuerte ↔ débil",
+      "explain": "В англійському перекладі рід прикметника не видно; порівняй іспанські закінчення.",
+      "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
+    },
+    "en": {
+      "goal": "Goal",
+      "drag": "Drag a word into the goal. On a phone: tap a word, then the goal.",
+      "dropdown": "Or choose from the list",
+      "choose": "— choose —",
+      "selected": "In the goal",
+      "your": "Your answer",
+      "literal": "Literal meaning, retaining the error where possible",
+      "right": "Correct sentence",
+      "meaning": "Translation",
+      "contrast": "Opposites: fuerte ↔ débil",
+      "explain": "English adjectives do not show gender or number. Compare the Spanish endings.",
+      "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
+    }
+  },
+  "A": {
+    "ru": {
+      "listen": "Прослушать ещё раз",
+      "missing": "Испанский голос недоступен в этом браузере.",
+      "failed": "Не удалось воспроизвести. Нажмите «Прослушать ещё раз»."
+    },
+    "uk": {
+      "listen": "Прослухати ще раз",
+      "missing": "Іспанський голос недоступний у цьому браузері.",
+      "failed": "Не вдалося відтворити. Натисніть «Прослухати ще раз»."
+    },
+    "en": {
+      "listen": "Listen again",
+      "missing": "A Spanish voice is unavailable in this browser.",
+      "failed": "Playback failed. Press “Listen again”."
+    }
+  },
+  "subjects": {
+    "el jugador": [
+      "Игрок",
+      "Гравець",
+      "The player",
+      "m"
+    ],
+    "la jugadora": [
+      "Футболистка",
+      "Футболістка",
+      "The female player",
+      "f"
+    ],
+    "los jugadores": [
+      "Игроки",
+      "Гравці",
+      "The players",
+      "p"
+    ],
+    "las jugadoras": [
+      "Футболистки",
+      "Футболістки",
+      "The female players",
+      "p"
+    ],
+    "el árbitro": [
+      "Судья",
+      "Арбітр",
+      "The referee",
+      "m"
+    ],
+    "los delanteros": [
+      "Нападающие",
+      "Нападники",
+      "The forwards",
+      "p"
+    ],
+    "las defensoras": [
+      "Защитницы",
+      "Захисниці",
+      "The female defenders",
+      "p"
+    ],
+    "el estadio": [
+      "Стадион",
+      "Стадіон",
+      "The stadium",
+      "m"
+    ],
+    "la camiseta": [
+      "Футболка",
+      "Футболка",
+      "The shirt",
+      "f"
+    ],
+    "el portero": [
+      "Вратарь",
+      "Воротар",
+      "The goalkeeper",
+      "m"
+    ],
+    "las botas": [
+      "Бутсы",
+      "Бутси",
+      "The football boots",
+      "p"
+    ],
+    "el centrocampista": [
+      "Полузащитник",
+      "Півзахисник",
+      "The midfielder",
+      "m"
+    ],
+    "las delanteras": [
+      "Нападающие",
+      "Нападниці",
+      "The female forwards",
+      "p"
+    ],
+    "el equipo": [
+      "Команда",
+      "Команда",
+      "The team",
+      "f"
+    ],
+    "los equipos": [
+      "Команды",
+      "Команди",
+      "The teams",
+      "p"
+    ],
+    "las camisetas": [
+      "Футболки",
+      "Футболки",
+      "The shirts",
+      "p"
+    ],
+    "los estadios": [
+      "Стадионы",
+      "Стадіони",
+      "The stadiums",
+      "p"
+    ]
+  },
+  "adjectiveData": {
+    "bueno": [
+      [
+        "хороший",
+        "хорошая",
+        "хорошие"
+      ],
+      [
+        "хороший",
+        "хороша",
+        "хороші"
+      ],
+      "good"
+    ],
+    "pequeño": [
+      [
+        "маленький",
+        "маленькая",
+        "маленькие"
+      ],
+      [
+        "маленький",
+        "маленька",
+        "маленькі"
+      ],
+      "small"
+    ],
+    "hermoso": [
+      [
+        "красивый",
+        "красивая",
+        "красивые"
+      ],
+      [
+        "красивий",
+        "красива",
+        "красиві"
+      ],
+      "beautiful"
+    ],
+    "feo": [
+      [
+        "некрасивый",
+        "некрасивая",
+        "некрасивые"
+      ],
+      [
+        "некрасивий",
+        "некрасива",
+        "некрасиві"
+      ],
+      "ugly"
+    ],
+    "rico": [
+      [
+        "богатый",
+        "богатая",
+        "богатые"
+      ],
+      [
+        "багатий",
+        "багата",
+        "багаті"
+      ],
+      "rich"
+    ],
+    "malo": [
+      [
+        "плохой",
+        "плохая",
+        "плохие"
+      ],
+      [
+        "поганий",
+        "погана",
+        "погані"
+      ],
+      "bad"
+    ],
+    "grande": [
+      [
+        "большой",
+        "большая",
+        "большие"
+      ],
+      [
+        "великий",
+        "велика",
+        "великі"
+      ],
+      "big"
+    ],
+    "alegre": [
+      [
+        "весёлый",
+        "весёлая",
+        "весёлые"
+      ],
+      [
+        "веселий",
+        "весела",
+        "веселі"
+      ],
+      "cheerful"
+    ],
+    "triste": [
+      [
+        "грустный",
+        "грустная",
+        "грустные"
+      ],
+      [
+        "сумний",
+        "сумна",
+        "сумні"
+      ],
+      "sad"
+    ],
+    "pobre": [
+      [
+        "бедный",
+        "бедная",
+        "бедные"
+      ],
+      [
+        "бідний",
+        "бідна",
+        "бідні"
+      ],
+      "poor"
+    ],
+    "fuerte": [
+      [
+        "сильный",
+        "сильная",
+        "сильные"
+      ],
+      [
+        "сильний",
+        "сильна",
+        "сильні"
+      ],
+      "strong"
+    ],
+    "débil": [
+      [
+        "слабый",
+        "слабая",
+        "слабые"
+      ],
+      [
+        "слабкий",
+        "слабка",
+        "слабкі"
+      ],
+      "weak"
+    ]
+  }
+}
