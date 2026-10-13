@@ -138,3 +138,25 @@ test('result shows exact missing count and continues at first unanswered exercis
   s.root.querySelector('#ep-incomplete').onclick();
   assert(s.root.querySelector('#ep-answer'));assert(s.root.innerHTML.includes('el jugador + pequeño'));
 });
+test('warmup accepts both an adjective and a full correct sentence',async()=>{
+  for(const answer of ['pequeño','El jugador es pequeño.']){
+    const state=completedState();state.stage=3;delete state.records.w0;
+    const s=await lessonSetup(state);s.root.querySelector('#ep-answer').value=answer;
+    s.root.querySelector('#ep-check').onclick();
+    const record=JSON.parse(s.storage.get(s.key)).records.w0;
+    assert.equal(record.ok,true);assert(s.root.innerHTML.includes('Правильно!'));
+  }
+});
+test('incorrect full sentence is shown once without a repeated subject',async()=>{
+  const state=completedState();state.stage=3;delete state.records.w0;
+  const s=await lessonSetup(state);s.root.querySelector('#ep-answer').value='El jugador es pequeña.';
+  s.root.querySelector('#ep-check').onclick();
+  assert.equal(JSON.parse(s.storage.get(s.key)).records.w0.ok,false);
+  assert(!s.root.innerHTML.includes('El jugador es El jugador'));
+});
+test('previously rejected correct full sentence is repaired on reload',async()=>{
+  const state=completedState();state.records.w0={ok:false,picked:'el jugador es pequeño',last:{ok:false,picked:'el jugador es pequeño'},resolved:false,history:[{ok:false,picked:'el jugador es pequeño'}]};
+  const s=await lessonSetup(state);const record=JSON.parse(s.storage.get(s.key)).records.w0;
+  assert.equal(record.ok,true);assert.equal(record.last.ok,true);assert.equal(record.history[0].ok,true);
+  assert.equal(s.root.querySelector('#ep-cloud-save').disabled,false);
+});
