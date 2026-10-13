@@ -315,6 +315,24 @@
       "слабкий",
       "weak",
       "слабый"
+    ],
+    [
+      "el defensa / la defensa",
+      "захисник / захисниця",
+      "defender",
+      "защитник / защитница"
+    ],
+    [
+      "el centrocampista / la centrocampista",
+      "півзахисник / півзахисниця",
+      "midfielder",
+      "полузащитник / полузащитница"
+    ],
+    [
+      "el delantero / la delantera",
+      "нападник / нападниця",
+      "forward",
+      "нападающий / нападающая"
     ]
   ],
   "football": [
