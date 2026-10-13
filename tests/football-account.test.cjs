@@ -121,6 +121,7 @@ test('lesson refuses unfinished result and preserves separate account and guest 
   const state=completedState();delete state.records.w0;
   const s=await lessonSetup(state);assert.equal(s.root.querySelector('#ep-cloud-save').disabled,true);
   await s.root.querySelector('#ep-cloud-save').onclick();assert.equal(s.saved.length,0);
+  assert(!s.root.innerHTML.includes('Матч завершён!'));
   const before=s.storage.get(s.key);s.switchUser(null);
   assert.equal(s.storage.get(s.key),before);assert(s.storage.has('esprofe_football_review_v3'));
   s.switchUser(owner);assert(s.root.innerHTML.includes('44 / 45'));
