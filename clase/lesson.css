@@ -7,3 +7,18 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
 #esprofe-football{height:calc(100vh - 16px);height:calc(100dvh - 16px);display:flex;flex-direction:column;max-width:1100px;border-radius:12px}#esprofe-football .header{flex:0 0 auto;padding:9px 18px}#esprofe-football .shell{flex:1;min-height:0;overflow:hidden}#esprofe-football main{padding:14px 22px;min-height:0;overflow:hidden}#esprofe-football nav{padding:10px;min-height:0;overflow:hidden}#esprofe-football .fit-content{transform-origin:top left;display:flow-root;width:100%}#esprofe-football h1{font-size:clamp(23px,2.5vw,29px);margin:5px 0 9px}#esprofe-football .panel{padding:13px;margin:10px 0}#esprofe-football .sentence{margin:13px 0;font-size:25px}#esprofe-football p{margin:6px 0 10px}#esprofe-football .footer{margin-top:11px}#esprofe-football .feedback{min-height:32px;padding:8px 0}#esprofe-football .goal-net{min-height:78px;padding:9px}#esprofe-football .goal-wrap{margin:8px 0}#esprofe-football .goal-wrap p{margin:5px 0}#esprofe-football .wrong-answer,#esprofe-football .right-answer{padding:7px 10px;margin-bottom:7px}#esprofe-football .es-answer{font-size:18px;margin:2px 0}#esprofe-football .track{margin-top:9px}#esprofe-football .own{margin:7px 0}#esprofe-football textarea{min-height:60px;resize:none}#esprofe-football nav button{margin-bottom:3px;min-height:38px}#esprofe-football nav small{margin:7px;font-size:12px}#esprofe-football .choices button{min-height:40px;padding:7px 12px}#esprofe-football .dropdown-label{margin-top:7px}#esprofe-football .goal-net.has-ball{border-color:#3f8b60}@media(max-width:650px){#esprofe-football{height:100vh;height:100dvh;border-radius:0}#esprofe-football .shell{display:flex;flex-direction:column}#esprofe-football nav{flex:0 0 auto;padding:5px 8px}#esprofe-football nav .fit-content{display:flex;flex-wrap:wrap;gap:3px}#esprofe-football nav button{min-height:30px;padding:4px 7px;margin:0}#esprofe-football main{flex:1;padding:10px 13px}#esprofe-football .header{padding:7px 12px}#esprofe-football .vocab{grid-template-columns:repeat(2,minmax(0,1fr))}#esprofe-football .word{flex-direction:column;align-items:flex-start;padding:7px;gap:1px}#esprofe-football .word span{font-size:12px}#esprofe-football .brand{font-size:18px}#esprofe-football .logo{width:32px;height:32px}}
 
 #esprofe-football .brand{color:inherit;text-decoration:none}
+
+.ep-account-dialog{box-sizing:border-box;width:min(420px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overflow:auto;border:1px solid #afc9da;border-radius:14px;padding:18px;background:#fff;color:#173449;font:15px/1.4 system-ui,sans-serif}
+.ep-account-dialog::backdrop{background:rgba(18,59,84,.55)}
+.ep-account-dialog h2{font-size:22px;margin:6px 0 12px}
+.ep-account-dialog label{display:block;margin:8px 0}
+.ep-account-dialog input{box-sizing:border-box;width:100%;padding:10px;border:1px solid #afc9da;border-radius:8px;font:inherit}
+.ep-account-dialog button{min-height:40px;padding:8px 12px;border:1px solid #186995;border-radius:8px;background:#186995;color:#fff;font:inherit}
+.ep-account-dialog .ep-close{background:#fff;color:#173449;float:right}
+.ep-account-dialog input:focus-visible,.ep-account-dialog button:focus-visible{outline:3px solid #edbd48;outline-offset:2px}
+.ep-account-dialog .ep-auth-status{min-height:21px;margin-bottom:0}
+#esprofe-football .account-result{margin-top:8px}
+#esprofe-football .account-result p{margin:5px 0}
+#esprofe-football .account-result ul{padding-left:20px;font-size:14px}
+@media(max-width:650px){#esprofe-football #ep-account{font-size:12px;padding:5px 8px;min-height:32px}}
+
