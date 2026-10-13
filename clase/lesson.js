@@ -3,14 +3,21 @@
 const root=document.getElementById('esprofe-football');
 const response=await fetch('lesson.json');if(!response.ok)throw new Error('Lesson data unavailable');
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=await response.json();
+const copyResponse=await fetch('account-copy.json');if(!copyResponse.ok)throw new Error('Account copy unavailable');
+const accountCopy=await copyResponse.json();
+const account=window.EsProfeLessonAccount;
+let saveKey='',runId=crypto.randomUUID(),savedAttemptId=null,cloudMessage='',cloudBusy=false,historyRows=null,historyFailed=false;
+let initialAuthError=null;
+try{await account.init()}catch(error){initialAuthError=error}
 let lang='ru',stage=0,positions={3:0,4:0,5:0,6:0},records={},drafts={},tokens={},hiddenWords=new Set(),own=['','',''],modelSeen=false,reviewQueue=null,reviewAt=0,reviewFeedback=null,message='';
 const all=Object.values(groups).flat();
 const scoring=[...groups[4],...groups[5]];
 let selectedToken='',retrying=new Set(),autoReview=false,resumeStage=0;
 const SAVE_KEY='esprofe_football_review_v3';
+function storageKey(){return account.user?SAVE_KEY+':'+account.user.id:SAVE_KEY}
 function uiRecord(item){return reviewQueue?reviewFeedback:retrying.has(item?.id)?null:(records[item?.id]?.last||records[item?.id])}
 function retry(){const item=current();retrying.add(item.id);if(reviewQueue)reviewFeedback=null;delete drafts[item.id];delete tokens[item.id];selectedToken='';message='';render()}
-function persist(){try{localStorage.setItem(SAVE_KEY,JSON.stringify({lang,stage:reviewQueue?resumeStage:stage,positions,records,drafts,tokens,own,modelSeen,retrying:[...retrying]}))}catch(_){}}
+function persist(){try{localStorage.setItem(saveKey,JSON.stringify({runId,savedAttemptId,lang,stage:reviewQueue?resumeStage:stage,positions,records,drafts,tokens,own,modelSeen,retrying:[...retrying]}))}catch(_){}}
 
 
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -50,7 +57,54 @@ else if(item.type==='build'){const used=tokens[item.id]||[];control=`<div class=
 else control=`<label for="ep-answer" class="muted">${t().answer}</label><input id="ep-answer" autocomplete="off" spellcheck="false" value="${esc(drafts[item.id]||'')}" ${checked?'disabled':''}>`;
 return `<div class="eyebrow">${t().task} ${a+1} ${t().of} ${total}</div><p>${label}</p>${item.p?`<div class="sentence">${esc(item.p)}</div>`:''}${control}<div class="feedback ${r?(r.ok?'good':'bad'):''}" aria-live="polite">${message?esc(message):feedback(r,item)}</div><div class="footer"><button type="button" id="ep-prev" class="cursor-interaction" ${a===0?'disabled':''}>← ${t().back}</button>${checked&&!r.ok?`<button type="button" id="ep-retry" class="primary cursor-interaction">${({ru:"Исправить ответ",uk:"Виправити відповідь",en:"Try again"})[lang]}</button>`:checked?`<button type="button" id="ep-task-next" class="primary cursor-interaction">${t().continue} →</button>`:`<button type="button" id="ep-check" class="primary cursor-interaction">${t().check}</button>`}</div>`}
 function model(){return `<p>${t().newintro}</p><div class="hint">${t().formula}</div><div class="panel">${['Messi es un jugador bueno.','Alexia es una jugadora buena.','España es un equipo fuerte.'].map((x,i)=>`<div class="model">${x}</div><div class="muted">${t().newmeaning[i]}</div>`).join('')}</div><p>${t().note}</p><button type="button" id="ep-model-start" class="primary cursor-interaction">${t().modelstart} →</button>`}
-function result(){const done=all.filter(x=>records[x.id]),first=done.filter(x=>records[x.id].ok),errors=all.filter(x=>records[x.id]&&!records[x.id].ok&&!records[x.id].resolved);return `<div class="scores"><div class="panel"><strong>${first.length} / ${all.length}</strong>${t().first}</div><div class="panel"><strong>${done.length} / ${all.length}</strong>${t().attempts}</div></div>${done.length<all.length?`<p class="hint">${t().pending}</p>`:''}${errors.length?`<button type="button" id="ep-review" class="primary cursor-interaction">${t().review} (${errors.length}) →</button>`:done.length?`<p>${t().allright}</p>`:''}<div class="panel"><h2>${t().viewown}</h2>${own.map(x=>`<p>${esc(x)||'—'}</p>`).join('')}<small>${t().ownnote}</small></div><details><summary>${t().home}</summary><p>${t().hw}</p></details><p class="muted">${t().saved}</p><button type="button" id="ep-reset" class="cursor-interaction">${t().reset}</button>`}
+function result(){const done=all.filter(x=>records[x.id]),first=done.filter(x=>records[x.id].ok),errors=all.filter(x=>records[x.id]&&!records[x.id].ok&&!records[x.id].resolved);return `<div class="scores"><div class="panel"><strong>${first.length} / ${all.length}</strong>${t().first}</div><div class="panel"><strong>${done.length} / ${all.length}</strong>${t().attempts}</div></div>${done.length<all.length?`<p class="hint">${t().pending}</p>`:''}${errors.length?`<button type="button" id="ep-review" class="primary cursor-interaction">${t().review} (${errors.length}) →</button>`:done.length===all.length?`<p>${t().allright}</p>`:''}<div class="panel"><h2>${t().viewown}</h2>${own.map(x=>`<p>${esc(x)||'—'}</p>`).join('')}<small>${t().ownnote}</small></div>${accountResult()}<details><summary>${t().home}</summary><p>${t().hw}</p></details><p class="muted">${accountCopy[lang].local}</p><button type="button" id="ep-reset" class="cursor-interaction">${t().reset}</button>`}
+function complete(){return all.every(item=>(records[item.id]?.last||records[item.id])?.ok&&(records[item.id]?.ok||records[item.id]?.resolved))&&all.every(item=>!retrying.has(item.id))&&own.every(text=>text.trim())}
+function accountError(error){const c=accountCopy[lang];return c[error.code]||c.error}
+function accountResult(){
+  const c=accountCopy[lang];
+  if(!account.user)return `<div class="hint">${c.signin}</div>`;
+  const history=historyRows?.map(row=>`<li>${esc(new Date(row.completed_at).toLocaleString(lang==='uk'?'uk-UA':lang==='ru'?'ru-RU':'en-GB'))} · ${row.score} / ${row.total} · ${esc(row.language.toUpperCase())}</li>`).join('');
+  return `<section class="panel account-result"><button type="button" id="ep-cloud-save" class="primary" ${cloudBusy||savedAttemptId||!complete()?'disabled':''}>${savedAttemptId?c.saved:cloudBusy?c.busy:c.save}</button>${!complete()?`<p class="muted">${c.incomplete}</p>`:''}<p role="status">${esc(cloudMessage)}</p><details ${historyRows||historyFailed||cloudBusy?'open':''}><summary>${c.history}</summary>${historyRows?historyRows.length?`<ul>${history}</ul>`:`<p>${c.noHistory}</p>`:''}<button type="button" id="ep-history" ${cloudBusy?'disabled':''}>${cloudBusy?c.busy:c.refresh}</button>${historyFailed?`<p role="status">${c.error}</p>`:''}</details></section>`;
+}
+async function loadHistory(){
+  if(cloudBusy)return;const owner=account.user?.id;
+  capture();cloudBusy=true;historyFailed=false;render();
+  try{const rows=await account.history();if(account.user?.id===owner)historyRows=rows}
+  catch(_){if(account.user?.id===owner)historyFailed=true}
+  finally{if(account.user?.id===owner){cloudBusy=false;render()}}
+}
+async function saveCloud(){
+  if(cloudBusy||savedAttemptId||!complete())return;
+  const owner=account.user?.id,attemptId=runId;
+  const snapshot={id:runId,score:all.filter(item=>records[item.id]?.ok).length,total:all.length,language:lang,complete:complete()};
+  capture();cloudBusy=true;cloudMessage='';render();
+  try{
+    const id=await account.saveAttempt(snapshot);
+    if(owner===account.user?.id&&attemptId===runId){savedAttemptId=id;cloudMessage=accountCopy[lang].saved;persist()}
+  }catch(error){if(owner===account.user?.id&&attemptId===runId)cloudMessage=accountError(error)}
+  finally{if(owner===account.user?.id&&attemptId===runId){cloudBusy=false;render()}}
+}
+function openAccount(){
+  capture();persist();
+  const c=accountCopy[lang],dialog=document.createElement('dialog');dialog.className='ep-account-dialog';
+  dialog.innerHTML=`<form method="dialog"><button type="submit" class="ep-close">${c.close}</button></form><h2>${account.user?c.signedIn:c.account}</h2>${account.user?`<p>${esc(account.user.email||'')}</p><button type="button" id="ep-signout">${c.logout}</button>`:`<p>${c.intro}</p><form id="ep-signin"><label>${c.email}<input name="email" type="email" autocomplete="username" required></label><label>${c.password}<input name="password" type="password" autocomplete="current-password" required></label><button type="submit">${c.login}</button></form>`}<p class="ep-auth-status" role="status"></p>`;
+  document.body.append(dialog);dialog.addEventListener('close',()=>{dialog.remove();root.querySelector('#ep-account')?.focus()});dialog.showModal();
+  const status=dialog.querySelector('.ep-auth-status');
+  const form=dialog.querySelector('#ep-signin');
+  if(form)form.onsubmit=async event=>{
+    event.preventDefault();const button=form.querySelector('button');button.disabled=true;status.textContent=c.busy;
+    const password=form.elements.password.value;form.elements.password.value='';
+    try{await account.signIn(form.elements.email.value.trim(),password);dialog.close()}
+    catch(error){status.textContent=accountError(error);button.disabled=false}
+  };
+  const logout=dialog.querySelector('#ep-signout');
+  if(logout)logout.onclick=async()=>{
+    logout.disabled=true;status.textContent=c.busy;
+    try{await account.signOut();dialog.close()}
+    catch(error){status.textContent=accountError(error);logout.disabled=false}
+  };
+  if(!account.available)status.textContent=c.unavailable;
+}
 function render(){persist();root.lang=lang;const done=Object.keys(records).length;const goals=scoring.filter(x=>records[x.id]?.ok).length;let content='';
 if(reviewQueue)content=reviewAt<reviewQueue.length?taskUI(current()):`<p>${t().reviewdone}</p><button id="ep-review-finish" type="button" class="primary cursor-interaction">${t().names[8]} →</button>`;
 else if(stage===0)content=`<p>${t().intro}</p><div class="panel"><div class="eyebrow">${t().goal}</div><p>${t().rule}</p><div class="steps"><span>bueno</span><span>buena</span><span>buenos</span><span>buenas</span></div></div><details><summary>⚽ ${t().names[1]}</summary><div class="vocab">${football.map(w=>`<div class="word"><b>${w[0]}</b><span>${tr(w)}</span></div>`).join('')}</div></details><button type="button" id="ep-start" class="primary cursor-interaction">${t().start} →</button>`;
@@ -60,7 +114,7 @@ else if(stage===5&&!modelSeen)content=model();
 else if(groups[stage])content=taskUI(current());
 else if(stage===7)content=`<p>${t().own}</p>${['… es un jugador …','… es una jugadora …','… es un equipo …'].map((x,i)=>`<div class="own"><label for="ep-own-${i}" class="muted">${x}</label><textarea id="ep-own-${i}" data-own="${i}" spellcheck="false">${esc(own[i])}</textarea></div>`).join('')}<p class="muted">${t().ownnote}</p><p aria-live="polite">${esc(message)}</p><button type="button" id="ep-finish" class="primary cursor-interaction">${t().finish} →</button>`;
 else content=result();
-root.innerHTML=`<header class="header"><a class="brand" href="../" aria-label="EsProfe"><img class="logo" src="../assets/brand/esprofe-logo-spain.jpg" alt="EsProfe">EsProfe</a><div class="headright"><div class="scoreboard" aria-live="polite" aria-label="${t().goals}"><span>⚽ ${t().goals}</span><strong>${goals}</strong></div><span class="status">${t().preview}</span><label for="ep-language" class="muted">${t().lang}</label><select id="ep-language"><option value="uk" ${lang==='uk'?'selected':''}>Українська</option><option value="en" ${lang==='en'?'selected':''}>English</option><option value="ru" ${lang==='ru'?'selected':''}>Русский</option></select></div></header><div class="shell"><nav aria-label="${t().practice}"><div class="fit-content">${t().names.map((n,i)=>`<button type="button" class="cursor-interaction ${stage===i&&!reviewQueue?'active':''}" data-stage="${i}" ${stage===i&&!reviewQueue?'aria-current="step"':''}>${i+1}. ${n}</button>`).join('')}<small>${t().goals}: ${goals} / ${scoring.length}</small><small>${X[lang].hint}</small><small>${t().saved}</small></div></nav><main><div class="fit-content"><div class="eyebrow">A1 · ⚽ ${t().preview}</div><h1>${reviewQueue?t().repeat:stage===0?t().title:stage===8?t().result:t().names[stage]}</h1>${content}${!reviewQueue&&[1,2].includes(stage)?`<div class="footer"><button id="ep-simple-back" type="button" class="cursor-interaction">← ${t().back}</button><button id="ep-simple-next" type="button" class="primary cursor-interaction">${t().ready} →</button></div>`:''}<div class="track" role="progressbar" aria-label="${t().attempts}" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${all.length}"><div class="fill" style="width:${done/all.length*100}%"></div></div></div></main></div>`;
+root.innerHTML=`<header class="header"><a class="brand" href="../" aria-label="EsProfe"><img class="logo" src="../assets/brand/esprofe-logo-spain.jpg" alt="EsProfe">EsProfe</a><div class="headright"><div class="scoreboard" aria-live="polite" aria-label="${t().goals}"><span>⚽ ${t().goals}</span><strong>${goals}</strong></div><span class="status">${t().preview}</span><button type="button" id="ep-account">${account.user?accountCopy[lang].signedIn:accountCopy[lang].account}</button><label for="ep-language" class="muted">${t().lang}</label><select id="ep-language"><option value="uk" ${lang==='uk'?'selected':''}>Українська</option><option value="en" ${lang==='en'?'selected':''}>English</option><option value="ru" ${lang==='ru'?'selected':''}>Русский</option></select></div></header><div class="shell"><nav aria-label="${t().practice}"><div class="fit-content">${t().names.map((n,i)=>`<button type="button" class="cursor-interaction ${stage===i&&!reviewQueue?'active':''}" data-stage="${i}" ${stage===i&&!reviewQueue?'aria-current="step"':''}>${i+1}. ${n}</button>`).join('')}<small>${t().goals}: ${goals} / ${scoring.length}</small><small>${X[lang].hint}</small><small>${accountCopy[lang].local}</small></div></nav><main><div class="fit-content"><div class="eyebrow">A1 · ⚽ ${t().preview}</div><h1>${reviewQueue?t().repeat:stage===0?t().title:stage===8?t().result:t().names[stage]}</h1>${content}${!reviewQueue&&[1,2].includes(stage)?`<div class="footer"><button id="ep-simple-back" type="button" class="cursor-interaction">← ${t().back}</button><button id="ep-simple-next" type="button" class="primary cursor-interaction">${t().ready} →</button></div>`:''}<div class="track" role="progressbar" aria-label="${t().attempts}" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${all.length}"><div class="fill" style="width:${done/all.length*100}%"></div></div></div></main></div>`;
 bind();fit();}
 function putGoal(word){const item=current();if(!item||word!==''&&!item.o?.includes(word))return;drafts[item.id]=word;selectedToken='';message='';render()}
 function fit(){
@@ -99,8 +153,36 @@ if(positions[stage]+1<groups[stage].length)positions[stage]++;else stage++;
 const count=Object.keys(records).length;const due=all.find(x=>records[x.id]&&!records[x.id].resolved&&records[x.id].due<=count);
 if(due){resumeStage=stage;autoReview=true;reviewQueue=[due];reviewAt=0;reviewFeedback=null;delete drafts[due.id];delete tokens[due.id];}
 render()}
-function bind(){root.querySelector('#ep-language').onchange=e=>{capture();lang=e.target.value;message='';audioStatus='';render()};root.querySelectorAll('[data-stage]').forEach(el=>el.onclick=()=>go(Number(el.dataset.stage)));root.querySelectorAll('[data-word]').forEach(el=>el.onclick=()=>{const i=Number(el.dataset.word);hiddenWords.has(i)?hiddenWords.delete(i):hiddenWords.add(i);render()});root.querySelectorAll('[data-choice]').forEach(el=>{el.onclick=()=>{selectedToken=current().o[Number(el.dataset.choice)];message='';render()};el.ondragstart=e=>{e.dataTransfer.setData('text/plain',current().o[Number(el.dataset.choice)]);e.dataTransfer.effectAllowed='copy'}});const goal=root.querySelector('#ep-goal');const currentRecord=uiRecord(current());if(goal&&!currentRecord){goal.ondragover=e=>{e.preventDefault();goal.classList.add('drag-over')};goal.ondragleave=()=>goal.classList.remove('drag-over');goal.ondrop=e=>{e.preventDefault();putGoal(e.dataTransfer.getData('text/plain'))};on('ep-drop',()=>putGoal(selectedToken))}const select=root.querySelector('#ep-options');if(select)select.onchange=e=>putGoal(e.target.value);root.querySelectorAll('[data-token]').forEach(el=>el.onclick=()=>{const item=current();tokens[item.id]??=[];tokens[item.id].push(Number(el.dataset.token));render()});root.querySelectorAll('[data-remove]').forEach(el=>el.onclick=()=>{tokens[current().id].splice(Number(el.dataset.remove),1);render()});on('ep-start',()=>go(1));on('ep-simple-back',()=>go(stage-1));on('ep-simple-next',()=>go(stage+1));on('ep-model-start',()=>{modelSeen=true;render()});on('ep-listen',()=>{const item=current();if(item)speakSpanish(sentence(item,item.a))});on('ep-check',check);on('ep-retry',retry);on('ep-task-next',nextTask);on('ep-prev',()=>{capture();if(reviewQueue){reviewAt--;reviewFeedback=null}else positions[stage]--;message='';render()});on('ep-finish',()=>{capture();if(own.some(x=>!x.trim())){message=t().ownempty;render()}else go(8)});on('ep-review',()=>{autoReview=false;resumeStage=8;reviewQueue=all.filter(x=>records[x.id]&&!records[x.id].ok&&!records[x.id].resolved);reviewAt=0;reviewFeedback=null;reviewQueue.forEach(x=>{delete drafts[x.id];delete tokens[x.id]});render()});on('ep-review-finish',()=>go(8));on('ep-reset',()=>{if(!confirm(t().resetask))return;retrying.clear();autoReview=false;records={};drafts={};tokens={};positions={3:0,4:0,5:0,6:0};own=['','',''];modelSeen=false;go(0)});const input=root.querySelector('#ep-answer');if(input)input.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();check()}}}
-try{const saved=JSON.parse(localStorage.getItem(SAVE_KEY));if(saved&&D[saved.lang]){lang=saved.lang;stage=saved.stage;positions=saved.positions;records=saved.records;drafts=saved.drafts;tokens=saved.tokens;own=saved.own;modelSeen=saved.modelSeen;retrying=new Set(saved.retrying||[]);}}catch(_){}
+function bind(){on('ep-account',openAccount);on('ep-cloud-save',saveCloud);on('ep-history',loadHistory);root.querySelector('#ep-language').onchange=e=>{capture();lang=e.target.value;message='';audioStatus='';render()};root.querySelectorAll('[data-stage]').forEach(el=>el.onclick=()=>go(Number(el.dataset.stage)));root.querySelectorAll('[data-word]').forEach(el=>el.onclick=()=>{const i=Number(el.dataset.word);hiddenWords.has(i)?hiddenWords.delete(i):hiddenWords.add(i);render()});root.querySelectorAll('[data-choice]').forEach(el=>{el.onclick=()=>{selectedToken=current().o[Number(el.dataset.choice)];message='';render()};el.ondragstart=e=>{e.dataTransfer.setData('text/plain',current().o[Number(el.dataset.choice)]);e.dataTransfer.effectAllowed='copy'}});const goal=root.querySelector('#ep-goal');const currentRecord=uiRecord(current());if(goal&&!currentRecord){goal.ondragover=e=>{e.preventDefault();goal.classList.add('drag-over')};goal.ondragleave=()=>goal.classList.remove('drag-over');goal.ondrop=e=>{e.preventDefault();putGoal(e.dataTransfer.getData('text/plain'))};on('ep-drop',()=>putGoal(selectedToken))}const select=root.querySelector('#ep-options');if(select)select.onchange=e=>putGoal(e.target.value);root.querySelectorAll('[data-token]').forEach(el=>el.onclick=()=>{const item=current();tokens[item.id]??=[];tokens[item.id].push(Number(el.dataset.token));render()});root.querySelectorAll('[data-remove]').forEach(el=>el.onclick=()=>{tokens[current().id].splice(Number(el.dataset.remove),1);render()});on('ep-start',()=>go(1));on('ep-simple-back',()=>go(stage-1));on('ep-simple-next',()=>go(stage+1));on('ep-model-start',()=>{modelSeen=true;render()});on('ep-listen',()=>{const item=current();if(item)speakSpanish(sentence(item,item.a))});on('ep-check',check);on('ep-retry',retry);on('ep-task-next',nextTask);on('ep-prev',()=>{capture();if(reviewQueue){reviewAt--;reviewFeedback=null}else positions[stage]--;message='';render()});on('ep-finish',()=>{capture();if(own.some(x=>!x.trim())){message=t().ownempty;render()}else go(8)});on('ep-review',()=>{autoReview=false;resumeStage=8;reviewQueue=all.filter(x=>records[x.id]&&!records[x.id].ok&&!records[x.id].resolved);reviewAt=0;reviewFeedback=null;reviewQueue.forEach(x=>{delete drafts[x.id];delete tokens[x.id]});render()});on('ep-review-finish',()=>go(8));on('ep-reset',()=>{if(!confirm(t().resetask))return;retrying.clear();autoReview=false;records={};drafts={};tokens={};positions={3:0,4:0,5:0,6:0};own=['','',''];modelSeen=false;runId=crypto.randomUUID();savedAttemptId=null;cloudMessage='';go(0)});const input=root.querySelector('#ep-answer');if(input)input.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();check()}}}
+function loadLocal(){
+  saveKey=storageKey();
+  stage=0;positions={3:0,4:0,5:0,6:0};records={};drafts={};tokens={};own=['','',''];modelSeen=false;
+  retrying=new Set();reviewQueue=null;reviewFeedback=null;autoReview=false;selectedToken='';message='';
+  runId=crypto.randomUUID();savedAttemptId=null;cloudMessage='';cloudBusy=false;historyRows=null;historyFailed=false;
+  try{
+    const saved=JSON.parse(localStorage.getItem(saveKey));
+    if(saved&&D[saved.lang]){
+      lang=saved.lang;
+      stage=Number.isInteger(saved.stage)&&saved.stage>=0&&saved.stage<=8?saved.stage:0;
+      for(const key of Object.keys(positions)){
+        const value=saved.positions?.[key];
+        positions[key]=Number.isInteger(value)&&value>=0&&value<groups[key].length?value:0;
+      }
+      records=saved.records||{};drafts=saved.drafts||{};tokens=saved.tokens||{};
+      own=Array.isArray(saved.own)&&saved.own.length===3?saved.own:['','',''];modelSeen=!!saved.modelSeen;
+      retrying=new Set(saved.retrying||[]);
+      if(/^[0-9a-f-]{36}$/i.test(saved.runId||''))runId=saved.runId;
+      savedAttemptId=saved.savedAttemptId===runId?runId:null;
+    }
+  }catch(_){}
+}
+loadLocal();
+account.subscribe(()=>{
+  capture();persist();audioRequest++;window.speechSynthesis?.cancel();
+  loadLocal();render();
+});
 const requestedLanguage=new URLSearchParams(window.location.search).get("lang");if(D[requestedLanguage])lang=requestedLanguage;
 render();
+if(initialAuthError){cloudMessage=accountCopy[lang].error;render()}
 })().catch(error=>{console.error(error);document.getElementById("esprofe-football").textContent="Не удалось загрузить урок / Не вдалося завантажити урок / Could not load the lesson. Обновите страницу / Оновіть сторінку / Reload the page.";});
+
