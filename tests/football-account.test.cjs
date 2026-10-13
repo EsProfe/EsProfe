@@ -98,7 +98,7 @@ class Root {
 const lessonData=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/lesson.json')));
 const copyData=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/account-copy.json')));
 const lessonSource=fs.readFileSync(path.join(__dirname,'../clase/lesson.js'),'utf8');
-function completedState(){return {lang:'ru',stage:8,positions:{3:0,4:0,5:0,6:0},records:Object.fromEntries(Object.values(lessonData.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}])),drafts:{},tokens:{},own:['Leo es bueno.','Ana es buena.','España es fuerte.'],modelSeen:true,runId:attempt.id}}
+function completedState(){return {lang:'ru',stage:8,positions:{3:0,4:0,5:0,6:0},records:Object.fromEntries(Object.values(lessonData.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}])),drafts:{},tokens:{},own:['Leo es bueno.','Ana es mala.','España es fuerte.'],modelSeen:true,runId:attempt.id}}
 async function lessonSetup(state){
   const root=new Root(),storage=new Map(),saved=[];let subscriber;
   const key='esprofe_football_review_v3:'+owner.id;
@@ -125,4 +125,16 @@ test('lesson refuses unfinished result and preserves separate account and guest 
   const before=s.storage.get(s.key);s.switchUser(null);
   assert.equal(s.storage.get(s.key),before);assert(s.storage.has('esprofe_football_review_v3'));
   s.switchUser(owner);assert(s.root.innerHTML.includes('44 / 45'));
+});
+
+test('different gender endings of the same adjective trigger a repetition warning',async()=>{
+  const state=completedState();state.own=['Leo es bueno.','Ana es buena.','España es fuerte.'];
+  const s=await lessonSetup(state);assert.equal(s.root.querySelector('#ep-cloud-save').disabled,true);
+  await s.root.querySelector('#ep-cloud-save').onclick();assert.equal(s.saved.length,0);
+});
+test('result shows exact missing count and continues at first unanswered exercise',async()=>{
+  const state=completedState();delete state.records.w0;
+  const s=await lessonSetup(state);assert(s.root.innerHTML.includes('осталось выполнить заданий: 1'));
+  s.root.querySelector('#ep-incomplete').onclick();
+  assert(s.root.querySelector('#ep-answer'));assert(s.root.innerHTML.includes('el jugador + pequeño'));
 });
