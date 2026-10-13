@@ -30,7 +30,18 @@ function capture(){const el=root.querySelector('#ep-answer');if(el&&current())dr
 function sentence(item,answer){
 if(item.type==='build'||item.id.startsWith('s')||item.id.startsWith('f'))return answer;
 if(item.p.includes('___'))return item.p.replace('___',answer);
+if(item.id.startsWith('w')&&/\b(?:es|son)\b/i.test(answer))return answer;
 const subject=item.p.split(' + ')[0];return subject.charAt(0).toUpperCase()+subject.slice(1)+( /^(los|las) /i.test(subject)?' son ':' es ')+answer+'.';
+}
+function isCorrectAnswer(item,answer){return norm(answer)===norm(item.a)||(item.id.startsWith('w')&&norm(answer)===norm(sentence(item,item.a)))}
+function repairWarmRecords(){
+ for(const item of groups[3]){
+  const record=records[item.id];if(!record)continue;
+  if(isCorrectAnswer(item,record.picked||''))record.ok=true;
+  if(record.last&&isCorrectAnswer(item,record.last.picked||''))record.last.ok=true;
+  for(const entry of record.history||[]){if(isCorrectAnswer(item,entry.picked||''))entry.ok=true}
+  if((record.last||record).ok){record.resolved=true;retrying.delete(item.id)}
+ }
 }
 function adjective(word,gender){let data,form;for(const [base,value] of Object.entries(adjectiveData)){const variants=base.endsWith('o')?[base,base.slice(0,-1)+'a',base+'s',base.slice(0,-1)+'as']:[base,base+(base==='débil'?'es':'s')];const i=variants.indexOf(word.toLowerCase());if(i>=0){data=value;form=base.endsWith('o')?(i>=2?2:i):(i===1?2:gender==='f'?1:0);break}}if(!data)return word;if(lang==='en')return data[2];return data[lang==='ru'?0:1][form]}
 function translate(value){const line=norm(value);const simple=line.match(/^(.*?) (es|son) ([^ ]+)$/);if(simple&&subjects[simple[1]]){const sub=subjects[simple[1]],text=sub[{ru:0,uk:1,en:2}[lang]];return text+(lang==='en'?(simple[2]==='son'?' are ':' is '):' ')+adjective(sub===subjects['el equipo']?({'pequeño':'pequeña','pequeña':'pequeño','bueno':'buena','buena':'bueno','malo':'mala','mala':'malo','hermoso':'hermosa','hermosa':'hermoso','feo':'fea','fea':'feo','rico':'rica','rica':'rico'}[simple[3]]||simple[3]):simple[3],sub[3])+'.'}
@@ -151,7 +162,7 @@ document.fonts?.ready.then(fit);
 function on(id,fn){const el=root.querySelector('#'+id);if(el)el.onclick=fn}
 function go(s){audioStatus='';audioRequest++;if(window.speechSynthesis)window.speechSynthesis.cancel();autoReview=false;selectedToken='';capture();stage=s;reviewQueue=null;reviewFeedback=null;message='';render()}
 function check(){capture();const item=current();const answer=item.type==='build'?(tokens[item.id]||[]).map(i=>item.o[i]).join(' '):(drafts[item.id]||'');if(!answer.trim()){message=t().empty;render();return}if(uiRecord(item))return;
-const r={ok:norm(answer)===norm(item.a),answer:item.a,picked:answer};const first=!records[item.id];
+const r={ok:isCorrectAnswer(item,answer),answer:item.a,picked:answer};const first=!records[item.id];
 if(first)records[item.id]={...r,last:r,history:[],resolved:r.ok,due:Object.keys(records).length+4};
 const saved=records[item.id];saved.last=r;saved.history.push({...r,phase:reviewQueue?'repeat':first?'first':'correction'});retrying.delete(item.id);
 if(reviewQueue){reviewFeedback=r;if(r.ok)saved.resolved=true;else saved.due=Object.keys(records).length+3;}
@@ -184,6 +195,7 @@ function loadLocal(){
       savedAttemptId=saved.savedAttemptId===runId?runId:null;
     }
   }catch(_){}
+  repairWarmRecords();
 }
 loadLocal();
 account.subscribe(()=>{
