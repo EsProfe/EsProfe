@@ -104,7 +104,7 @@ async function lessonSetup(state){
   const key='esprofe_football_review_v3:'+owner.id;
   if(state)storage.set(key,JSON.stringify(state));
   const account={user:owner,available:true,init:async()=>owner,subscribe:fn=>{subscriber=fn},history:async()=>[],saveAttempt:async a=>{saved.push(a);return a.id}};
-  const context={window:{EsProfeLessonAccount:account,location:{search:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>url==='lesson.json'?lessonData:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
+  const context={window:{EsProfeLessonAccount:account,location:{search:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>url.split('?')[0]==='lesson.json'?lessonData:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
   await vm.runInNewContext(lessonSource,context);
   return {root,storage,saved,account,key,switchUser(next){account.user=next;subscriber()}};
 }

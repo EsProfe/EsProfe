@@ -1,9 +1,9 @@
 
 (async()=>{
 const root=document.getElementById('esprofe-football');
-const response=await fetch('lesson.json');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch('lesson.json?v=20261013-supabase1');if(!response.ok)throw new Error('Lesson data unavailable');
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=await response.json();
-const copyResponse=await fetch('account-copy.json');if(!copyResponse.ok)throw new Error('Account copy unavailable');
+const copyResponse=await fetch('account-copy.json?v=20261013-supabase1');if(!copyResponse.ok)throw new Error('Account copy unavailable');
 const accountCopy=await copyResponse.json();
 const account=window.EsProfeLessonAccount;
 let saveKey='',runId=crypto.randomUUID(),savedAttemptId=null,cloudMessage='',cloudBusy=false,historyRows=null,historyFailed=false;
