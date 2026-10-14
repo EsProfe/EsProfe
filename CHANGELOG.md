@@ -1,5 +1,12 @@
 # Changelog
 
+## [Shared A1 search navigation] - 2026-10-14
+
+- Open search results directly through the common platform and lesson engine; removed the timed intermediate curriculum navigation. Outdated curriculum responses cannot replace the selected lesson.
+- Search reuses the A1 catalog loader, excludes unpublished entries and supports accent-insensitive matching.
+- Prevented stale search responses from replacing newer results or reopening a dismissed search. Localized the accessible label, results and errors on all four languages; added Enter, Down and Escape support.
+- Added search regressions to the publication gate.
+
 ## [Adaptive A1 screen layout] - 2026-10-14
 
 - Reduced duplicate outer spacing, header height, navigation spacing and lesson-card padding. Kept exercise text and answer buttons readable.

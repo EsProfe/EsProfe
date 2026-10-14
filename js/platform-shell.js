@@ -54,6 +54,8 @@ function selectLegacyTopic(topic,subtopic){showWorkspace();if(mode!=="course")se
 function showHome(){setMode("home");document.getElementById("platformHome").hidden=false;document.getElementById("legacyWorkspace").hidden=true;document.querySelectorAll(".platform-nav-button").forEach(b=>b.classList.toggle("active",b.dataset.action==="home"));window.scrollTo({top:0,behavior:"smooth"});}
 function showWorkspace(){document.getElementById("platformHome").hidden=true;document.getElementById("legacyWorkspace").hidden=false;document.querySelectorAll(".platform-nav-button").forEach(b=>b.classList.remove("active"));window.scrollTo({top:0,behavior:"smooth"});}
 function showA1(nextMode){showWorkspace();setMode(nextMode);hideContent();const topic=document.querySelector(".topic-menu");if(topic)topic.style.display="none";window.openA1Curriculum?.({mode:nextMode});}
+function showLesson(id){showWorkspace();setMode("free");hideContent();window.EsProfeA1Curriculum?.cancel();const topic=document.querySelector(".topic-menu");if(topic)topic.style.display="none";return window.openA1Lesson(id);}
+window.EsProfePlatform={openLesson:showLesson};
 function showCourse(){showA1("course");if(typeof window.renderStudentProfile==="function")window.renderStudentProfile();if(typeof window.renderProgress==="function")window.renderProgress();}
 function showFree(){showA1("free");}
 function restoreLegacy(){const topic=document.querySelector(".topic-menu");if(topic)topic.style.display="block";}

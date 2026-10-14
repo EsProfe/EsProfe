@@ -34,7 +34,7 @@ Before every publication:
 
 ```bash
 node scripts/validate-a1.mjs
-node --test scripts/a1-runtime.test.mjs scripts/platform-navigation.test.mjs scripts/a1-session.test.mjs scripts/workspace-language.test.mjs tests/football-account.test.cjs
+node --test scripts/a1-runtime.test.mjs scripts/platform-navigation.test.mjs scripts/a1-session.test.mjs scripts/workspace-language.test.mjs scripts/site-search.test.mjs tests/football-account.test.cjs
 git diff --check
 ```
 

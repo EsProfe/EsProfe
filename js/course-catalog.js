@@ -40,6 +40,7 @@
   }
 
   async function levelCatalog(level) {
+    if (level === "A1" && window.EsProfeA1Catalog) return window.EsProfeA1Catalog.catalog();
     const config = await structure();
     const source = config.catalogSources.find(item => item.level === level);
     if (!source || source.status !== "active") return { level, lessons: {} };
@@ -66,7 +67,7 @@
   }
 
   function plain(value) {
-    return String(value || "").toLocaleLowerCase();
+    return String(value || "").normalize("NFD").replace(/\p{M}/gu, "").toLocaleLowerCase();
   }
 
   async function search(query, filters = {}) {
@@ -76,12 +77,13 @@
     const track = filters.track;
     const contentType = filters.contentType;
     return (await lessons(level)).filter(item => {
+      if (item.status !== "ready") return false;
       if (track && !item.tracks.includes(track)) return false;
       if (contentType && item.contentType !== contentType) return false;
       const words = [
         item.id,
         ...item.tracks,
-        ...Object.values(item.title || {}).flatMap(v => Array.isArray(v) ? v : [v]),
+        ...Object.values(item.title || {}).filter(Array.isArray).flat(),
         ...(item.search?.tags || [])
       ].map(plain).join(" ");
       return words.includes(value);
