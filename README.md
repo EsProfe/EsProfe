@@ -32,7 +32,7 @@ Before every publication:
 
 ```bash
 node scripts/validate-a1.mjs
-node --test scripts/a1-runtime.test.mjs
+node --test scripts/a1-runtime.test.mjs scripts/platform-navigation.test.mjs tests/football-account.test.cjs
 git diff --check
 ```
 

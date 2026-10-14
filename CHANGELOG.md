@@ -1,5 +1,11 @@
 # Changelog
 
+## [A1 entry navigation] - 2026-10-14
+
+- Fixed Free learning and My course entry buttons: palette click handling now matches palette buttons only, never the page-level palette attribute.
+- Added four-language regression checks for home/sidebar navigation, nested button labels, return home and palette selection. Included these checks in the publication workflow.
+- Preserved existing catalog, lessons and personal progress. Recovery branch: `backup/before-a1-navigation-2026-10-14`.
+
 ## [Spanish home palettes] - 2026-10-10
 
 - Added an original Spanish village vignette within the welcome block, scaled down on phones.
