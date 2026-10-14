@@ -1,5 +1,10 @@
 # Changelog
 
+## [Focused home navigation] - 2026-10-14
+
+- Removed the home-page subject shortcuts to separate legacy grammar, verbs, vocabulary and listening sections, as requested by the owner. The two A1 entry modes and shared search remain the main learning paths.
+- Updated the four-language free-learning description and gave the learning-cycle summary full width.
+
 ## [Shared A1 search navigation] - 2026-10-14
 
 - Open search results directly through the common platform and lesson engine; removed the timed intermediate curriculum navigation. Outdated curriculum responses cannot replace the selected lesson.
