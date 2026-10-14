@@ -47,7 +47,8 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
 #esprofe-football .panel{padding:10px;margin:7px 0}
 #esprofe-football .goal-wrap .muted{margin:3px 0}
 #esprofe-football .feedback:empty{display:none}
-#esprofe-football th,#esprofe-football td{overflow-wrap:anywhere}
+#esprofe-football th,#esprofe-football td{overflow-wrap:normal;word-break:normal}
+#esprofe-football tbody th:first-child{white-space:nowrap}
 @media(max-width:650px), (max-height:550px){
  #esprofe-football{font-size:18px;line-height:1.3}
  #esprofe-football .shell{display:flex;flex-direction:column}
@@ -71,7 +72,12 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
  #esprofe-football .word span,#esprofe-football .muted{font-size:17px}
  #esprofe-football .word{padding:6px;gap:2px;flex-direction:column;align-items:flex-start}
  #esprofe-football .vocab{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:3px 0}
- #esprofe-football th,#esprofe-football td{font-size:17px;padding:5px}
+ #esprofe-football th,#esprofe-football td{font-size:17px;padding:4px}
+ #esprofe-football table,#esprofe-football thead,#esprofe-football tbody{display:block}
+ #esprofe-football table tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ #esprofe-football thead th:first-child{display:none}
+ #esprofe-football tbody th:first-child{grid-column:1/-1;border-bottom:0;padding-top:8px}
+ #esprofe-football table th,#esprofe-football table td{min-width:0}
  #esprofe-football .es-answer,#esprofe-football .model{font-size:21px}
  #esprofe-football .choices{gap:6px}
  #esprofe-football .choices button{font-size:20px;min-width:0;padding:6px 10px}
