@@ -1,5 +1,10 @@
 # Changelog
 
+## [Inactive workspace language ownership] - 2026-10-14
+
+- Prevented previously opened vocabulary, listening or exam workspaces from reopening over an A1 exercise during language changes. Only the visible workspace translates itself.
+- Added regressions for all three hidden workspaces and translation of the active vocabulary view.
+
 ## [A1 session and language stability] - 2026-10-14
 
 - Kept the current stage, question, answer state and scores when switching RU / UK / EN / ES. Result translation never creates an extra assessment attempt.
