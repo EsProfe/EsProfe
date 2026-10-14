@@ -134,3 +134,124 @@ html[data-learning-mode="home"] .home-paths{position:relative}
   html[data-learning-mode="home"] .home-welcome h1,
   html[data-learning-mode="home"] .home-lead{margin-right:0}
 }
+
+/* Viewport layout: spend screen space on learning content. Long content keeps
+   natural scrolling; no text, controls or feedback are clipped to fit a height. */
+main{padding:0;min-width:0}
+.header{min-height:62px;padding:8px clamp(10px,2vw,24px);gap:16px}
+.logo-image{width:38px;height:38px}
+.logo-word{font-size:22px}
+.site-search input{min-height:40px;font-size:15px}
+.site-search::before{top:5px;font-size:26px}
+.header-login{min-height:38px;padding:8px 12px;font-size:14px}
+.platform-shell{min-height:calc(100dvh - 90px);grid-template-columns:190px minmax(0,1fr)}
+.platform-sidebar{top:62px;width:190px;height:calc(100dvh - 62px);padding:10px}
+.platform-nav{gap:5px}
+.platform-nav-button{min-height:42px;padding:8px 10px;font-size:13px}
+.platform-main{padding:12px clamp(10px,1.7vw,22px) 16px}
+footer{margin-left:190px;padding:6px 12px;font-size:11px}
+.platform-back-home{margin-bottom:8px;padding:6px 10px;min-height:32px}
+.legacy-workspace .hero{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.legacy-workspace .hero>.topic-menu{grid-column:1/-1;width:100%}
+.legacy-workspace .student-profile,.legacy-workspace .progress-panel{width:100%;margin:0 0 8px;border-radius:12px}
+.student-profile-head{padding:9px 12px}
+.student-profile-head strong{font-size:17px}
+.student-profile-body{padding:9px 12px;gap:10px}
+.student-profile-body strong{font-size:14px}
+.student-profile-body button{padding:8px 10px;min-height:38px}
+.student-profile-settings{padding:0 12px 8px}
+.progress-panel{padding:10px 12px}
+.progress-top>strong{font-size:18px}
+.progress-bar{height:6px;margin:7px 0}
+.progress-stats{gap:4px}
+.progress-stats span{padding:5px 6px}
+.progress-review-now{padding:7px;margin-top:7px}
+.progress-bottom,.progress-route{margin-top:7px;padding:7px}
+.session-progress{max-width:none;padding:8px 12px;gap:10px;margin-bottom:8px;border-radius:12px}
+.session-progress-visual{font-size:28px}
+.session-progress-bar{height:5px;margin:5px 0}
+.session-progress-body small{line-height:1.3}
+.session-profile-nudge{margin-top:6px;padding-top:6px}
+.grammar-section:has(.a1-route,.a1-lesson){margin:0;padding:0;border:0;background:transparent;box-shadow:none;max-width:none}
+.a1-route,.a1-lesson{margin:8px auto;padding:0;width:100%;max-width:1100px}
+.grammar-header{padding-bottom:10px;margin-bottom:10px;gap:10px}
+.grammar-header h2,.a1-lesson>h2{font-size:clamp(21px,2.1vw,29px);line-height:1.2}
+.a1-lesson-navigation{margin-bottom:8px;gap:8px}
+.a1-lesson-navigation button{padding:7px 10px;min-height:36px;font-size:14px}
+.a1-stepper,.a1-stepper-seven{gap:5px;margin-bottom:10px}
+.a1-stepper button{min-height:36px;padding:6px;font-size:13px;overflow-wrap:normal}
+.a1-kicker{margin-bottom:4px}
+.a1-goal{padding:9px 12px}
+.a1-rule-grid{margin:12px 0;gap:10px}
+.a1-rule-grid article,.a1-review-card{padding:11px 12px}
+.a1-question-card,.a1-result{padding:16px;border-radius:14px}
+.a1-question-card h2{font-size:clamp(21px,2vw,28px);line-height:1.25;margin:6px 0}
+.a1-task-hint{font-size:15px}
+.a1-counter{margin-bottom:6px}
+.a1-options{margin:12px 0 8px;gap:7px}
+.a1-options button,.a1-options .a1-option{min-height:44px;padding:9px 12px;font-size:16px}
+.a1-main{margin-top:12px;min-height:42px;padding:9px 14px}
+.a1-example-grid{gap:8px}
+.a1-example{padding:10px;gap:5px}
+.a1-module{padding:12px;margin:12px 0;border-radius:14px}
+.a1-module-head{gap:9px}
+.a1-module-head>span{width:30px;height:30px;font-size:14px}
+.a1-module-head h3{font-size:18px}
+.a1-topic-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px;margin-top:10px}
+.a1-topic-card{min-height:100px;padding:11px;grid-template-columns:34px minmax(0,1fr);gap:9px;border-radius:12px}
+.a1-topic-icon{width:32px;height:32px;font-size:21px;border-radius:9px}
+.a1-topic-copy{gap:4px;min-height:0}
+.a1-topic-copy strong{font-size:16px;line-height:1.25}
+.a1-topic-description{font-size:14px;line-height:1.35}
+.a1-topic-card small{font-size:13px}
+@media(max-width:850px){
+  .platform-shell{grid-template-columns:1fr;min-height:calc(100dvh - 90px)}
+  .platform-sidebar{position:relative;top:auto;width:auto;height:auto;padding:5px 10px}
+  .platform-nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+  .platform-nav-button{justify-content:center;min-height:38px;padding:6px;font-size:0}
+  .platform-nav-button span:first-child{font-size:18px}
+  .platform-main{padding:10px 12px 14px}
+  footer{margin-left:0}
+}
+@media(max-width:560px){
+  .header{min-height:56px;padding:6px 10px;gap:8px;grid-template-columns:auto minmax(0,1fr) auto}
+  .logo-image{width:34px;height:34px}
+  .logo-word{display:none}
+  .site-search input{font-size:14px;min-height:38px;padding-left:32px;padding-right:8px}
+  .site-search::before{left:9px;top:6px;font-size:23px}
+  .language-selector select{max-width:104px;padding:6px 2px;font-size:13px}
+  .platform-main{padding:8px 10px 12px}
+  .legacy-workspace .hero{grid-template-columns:1fr;gap:6px}
+  .student-profile-head,.student-profile-body{flex-direction:row;align-items:center}
+  .student-profile-body button{width:auto;font-size:13px}
+  .progress-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .progress-route{flex-direction:row;align-items:center}
+  .progress-route button{width:auto}
+  .session-progress-top{display:flex;flex-wrap:wrap;gap:3px 8px}
+  .session-progress-top strong{font-size:13px}
+  .session-progress-top span{margin:0}
+  .session-profile-nudge{flex-direction:row;align-items:center;gap:7px}
+  .session-profile-nudge button{width:auto;white-space:normal}
+  .a1-stepper,.a1-stepper-seven{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;gap:4px}
+  .a1-stepper button{font-size:12px;white-space:normal;min-height:34px;padding:5px 3px}
+  .a1-lesson-navigation button{min-height:36px;font-size:13px}
+  .a1-question-card,.a1-result{padding:12px}
+  .a1-rule-grid{grid-template-columns:1fr}
+  .a1-topic-card{min-height:0}
+  .a1-topic-grid{grid-template-columns:1fr}
+  html[data-learning-mode="home"] .home-paths{grid-template-columns:repeat(2,minmax(0,1fr))}
+  html[data-learning-mode="home"] .home-path-card{padding:10px}
+  html[data-learning-mode="home"] .home-path-card p{font-size:13px}
+  html[data-learning-mode="home"] .home-path-card button{width:100%;white-space:normal}
+}
+@media(max-width:360px){
+  html[data-learning-mode="home"] .home-paths{grid-template-columns:1fr}
+  .student-profile-body{flex-direction:column;align-items:stretch}
+  .student-profile-body button{width:100%}
+}
+@media(max-height:750px) and (min-width:851px){
+  .platform-main{padding-top:8px}
+  .a1-lesson-navigation,.a1-stepper{margin-bottom:7px}
+  .session-progress{padding-block:6px}
+  .a1-question-card,.a1-result{padding:12px 16px}
+}

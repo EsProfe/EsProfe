@@ -1,5 +1,12 @@
 # Changelog
 
+## [Adaptive A1 screen layout] - 2026-10-14
+
+- Reduced duplicate outer spacing, header height, navigation spacing and lesson-card padding. Kept exercise text and answer buttons readable.
+- Placed personal profile and progress side by side on wide screens; made catalog cards more compact.
+- Used one compact navigation row and wrapping lesson stages on mobile, with no clipped controls or horizontal stage scrolling.
+- Retained natural scrolling for long catalogs, explanations, feedback and enlarged text.
+
 ## [Inactive workspace language ownership] - 2026-10-14
 
 - Prevented previously opened vocabulary, listening or exam workspaces from reopening over an A1 exercise during language changes. Only the visible workspace translates itself.
