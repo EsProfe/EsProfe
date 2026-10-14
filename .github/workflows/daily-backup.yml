@@ -1,0 +1,48 @@
+name: Daily EsProfe backup
+on:
+  schedule:
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: esprofe-daily-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Create dated immutable recovery tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          DAY="$(date -u +%F)"
+          TAG="backup/daily-$DAY"
+          SHA="$(git rev-parse HEAD)"
+          if gh api "repos/${GITHUB_REPOSITORY}/git/ref/tags/$TAG" >/dev/null 2>&1; then
+            echo "Backup tag already exists: $TAG"
+          else
+            gh api "repos/${GITHUB_REPOSITORY}/git/refs" \
+              -f "ref=refs/tags/$TAG" \
+              -f "sha=$SHA"
+            echo "Created $TAG at $SHA"
+          fi
+      - name: Export repository source archive
+        run: |
+          git archive --format=tar.gz --output="esprofe-source-$(date -u +%F).tar.gz" HEAD
+      - name: Upload recovery archive (30 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: esprofe-backup-${{ github.run_id }}
+          path: esprofe-source-*.tar.gz
+          retention-days: 30
+          if-no-files-found: error
