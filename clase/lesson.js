@@ -153,7 +153,6 @@ if(inner.scrollHeight<=fullHeight-4){screenPage=0;pager.hidden=true;inner.style.
 // Vocabulary rows stay together with their translations, and keep their handlers.
 inner.querySelectorAll('.vocab:not([data-paged])').forEach(grid=>{
  const words=[...grid.children];grid.dataset.paged='true';
- if(grid.parentElement!==inner)return;
  const rows=[];for(let i=0;i<words.length;i+=2){const row=grid.cloneNode(false);row.append(...words.slice(i,i+2));rows.push(row)}
  grid.replaceWith(...rows);
 });
@@ -161,9 +160,10 @@ inner.querySelectorAll('.vocab:not([data-paged])').forEach(grid=>{
 for(let pass=0;pass<5;pass++){
  let changed=false;
  for(const el of blocks()){
-  if(el.getBoundingClientRect().height<=height||el.children.length<2||el.matches('table,.vocab,.choices,.tokens,.answerbox,.footer'))continue;
+  if(el.getBoundingClientRect().height<=height||!el.children.length||el.matches('table,.vocab,.choices,.tokens,.answerbox,.footer'))continue;
+  if(el.children.length===1){el.replaceWith(el.firstElementChild);changed=true;continue}
   const parts=[...el.children].map(child=>{
-   const wrap=document.createElement('div');wrap.className=el.className;
+   const wrap=document.createElement(el.tagName==='UL'?'ul':'div');wrap.className=el.className;
    if(el.tagName==='DETAILS')wrap.className='panel';
    wrap.append(child);return wrap;
   });el.replaceWith(...parts);changed=true;
