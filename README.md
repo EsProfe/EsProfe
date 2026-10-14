@@ -16,6 +16,8 @@ EsProfe is a multilingual platform for learning Spanish. The current development
 
 The current catalog contains **81 ready A1 lessons**, **1311 questions** and **60 source files** (checked 2026-10-10). Catalog readiness records availability; it does not certify final manual teaching review or audio quality.
 
+The lesson engine preserves its current stage, question and answered state during interface-language changes. Leaving a lesson cancels pending transitions. Vocabulary practice covers all cards in both directions and reports actual totals.
+
 The catalog alone supplies the sequential progress order. Personal review uses the shared A1 engine and resolves saved weak spots; free learning cannot alter personal results. Assessment attempts remain in the existing `esprofe_progress_v1` store alongside the current result.
 
 ## Adding a ready A1 lesson
@@ -32,7 +34,7 @@ Before every publication:
 
 ```bash
 node scripts/validate-a1.mjs
-node --test scripts/a1-runtime.test.mjs scripts/platform-navigation.test.mjs tests/football-account.test.cjs
+node --test scripts/a1-runtime.test.mjs scripts/platform-navigation.test.mjs scripts/a1-session.test.mjs tests/football-account.test.cjs
 git diff --check
 ```
 

@@ -10,7 +10,27 @@
     assessmentScore = 0,
     weak = {},
     usedQuestionIds = new Set(),
-    lastOpen = "";
+    lastOpen = "",
+    currentView = null,
+    viewEpoch = 0,
+    practiceTotal = 6,
+    trainerTotal = 8;
+  const pendingTimers = new Set();
+  function leaveView() {
+    viewEpoch++;
+    currentView = null;
+    for (const timer of pendingTimers) clearTimeout(timer);
+    pendingTimers.clear();
+    window.speechSynthesis?.cancel?.();
+  }
+  function schedule(callback, delay) {
+    const epoch = viewEpoch;
+    const timer = setTimeout(() => {
+      pendingTimers.delete(timer);
+      if (epoch === viewEpoch) callback();
+    }, delay);
+    pendingTimers.add(timer);
+  }
   const root = () => document.getElementById("grammarSection"),
     lang = () => document.getElementById("language")?.value || "ru",
     esc = (v) =>
@@ -241,7 +261,7 @@
     else {
       // Never silently use the computer's default English voice for Spanish.
       // A delayed retry covers browsers that load voices only after the first click.
-      setTimeout(() => {
+      schedule(() => {
         const delayedVoice = spanishVoice || selectSpanishVoice();
         if (!delayedVoice) return;
         const retry = new SpeechSynthesisUtterance(text);
@@ -269,6 +289,7 @@
     "review",
   ];
   function remember(next) {
+    leaveView();
     if (!suppressTrail && stage && stage !== next) stageTrail.push(stage);
     stage = next;
   }
@@ -280,7 +301,7 @@
   function openStage(next) {
     if (next === "explanation") return renderExplanation();
     if (next === "examples") return renderExamples();
-    if (next === "practice") return runStage("practice", 6);
+    if (next === "practice") return lesson.flashcards ? runVocabularyDrill() : runStage("practice", 6);
     if (next === "trainer") return runStage("trainer", 8);
     if (next === "assessment") return runStage("assessment", 10);
     if (next === "review") return renderReview();
@@ -712,7 +733,7 @@
               .querySelectorAll("[data-k-answer]")
               .forEach((x) => (x.disabled = true));
             speak(q.word);
-            setTimeout(() => {
+            schedule(() => {
               i = (i + 1) % items.length;
               show();
             }, 2500);
@@ -761,6 +782,7 @@
   function renderExplanation() {
     if (!lesson) return;
     remember("explanation");
+    currentView = renderExplanation;
     setView();
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru;
@@ -781,6 +803,7 @@
   }
   function renderExamples() {
     remember("examples");
+    currentView = renderExamples;
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru;
     r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-kicker">A1 · ${esc(t.examplesTitle)}</div><h2>${esc(t.examplesTitle)}</h2><p>${esc(t.goal)}</p><div class="a1-example-grid">${(lesson.examples || []).map((x) => `<button type="button" class="a1-example" data-word="${esc(x.word)}"><strong>${esc(x.word)}</strong><small>${U().listen}</small></button>`).join("")}</div><button class="grammar-primary a1-main" id="a1Start">${U().start}</button></div>`;
@@ -790,26 +813,53 @@
     document.getElementById("a1Start").onclick = () => lesson.flashcards ? runVocabularyDrill() : runStage("practice", 6);
   }
   function runVocabularyDrill() {
-    if (lesson?.activeRecall) return runActiveRecallDrill();
-    remember("practice"); const r=root(), cards=shuffle(lesson.flashcards||[]), n={ru:1,uk:2,en:3,es:4}[lang()]||1; let i=0,score=0;
-    function show(){if(i>=cards.length){practiceScore=score;return runStage("trainer",8)}const forward=i<5,card=cards[i],prompt=forward?card[0]:card[n],answer=forward?card[n]:card[0],opts=shuffle([answer,...shuffle(cards.filter(x=>x!==card).map(x=>forward?x[n]:x[0])).slice(0,2)]);r.innerHTML=`<div class="a1-lesson">${stepper("practice")}<div class="a1-kicker">A1 · ${esc((lesson.i18n?.[lang()]||lesson.i18n?.ru).practiceTitle)}</div><div class="a1-question-card"><div class="a1-counter">${i+1} / ${cards.length}</div><span class="a1-vocab-drill-icon">${card[5]}</span><button type="button" class="a1-audio" id="a1VocabListen">🔊 ${esc(U().listen)}</button><h2>${esc(prompt)}</h2><p>${esc(forward?({ru:"Выбери перевод",uk:"Обери переклад",en:"Choose the translation",es:"Elige la traducción"}[lang()]||""):({ru:"Выбери испанское слово",uk:"Обери іспанське слово",en:"Choose the Spanish word",es:"Elige la palabra en español"}[lang()]||""))}</p><div class="a1-options">${opts.map((o,k)=>`<button class="a1-option" data-vocab="${k}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;document.getElementById("a1VocabListen")?.addEventListener("click",()=>speak(card[0]));r.querySelectorAll("[data-vocab]").forEach(b=>b.onclick=()=>{const ok=opts[+b.dataset.vocab]===answer;if(ok)score++;else weak.vocabulary=(weak.vocabulary||0)+1;document.getElementById("a1Feedback").textContent=ok?`✅ ${U().correct}`:`❌ ${U().wrong}: ${answer}`;r.querySelectorAll("[data-vocab]").forEach(x=>x.disabled=true);setTimeout(()=>{i++;show()},650)})}show()
+    return runActiveRecallDrill();
   }
   function runActiveRecallDrill() {
     remember("practice");
-    const r=root(), cards=shuffle(lesson.flashcards||[]).slice(0,12), n={ru:1,uk:2,en:3,es:4}[lang()]||1;
-    const queue=shuffle(cards.flatMap(card=>[{card,forward:true,first:true},{card,forward:false,first:true}]));
-    const initialTotal=queue.length; let shown=0,firstCorrect=0,retries=0;
-    const text={ru:{toTranslation:"Выбери перевод",toSpanish:"Выбери испанское слово",retry:"Повторим это слово ещё раз через несколько карточек.",done:"Все слова закреплены."},uk:{toTranslation:"Обери переклад",toSpanish:"Обери іспанське слово",retry:"Повторимо це слово ще раз через кілька карток.",done:"Усі слова закріплено."},en:{toTranslation:"Choose the translation",toSpanish:"Choose the Spanish word",retry:"This word will return after a few cards.",done:"All words are consolidated."},es:{toTranslation:"Elige la traducción",toSpanish:"Elige la palabra en español",retry:"Esta palabra volverá después de unas tarjetas.",done:"Todas las palabras están consolidadas."}}[lang()]||{};
-    function show(){
-      if(!queue.length){practiceScore=Math.round((firstCorrect/Math.max(1,initialTotal))*6);return runStage("trainer",8)}
-      const item=queue.shift(),card=item.card,answer=item.forward?card[n]:card[0],prompt=item.forward?card[0]:card[n];
-      const options=shuffle([answer,...shuffle(cards.filter(x=>x!==card).map(x=>item.forward?x[n]:x[0])).slice(0,2)]);
+    const r = root(), cards = shuffle(lesson.flashcards || []);
+    const queue = shuffle(cards.flatMap(card => [
+      { card, forward: true, first: true }, { card, forward: false, first: true }
+    ]));
+    const initialTotal = queue.length;
+    practiceTotal = initialTotal;
+    let shown = 0, firstCorrect = 0, retries = 0, item = null, answered = null;
+    const copy = {
+      ru: { toTranslation: "Выбери перевод", toSpanish: "Выбери испанское слово", retry: "Повторим это слово ещё раз через несколько карточек." },
+      uk: { toTranslation: "Обери переклад", toSpanish: "Обери іспанське слово", retry: "Повторимо це слово ще раз через кілька карток." },
+      en: { toTranslation: "Choose the translation", toSpanish: "Choose the Spanish word", retry: "This word will return after a few cards." },
+      es: { toTranslation: "Elige la traducción", toSpanish: "Elige la palabra en español", retry: "Esta palabra volverá después de unas tarjetas." }
+    };
+    function next() {
+      if (!queue.length) { practiceScore = firstCorrect; return runStage("trainer", 8); }
+      item = queue.shift();
+      answered = null;
       shown++;
-      r.innerHTML=`<div class="a1-lesson">${stepper("practice")}<div class="a1-kicker">A1 · ${esc((lesson.i18n?.[lang()]||lesson.i18n?.ru).practiceTitle)}</div><div class="a1-question-card"><div class="a1-counter">${shown} / ${initialTotal}${retries?` · 🔁 ${retries}`:""}</div><span class="a1-vocab-drill-icon">${card[5]}</span><button type="button" class="a1-audio" id="a1VocabListen">🔊 ${esc(U().listen)}</button><h2>${esc(prompt)}</h2><p>${esc(item.forward?text.toTranslation:text.toSpanish)}</p><div class="a1-options">${options.map((o,k)=>`<button class="a1-option" data-vocab="${k}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback" aria-live="polite"></p></div></div>`;
-      document.getElementById("a1VocabListen")?.addEventListener("click",()=>speak(card[0]));
-      r.querySelectorAll("[data-vocab]").forEach(b=>b.onclick=()=>{const ok=options[+b.dataset.vocab]===answer;if(ok&&item.first)firstCorrect++;if(!ok){weak.vocabulary=(weak.vocabulary||0)+1;queue.splice(Math.min(3,queue.length),0,{...item,first:false});retries++}document.getElementById("a1Feedback").textContent=ok?`✅ ${U().correct}: ${answer}`:`❌ ${U().wrong}: ${answer} · ${text.retry}`;r.querySelectorAll("[data-vocab]").forEach(x=>x.disabled=true);setTimeout(show,ok?650:1100)})
+      show();
     }
-    show();
+    function show() {
+      const n = { ru: 1, uk: 2, en: 3, es: 4 }[lang()] || 1,
+        text = copy[lang()] || copy.ru, card = item.card,
+        answer = item.forward ? card[n] : card[0], prompt = item.forward ? card[0] : card[n],
+        options = shuffle([...new Set([answer, ...shuffle(cards.filter(x => x !== card).map(x => item.forward ? x[n] : x[0]))])].slice(0, 3));
+      currentView = show;
+      r.innerHTML = `<div class="a1-lesson">${stepper("practice")}<div class="a1-kicker">A1 · ${esc((lesson.i18n?.[lang()] || lesson.i18n?.ru).practiceTitle)}</div><div class="a1-question-card"><div class="a1-counter">${shown} / ${initialTotal}${retries ? ` · 🔁 ${retries}` : ""}</div><span class="a1-vocab-drill-icon">${esc(card[5])}</span><button type="button" class="a1-audio" id="a1VocabListen">🔊 ${esc(U().listen)}</button><h2>${esc(prompt)}</h2><p>${esc(item.forward ? text.toTranslation : text.toSpanish)}</p><div class="a1-options">${options.map((o, k) => `<button class="a1-option" data-vocab="${k}" ${answered !== null ? "disabled" : ""}>${esc(o)}</button>`).join("")}</div><p id="a1Feedback" aria-live="polite">${answered === null ? "" : esc(answered ? `✅ ${U().correct}: ${answer}` : `❌ ${U().wrong}: ${answer} · ${text.retry}`)}</p></div></div>`;
+      document.getElementById("a1VocabListen")?.addEventListener("click", () => speak(card[0]));
+      r.querySelectorAll("[data-vocab]").forEach(b => b.onclick = () => {
+        if (answered !== null) return;
+        answered = options[+b.dataset.vocab] === answer;
+        if (answered && item.first) firstCorrect++;
+        if (!answered) {
+          weak.vocabulary = (weak.vocabulary || 0) + 1;
+          queue.splice(Math.min(3, queue.length), 0, { ...item, first: false });
+          retries++;
+        }
+        window.EsProfeLearningProgress?.recordPracticeAnswer?.(answered);
+        show();
+        schedule(next, answered ? 650 : 1100);
+      });
+    }
+    next();
   }
   function localizedOptions(q) {
     const raw = q.optionsByLang?.[lang()] ?? q.optionsByLang?.ru ?? q.options;
@@ -821,7 +871,6 @@
   function runStage(kind, count) {
     remember(kind);
     const r = root(),
-      t = lesson.i18n?.[lang()] || lesson.i18n?.ru,
       bank = shuffle(lesson.questionBank || []),
       fresh = bank.filter((q) => !usedQuestionIds.has(q.id)),
       items = [...fresh, ...bank.filter((q) => usedQuestionIds.has(q.id))].slice(
@@ -829,15 +878,14 @@
         Math.min(count, bank.length),
       );
     items.forEach((q) => usedQuestionIds.add(q.id));
-    let i = 0,
-      score = 0;
-    const title =
-      kind === "practice"
-        ? t.practiceTitle
-        : kind === "trainer"
-          ? t.trainerTitle
-          : t.assessmentTitle;
+    if (kind === "practice") practiceTotal = items.length;
+    if (kind === "trainer") trainerTotal = items.length;
+    let i = 0, score = 0, answered = null;
     function show() {
+      currentView = show;
+      const t = lesson.i18n?.[lang()] || lesson.i18n?.ru;
+      const title = kind === "practice" ? t.practiceTitle
+        : kind === "trainer" ? t.trainerTitle : t.assessmentTitle;
       if (i >= items.length) {
         if (kind === "practice") {
           practiceScore = score;
@@ -858,18 +906,26 @@
       const taskHint = q.speakOut
         ? ({ru:"Прослушайте реплику, выберите ответ и произнесите весь диалог вслух.",uk:"Прослухайте репліку, оберіть відповідь і промовте весь діалог уголос.",en:"Listen to the line, choose a reply and say the whole dialogue aloud.",es:"Escucha la frase, elige una respuesta y di todo el diálogo en voz alta."})[lang()]
         : ({ru:"Выберите один правильный вариант.",uk:"Оберіть один правильний варіант.",en:"Choose one correct answer.",es:"Elige una respuesta correcta."})[lang()];
-      r.innerHTML = `<div class="a1-lesson">${stepper(kind)}<div class="a1-kicker">A1 · ${esc(title)}</div><div class="a1-question-card"><div class="a1-counter">${i + 1} / ${items.length}</div>${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><p class="a1-task-hint">${esc(taskHint||"")}</p><div class="a1-options">${opts.map((o, n) => `<button type="button" class="a1-option" data-option-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      r.innerHTML = `<div class="a1-lesson">${stepper(kind)}<div class="a1-kicker">A1 · ${esc(title)}</div><div class="a1-question-card"><div class="a1-counter">${i + 1} / ${items.length}</div>${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><p class="a1-task-hint">${esc(taskHint||"")}</p><div class="a1-options">${opts.map((o, n) => `<button type="button" class="a1-option" data-option-index="${n}" ${answered !== null ? "disabled" : ""}>${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
       document.getElementById("a1Listen")?.addEventListener("click", () => speak(q.audio));
-      if (q.audio) setTimeout(() => speak(q.audio), 0);
+      if (q.audio && answered === null) schedule(() => speak(q.audio), 0);
       r.querySelectorAll("[data-option-index]").forEach(
         (b) => (b.onclick = () => check(q, opts[+b.dataset.optionIndex])),
       );
+      if (answered !== null) feedback(q);
     }
     function check(q, value) {
-      const answer = correctAnswer(q),
-        ok = value === answer;
+      if (answered !== null) return;
+      const ok = value === correctAnswer(q);
+      answered = ok;
       if (ok) score++;
       else weak[q.tag] = (weak[q.tag] || 0) + 1;
+      window.EsProfeLearningProgress?.recordPracticeAnswer?.(ok);
+      show();
+      schedule(() => { i++; answered = null; show(); }, kind === "assessment" ? 350 : 650);
+    }
+    function feedback(q) {
+      const answer = correctAnswer(q), ok = answered;
       const transcript = q.audio ? ` · ${q.audio}` : "";
       const explanation =
         q.explanation?.[lang()] ?? q.explanation?.ru ?? "";
@@ -881,25 +937,19 @@
       r.querySelectorAll("[data-option-index]").forEach(
         (b) => (b.disabled = true),
       );
-      setTimeout(
-        () => {
-          i++;
-          show();
-        },
-        kind === "assessment" ? 350 : 650,
-      );
     }
     show();
   }
-  function renderResult(total) {
+  function renderResult(total, save = true) {
     remember("result");
+    currentView = () => renderResult(total, false);
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru,
       percent = total ? Math.round((assessmentScore / total) * 100) : 0,
       weakTags = Object.entries(weak).sort((a, b) => b[1] - a[1]),
       passed = percent >= PASS(),
       msg = passed ? (weakTags.length ? U().almost : U().mastered) : U().again;
-    window.EsProfeLearningProgress?.recordLessonResult?.("A1", lesson.id, {
+    if (save) window.EsProfeLearningProgress?.recordLessonResult?.("A1", lesson.id, {
       percent,
       practice: practiceScore,
       trainer: trainerScore,
@@ -907,7 +957,7 @@
       weakSpots: Object.fromEntries(weakTags),
       nextLessonId: lesson.nextLessonId,
     });
-    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-result"><div class="a1-score">${percent}%</div><h2>${esc(msg)}</h2><p>${esc(t.resultTitle)}: ${assessmentScore}/${total} · ${U().practice}: ${practiceScore}/6 · ${U().trainer}: ${trainerScore}/8</p><h3>${U().weak}</h3><div class="a1-weak-list">${weakTags.length ? weakTags.map(([k, v]) => `<span>${esc(k)} · ${v}</span>`).join("") : esc(U().noWeak)}</div><div class="a1-result-actions">${weakTags.length ? `<button class="grammar-primary" id="a1Review">${U().reviewErrors}</button>` : ""}<button id="a1Repeat">${U().repeat}</button><button id="a1Route">${U().route}</button></div></div></div>`;
+    r.innerHTML = `<div class="a1-lesson">${stepper(stage)}<div class="a1-result"><div class="a1-score">${percent}%</div><h2>${esc(msg)}</h2><p>${esc(t.resultTitle)}: ${assessmentScore}/${total} · ${U().practice}: ${practiceScore}/${practiceTotal} · ${U().trainer}: ${trainerScore}/${trainerTotal}</p><h3>${U().weak}</h3><div class="a1-weak-list">${weakTags.length ? weakTags.map(([k, v]) => `<span>${esc(ruleForTag(k)[0])} · ${v}</span>`).join("") : esc(U().noWeak)}</div><div class="a1-result-actions">${weakTags.length ? `<button class="grammar-primary" id="a1Review">${U().reviewErrors}</button>` : ""}<button id="a1Repeat">${U().repeat}</button><button id="a1Route">${U().route}</button></div></div></div>`;
     document
       .getElementById("a1Review")
       ?.addEventListener("click", renderReview);
@@ -931,6 +981,7 @@
   }
   function renderReview() {
     remember("review");
+    currentView = renderReview;
     const r = root(),
       t = lesson.i18n?.[lang()] || lesson.i18n?.ru,
       items = Object.entries(weak).sort((a, b) => b[1] - a[1]);
@@ -949,40 +1000,49 @@
       });
   }
   function runWeak(tag) {
+    remember("review");
     const pool = (lesson.questionBank || []).filter((q) => q.tag === tag),
       r = root();
     if (!pool.length) return renderReview();
-    const q = shuffle(pool)[0],
-      opts = shuffle(localizedOptions(q)),
-      rule = ruleForTag(tag);
-    const audio = q.audio ? `<button type="button" class="a1-audio" id="a1Listen">🔊 ${esc(U().listen)}</button>` : "";
-    r.innerHTML = `<div class="a1-lesson">${stepper("review")}<article class="a1-review-card"><h3>${esc(rule[0])}</h3><p>${esc(rule[1])}</p></article><div class="a1-question-card">${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" data-weak-index="${n}">${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
-    document.getElementById("a1Listen")?.addEventListener("click", () => speak(q.audio));
-    if (q.audio) setTimeout(() => speak(q.audio), 0);
-    r.querySelectorAll("[data-weak-index]").forEach(
-      (b) =>
-        (b.onclick = () => {
-          const ok = opts[+b.dataset.weakIndex] === correctAnswer(q);
-          document.getElementById("a1Feedback").textContent = ok
-            ? `✅ ${U().fixed}`
-            : `❌ ${U().notFixed}`;
-          r.querySelectorAll("[data-weak-index]").forEach(
-            (x) => (x.disabled = true),
-          );
-          if (ok) {
-            delete weak[tag];
-            window.EsProfeLearningProgress?.clearWeakSpot?.(
-              "A1",
-              lesson.id,
-              tag,
+    const q = shuffle(pool)[0];
+    let answered = null;
+    function show() {
+      currentView = show;
+      const opts = shuffle(localizedOptions(q)), rule = ruleForTag(tag);
+      const audio = q.audio ? `<button type="button" class="a1-audio" id="a1Listen">🔊 ${esc(U().listen)}</button>` : "";
+      r.innerHTML = `<div class="a1-lesson">${stepper("review")}<article class="a1-review-card"><h3>${esc(rule[0])}</h3><p>${esc(rule[1])}</p></article><div class="a1-question-card">${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" data-weak-index="${n}" ${answered !== null ? "disabled" : ""}>${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      document.getElementById("a1Listen")?.addEventListener("click", () => speak(q.audio));
+      if (q.audio && answered === null) schedule(() => speak(q.audio), 0);
+      r.querySelectorAll("[data-weak-index]").forEach(
+        (b) =>
+          (b.onclick = () => {
+            if (answered !== null) return;
+            const ok = opts[+b.dataset.weakIndex] === correctAnswer(q);
+            answered = ok;
+            document.getElementById("a1Feedback").textContent = ok
+              ? `✅ ${U().fixed}`
+              : `❌ ${U().notFixed}`;
+            r.querySelectorAll("[data-weak-index]").forEach(
+              (x) => (x.disabled = true),
             );
-          }
-          setTimeout(renderReview, 800);
-        }),
-    );
+            if (ok) {
+              delete weak[tag];
+              window.EsProfeLearningProgress?.clearWeakSpot?.(
+                "A1",
+                lesson.id,
+                tag,
+              );
+            }
+            schedule(renderReview, 800);
+          }),
+      );
+      if (answered !== null) document.getElementById("a1Feedback").textContent = answered ? `✅ ${U().fixed}` : `❌ ${U().notFixed}`;
+    }
+    show();
   }
   async function open(id, { reviewTag } = {}) {
     if (!id) return;
+    leaveView();
     const token = {};
     lastOpen = token;
     try {
@@ -996,6 +1056,8 @@
       stage = "";
       stageTrail = [];
       practiceScore = trainerScore = assessmentScore = 0;
+      practiceTotal = 6;
+      trainerTotal = 8;
       usedQuestionIds = new Set();
       weak = {};
       if (reviewTag) {
@@ -1019,6 +1081,7 @@
     if (id) open(id);
   }
   document.addEventListener("click", (e) => {
+    if (e.target.closest("[data-action]")) { leaveView(); lastOpen = null; }
     const back = e.target.closest("[data-a1-go-back]");
     if (back) {
       goBack();
@@ -1026,6 +1089,8 @@
     }
     const route = e.target.closest("[data-a1-go-route]");
     if (route) {
+      leaveView();
+      lastOpen = null;
       window.openA1Curriculum?.({
         mode: document.documentElement.dataset.learningMode,
       });
@@ -1040,13 +1105,7 @@
     if (level === "A1" && lessonId && tag) open(lessonId, { reviewTag: tag });
   });
   document.addEventListener("esprofe:languageChanged", () => {
-    if (lesson && document.querySelector(".a1-lesson")) {
-      const oldTrail = stageTrail;
-      stageTrail = [];
-      stage = "";
-      renderExplanation();
-      stageTrail = oldTrail;
-    }
+    if (lesson && currentView && document.querySelector(".a1-lesson")) currentView();
   });
   window.openA1Lesson = open;
 })();

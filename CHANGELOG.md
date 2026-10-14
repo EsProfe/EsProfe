@@ -1,5 +1,13 @@
 # Changelog
 
+## [A1 session and language stability] - 2026-10-14
+
+- Kept the current stage, question, answer state and scores when switching RU / UK / EN / ES. Result translation never creates an extra assessment attempt.
+- Cancelled delayed question, review and audio callbacks when leaving a lesson or changing stages.
+- Vocabulary practice now covers every card in both directions, retains delayed retries and reports the actual first-attempt score and total. Returning to vocabulary practice uses the same drill.
+- Connected A1 answers to the existing free-session progress indicator; weak spots show localized rule names.
+- Added six session regressions to the deployment gate. Backup: `backup/before-a1-session-language-2026-10-14`.
+
 ## [A1 entry navigation] - 2026-10-14
 
 - Fixed Free learning and My course entry buttons: palette click handling now matches palette buttons only, never the page-level palette attribute.
