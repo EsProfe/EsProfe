@@ -76,10 +76,14 @@
   border-color: #8fd0a1;
   background: #f6fff8;
 }
-.a1-topic-card.planned,
-.a1-topic-card.locked {
+.a1-topic-card.planned {
   opacity: 0.62;
   cursor: not-allowed;
+}
+.a1-topic-card.locked {
+  cursor: not-allowed;
+  border-color: #d8dee9;
+  background: #f8fafc;
 }
 .a1-topic-icon {
   display: grid;
@@ -112,6 +116,13 @@
 }
 .a1-topic-card.locked small {
   color: #667085;
+}
+.a1-topic-card .a1-topic-guidance {
+  margin-top: 0;
+  color: #44546a;
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1.35;
 }
 .a1-future-modules {
   display: grid;
