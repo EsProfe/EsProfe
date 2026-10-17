@@ -33,7 +33,7 @@ function environment(language) {
     .map(id => [id, new Element()]));
   nodes.get('language').value = language;
   const main = new Element('main'), topicMenu = new Element(), trainer = new Element();
-  const listeners = new Map(), opens = [], state = { url: 'https://esprofe.es/' };
+  const listeners = new Map(), opens = [], state = { url: 'https://esprofe.es/', accountOpened:0 };
   main.appendChild = el => nodes.set(el.id, el);
   const document = {
     readyState: 'complete', documentElement: html,
@@ -50,6 +50,7 @@ function environment(language) {
   const context = vm.createContext({ document, URL, URLSearchParams, setTimeout, console,
     location: { search: '', href: state.url }, history: { replaceState: (_, __, url) => state.url = String(url) },
     scrollTo() {}, openA1Curriculum: options => opens.push(options.mode),
+    EsProfeStudentAccount: { user:null, open(){ state.accountOpened++; } },
     CustomEvent: class { constructor(type, options = {}) { this.type = type; this.detail = options.detail; } }
   });
   context.window = context;
@@ -58,24 +59,32 @@ function environment(language) {
     const button = new Element('button', dataset, html);
     document.dispatchEvent({ type: 'click', target: nested ? new Element('span', {}, button) : button });
   }
-  return { html, nodes, opens, state, click };
+  return { html, nodes, opens, state, account:context.EsProfeStudentAccount, click };
 }
 
 for (const language of ['ru', 'uk', 'en', 'es']) {
-  test(`home and sidebar navigation open both A1 modes (${language})`, () => {
+  test(`free A1 opens without sign-in and My course requires an account (${language})`, () => {
     const env = environment(language);
     for (const nested of [false, true]) {
-      for (const mode of ['free', 'course']) {
-        env.click({ action: mode }, nested);
-        assert.equal(env.nodes.get('platformHome').hidden, true);
-        assert.equal(env.nodes.get('legacyWorkspace').hidden, false);
-        assert.equal(env.html.dataset.learningMode, mode);
-        assert.equal(env.opens.at(-1), mode);
-        assert.equal(env.state.url, 'https://esprofe.es/');
-        env.click({ action: 'home' });
-        assert.equal(env.nodes.get('platformHome').hidden, false);
-        assert.equal(env.nodes.get('legacyWorkspace').hidden, true);
-      }
+      env.click({ action: 'free' }, nested);
+      assert.equal(env.nodes.get('platformHome').hidden, true);
+      assert.equal(env.nodes.get('legacyWorkspace').hidden, false);
+      assert.equal(env.html.dataset.learningMode, 'free');
+      assert.equal(env.opens.at(-1), 'free');
+      env.click({ action: 'home' });
+      assert.equal(env.nodes.get('platformHome').hidden, false);
+      assert.equal(env.nodes.get('legacyWorkspace').hidden, true);
+
+      const beforeAccount = env.state.accountOpened;
+      env.account.user = null;
+      env.click({ action: 'course' }, nested);
+      assert.equal(env.state.accountOpened, beforeAccount + 1);
+      assert.equal(env.opens.at(-1), 'free');
+      env.account.user = { id:'student-1' };
+      env.click({ action: 'course' }, nested);
+      assert.equal(env.html.dataset.learningMode, 'course');
+      assert.equal(env.opens.at(-1), 'course');
+      assert.equal(env.state.url, 'https://esprofe.es/');
     }
   });
 }

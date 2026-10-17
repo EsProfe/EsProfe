@@ -20,13 +20,18 @@ function normalizeStudent(profile) {
   };
 }
 
+function studentStorageKey() {
+  const accountId = window.EsProfeStudentAccount?.user?.id;
+  return accountId ? `${ESPROFE_STUDENT_KEY}:${accountId}` : ESPROFE_STUDENT_KEY;
+}
+
 function getStudentProfile() {
-  try { return normalizeStudent(JSON.parse(localStorage.getItem(ESPROFE_STUDENT_KEY))); }
+  try { return normalizeStudent(JSON.parse(localStorage.getItem(studentStorageKey()))); }
   catch (_) { return normalizeStudent({}); }
 }
 
 function saveStudentProfile(profile) {
-  localStorage.setItem(ESPROFE_STUDENT_KEY, JSON.stringify(normalizeStudent(profile)));
+  localStorage.setItem(studentStorageKey(), JSON.stringify(normalizeStudent(profile)));
   document.dispatchEvent(new CustomEvent("esprofe:studentChanged"));
 }
 
@@ -65,7 +70,7 @@ function renderStudentProfile() {
   const code = document.getElementById("language")?.value || "ru";
   const t = studentLabels[code] || studentLabels.ru;
   const profile = getStudentProfile();
-  const displayName = profile.name || t.name;
+  const displayName = profile.name || window.EsProfeStudentAccount?.user?.email || t.name;
   const currentId = getCurrentLessonId();
   const currentLabel = getLessonLabel(currentId, t);
 
@@ -92,3 +97,4 @@ document.addEventListener("DOMContentLoaded", renderStudentProfile);
 document.addEventListener("esprofe:languageChanged", renderStudentProfile);
 document.addEventListener("esprofe:studentChanged", renderStudentProfile);
 document.addEventListener("esprofe:progressChanged", renderStudentProfile);
+document.addEventListener("esprofe:accountChanged", renderStudentProfile);

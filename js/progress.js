@@ -6,6 +6,11 @@ const A1_LESSON_ORDER = [];
 
 let catalogLessonNames = {};
 
+function progressStorageKey() {
+  const accountId = window.EsProfeStudentAccount?.user?.id;
+  return accountId ? `${ESPROFE_PROGRESS_KEY}:${accountId}` : ESPROFE_PROGRESS_KEY;
+}
+
 function setA1LessonCatalog(catalog) {
   const ready = Object.entries(catalog?.lessons || {}).filter(([,meta]) => meta.status === "ready");
   if (!ready.length) return;
@@ -76,12 +81,12 @@ function normalizeProgress(data) {
 }
 
 function getProgressData() {
-  try { return normalizeProgress(JSON.parse(localStorage.getItem(ESPROFE_PROGRESS_KEY))); }
+  try { return normalizeProgress(JSON.parse(localStorage.getItem(progressStorageKey()))); }
   catch (_) { return normalizeProgress({}); }
 }
 
 function saveProgressData(data) {
-  localStorage.setItem(ESPROFE_PROGRESS_KEY, JSON.stringify(normalizeProgress(data)));
+  localStorage.setItem(progressStorageKey(), JSON.stringify(normalizeProgress(data)));
   document.dispatchEvent(new CustomEvent("esprofe:progressChanged"));
 }
 
@@ -235,3 +240,4 @@ window.hasActiveLessonWeakSpots = hasActiveLessonWeakSpots;
 document.addEventListener("DOMContentLoaded", renderProgress);
 document.addEventListener("esprofe:languageChanged", renderProgress);
 document.addEventListener("esprofe:progressChanged", renderProgress);
+document.addEventListener("esprofe:accountChanged", renderProgress);
