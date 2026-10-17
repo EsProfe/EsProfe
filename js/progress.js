@@ -26,11 +26,13 @@ function localizedLessonName(id, code) {
 }
 
 const progressLabels = {
-  ru: { title:"Мой прогресс", course:"Прогресс A1", passed:"Пройдено уроков", weak:"Слабые места", review:"Повторить", noWeak:"Слабых мест нет", recommendation:"Рекомендация", continue:"Продолжить обучение", reviewNow:"Повторить сейчас", lesson:"Урок" },
-  uk: { title:"Мій прогрес", course:"Прогрес A1", passed:"Пройдено уроків", weak:"Слабкі місця", review:"Повторити", noWeak:"Слабких місць немає", recommendation:"Рекомендація", continue:"Продовжити навчання", reviewNow:"Повторити зараз", lesson:"Урок" },
-  en: { title:"My progress", course:"A1 progress", passed:"Lessons completed", weak:"Weak spots", review:"Review", noWeak:"No weak spots", recommendation:"Recommendation", continue:"Continue learning", reviewNow:"Review now", lesson:"Lesson" },
-  es: { title:"Mi progreso", course:"Progreso A1", passed:"Lecciones superadas", weak:"Puntos débiles", review:"Repasar", noWeak:"No hay puntos débiles", recommendation:"Recomendación", continue:"Continuar aprendiendo", reviewNow:"Repasar ahora", lesson:"Lección" }
+  ru: { title:"Мой прогресс", course:"Прогресс A1", passed:"Пройдено уроков", weak:"Слабые места", review:"Повторить", noWeak:"Слабых мест нет", recommendation:"Рекомендация", continue:"Продолжить обучение", reviewNow:"Повторить сейчас", lesson:"Урок", journey:"Мой маршрут по Испании", journeyHint:"Каждая остановка — один урок A1", currentStop:"Сейчас", completedStop:"Пройдено", reviewStop:"Нужно повторить", openStop:"Следующий урок", lockedStop:"Откроется позже" },
+  uk: { title:"Мій прогрес", course:"Прогрес A1", passed:"Пройдено уроків", weak:"Слабкі місця", review:"Повторити", noWeak:"Слабких місць немає", recommendation:"Рекомендація", continue:"Продовжити навчання", reviewNow:"Повторити зараз", lesson:"Урок", journey:"Мій маршрут Іспанією", journeyHint:"Кожна зупинка — один урок A1", currentStop:"Зараз", completedStop:"Пройдено", reviewStop:"Потрібно повторити", openStop:"Наступний урок", lockedStop:"Відкриється пізніше" },
+  en: { title:"My progress", course:"A1 progress", passed:"Lessons completed", weak:"Weak spots", review:"Review", noWeak:"No weak spots", recommendation:"Recommendation", continue:"Continue learning", reviewNow:"Review now", lesson:"Lesson", journey:"My route across Spain", journeyHint:"Each stop is one A1 lesson", currentStop:"Now", completedStop:"Completed", reviewStop:"Review needed", openStop:"Next lesson", lockedStop:"Opens later" },
+  es: { title:"Mi progreso", course:"Progreso A1", passed:"Lecciones superadas", weak:"Puntos débiles", review:"Repasar", noWeak:"No hay puntos débiles", recommendation:"Recomendación", continue:"Continuar aprendiendo", reviewNow:"Repasar ahora", lesson:"Lección", journey:"Mi ruta por España", journeyHint:"Cada parada es una lección de A1", currentStop:"Ahora", completedStop:"Completado", reviewStop:"Necesita repaso", openStop:"Siguiente lección", lockedStop:"Se abrirá más adelante" }
 };
+
+const A1_ROUTE_CITIES = ["A Coruña","Santiago","Vigo","Lugo","Ourense","Oviedo","Gijón","Santander","Bilbao","San Sebastián","Vitoria","Pamplona","Logroño","León","Burgos","Valladolid","Zamora","Salamanca","Segovia","Ávila","Madrid","Toledo","Guadalajara","Cuenca","Soria","Zaragoza","Huesca","Teruel","Lleida","Girona","Barcelona","Tarragona","Castellón","Valencia","Alicante","Murcia","Albacete","Ciudad Real","Córdoba","Jaén","Granada","Almería","Málaga","Cádiz","Sevilla","Huelva","Badajoz","Cáceres","Mérida","Plasencia","Alcalá de Henares","Getafe","Aranjuez","Alcázar de San Juan","Requena","Xàtiva","Gandia","Dénia","Elche","Cartagena","Lorca","Vera","Motril","Ronda","Jerez","Sanlúcar de Barrameda","Écija","Antequera","Úbeda","Baeza","Linares","Adra","Águilas","Torrevieja","Benidorm","Altea","Sagunto","Peñíscola","Tortosa","Reus","Sitges"];
 
 const weakNames = {
   "alphabet-pronunciation": {
@@ -208,6 +210,37 @@ function getNextLearningStep(data=getProgressData()) {
   return { type:"next", topic:"a1", subtopic:"route" };
 }
 
+function journeyStopState(id, index, data, currentId) {
+  if (hasActiveLessonWeakSpots("A1", id, data)) return "review";
+  if (isLessonCleared("A1", id, data)) return "done";
+  if (id === currentId) return "current";
+  if (isLessonUnlocked("A1", id, data)) return "open";
+  return "locked";
+}
+
+function renderA1Journey(data, code, labels, currentId) {
+  const cities = A1_LESSON_ORDER.map((_, index) => A1_ROUTE_CITIES[index] || `A1 · ${index + 1}`);
+  const stops = A1_LESSON_ORDER.map((id, index) => {
+    const state = journeyStopState(id, index, data, currentId);
+    const stateLabel = labels[`${state}Stop`];
+    const city = cities[index];
+    const lesson = localizedLessonName(id, code);
+    const row = Math.floor(index / 9) + 1;
+    const column = row % 2 ? index % 9 + 1 : 9 - index % 9;
+    const disabled = state === "locked";
+    return `<button type="button" class="a1-journey-stop is-${state}" data-journey-lesson="${id}" style="grid-column:${column};grid-row:${row}" title="${city} · ${lesson} · ${stateLabel}" ${disabled ? "disabled" : ""}><i>${index + 1}</i><span>${city}</span></button>`;
+  }).join("");
+  const currentIndex = Math.max(0, A1_LESSON_ORDER.indexOf(currentId));
+  const mobileStops = A1_LESSON_ORDER.slice(Math.max(0, currentIndex - 2), currentIndex + 3).map((id, localIndex) => {
+    const index = Math.max(0, currentIndex - 2) + localIndex;
+    const state = journeyStopState(id, index, data, currentId);
+    const city = cities[index];
+    const lesson = localizedLessonName(id, code);
+    return `<button type="button" class="a1-journey-mobile-stop is-${state}" data-journey-lesson="${id}" ${state === "locked" ? "disabled" : ""}><i>${index + 1}</i><span><strong>${city}</strong><small>${state === "current" ? labels.currentStop : state === "done" ? labels.completedStop : state === "review" ? labels.reviewStop : state === "open" ? labels.openStop : labels.lockedStop}</small></span></button>`;
+  }).join("");
+  return `<section class="a1-journey" aria-label="${labels.journey}"><div class="a1-journey-head"><div><strong>🧭 ${labels.journey}</strong><small>${labels.journeyHint}</small></div><span>🇪🇸 A1 · ${A1_LESSON_ORDER.length}</span></div><div class="a1-journey-map">${stops}</div><div class="a1-journey-mobile">${mobileStops}</div><div class="a1-journey-legend"><span class="is-done">● ${labels.completedStop}</span><span class="is-current">● ${labels.currentStop}</span><span class="is-review">● ${labels.reviewStop}</span><span class="is-locked">● ${labels.lockedStop}</span></div></section>`;
+}
+
 function renderProgress() {
   const panel = document.getElementById("progressPanel");
   if (!panel) return;
@@ -229,10 +262,12 @@ function renderProgress() {
 
   const nextName = step.subtopic === "route" ? "A1" : localizedLessonName(step.subtopic, code);
   const actionLabel = step.type === "review" ? t.reviewNow : t.continue;
-  panel.innerHTML = `<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${latest}%</strong></div><div class="progress-bar"><span style="width:${latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.course}: ${latest}%</span><span>✅ ${t.passed}: ${cleared}/${built.length}</span><span>🔴 ${t.weak}: ${reviews.length}</span></div><div class="progress-review-now"><strong>🔁 ${t.review}</strong>${reviewHtml}</div><div class="progress-route"><div><strong>${t.recommendation}</strong><br><span>${nextName}</span></div><button type="button" id="progressNextAction">${actionLabel} →</button></div>`;
+  const journey = built.length ? renderA1Journey(data, code, t, step.subtopic === "route" ? built[built.length - 1] : step.subtopic) : "";
+  panel.innerHTML = `<div class="progress-top"><div class="progress-title">📊 ${t.title}</div><strong>${latest}%</strong></div><div class="progress-bar"><span style="width:${latest}%"></span></div><div class="progress-stats"><span>🎓 ${t.course}: ${latest}%</span><span>✅ ${t.passed}: ${cleared}/${built.length}</span><span>🔴 ${t.weak}: ${reviews.length}</span></div>${journey}<div class="progress-review-now"><strong>🔁 ${t.review}</strong>${reviewHtml}</div><div class="progress-route"><div><strong>${t.recommendation}</strong><br><span>${nextName}</span></div><button type="button" id="progressNextAction">${actionLabel} →</button></div>`;
 
   document.getElementById("progressNextAction")?.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:progressAction", { detail:step })));
   panel.querySelectorAll("[data-review-lesson]").forEach(btn => btn.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:reviewWeakSpot", { detail:{ level:btn.dataset.reviewLevel, lessonId:btn.dataset.reviewLesson, tag:btn.dataset.reviewTag } }))));
+  panel.querySelectorAll("[data-journey-lesson]:not(:disabled)").forEach(btn => btn.addEventListener("click", () => document.dispatchEvent(new CustomEvent("esprofe:progressAction", { detail:{ topic:"a1", subtopic:btn.dataset.journeyLesson } }))));
 }
 
 window.ESPROFE_LESSON_PASS_PERCENT = ESPROFE_LESSON_PASS_PERCENT;
