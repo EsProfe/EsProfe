@@ -409,6 +409,25 @@
   color: #667085 !important;
   -webkit-text-fill-color: #667085;
 }
+.a1-special {
+  margin: 16px 0;
+  padding: 14px;
+  border-radius: 14px;
+}
+.a1-special > h2 { font-size: 1.45rem; }
+.a1-special > p,
+.a1-memory p,
+.a1-rule-grid p { font-size: 0.92rem; line-height: 1.4; }
+.a1-memory { padding: 12px; border-radius: 12px; }
+.a1-syllables { gap: 8px; }
+.a1-syllables button { min-height: 64px; border-radius: 12px; }
+.a1-syllables b { font-size: 1.75rem; }
+.a1-listen-card { gap: 8px; padding: 12px; border-radius: 12px; }
+.a1-word-visual { width: 58px; height: 58px; border-radius: 14px; font-size: 2rem; }
+.a1-audio { padding: 8px 11px; border-radius: 10px; }
+.a1-gapword { font-size: 1.6rem; }
+.a1-inline-options { gap: 8px; }
+.a1-inline-options button { min-width: 64px; padding: 8px 14px; font-size: 0.98rem; }
 .a1-stress-rules {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

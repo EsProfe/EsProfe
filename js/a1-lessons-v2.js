@@ -705,21 +705,31 @@
     const k = lesson?.supplements?.kSound,
       box = document.getElementById("kExercise");
     if (!k || !box || !Array.isArray(k.items) || !k.items.length) return;
-    // A new random order is created every time the exercise is opened.
+    // A wrong spelling returns after three other words (or at the end when
+    // fewer remain). The exercise finishes only after every word is fixed.
     const items = shuffle(k.items);
-    let i = 0;
+    const queue = items.map((q) => ({ q, first: true }));
+    let current = null, firstShown = 0, retries = 0, locked = false;
     function show() {
-      const q = items[i];
+      if (!queue.length) {
+        box.innerHTML = `<div class="a1-listen-card a1-listen-complete"><strong>✓ ${esc(U().correct)}</strong></div>`;
+        return;
+      }
+      current = queue.shift();
+      const q = current.q;
+      if (current.first) firstShown++;
       const visual = q.flagSrc
         ? `<span class="a1-word-visual"><img class="a1-word-flag" src="${esc(q.flagSrc)}" width="80" height="60" alt="${esc(q.word)}"></span>`
         : q.icon
           ? `<span class="a1-word-visual" role="img" aria-label="${esc(q.word)}">${esc(q.icon)}</span>`
           : "";
-      box.innerHTML = `<div class="a1-listen-card"><div class="a1-counter">${i + 1} / ${items.length}</div>${visual}<button type="button" class="a1-audio" id="kAudio">${U().listen}</button><strong class="a1-gapword">${esc(q.display)}</strong><div class="a1-inline-options">${q.options.map((o) => `<button type="button" data-k-answer="${esc(o)}">${esc(o)}</button>`).join("")}</div><p id="kFeedback" aria-live="polite"></p></div>`;
+      box.innerHTML = `<div class="a1-listen-card"><div class="a1-counter">${current.first ? `${firstShown} / ${items.length}` : `🔁 ${retries}`}</div>${visual}<button type="button" class="a1-audio" id="kAudio">${U().listen}</button><strong class="a1-gapword">${esc(q.display)}</strong><div class="a1-inline-options">${q.options.map((o) => `<button type="button" data-k-answer="${esc(o)}">${esc(o)}</button>`).join("")}</div><p id="kFeedback" aria-live="polite"></p></div>`;
       document.getElementById("kAudio").onclick = () => speak(q.word);
       box.querySelectorAll("[data-k-answer]").forEach(
         (b) =>
           (b.onclick = () => {
+            if (locked) return;
+            locked = true;
             const ok = b.dataset.kAnswer === q.answer;
             const gap = box.querySelector(".a1-gapword");
             if (gap) {
@@ -728,15 +738,19 @@
             }
             document.getElementById("kFeedback").textContent = ok
               ? `✅ ${U().correct}: ${q.word}`
-              : `❌ ${U().wrong}: ${q.word}`;
+              : `❌ ${U().wrong}: ${q.word} · 🔁`;
             box
               .querySelectorAll("[data-k-answer]")
               .forEach((x) => (x.disabled = true));
+            if (!ok) {
+              retries++;
+              queue.splice(Math.min(3, queue.length), 0, { q, first: false });
+            }
             speak(q.word);
             schedule(() => {
-              i = (i + 1) % items.length;
+              locked = false;
               show();
-            }, 2500);
+            }, ok ? 900 : 1300);
           }),
       );
     }

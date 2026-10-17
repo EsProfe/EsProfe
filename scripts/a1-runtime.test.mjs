@@ -103,3 +103,10 @@ test('personal recommendation opens saved review in the common A1 engine',async(
   assert.match(env.root.innerHTML,/voy \/ vas \/ va/);
   assert.equal(c.getProgressData().lessons.A1['ir-a-infinitive'].attempts.length,1);
 });
+
+test('the alphabet listening drill schedules wrong spellings for correction', async () => {
+  const lessons = await source('js/a1-lessons-v2.js');
+  assert.match(lessons, /const queue = items\.map\(\(q\) => \(\{ q, first: true \}\)\)/);
+  assert.match(lessons, /queue\.splice\(Math\.min\(3, queue\.length\), 0, \{ q, first: false \}\)/);
+  assert.match(lessons, /if \(!queue\.length\)/);
+});
