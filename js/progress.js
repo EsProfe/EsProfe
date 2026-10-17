@@ -60,6 +60,7 @@ const weakNames = {
 
 function normalizeProgress(data) {
   data = data || {};
+  data.updatedAt = typeof data.updatedAt === "string" ? data.updatedAt : null;
   data.correct = Number(data.correct) || 0;
   data.mistakes = Number(data.mistakes) || 0;
   data.weak = data.weak || {};
@@ -86,8 +87,21 @@ function getProgressData() {
 }
 
 function saveProgressData(data) {
+  const normalized = normalizeProgress(data);
+  normalized.updatedAt = new Date().toISOString();
+  localStorage.setItem(progressStorageKey(), JSON.stringify(normalized));
+  document.dispatchEvent(new CustomEvent("esprofe:progressChanged"));
+}
+
+function replaceProgressData(data) {
   localStorage.setItem(progressStorageKey(), JSON.stringify(normalizeProgress(data)));
   document.dispatchEvent(new CustomEvent("esprofe:progressChanged"));
+  renderProgress();
+}
+
+function getLegacyProgressData() {
+  try { return normalizeProgress(JSON.parse(localStorage.getItem(ESPROFE_PROGRESS_KEY))); }
+  catch (_) { return normalizeProgress({}); }
 }
 
 function progressRecordAnswer(verb, person, isCorrect) {
@@ -225,6 +239,8 @@ window.ESPROFE_LESSON_PASS_PERCENT = ESPROFE_LESSON_PASS_PERCENT;
 window.A1_LESSON_ORDER = A1_LESSON_ORDER;
 window.setA1LessonCatalog = setA1LessonCatalog;
 window.getProgressData = getProgressData;
+window.getLegacyProgressData = getLegacyProgressData;
+window.replaceProgressData = replaceProgressData;
 window.getNextLearningStep = getNextLearningStep;
 window.renderProgress = renderProgress;
 window.progressRecordAnswer = progressRecordAnswer;
