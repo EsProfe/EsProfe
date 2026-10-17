@@ -110,3 +110,9 @@ test('the alphabet listening drill schedules wrong spellings for correction', as
   assert.match(lessons, /queue\.splice\(Math\.min\(3, queue\.length\), 0, \{ q, first: false \}\)/);
   assert.match(lessons, /if \(!queue\.length\)/);
 });
+
+test('a personal weak-spot request keeps the targeted retry open', async () => {
+  const lessons = await source('js/a1-lessons-v2.js');
+  assert.match(lessons, /event\.stopImmediatePropagation\?\.\(\);/);
+  assert.match(lessons, /open\(lessonId, \{ reviewTag: tag \}\)/);
+});

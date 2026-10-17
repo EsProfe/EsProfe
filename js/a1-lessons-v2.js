@@ -1116,7 +1116,12 @@
   document.addEventListener("esprofe:a1Topic", onTopic);
   document.addEventListener("esprofe:reviewWeakSpot", (event) => {
     const { level, lessonId, tag } = event.detail || {};
-    if (level === "A1" && lessonId && tag) open(lessonId, { reviewTag: tag });
+    if (level === "A1" && lessonId && tag) {
+      // The personal-course button must open this precise retry. Do not let
+      // later generic navigation listeners replace it with the A1 catalogue.
+      event.stopImmediatePropagation?.();
+      open(lessonId, { reviewTag: tag });
+    }
   });
   document.addEventListener("esprofe:languageChanged", () => {
     if (lesson && currentView && document.querySelector(".a1-lesson")) currentView();

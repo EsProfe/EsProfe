@@ -168,6 +168,15 @@ footer{margin-left:190px;padding:6px 12px;font-size:11px}
 .progress-stats{gap:4px}
 .progress-stats span{padding:5px 6px}
 .progress-review-now{padding:7px;margin-top:7px}
+.progress-review-now>strong{margin-bottom:5px;font-size:12px}
+.progress-review-card{gap:8px;padding:7px 9px;border-radius:9px}
+.progress-review-card span{gap:1px}
+.progress-review-card small{font-size:9px}
+.progress-review-card strong{font-size:12px}
+.progress-review-card em{font-size:9px}
+.progress-review-card b{font-size:10px}
+.progress-route{margin-top:7px;padding:8px 10px;font-size:11px}
+.progress-route button{padding:7px 10px;font-size:11px}
 .progress-bottom,.progress-route{margin-top:7px;padding:7px}
 .session-progress{max-width:none;padding:8px 12px;gap:10px;margin-bottom:8px;border-radius:12px}
 .session-progress-visual{font-size:28px}
