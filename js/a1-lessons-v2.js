@@ -53,6 +53,7 @@
       result: "Результат",
       repeat: "Повторить урок",
       reviewErrors: "Разобрать ошибки",
+      reviewing: "Повторяем",
       route: "Вернуться к маршруту A1",
       mastered: "Урок пройден",
       almost: "Урок пройден, но ошибки нужно закрыть",
@@ -77,6 +78,7 @@
       result: "Результат",
       repeat: "Повторити урок",
       reviewErrors: "Розібрати помилки",
+      reviewing: "Повторюємо",
       route: "Повернутися до маршруту A1",
       mastered: "Урок пройдено",
       almost: "Урок пройдено, але помилки треба закрити",
@@ -101,6 +103,7 @@
       result: "Result",
       repeat: "Repeat lesson",
       reviewErrors: "Review mistakes",
+      reviewing: "Reviewing",
       route: "Back to A1 route",
       mastered: "Lesson passed",
       almost: "Lesson passed, but mistakes still need review",
@@ -125,6 +128,7 @@
       result: "Resultado",
       repeat: "Repetir lección",
       reviewErrors: "Revisar errores",
+      reviewing: "Repasamos",
       route: "Volver a la ruta A1",
       mastered: "Lección superada",
       almost: "Lección superada, pero hay errores que corregir",
@@ -1013,7 +1017,7 @@
         mode: document.documentElement.dataset.learningMode,
       });
   }
-  function runWeak(tag) {
+  function runWeak(tag, { focus = true } = {}) {
     remember("review");
     const pool = (lesson.questionBank || []).filter((q) => q.tag === tag),
       r = root();
@@ -1024,7 +1028,12 @@
       currentView = show;
       const opts = shuffle(localizedOptions(q)), rule = ruleForTag(tag);
       const audio = q.audio ? `<button type="button" class="a1-audio" id="a1Listen">🔊 ${esc(U().listen)}</button>` : "";
-      r.innerHTML = `<div class="a1-lesson">${stepper("review")}<article class="a1-review-card"><h3>${esc(rule[0])}</h3><p>${esc(rule[1])}</p></article><div class="a1-question-card">${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" data-weak-index="${n}" ${answered !== null ? "disabled" : ""}>${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      r.innerHTML = `<div class="a1-lesson" id="a1TargetedReview" tabindex="-1"><div class="a1-review-focus">🔁 ${esc(U().reviewing)}: ${esc(rule[0])}</div>${stepper("review")}<article class="a1-review-card"><h3>${esc(rule[0])}</h3><p>${esc(rule[1])}</p></article><div class="a1-question-card">${audio}<h2>${esc(q.prompt?.[lang()] || q.prompt?.ru || q.prompt || "")}</h2><div class="a1-options">${opts.map((o, n) => `<button type="button" data-weak-index="${n}" ${answered !== null ? "disabled" : ""}>${esc(o)}</button>`).join("")}</div><p id="a1Feedback"></p></div></div>`;
+      if (focus) {
+        const target = document.getElementById("a1TargetedReview");
+        target?.scrollIntoView?.({ behavior:"smooth", block:"start" });
+        target?.classList?.add("a1-review-focus-pulse");
+      }
       document.getElementById("a1Listen")?.addEventListener("click", () => speak(q.audio));
       if (q.audio && answered === null) schedule(() => speak(q.audio), 0);
       r.querySelectorAll("[data-weak-index]").forEach(
@@ -1081,7 +1090,7 @@
           if (item.level === "A1" && item.lessonId === id && item.active !== false && item.mistakes > 0) weak[item.tag] = item.mistakes;
         }
         renderReview();
-        if (weak[reviewTag]) runWeak(reviewTag);
+        if (weak[reviewTag]) runWeak(reviewTag, { focus: true });
       } else renderExplanation();
     } catch (e) {
       if (lastOpen !== token) return;

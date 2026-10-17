@@ -116,3 +116,9 @@ test('a personal weak-spot request keeps the targeted retry open', async () => {
   assert.match(lessons, /event\.stopImmediatePropagation\?\.\(\);/);
   assert.match(lessons, /open\(lessonId, \{ reviewTag: tag \}\)/);
 });
+
+test('a targeted retry scrolls its exercise into view', async () => {
+  const lessons = await source('js/a1-lessons-v2.js');
+  assert.match(lessons, /id="a1TargetedReview"/);
+  assert.match(lessons, /scrollIntoView\?\.\(\{ behavior:"smooth", block:"start" \}\)/);
+});

@@ -209,6 +209,21 @@
 .a1-review-card small {
   color: #a35400;
 }
+.a1-review-focus {
+  display: inline-flex;
+  margin: 0 0 10px;
+  padding: 7px 10px;
+  border-radius: 9px;
+  background: #eaf3ff;
+  color: #1455a0;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.a1-review-focus-pulse { animation: a1-review-focus-pulse 1.8s ease-out; }
+@keyframes a1-review-focus-pulse {
+  0%,45% { box-shadow: 0 0 0 5px rgb(23 105 255 / 23%); }
+  100% { box-shadow: none; }
+}
 .a1-example-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
