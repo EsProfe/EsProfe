@@ -33,6 +33,7 @@ const progressLabels = {
 };
 
 const A1_ROUTE_CITIES = ["A Coruña","Santiago","Vigo","Lugo","Ourense","Oviedo","Gijón","Santander","Bilbao","San Sebastián","Vitoria","Pamplona","Logroño","León","Burgos","Valladolid","Zamora","Salamanca","Segovia","Ávila","Madrid","Toledo","Guadalajara","Cuenca","Soria","Zaragoza","Huesca","Teruel","Lleida","Girona","Barcelona","Tarragona","Castellón","Valencia","Alicante","Murcia","Albacete","Ciudad Real","Córdoba","Jaén","Granada","Almería","Málaga","Cádiz","Sevilla","Huelva","Badajoz","Cáceres","Mérida","Plasencia","Alcalá de Henares","Getafe","Aranjuez","Alcázar de San Juan","Requena","Xàtiva","Gandia","Dénia","Elche","Cartagena","Lorca","Vera","Motril","Ronda","Jerez","Sanlúcar de Barrameda","Écija","Antequera","Úbeda","Baeza","Linares","Adra","Águilas","Torrevieja","Benidorm","Altea","Sagunto","Peñíscola","Tortosa","Reus","Sitges"];
+const A1_ROUTE_POINTS = [[92,87],[112,102],[117,126],[126,87],[132,119],[174,75],[183,72],[218,79],[256,86],[279,87],[255,103],[291,110],[263,120],[198,120],[228,126],[203,145],[178,151],[181,170],[220,164],[206,180],[239,194],[227,215],[257,190],[279,213],[261,145],[299,151],[315,133],[310,190],[354,157],[403,134],[384,164],[366,181],[378,203],[369,224],[363,251],[344,269],[300,245],[251,245],[235,277],[266,276],[290,299],[329,303],[267,321],[201,332],[213,304],[188,309],[163,244],[172,218],[161,232],[180,196],[246,188],[236,202],[243,215],[266,242],[327,224],[345,237],[356,232],[371,241],[362,262],[350,278],[326,280],[337,290],[300,313],[255,313],[215,326],[210,321],[231,294],[253,303],[273,266],[276,270],[268,275],[322,309],[341,285],[363,271],[369,252],[373,246],[373,215],[377,194],[363,176],[373,178],[381,171]];
 
 const weakNames = {
   "alphabet-pronunciation": {
@@ -225,20 +226,16 @@ function renderA1Journey(data, code, labels, currentId) {
     const stateLabel = labels[`${state}Stop`];
     const city = cities[index];
     const lesson = localizedLessonName(id, code);
-    const row = Math.floor(index / 9) + 1;
-    const column = row % 2 ? index % 9 + 1 : 9 - index % 9;
-    const disabled = state === "locked";
-    return `<button type="button" class="a1-journey-stop is-${state}" data-journey-lesson="${id}" style="grid-column:${column};grid-row:${row}" title="${city} · ${lesson} · ${stateLabel}" ${disabled ? "disabled" : ""}><i>${index + 1}</i><span>${city}</span></button>`;
+    if (state === "locked") return "";
+    const [x, y] = A1_ROUTE_POINTS[index] || [240, 190];
+    const label = state === "current" || state === "review" ? `<text x="${x}" y="${y - 10}" text-anchor="middle">${city}</text>` : "";
+    const interactive = state !== "locked" ? `data-journey-lesson="${id}" tabindex="0" role="button"` : "";
+    return `<g class="a1-map-stop is-${state}" ${interactive} aria-label="${city} · ${lesson} · ${stateLabel}"><title>${city} · ${lesson} · ${stateLabel}</title><circle cx="${x}" cy="${y}" r="${state === "current" ? 6.5 : 4.2}"></circle>${label}</g>`;
   }).join("");
   const currentIndex = Math.max(0, A1_LESSON_ORDER.indexOf(currentId));
-  const mobileStops = A1_LESSON_ORDER.slice(Math.max(0, currentIndex - 2), currentIndex + 3).map((id, localIndex) => {
-    const index = Math.max(0, currentIndex - 2) + localIndex;
-    const state = journeyStopState(id, index, data, currentId);
-    const city = cities[index];
-    const lesson = localizedLessonName(id, code);
-    return `<button type="button" class="a1-journey-mobile-stop is-${state}" data-journey-lesson="${id}" ${state === "locked" ? "disabled" : ""}><i>${index + 1}</i><span><strong>${city}</strong><small>${state === "current" ? labels.currentStop : state === "done" ? labels.completedStop : state === "review" ? labels.reviewStop : state === "open" ? labels.openStop : labels.lockedStop}</small></span></button>`;
-  }).join("");
-  return `<section class="a1-journey" aria-label="${labels.journey}"><div class="a1-journey-head"><div><strong>🧭 ${labels.journey}</strong><small>${labels.journeyHint}</small></div><span>🇪🇸 A1 · ${A1_LESSON_ORDER.length}</span></div><div class="a1-journey-map">${stops}</div><div class="a1-journey-mobile">${mobileStops}</div><div class="a1-journey-legend"><span class="is-done">● ${labels.completedStop}</span><span class="is-current">● ${labels.currentStop}</span><span class="is-review">● ${labels.reviewStop}</span><span class="is-locked">● ${labels.lockedStop}</span></div></section>`;
+  const currentCity = cities[currentIndex];
+  const visibleLine = A1_ROUTE_POINTS.slice(0, currentIndex + 1).map(([x,y]) => `${x},${y}`).join(" ");
+  return `<section class="a1-journey" aria-label="${labels.journey}"><div class="a1-journey-head"><div><strong>🧭 ${labels.journey}</strong><small>${labels.journeyHint}</small></div><span>🇪🇸 A1 · ${A1_LESSON_ORDER.length}</span></div><div class="a1-map-focus"><span>📍</span><div><small>${labels.currentStop}</small><strong>${currentCity}</strong></div></div><svg class="a1-spain-map" viewBox="0 0 480 360" role="img" aria-label="${labels.journey}"><path class="a1-spain-land" d="M71 90 L116 67 L177 62 L233 74 L287 64 L348 92 L418 124 L423 176 L397 207 L383 245 L352 278 L335 316 L292 335 L239 340 L199 331 L166 309 L143 273 L128 229 L103 190 L77 148 Z"></path><path class="a1-spain-route" d="M${visibleLine}"></path><path class="a1-island" d="M422 262 l15 -3 13 8 -9 8 -16 -2 z"></path><path class="a1-island a1-canary" d="M86 330 l12 -3 10 6 -8 7 -14 -2 z"></path>${stops}</svg><div class="a1-journey-legend"><span class="is-done">● ${labels.completedStop}</span><span class="is-current">● ${labels.currentStop}</span><span class="is-review">● ${labels.reviewStop}</span><span class="is-locked">● ${labels.lockedStop}</span></div></section>`;
 }
 
 function renderProgress() {
