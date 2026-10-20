@@ -1,0 +1,861 @@
+{
+  "lessonId": "football-kit-a1",
+  "version": 1,
+  "D": {
+    "ru": {
+      "lang": "Язык",
+      "preview": "Уроки с преподавателем",
+      "names": [
+        "Начало",
+        "Форма и цвета",
+        "Вспоминаем правило",
+        "Что это? Кто это?",
+        "Цвета формы",
+        "Вопросы о цвете",
+        "Исправления",
+        "Твои примеры",
+        "Результат"
+      ],
+      "title": "Футбол 2. Форма команды",
+      "intro": "Рассмотри форму, назови предметы и опиши их цвет. Работай спокойно: преподаватель поможет обсудить каждый ответ.",
+      "goal": "Начальный уровень · 15–20 минут; с беседой и разбором — до 30–40 минут",
+      "start": "Начать урок",
+      "next": "Далее",
+      "back": "Назад",
+      "check": "Проверить",
+      "continue": "Следующее задание",
+      "ready": "Готово — дальше",
+      "task": "Задание",
+      "of": "из",
+      "goals": "Голы",
+      "pick": "Выбери ответ.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Пока неверно. Правильный ответ:",
+      "why": "Посмотри на род и число существительного.",
+      "read": "Прочитай предложение вслух.",
+      "words": "Назови предметы формы. Нажми на карточку, чтобы скрыть перевод, и вспомни слово. Цвета ниже уже знакомы.",
+      "rule": "Повторяем es / son и согласование цветов. Новую грамматику не добавляем.",
+      "one": "Один",
+      "many": "Несколько",
+      "masc": "Мужской род",
+      "fem": "Женский род",
+      "unchanged": "Rojo → roja → rojos → rojas; azul → azules; gris → grises; marrón → marrones. Verde не меняется по роду. Для rosa, naranja, violeta здесь используем единственное число.",
+      "warm": "Посмотри на рисунок и выбери ответ.",
+      "match": "Выбери правильную форму, затем прочитай предложение вслух.",
+      "newintro": "Ответь по рисунку. Можно написать короткий ответ целиком или только цвет.",
+      "formula": "¿De qué color es…? → Es… · ¿De qué color son…? → Son…",
+      "note": "¿Cómo es…? — общий вопрос об описании. Здесь отвечаем о цвете. Форма на картинках условная: это учебные иллюстрации, а не каталог текущих комплектов сборных.",
+      "selectType": "Выбери форму",
+      "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
+      "write": "Ответь по рисунку: коротким предложением или только цветом.",
+      "fix": "Тренер перепутал формы! Напиши всё предложение правильно.",
+      "answer": "Твой ответ",
+      "own": "Придумай три предложения о цвете формы. Можно повторять цвета: эти ответы обсудите с преподавателем.",
+      "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
+      "finish": "Завершить урок",
+      "result": "Матч завершён!",
+      "first": "Верно с первой попытки",
+      "attempts": "Проверено заданий",
+      "review": "Повторить ошибки",
+      "allright": "Все проверенные задания выполнены правильно!",
+      "pending": "Не все задания пройдены. Можно вернуться к любому этапу.",
+      "home": "Домашнее задание",
+      "hw": "Нарисуй форму своей команды. Подпиши футболку, шорты и перчатки тремя простыми предложениями.",
+      "saved": "Прогресс и ошибки сохраняются в этом браузере на этом устройстве.",
+      "repeat": "Повторение ошибок",
+      "reviewdone": "Ошибки разобраны!",
+      "empty": "Сначала введи ответ.",
+      "ownempty": "Напиши три предложения перед завершением.",
+      "viewown": "Твои предложения",
+      "reset": "Пройти заново",
+      "resetask": "Начать заново и очистить ответы?",
+      "reveal": "Перевод",
+      "scorehint": "Голы считаются за первый правильный ответ в блоке «Матч».",
+      "speech": "Скажи вслух",
+      "practice": "Практика",
+      "modelstart": "Перейти к упражнениям",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué es esto? — Es una camiseta.",
+        "¿Quién es? — Es el portero.",
+        "¿Cómo es la camiseta? — Es roja."
+      ],
+      "ownRule": "Одно предложение о футболке, одно о шортах и одно о перчатках."
+    },
+    "uk": {
+      "lang": "Мова",
+      "preview": "Уроки з викладачем",
+      "names": [
+        "Початок",
+        "Форма й кольори",
+        "Згадуємо правило",
+        "Що це? Хто це?",
+        "Кольори форми",
+        "Питання про колір",
+        "Виправлення",
+        "Твої приклади",
+        "Результат"
+      ],
+      "title": "Футбол 2. Форма команди",
+      "intro": "Розглянь форму, назви предмети й опиши їхній колір. Працюй спокійно: викладач допоможе обговорити кожну відповідь.",
+      "goal": "Початковий рівень · 15–20 хвилин; з бесідою та розбором — до 30–40 хвилин",
+      "start": "Почати урок",
+      "next": "Далі",
+      "back": "Назад",
+      "check": "Перевірити",
+      "continue": "Наступне завдання",
+      "ready": "Готово — далі",
+      "task": "Завдання",
+      "of": "із",
+      "goals": "Голи",
+      "pick": "Обери відповідь.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Поки неправильно. Правильна відповідь:",
+      "why": "Подивись на рід і число іменника.",
+      "read": "Прочитай речення вголос.",
+      "words": "Назви предмети форми. Натисни картку, щоб приховати переклад, і згадай слово. Кольори нижче вже знайомі.",
+      "rule": "Повторюємо es / son та узгодження кольорів. Нової граматики не додаємо.",
+      "one": "Один",
+      "many": "Кілька",
+      "masc": "Чоловічий рід",
+      "fem": "Жіночий рід",
+      "unchanged": "Rojo → roja → rojos → rojas; azul → azules; gris → grises; marrón → marrones. Verde не змінюється за родом. Для rosa, naranja, violeta тут використовуємо однину.",
+      "warm": "Подивись на малюнок і вибери відповідь.",
+      "match": "Обери правильну форму, потім прочитай речення вголос.",
+      "newintro": "Дай відповідь за малюнком. Можна написати коротку відповідь або лише колір.",
+      "formula": "¿De qué color es…? → Es… · ¿De qué color son…? → Son…",
+      "note": "¿Cómo es…? — загальне питання про опис. Тут відповідаємо про колір. Форма на малюнках умовна: це навчальні ілюстрації, а не каталог актуальних комплектів збірних.",
+      "selectType": "Обери форму",
+      "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
+      "write": "Дай відповідь за малюнком: коротким реченням або лише кольором.",
+      "fix": "Тренер переплутав форми! Напиши все речення правильно.",
+      "answer": "Твоя відповідь",
+      "own": "Склади три речення про колір форми. Кольори можна повторювати: відповіді обговорите з викладачем.",
+      "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
+      "finish": "Завершити урок",
+      "result": "Матч завершено!",
+      "first": "Правильно з першої спроби",
+      "attempts": "Перевірено завдань",
+      "review": "Повторити помилки",
+      "allright": "Усі перевірені завдання виконано правильно!",
+      "pending": "Пройдено не всі завдання. Можна повернутися до будь-якого етапу.",
+      "home": "Домашнє завдання",
+      "hw": "Намалюй форму своєї команди. Підпиши футболку, шорти та рукавички трьома простими реченнями.",
+      "saved": "Прогрес і помилки зберігаються в цьому браузері на цьому пристрої.",
+      "repeat": "Повторення помилок",
+      "reviewdone": "Помилки опрацьовано!",
+      "empty": "Спочатку введи відповідь.",
+      "ownempty": "Напиши три речення перед завершенням.",
+      "viewown": "Твої речення",
+      "reset": "Пройти ще раз",
+      "resetask": "Почати знову та очистити відповіді?",
+      "reveal": "Переклад",
+      "scorehint": "Голи нараховуються за першу правильну відповідь у блоці «Матч».",
+      "speech": "Скажи вголос",
+      "practice": "Практика",
+      "modelstart": "Перейти до вправ",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué es esto? — Es una camiseta.",
+        "¿Quién es? — Es el portero.",
+        "¿Cómo es la camiseta? — Es roja."
+      ],
+      "ownRule": "Одне речення про футболку, одне про шорти й одне про рукавички."
+    },
+    "en": {
+      "lang": "Language",
+      "preview": "Teacher-led lessons",
+      "names": [
+        "Start",
+        "Kit and colours",
+        "Remember the rule",
+        "What? Who?",
+        "Kit colours",
+        "Colour questions",
+        "Corrections",
+        "Your examples",
+        "Result"
+      ],
+      "title": "Football 2. Team kit",
+      "intro": "Look at the kit, name each item and describe its colour. Take your time and discuss your answers with your teacher.",
+      "goal": "Beginner · 15–20 minutes; up to 30–40 minutes with discussion and review",
+      "start": "Start lesson",
+      "next": "Next",
+      "back": "Back",
+      "check": "Check answer",
+      "continue": "Next question",
+      "ready": "Ready — continue",
+      "task": "Question",
+      "of": "of",
+      "goals": "Goals",
+      "pick": "Choose an answer.",
+      "correct": "Goal! Correct.",
+      "wrong": "Not quite. The correct answer is:",
+      "why": "Check the noun’s gender and number.",
+      "read": "Read the sentence aloud.",
+      "words": "Name the kit. Tap a card to hide its translation and recall the word. The colours below are familiar.",
+      "rule": "Review es / son and colour agreement. No new grammar.",
+      "one": "Singular",
+      "many": "Plural",
+      "masc": "Masculine",
+      "fem": "Feminine",
+      "unchanged": "Rojo → roja → rojos → rojas; azul → azules; gris → grises; marrón → marrones. Verde does not change with gender. Use rosa, naranja and violeta in the singular here.",
+      "warm": "Look at the picture and choose the answer.",
+      "match": "Choose the correct form, then read the sentence aloud.",
+      "newintro": "Answer from the picture. Write the short answer or just the colour.",
+      "formula": "¿De qué color es…? → Es… · ¿De qué color son…? → Son…",
+      "note": "¿Cómo es…? asks for a description. Here, describe the colour. The kits are simplified teaching illustrations, not a catalogue of current national team kits.",
+      "selectType": "Choose the form",
+      "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
+      "write": "Answer from the picture: a short sentence or just the colour.",
+      "fix": "The coach mixed up the forms! Write the whole sentence correctly.",
+      "answer": "Your answer",
+      "own": "Write three sentences about kit colours. You may repeat colours. Discuss your answers with your teacher.",
+      "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
+      "finish": "Finish lesson",
+      "result": "Full time!",
+      "first": "Correct on the first try",
+      "attempts": "Questions checked",
+      "review": "Practise mistakes",
+      "allright": "All checked questions were answered correctly!",
+      "pending": "Some questions are still unfinished. You can return to any stage.",
+      "home": "Homework",
+      "hw": "Draw your team’s kit. Write three simple sentences about the shirt, shorts and gloves.",
+      "saved": "Progress and mistakes are saved in this browser on this device.",
+      "repeat": "Mistake practice",
+      "reviewdone": "Mistake practice complete!",
+      "empty": "Enter an answer first.",
+      "ownempty": "Write three sentences before finishing.",
+      "viewown": "Your sentences",
+      "reset": "Start again",
+      "resetask": "Restart and clear all answers?",
+      "reveal": "Translation",
+      "scorehint": "Goals count first-attempt correct answers in the Match section.",
+      "speech": "Say it aloud",
+      "practice": "Practice",
+      "modelstart": "Start the exercises",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué es esto? — Es una camiseta.",
+        "¿Quién es? — Es el portero.",
+        "¿Cómo es la camiseta? — Es roja."
+      ],
+      "ownRule": "One sentence about the shirt, one about shorts and one about gloves."
+    }
+  },
+  "vocab": [
+    [
+      "la camiseta",
+      "футболка",
+      "shirt",
+      "футболка"
+    ],
+    [
+      "los pantalones cortos",
+      "шорти",
+      "shorts",
+      "шорты"
+    ],
+    [
+      "las botas de fútbol",
+      "бутси",
+      "football boots",
+      "бутсы"
+    ],
+    [
+      "los guantes",
+      "рукавички",
+      "gloves",
+      "перчатки"
+    ],
+    [
+      "el portero / la portera",
+      "воротар / воротарка",
+      "goalkeeper",
+      "вратарь"
+    ]
+  ],
+  "football": [
+    [
+      "la camiseta",
+      "футболка",
+      "shirt",
+      "футболка"
+    ],
+    [
+      "los pantalones cortos",
+      "шорти",
+      "shorts",
+      "шорты"
+    ],
+    [
+      "las botas de fútbol",
+      "бутси",
+      "football boots",
+      "бутсы"
+    ],
+    [
+      "los guantes",
+      "рукавички",
+      "gloves",
+      "перчатки"
+    ],
+    [
+      "el portero / la portera",
+      "воротар / воротарка",
+      "goalkeeper",
+      "вратарь"
+    ]
+  ],
+  "groups": {
+    "3": [
+      {
+        "id": "k-w0",
+        "p": "¿Qué es esto?",
+        "a": "Es una camiseta.",
+        "o": [
+          "Es una camiseta.",
+          "Es un portero."
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "shirt",
+          "color": "#dc3446",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Это футболка.",
+          "uk": "Це футболка.",
+          "en": "It is a shirt."
+        }
+      },
+      {
+        "id": "k-w1",
+        "p": "¿Qué son?",
+        "a": "Son pantalones cortos.",
+        "o": [
+          "Son guantes.",
+          "Son pantalones cortos."
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "shorts",
+          "color": "#2876d3",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Это шорты.",
+          "uk": "Це шорти.",
+          "en": "They are shorts."
+        }
+      },
+      {
+        "id": "k-w2",
+        "p": "¿Qué son?",
+        "a": "Son botas de fútbol.",
+        "o": [
+          "Son botas de fútbol.",
+          "Son guantes."
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "boots",
+          "color": "#242e3d",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Это бутсы.",
+          "uk": "Це бутси.",
+          "en": "They are football boots."
+        }
+      },
+      {
+        "id": "k-w3",
+        "p": "¿Qué son?",
+        "a": "Son guantes.",
+        "o": [
+          "Son guantes.",
+          "Son botas de fútbol."
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "gloves",
+          "color": "#f4ce3c",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Это перчатки.",
+          "uk": "Це рукавички.",
+          "en": "They are gloves."
+        }
+      },
+      {
+        "id": "k-w4",
+        "p": "¿Quién es?",
+        "a": "Es el portero.",
+        "o": [
+          "Es el portero.",
+          "Es una camiseta."
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "keeper",
+          "color": "#2b9662",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Это вратарь.",
+          "uk": "Це воротар.",
+          "en": "It is the goalkeeper."
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "k-m0",
+        "p": "La camiseta es ___.",
+        "a": "blanca",
+        "o": [
+          "blanca",
+          "blanco",
+          "blancas"
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "shirt",
+          "color": "#ffffff",
+          "label": "Inglaterra"
+        },
+        "meaning": {
+          "ru": "Футболка белая.",
+          "uk": "Футболка біла.",
+          "en": "The shirt is white."
+        },
+        "sentence": "La camiseta es blanca."
+      },
+      {
+        "id": "k-m1",
+        "p": "La camiseta es ___.",
+        "a": "roja",
+        "o": [
+          "roja",
+          "rojo",
+          "rojas"
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "shirt",
+          "color": "#dc3446",
+          "label": "España"
+        },
+        "meaning": {
+          "ru": "Футболка красная.",
+          "uk": "Футболка червона.",
+          "en": "The shirt is red."
+        },
+        "sentence": "La camiseta es roja."
+      },
+      {
+        "id": "k-m2",
+        "p": "Los pantalones cortos son ___.",
+        "a": "azules",
+        "o": [
+          "azules",
+          "azul",
+          "azulas"
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "shorts",
+          "color": "#2876d3",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Шорты синие.",
+          "uk": "Шорти сині.",
+          "en": "The shorts are blue."
+        },
+        "sentence": "Los pantalones cortos son azules."
+      },
+      {
+        "id": "k-m3",
+        "p": "Las botas de fútbol son ___.",
+        "a": "negras",
+        "o": [
+          "negras",
+          "negros",
+          "negra"
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "boots",
+          "color": "#242e3d",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Бутсы чёрные.",
+          "uk": "Бутси чорні.",
+          "en": "The boots are black."
+        },
+        "sentence": "Las botas de fútbol son negras."
+      },
+      {
+        "id": "k-m4",
+        "p": "Los guantes son ___.",
+        "a": "amarillos",
+        "o": [
+          "amarillos",
+          "amarillas",
+          "amarillo"
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "gloves",
+          "color": "#f4ce3c",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Перчатки жёлтые.",
+          "uk": "Рукавички жовті.",
+          "en": "The gloves are yellow."
+        },
+        "sentence": "Los guantes son amarillos."
+      },
+      {
+        "id": "k-m5",
+        "p": "La camiseta del portero es ___.",
+        "a": "verde",
+        "o": [
+          "verde",
+          "verdes"
+        ],
+        "type": "choice",
+        "visual": {
+          "kind": "keeper",
+          "color": "#2b9662",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Футболка вратаря зелёная.",
+          "uk": "Футболка воротаря зелена.",
+          "en": "The goalkeeper’s shirt is green."
+        },
+        "sentence": "La camiseta del portero es verde."
+      }
+    ],
+    "5": [
+      {
+        "id": "k-q0",
+        "p": "¿De qué color es la camiseta de Inglaterra?",
+        "a": "Es blanca.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "shirt",
+          "color": "#ffffff",
+          "label": "Inglaterra"
+        },
+        "meaning": {
+          "ru": "Она белая.",
+          "uk": "Вона біла.",
+          "en": "It is white."
+        },
+        "accepted": [
+          "blanca."
+        ]
+      },
+      {
+        "id": "k-q1",
+        "p": "¿Cómo es la camiseta de España?",
+        "a": "Es roja.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "shirt",
+          "color": "#dc3446",
+          "label": "España"
+        },
+        "meaning": {
+          "ru": "Она красная.",
+          "uk": "Вона червона.",
+          "en": "It is red."
+        },
+        "accepted": [
+          "roja."
+        ]
+      },
+      {
+        "id": "k-q2",
+        "p": "¿De qué color son los guantes?",
+        "a": "Son grises.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "gloves",
+          "color": "#929aa6",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Они серые.",
+          "uk": "Вони сірі.",
+          "en": "They are grey."
+        },
+        "accepted": [
+          "grises."
+        ]
+      },
+      {
+        "id": "k-q3",
+        "p": "¿De qué color son las botas de fútbol?",
+        "a": "Son marrones.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "boots",
+          "color": "#8c593c",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Они коричневые.",
+          "uk": "Вони коричневі.",
+          "en": "They are brown."
+        },
+        "accepted": [
+          "marrones."
+        ]
+      },
+      {
+        "id": "k-q4",
+        "p": "¿Cómo es la camiseta del portero?",
+        "a": "Es naranja.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "keeper",
+          "color": "#ed8936",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Она оранжевая.",
+          "uk": "Вона помаранчева.",
+          "en": "It is orange."
+        },
+        "accepted": [
+          "naranja."
+        ]
+      }
+    ],
+    "6": [
+      {
+        "id": "k-f0",
+        "p": "La camiseta es amarillo.",
+        "a": "La camiseta es amarilla.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "shirt",
+          "color": "#f4ce3c",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Футболка жёлтая.",
+          "uk": "Футболка жовта.",
+          "en": "The shirt is yellow."
+        }
+      },
+      {
+        "id": "k-f1",
+        "p": "Los guantes son verde.",
+        "a": "Los guantes son verdes.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "gloves",
+          "color": "#2b9662",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Перчатки зелёные.",
+          "uk": "Рукавички зелені.",
+          "en": "The gloves are green."
+        }
+      },
+      {
+        "id": "k-f2",
+        "p": "Las botas de fútbol son blancos.",
+        "a": "Las botas de fútbol son blancas.",
+        "o": null,
+        "type": "input",
+        "visual": {
+          "kind": "boots",
+          "color": "#ffffff",
+          "label": ""
+        },
+        "meaning": {
+          "ru": "Бутсы белые.",
+          "uk": "Бутси білі.",
+          "en": "The boots are white."
+        }
+      }
+    ]
+  },
+  "X": {
+    "ru": {
+      "goal": "Ворота",
+      "drag": "Перетащи слово в ворота. На телефоне: нажми слово, затем ворота.",
+      "dropdown": "Или выбери из списка",
+      "choose": "— выбери —",
+      "selected": "В воротах",
+      "your": "Твой вариант",
+      "literal": "Буквально, с сохранением ошибки",
+      "right": "Правильное предложение",
+      "meaning": "Перевод",
+      "contrast": "Слова новые, цвета знакомые. Скажи название и цвет вслух.",
+      "explain": "В английском переводе род прилагательного не виден; сравни испанские окончания.",
+      "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
+    },
+    "uk": {
+      "goal": "Ворота",
+      "drag": "Перетягни слово у ворота. На телефоні: натисни слово, потім ворота.",
+      "dropdown": "Або обери зі списку",
+      "choose": "— обери —",
+      "selected": "У воротах",
+      "your": "Твій варіант",
+      "literal": "Буквально, зі збереженням помилки",
+      "right": "Правильне речення",
+      "meaning": "Переклад",
+      "contrast": "Слова нові, кольори знайомі. Назви предмет і колір уголос.",
+      "explain": "В англійському перекладі рід прикметника не видно; порівняй іспанські закінчення.",
+      "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
+    },
+    "en": {
+      "goal": "Goal",
+      "drag": "Drag a word into the goal. On a phone: tap a word, then the goal.",
+      "dropdown": "Or choose from the list",
+      "choose": "— choose —",
+      "selected": "In the goal",
+      "your": "Your answer",
+      "literal": "Literal meaning, retaining the error where possible",
+      "right": "Correct sentence",
+      "meaning": "Translation",
+      "contrast": "New kit words, familiar colours. Say the item and its colour aloud.",
+      "explain": "English adjectives do not show gender or number. Compare the Spanish endings.",
+      "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
+    }
+  },
+  "A": {
+    "ru": {
+      "listen": "Прослушать ещё раз",
+      "missing": "Испанский голос недоступен в этом браузере.",
+      "failed": "Не удалось воспроизвести. Нажмите «Прослушать ещё раз»."
+    },
+    "uk": {
+      "listen": "Прослухати ще раз",
+      "missing": "Іспанський голос недоступний у цьому браузері.",
+      "failed": "Не вдалося відтворити. Натисніть «Прослухати ще раз»."
+    },
+    "en": {
+      "listen": "Listen again",
+      "missing": "A Spanish voice is unavailable in this browser.",
+      "failed": "Playback failed. Press “Listen again”."
+    }
+  },
+  "subjects": {},
+  "adjectiveData": {},
+  "colors": [
+    {
+      "word": "blanco",
+      "hex": "#ffffff",
+      "uk": "білий",
+      "en": "white",
+      "ru": "белый"
+    },
+    {
+      "word": "negro",
+      "hex": "#242e3d",
+      "uk": "чорний",
+      "en": "black",
+      "ru": "чёрный"
+    },
+    {
+      "word": "rojo",
+      "hex": "#dc3446",
+      "uk": "червоний",
+      "en": "red",
+      "ru": "красный"
+    },
+    {
+      "word": "amarillo",
+      "hex": "#f4ce3c",
+      "uk": "жовтий",
+      "en": "yellow",
+      "ru": "жёлтый"
+    },
+    {
+      "word": "verde",
+      "hex": "#2b9662",
+      "uk": "зелений",
+      "en": "green",
+      "ru": "зелёный"
+    },
+    {
+      "word": "azul",
+      "hex": "#2876d3",
+      "uk": "синій",
+      "en": "blue",
+      "ru": "синий"
+    },
+    {
+      "word": "naranja",
+      "hex": "#ed8936",
+      "uk": "помаранчевий",
+      "en": "orange",
+      "ru": "оранжевый"
+    },
+    {
+      "word": "rosa",
+      "hex": "#ef91b5",
+      "uk": "рожевий",
+      "en": "pink",
+      "ru": "розовый"
+    },
+    {
+      "word": "gris",
+      "hex": "#929aa6",
+      "uk": "сірий",
+      "en": "grey",
+      "ru": "серый"
+    },
+    {
+      "word": "marrón",
+      "hex": "#8c593c",
+      "uk": "коричневий",
+      "en": "brown",
+      "ru": "коричневый"
+    },
+    {
+      "word": "violeta",
+      "hex": "#9562c9",
+      "uk": "фіолетовий",
+      "en": "violet",
+      "ru": "фиолетовый"
+    }
+  ],
+  "ownPrompts": [
+    "La camiseta …",
+    "Los pantalones cortos …",
+    "Los guantes …"
+  ]
+}

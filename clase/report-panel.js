@@ -42,8 +42,9 @@
   };}
   async function resume(id,review=false){if(!options.account.user)return;const user=options.account.user.id;const row=await options.account.teaching.report(id);
    if(user!==options.account.user?.id||row.student_id!==user)throw new Error('forbidden');
+   if(row.lesson_id!==options.lessonId)throw new Error('wrong_lesson');
    if(!confirm(t().resumeAsk))return;
-   reset();options.restore(root.EsProfeLessonReport.restore(row),review);lastSignature=prepare().signature;status=t().loaded;notify();
+   reset();options.restore(root.EsProfeLessonReport.restore(row,options.lessonId),review);lastSignature=prepare().signature;status=t().loaded;notify();
   }
   return {html,bind,save,changed,reset,resume,get status(){return status},get busy(){return busy},get dirty(){return dirty},canReset(){const s=options.state();if(options.account.user&&(busy||dirty||s.reportDirty||s.reportPending||(!s.reportVersion&&(Object.keys(s.records).length||s.own.some(Boolean))))){alert(t().dirtyReset);return false}return true}};
  }

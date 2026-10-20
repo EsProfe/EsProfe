@@ -99,12 +99,15 @@ const lessonData=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/lesson
 const copyData=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/account-copy.json')));
 const lessonSource=fs.readFileSync(path.join(__dirname,'../clase/lesson.js'),'utf8');
 function completedState(){return {lang:'ru',stage:8,positions:{3:0,4:0,5:0,6:0},records:Object.fromEntries(Object.values(lessonData.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}])),drafts:{},tokens:{},own:['Leo es bueno.','Ana es mala.','España es fuerte.'],modelSeen:true,runId:attempt.id}}
-async function lessonSetup(state){
+async function lessonSetup(state,lessonId){
   const root=new Root(),storage=new Map(),saved=[];let subscriber;
-  const key='esprofe_football_review_v3:'+owner.id;
+  const selected=lessonId||'football-adjectives-a1';
+  const data=selected==='football-kit-a1'?JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-kit.json'))):lessonData;
+  const key=(selected==='football-kit-a1'?'esprofe_football_kit_v1':'esprofe_football_review_v3')+':'+owner.id;
   if(state)storage.set(key,JSON.stringify(state));
   const account={user:owner,available:true,init:async()=>owner,subscribe:fn=>{subscriber=fn},history:async()=>[],saveAttempt:async a=>{saved.push(a);return a.id}};
-  const context={window:{EsProfeLessonAccount:account,location:{search:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>url.split('?')[0]==='lesson.json'?lessonData:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
+  const context={window:{EsProfeLessonAccount:account,location:{search:lessonId?'?lesson='+lessonId:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>['lesson.json','football-kit.json'].includes(url.split('?')[0])?data:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
+  for(const file of ['lesson-catalog.js','kit-visuals.js'])vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/'+file),'utf8'),context);
   await vm.runInNewContext(lessonSource,context);
   return {root,storage,saved,account,key,switchUser(next){account.user=next;subscriber()}};
 }
@@ -159,4 +162,22 @@ test('previously rejected correct full sentence is repaired on reload',async()=>
   const s=await lessonSetup(state);const record=JSON.parse(s.storage.get(s.key)).records.w0;
   assert.equal(record.ok,true);assert.equal(record.last.ok,true);assert.equal(record.history[0].ok,true);
   assert.equal(s.root.querySelector('#ep-cloud-save').disabled,false);
+});
+
+test('second football lesson has separate local state, accepts short colour answers and retains first mistakes',async()=>{
+ const state={...completedState(),stage:5,records:{},modelSeen:true,own:['La camiseta es roja.','Los pantalones cortos son rojos.','Los guantes son rojos.']};
+ const s=await lessonSetup(state,'football-kit-a1');
+ assert(s.root.innerHTML.includes('Inglaterra'));assert(s.root.innerHTML.includes('<svg'));
+ s.root.querySelector('#ep-answer').value='blanca';s.root.querySelector('#ep-check').onclick();
+ assert.equal(JSON.parse(s.storage.get(s.key)).records['k-q0'].ok,true);
+ assert(!s.storage.has('esprofe_football_review_v3:'+owner.id));
+ s.root.querySelector('#ep-task-next').onclick();s.root.querySelector('#ep-answer').value='rojo';s.root.querySelector('#ep-check').onclick();
+ s.root.querySelector('#ep-retry').onclick();s.root.querySelector('#ep-answer').value='Es roja.';s.root.querySelector('#ep-check').onclick();
+ const r=JSON.parse(s.storage.get(s.key)).records['k-q1'];assert.equal(r.ok,false);assert.equal(r.last.ok,true);assert.equal(r.resolved,false,'an initial mistake still needs spaced review');
+});
+test('second lesson permits repeated colours in free examples and reports its own total',async()=>{
+ const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-kit.json')));
+ const state={...completedState(),own:['La camiseta es roja.','Los pantalones cortos son rojos.','Los guantes son rojos.'],records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
+ const s=await lessonSetup(state,'football-kit-a1');assert.equal(s.root.querySelector('#ep-cloud-save').disabled,false);
+ await s.root.querySelector('#ep-cloud-save').onclick();assert.equal(s.saved[0].total,19);
 });

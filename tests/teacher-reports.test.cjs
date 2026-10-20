@@ -41,3 +41,11 @@ test('guest clicks never schedule requests and logout cancels a queued save',asy
 test('a newly opened tab refuses to discard persisted unsynced work',()=>{
  const s=panelSetup();s.state.reportDirty=true;assert.equal(s.panel.canReset(),false);
 });
+
+test('saved kit reports restore only into the matching lesson',()=>{
+ const row={id:'kit-attempt',lesson_id:'football-kit-a1',language:'ru',version:1,snapshot:build()};
+ assert.throws(()=>model.restore(row),/invalid_report/);
+ assert.equal(model.restore(row,'football-kit-a1').runId,'kit-attempt');
+ const old={...row,lesson_id:'football-adjectives-a1'};
+ assert.throws(()=>model.restore(old,'football-kit-a1'),/invalid_report/);
+});
