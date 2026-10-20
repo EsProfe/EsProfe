@@ -210,3 +210,21 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
  #esprofe-football.photo-words .kit-vocab-grid{gap:5px}
 }
 @media(max-height:500px){#esprofe-football.photo-question nav{display:none}}
+
+/* The rule, four examples and singular/plural hint share a viewport. */
+#esprofe-football.photo-rule main>.fit-content{display:flex;flex-direction:column;min-height:0;gap:4px}
+#esprofe-football.photo-rule main>.fit-content>.eyebrow{display:none}
+#esprofe-football.photo-rule h1{font-size:22px;margin:0 0 4px}
+#esprofe-football.photo-rule p{font-size:16px;line-height:1.25;margin:4px 0}
+#esprofe-football.photo-rule .kit-rule-examples{flex:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px;padding:12px;margin:4px 0}
+#esprofe-football.photo-rule .kit-rule-examples .model{font-size:20px;line-height:1.3;margin:0}
+#esprofe-football.photo-rule .hint{font-size:17px;padding:8px 10px}
+#esprofe-football.photo-rule .footer{margin-top:auto;padding-top:6px;flex:none}
+#esprofe-football.photo-rule .footer button{font-size:16px;min-height:36px;padding:6px 10px}
+#esprofe-football.photo-rule .track{height:3px;flex:none;margin-top:4px}
+@media(max-width:650px){
+ #esprofe-football.photo-rule .kit-rule-examples{grid-template-columns:1fr;gap:7px;padding:10px}
+ #esprofe-football.photo-rule .kit-rule-examples .model{font-size:18px}
+ #esprofe-football.photo-rule p{font-size:15px;margin:3px 0}
+ #esprofe-football.photo-rule h1{font-size:20px}
+}
