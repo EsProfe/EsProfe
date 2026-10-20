@@ -48,7 +48,7 @@
       "selectType": "Выбери форму",
       "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
       "write": "Ответь по рисунку: коротким предложением или только цветом.",
-      "fix": "Тренер перепутал формы! Напиши всё предложение правильно.",
+      "fix": "Тренер перепутал формы! Исправь: словом, коротким или полным предложением.",
       "answer": "Твой ответ",
       "own": "Придумай три предложения о цвете формы. Можно повторять цвета: эти ответы обсудите с преподавателем.",
       "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
@@ -132,7 +132,7 @@
       "selectType": "Обери форму",
       "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
       "write": "Дай відповідь за малюнком: коротким реченням або лише кольором.",
-      "fix": "Тренер переплутав форми! Напиши все речення правильно.",
+      "fix": "Тренер переплутав форми! Виправ: словом, коротким або повним реченням.",
       "answer": "Твоя відповідь",
       "own": "Склади три речення про колір форми. Кольори можна повторювати: відповіді обговорите з викладачем.",
       "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
@@ -216,7 +216,7 @@
       "selectType": "Choose the form",
       "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
       "write": "Answer from the picture: a short sentence or just the colour.",
-      "fix": "The coach mixed up the forms! Write the whole sentence correctly.",
+      "fix": "The coach mixed up the forms! Correct them with a word, a short answer or a full sentence.",
       "answer": "Your answer",
       "own": "Write three sentences about kit colours. You may repeat colours. Discuss your answers with your teacher.",
       "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
@@ -650,8 +650,13 @@
           "en": "It is white."
         },
         "accepted": [
-          "blanca."
-        ]
+          "blanca.",
+          "blanca",
+          "es blanca",
+          "La camiseta es blanca.",
+          "La camiseta de Neuer es blanca."
+        ],
+        "sentence": "La camiseta es blanca."
       },
       {
         "id": "k2-q1",
@@ -668,8 +673,13 @@
           "en": "It is yellow."
         },
         "accepted": [
-          "amarilla."
-        ]
+          "amarilla.",
+          "amarilla",
+          "es amarilla",
+          "La camiseta es amarilla.",
+          "La camiseta de Neymar es amarilla."
+        ],
+        "sentence": "La camiseta es amarilla."
       },
       {
         "id": "k2-q2",
@@ -686,8 +696,13 @@
           "en": "They are black."
         },
         "accepted": [
-          "negros."
-        ]
+          "negros.",
+          "negros",
+          "son negros",
+          "Los pantalones cortos son negros.",
+          "Los pantalones cortos de Messi son negros."
+        ],
+        "sentence": "Los pantalones cortos son negros."
       },
       {
         "id": "k2-q3",
@@ -745,7 +760,12 @@
           "ru": "Футболка жёлтая.",
           "uk": "Футболка жовта.",
           "en": "The shirt is yellow."
-        }
+        },
+        "accepted": [
+          "amarilla",
+          "es amarilla",
+          "La camiseta es amarilla."
+        ]
       },
       {
         "id": "k2-f1",
@@ -760,7 +780,12 @@
           "ru": "Шорты чёрные.",
           "uk": "Шорти чорні.",
           "en": "The shorts are black."
-        }
+        },
+        "accepted": [
+          "negros",
+          "son negros",
+          "Los pantalones cortos son negros."
+        ]
       },
       {
         "id": "k2-f2",
@@ -775,7 +800,13 @@
           "ru": "Бутсы красивые.",
           "uk": "Бутси гарні.",
           "en": "The boots are beautiful."
-        }
+        },
+        "accepted": [
+          "bonitas",
+          "son bonitas",
+          "Las botas de fútbol son bonitas.",
+          "Las botas son bonitas."
+        ]
       }
     ]
   },
