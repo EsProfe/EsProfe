@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261020-vocabulary3');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261020-rule5');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
@@ -62,6 +62,23 @@ function repairWarmRecords(){
   if(record.last&&isCorrectAnswer(item,record.last.picked||''))record.last.ok=true;
   for(const entry of record.history||[]){if(isCorrectAnswer(item,entry.picked||''))entry.ok=true}
   if((record.last||record).ok){record.resolved=true;retrying.delete(item.id)}
+ }
+}
+// Regrade stored answers only when a supported alternative was previously rejected.
+function repairAcceptedRecords(){
+ if(!photoLesson)return;
+ for(const item of all.filter(q=>q.accepted)){
+  const record=records[item.id];if(!record)continue;
+  const firstFixed=!record.ok&&isCorrectAnswer(item,record.picked||'');
+  const lastFixed=record.last&&!record.last.ok&&isCorrectAnswer(item,record.last.picked||'');
+  let fixedHistory=0;
+  for(const entry of record.history||[]){if(!entry.ok&&isCorrectAnswer(item,entry.picked||'')){entry.ok=true;fixedHistory++}}
+  if(firstFixed)record.ok=true;if(lastFixed)record.last.ok=true;
+  if(firstFixed||lastFixed||fixedHistory){
+   if(Number.isInteger(record.wrongCount))record.wrongCount=Math.max(0,record.wrongCount-Math.max(fixedHistory,firstFixed?1:0,lastFixed?1:0));
+   if(record.ok&&(record.last||record).ok){record.resolved=true;retrying.delete(item.id)}
+   reportDirty=true;
+  }
  }
 }
 function adjective(word,gender){let data,form;for(const [base,value] of Object.entries(adjectiveData)){const variants=base.endsWith('o')?[base,base.slice(0,-1)+'a',base+'s',base.slice(0,-1)+'as']:[base,base+(base==='débil'?'es':'s')];const i=variants.indexOf(word.toLowerCase());if(i>=0){data=value;form=base.endsWith('o')?(i>=2?2:i):(i===1?2:gender==='f'?1:0);break}}if(!data)return word;if(lang==='en')return data[2];return data[lang==='ru'?0:1][form]}
@@ -173,7 +190,7 @@ function fitVocabulary(inner,pager){
  back.disabled=screenPage===0;next.disabled=screenPage===layout.pages-1;
  back.onclick=()=>{screenPage--;fit()};next.onclick=()=>{screenPage++;fit()};
 }
-function kitRule(){return `<p>${t().rule}</p><div class="panel"><p class="model">La camiseta es roja.</p><p class="model">Los pantalones cortos son rojos.</p><p class="model">Las botas son rojas.</p><p class="model">Los guantes son rojos.</p></div><p>${t().unchanged}</p><div class="hint">${t().one}: <b>es</b> · ${t().many}: <b>son</b></div>`;}
+function kitRule(){return `<p>${t().rule}</p><div class="panel kit-rule-examples"><p class="model">La camiseta es roja.</p><p class="model">Los pantalones cortos son rojos.</p><p class="model">Las botas son rojas.</p><p class="model">Los guantes son rojos.</p></div><p>${t().unchanged}</p><div class="hint">${t().one}: <b>es</b> · ${t().many}: <b>son</b></div>`;}
 function render(){const key=[stage,reviewAt,current()?.id,!!uiRecord(current()),!!reviewQueue].join(':');if(key!==screenKey){screenPage=0;screenKey=key}persist();root.lang=lang;const done=Object.keys(records).length;const goals=scoring.filter(x=>records[x.id]?.ok).length;let content='';
 if(reviewQueue)content=reviewAt<reviewQueue.length?taskUI(current()):`<p>${t().reviewdone}</p><button id="ep-review-finish" type="button" class="primary cursor-interaction">${t().names[8]} →</button>`;
 else if(stage===0)content=`<p>${t().intro}</p><div class="panel"><div class="eyebrow">${t().goal}</div><p>${t().rule}</p><div class="steps">${(kit?['camiseta','pantalones cortos','botas','guantes']:['bueno','buena','buenos','buenas']).map(w=>`<span>${w}</span>`).join('')}</div></div><details><summary>⚽ ${t().names[1]}</summary><div class="vocab">${football.map(w=>`<div class="word"><b>${w[0]}</b><span>${tr(w)}</span></div>`).join('')}</div></details><button type="button" id="ep-start" class="primary cursor-interaction">${t().start} →</button>`;
@@ -186,7 +203,7 @@ else if(groups[stage])content=taskUI(current());
 else if(stage===7)content=`<p>${t().own}</p><div class="hint"><strong>${kit?t().ownRule:accountCopy[lang].ownRule}</strong></div>${(data.ownPrompts||['… es un jugador …','… es una jugadora …','… es un equipo …']).map((x,i)=>`<div class="own"><label for="ep-own-${i}" class="muted">${i+1}. ${x}</label><textarea id="ep-own-${i}" data-own="${i}" spellcheck="false" aria-describedby="ep-own-warning-${i}">${esc(own[i])}</textarea><p class="muted" id="ep-own-warning-${i}" data-own-warning="${i}" aria-live="polite">${ownRepeats().includes(i)?accountCopy[lang].ownRepeat:''}</p></div>`).join('')}<p class="muted">${t().ownnote}</p><p aria-live="polite">${esc(message)}</p><button type="button" id="ep-finish" class="primary cursor-interaction">${t().finish} →</button>`;
 else content=result();
 root.innerHTML=`<header class="header"><a class="brand" href="../" aria-label="EsProfe"><img class="logo" src="../assets/brand/esprofe-logo-spain.jpg" alt="EsProfe">EsProfe</a><div class="headright"><div class="scoreboard" aria-live="polite" aria-label="${t().goals}"><span>⚽ ${t().goals}</span><strong>${goals}</strong></div><span class="status">${t().preview}</span><button type="button" id="ep-account">${account.user?accountCopy[lang].signedIn:accountCopy[lang].account}</button><label for="ep-language" class="muted">${t().lang}</label><select id="ep-language"><option value="uk" ${lang==='uk'?'selected':''}>Українська</option><option value="en" ${lang==='en'?'selected':''}>English</option><option value="ru" ${lang==='ru'?'selected':''}>Русский</option></select></div></header><div class="shell"><nav aria-label="${t().practice}"><select id="ep-lesson" aria-label="${({ru:'Урок',uk:'Урок',en:'Lesson'})[lang]}">${window.EsProfeLessonCatalog.lessons.map(l=>`<option value="${l.id}" ${lesson.id===l.id?'selected':''}>${esc(l.titles[lang])}</option>`).join('')}</select><select id="ep-section" aria-label="${t().practice}">${t().names.map((n,i)=>`<option value="${i}" ${stage===i?'selected':''}>${i+1}. ${n}</option>`).join('')}</select><div class="fit-content">${t().names.map((n,i)=>`<button type="button" class="cursor-interaction ${stage===i&&!reviewQueue?'active':''}" data-stage="${i}" ${stage===i&&!reviewQueue?'aria-current="step"':''}>${i+1}. ${n}</button>`).join('')}<small>${t().goals}: ${goals} / ${scoring.length}</small><small>${X[lang].hint}</small><small>${accountCopy[lang].local}</small></div></nav><main><div class="fit-content"><div class="eyebrow">A1 · ⚽ ${t().preview}</div><h1>${reviewQueue?t().repeat:stage===0?t().title:stage===8?(complete()?t().result:t().names[8]):t().names[stage]}</h1>${content}${!reviewQueue&&[1,2].includes(stage)?`<div class="footer"><button id="ep-simple-back" type="button" class="cursor-interaction">← ${t().back}</button><button id="ep-simple-next" type="button" class="primary cursor-interaction">${t().ready} →</button></div>`:''}<div class="track" role="progressbar" aria-label="${t().attempts}" aria-valuenow="${done}" aria-valuemin="0" aria-valuemax="${all.length}"><div class="fill" style="width:${done/all.length*100}%"></div></div></div><div class="screen-pager" hidden><button type="button" id="ep-screen-back">← ${t().back}</button><span id="ep-screen-count" role="status"></span><button type="button" id="ep-screen-next">${({ru:"Далее",uk:"Далі",en:"Next"})[lang]} →</button></div></main></div>`;
-root.classList.toggle('photo-lesson',photoLesson);root.classList.toggle('photo-words',photoLesson&&stage===1&&!reviewQueue);root.classList.toggle('photo-question',photoLesson&&!!root.querySelector('.photo-task'));bind();reportPanel?.bind(root);fit();}
+root.classList.toggle('photo-lesson',photoLesson);root.classList.toggle('photo-rule',photoLesson&&stage===2&&!reviewQueue);root.classList.toggle('photo-words',photoLesson&&stage===1&&!reviewQueue);root.classList.toggle('photo-question',photoLesson&&!!root.querySelector('.photo-task'));bind();reportPanel?.bind(root);fit();}
 function putGoal(word){const item=current();if(!item||word!==''&&!item.o?.includes(word))return;drafts[item.id]=word;selectedToken='';message='';render();reportPanel?.changed()}
 // Keep text at its chosen size; distribute long sections across viewport pages.
 function fit(){
@@ -282,6 +299,7 @@ function loadLocal(){
     }
   }catch(_){}
   repairWarmRecords();
+  repairAcceptedRecords();
 }
 loadLocal();
 account.subscribe(()=>{
