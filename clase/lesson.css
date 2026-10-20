@@ -98,3 +98,6 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
  #esprofe-football .dropdown-label,#esprofe-football #ep-options{display:none}
  #esprofe-football .goal-wrap p{display:none}
 }
+
+.ep-account-dialog input[type=checkbox]{width:auto}
+#esprofe-football .report-sync a{color:#145d87;font-size:18px}
