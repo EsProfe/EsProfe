@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261020-vocabulary3');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261020-articles4');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
@@ -62,6 +62,23 @@ function repairWarmRecords(){
   if(record.last&&isCorrectAnswer(item,record.last.picked||''))record.last.ok=true;
   for(const entry of record.history||[]){if(isCorrectAnswer(item,entry.picked||''))entry.ok=true}
   if((record.last||record).ok){record.resolved=true;retrying.delete(item.id)}
+ }
+}
+// Regrade stored answers only when a supported alternative was previously rejected.
+function repairAcceptedRecords(){
+ if(!photoLesson)return;
+ for(const item of all.filter(q=>q.accepted)){
+  const record=records[item.id];if(!record)continue;
+  const firstFixed=!record.ok&&isCorrectAnswer(item,record.picked||'');
+  const lastFixed=record.last&&!record.last.ok&&isCorrectAnswer(item,record.last.picked||'');
+  let fixedHistory=0;
+  for(const entry of record.history||[]){if(!entry.ok&&isCorrectAnswer(item,entry.picked||'')){entry.ok=true;fixedHistory++}}
+  if(firstFixed)record.ok=true;if(lastFixed)record.last.ok=true;
+  if(firstFixed||lastFixed||fixedHistory){
+   if(Number.isInteger(record.wrongCount))record.wrongCount=Math.max(0,record.wrongCount-Math.max(fixedHistory,firstFixed?1:0,lastFixed?1:0));
+   if(record.ok&&(record.last||record).ok){record.resolved=true;retrying.delete(item.id)}
+   reportDirty=true;
+  }
  }
 }
 function adjective(word,gender){let data,form;for(const [base,value] of Object.entries(adjectiveData)){const variants=base.endsWith('o')?[base,base.slice(0,-1)+'a',base+'s',base.slice(0,-1)+'as']:[base,base+(base==='débil'?'es':'s')];const i=variants.indexOf(word.toLowerCase());if(i>=0){data=value;form=base.endsWith('o')?(i>=2?2:i):(i===1?2:gender==='f'?1:0);break}}if(!data)return word;if(lang==='en')return data[2];return data[lang==='ru'?0:1][form]}
@@ -282,6 +299,7 @@ function loadLocal(){
     }
   }catch(_){}
   repairWarmRecords();
+  repairAcceptedRecords();
 }
 loadLocal();
 account.subscribe(()=>{

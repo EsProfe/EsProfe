@@ -181,3 +181,15 @@ test('second lesson permits repeated colours in free examples and reports its ow
  const s=await lessonSetup(state,'football-kit-a1');assert.equal(s.root.querySelector('#ep-cloud-save').disabled,false);
  await s.root.querySelector('#ep-cloud-save').onclick();assert.equal(s.saved[0].total,21);
 });
+
+test('team question accepts el and un with or without Es and repairs a false error on reload',async()=>{
+ for(const answer of ['el equipo','un equipo','Es el equipo.','Es un equipo.']){
+  const state={...completedState(),stage:5,positions:{3:0,4:0,5:4,6:0},modelSeen:true,records:{},drafts:{},tokens:{}};
+  const s=await lessonSetup(state,'football-kit-a1');s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();
+  assert.equal(JSON.parse(s.storage.get(s.key)).records['k2-q4'].ok,true,answer);
+ }
+ const bad={picked:'el equipo',ok:false,last:{picked:'el equipo',ok:false},resolved:false,wrongCount:1,history:[{picked:'el equipo',ok:false,phase:'first'}]};
+ const state={...completedState(),stage:5,positions:{3:0,4:0,5:4,6:0},modelSeen:true,records:{'k2-q4':bad},retrying:['k2-q4']};
+ const s=await lessonSetup(state,'football-kit-a1'),saved=JSON.parse(s.storage.get(s.key));
+ assert.equal(saved.records['k2-q4'].ok,true);assert.equal(saved.records['k2-q4'].resolved,true);assert.equal(saved.records['k2-q4'].wrongCount,0);assert.equal(saved.records['k2-q4'].history[0].ok,true);assert(saved.reportDirty);assert(!saved.retrying.includes('k2-q4'));
+});
