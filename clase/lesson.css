@@ -101,3 +101,15 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
 
 .ep-account-dialog input[type=checkbox]{width:auto}
 #esprofe-football .report-sync a{color:#145d87;font-size:18px}
+
+/* Kit lesson: crisp original illustrations and named colour swatches. */
+#esprofe-football #ep-lesson{display:block;max-width:100%;width:100%;font-size:16px;margin-bottom:8px}
+#esprofe-football .kit-picture{margin:4px auto;text-align:center;break-inside:avoid}
+#esprofe-football .kit-picture svg{height:130px;max-width:100%;display:block;margin:auto}
+#esprofe-football .kit-picture figcaption{font-size:19px;font-weight:700}
+#esprofe-football .kit-word{flex-wrap:wrap;text-align:left;justify-content:flex-start}
+#esprofe-football .kit-word .kit-picture{margin:0;flex:none}
+#esprofe-football .kit-word svg{height:65px;width:70px}
+#esprofe-football .color-chip{width:30px;height:30px;border:1px solid #62798a;border-radius:50%;flex:none}
+#esprofe-football .color-vocab{margin-top:12px}
+@media(max-width:650px){#esprofe-football #ep-lesson{font-size:16px;min-height:35px;margin-bottom:3px}#esprofe-football .kit-picture svg{height:105px}}

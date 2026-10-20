@@ -12,9 +12,9 @@
   return {schemaVersion:1,total:items.length,done:tasks.length,firstCorrect:tasks.filter(t=>t.firstCorrect).length,
    unresolved:tasks.filter(t=>!t.firstCorrect&&!t.resolved).length,complete:!!complete,tasks,own:own.map(text),resume};
  }
- function restore(row) {
+ function restore(row,lessonId='football-adjectives-a1') {
   const snapshot=row.snapshot;
-  if(row.lesson_id!=='football-adjectives-a1'||snapshot?.schemaVersion!==1||!Array.isArray(snapshot.tasks)||snapshot.own?.length!==3)throw new Error('invalid_report');
+  if(!['football-adjectives-a1','football-kit-a1'].includes(row.lesson_id)||row.lesson_id!==lessonId||snapshot?.schemaVersion!==1||!Array.isArray(snapshot.tasks)||snapshot.own?.length!==3)throw new Error('invalid_report');
   const records=Object.fromEntries(snapshot.tasks.map(t=>[t.id,{picked:t.firstAnswer,ok:t.firstCorrect,answer:t.expected,
    last:{picked:t.lastAnswer,ok:t.lastCorrect,answer:t.expected},resolved:t.resolved,due:0,attemptCount:t.attempts,wrongCount:t.wrongCount,
    history:(t.history||[]).map(h=>({picked:h.answer,ok:h.correct,phase:h.phase,answer:t.expected}))}]));

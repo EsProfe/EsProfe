@@ -217,3 +217,8 @@
 - Kept the practice logic, six-question assessment, Enter key support and progress recording unchanged.
 - Kept the two-column × three-row layout isolated to these visual diagrams only.
 - The SVG diagrams scale proportionally instead of being rearranged by responsive CSS.
+
+## 2026-10-20 — Футбол 2. Форма команды
+- Отдельный короткий урок на том же движке: 19 заданий, пять предметов/понятий, 11 основных цветов и цветные авторские SVG.
+- Переключение между уроками и независимый прогресс; история, продолжение и повторение учитывают ID урока.
+- Сохранены ссылки и история первого футбольного урока; новая миграция базы не требуется.

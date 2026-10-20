@@ -46,5 +46,9 @@ test('Postgres enforces teacher consent, private reports, versioned saves and fe
   await as(teacher);assert.equal((await db.query('select * from public.teaching_reports')).rows.length,0);assert.equal((await db.query('select * from public.teaching_feedback')).rows.length,0);
   await denied(()=>db.query('select public.teaching_save_feedback($1,$2,$3::jsonb,$4)',[report,'Access revoked','[]',1]),/forbidden/);
   await as(student);assert.equal((await db.query('select * from public.teaching_reports')).rows.length,1);assert.equal((await db.query('select * from public.teaching_feedback')).rows.length,1);
+  const kitId='00000000-0000-4000-8000-000000000009';
+  const kit=await db.query('select public.teaching_save_report($1,$2,$3,$4::jsonb,$5,$6) as value',[kitId,'football-kit-a1','ru',JSON.stringify(snapshot),0,kitId]);
+  assert.equal(kit.rows[0].value.version,1);
+  assert.equal((await db.query('select lesson_id from public.teaching_reports where id=$1',[kitId])).rows[0].lesson_id,'football-kit-a1');
  }finally{await db.close()}
 });

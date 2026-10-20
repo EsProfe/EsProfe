@@ -74,7 +74,7 @@
     const owner = await verifiedOwner(), currentRevision = revision;
     const { data, error } = await client.from('lesson_attempts')
       .select('id,score,total,language,completed_at')
-      .eq('student_id', owner.id).eq('lesson_id', config.lessonId)
+      .eq('student_id', owner.id).eq('lesson_id', (window.EsProfeLessonCatalog?.current().id||config.lessonId))
       .order('completed_at', { ascending: false }).limit(5);
     if (error) throw error;
     if (currentRevision !== revision) throw failure('changed');
@@ -92,7 +92,7 @@
     await ensureProfile(owner);
     if (currentRevision !== revision) throw failure('changed');
     const row = {
-      id: attempt.id, student_id: owner.id, lesson_id: config.lessonId,
+      id: attempt.id, student_id: owner.id, lesson_id: (window.EsProfeLessonCatalog?.current().id||config.lessonId),
       score: attempt.score, total: attempt.total, language: attempt.language
     };
     // A stable attempt UUID makes retrying a lost response safe without UPDATE access.
