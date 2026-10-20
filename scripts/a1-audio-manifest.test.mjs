@@ -39,3 +39,14 @@ test('A1 audio review manifest covers every direct lesson audio phrase exactly o
     for (const field of ['finalAsset', 'sourceUrl', 'license', 'attribution']) assert.equal(entry[field], null);
   }
 });
+
+test('requested A1 preview pronunciations keep orthography but use a Spanish voice and smooth spoken text', async () => {
+  const byQuestion = Object.fromEntries(manifest.entries.map(entry => [entry.questionId, entry]));
+  for (const id of ['li5', 'sc4', 'ws23']) assert.match(byQuestion[id].spokenText, / sale /);
+  assert.equal(byQuestion.sp2.spokenText, 'Hola Pablo.');
+  assert.equal(byQuestion.sp5.spokenText, '¿Puedes repetir por favor?');
+  assert.equal(byQuestion.sp6.spokenText, '¿Me ayudas por favor?');
+  const page = await readFile(path.join(root, 'audio-review.html'), 'utf8');
+  assert.match(page, /\^es-ES\$/);
+  assert.match(page, /button\.disabled=!spanishVoice\(\)/);
+});
