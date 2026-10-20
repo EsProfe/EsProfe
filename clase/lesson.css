@@ -166,3 +166,47 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
  #esprofe-football .photo-task .task-response{grid-column:2;grid-row:3;align-self:center}
  #esprofe-football .photo-task .footer{grid-column:2;grid-row:4}
 }
+
+/* Compact football shell leaves room for larger vocabulary photos. */
+#esprofe-football.photo-lesson .shell{grid-template-columns:180px minmax(0,1fr)}
+#esprofe-football.photo-lesson .header{padding:5px 12px;gap:6px}
+#esprofe-football.photo-lesson .brand{font-size:18px}
+#esprofe-football.photo-lesson .logo{width:28px;height:28px}
+#esprofe-football.photo-lesson .headright{gap:6px}
+#esprofe-football.photo-lesson #ep-account,#esprofe-football.photo-lesson #ep-language{font-size:14px;min-height:34px;padding:4px 7px}
+#esprofe-football.photo-lesson .headright>label{display:none}
+#esprofe-football.photo-lesson nav button{font-size:14px;min-height:32px;padding:5px 7px;margin-bottom:3px}
+#esprofe-football.photo-lesson nav small{font-size:12px}
+#esprofe-football.photo-lesson nav small~small{display:none}
+#esprofe-football.photo-words main>.fit-content{display:flex;flex-direction:column;min-height:0}
+#esprofe-football.photo-words main>.fit-content>.eyebrow{display:none}
+#esprofe-football.photo-words h1{font-size:22px;margin:0 0 4px;flex:none}
+#esprofe-football.photo-words .photo-vocabulary{flex:1;min-height:0;display:flex;flex-direction:column;gap:6px}
+#esprofe-football.photo-words .vocabulary-intro{font-size:14px;line-height:1.25;margin:0;flex:none}
+#esprofe-football .kit-vocab-grid{flex:1;min-height:0;display:grid;gap:8px}
+#esprofe-football.photo-words .kit-word{min-width:0;min-height:0;display:flex;flex-direction:column;align-items:stretch;gap:4px;padding:6px;margin:0;overflow-wrap:normal;word-break:normal}
+#esprofe-football.photo-words .kit-word .kit-photo{flex:1;min-height:0;height:auto;max-height:204px;margin:0;gap:2px}
+#esprofe-football.photo-words .kit-word .kit-photo img{flex:1;min-height:0;width:100%;height:0;background:#e5eff4}
+#esprofe-football.photo-words .kit-word .kit-photo figcaption{font-size:12px;line-height:16px}
+#esprofe-football.photo-words .kit-word button{border:0;background:transparent;border-radius:5px;min-height:42px;padding:2px;text-align:center;display:flex;flex-direction:column;gap:1px;align-items:center;color:inherit;font-size:15px;line-height:1.2;flex:none;white-space:normal}
+#esprofe-football.photo-words .kit-word button span{font-size:14px;line-height:1.2}
+#esprofe-football.photo-words .footer{flex:none;margin:6px 0 0}
+#esprofe-football.photo-words .footer button,#esprofe-football.photo-words .screen-pager button{font-size:15px;min-height:34px;padding:5px 10px}
+#esprofe-football.photo-words .screen-pager{min-height:36px}
+#esprofe-football.photo-words .screen-pager span{font-size:14px}
+#esprofe-football.photo-words .track{flex:none;height:3px;margin:4px 0 0}
+#esprofe-football.photo-words .color-vocab{grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin:0;gap:8px}
+#esprofe-football.photo-words .color-vocab .word{font-size:16px;padding:8px;display:flex;gap:5px;align-items:center}
+#esprofe-football.photo-words .color-vocab .word span{font-size:14px}
+@media(max-width:650px),(max-height:550px){
+ #esprofe-football.photo-lesson nav{display:flex;gap:5px;padding:3px 8px}
+ #esprofe-football.photo-lesson #ep-lesson,#esprofe-football.photo-lesson #ep-section{width:50%;font-size:13px;min-height:30px;margin:0;padding:3px}
+ #esprofe-football.photo-lesson .brand{font-size:16px}
+ #esprofe-football.photo-lesson .logo{width:24px;height:24px}
+ #esprofe-football.photo-lesson #ep-account,#esprofe-football.photo-lesson #ep-language{font-size:13px;min-height:30px;padding:3px 4px}
+ #esprofe-football.photo-words main{padding:5px 8px}
+ #esprofe-football.photo-words h1{font-size:19px}
+ #esprofe-football.photo-words .kit-word{padding:4px}
+ #esprofe-football.photo-words .kit-vocab-grid{gap:5px}
+}
+@media(max-height:500px){#esprofe-football.photo-question nav{display:none}}

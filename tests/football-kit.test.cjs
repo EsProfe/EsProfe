@@ -34,3 +34,16 @@ test('old kit version preserves old answers and routes independently',()=>{
  const ids=new Set(Object.values(old.groups).flat().map(q=>q.id));assert(Object.values(fresh.groups).flat().every(q=>!ids.has(q.id)));
  assert(catalog.href('football-kit-a1','ru',1).endsWith('&version=1'));
 });
+
+test('vocabulary fills available rows and columns without changing assessed tasks',()=>{
+ const vm=require('node:vm'),ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/kit-visuals.js'),'utf8'),ctx);
+ const layout=ctx.window.EsProfeKitVisuals.vocabularyLayout;
+ assert.equal(layout(1050,450,10).capacity,10);assert.equal(layout(1050,450,10).pages,2);
+ assert.equal(layout(950,405,10).capacity,8);assert.equal(layout(390,440,10).capacity,4);
+ assert.equal(layout(390,250,10).capacity,2);
+ const data=require('../clase/football-kit.json');
+ for(const noun of ['delantero','centrocampista','defensa'])assert(data.vocab.some(v=>v[0].includes(noun)));
+ assert.equal(data.vocab.length,data.vocabVisuals.length);
+ assert.deepEqual(data.groups[3][3].o,['Son guantes.','Es el árbitro.']);
+ for(const photo of Object.values(data.photos))assert(photo.author&&photo.source&&photo.license);
+});
