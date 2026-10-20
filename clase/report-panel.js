@@ -12,7 +12,7 @@
   const t=()=>copy[options.language()]||copy.ru;
   const notify=()=>options.statusChanged();
   function prepare(){const s=options.state();const snapshot=root.EsProfeLessonReport.build({items:options.items,records:s.records,own:s.own,
-   resume:{stage:s.stage,positions:s.positions,drafts:s.drafts,tokens:s.tokens,modelSeen:s.modelSeen,retrying:s.retrying},complete:options.complete()});
+   resume:{contentVersion:options.contentVersion||1,stage:s.stage,positions:s.positions,drafts:s.drafts,tokens:s.tokens,modelSeen:s.modelSeen,retrying:s.retrying},complete:options.complete()});
    return {state:s,snapshot,signature:JSON.stringify({id:s.runId,language:s.lang,snapshot})};}
   async function save(){
    if(busy||!options.account.user)return false;
@@ -43,6 +43,7 @@
   async function resume(id,review=false){if(!options.account.user)return;const user=options.account.user.id;const row=await options.account.teaching.report(id);
    if(user!==options.account.user?.id||row.student_id!==user)throw new Error('forbidden');
    if(row.lesson_id!==options.lessonId)throw new Error('wrong_lesson');
+   if((row.snapshot?.resume?.contentVersion||1)!==(options.contentVersion||1))throw new Error('wrong_content_version');
    if(!confirm(t().resumeAsk))return;
    reset();options.restore(root.EsProfeLessonReport.restore(row,options.lessonId),review);lastSignature=prepare().signature;status=t().loaded;notify();
   }

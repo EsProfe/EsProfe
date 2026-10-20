@@ -113,3 +113,56 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
 #esprofe-football .color-chip{width:30px;height:30px;border:1px solid #62798a;border-radius:50%;flex:none}
 #esprofe-football .color-vocab{margin-top:12px}
 @media(max-width:650px){#esprofe-football #ep-lesson{font-size:16px;min-height:35px;margin-bottom:3px}#esprofe-football .kit-picture svg{height:105px}}
+
+/* Photo questions are a single viewport: the image takes the remaining space. */
+#esprofe-football.photo-lesson{font-size:17px;line-height:1.25}
+#esprofe-football.photo-lesson h1{font-size:25px}
+#esprofe-football .kit-photo img{display:block;max-width:100%;width:auto;height:100%;min-height:0;object-fit:contain;margin:auto;border-radius:10px}
+#esprofe-football .kit-photo figcaption{font-size:13px;font-weight:500;line-height:18px;flex:none}
+#esprofe-football .kit-photo figcaption a{padding:0 4px;color:#285974}
+#esprofe-football .kit-word .kit-photo{height:120px;width:100%;display:flex;flex-direction:column}
+#esprofe-football .kit-word .kit-photo img{height:100px}
+#esprofe-football.photo-question main>.fit-content{display:flex;flex-direction:column;min-height:0}
+#esprofe-football.photo-question main>.fit-content>h1,#esprofe-football.photo-question main>.fit-content>.eyebrow{display:none}
+#esprofe-football.photo-question .track{flex:none;height:4px;margin:5px 0 0}
+#esprofe-football .photo-task{flex:1;min-height:0;display:flex;flex-direction:column;gap:6px}
+#esprofe-football .photo-task .task-caption{font-size:13px;color:#4c697b;flex:none}
+#esprofe-football .photo-task .sentence{font-size:22px;line-height:1.2;margin:0;flex:none}
+#esprofe-football .photo-task .kit-photo{flex:1;min-height:0;width:100%;display:flex;flex-direction:column;margin:0;gap:3px}
+#esprofe-football .photo-task .kit-photo img{flex:1;min-height:0;width:100%;height:0;background:#e4edf1}
+#esprofe-football .photo-task .task-response{flex:none}
+#esprofe-football .photo-task .choices{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+#esprofe-football .photo-task button{font-size:17px;line-height:1.2;min-height:38px;padding:7px 12px}
+#esprofe-football .photo-task input{font-size:18px;padding:7px;width:100%;box-sizing:border-box;min-width:0}
+#esprofe-football .photo-task .muted{font-size:14px}
+#esprofe-football .photo-task .feedback{font-size:16px;min-height:0;padding:3px 0;margin:0;line-height:1.2}
+#esprofe-football .photo-task .es-answer{font-size:19px;margin:3px 0}
+#esprofe-football .photo-task .feedback button{font-size:14px;min-height:30px;margin-top:4px;padding:4px 8px}
+#esprofe-football .photo-task .footer{flex:none;margin:0;padding:0;display:flex;justify-content:space-between}
+@media(max-width:650px){
+ #esprofe-football.photo-lesson .header{padding:4px 8px}
+ #esprofe-football.photo-lesson .brand{font-size:16px}
+ #esprofe-football.photo-lesson .logo{width:24px;height:24px}
+ #esprofe-football.photo-lesson .headright{flex-wrap:nowrap;gap:4px}
+ #esprofe-football.photo-lesson .scoreboard span{font-size:0}
+ #esprofe-football.photo-lesson .scoreboard span::first-letter{font-size:15px}
+ #esprofe-football.photo-lesson .scoreboard strong{font-size:19px}
+ #esprofe-football.photo-lesson #ep-language{font-size:13px;max-width:100px;min-height:32px}
+ #esprofe-football.photo-lesson #ep-account{font-size:13px;min-height:32px;padding:4px}
+ #esprofe-football.photo-lesson nav{display:flex;gap:5px;padding:4px 8px}
+ #esprofe-football.photo-lesson #ep-lesson,#esprofe-football.photo-lesson #ep-section{font-size:13px;width:50%;min-height:32px;padding:3px;margin:0}
+ #esprofe-football.photo-lesson main{padding:6px 8px}
+ #esprofe-football .photo-task{gap:4px}
+ #esprofe-football .photo-task .sentence{font-size:19px}
+ #esprofe-football .photo-task button{font-size:16px;min-height:36px;padding:6px 9px}
+ #esprofe-football .photo-task .task-caption{font-size:12px}
+}
+@media(max-height:500px){
+ #esprofe-football.photo-question nav{display:none}
+ #esprofe-football .photo-task{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto 1fr auto;gap:4px 12px}
+ #esprofe-football .photo-task .task-caption{grid-column:1/-1}
+ #esprofe-football .photo-task .sentence{grid-column:1/-1;font-size:17px}
+ #esprofe-football .photo-task .kit-photo{grid-column:1;grid-row:3/5}
+ #esprofe-football .photo-task .task-response{grid-column:2;grid-row:3;align-self:center}
+ #esprofe-football .photo-task .footer{grid-column:2;grid-row:4}
+}

@@ -1,6 +1,6 @@
 {
   "lessonId": "football-kit-a1",
-  "version": 1,
+  "version": 2,
   "D": {
     "ru": {
       "lang": "Язык",
@@ -285,6 +285,18 @@
       "воротар / воротарка",
       "goalkeeper",
       "вратарь"
+    ],
+    [
+      "el árbitro",
+      "арбітр",
+      "referee",
+      "судья"
+    ],
+    [
+      "el equipo",
+      "команда",
+      "team",
+      "команда"
     ]
   ],
   "football": [
@@ -317,12 +329,24 @@
       "воротар / воротарка",
       "goalkeeper",
       "вратарь"
+    ],
+    [
+      "el árbitro",
+      "арбітр",
+      "referee",
+      "судья"
+    ],
+    [
+      "el equipo",
+      "команда",
+      "team",
+      "команда"
     ]
   ],
   "groups": {
     "3": [
       {
-        "id": "k-w0",
+        "id": "k2-w0",
         "p": "¿Qué es esto?",
         "a": "Es una camiseta.",
         "o": [
@@ -331,9 +355,8 @@
         ],
         "type": "choice",
         "visual": {
-          "kind": "shirt",
-          "color": "#dc3446",
-          "label": ""
+          "photo": "neymar",
+          "focus": "La camiseta"
         },
         "meaning": {
           "ru": "Это футболка.",
@@ -342,7 +365,7 @@
         }
       },
       {
-        "id": "k-w1",
+        "id": "k2-w1",
         "p": "¿Qué son?",
         "a": "Son pantalones cortos.",
         "o": [
@@ -351,9 +374,8 @@
         ],
         "type": "choice",
         "visual": {
-          "kind": "shorts",
-          "color": "#2876d3",
-          "label": ""
+          "photo": "messi",
+          "focus": "Los pantalones cortos"
         },
         "meaning": {
           "ru": "Это шорты.",
@@ -362,7 +384,7 @@
         }
       },
       {
-        "id": "k-w2",
+        "id": "k2-w2",
         "p": "¿Qué son?",
         "a": "Son botas de fútbol.",
         "o": [
@@ -371,9 +393,8 @@
         ],
         "type": "choice",
         "visual": {
-          "kind": "boots",
-          "color": "#242e3d",
-          "label": ""
+          "photo": "messi",
+          "focus": "Las botas de fútbol"
         },
         "meaning": {
           "ru": "Это бутсы.",
@@ -382,7 +403,7 @@
         }
       },
       {
-        "id": "k-w3",
+        "id": "k2-w3",
         "p": "¿Qué son?",
         "a": "Son guantes.",
         "o": [
@@ -391,9 +412,8 @@
         ],
         "type": "choice",
         "visual": {
-          "kind": "gloves",
-          "color": "#f4ce3c",
-          "label": ""
+          "photo": "neuer",
+          "focus": "Los guantes"
         },
         "meaning": {
           "ru": "Это перчатки.",
@@ -402,7 +422,7 @@
         }
       },
       {
-        "id": "k-w4",
+        "id": "k2-w4",
         "p": "¿Quién es?",
         "a": "Es el portero.",
         "o": [
@@ -411,21 +431,56 @@
         ],
         "type": "choice",
         "visual": {
-          "kind": "keeper",
-          "color": "#2b9662",
-          "label": ""
+          "photo": "neuer",
+          "focus": ""
         },
         "meaning": {
           "ru": "Это вратарь.",
           "uk": "Це воротар.",
           "en": "It is the goalkeeper."
         }
+      },
+      {
+        "id": "k2-w5",
+        "p": "¿Quién es?",
+        "a": "Es el árbitro.",
+        "o": [
+          "Es el árbitro.",
+          "Es el portero."
+        ],
+        "type": "choice",
+        "visual": {
+          "photo": "referee"
+        },
+        "meaning": {
+          "ru": "Это судья.",
+          "uk": "Це арбітр.",
+          "en": "It is the referee."
+        }
+      },
+      {
+        "id": "k2-w6",
+        "p": "¿Qué es?",
+        "a": "Es el equipo.",
+        "o": [
+          "Es el equipo.",
+          "Es el portero."
+        ],
+        "type": "choice",
+        "visual": {
+          "photo": "team"
+        },
+        "meaning": {
+          "ru": "Это команда.",
+          "uk": "Це команда.",
+          "en": "It is a team."
+        }
       }
     ],
     "4": [
       {
-        "id": "k-m0",
-        "p": "La camiseta es ___.",
+        "id": "k2-m0",
+        "p": "La camiseta de Neuer es ___.",
         "a": "blanca",
         "o": [
           "blanca",
@@ -434,138 +489,124 @@
         ],
         "type": "choice",
         "visual": {
-          "kind": "shirt",
-          "color": "#ffffff",
-          "label": "Inglaterra"
+          "photo": "neuer"
         },
         "meaning": {
-          "ru": "Футболка белая.",
-          "uk": "Футболка біла.",
-          "en": "The shirt is white."
+          "ru": "Футболка Нойера белая.",
+          "uk": "Футболка Ноєра біла.",
+          "en": "Neuer’s shirt is white."
         },
-        "sentence": "La camiseta es blanca."
+        "sentence": "La camiseta de Neuer es blanca."
       },
       {
-        "id": "k-m1",
-        "p": "La camiseta es ___.",
-        "a": "roja",
+        "id": "k2-m1",
+        "p": "La camiseta de Neymar es ___.",
+        "a": "amarilla",
         "o": [
-          "roja",
-          "rojo",
-          "rojas"
+          "amarilla",
+          "amarillo",
+          "amarillas"
         ],
         "type": "choice",
         "visual": {
-          "kind": "shirt",
-          "color": "#dc3446",
-          "label": "España"
+          "photo": "neymar"
         },
         "meaning": {
-          "ru": "Футболка красная.",
-          "uk": "Футболка червона.",
-          "en": "The shirt is red."
+          "ru": "Футболка Неймара жёлтая.",
+          "uk": "Футболка Неймара жовта.",
+          "en": "Neymar’s shirt is yellow."
         },
-        "sentence": "La camiseta es roja."
+        "sentence": "La camiseta de Neymar es amarilla."
       },
       {
-        "id": "k-m2",
-        "p": "Los pantalones cortos son ___.",
-        "a": "azules",
+        "id": "k2-m2",
+        "p": "Los pantalones cortos de Messi son ___.",
+        "a": "negros",
         "o": [
-          "azules",
-          "azul",
-          "azulas"
-        ],
-        "type": "choice",
-        "visual": {
-          "kind": "shorts",
-          "color": "#2876d3",
-          "label": ""
-        },
-        "meaning": {
-          "ru": "Шорты синие.",
-          "uk": "Шорти сині.",
-          "en": "The shorts are blue."
-        },
-        "sentence": "Los pantalones cortos son azules."
-      },
-      {
-        "id": "k-m3",
-        "p": "Las botas de fútbol son ___.",
-        "a": "negras",
-        "o": [
-          "negras",
           "negros",
-          "negra"
+          "negro",
+          "negras"
         ],
         "type": "choice",
         "visual": {
-          "kind": "boots",
-          "color": "#242e3d",
-          "label": ""
+          "photo": "messi"
         },
         "meaning": {
-          "ru": "Бутсы чёрные.",
-          "uk": "Бутси чорні.",
-          "en": "The boots are black."
+          "ru": "Шорты Месси чёрные.",
+          "uk": "Шорти Мессі чорні.",
+          "en": "Messi’s shorts are black."
         },
-        "sentence": "Las botas de fútbol son negras."
+        "sentence": "Los pantalones cortos de Messi son negros."
       },
       {
-        "id": "k-m4",
+        "id": "k2-m3",
+        "p": "Las camisetas amarillas son ___.",
+        "a": "bonitas",
+        "o": [
+          "bonitas",
+          "bonitos",
+          "bonita"
+        ],
+        "type": "choice",
+        "visual": {
+          "photo": "team"
+        },
+        "meaning": {
+          "ru": "Жёлтые футболки красивые.",
+          "uk": "Жовті футболки гарні.",
+          "en": "The yellow shirts are beautiful."
+        },
+        "sentence": "Las camisetas amarillas son bonitas."
+      },
+      {
+        "id": "k2-m4",
         "p": "Los guantes son ___.",
-        "a": "amarillos",
+        "a": "grandes",
         "o": [
-          "amarillos",
-          "amarillas",
-          "amarillo"
+          "grandes",
+          "grande"
         ],
         "type": "choice",
         "visual": {
-          "kind": "gloves",
-          "color": "#f4ce3c",
-          "label": ""
+          "photo": "neuer"
         },
         "meaning": {
-          "ru": "Перчатки жёлтые.",
-          "uk": "Рукавички жовті.",
-          "en": "The gloves are yellow."
+          "ru": "Перчатки большие.",
+          "uk": "Рукавички великі.",
+          "en": "The gloves are big."
         },
-        "sentence": "Los guantes son amarillos."
+        "sentence": "Los guantes son grandes."
       },
       {
-        "id": "k-m5",
-        "p": "La camiseta del portero es ___.",
-        "a": "verde",
+        "id": "k2-m5",
+        "p": "Mary es una ___.",
+        "a": "portera",
         "o": [
-          "verde",
-          "verdes"
+          "portera",
+          "camiseta",
+          "equipo"
         ],
         "type": "choice",
         "visual": {
-          "kind": "keeper",
-          "color": "#2b9662",
-          "label": ""
+          "photo": "mary"
         },
         "meaning": {
-          "ru": "Футболка вратаря зелёная.",
-          "uk": "Футболка воротаря зелена.",
-          "en": "The goalkeeper’s shirt is green."
+          "ru": "Мэри — вратарь.",
+          "uk": "Мері — воротарка.",
+          "en": "Mary is a goalkeeper."
         },
-        "sentence": "La camiseta del portero es verde."
+        "sentence": "Mary es una portera."
       }
     ],
     "5": [
       {
-        "id": "k-q0",
-        "p": "¿De qué color es la camiseta de Inglaterra?",
+        "id": "k2-q0",
+        "p": "¿De qué color es la camiseta de Neuer?",
         "a": "Es blanca.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "shirt",
-          "color": "#ffffff",
-          "label": "Inglaterra"
+          "photo": "neuer"
         },
         "meaning": {
           "ru": "Она белая.",
@@ -577,97 +618,90 @@
         ]
       },
       {
-        "id": "k-q1",
-        "p": "¿Cómo es la camiseta de España?",
-        "a": "Es roja.",
+        "id": "k2-q1",
+        "p": "¿Cómo es la camiseta de Neymar?",
+        "a": "Es amarilla.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "shirt",
-          "color": "#dc3446",
-          "label": "España"
+          "photo": "neymar"
         },
         "meaning": {
-          "ru": "Она красная.",
-          "uk": "Вона червона.",
-          "en": "It is red."
+          "ru": "Она жёлтая.",
+          "uk": "Вона жовта.",
+          "en": "It is yellow."
         },
         "accepted": [
-          "roja."
+          "amarilla."
         ]
       },
       {
-        "id": "k-q2",
-        "p": "¿De qué color son los guantes?",
-        "a": "Son grises.",
+        "id": "k2-q2",
+        "p": "¿De qué color son los pantalones cortos de Messi?",
+        "a": "Son negros.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "gloves",
-          "color": "#929aa6",
-          "label": ""
+          "photo": "messi"
         },
         "meaning": {
-          "ru": "Они серые.",
-          "uk": "Вони сірі.",
-          "en": "They are grey."
+          "ru": "Они чёрные.",
+          "uk": "Вони чорні.",
+          "en": "They are black."
         },
         "accepted": [
-          "grises."
+          "negros."
         ]
       },
       {
-        "id": "k-q3",
-        "p": "¿De qué color son las botas de fútbol?",
-        "a": "Son marrones.",
+        "id": "k2-q3",
+        "p": "¿Quién es?",
+        "a": "Es la portera.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "boots",
-          "color": "#8c593c",
-          "label": ""
+          "photo": "mary"
         },
         "meaning": {
-          "ru": "Они коричневые.",
-          "uk": "Вони коричневі.",
-          "en": "They are brown."
+          "ru": "Это вратарь.",
+          "uk": "Це воротарка.",
+          "en": "It is the goalkeeper."
         },
         "accepted": [
-          "marrones."
+          "Es Mary Earps.",
+          "Mary Earps",
+          "La portera."
         ]
       },
       {
-        "id": "k-q4",
-        "p": "¿Cómo es la camiseta del portero?",
-        "a": "Es naranja.",
+        "id": "k2-q4",
+        "p": "¿Qué es?",
+        "a": "Es un equipo.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "keeper",
-          "color": "#ed8936",
-          "label": ""
+          "photo": "team"
         },
         "meaning": {
-          "ru": "Она оранжевая.",
-          "uk": "Вона помаранчева.",
-          "en": "It is orange."
+          "ru": "Это команда.",
+          "uk": "Це команда.",
+          "en": "It is a team."
         },
         "accepted": [
-          "naranja."
+          "Un equipo.",
+          "Es el equipo de Brasil."
         ]
       }
     ],
     "6": [
       {
-        "id": "k-f0",
+        "id": "k2-f0",
         "p": "La camiseta es amarillo.",
         "a": "La camiseta es amarilla.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "shirt",
-          "color": "#f4ce3c",
-          "label": ""
+          "photo": "neymar"
         },
         "meaning": {
           "ru": "Футболка жёлтая.",
@@ -676,37 +710,33 @@
         }
       },
       {
-        "id": "k-f1",
-        "p": "Los guantes son verde.",
-        "a": "Los guantes son verdes.",
+        "id": "k2-f1",
+        "p": "Los pantalones cortos son negro.",
+        "a": "Los pantalones cortos son negros.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "gloves",
-          "color": "#2b9662",
-          "label": ""
+          "photo": "messi"
         },
         "meaning": {
-          "ru": "Перчатки зелёные.",
-          "uk": "Рукавички зелені.",
-          "en": "The gloves are green."
+          "ru": "Шорты чёрные.",
+          "uk": "Шорти чорні.",
+          "en": "The shorts are black."
         }
       },
       {
-        "id": "k-f2",
-        "p": "Las botas de fútbol son blancos.",
-        "a": "Las botas de fútbol son blancas.",
+        "id": "k2-f2",
+        "p": "Las botas de fútbol son bonitos.",
+        "a": "Las botas de fútbol son bonitas.",
         "o": null,
         "type": "input",
         "visual": {
-          "kind": "boots",
-          "color": "#ffffff",
-          "label": ""
+          "photo": "messi"
         },
         "meaning": {
-          "ru": "Бутсы белые.",
-          "uk": "Бутси білі.",
-          "en": "The boots are white."
+          "ru": "Бутсы красивые.",
+          "uk": "Бутси гарні.",
+          "en": "The boots are beautiful."
         }
       }
     ]
@@ -857,5 +887,66 @@
     "La camiseta …",
     "Los pantalones cortos …",
     "Los guantes …"
+  ],
+  "photos": {
+    "messi": {
+      "label": "Messi",
+      "author": "Hossein Zohrevand / Tasnim",
+      "license": "by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
+    },
+    "neymar": {
+      "label": "Neymar",
+      "author": "Granada",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg"
+    },
+    "neuer": {
+      "label": "Manuel Neuer",
+      "author": "Steindy",
+      "license": "by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Manuel_Neuer,_Germany_national_football_team_(03).jpg"
+    },
+    "mary": {
+      "label": "Mary Earps",
+      "author": "Sven Beyrich / EL Loko Foto",
+      "license": "by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mary_Earps_20181118.jpg"
+    },
+    "team": {
+      "label": "Brasil",
+      "author": "Granada",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Gruppenfoto_Brasilien_850_0016.jpg"
+    },
+    "referee": {
+      "label": "El árbitro",
+      "author": "SounderBruce",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Baldomero_Toledo_checks_VAR_-_Seattle_Sounders_vs._Sporting_Kansas_City.jpg"
+    }
+  },
+  "vocabVisuals": [
+    {
+      "photo": "neymar"
+    },
+    {
+      "photo": "messi"
+    },
+    {
+      "photo": "messi"
+    },
+    {
+      "photo": "neuer"
+    },
+    {
+      "photo": "mary"
+    },
+    {
+      "photo": "referee"
+    },
+    {
+      "photo": "team"
+    }
   ]
 }
