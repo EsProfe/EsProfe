@@ -27,7 +27,12 @@
     "ownRepeat": "Это прилагательное уже использовано в другом предложении. Выбери другое.",
     "missingTasks": "Для сохранения осталось выполнить заданий: {n}.",
     "continueTasks": "Продолжить задания",
-    "pendingReview": "Сначала повтори и исправь оставшиеся ошибки."
+    "pendingReview": "Сначала повтори и исправь оставшиеся ошибки.",
+    "register": "Создать бесплатный профиль",
+    "registerNote": "Для регистрации используйте пароль не короче 8 символов. После входа можно отдельно перенести гостевое занятие.",
+    "consent": "Я согласен(-на) на обработку данных для учебного профиля.",
+    "checkMail": "Подтвердите адрес по письму и затем войдите в урок.",
+    "legacyHistory": "История итоговых баллов"
   },
   "uk": {
     "account": "Увійти",
@@ -57,7 +62,12 @@
     "ownRepeat": "Цей прикметник уже використано в іншому реченні. Обери інший.",
     "missingTasks": "Для збереження залишилося виконати завдань: {n}.",
     "continueTasks": "Продовжити завдання",
-    "pendingReview": "Спочатку повтори та виправ решту помилок."
+    "pendingReview": "Спочатку повтори та виправ решту помилок.",
+    "register": "Створити безкоштовний профіль",
+    "registerNote": "Для реєстрації використовуйте пароль від 8 символів. Після входу можна окремо перенести гостьове заняття.",
+    "consent": "Я погоджуюся на обробку даних для навчального профілю.",
+    "checkMail": "Підтвердьте адресу за листом і потім увійдіть до уроку.",
+    "legacyHistory": "Історія підсумкових балів"
   },
   "en": {
     "account": "Sign in",
@@ -87,6 +97,11 @@
     "ownRepeat": "This adjective is used in another sentence. Choose a different one.",
     "missingTasks": "Exercises left before saving: {n}.",
     "continueTasks": "Continue exercises",
-    "pendingReview": "Review and correct the remaining mistakes first."
+    "pendingReview": "Review and correct the remaining mistakes first.",
+    "register": "Create a free profile",
+    "registerNote": "Use a password of at least 8 characters. After signing in, you can explicitly transfer your guest lesson.",
+    "consent": "I agree to the processing of my data for my learning profile.",
+    "checkMail": "Confirm your email using the message, then sign in to the lesson.",
+    "legacyHistory": "Final score history"
   }
 }

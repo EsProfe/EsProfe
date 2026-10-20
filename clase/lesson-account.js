@@ -2,8 +2,8 @@
 (() => {
   'use strict';
   const config = window.EsProfeSupabaseConfig;
-  const client = window.supabase?.createClient(config.url, config.publishableKey, {
-    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false },
+  const client = config && window.supabase?.createClient(config.url, config.publishableKey, {
+    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true },
     global: { fetch: (url, options = {}) => fetch(url, {
       ...options, signal: options.signal || AbortSignal.timeout(15000)
     }) }
@@ -49,6 +49,13 @@
     setUser(data.user);
     await ensureProfile(data.user);
     return user;
+  }
+  async function signUp(email,password) {
+    if(!client)throw failure('unavailable');
+    const {data,error}=await client.auth.signUp({email,password,options:{emailRedirectTo:window.location.origin+'/clase/'}});
+    if(error)throw error;
+    if(data.session?.user){setUser(data.session.user);await ensureProfile(data.session.user);}
+    return {confirmationRequired:!data.session};
   }
   async function signOut() {
     if (!client) return;
@@ -104,7 +111,8 @@
     return row.id;
   }
   window.EsProfeLessonAccount = Object.freeze({
-    init, signIn, signOut, history, saveAttempt,
+    init, signIn, signUp, signOut, history, saveAttempt,
+    teaching: window.EsProfeTeaching?.create(client,{get user(){return user}}),
     get user() { return user; },
     get available() { return !!client; },
     subscribe(fn) { listeners.add(fn); return () => listeners.delete(fn); }

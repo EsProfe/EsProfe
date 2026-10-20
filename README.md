@@ -51,3 +51,8 @@ GitHub Pages runs the same validation and regression checks before deployment. A
 - Keep a recoverable backup branch before architecture-level changes.
 
 Repository: `EsProfe/EsProfe`
+
+
+### Проверка занятий преподавателем
+
+Новый кабинет и отчёты футбольного урока: [подключение базы и проверка](docs/TEACHER_REPORTS.md). Публикация этого этапа требует миграции `supabase/teacher-reports.sql` и проверки реальных аккаунтов преподавателя и ученика. Автопроверки: `npm ci --ignore-scripts`, `npm test`.
