@@ -228,3 +228,22 @@ body{margin:0;padding:8px;background:#eef7fc;overflow:hidden}button{cursor:point
  #esprofe-football.photo-rule p{font-size:15px;margin:3px 0}
  #esprofe-football.photo-rule h1{font-size:20px}
 }
+
+/* Three short examples stay together, including the finish action. */
+#esprofe-football.photo-own main>.fit-content{display:flex;flex-direction:column;min-height:0;gap:4px}
+#esprofe-football.photo-own main>.fit-content>.eyebrow{display:none}
+#esprofe-football.photo-own h1{font-size:22px;margin:0 0 4px}
+#esprofe-football.photo-own p{font-size:15px;line-height:1.25;margin:3px 0}
+#esprofe-football.photo-own .hint{font-size:15px;line-height:1.25;padding:7px 10px;margin:3px 0;flex:none}
+#esprofe-football.photo-own .own{flex:none;margin:3px 0}
+#esprofe-football.photo-own .own label{font-size:15px;line-height:1.2;display:block;margin-bottom:3px}
+#esprofe-football.photo-own textarea{display:block;min-height:44px;height:46px;padding:7px 9px;font:16px/1.25 system-ui,sans-serif}
+#esprofe-football.photo-own p.muted{font-size:13px;line-height:1.2}
+#esprofe-football.photo-own p:empty{display:none}
+#esprofe-football.photo-own #ep-finish{font-size:16px;min-height:36px;padding:6px 12px;margin-top:auto;align-self:flex-end;flex:none}
+#esprofe-football.photo-own .track{height:3px;flex:none;margin-top:4px}
+@media(max-width:650px){
+ #esprofe-football.photo-own h1{font-size:20px}
+ #esprofe-football.photo-own .hint,#esprofe-football.photo-own p{font-size:14px}
+ #esprofe-football.photo-own .own{margin:2px 0}
+}
