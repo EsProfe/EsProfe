@@ -47,3 +47,20 @@ test('vocabulary fills available rows and columns without changing assessed task
  assert.deepEqual(data.groups[3][3].o,['Son guantes.','Es el árbitro.']);
  for(const photo of Object.values(data.photos))assert(photo.author&&photo.source&&photo.license);
 });
+
+test('one vocabulary navigation bar leads through words, colours and then the rule',()=>{
+ const vm=require('node:vm'),source=fs.readFileSync(path.join(__dirname,'../clase/lesson.js'),'utf8');
+ const fitSource=source.slice(source.indexOf('function fitVocabulary('),source.indexOf('function kitRule('));
+ for(const lang of ['ru','uk','en']){
+  const cards=Array.from({length:10},()=>({hidden:false})),grid={children:cards,style:{}},colors={},intro={getBoundingClientRect:()=>({height:20})};
+  const section={clientWidth:900,clientHeight:450,querySelector:s=>({'.kit-vocab-grid':grid,'.color-vocab':colors,'.vocabulary-intro':intro})[s]};
+  const inner={style:{},querySelector:()=>section},back={},next={classList:{add(){}}},counter={},pager={querySelector:s=>({'#ep-screen-back':back,'#ep-screen-next':next,'#ep-screen-count':counter})[s]};
+  const ctx={window:{},screenPage:0,lang,t:()=>({back:'Back'}),go:n=>ctx.destination=n};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/kit-visuals.js'),'utf8'),ctx);vm.runInNewContext(fitSource,ctx);
+  ctx.fit=()=>ctx.fitVocabulary(inner,pager);ctx.fit();
+  assert.equal(cards.filter(c=>!c.hidden).length,8);assert.equal(next.disabled,false);back.onclick();assert.equal(ctx.destination,0);
+  next.onclick();assert.equal(cards.filter(c=>!c.hidden).length,2);assert.equal(colors.hidden,true);
+  next.onclick();assert.equal(grid.hidden,true);assert.equal(colors.hidden,false);assert.equal(next.disabled,false);
+  next.onclick();assert.equal(ctx.destination,2);
+ }
+});
