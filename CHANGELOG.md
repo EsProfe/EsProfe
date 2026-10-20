@@ -1,11 +1,11 @@
 # Changelog
 
-## [Teacher reports — draft, database activation pending] - 2026-10-20
+## [Teacher reports] - 2026-10-20
 
 - Added private student reports, first answers, bounded correction history, teacher feedback and explicit guest transfer for the football lesson.
 - Added teacher invitations with student consent, revocable links and database-enforced access. New attempts retain previous reports.
 - Added four-language report pages and batched saves, plus PostgreSQL isolation and retry/version tests in PR and release checks.
-- Requires `supabase/teacher-reports.sql`, verified teacher-account activation and live smoke testing before production release; see `docs/TEACHER_REPORTS.md`.
+- Owner applied `supabase/teacher-reports.sql` and confirmed teacher-account activation on 2026-10-20. Authenticated live smoke testing follows deployment; see `docs/TEACHER_REPORTS.md`.
 
 ## [Focused home navigation] - 2026-10-14
 
