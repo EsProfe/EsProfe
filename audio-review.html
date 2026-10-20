@@ -23,7 +23,7 @@
     <p class="lead">Пожалуйста, прослушайте и проверьте произношение, естественность и учебную уместность каждой фразы.</p>
     <section class="notice" aria-label="Статус аудио">
       <strong>Это предпрослушивание сценария, а не финальная аудиотека.</strong>
-      Сейчас фразы читает только голос испанского Испании (<span lang="es">es-ES</span>) вашего браузера. Кнопки становятся активными после его загрузки. После вашей проверки в уроки будут добавлены только записи с подтверждёнными правами на использование.
+      Фразы запрашивают испанский голос Испании (<span lang="es">es-ES</span>) вашего браузера. На телефоне кнопки работают и тогда, когда браузер не показывает список установленных голосов. После вашей проверки в уроки будут добавлены только записи с подтверждёнными правами на использование.
     </section>
     <div class="toolbar"><span id="count" class="count">Загружаем фразы…</span><button id="stop" class="button secondary" type="button">Остановить</button><span id="voiceStatus" class="voice-status"></span></div>
     <div id="content" aria-live="polite"></div>
@@ -32,12 +32,11 @@
   (()=>{
     const content=document.getElementById('content'),count=document.getElementById('count'),voiceStatus=document.getElementById('voiceStatus');
     let voices=[];
-    function spanishVoice(){return voices.find(v=>/^es-ES$/i.test(v.lang))||null}
-    function controlsReady(){content.querySelectorAll('[data-spoken-text]').forEach(button=>button.disabled=!spanishVoice())}
-    function refreshVoices(){voices=speechSynthesis.getVoices();const voice=spanishVoice();voiceStatus.textContent=voice?`Голос: ${voice.name} (${voice.lang}). «sale» звучит по-испански: «сале».`:'Загружаем голос испанского Испании (es-ES)…';controlsReady()}
-    function speak(text){const voice=spanishVoice();if(!voice)return;speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang='es-ES';utterance.voice=voice;speechSynthesis.speak(utterance)}
+    function spanishVoice(){return voices.find(v=>/^es-ES$/i.test(v.lang))||voices.find(v=>/^es/i.test(v.lang))||null}
+    function refreshVoices(){voices=speechSynthesis.getVoices();const voice=spanishVoice();voiceStatus.textContent=voice?`Голос: ${voice.name} (${voice.lang}). «sale» звучит по-испански: «сале».`:'Испанское произношение запрашивается как es-ES; голос выбирает ваше устройство.'}
+    function speak(text){const voice=spanishVoice();speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang='es-ES';if(voice)utterance.voice=voice;speechSynthesis.speak(utterance)}
     function escapeHTML(value){return value.replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}
-    function render(entries){count.textContent=`${entries.length} фраз для проверки`;const groups=new Map();entries.forEach((entry,index)=>{const group=groups.get(entry.group)||[];group.push({...entry,index:index+1});groups.set(entry.group,group)});content.innerHTML=[...groups].map(([group,items])=>`<section class="group"><h2>${escapeHTML(group)}</h2>${items.map(item=>`<article class="row"><span class="number">${item.index}</span><div><div class="phrase" lang="es">${escapeHTML(item.text)}</div><div class="meta">${escapeHTML(item.questionId)}</div></div><button class="button play" type="button" data-spoken-text="${escapeHTML(item.spokenText||item.text)}" ${spanishVoice()?'':'disabled'}>🔊 Прослушать</button></article>`).join('')}</section>`).join('');content.querySelectorAll('[data-spoken-text]').forEach(button=>button.addEventListener('click',()=>speak(button.dataset.spokenText)))}
+    function render(entries){count.textContent=`${entries.length} фраз для проверки`;const groups=new Map();entries.forEach((entry,index)=>{const group=groups.get(entry.group)||[];group.push({...entry,index:index+1});groups.set(entry.group,group)});content.innerHTML=[...groups].map(([group,items])=>`<section class="group"><h2>${escapeHTML(group)}</h2>${items.map(item=>`<article class="row"><span class="number">${item.index}</span><div><div class="phrase" lang="es">${escapeHTML(item.text)}</div><div class="meta">${escapeHTML(item.questionId)}</div></div><button class="button play" type="button" data-spoken-text="${escapeHTML(item.spokenText||item.text)}">🔊 Прослушать</button></article>`).join('')}</section>`).join('');content.querySelectorAll('[data-spoken-text]').forEach(button=>button.addEventListener('click',()=>speak(button.dataset.spokenText)))}
     document.getElementById('stop').addEventListener('click',()=>speechSynthesis.cancel());
     if('speechSynthesis' in window){refreshVoices();speechSynthesis.addEventListener?.('voiceschanged',refreshVoices)}else{voiceStatus.textContent='Ваш браузер не поддерживает предпрослушивание речи.'}
     fetch('data/a1-audio-manifest.json').then(response=>{if(!response.ok)throw new Error('manifest');return response.json()}).then(data=>render(data.entries)).catch(()=>{count.textContent='Не удалось загрузить список фраз.';content.innerHTML='<p class="error">Обновите страницу или сообщите об этой ошибке.</p>'})

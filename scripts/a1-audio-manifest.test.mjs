@@ -48,5 +48,6 @@ test('requested A1 preview pronunciations keep orthography but use a Spanish voi
   assert.equal(byQuestion.sp6.spokenText, '¿Me ayudas por favor?');
   const page = await readFile(path.join(root, 'audio-review.html'), 'utf8');
   assert.match(page, /\^es-ES\$/);
-  assert.match(page, /button\.disabled=!spanishVoice\(\)/);
+  assert.match(page, /utterance\.lang='es-ES'/);
+  assert.doesNotMatch(page, /button\.disabled=!spanishVoice\(\)/);
 });
