@@ -8,6 +8,7 @@ document.addEventListener("esprofe:progressAction",event=>{
   }
   if(step.topic==="a1"){
     if(step.subtopic==="route")window.openA1Curriculum?.();
+    else if(document.documentElement.dataset.learningMode==="course")window.EsProfePlatform?.openCourseLesson?.(step.subtopic||"alphabet-pronunciation");
     else window.openA1Lesson?.(step.subtopic||"alphabet-pronunciation");
     return;
   }

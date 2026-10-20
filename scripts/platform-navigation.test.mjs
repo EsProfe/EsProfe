@@ -49,7 +49,7 @@ function environment(language) {
   };
   const context = vm.createContext({ document, URL, URLSearchParams, setTimeout, console,
     location: { search: '', href: state.url }, history: { replaceState: (_, __, url) => state.url = String(url) },
-    scrollTo() {}, openA1Curriculum: options => opens.push(options.mode),
+    scrollTo() {}, openA1Curriculum: options => opens.push(options.mode), openA1Lesson: id => state.openedLesson = id,
     EsProfeStudentAccount: { user:null, open(){ state.accountOpened++; } },
     CustomEvent: class { constructor(type, options = {}) { this.type = type; this.detail = options.detail; } }
   });
@@ -59,7 +59,7 @@ function environment(language) {
     const button = new Element('button', dataset, html);
     document.dispatchEvent({ type: 'click', target: nested ? new Element('span', {}, button) : button });
   }
-  return { html, nodes, opens, state, account:context.EsProfeStudentAccount, click };
+  return { html, nodes, opens, state, account:context.EsProfeStudentAccount, platform:context.EsProfePlatform, click };
 }
 
 for (const language of ['ru', 'uk', 'en', 'es']) {
@@ -98,4 +98,14 @@ test('only a palette button changes palette; navigation still works afterwards',
   env.click({ action: 'free' }, true);
   assert.equal(env.opens.at(-1), 'free');
   assert.equal(env.html.dataset.homePalette, 'sol');
+});
+
+test('opening the current course lesson replaces the dashboard with the lesson', () => {
+  const env = environment('ru');
+  env.account.user = { id:'student-1' };
+  env.platform.openCourseLesson('greetings-farewells');
+  assert.equal(env.html.dataset.learningMode, 'course');
+  assert.equal(env.state.openedLesson, 'greetings-farewells');
+  assert.equal(env.nodes.get('studentProfile').style.display, 'none');
+  assert.equal(env.nodes.get('progressPanel').style.display, 'none');
 });
