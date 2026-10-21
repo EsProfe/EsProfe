@@ -217,7 +217,7 @@ test('short answers still require the correct agreement and cannot bypass the ar
  }
 });
 test('newly accepted short answers are repaired in either lesson without resolving real first mistakes',async()=>{
- for(const [lessonId,id,picked] of [['football-kit-a1','k2-f0','es amarilla'],['football-adjectives-a1','f0','es buena']]){
+ for(const [lessonId,id,picked] of [['football-kit-a1','k2-q3','portera'],['football-kit-a1','k2-q3','una portera'],['football-kit-a1','k2-f0','es amarilla'],['football-adjectives-a1','f0','es buena']]){
   const record={picked,ok:false,last:{picked,ok:false},resolved:false,wrongCount:1,history:[{picked,ok:false,phase:'first'}]};
   const state={...completedState(),stage:6,records:{[id]:record},retrying:[id]};
   const setup=await lessonSetup(state,lessonId),saved=JSON.parse(setup.storage.get(setup.key));
@@ -226,4 +226,12 @@ test('newly accepted short answers are repaired in either lesson without resolvi
  const record={picked:'pequeña',ok:false,last:{picked:'pequeño',ok:true},resolved:false,wrongCount:1,history:[{picked:'pequeña',ok:false},{picked:'pequeño',ok:true}]};
  const setup=await lessonSetup({...completedState(),records:{w0:record}});
  assert.equal(JSON.parse(setup.storage.get(setup.key)).records.w0.resolved,false,'a real first mistake still needs spaced review');
+});
+
+test('goalkeeper question accepts feminine noun phrases and rejects masculine or unrelated nouns',async()=>{
+ for(const [answer,ok] of [['portera',true],['una portera',true],['la portera',true],['Es una portera.',true],['portero',false],['un portera',false],['camiseta',false]]){
+  const state={...completedState(),stage:5,modelSeen:true,positions:{3:0,4:0,5:3,6:0},records:{},drafts:{},tokens:{}};
+  const setup=await lessonSetup(state,'football-kit-a1');setup.root.querySelector('#ep-answer').value=answer;setup.root.querySelector('#ep-check').onclick();
+  assert.equal(JSON.parse(setup.storage.get(setup.key)).records['k2-q3'].ok,ok,answer);
+ }
 });
