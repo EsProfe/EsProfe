@@ -1,0 +1,45 @@
+#esprofe-football .vocab-modes{display:flex;gap:5px;flex-wrap:wrap;flex:none}
+#esprofe-football .vocab-modes button{font-size:14px;min-height:34px;padding:5px 9px}
+#esprofe-football .vocab-modes [aria-pressed=true],#esprofe-football .vp-pairs [aria-pressed=true]{background:#123b54;color:white;border-color:#123b54}
+#esprofe-football .vocabulary-practice{display:flex;flex-direction:column;flex:1;min-height:0;gap:5px}
+#esprofe-football .vocabulary-practice>small{font-size:12px;color:#4c697b}
+#esprofe-football .vp-content{flex:1;min-height:0;display:flex;flex-direction:column;gap:5px;overflow:auto}
+#esprofe-football .vp-direction{font-size:14px;display:flex;align-items:center;gap:7px;flex:none}
+#esprofe-football .vp-direction select{font-size:14px;padding:3px;min-height:32px;max-width:100%}
+#esprofe-football .vp-instruction,#esprofe-football .vp-status{margin:0;font-size:14px;line-height:1.25;flex:none}
+#esprofe-football .vp-card{border:1px solid #bdced8;background:#fff;border-radius:16px;min-height:120px;flex:1;display:flex;flex-direction:column;max-width:660px;width:100%;align-self:center;box-sizing:border-box;padding:8px;gap:5px}
+#esprofe-football .vp-card .kit-photo{flex:1;min-height:0;width:100%;display:flex;flex-direction:column;margin:0}
+#esprofe-football .vp-card .kit-photo img{flex:1;min-height:0;height:0;width:100%;background:#e5eff4}
+#esprofe-football #vp-flip{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:8px;min-height:80px;flex:none;background:#edf7fb;border-color:#c6dde8}
+#esprofe-football .vp-prompt{font-size:24px;line-height:1.15}
+#esprofe-football .vp-answer{font-size:20px;color:#28546a;line-height:1.15}
+#esprofe-football .is-flipped .vp-answer{color:#216043;font-weight:700;animation:vp-reveal .18s ease-out}
+#esprofe-football .vp-actions{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;flex:none;min-height:38px}
+#esprofe-football .vp-actions button,#esprofe-football .vp-footer button,#esprofe-football #vp-next-pairs{font-size:16px;min-height:38px;padding:6px 10px}
+#esprofe-football .vp-footer{display:flex;justify-content:space-between;gap:6px;flex:none}
+#esprofe-football .vp-pairs{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:800px;width:100%;align-self:center;flex:1;min-height:0;max-height:400px}
+#esprofe-football .vp-pairs>div{display:grid;gap:6px;grid-auto-rows:1fr;min-height:0}
+#esprofe-football .vp-pairs button{font-size:18px;line-height:1.15;min-height:46px;padding:8px;overflow-wrap:anywhere}
+#esprofe-football .vp-pairs button:disabled{opacity:1;background:#e1f3e8;color:#276143;border-color:#a6c9b5}
+#esprofe-football .vp-finished{margin:auto;text-align:center;max-width:600px}
+#esprofe-football .vp-finished h2{font-size:24px}
+@keyframes vp-reveal{from{opacity:.3;transform:rotateX(35deg)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){#esprofe-football .is-flipped .vp-answer{animation:none}}
+@media(max-width:650px),(max-height:650px){
+ #esprofe-football .vp-prompt{font-size:20px}
+ #esprofe-football .vp-answer{font-size:18px}
+ #esprofe-football .vp-pairs button{font-size:16px;padding:6px}
+ #esprofe-football .vp-card{padding:4px}
+ #esprofe-football #vp-flip{min-height:65px;padding:5px;gap:3px}
+ #esprofe-football .vp-card .kit-photo figcaption{font-size:11px;line-height:14px}
+}
+@media(max-height:500px){#esprofe-football .vp-card .kit-photo{display:none}}
+#esprofe-football .vp-pairs [data-vp-word]{display:flex;align-items:center;gap:10px;text-align:left}
+#esprofe-football .vp-thumb{width:66px;height:58px;border-radius:7px;object-fit:cover;flex:none}
+#esprofe-football .vp-credits{font-size:12px;color:#285974;align-self:flex-end}
+@media(max-width:650px),(max-height:650px){#esprofe-football .vp-thumb{width:42px;height:42px}#esprofe-football .vp-pairs [data-vp-word]{gap:5px}}
+#esprofe-football .lesson-celebration{display:flex;gap:16px;align-items:center;padding:14px 18px;background:linear-gradient(115deg,#fff5d5,#e3f3fb);border:1px solid #e5bd50;border-radius:16px;break-inside:avoid}
+#esprofe-football .lesson-trophy{font-size:64px;line-height:1;flex:none}
+#esprofe-football .lesson-celebration h2{font-size:23px;margin:0 0 6px;color:#123b54}
+#esprofe-football .lesson-celebration p{font-size:17px;margin:0}
+@media(max-width:650px){#esprofe-football .lesson-trophy{font-size:44px}#esprofe-football .lesson-celebration{padding:10px;gap:10px}#esprofe-football .lesson-celebration h2{font-size:20px}}

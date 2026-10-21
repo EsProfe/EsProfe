@@ -1047,5 +1047,31 @@
     {
       "photo": "carvajal"
     }
-  ]
+  ],
+  "vocabIds": [
+    "shirt",
+    "shorts",
+    "boots",
+    "gloves",
+    "goalkeeper",
+    "referee",
+    "team",
+    "forward",
+    "midfielder",
+    "defender"
+  ],
+  "completion": {
+    "ru": {
+      "title": "Урок завершён! Ты — чемпион!",
+      "text": "Ты дошёл до финала, разобрал ошибки и придумал свои фразы. Отличная работа!"
+    },
+    "uk": {
+      "title": "Урок завершено! Ти — чемпіон!",
+      "text": "Ти дійшов до фіналу, розібрав помилки та склав власні фрази. Чудова робота!"
+    },
+    "en": {
+      "title": "Lesson complete! You are a champion!",
+      "text": "You reached the finish, reviewed your mistakes and made your own sentences. Great work!"
+    }
+  }
 }

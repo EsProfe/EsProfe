@@ -107,7 +107,7 @@ async function lessonSetup(state,lessonId){
   if(state)storage.set(key,JSON.stringify(state));
   const account={user:owner,available:true,init:async()=>owner,subscribe:fn=>{subscriber=fn},history:async()=>[],saveAttempt:async a=>{saved.push(a);return a.id}};
   const context={window:{EsProfeLessonAccount:account,location:{search:lessonId?'?lesson='+lessonId:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>['lesson.json','football-kit.json'].includes(url.split('?')[0])?data:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
-  for(const file of ['lesson-catalog.js','kit-visuals.js'])vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/'+file),'utf8'),context);
+  for(const file of ['lesson-catalog.js','kit-visuals.js','vocabulary-practice.js'])vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/'+file),'utf8'),context);
   await vm.runInNewContext(lessonSource,context);
   return {root,storage,saved,account,key,switchUser(next){account.user=next;subscriber()}};
 }
@@ -234,4 +234,14 @@ test('goalkeeper question accepts feminine noun phrases and rejects masculine or
   const setup=await lessonSetup(state,'football-kit-a1');setup.root.querySelector('#ep-answer').value=answer;setup.root.querySelector('#ep-check').onclick();
   assert.equal(JSON.parse(setup.storage.get(setup.key)).records['k2-q3'].ok,ok,answer);
  }
+});
+
+test('champion banner requires completed core tasks, review and own sentences, not optional flashcards',async()=>{
+ const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-kit.json')));
+ const state={...completedState(),records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
+ const complete=await lessonSetup(state,'football-kit-a1');assert(complete.root.innerHTML.includes('Урок завершён! Ты — чемпион!'));
+ const missing=await lessonSetup({...state,own:['','','']},'football-kit-a1');assert(!missing.root.innerHTML.includes('lesson-celebration'));
+ const records={...state.records,'k2-q0':{picked:'roja',ok:false,last:{ok:true},resolved:false}};
+ const review=await lessonSetup({...state,records},'football-kit-a1');assert(!review.root.innerHTML.includes('lesson-celebration'));
+ const words=await lessonSetup({...state,stage:1},'football-kit-a1');assert(words.root.innerHTML.includes('Найди пары'));assert(words.root.innerHTML.includes('Карточки'));
 });
