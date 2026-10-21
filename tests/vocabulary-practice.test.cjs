@@ -6,7 +6,7 @@ function setup(){
  const store=new Map();let user='guest',lang='ru',html='',nodes=[];
  const host={querySelector:s=>nodes.find(x=>x.id===s.slice(1))||null,querySelectorAll:s=>{const name=s.slice(1,-1).replace(/^data-/, '').replace(/-([a-z])/g,(_,c)=>c.toUpperCase());return nodes.filter(n=>name in n.dataset)}};
  function draw(){html=practice.render();nodes=[];for(const tag of html.matchAll(/<(button|select)\b([^>]*)>/g)){const attrs=tag[2],dataset={};for(const a of attrs.matchAll(/data-([a-z-]+)="([^"]*)"/g))dataset[a[1].replace(/-([a-z])/g,(_,c)=>c.toUpperCase())]=a[2];nodes.push({id:attrs.match(/\bid="([^"]*)"/)?.[1],dataset,disabled:/\bdisabled\b/.test(attrs),focus(){}})}practice.bind(host)}
- const practice=api.create({entries,storage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},key:()=>user,language:()=>lang,picture:()=>'<figure>Photo</figure>',thumbnail:()=>'<img alt="">',speak(){},change:draw,overview:()=>practice.setMode('overview'),rule(){},rng:()=>.99});
+ const practice=api.create({entries,storage:{getItem:k=>store.get(k),setItem:(k,v)=>store.set(k,v)},key:()=>user,language:()=>lang,picture:(_,conceal)=>conceal?'<figure>Neutral photo caption</figure>':'<figure>Photo</figure>',thumbnail:()=>'<img alt="">',speak(){},change:draw,overview:()=>practice.setMode('overview'),rule(){},rng:()=>.99});
  return {practice,store,host,draw,html:()=>html,node:(key,value)=>nodes.find(n=>n.dataset[key]===value),session:()=>JSON.parse(store.get(user)).sessions,switchUser(value){user=value;practice.reset();draw()},language(value){lang=value;draw()}};
 }
 test('failed cards return after three intervening cards and cannot create an endless round',()=>{
@@ -19,7 +19,7 @@ test('failed cards return after three intervening cards and cannot create an end
 test('five-card rounds hide the answer until flip, keep both directions, resume and isolate users',()=>{
  const s=setup();s.practice.setMode('cards');assert(!s.html().includes('пример 0'));assert(s.html().includes('Photo'));assert(s.html().includes('Осталось: 5'));
  s.host.querySelector('#vp-flip').onclick();assert(s.html().includes('пример 0'));s.host.querySelector('#vp-know').onclick();assert.equal(s.session().forward.queue.length,4);
- s.host.querySelector('#vp-direction').onchange({target:{value:'reverse'}});assert(s.html().includes('пример 0'));assert(!s.html().includes('el ejemplo 0'));
+ s.host.querySelector('#vp-direction').onchange({target:{value:'reverse'}});assert(s.html().includes('пример 0'));assert(!s.html().includes('el ejemplo 0'));assert(s.html().includes('Neutral photo caption'));
  s.host.querySelector('#vp-flip').onclick();assert(s.html().includes('el ejemplo 0'));s.host.querySelector('#vp-again').onclick();assert.equal(s.session().reverse.queue[3],'v0');
  s.switchUser('student');s.practice.setMode('cards');assert(s.html().includes('Осталось: 5'));
  s.switchUser('guest');s.practice.setMode('cards');assert(s.html().includes('Осталось: 4'));assert(!s.html().includes('пример 1'));
