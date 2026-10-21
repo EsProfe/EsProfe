@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261021-vocabulary11');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261021-vocabulary13');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
@@ -303,7 +303,7 @@ if(photoLesson&&window.EsProfeVocabularyPractice)vocabularyPractice=window.EsPro
  entries:vocab.map((w,i)=>({id:data.vocabIds[i],word:w[0],uk:w[1],en:w[2],ru:w[3],visual:data.vocabVisuals[i]})),
  thumbnail:v=>v?.photo?`<img class="vp-thumb" src="images/${esc(v.photo)}.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">`:'',
  credits:()=>`<a class="vp-credits" href="photo-credits.html" target="_blank" rel="noopener">${({ru:'Авторы фотографий',uk:'Автори фотографій',en:'Photo credits'})[lang]} ©</a>`,
- storage:localStorage,key:()=>saveKey+':vocabulary-v1',language:()=>lang,picture,speak:speakSpanish,change:render,
+ storage:localStorage,key:()=>saveKey+':vocabulary-v1',language:()=>lang,picture:(v,conceal)=>conceal&&v?.photo?`<figure class="kit-picture kit-photo"><img src="images/${esc(v.photo)}.webp" alt="" decoding="async"><figcaption><a href="photo-credits.html#${esc(v.photo)}" target="_blank" rel="noopener" aria-label="Photo credits">©</a></figcaption></figure>`:picture(v),speak:speakSpanish,change:render,
  overview:()=>{vocabularyPractice.setMode('overview')},rule:()=>go(2)
 });
 account.subscribe(()=>{
