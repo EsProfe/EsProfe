@@ -43,3 +43,5 @@
 #esprofe-football .lesson-celebration h2{font-size:23px;margin:0 0 6px;color:#123b54}
 #esprofe-football .lesson-celebration p{font-size:17px;margin:0}
 @media(max-width:650px){#esprofe-football .lesson-trophy{font-size:44px}#esprofe-football .lesson-celebration{padding:10px;gap:10px}#esprofe-football .lesson-celebration h2{font-size:20px}}
+/* Integer line height avoids a rounding-only scrollbar on a fitted card. */
+#esprofe-football .vp-status{line-height:20px}
