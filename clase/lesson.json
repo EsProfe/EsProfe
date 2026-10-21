@@ -48,7 +48,7 @@
       "selectType": "Выбери форму",
       "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
       "write": "Составь полное предложение по подсказке.",
-      "fix": "Тренер перепутал формы! Напиши всё предложение правильно.",
+      "fix": "Исправь ошибку. Можно кратко; в задании на артикль напиши предложение целиком.",
       "answer": "Твой ответ",
       "own": "Составь три предложения о своём игроке, футболистке и команде. Используй три разных прилагательных.",
       "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
@@ -126,7 +126,7 @@
       "selectType": "Обери форму",
       "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
       "write": "Склади повне речення за підказкою.",
-      "fix": "Тренер переплутав форми! Напиши все речення правильно.",
+      "fix": "Виправ помилку. Можна коротко; у завданні на артикль напиши речення повністю.",
       "answer": "Твоя відповідь",
       "own": "Склади три речення про свого гравця, футболістку та команду. Використай три різні прикметники.",
       "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
@@ -204,7 +204,7 @@
       "selectType": "Choose the form",
       "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
       "write": "Write a complete sentence using the prompts.",
-      "fix": "The coach mixed up the forms! Write the whole sentence correctly.",
+      "fix": "Correct the mistake. Short answers are fine; for the article task, write the full sentence.",
       "answer": "Your answer",
       "own": "Write three sentences about your player, female player and team. Use three different adjectives.",
       "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
@@ -404,70 +404,120 @@
         "p": "el jugador + pequeño",
         "a": "pequeño",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "pequeño",
+          "es pequeño",
+          "el jugador es pequeño."
+        ]
       },
       {
         "id": "w1",
         "p": "la jugadora + pequeño",
         "a": "pequeña",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "pequeña",
+          "es pequeña",
+          "la jugadora es pequeña."
+        ]
       },
       {
         "id": "w2",
         "p": "los jugadores + pequeño",
         "a": "pequeños",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "pequeños",
+          "son pequeños",
+          "los jugadores son pequeños."
+        ]
       },
       {
         "id": "w3",
         "p": "las jugadoras + pequeño",
         "a": "pequeñas",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "pequeñas",
+          "son pequeñas",
+          "las jugadoras son pequeñas."
+        ]
       },
       {
         "id": "w4",
         "p": "el equipo + grande",
         "a": "grande",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "grande",
+          "es grande",
+          "el equipo es grande."
+        ]
       },
       {
         "id": "w5",
         "p": "los equipos + grande",
         "a": "grandes",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "grandes",
+          "son grandes",
+          "los equipos son grandes."
+        ]
       },
       {
         "id": "w6",
         "p": "la jugadora + fuerte",
         "a": "fuerte",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "fuerte",
+          "es fuerte",
+          "la jugadora es fuerte."
+        ]
       },
       {
         "id": "w7",
         "p": "las jugadoras + fuerte",
         "a": "fuertes",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "fuertes",
+          "son fuertes",
+          "las jugadoras son fuertes."
+        ]
       },
       {
         "id": "w8",
         "p": "el jugador + débil",
         "a": "débil",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "débil",
+          "es débil",
+          "el jugador es débil."
+        ]
       },
       {
         "id": "w9",
         "p": "las jugadoras + débil",
         "a": "débiles",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "débiles",
+          "son débiles",
+          "las jugadoras son débiles."
+        ]
       }
     ],
     "4": [
@@ -781,28 +831,48 @@
         "p": "La jugadora es bueno.",
         "a": "La jugadora es buena.",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "buena",
+          "es buena",
+          "La jugadora es buena."
+        ]
       },
       {
         "id": "f1",
         "p": "Los jugadores son pequeña.",
         "a": "Los jugadores son pequeños.",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "pequeños",
+          "son pequeños",
+          "Los jugadores son pequeños."
+        ]
       },
       {
         "id": "f2",
         "p": "Las camisetas son hermoso.",
         "a": "Las camisetas son hermosas.",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "hermosas",
+          "son hermosas",
+          "Las camisetas son hermosas."
+        ]
       },
       {
         "id": "f3",
         "p": "Los estadios son grande.",
         "a": "Los estadios son grandes.",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "grandes",
+          "son grandes",
+          "Los estadios son grandes."
+        ]
       },
       {
         "id": "f4",
@@ -816,7 +886,12 @@
         "p": "Leo es un portero buena.",
         "a": "Leo es un portero bueno.",
         "o": null,
-        "type": "input"
+        "type": "input",
+        "accepted": [
+          "bueno",
+          "es bueno",
+          "Leo es bueno."
+        ]
       }
     ]
   },

@@ -193,3 +193,37 @@ test('team question accepts el and un with or without Es and repairs a false err
  const s=await lessonSetup(state,'football-kit-a1'),saved=JSON.parse(s.storage.get(s.key));
  assert.equal(saved.records['k2-q4'].ok,true);assert.equal(saved.records['k2-q4'].resolved,true);assert.equal(saved.records['k2-q4'].wrongCount,0);assert.equal(saved.records['k2-q4'].history[0].ok,true);assert(saved.reportDirty);assert(!saved.retrying.includes('k2-q4'));
 });
+
+test('both football lessons accept adjective, short sentence and full sentence consistently',async()=>{
+ for(const lessonId of ['football-adjectives-a1','football-kit-a1']){
+  const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/',lessonId==='football-kit-a1'?'football-kit.json':'lesson.json')));
+  for(const [group,items] of Object.entries(data.groups))for(const [index,item] of items.entries()){
+   if(item.type!=='input'||!item.accepted?.length)continue;
+   for(const answer of item.accepted){
+    const state={...completedState(),stage:Number(group),modelSeen:true,positions:{3:0,4:0,5:0,6:0,[group]:index},records:{},drafts:{},tokens:{}};
+    const setup=await lessonSetup(state,lessonId);setup.root.querySelector('#ep-answer').value=answer;setup.root.querySelector('#ep-check').onclick();
+    assert.equal(JSON.parse(setup.storage.get(setup.key)).records[item.id].ok,true,item.id+': '+answer);
+   }
+  }
+ }
+});
+test('short answers still require the correct agreement and cannot bypass the article task',async()=>{
+ for(const [lessonId,group,index,answer] of [
+  ['football-kit-a1',6,0,'amarillo'],['football-kit-a1',6,0,'son amarilla'],['football-kit-a1',6,1,'es negros'],
+  ['football-adjectives-a1',6,0,'bueno'],['football-adjectives-a1',6,4,'fuerte']]){
+  const state={...completedState(),stage:group,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[group]:index},records:{},drafts:{},tokens:{}};
+  const setup=await lessonSetup(state,lessonId);setup.root.querySelector('#ep-answer').value=answer;setup.root.querySelector('#ep-check').onclick();
+  assert.equal(Object.values(JSON.parse(setup.storage.get(setup.key)).records)[0].ok,false,answer);
+ }
+});
+test('newly accepted short answers are repaired in either lesson without resolving real first mistakes',async()=>{
+ for(const [lessonId,id,picked] of [['football-kit-a1','k2-f0','es amarilla'],['football-adjectives-a1','f0','es buena']]){
+  const record={picked,ok:false,last:{picked,ok:false},resolved:false,wrongCount:1,history:[{picked,ok:false,phase:'first'}]};
+  const state={...completedState(),stage:6,records:{[id]:record},retrying:[id]};
+  const setup=await lessonSetup(state,lessonId),saved=JSON.parse(setup.storage.get(setup.key));
+  assert.equal(saved.records[id].ok,true);assert.equal(saved.records[id].wrongCount,0);assert.equal(saved.records[id].resolved,true);assert(saved.reportDirty);
+ }
+ const record={picked:'pequeña',ok:false,last:{picked:'pequeño',ok:true},resolved:false,wrongCount:1,history:[{picked:'pequeña',ok:false},{picked:'pequeño',ok:true}]};
+ const setup=await lessonSetup({...completedState(),records:{w0:record}});
+ assert.equal(JSON.parse(setup.storage.get(setup.key)).records.w0.resolved,false,'a real first mistake still needs spaced review');
+});

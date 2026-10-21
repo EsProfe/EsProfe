@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261020-navigation7');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261020-answers8');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
@@ -55,19 +55,9 @@ if(item.id.startsWith('w')&&/\b(?:es|son)\b/i.test(answer))return answer;
 const subject=item.p.split(' + ')[0];return subject.charAt(0).toUpperCase()+subject.slice(1)+( /^(los|las) /i.test(subject)?' son ':' es ')+answer+'.';
 }
 function isCorrectAnswer(item,answer){return norm(answer)===norm(item.a)||(item.accepted||[]).some(x=>norm(answer)===norm(x))||(item.id.startsWith('w')&&norm(answer)===norm(sentence(item,item.a)))}
-function repairWarmRecords(){
- for(const item of groups[3]){
-  const record=records[item.id];if(!record)continue;
-  if(isCorrectAnswer(item,record.picked||''))record.ok=true;
-  if(record.last&&isCorrectAnswer(item,record.last.picked||''))record.last.ok=true;
-  for(const entry of record.history||[]){if(isCorrectAnswer(item,entry.picked||''))entry.ok=true}
-  if((record.last||record).ok){record.resolved=true;retrying.delete(item.id)}
- }
-}
 // Regrade stored answers only when a supported alternative was previously rejected.
 function repairAcceptedRecords(){
- if(!photoLesson)return;
- for(const item of all.filter(q=>q.accepted)){
+ for(const item of all){
   const record=records[item.id];if(!record)continue;
   const firstFixed=!record.ok&&isCorrectAnswer(item,record.picked||'');
   const lastFixed=record.last&&!record.last.ok&&isCorrectAnswer(item,record.last.picked||'');
@@ -303,7 +293,6 @@ function loadLocal(){
       savedAttemptId=saved.savedAttemptId===runId?runId:null;reportVersion=Number.isInteger(saved.reportVersion)?saved.reportVersion:0;reportSavedAt=saved.reportSavedAt||null;reportPending=saved.reportPending||null;reportDirty=!!saved.reportDirty;
     }
   }catch(_){}
-  repairWarmRecords();
   repairAcceptedRecords();
 }
 loadLocal();
