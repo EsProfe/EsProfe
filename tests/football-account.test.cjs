@@ -99,7 +99,7 @@ const lessonData=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/lesson
 const copyData=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/account-copy.json')));
 const lessonSource=fs.readFileSync(path.join(__dirname,'../clase/lesson.js'),'utf8');
 function completedState(){return {lang:'ru',stage:8,positions:{3:0,4:0,5:0,6:0},records:Object.fromEntries(Object.values(lessonData.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}])),drafts:{},tokens:{},own:['Leo es bueno.','Ana es mala.','España es fuerte.'],modelSeen:true,runId:attempt.id}}
-async function lessonSetup(state,lessonId){
+async function lessonSetup(state,lessonId,options={}){
   const root=new Root(),storage=new Map(),saved=[];let subscriber;
   const selected=lessonId||'football-adjectives-a1';
   const selectedLesson=require('../clase/lesson-catalog.js').get(selected);
@@ -108,9 +108,10 @@ async function lessonSetup(state,lessonId){
   if(state)storage.set(key,JSON.stringify(state));
   const account={user:owner,available:true,init:async()=>owner,subscribe:fn=>{subscriber=fn},history:async()=>[],saveAttempt:async a=>{saved.push(a);return a.id}};
   const context={window:{EsProfeLessonAccount:account,location:{search:lessonId?'?lesson='+lessonId:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>require('../clase/lesson-catalog.js').lessons.some(l=>l.file===url.split('?')[0])?data:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
+  const spoken=[];if(options.captureSpeech){context.SpeechSynthesisUtterance=function(text){this.text=text};context.window.speechSynthesis={cancel(){},getVoices:()=>[{lang:'es-ES'}],speak:u=>spoken.push(u.text)}}
   for(const file of ['lesson-catalog.js','kit-visuals.js','scene-visuals.js','vocabulary-practice.js'])vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/'+file),'utf8'),context);
   await vm.runInNewContext(lessonSource,context);
-  return {root,storage,saved,account,key,switchUser(next){account.user=next;subscriber()}};
+  return {root,storage,saved,account,key,spoken,switchUser(next){account.user=next;subscriber()}};
 }
 test('lesson saves complete score once and persists saved state across reload',async()=>{
   const s=await lessonSetup(completedState());assert.equal(s.root.querySelector('#ep-cloud-save').disabled,false);
@@ -272,5 +273,15 @@ test('third lesson uses its own progress, localized rule, scene and complete res
  for(const lang of ['ru','uk','en']){
   const rule=await lessonSetup({...state,lang,stage:2},'football-location-a1');assert(rule.root.innerHTML.includes('Messi está en el campo.'));assert(!rule.root.innerHTML.includes('La camiseta es roja.'));
   const scene=await lessonSetup({...state,lang,stage:5,modelSeen:true,records:{}},'football-location-a1');assert(scene.root.innerHTML.includes('pitch-map'));assert(scene.root.innerHTML.includes(data.scenes.training.title[lang]));
+ }
+});
+
+test('Modrich is sent to Spanish speech while previous surname spellings remain accepted',async()=>{
+ for(const spelling of ['Modrich','Modrić','Modric']){
+  const state={...completedState(),stage:6,modelSeen:true,positions:{3:0,4:0,5:0,6:1},records:{},drafts:{},tokens:{}};
+  const s=await lessonSetup(state,'football-location-a1',{captureSpeech:true});
+  s.root.querySelector('#ep-answer').value='Messi y '+spelling+' están en el campo.';s.root.querySelector('#ep-check').onclick();
+  assert.equal(JSON.parse(s.storage.get(s.key)).records['fl1-f1'].ok,true,spelling);
+  assert.equal(s.spoken[0],'Messi y Modrich están en el campo.');
  }
 });
