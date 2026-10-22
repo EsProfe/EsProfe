@@ -285,3 +285,13 @@ test('Modrich is sent to Spanish speech while previous surname spellings remain 
   assert.equal(s.spoken[0],'Messi y Modrich están en el campo.');
  }
 });
+
+test('goalkeeper identity accepts role, name and full sentences; hay stays in a separate yes/no model',async()=>{
+ const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-location.json')));
+ assert.equal(data.groups[5][3].p,'¿Quién está en la portería?');assert(data.D.ru.modelQuestions.includes('¿Hay un portero en la portería? — Sí, hay un portero.'));
+ for(const answer of ['El portero','Neuer','Es el portero','Neuer está en la portería','Hay un portero']){
+  const state={...completedState(),stage:5,modelSeen:true,positions:{3:0,4:0,5:3,6:0},records:{},drafts:{},tokens:{}};
+  const s=await lessonSetup(state,'football-location-a1');s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();
+  assert.equal(JSON.parse(s.storage.get(s.key)).records['fl1-q2'].ok,true,answer);
+ }
+});
