@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261022-location1');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261022-location2');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
