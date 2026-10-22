@@ -2059,3 +2059,10 @@
   .a1-pronoun-grid { grid-template-columns: 1fr; gap: 10px; }
   .a1-pronoun-column p { grid-template-columns: minmax(104px, .9fr) minmax(0, 1.35fr); }
 }
+
+
+/* Data-driven lesson artwork: one responsive, optional illustration per lesson. */
+.a1-lesson-illustration{margin:16px 0 18px;border:1px solid #d5e4f4;border-radius:18px;overflow:hidden;background:#f7fbff;box-shadow:0 8px 22px rgba(20,66,112,.10)}
+.a1-lesson-illustration img{display:block;width:100%;aspect-ratio:16/6;object-fit:cover;object-position:center;}
+.a1-lesson-illustration figcaption{padding:9px 13px;color:#315579;font-size:.88rem;line-height:1.35;background:linear-gradient(90deg,#f8fcff,#fffaf0)}
+@media (max-width:640px){.a1-lesson-illustration{margin:12px 0 14px;border-radius:14px}.a1-lesson-illustration img{aspect-ratio:16/8}.a1-lesson-illustration figcaption{padding:8px 11px;font-size:.82rem}}

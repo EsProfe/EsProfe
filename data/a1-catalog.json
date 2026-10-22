@@ -2,102 +2,1807 @@
   "version": 3,
   "level": "A1",
   "modules": {
-    "a1-foundations-01": {"ru":"Старт и базовые основы","uk":"Старт і базові основи","en":"Getting started","es":"Inicio y bases"},
-    "a1-grammar-01": {"ru":"Артикли, род и число","uk":"Артиклі, рід і число","en":"Articles, gender and number","es":"Artículos, género y número"},
-    "a1-grammar-02": {"ru":"Местоимения и базовое предложение","uk":"Займенники та базове речення","en":"Pronouns and basic sentences","es":"Pronombres y oración básica"},
-    "a1-verbs-01": {"ru":"Ser, estar и hay","uk":"Ser, estar і hay","en":"Ser, estar and hay","es":"Ser, estar y hay"},
-    "a1-verbs-02": {"ru":"Presente: правильные глаголы","uk":"Presente: правильні дієслова","en":"Present: regular verbs","es":"Presente: verbos regulares"},
-    "a1-verbs-03": {"ru":"Основные неправильные глаголы","uk":"Основні неправильні дієслова","en":"Core irregular verbs","es":"Verbos irregulares principales"},
-    "a1-verbs-04": {"ru":"Возвратные глаголы и распорядок дня","uk":"Зворотні дієслова та розпорядок дня","en":"Reflexive verbs and daily routine","es":"Verbos reflexivos y rutina diaria"},
-    "a1-grammar-03": {"ru":"Описание людей и предметов","uk":"Опис людей і предметів","en":"Describing people and things","es":"Descripción de personas y cosas"},
-    "a1-grammar-04": {"ru":"Предлоги и пространство","uk":"Прийменники та простір","en":"Prepositions and space","es":"Preposiciones y espacio"},
-    "a1-grammar-05": {"ru":"Gustar и базовые конструкции","uk":"Gustar і базові конструкції","en":"Gustar and basic structures","es":"Gustar y estructuras básicas"},
-    "a1-vocabulary": {"ru":"Лексика A1","uk":"Лексика A1","en":"A1 vocabulary","es":"Vocabulario A1"},
-    "a1-communication": {"ru":"Коммуникация A1","uk":"Комунікація A1","en":"A1 communication","es":"Comunicación A1"},
-    "a1-skills": {"ru":"Навыки A1","uk":"Навички A1","en":"A1 skills","es":"Destrezas A1"},
-    "a1-assessment": {"ru":"Контроль A1","uk":"Контроль A1","en":"A1 assessment","es":"Evaluación A1"}
+    "a1-foundations-01": {
+      "ru": "Старт и базовые основы",
+      "uk": "Старт і базові основи",
+      "en": "Getting started",
+      "es": "Inicio y bases"
+    },
+    "a1-grammar-01": {
+      "ru": "Артикли, род и число",
+      "uk": "Артиклі, рід і число",
+      "en": "Articles, gender and number",
+      "es": "Artículos, género y número"
+    },
+    "a1-grammar-02": {
+      "ru": "Местоимения и базовое предложение",
+      "uk": "Займенники та базове речення",
+      "en": "Pronouns and basic sentences",
+      "es": "Pronombres y oración básica"
+    },
+    "a1-verbs-01": {
+      "ru": "Ser, estar и hay",
+      "uk": "Ser, estar і hay",
+      "en": "Ser, estar and hay",
+      "es": "Ser, estar y hay"
+    },
+    "a1-verbs-02": {
+      "ru": "Presente: правильные глаголы",
+      "uk": "Presente: правильні дієслова",
+      "en": "Present: regular verbs",
+      "es": "Presente: verbos regulares"
+    },
+    "a1-verbs-03": {
+      "ru": "Основные неправильные глаголы",
+      "uk": "Основні неправильні дієслова",
+      "en": "Core irregular verbs",
+      "es": "Verbos irregulares principales"
+    },
+    "a1-verbs-04": {
+      "ru": "Возвратные глаголы и распорядок дня",
+      "uk": "Зворотні дієслова та розпорядок дня",
+      "en": "Reflexive verbs and daily routine",
+      "es": "Verbos reflexivos y rutina diaria"
+    },
+    "a1-grammar-03": {
+      "ru": "Описание людей и предметов",
+      "uk": "Опис людей і предметів",
+      "en": "Describing people and things",
+      "es": "Descripción de personas y cosas"
+    },
+    "a1-grammar-04": {
+      "ru": "Предлоги и пространство",
+      "uk": "Прийменники та простір",
+      "en": "Prepositions and space",
+      "es": "Preposiciones y espacio"
+    },
+    "a1-grammar-05": {
+      "ru": "Gustar и базовые конструкции",
+      "uk": "Gustar і базові конструкції",
+      "en": "Gustar and basic structures",
+      "es": "Gustar y estructuras básicas"
+    },
+    "a1-vocabulary": {
+      "ru": "Лексика A1",
+      "uk": "Лексика A1",
+      "en": "A1 vocabulary",
+      "es": "Vocabulario A1"
+    },
+    "a1-communication": {
+      "ru": "Коммуникация A1",
+      "uk": "Комунікація A1",
+      "en": "A1 communication",
+      "es": "Comunicación A1"
+    },
+    "a1-skills": {
+      "ru": "Навыки A1",
+      "uk": "Навички A1",
+      "en": "A1 skills",
+      "es": "Destrezas A1"
+    },
+    "a1-assessment": {
+      "ru": "Контроль A1",
+      "uk": "Контроль A1",
+      "en": "A1 assessment",
+      "es": "Evaluación A1"
+    }
   },
   "lessons": {
-    "alphabet-pronunciation": {"file":"data/a1-lessons.json","status":"ready","icon":"🔤","ru":["Алфавит и произношение","Буквы · звуки · CA/CO/CU · C/QU/K · ударение и тильда"],"uk":["Алфавіт і вимова","Літери · звуки · CA/CO/CU · C/QU/K · наголос і тильда"],"en":["Alphabet and pronunciation","Letters · sounds · CA/CO/CU · C/QU/K · stress and accents"],"es":["Alfabeto y pronunciación","Letras · sonidos · CA/CO/CU · C/QU/K · acento y tilde"]},
-    "greetings-farewells": {"file":"data/a1-lessons-foundations.json","status":"ready","icon":"👋","ru":["Приветствия и прощания","Hola · buenos días · ¿qué tal? · hasta luego"],"uk":["Привітання і прощання","Hola · buenos días · ¿qué tal? · hasta luego"],"en":["Greetings and farewells","Hola · buenos días · ¿qué tal? · hasta luego"],"es":["Saludos y despedidas","Hola · buenos días · ¿qué tal? · hasta luego"]},
-    "introductions-personal-data": {"file":"data/a1-lessons-foundations.json","status":"ready","icon":"🙋","ru":["Знакомство и личные данные","Имя · возраст · откуда вы · базовая информация о себе"],"uk":["Знайомство та особисті дані","Ім’я · вік · звідки ви · базова інформація про себе"],"en":["Introductions and personal information","Name · age · where you are from · basic personal information"],"es":["Presentaciones y datos personales","Nombre · edad · procedencia · información personal básica"]},
-    "numbers": {"file":"data/a1-numbers.json","status":"ready","icon":"🔢","ru":["Числа","0–100 · возраст · цены · телефон"],"uk":["Числа","0–100 · вік · ціни · телефон"],"en":["Numbers","0–100 · age · prices · phone numbers"],"es":["Números","0–100 · edad · precios · teléfono"]},
-    "date-time": {"file":"data/a1-date-time.json","status":"ready","icon":"📅","ru":["Дата и время","Дни недели · месяцы · дата · часы"],"uk":["Дата і час","Дні тижня · місяці · дата · час"],"en":["Date and time","Days · months · dates · telling the time"],"es":["Fecha y hora","Días · meses · fechas · la hora"]},
-    "countries-nationalities": {"file":"data/a1-countries-nationalities.json","status":"ready","icon":"🌍","ru":["Страны и национальности","Страны · национальности · откуда вы"],"uk":["Країни та національності","Країни · національності · звідки ви"],"en":["Countries and nationalities","Countries · nationalities · where you are from"],"es":["Países y nacionalidades","Países · nacionalidades · de dónde eres"]},
-    "definite-articles": {"file":"data/a1-articles.json","status":"ready","icon":"🧩","ru":["Определённые артикли","el · la · los · las · род и число"],"uk":["Означені артиклі","el · la · los · las · рід і число"],"en":["Definite articles","el · la · los · las · gender and number"],"es":["Artículos determinados","el · la · los · las · género y número"]},
-    "indefinite-articles": {"file":"data/a1-indefinite-articles.json","status":"ready","icon":"🧩","ru":["Неопределённые артикли","un · una · unos · unas · первое упоминание"],"uk":["Неозначені артиклі","un · una · unos · unas · перша згадка"],"en":["Indefinite articles","un · una · unos · unas · first mention"],"es":["Artículos indeterminados","un · una · unos · unas · primera mención"]},
-    "noun-gender": {"file":"data/a1-noun-gender.json","status":"ready","icon":"⚥","ru":["Род существительных","-o / -a · частые окончания · исключения · профессии"],"uk":["Рід іменників","-o / -a · поширені закінчення · винятки · професії"],"en":["Noun gender","-o / -a · common endings · exceptions · professions"],"es":["Género de los sustantivos","-o / -a · terminaciones · excepciones · profesiones"]},
-    "noun-plural": {"file":"data/a1-noun-plural.json","status":"ready","icon":"➕","ru":["Множественное число","-s · -es · z → ces · ударение"],"uk":["Множина","-s · -es · z → ces · наголос"],"en":["Plural nouns","-s · -es · z → ces · stress"],"es":["Plural de los sustantivos","-s · -es · z → ces · acentuación"]},
-    "article-noun-agreement": {"file":"data/a1-article-noun-agreement.json","status":"ready","icon":"🔗","ru":["Согласование артикля и существительного","el/la/los/las · un/una/unos/unas · род + число"],"uk":["Узгодження артикля та іменника","el/la/los/las · un/una/unos/unas · рід + число"],"en":["Article–noun agreement","el/la/los/las · un/una/unos/unas · gender + number"],"es":["Concordancia entre artículo y sustantivo","el/la/los/las · un/una/unos/unas · género + número"]},
-    "subject-pronouns": {"file":"data/a1-subject-pronouns.json","status":"ready","icon":"👤","ru":["Личные местоимения","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"],"uk":["Особові займенники","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"],"en":["Subject pronouns","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"],"es":["Pronombres personales sujeto","yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"]},
-    "basic-word-order": {"file":"data/a1-basic-word-order.json","status":"ready","icon":"🧱","ru":["Базовый порядок слов","подлежащее · глагол · дополнение · место и время"],"uk":["Базовий порядок слів","підмет · дієслово · додаток · місце й час"],"en":["Basic word order","subject · verb · complement · place and time"],"es":["Orden básico de palabras","sujeto · verbo · complemento · lugar y tiempo"]},
-    "negation-no": {"file":"data/a1-negation-no.json","status":"ready","icon":"🚫","ru":["Отрицание с no","no + глагол · позиция no · простое отрицание"],"uk":["Заперечення з no","no + дієслово · позиція no · просте заперечення"],"en":["Negation with no","no + verb · position of no · simple negation"],"es":["Negación con no","no + verbo · posición de no · negación simple"]},
-    "basic-questions": {"file":"data/a1-basic-questions.json","status":"ready","icon":"❓","ru":["Базовые вопросы","¿...? · вопросы да/нет · интонация · краткие ответы"],"uk":["Базові питання","¿...? · питання так/ні · інтонація · короткі відповіді"],"en":["Basic questions","¿...? · yes/no questions · intonation · short answers"],"es":["Preguntas básicas","¿...? · preguntas de sí/no · entonación · respuestas breves"]},
-    "question-words": {"file":"data/a1-question-words.json","status":"ready","icon":"🔎","ru":["Вопросительные слова","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"],"uk":["Питальні слова","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"],"en":["Question words","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"],"es":["Palabras interrogativas","qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"]},
-    "ser-present": {"file":"data/a1-ser-estar-hay.json","status":"ready","icon":"🟰","ru":["Ser: формы в presente","soy · eres · es · somos · sois · son"],"uk":["Ser: форми в presente","soy · eres · es · somos · sois · son"],"en":["Ser: present-tense forms","soy · eres · es · somos · sois · son"],"es":["Ser: formas del presente","soy · eres · es · somos · sois · son"]},
-    "ser-basic-uses": {"file":"data/a1-ser-estar-hay.json","status":"ready","icon":"🪪","ru":["Ser: базовое употребление","личность · происхождение · профессия · время"],"uk":["Ser: базове вживання","ідентичність · походження · професія · час"],"en":["Ser: basic uses","identity · origin · profession · time"],"es":["Ser: usos básicos","identidad · procedencia · profesión · hora"]},
-    "estar-present": {"file":"data/a1-ser-estar-hay.json","status":"ready","icon":"📍","ru":["Estar: формы в presente","estoy · estás · está · estamos · estáis · están"],"uk":["Estar: форми в presente","estoy · estás · está · estamos · estáis · están"],"en":["Estar: present-tense forms","estoy · estás · está · estamos · estáis · están"],"es":["Estar: formas del presente","estoy · estás · está · estamos · estáis · están"]},
-    "estar-basic-uses": {"file":"data/a1-ser-estar-hay.json","status":"ready","icon":"🧭","ru":["Estar: место и состояние","местонахождение · состояние · самочувствие"],"uk":["Estar: місце і стан","місцезнаходження · стан · самопочуття"],"en":["Estar: location and state","location · condition · well-being"],"es":["Estar: lugar y estado","localización · estado · bienestar"]},
-    "hay": {"file":"data/a1-ser-estar-hay.json","status":"ready","icon":"👁️","ru":["Hay: наличие","есть · имеется · ¿Hay...? · No hay"],"uk":["Hay: наявність","є · існує · ¿Hay...? · No hay"],"en":["Hay: existence","there is/are · ¿Hay...? · No hay"],"es":["Hay: existencia","existencia · ¿Hay...? · No hay"]},
-    "ser-estar-hay": {"file":"data/a1-ser-estar-hay.json","status":"ready","icon":"⚖️","ru":["Ser, estar или hay?","личность · место · состояние · наличие"],"uk":["Ser, estar чи hay?","ідентичність · місце · стан · наявність"],"en":["Ser, estar or hay?","identity · location · state · existence"],"es":["¿Ser, estar o hay?","identidad · lugar · estado · existencia"]},
-    "present-ar": {"file":"data/a1-regular-present.json","status":"ready","icon":"🟠","ru":["Presente: глаголы на -AR","основа · -o/-as/-a/-amos/-áis/-an"],"uk":["Presente: дієслова на -AR","основа · -o/-as/-a/-amos/-áis/-an"],"en":["Present: regular -AR verbs","stem · -o/-as/-a/-amos/-áis/-an"],"es":["Presente: verbos regulares en -AR","raíz · -o/-as/-a/-amos/-áis/-an"]},
-    "present-er": {"file":"data/a1-regular-present.json","status":"ready","icon":"🟢","ru":["Presente: глаголы на -ER","основа · -o/-es/-e/-emos/-éis/-en"],"uk":["Presente: дієслова на -ER","основа · -o/-es/-e/-emos/-éis/-en"],"en":["Present: regular -ER verbs","stem · -o/-es/-e/-emos/-éis/-en"],"es":["Presente: verbos regulares en -ER","raíz · -o/-es/-e/-emos/-éis/-en"]},
-    "present-ir": {"file":"data/a1-regular-present.json","status":"ready","icon":"🔵","ru":["Presente: глаголы на -IR","основа · -o/-es/-e/-imos/-ís/-en"],"uk":["Presente: дієслова на -IR","основа · -o/-es/-e/-imos/-ís/-en"],"en":["Present: regular -IR verbs","stem · -o/-es/-e/-imos/-ís/-en"],"es":["Presente: verbos regulares en -IR","raíz · -o/-es/-e/-imos/-ís/-en"]},
-    "present-mixed-regular": {"file":"data/a1-regular-present.json","status":"ready","icon":"🔀","ru":["-AR, -ER или -IR?","сравнение моделей · смешанная практика"],"uk":["-AR, -ER чи -IR?","порівняння моделей · змішана практика"],"en":["-AR, -ER or -IR?","compare patterns · mixed practice"],"es":["¿-AR, -ER o -IR?","comparación de modelos · práctica mixta"]},
-    "present-regular-trainer": {"file":"data/a1-regular-present.json","status":"ready","icon":"🎯","ru":["Тренажёр правильных глаголов","три модели · выбор формы · самопроверка"],"uk":["Тренажер правильних дієслів","три моделі · вибір форми · самоперевірка"],"en":["Regular verb trainer","three patterns · choose the form · self-check"],"es":["Entrenador de verbos regulares","tres modelos · elegir la forma · autoevaluación"]},
-    "tener": {"file":"data/a1-irregular-present.json","status":"ready","icon":"🎒","ru":["Tener","формы · возраст · ощущения · tener que"],"uk":["Tener","форми · вік · відчуття · tener que"],"en":["Tener","forms · age · sensations · tener que"],"es":["Tener","formas · edad · sensaciones · tener que"]},
-    "ir": {"file":"data/a1-irregular-present.json","status":"ready","icon":"➡️","ru":["Ir","voy/vas/va · направление · ir a + infinitivo"],"uk":["Ir","voy/vas/va · напрямок · ir a + infinitivo"],"en":["Ir","voy/vas/va · destination · ir a + infinitive"],"es":["Ir","voy/vas/va · destino · ir a + infinitivo"]},
-    "hacer": {"file":"data/a1-irregular-present.json","status":"ready","icon":"🛠️","ru":["Hacer","hago · действия · погода · сочетания"],"uk":["Hacer","hago · дії · погода · сполучення"],"en":["Hacer","hago · activities · weather · expressions"],"es":["Hacer","hago · actividades · tiempo · expresiones"]},
-    "venir": {"file":"data/a1-irregular-present.json","status":"ready","icon":"📍","ru":["Venir","vengo · e→ie · venir de · движение сюда"],"uk":["Venir","vengo · e→ie · venir de · рух сюди"],"en":["Venir","vengo · e→ie · venir de · movement here"],"es":["Venir","vengo · e→ie · venir de · movimiento hacia aquí"]},
-    "querer": {"file":"data/a1-irregular-present.json","status":"ready","icon":"💬","ru":["Querer","e→ie · желания · querer + infinitivo"],"uk":["Querer","e→ie · бажання · querer + infinitivo"],"en":["Querer","e→ie · wishes · querer + infinitive"],"es":["Querer","e→ie · deseos · querer + infinitivo"]},
-    "poder": {"file":"data/a1-irregular-present.json","status":"ready","icon":"💪","ru":["Poder","o→ue · возможность · разрешение · просьба"],"uk":["Poder","o→ue · можливість · дозвіл · прохання"],"en":["Poder","o→ue · ability · permission · requests"],"es":["Poder","o→ue · capacidad · permiso · peticiones"]},
-    "decir": {"file":"data/a1-irregular-present.json","status":"ready","icon":"🗣️","ru":["Decir","digo · e→i · decir que · адресат"],"uk":["Decir","digo · e→i · decir que · адресат"],"en":["Decir","digo · e→i · decir que · addressee"],"es":["Decir","digo · e→i · decir que · destinatario"]},
-    "irregular-present-mixed": {"file":"data/a1-irregular-present.json","status":"ready","icon":"🧠","ru":["Неправильные глаголы: практика","7 глаголов · формы · конструкции · контекст"],"uk":["Неправильні дієслова: практика","7 дієслів · форми · конструкції · контекст"],"en":["Irregular verbs: mixed practice","7 verbs · forms · structures · context"],"es":["Verbos irregulares: práctica mixta","7 verbos · formas · estructuras · contexto"]},
-    "reflexive-pronouns": {"file":"data/a1-reflexive-verbs.json","status":"ready","icon":"🔁","ru":["Возвратные местоимения","me · te · se · nos · os · se"],"uk":["Зворотні займенники","me · te · se · nos · os · se"],"en":["Reflexive pronouns","me · te · se · nos · os · se"],"es":["Pronombres reflexivos","me · te · se · nos · os · se"]},
-    "reflexive-present": {"file":"data/a1-reflexive-verbs.json","status":"ready","icon":"🛁","ru":["Возвратные глаголы в presente","me levanto · te levantas · se levanta"],"uk":["Зворотні дієслова в presente","me levanto · te levantas · se levanta"],"en":["Reflexive verbs in the present","me levanto · te levantas · se levanta"],"es":["Verbos reflexivos en presente","me levanto · te levantas · se levanta"]},
-    "daily-routine": {"file":"data/a1-reflexive-verbs.json","status":"ready","icon":"⏰","ru":["Распорядок дня","время · последовательность · ежедневные действия"],"uk":["Розпорядок дня","час · послідовність · щоденні дії"],"en":["Daily routine","time · sequence · daily actions"],"es":["Rutina diaria","hora · secuencia · acciones diarias"]},
-    "reflexive-practice": {"file":"data/a1-reflexive-verbs.json","status":"ready","icon":"✅","ru":["Практика возвратных глаголов","лицо · инфинитив · форма · распорядок дня"],"uk":["Практика зворотних дієслів","особа · інфінітив · форма · розпорядок дня"],"en":["Reflexive verb practice","person · infinitive · form · daily routine"],"es":["Práctica de verbos reflexivos","persona · infinitivo · forma · rutina diaria"]},
-    "adjectives": {"file":"data/a1-adjectives.json","status":"ready","icon":"🎨","ru":["Прилагательные: базовые модели","значение · место после существительного · описание"],"uk":["Прикметники: базові моделі","значення · місце після іменника · опис"],"en":["Adjectives: basic patterns","meaning · position after the noun · description"],"es":["Adjetivos: modelos básicos","significado · posición tras el sustantivo · descripción"]},
-    "adjective-agreement": {"file":"data/a1-adjectives.json","status":"ready","icon":"🔗","ru":["Согласование прилагательных","род · число · -o/-a/-os/-as"],"uk":["Узгодження прикметників","рід · число · -o/-a/-os/-as"],"en":["Adjective agreement","gender · number · -o/-a/-os/-as"],"es":["Concordancia de adjetivos","género · número · -o/-a/-os/-as"]},
-    "possessives": {"file":"data/a1-possessives.json","status":"ready","icon":"🔑","ru":["Притяжательные: mi, tu, su…","владелец · число предметов · su / sus"],"uk":["Присвійні: mi, tu, su…","власник · кількість предметів · su / sus"],"en":["Possessives: mi, tu, su…","owner · number of things · su / sus"],"es":["Posesivos: mi, tu, su…","propietario · número de cosas · su / sus"]},
-    "demonstratives": {"file":"data/a1-demonstratives.json","status":"ready","icon":"📍","ru":["Указательные: este, ese, aquel","расстояние · род · число"],"uk":["Вказівні: este, ese, aquel","відстань · рід · число"],"en":["Demonstratives: este, ese, aquel","distance · gender · number"],"es":["Demostrativos: este, ese, aquel","distancia · género · número"]},
-    "comparisons-basic": {"file":"data/a1-comparisons.json","status":"ready","icon":"⚖️","ru":["Базовые сравнения","más / menos / tan · que / como"],"uk":["Базові порівняння","más / menos / tan · que / como"],"en":["Basic comparisons","más / menos / tan · que / como"],"es":["Comparaciones básicas","más / menos / tan · que / como"]},
-    "prepositions-basic": {"file":"data/a1-prepositions.json","status":"ready","icon":"🧭","ru":["Основные предлоги","место · направление · происхождение · связь"],"uk":["Основні прийменники","місце · напрямок · походження · зв’язок"],"en":["Basic prepositions","place · direction · origin · connection"],"es":["Preposiciones básicas","lugar · dirección · origen · relación"]},
-    "location-prepositions": {"file":"data/a1-location-prepositions.json","status":"ready","icon":"🗺️","ru":["Предлоги места","перед · за · под · между · рядом · далеко"],"uk":["Прийменники місця","перед · за · під · між · поруч · далеко"],"en":["Location prepositions","in front of · behind · under · between · next to · far"],"es":["Preposiciones de lugar","delante · detrás · debajo · entre · al lado · lejos"]},
-    "a-de-contractions": {"file":"data/a1-contractions.json","status":"ready","icon":"🔗","ru":["A / de и al / del","a + el = al · de + el = del · a él / de él"],"uk":["A / de та al / del","a + el = al · de + el = del · a él / de él"],"en":["A / de and al / del","a + el = al · de + el = del · a él / de él"],"es":["A / de y al / del","a + el = al · de + el = del · a él / de él"]},
-    "city-directions": {"file":"data/a1-city-directions.json","status":"ready","icon":"🧭","ru":["Город и направление движения","спросить дорогу · прямо · направо · налево"],"uk":["Місто й напрямок руху","запитати дорогу · прямо · праворуч · ліворуч"],"en":["City and directions","ask the way · straight · right · left"],"es":["La ciudad y las direcciones","pedir indicaciones · recto · derecha · izquierda"]},
-    "gustar": {"file":"data/a1-gustar.json","status":"ready","icon":"❤️","ru":["Gustar: нравится","me gusta / me gustan · предпочтения"],"uk":["Gustar: подобається","me gusta / me gustan · уподобання"],"en":["Gustar: to like","me gusta / me gustan · preferences"],"es":["Gustar","me gusta / me gustan · preferencias"]},
-    "encantar-interesar": {"file":"data/a1-encantar-interesar.json","status":"ready","icon":"✨","ru":["Encantar / interesar","очень нравится · интересует"],"uk":["Encantar / interesar","дуже подобається · цікавить"],"en":["Encantar / interesar","love · interest"],"es":["Encantar / interesar","encantar · interesar"]},
-    "ir-a-infinitive": {"file":"data/a1-ir-a-infinitive.json","status":"ready","icon":"📆","ru":["Ir a + инфинитив","ближайшие планы · намерения"],"uk":["Ir a + інфінітив","найближчі плани · наміри"],"en":["Ir a + infinitive","near-future plans · intentions"],"es":["Ir a + infinitivo","planes próximos · intenciones"]},
-    "tener-que": {"file":"data/a1-tener-que.json","status":"ready","icon":"📌","ru":["Tener que + инфинитив","необходимость · обязанности"],"uk":["Tener que + інфінітив","необхідність · обов’язки"],"en":["Tener que + infinitive","necessity · duties"],"es":["Tener que + infinitivo","necesidad · obligaciones"]},
-    "querer-infinitive": {"file":"data/a1-querer-infinitive.json","status":"ready","icon":"💬","ru":["Querer + инфинитив","желания · планы · вопрос · отрицание"],"uk":["Querer + інфінітив","бажання · плани · питання · заперечення"],"en":["Querer + infinitive","wishes · plans · questions · negatives"],"es":["Querer + infinitivo","deseos · planes · pregunta · negación"]},
-    "poder-infinitive": {"file":"data/a1-poder-infinitive.json","status":"ready","icon":"💪","ru":["Poder + инфинитив","возможность · умение · разрешение"],"uk":["Poder + інфінітив","можливість · уміння · дозвіл"],"en":["Poder + infinitive","ability · possibility · permission"],"es":["Poder + infinitivo","capacidad · posibilidad · permiso"]},
-    "family": {"file":"data/a1-family.json","status":"ready","icon":"👨‍👩‍👧‍👦","ru":["Семья","члены семьи · mi / mis · рассказ о семье"],"uk":["Сім’я","члени сім’ї · mi / mis · розповідь про сім’ю"],"en":["Family","family members · mi / mis · talking about family"],"es":["La familia","miembros · mi / mis · hablar de la familia"]},
-    "home": {"file":"data/a1-home.json","status":"ready","icon":"🏠","ru":["Дом","комнаты · предметы · где находится"],"uk":["Дім","кімнати · предмети · де знаходиться"],"en":["Home","rooms · objects · where things are"],"es":["La casa","habitaciones · objetos · dónde está"]},
-    "food-drinks": {"file":"data/a1-food-drinks.json","status":"ready","icon":"🍽️","ru":["Еда и напитки","продукты · количество · заказ"],"uk":["Їжа й напої","продукти · кількість · замовлення"],"en":["Food and drinks","food · quantity · ordering"],"es":["Comida y bebidas","alimentos · cantidad · pedir"]},
-    "shopping": {"file":"data/a1-shopping.json","status":"ready","icon":"🛍️","ru":["Покупки и цены","товары · цена · размер · вежливая покупка"],"uk":["Покупки й ціни","товари · ціна · розмір · ввічлива покупка"],"en":["Shopping and prices","goods · price · size · polite buying"],"es":["Compras y precios","productos · precio · talla · compra cortés"]},
-    "city-places": {"file":"data/a1-city-places.json","status":"ready","icon":"🏙️","ru":["Город и места","места · где находится · спросить дорогу"],"uk":["Місто й місця","місця · де знаходиться · запитати дорогу"],"en":["City places","places · location · ask the way"],"es":["La ciudad y los lugares","lugares · ubicación · pedir indicaciones"]},
-    "transport": {"file":"data/a1-transport.json","status":"ready","icon":"🚌","ru":["Транспорт","виды транспорта · билет · маршрут"],"uk":["Транспорт","види транспорту · квиток · маршрут"],"en":["Transport","types · ticket · route"],"es":["El transporte","medios · billete · ruta"]},
-    "daily-routine-vocab": {"file":"data/a1-daily-routine-vocab.json","status":"ready","icon":"⏰","ru":["Повседневные действия","распорядок · время · последовательность"],"uk":["Повсякденні дії","розпорядок · час · послідовність"],"en":["Daily activities","routine · time · sequence"],"es":["Las actividades diarias","rutina · tiempo · secuencia"]},
-    "jobs": {"file":"data/a1-jobs.json","status":"ready","icon":"💼","ru":["Профессии","названия · ser без артикля · место работы"],"uk":["Професії","назви · ser без артикля · місце роботи"],"en":["Jobs","names · ser without an article · workplace"],"es":["Las profesiones","nombres · ser sin artículo · lugar de trabajo"]},
-    "weather-seasons": {"file":"data/a1-weather-seasons.json","status":"ready","icon":"🌦️","ru":["Погода и времена года","погода · температура · сезоны"],"uk":["Погода й пори року","погода · температура · сезони"],"en":["Weather and seasons","weather · temperature · seasons"],"es":["El tiempo y las estaciones","tiempo · temperatura · estaciones"]},
-    "free-time": {"file":"data/a1-free-time.json","status":"ready","icon":"🎯","ru":["Свободное время и увлечения","хобби · gustar · планы"],"uk":["Вільний час і захоплення","хобі · gustar · плани"],"en":["Free time and hobbies","hobbies · gustar · plans"],"es":["El tiempo libre y las aficiones","aficiones · gustar · planes"]},
-    "introduce-yourself": {"file":"data/a1-introduce-yourself.json","status":"ready","icon":"👋","ru":["Представиться и рассказать о себе","приветствие · имя · откуда вы"],"uk":["Представитися і розповісти про себе","привітання · ім’я · звідки ви"],"en":["Introduce yourself","greeting · name · where you are from"],"es":["Presentarse y hablar de uno mismo","saludo · nombre · origen"]},
-    "ask-personal-info": {"file":"data/a1-ask-personal-info.json","status":"ready","icon":"🪪","ru":["Спросить личную информацию","имя · возраст · контакты"],"uk":["Запитати особисту інформацію","ім’я · вік · контакти"],"en":["Ask for personal information","name · age · contacts"],"es":["Pedir información personal","nombre · edad · contacto"]},
-    "order-food": {"file":"data/a1-order-food.json","status":"ready","icon":"🍽️","ru":["Заказать еду и напитки","кафе · вежливый заказ · счёт"],"uk":["Замовити їжу й напої","кафе · ввічливе замовлення · рахунок"],"en":["Order food and drinks","café · polite order · bill"],"es":["Pedir comida y bebida","cafetería · pedido cortés · cuenta"]},
-    "shopping-dialogue": {"file":"data/a1-shopping-dialogue.json","status":"ready","icon":"🛒","ru":["Диалог в магазине","товар · размер · цена · оплата"],"uk":["Діалог у магазині","товар · розмір · ціна · оплата"],"en":["A dialogue in a shop","item · size · price · payment"],"es":["Diálogo en una tienda","artículo · talla · precio · pago"]},
-    "ask-directions": {"file":"data/a1-ask-directions.json","status":"ready","icon":"🧭","ru":["Спросить дорогу","где находится · направление · расстояние"],"uk":["Запитати дорогу","де знаходиться · напрямок · відстань"],"en":["Ask for directions","location · direction · distance"],"es":["Pedir indicaciones","ubicación · dirección · distancia"]},
-    "talk-routine": {"file":"data/a1-talk-routine.json","status":"ready","icon":"⏰","ru":["Рассказать о распорядке дня","время · последовательность · обычный день"],"uk":["Розповісти про розпорядок дня","час · послідовність · звичайний день"],"en":["Talk about your daily routine","time · sequence · usual day"],"es":["Hablar de la rutina diaria","tiempo · secuencia · día habitual"]},
-    "make-simple-plans": {"file":"data/a1-make-simple-plans.json","status":"ready","icon":"📅","ru":["Простые планы и договорённости","предложить · время · согласиться · перенести"],"uk":["Прості плани й домовленості","запропонувати · час · погодитися · перенести"],"en":["Simple plans and arrangements","suggest · time · agree · reschedule"],"es":["Planes y acuerdos sencillos","proponer · hora · aceptar · cambiar"]},
-    "reading": {"file":"data/a1-reading.json","status":"ready","icon":"📖","ru":["Чтение: короткие сообщения","объявления · время · место · смысл"],"uk":["Читання: короткі повідомлення","оголошення · час · місце · зміст"],"en":["Reading: short messages","notices · time · place · meaning"],"es":["Comprensión lectora: mensajes breves","anuncios · tiempo · lugar · sentido"]},
-    "listening": {"file":"data/a1-listening.json","status":"ready","icon":"🎧","ru":["Аудирование: короткие реплики","кто · где · когда · планы"],"uk":["Аудіювання: короткі репліки","хто · де · коли · плани"],"en":["Listening: short utterances","who · where · when · plans"],"es":["Comprensión auditiva: frases breves","quién · dónde · cuándo · planes"]},
-    "writing": {"file":"data/a1-writing.json","status":"ready","icon":"✍️","ru":["Письмо: короткое сообщение","приветствие · новость · вопрос · прощание"],"uk":["Письмо: коротке повідомлення","привітання · новина · питання · прощання"],"en":["Writing: a short message","greeting · news · question · closing"],"es":["Expresión escrita: mensaje breve","saludo · noticia · pregunta · despedida"]},
-    "speaking": {"file":"data/a1-speaking.json","status":"ready","icon":"🗣️","ru":["Говорение: короткие диалоги","приветствие · просьба · планы · прощание"],"uk":["Говоріння: короткі діалоги","привітання · прохання · плани · прощання"],"en":["Speaking: short dialogues","greeting · request · plans · goodbye"],"es":["Expresión oral: diálogos breves","saludo · petición · planes · despedida"]},
-    "mixed-review": {"file":"data/a1-mixed-review.json","status":"ready","icon":"🔄","ru":["Смешанное повторение A1","грамматика · лексика · ситуации · навыки"],"uk":["Змішане повторення A1","граматика · лексика · ситуації · навички"],"en":["Mixed A1 review","grammar · vocabulary · situations · skills"],"es":["Repaso mixto A1","gramática · vocabulario · situaciones · destrezas"]},
-    "grammar-check": {"file":"data/a1-grammar-check.json","status":"ready","icon":"✅","ru":["Контроль грамматики A1","ser / estar / hay · артикли · presente · конструкции"],"uk":["Контроль граматики A1","ser / estar / hay · артиклі · presente · конструкції"],"en":["A1 grammar check","ser / estar / hay · articles · present · structures"],"es":["Control de gramática A1","ser / estar / hay · artículos · presente · estructuras"]},
-    "vocabulary-check": {"file":"data/a1-vocabulary-check.json","status":"ready","icon":"📚","ru":["Контроль лексики A1","семья · дом · еда · город · повседневность"],"uk":["Контроль лексики A1","сім’я · дім · їжа · місто · щоденність"],"en":["A1 vocabulary check","family · home · food · city · daily life"],"es":["Control de vocabulario A1","familia · casa · comida · ciudad · vida diaria"]},
-    "skills-check": {"file":"data/a1-skills-check.json","status":"ready","icon":"🎯","ru":["Контроль навыков A1","чтение · аудирование · говорение · письмо"],"uk":["Контроль навичок A1","читання · аудіювання · говоріння · письмо"],"en":["A1 skills check","reading · listening · speaking · writing"],"es":["Control de destrezas A1","lectura · audición · expresión oral · escrita"]},
-    "final-test": {"file":"data/a1-final-test.json","status":"ready","icon":"🏁","ru":["Итоговый тест A1","грамматика · лексика · общение · навыки"],"uk":["Підсумковий тест A1","граматика · лексика · спілкування · навички"],"en":["Final A1 test","grammar · vocabulary · communication · skills"],"es":["Prueba final A1","gramática · vocabulario · comunicación · destrezas"]},
-    "weak-spots": {"file":"data/a1-weak-spots.json","status":"ready","icon":"🔁","ru":["Слабые места: повторение A1","формы · ситуации · место · понимание"],"uk":["Слабкі місця: повторення A1","форми · ситуації · місце · розуміння"],"en":["Weak areas: A1 review","forms · situations · place · understanding"],"es":["Puntos débiles: repaso A1","formas · situaciones · lugar · comprensión"]}
+    "alphabet-pronunciation": {
+      "file": "data/a1-lessons.json",
+      "status": "ready",
+      "icon": "🔤",
+      "ru": [
+        "Алфавит и произношение",
+        "Буквы · звуки · CA/CO/CU · C/QU/K · ударение и тильда"
+      ],
+      "uk": [
+        "Алфавіт і вимова",
+        "Літери · звуки · CA/CO/CU · C/QU/K · наголос і тильда"
+      ],
+      "en": [
+        "Alphabet and pronunciation",
+        "Letters · sounds · CA/CO/CU · C/QU/K · stress and accents"
+      ],
+      "es": [
+        "Alfabeto y pronunciación",
+        "Letras · sonidos · CA/CO/CU · C/QU/K · acento y tilde"
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/alphabet-pronunciation.webp",
+        "alt": {
+          "ru": "Тетрадь, цветные символы звуков и испанский пейзаж",
+          "uk": "Зошит, кольорові символи звуків та іспанський краєвид",
+          "en": "A notebook, colourful sound symbols and a Spanish view",
+          "es": "Un cuaderno, símbolos de sonidos de colores y un paisaje español"
+        },
+        "caption": {
+          "ru": "Наблюдай, слушай и связывай написание со звуком.",
+          "uk": "Спостерігай, слухай і пов’язуй написання зі звуком.",
+          "en": "Observe, listen and connect spelling with sound.",
+          "es": "Observa, escucha y relaciona la escritura con el sonido."
+        }
+      }
+    },
+    "greetings-farewells": {
+      "file": "data/a1-lessons-foundations.json",
+      "status": "ready",
+      "icon": "👋",
+      "ru": [
+        "Приветствия и прощания",
+        "Hola · buenos días · ¿qué tal? · hasta luego"
+      ],
+      "uk": [
+        "Привітання і прощання",
+        "Hola · buenos días · ¿qué tal? · hasta luego"
+      ],
+      "en": [
+        "Greetings and farewells",
+        "Hola · buenos días · ¿qué tal? · hasta luego"
+      ],
+      "es": [
+        "Saludos y despedidas",
+        "Hola · buenos días · ¿qué tal? · hasta luego"
+      ]
+    },
+    "introductions-personal-data": {
+      "file": "data/a1-lessons-foundations.json",
+      "status": "ready",
+      "icon": "🙋",
+      "ru": [
+        "Знакомство и личные данные",
+        "Имя · возраст · откуда вы · базовая информация о себе"
+      ],
+      "uk": [
+        "Знайомство та особисті дані",
+        "Ім’я · вік · звідки ви · базова інформація про себе"
+      ],
+      "en": [
+        "Introductions and personal information",
+        "Name · age · where you are from · basic personal information"
+      ],
+      "es": [
+        "Presentaciones y datos personales",
+        "Nombre · edad · procedencia · información personal básica"
+      ]
+    },
+    "numbers": {
+      "file": "data/a1-numbers.json",
+      "status": "ready",
+      "icon": "🔢",
+      "ru": [
+        "Числа",
+        "0–100 · возраст · цены · телефон"
+      ],
+      "uk": [
+        "Числа",
+        "0–100 · вік · ціни · телефон"
+      ],
+      "en": [
+        "Numbers",
+        "0–100 · age · prices · phone numbers"
+      ],
+      "es": [
+        "Números",
+        "0–100 · edad · precios · teléfono"
+      ]
+    },
+    "date-time": {
+      "file": "data/a1-date-time.json",
+      "status": "ready",
+      "icon": "📅",
+      "ru": [
+        "Дата и время",
+        "Дни недели · месяцы · дата · часы"
+      ],
+      "uk": [
+        "Дата і час",
+        "Дні тижня · місяці · дата · час"
+      ],
+      "en": [
+        "Date and time",
+        "Days · months · dates · telling the time"
+      ],
+      "es": [
+        "Fecha y hora",
+        "Días · meses · fechas · la hora"
+      ]
+    },
+    "countries-nationalities": {
+      "file": "data/a1-countries-nationalities.json",
+      "status": "ready",
+      "icon": "🌍",
+      "ru": [
+        "Страны и национальности",
+        "Страны · национальности · откуда вы"
+      ],
+      "uk": [
+        "Країни та національності",
+        "Країни · національності · звідки ви"
+      ],
+      "en": [
+        "Countries and nationalities",
+        "Countries · nationalities · where you are from"
+      ],
+      "es": [
+        "Países y nacionalidades",
+        "Países · nacionalidades · de dónde eres"
+      ]
+    },
+    "definite-articles": {
+      "file": "data/a1-articles.json",
+      "status": "ready",
+      "icon": "🧩",
+      "ru": [
+        "Определённые артикли",
+        "el · la · los · las · род и число"
+      ],
+      "uk": [
+        "Означені артиклі",
+        "el · la · los · las · рід і число"
+      ],
+      "en": [
+        "Definite articles",
+        "el · la · los · las · gender and number"
+      ],
+      "es": [
+        "Artículos determinados",
+        "el · la · los · las · género y número"
+      ]
+    },
+    "indefinite-articles": {
+      "file": "data/a1-indefinite-articles.json",
+      "status": "ready",
+      "icon": "🧩",
+      "ru": [
+        "Неопределённые артикли",
+        "un · una · unos · unas · первое упоминание"
+      ],
+      "uk": [
+        "Неозначені артиклі",
+        "un · una · unos · unas · перша згадка"
+      ],
+      "en": [
+        "Indefinite articles",
+        "un · una · unos · unas · first mention"
+      ],
+      "es": [
+        "Artículos indeterminados",
+        "un · una · unos · unas · primera mención"
+      ]
+    },
+    "noun-gender": {
+      "file": "data/a1-noun-gender.json",
+      "status": "ready",
+      "icon": "⚥",
+      "ru": [
+        "Род существительных",
+        "-o / -a · частые окончания · исключения · профессии"
+      ],
+      "uk": [
+        "Рід іменників",
+        "-o / -a · поширені закінчення · винятки · професії"
+      ],
+      "en": [
+        "Noun gender",
+        "-o / -a · common endings · exceptions · professions"
+      ],
+      "es": [
+        "Género de los sustantivos",
+        "-o / -a · terminaciones · excepciones · profesiones"
+      ]
+    },
+    "noun-plural": {
+      "file": "data/a1-noun-plural.json",
+      "status": "ready",
+      "icon": "➕",
+      "ru": [
+        "Множественное число",
+        "-s · -es · z → ces · ударение"
+      ],
+      "uk": [
+        "Множина",
+        "-s · -es · z → ces · наголос"
+      ],
+      "en": [
+        "Plural nouns",
+        "-s · -es · z → ces · stress"
+      ],
+      "es": [
+        "Plural de los sustantivos",
+        "-s · -es · z → ces · acentuación"
+      ]
+    },
+    "article-noun-agreement": {
+      "file": "data/a1-article-noun-agreement.json",
+      "status": "ready",
+      "icon": "🔗",
+      "ru": [
+        "Согласование артикля и существительного",
+        "el/la/los/las · un/una/unos/unas · род + число"
+      ],
+      "uk": [
+        "Узгодження артикля та іменника",
+        "el/la/los/las · un/una/unos/unas · рід + число"
+      ],
+      "en": [
+        "Article–noun agreement",
+        "el/la/los/las · un/una/unos/unas · gender + number"
+      ],
+      "es": [
+        "Concordancia entre artículo y sustantivo",
+        "el/la/los/las · un/una/unos/unas · género + número"
+      ]
+    },
+    "subject-pronouns": {
+      "file": "data/a1-subject-pronouns.json",
+      "status": "ready",
+      "icon": "👤",
+      "ru": [
+        "Личные местоимения",
+        "yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"
+      ],
+      "uk": [
+        "Особові займенники",
+        "yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"
+      ],
+      "en": [
+        "Subject pronouns",
+        "yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"
+      ],
+      "es": [
+        "Pronombres personales sujeto",
+        "yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"
+      ]
+    },
+    "basic-word-order": {
+      "file": "data/a1-basic-word-order.json",
+      "status": "ready",
+      "icon": "🧱",
+      "ru": [
+        "Базовый порядок слов",
+        "подлежащее · глагол · дополнение · место и время"
+      ],
+      "uk": [
+        "Базовий порядок слів",
+        "підмет · дієслово · додаток · місце й час"
+      ],
+      "en": [
+        "Basic word order",
+        "subject · verb · complement · place and time"
+      ],
+      "es": [
+        "Orden básico de palabras",
+        "sujeto · verbo · complemento · lugar y tiempo"
+      ]
+    },
+    "negation-no": {
+      "file": "data/a1-negation-no.json",
+      "status": "ready",
+      "icon": "🚫",
+      "ru": [
+        "Отрицание с no",
+        "no + глагол · позиция no · простое отрицание"
+      ],
+      "uk": [
+        "Заперечення з no",
+        "no + дієслово · позиція no · просте заперечення"
+      ],
+      "en": [
+        "Negation with no",
+        "no + verb · position of no · simple negation"
+      ],
+      "es": [
+        "Negación con no",
+        "no + verbo · posición de no · negación simple"
+      ]
+    },
+    "basic-questions": {
+      "file": "data/a1-basic-questions.json",
+      "status": "ready",
+      "icon": "❓",
+      "ru": [
+        "Базовые вопросы",
+        "¿...? · вопросы да/нет · интонация · краткие ответы"
+      ],
+      "uk": [
+        "Базові питання",
+        "¿...? · питання так/ні · інтонація · короткі відповіді"
+      ],
+      "en": [
+        "Basic questions",
+        "¿...? · yes/no questions · intonation · short answers"
+      ],
+      "es": [
+        "Preguntas básicas",
+        "¿...? · preguntas de sí/no · entonación · respuestas breves"
+      ]
+    },
+    "question-words": {
+      "file": "data/a1-question-words.json",
+      "status": "ready",
+      "icon": "🔎",
+      "ru": [
+        "Вопросительные слова",
+        "qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"
+      ],
+      "uk": [
+        "Питальні слова",
+        "qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"
+      ],
+      "en": [
+        "Question words",
+        "qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"
+      ],
+      "es": [
+        "Palabras interrogativas",
+        "qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"
+      ]
+    },
+    "ser-present": {
+      "file": "data/a1-ser-estar-hay.json",
+      "status": "ready",
+      "icon": "🟰",
+      "ru": [
+        "Ser: формы в presente",
+        "soy · eres · es · somos · sois · son"
+      ],
+      "uk": [
+        "Ser: форми в presente",
+        "soy · eres · es · somos · sois · son"
+      ],
+      "en": [
+        "Ser: present-tense forms",
+        "soy · eres · es · somos · sois · son"
+      ],
+      "es": [
+        "Ser: formas del presente",
+        "soy · eres · es · somos · sois · son"
+      ]
+    },
+    "ser-basic-uses": {
+      "file": "data/a1-ser-estar-hay.json",
+      "status": "ready",
+      "icon": "🪪",
+      "ru": [
+        "Ser: базовое употребление",
+        "личность · происхождение · профессия · время"
+      ],
+      "uk": [
+        "Ser: базове вживання",
+        "ідентичність · походження · професія · час"
+      ],
+      "en": [
+        "Ser: basic uses",
+        "identity · origin · profession · time"
+      ],
+      "es": [
+        "Ser: usos básicos",
+        "identidad · procedencia · profesión · hora"
+      ]
+    },
+    "estar-present": {
+      "file": "data/a1-ser-estar-hay.json",
+      "status": "ready",
+      "icon": "📍",
+      "ru": [
+        "Estar: формы в presente",
+        "estoy · estás · está · estamos · estáis · están"
+      ],
+      "uk": [
+        "Estar: форми в presente",
+        "estoy · estás · está · estamos · estáis · están"
+      ],
+      "en": [
+        "Estar: present-tense forms",
+        "estoy · estás · está · estamos · estáis · están"
+      ],
+      "es": [
+        "Estar: formas del presente",
+        "estoy · estás · está · estamos · estáis · están"
+      ]
+    },
+    "estar-basic-uses": {
+      "file": "data/a1-ser-estar-hay.json",
+      "status": "ready",
+      "icon": "🧭",
+      "ru": [
+        "Estar: место и состояние",
+        "местонахождение · состояние · самочувствие"
+      ],
+      "uk": [
+        "Estar: місце і стан",
+        "місцезнаходження · стан · самопочуття"
+      ],
+      "en": [
+        "Estar: location and state",
+        "location · condition · well-being"
+      ],
+      "es": [
+        "Estar: lugar y estado",
+        "localización · estado · bienestar"
+      ]
+    },
+    "hay": {
+      "file": "data/a1-ser-estar-hay.json",
+      "status": "ready",
+      "icon": "👁️",
+      "ru": [
+        "Hay: наличие",
+        "есть · имеется · ¿Hay...? · No hay"
+      ],
+      "uk": [
+        "Hay: наявність",
+        "є · існує · ¿Hay...? · No hay"
+      ],
+      "en": [
+        "Hay: existence",
+        "there is/are · ¿Hay...? · No hay"
+      ],
+      "es": [
+        "Hay: existencia",
+        "existencia · ¿Hay...? · No hay"
+      ]
+    },
+    "ser-estar-hay": {
+      "file": "data/a1-ser-estar-hay.json",
+      "status": "ready",
+      "icon": "⚖️",
+      "ru": [
+        "Ser, estar или hay?",
+        "личность · место · состояние · наличие"
+      ],
+      "uk": [
+        "Ser, estar чи hay?",
+        "ідентичність · місце · стан · наявність"
+      ],
+      "en": [
+        "Ser, estar or hay?",
+        "identity · location · state · existence"
+      ],
+      "es": [
+        "¿Ser, estar o hay?",
+        "identidad · lugar · estado · existencia"
+      ]
+    },
+    "present-ar": {
+      "file": "data/a1-regular-present.json",
+      "status": "ready",
+      "icon": "🟠",
+      "ru": [
+        "Presente: глаголы на -AR",
+        "основа · -o/-as/-a/-amos/-áis/-an"
+      ],
+      "uk": [
+        "Presente: дієслова на -AR",
+        "основа · -o/-as/-a/-amos/-áis/-an"
+      ],
+      "en": [
+        "Present: regular -AR verbs",
+        "stem · -o/-as/-a/-amos/-áis/-an"
+      ],
+      "es": [
+        "Presente: verbos regulares en -AR",
+        "raíz · -o/-as/-a/-amos/-áis/-an"
+      ]
+    },
+    "present-er": {
+      "file": "data/a1-regular-present.json",
+      "status": "ready",
+      "icon": "🟢",
+      "ru": [
+        "Presente: глаголы на -ER",
+        "основа · -o/-es/-e/-emos/-éis/-en"
+      ],
+      "uk": [
+        "Presente: дієслова на -ER",
+        "основа · -o/-es/-e/-emos/-éis/-en"
+      ],
+      "en": [
+        "Present: regular -ER verbs",
+        "stem · -o/-es/-e/-emos/-éis/-en"
+      ],
+      "es": [
+        "Presente: verbos regulares en -ER",
+        "raíz · -o/-es/-e/-emos/-éis/-en"
+      ]
+    },
+    "present-ir": {
+      "file": "data/a1-regular-present.json",
+      "status": "ready",
+      "icon": "🔵",
+      "ru": [
+        "Presente: глаголы на -IR",
+        "основа · -o/-es/-e/-imos/-ís/-en"
+      ],
+      "uk": [
+        "Presente: дієслова на -IR",
+        "основа · -o/-es/-e/-imos/-ís/-en"
+      ],
+      "en": [
+        "Present: regular -IR verbs",
+        "stem · -o/-es/-e/-imos/-ís/-en"
+      ],
+      "es": [
+        "Presente: verbos regulares en -IR",
+        "raíz · -o/-es/-e/-imos/-ís/-en"
+      ]
+    },
+    "present-mixed-regular": {
+      "file": "data/a1-regular-present.json",
+      "status": "ready",
+      "icon": "🔀",
+      "ru": [
+        "-AR, -ER или -IR?",
+        "сравнение моделей · смешанная практика"
+      ],
+      "uk": [
+        "-AR, -ER чи -IR?",
+        "порівняння моделей · змішана практика"
+      ],
+      "en": [
+        "-AR, -ER or -IR?",
+        "compare patterns · mixed practice"
+      ],
+      "es": [
+        "¿-AR, -ER o -IR?",
+        "comparación de modelos · práctica mixta"
+      ]
+    },
+    "present-regular-trainer": {
+      "file": "data/a1-regular-present.json",
+      "status": "ready",
+      "icon": "🎯",
+      "ru": [
+        "Тренажёр правильных глаголов",
+        "три модели · выбор формы · самопроверка"
+      ],
+      "uk": [
+        "Тренажер правильних дієслів",
+        "три моделі · вибір форми · самоперевірка"
+      ],
+      "en": [
+        "Regular verb trainer",
+        "three patterns · choose the form · self-check"
+      ],
+      "es": [
+        "Entrenador de verbos regulares",
+        "tres modelos · elegir la forma · autoevaluación"
+      ]
+    },
+    "tener": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "🎒",
+      "ru": [
+        "Tener",
+        "формы · возраст · ощущения · tener que"
+      ],
+      "uk": [
+        "Tener",
+        "форми · вік · відчуття · tener que"
+      ],
+      "en": [
+        "Tener",
+        "forms · age · sensations · tener que"
+      ],
+      "es": [
+        "Tener",
+        "formas · edad · sensaciones · tener que"
+      ]
+    },
+    "ir": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "➡️",
+      "ru": [
+        "Ir",
+        "voy/vas/va · направление · ir a + infinitivo"
+      ],
+      "uk": [
+        "Ir",
+        "voy/vas/va · напрямок · ir a + infinitivo"
+      ],
+      "en": [
+        "Ir",
+        "voy/vas/va · destination · ir a + infinitive"
+      ],
+      "es": [
+        "Ir",
+        "voy/vas/va · destino · ir a + infinitivo"
+      ]
+    },
+    "hacer": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "🛠️",
+      "ru": [
+        "Hacer",
+        "hago · действия · погода · сочетания"
+      ],
+      "uk": [
+        "Hacer",
+        "hago · дії · погода · сполучення"
+      ],
+      "en": [
+        "Hacer",
+        "hago · activities · weather · expressions"
+      ],
+      "es": [
+        "Hacer",
+        "hago · actividades · tiempo · expresiones"
+      ]
+    },
+    "venir": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "📍",
+      "ru": [
+        "Venir",
+        "vengo · e→ie · venir de · движение сюда"
+      ],
+      "uk": [
+        "Venir",
+        "vengo · e→ie · venir de · рух сюди"
+      ],
+      "en": [
+        "Venir",
+        "vengo · e→ie · venir de · movement here"
+      ],
+      "es": [
+        "Venir",
+        "vengo · e→ie · venir de · movimiento hacia aquí"
+      ]
+    },
+    "querer": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "💬",
+      "ru": [
+        "Querer",
+        "e→ie · желания · querer + infinitivo"
+      ],
+      "uk": [
+        "Querer",
+        "e→ie · бажання · querer + infinitivo"
+      ],
+      "en": [
+        "Querer",
+        "e→ie · wishes · querer + infinitive"
+      ],
+      "es": [
+        "Querer",
+        "e→ie · deseos · querer + infinitivo"
+      ]
+    },
+    "poder": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "💪",
+      "ru": [
+        "Poder",
+        "o→ue · возможность · разрешение · просьба"
+      ],
+      "uk": [
+        "Poder",
+        "o→ue · можливість · дозвіл · прохання"
+      ],
+      "en": [
+        "Poder",
+        "o→ue · ability · permission · requests"
+      ],
+      "es": [
+        "Poder",
+        "o→ue · capacidad · permiso · peticiones"
+      ]
+    },
+    "decir": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "🗣️",
+      "ru": [
+        "Decir",
+        "digo · e→i · decir que · адресат"
+      ],
+      "uk": [
+        "Decir",
+        "digo · e→i · decir que · адресат"
+      ],
+      "en": [
+        "Decir",
+        "digo · e→i · decir que · addressee"
+      ],
+      "es": [
+        "Decir",
+        "digo · e→i · decir que · destinatario"
+      ]
+    },
+    "irregular-present-mixed": {
+      "file": "data/a1-irregular-present.json",
+      "status": "ready",
+      "icon": "🧠",
+      "ru": [
+        "Неправильные глаголы: практика",
+        "7 глаголов · формы · конструкции · контекст"
+      ],
+      "uk": [
+        "Неправильні дієслова: практика",
+        "7 дієслів · форми · конструкції · контекст"
+      ],
+      "en": [
+        "Irregular verbs: mixed practice",
+        "7 verbs · forms · structures · context"
+      ],
+      "es": [
+        "Verbos irregulares: práctica mixta",
+        "7 verbos · formas · estructuras · contexto"
+      ]
+    },
+    "reflexive-pronouns": {
+      "file": "data/a1-reflexive-verbs.json",
+      "status": "ready",
+      "icon": "🔁",
+      "ru": [
+        "Возвратные местоимения",
+        "me · te · se · nos · os · se"
+      ],
+      "uk": [
+        "Зворотні займенники",
+        "me · te · se · nos · os · se"
+      ],
+      "en": [
+        "Reflexive pronouns",
+        "me · te · se · nos · os · se"
+      ],
+      "es": [
+        "Pronombres reflexivos",
+        "me · te · se · nos · os · se"
+      ]
+    },
+    "reflexive-present": {
+      "file": "data/a1-reflexive-verbs.json",
+      "status": "ready",
+      "icon": "🛁",
+      "ru": [
+        "Возвратные глаголы в presente",
+        "me levanto · te levantas · se levanta"
+      ],
+      "uk": [
+        "Зворотні дієслова в presente",
+        "me levanto · te levantas · se levanta"
+      ],
+      "en": [
+        "Reflexive verbs in the present",
+        "me levanto · te levantas · se levanta"
+      ],
+      "es": [
+        "Verbos reflexivos en presente",
+        "me levanto · te levantas · se levanta"
+      ]
+    },
+    "daily-routine": {
+      "file": "data/a1-reflexive-verbs.json",
+      "status": "ready",
+      "icon": "⏰",
+      "ru": [
+        "Распорядок дня",
+        "время · последовательность · ежедневные действия"
+      ],
+      "uk": [
+        "Розпорядок дня",
+        "час · послідовність · щоденні дії"
+      ],
+      "en": [
+        "Daily routine",
+        "time · sequence · daily actions"
+      ],
+      "es": [
+        "Rutina diaria",
+        "hora · secuencia · acciones diarias"
+      ]
+    },
+    "reflexive-practice": {
+      "file": "data/a1-reflexive-verbs.json",
+      "status": "ready",
+      "icon": "✅",
+      "ru": [
+        "Практика возвратных глаголов",
+        "лицо · инфинитив · форма · распорядок дня"
+      ],
+      "uk": [
+        "Практика зворотних дієслів",
+        "особа · інфінітив · форма · розпорядок дня"
+      ],
+      "en": [
+        "Reflexive verb practice",
+        "person · infinitive · form · daily routine"
+      ],
+      "es": [
+        "Práctica de verbos reflexivos",
+        "persona · infinitivo · forma · rutina diaria"
+      ]
+    },
+    "adjectives": {
+      "file": "data/a1-adjectives.json",
+      "status": "ready",
+      "icon": "🎨",
+      "ru": [
+        "Прилагательные: базовые модели",
+        "значение · место после существительного · описание"
+      ],
+      "uk": [
+        "Прикметники: базові моделі",
+        "значення · місце після іменника · опис"
+      ],
+      "en": [
+        "Adjectives: basic patterns",
+        "meaning · position after the noun · description"
+      ],
+      "es": [
+        "Adjetivos: modelos básicos",
+        "significado · posición tras el sustantivo · descripción"
+      ]
+    },
+    "adjective-agreement": {
+      "file": "data/a1-adjectives.json",
+      "status": "ready",
+      "icon": "🔗",
+      "ru": [
+        "Согласование прилагательных",
+        "род · число · -o/-a/-os/-as"
+      ],
+      "uk": [
+        "Узгодження прикметників",
+        "рід · число · -o/-a/-os/-as"
+      ],
+      "en": [
+        "Adjective agreement",
+        "gender · number · -o/-a/-os/-as"
+      ],
+      "es": [
+        "Concordancia de adjetivos",
+        "género · número · -o/-a/-os/-as"
+      ]
+    },
+    "possessives": {
+      "file": "data/a1-possessives.json",
+      "status": "ready",
+      "icon": "🔑",
+      "ru": [
+        "Притяжательные: mi, tu, su…",
+        "владелец · число предметов · su / sus"
+      ],
+      "uk": [
+        "Присвійні: mi, tu, su…",
+        "власник · кількість предметів · su / sus"
+      ],
+      "en": [
+        "Possessives: mi, tu, su…",
+        "owner · number of things · su / sus"
+      ],
+      "es": [
+        "Posesivos: mi, tu, su…",
+        "propietario · número de cosas · su / sus"
+      ]
+    },
+    "demonstratives": {
+      "file": "data/a1-demonstratives.json",
+      "status": "ready",
+      "icon": "📍",
+      "ru": [
+        "Указательные: este, ese, aquel",
+        "расстояние · род · число"
+      ],
+      "uk": [
+        "Вказівні: este, ese, aquel",
+        "відстань · рід · число"
+      ],
+      "en": [
+        "Demonstratives: este, ese, aquel",
+        "distance · gender · number"
+      ],
+      "es": [
+        "Demostrativos: este, ese, aquel",
+        "distancia · género · número"
+      ]
+    },
+    "comparisons-basic": {
+      "file": "data/a1-comparisons.json",
+      "status": "ready",
+      "icon": "⚖️",
+      "ru": [
+        "Базовые сравнения",
+        "más / menos / tan · que / como"
+      ],
+      "uk": [
+        "Базові порівняння",
+        "más / menos / tan · que / como"
+      ],
+      "en": [
+        "Basic comparisons",
+        "más / menos / tan · que / como"
+      ],
+      "es": [
+        "Comparaciones básicas",
+        "más / menos / tan · que / como"
+      ]
+    },
+    "prepositions-basic": {
+      "file": "data/a1-prepositions.json",
+      "status": "ready",
+      "icon": "🧭",
+      "ru": [
+        "Основные предлоги",
+        "место · направление · происхождение · связь"
+      ],
+      "uk": [
+        "Основні прийменники",
+        "місце · напрямок · походження · зв’язок"
+      ],
+      "en": [
+        "Basic prepositions",
+        "place · direction · origin · connection"
+      ],
+      "es": [
+        "Preposiciones básicas",
+        "lugar · dirección · origen · relación"
+      ]
+    },
+    "location-prepositions": {
+      "file": "data/a1-location-prepositions.json",
+      "status": "ready",
+      "icon": "🗺️",
+      "ru": [
+        "Предлоги места",
+        "перед · за · под · между · рядом · далеко"
+      ],
+      "uk": [
+        "Прийменники місця",
+        "перед · за · під · між · поруч · далеко"
+      ],
+      "en": [
+        "Location prepositions",
+        "in front of · behind · under · between · next to · far"
+      ],
+      "es": [
+        "Preposiciones de lugar",
+        "delante · detrás · debajo · entre · al lado · lejos"
+      ]
+    },
+    "a-de-contractions": {
+      "file": "data/a1-contractions.json",
+      "status": "ready",
+      "icon": "🔗",
+      "ru": [
+        "A / de и al / del",
+        "a + el = al · de + el = del · a él / de él"
+      ],
+      "uk": [
+        "A / de та al / del",
+        "a + el = al · de + el = del · a él / de él"
+      ],
+      "en": [
+        "A / de and al / del",
+        "a + el = al · de + el = del · a él / de él"
+      ],
+      "es": [
+        "A / de y al / del",
+        "a + el = al · de + el = del · a él / de él"
+      ]
+    },
+    "city-directions": {
+      "file": "data/a1-city-directions.json",
+      "status": "ready",
+      "icon": "🧭",
+      "ru": [
+        "Город и направление движения",
+        "спросить дорогу · прямо · направо · налево"
+      ],
+      "uk": [
+        "Місто й напрямок руху",
+        "запитати дорогу · прямо · праворуч · ліворуч"
+      ],
+      "en": [
+        "City and directions",
+        "ask the way · straight · right · left"
+      ],
+      "es": [
+        "La ciudad y las direcciones",
+        "pedir indicaciones · recto · derecha · izquierda"
+      ]
+    },
+    "gustar": {
+      "file": "data/a1-gustar.json",
+      "status": "ready",
+      "icon": "❤️",
+      "ru": [
+        "Gustar: нравится",
+        "me gusta / me gustan · предпочтения"
+      ],
+      "uk": [
+        "Gustar: подобається",
+        "me gusta / me gustan · уподобання"
+      ],
+      "en": [
+        "Gustar: to like",
+        "me gusta / me gustan · preferences"
+      ],
+      "es": [
+        "Gustar",
+        "me gusta / me gustan · preferencias"
+      ]
+    },
+    "encantar-interesar": {
+      "file": "data/a1-encantar-interesar.json",
+      "status": "ready",
+      "icon": "✨",
+      "ru": [
+        "Encantar / interesar",
+        "очень нравится · интересует"
+      ],
+      "uk": [
+        "Encantar / interesar",
+        "дуже подобається · цікавить"
+      ],
+      "en": [
+        "Encantar / interesar",
+        "love · interest"
+      ],
+      "es": [
+        "Encantar / interesar",
+        "encantar · interesar"
+      ]
+    },
+    "ir-a-infinitive": {
+      "file": "data/a1-ir-a-infinitive.json",
+      "status": "ready",
+      "icon": "📆",
+      "ru": [
+        "Ir a + инфинитив",
+        "ближайшие планы · намерения"
+      ],
+      "uk": [
+        "Ir a + інфінітив",
+        "найближчі плани · наміри"
+      ],
+      "en": [
+        "Ir a + infinitive",
+        "near-future plans · intentions"
+      ],
+      "es": [
+        "Ir a + infinitivo",
+        "planes próximos · intenciones"
+      ]
+    },
+    "tener-que": {
+      "file": "data/a1-tener-que.json",
+      "status": "ready",
+      "icon": "📌",
+      "ru": [
+        "Tener que + инфинитив",
+        "необходимость · обязанности"
+      ],
+      "uk": [
+        "Tener que + інфінітив",
+        "необхідність · обов’язки"
+      ],
+      "en": [
+        "Tener que + infinitive",
+        "necessity · duties"
+      ],
+      "es": [
+        "Tener que + infinitivo",
+        "necesidad · obligaciones"
+      ]
+    },
+    "querer-infinitive": {
+      "file": "data/a1-querer-infinitive.json",
+      "status": "ready",
+      "icon": "💬",
+      "ru": [
+        "Querer + инфинитив",
+        "желания · планы · вопрос · отрицание"
+      ],
+      "uk": [
+        "Querer + інфінітив",
+        "бажання · плани · питання · заперечення"
+      ],
+      "en": [
+        "Querer + infinitive",
+        "wishes · plans · questions · negatives"
+      ],
+      "es": [
+        "Querer + infinitivo",
+        "deseos · planes · pregunta · negación"
+      ]
+    },
+    "poder-infinitive": {
+      "file": "data/a1-poder-infinitive.json",
+      "status": "ready",
+      "icon": "💪",
+      "ru": [
+        "Poder + инфинитив",
+        "возможность · умение · разрешение"
+      ],
+      "uk": [
+        "Poder + інфінітив",
+        "можливість · уміння · дозвіл"
+      ],
+      "en": [
+        "Poder + infinitive",
+        "ability · possibility · permission"
+      ],
+      "es": [
+        "Poder + infinitivo",
+        "capacidad · posibilidad · permiso"
+      ]
+    },
+    "family": {
+      "file": "data/a1-family.json",
+      "status": "ready",
+      "icon": "👨‍👩‍👧‍👦",
+      "ru": [
+        "Семья",
+        "члены семьи · mi / mis · рассказ о семье"
+      ],
+      "uk": [
+        "Сім’я",
+        "члени сім’ї · mi / mis · розповідь про сім’ю"
+      ],
+      "en": [
+        "Family",
+        "family members · mi / mis · talking about family"
+      ],
+      "es": [
+        "La familia",
+        "miembros · mi / mis · hablar de la familia"
+      ]
+    },
+    "home": {
+      "file": "data/a1-home.json",
+      "status": "ready",
+      "icon": "🏠",
+      "ru": [
+        "Дом",
+        "комнаты · предметы · где находится"
+      ],
+      "uk": [
+        "Дім",
+        "кімнати · предмети · де знаходиться"
+      ],
+      "en": [
+        "Home",
+        "rooms · objects · where things are"
+      ],
+      "es": [
+        "La casa",
+        "habitaciones · objetos · dónde está"
+      ]
+    },
+    "food-drinks": {
+      "file": "data/a1-food-drinks.json",
+      "status": "ready",
+      "icon": "🍽️",
+      "ru": [
+        "Еда и напитки",
+        "продукты · количество · заказ"
+      ],
+      "uk": [
+        "Їжа й напої",
+        "продукти · кількість · замовлення"
+      ],
+      "en": [
+        "Food and drinks",
+        "food · quantity · ordering"
+      ],
+      "es": [
+        "Comida y bebidas",
+        "alimentos · cantidad · pedir"
+      ]
+    },
+    "shopping": {
+      "file": "data/a1-shopping.json",
+      "status": "ready",
+      "icon": "🛍️",
+      "ru": [
+        "Покупки и цены",
+        "товары · цена · размер · вежливая покупка"
+      ],
+      "uk": [
+        "Покупки й ціни",
+        "товари · ціна · розмір · ввічлива покупка"
+      ],
+      "en": [
+        "Shopping and prices",
+        "goods · price · size · polite buying"
+      ],
+      "es": [
+        "Compras y precios",
+        "productos · precio · talla · compra cortés"
+      ]
+    },
+    "city-places": {
+      "file": "data/a1-city-places.json",
+      "status": "ready",
+      "icon": "🏙️",
+      "ru": [
+        "Город и места",
+        "места · где находится · спросить дорогу"
+      ],
+      "uk": [
+        "Місто й місця",
+        "місця · де знаходиться · запитати дорогу"
+      ],
+      "en": [
+        "City places",
+        "places · location · ask the way"
+      ],
+      "es": [
+        "La ciudad y los lugares",
+        "lugares · ubicación · pedir indicaciones"
+      ]
+    },
+    "transport": {
+      "file": "data/a1-transport.json",
+      "status": "ready",
+      "icon": "🚌",
+      "ru": [
+        "Транспорт",
+        "виды транспорта · билет · маршрут"
+      ],
+      "uk": [
+        "Транспорт",
+        "види транспорту · квиток · маршрут"
+      ],
+      "en": [
+        "Transport",
+        "types · ticket · route"
+      ],
+      "es": [
+        "El transporte",
+        "medios · billete · ruta"
+      ]
+    },
+    "daily-routine-vocab": {
+      "file": "data/a1-daily-routine-vocab.json",
+      "status": "ready",
+      "icon": "⏰",
+      "ru": [
+        "Повседневные действия",
+        "распорядок · время · последовательность"
+      ],
+      "uk": [
+        "Повсякденні дії",
+        "розпорядок · час · послідовність"
+      ],
+      "en": [
+        "Daily activities",
+        "routine · time · sequence"
+      ],
+      "es": [
+        "Las actividades diarias",
+        "rutina · tiempo · secuencia"
+      ]
+    },
+    "jobs": {
+      "file": "data/a1-jobs.json",
+      "status": "ready",
+      "icon": "💼",
+      "ru": [
+        "Профессии",
+        "названия · ser без артикля · место работы"
+      ],
+      "uk": [
+        "Професії",
+        "назви · ser без артикля · місце роботи"
+      ],
+      "en": [
+        "Jobs",
+        "names · ser without an article · workplace"
+      ],
+      "es": [
+        "Las profesiones",
+        "nombres · ser sin artículo · lugar de trabajo"
+      ]
+    },
+    "weather-seasons": {
+      "file": "data/a1-weather-seasons.json",
+      "status": "ready",
+      "icon": "🌦️",
+      "ru": [
+        "Погода и времена года",
+        "погода · температура · сезоны"
+      ],
+      "uk": [
+        "Погода й пори року",
+        "погода · температура · сезони"
+      ],
+      "en": [
+        "Weather and seasons",
+        "weather · temperature · seasons"
+      ],
+      "es": [
+        "El tiempo y las estaciones",
+        "tiempo · temperatura · estaciones"
+      ]
+    },
+    "free-time": {
+      "file": "data/a1-free-time.json",
+      "status": "ready",
+      "icon": "🎯",
+      "ru": [
+        "Свободное время и увлечения",
+        "хобби · gustar · планы"
+      ],
+      "uk": [
+        "Вільний час і захоплення",
+        "хобі · gustar · плани"
+      ],
+      "en": [
+        "Free time and hobbies",
+        "hobbies · gustar · plans"
+      ],
+      "es": [
+        "El tiempo libre y las aficiones",
+        "aficiones · gustar · planes"
+      ]
+    },
+    "introduce-yourself": {
+      "file": "data/a1-introduce-yourself.json",
+      "status": "ready",
+      "icon": "👋",
+      "ru": [
+        "Представиться и рассказать о себе",
+        "приветствие · имя · откуда вы"
+      ],
+      "uk": [
+        "Представитися і розповісти про себе",
+        "привітання · ім’я · звідки ви"
+      ],
+      "en": [
+        "Introduce yourself",
+        "greeting · name · where you are from"
+      ],
+      "es": [
+        "Presentarse y hablar de uno mismo",
+        "saludo · nombre · origen"
+      ]
+    },
+    "ask-personal-info": {
+      "file": "data/a1-ask-personal-info.json",
+      "status": "ready",
+      "icon": "🪪",
+      "ru": [
+        "Спросить личную информацию",
+        "имя · возраст · контакты"
+      ],
+      "uk": [
+        "Запитати особисту інформацію",
+        "ім’я · вік · контакти"
+      ],
+      "en": [
+        "Ask for personal information",
+        "name · age · contacts"
+      ],
+      "es": [
+        "Pedir información personal",
+        "nombre · edad · contacto"
+      ]
+    },
+    "order-food": {
+      "file": "data/a1-order-food.json",
+      "status": "ready",
+      "icon": "🍽️",
+      "ru": [
+        "Заказать еду и напитки",
+        "кафе · вежливый заказ · счёт"
+      ],
+      "uk": [
+        "Замовити їжу й напої",
+        "кафе · ввічливе замовлення · рахунок"
+      ],
+      "en": [
+        "Order food and drinks",
+        "café · polite order · bill"
+      ],
+      "es": [
+        "Pedir comida y bebida",
+        "cafetería · pedido cortés · cuenta"
+      ]
+    },
+    "shopping-dialogue": {
+      "file": "data/a1-shopping-dialogue.json",
+      "status": "ready",
+      "icon": "🛒",
+      "ru": [
+        "Диалог в магазине",
+        "товар · размер · цена · оплата"
+      ],
+      "uk": [
+        "Діалог у магазині",
+        "товар · розмір · ціна · оплата"
+      ],
+      "en": [
+        "A dialogue in a shop",
+        "item · size · price · payment"
+      ],
+      "es": [
+        "Diálogo en una tienda",
+        "artículo · talla · precio · pago"
+      ]
+    },
+    "ask-directions": {
+      "file": "data/a1-ask-directions.json",
+      "status": "ready",
+      "icon": "🧭",
+      "ru": [
+        "Спросить дорогу",
+        "где находится · направление · расстояние"
+      ],
+      "uk": [
+        "Запитати дорогу",
+        "де знаходиться · напрямок · відстань"
+      ],
+      "en": [
+        "Ask for directions",
+        "location · direction · distance"
+      ],
+      "es": [
+        "Pedir indicaciones",
+        "ubicación · dirección · distancia"
+      ]
+    },
+    "talk-routine": {
+      "file": "data/a1-talk-routine.json",
+      "status": "ready",
+      "icon": "⏰",
+      "ru": [
+        "Рассказать о распорядке дня",
+        "время · последовательность · обычный день"
+      ],
+      "uk": [
+        "Розповісти про розпорядок дня",
+        "час · послідовність · звичайний день"
+      ],
+      "en": [
+        "Talk about your daily routine",
+        "time · sequence · usual day"
+      ],
+      "es": [
+        "Hablar de la rutina diaria",
+        "tiempo · secuencia · día habitual"
+      ]
+    },
+    "make-simple-plans": {
+      "file": "data/a1-make-simple-plans.json",
+      "status": "ready",
+      "icon": "📅",
+      "ru": [
+        "Простые планы и договорённости",
+        "предложить · время · согласиться · перенести"
+      ],
+      "uk": [
+        "Прості плани й домовленості",
+        "запропонувати · час · погодитися · перенести"
+      ],
+      "en": [
+        "Simple plans and arrangements",
+        "suggest · time · agree · reschedule"
+      ],
+      "es": [
+        "Planes y acuerdos sencillos",
+        "proponer · hora · aceptar · cambiar"
+      ]
+    },
+    "reading": {
+      "file": "data/a1-reading.json",
+      "status": "ready",
+      "icon": "📖",
+      "ru": [
+        "Чтение: короткие сообщения",
+        "объявления · время · место · смысл"
+      ],
+      "uk": [
+        "Читання: короткі повідомлення",
+        "оголошення · час · місце · зміст"
+      ],
+      "en": [
+        "Reading: short messages",
+        "notices · time · place · meaning"
+      ],
+      "es": [
+        "Comprensión lectora: mensajes breves",
+        "anuncios · tiempo · lugar · sentido"
+      ]
+    },
+    "listening": {
+      "file": "data/a1-listening.json",
+      "status": "ready",
+      "icon": "🎧",
+      "ru": [
+        "Аудирование: короткие реплики",
+        "кто · где · когда · планы"
+      ],
+      "uk": [
+        "Аудіювання: короткі репліки",
+        "хто · де · коли · плани"
+      ],
+      "en": [
+        "Listening: short utterances",
+        "who · where · when · plans"
+      ],
+      "es": [
+        "Comprensión auditiva: frases breves",
+        "quién · dónde · cuándo · planes"
+      ]
+    },
+    "writing": {
+      "file": "data/a1-writing.json",
+      "status": "ready",
+      "icon": "✍️",
+      "ru": [
+        "Письмо: короткое сообщение",
+        "приветствие · новость · вопрос · прощание"
+      ],
+      "uk": [
+        "Письмо: коротке повідомлення",
+        "привітання · новина · питання · прощання"
+      ],
+      "en": [
+        "Writing: a short message",
+        "greeting · news · question · closing"
+      ],
+      "es": [
+        "Expresión escrita: mensaje breve",
+        "saludo · noticia · pregunta · despedida"
+      ]
+    },
+    "speaking": {
+      "file": "data/a1-speaking.json",
+      "status": "ready",
+      "icon": "🗣️",
+      "ru": [
+        "Говорение: короткие диалоги",
+        "приветствие · просьба · планы · прощание"
+      ],
+      "uk": [
+        "Говоріння: короткі діалоги",
+        "привітання · прохання · плани · прощання"
+      ],
+      "en": [
+        "Speaking: short dialogues",
+        "greeting · request · plans · goodbye"
+      ],
+      "es": [
+        "Expresión oral: diálogos breves",
+        "saludo · petición · planes · despedida"
+      ]
+    },
+    "mixed-review": {
+      "file": "data/a1-mixed-review.json",
+      "status": "ready",
+      "icon": "🔄",
+      "ru": [
+        "Смешанное повторение A1",
+        "грамматика · лексика · ситуации · навыки"
+      ],
+      "uk": [
+        "Змішане повторення A1",
+        "граматика · лексика · ситуації · навички"
+      ],
+      "en": [
+        "Mixed A1 review",
+        "grammar · vocabulary · situations · skills"
+      ],
+      "es": [
+        "Repaso mixto A1",
+        "gramática · vocabulario · situaciones · destrezas"
+      ]
+    },
+    "grammar-check": {
+      "file": "data/a1-grammar-check.json",
+      "status": "ready",
+      "icon": "✅",
+      "ru": [
+        "Контроль грамматики A1",
+        "ser / estar / hay · артикли · presente · конструкции"
+      ],
+      "uk": [
+        "Контроль граматики A1",
+        "ser / estar / hay · артиклі · presente · конструкції"
+      ],
+      "en": [
+        "A1 grammar check",
+        "ser / estar / hay · articles · present · structures"
+      ],
+      "es": [
+        "Control de gramática A1",
+        "ser / estar / hay · artículos · presente · estructuras"
+      ]
+    },
+    "vocabulary-check": {
+      "file": "data/a1-vocabulary-check.json",
+      "status": "ready",
+      "icon": "📚",
+      "ru": [
+        "Контроль лексики A1",
+        "семья · дом · еда · город · повседневность"
+      ],
+      "uk": [
+        "Контроль лексики A1",
+        "сім’я · дім · їжа · місто · щоденність"
+      ],
+      "en": [
+        "A1 vocabulary check",
+        "family · home · food · city · daily life"
+      ],
+      "es": [
+        "Control de vocabulario A1",
+        "familia · casa · comida · ciudad · vida diaria"
+      ]
+    },
+    "skills-check": {
+      "file": "data/a1-skills-check.json",
+      "status": "ready",
+      "icon": "🎯",
+      "ru": [
+        "Контроль навыков A1",
+        "чтение · аудирование · говорение · письмо"
+      ],
+      "uk": [
+        "Контроль навичок A1",
+        "читання · аудіювання · говоріння · письмо"
+      ],
+      "en": [
+        "A1 skills check",
+        "reading · listening · speaking · writing"
+      ],
+      "es": [
+        "Control de destrezas A1",
+        "lectura · audición · expresión oral · escrita"
+      ]
+    },
+    "final-test": {
+      "file": "data/a1-final-test.json",
+      "status": "ready",
+      "icon": "🏁",
+      "ru": [
+        "Итоговый тест A1",
+        "грамматика · лексика · общение · навыки"
+      ],
+      "uk": [
+        "Підсумковий тест A1",
+        "граматика · лексика · спілкування · навички"
+      ],
+      "en": [
+        "Final A1 test",
+        "grammar · vocabulary · communication · skills"
+      ],
+      "es": [
+        "Prueba final A1",
+        "gramática · vocabulario · comunicación · destrezas"
+      ]
+    },
+    "weak-spots": {
+      "file": "data/a1-weak-spots.json",
+      "status": "ready",
+      "icon": "🔁",
+      "ru": [
+        "Слабые места: повторение A1",
+        "формы · ситуации · место · понимание"
+      ],
+      "uk": [
+        "Слабкі місця: повторення A1",
+        "форми · ситуації · місце · розуміння"
+      ],
+      "en": [
+        "Weak areas: A1 review",
+        "forms · situations · place · understanding"
+      ],
+      "es": [
+        "Puntos débiles: repaso A1",
+        "formas · situaciones · lugar · comprensión"
+      ]
+    }
   }
 }
