@@ -102,12 +102,13 @@ function completedState(){return {lang:'ru',stage:8,positions:{3:0,4:0,5:0,6:0},
 async function lessonSetup(state,lessonId){
   const root=new Root(),storage=new Map(),saved=[];let subscriber;
   const selected=lessonId||'football-adjectives-a1';
-  const data=selected==='football-kit-a1'?JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-kit.json'))):lessonData;
-  const key=(selected==='football-kit-a1'?'esprofe_football_kit_v2':'esprofe_football_review_v3')+':'+owner.id;
+  const selectedLesson=require('../clase/lesson-catalog.js').get(selected);
+  const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase',selectedLesson.file)));
+  const key=selectedLesson.key+':'+owner.id;
   if(state)storage.set(key,JSON.stringify(state));
   const account={user:owner,available:true,init:async()=>owner,subscribe:fn=>{subscriber=fn},history:async()=>[],saveAttempt:async a=>{saved.push(a);return a.id}};
-  const context={window:{EsProfeLessonAccount:account,location:{search:lessonId?'?lesson='+lessonId:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>['lesson.json','football-kit.json'].includes(url.split('?')[0])?data:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
-  for(const file of ['lesson-catalog.js','kit-visuals.js','vocabulary-practice.js'])vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/'+file),'utf8'),context);
+  const context={window:{EsProfeLessonAccount:account,location:{search:lessonId?'?lesson='+lessonId:''},addEventListener(){}},document:{getElementById:()=>root,fonts:null},fetch:async url=>({ok:true,json:async()=>require('../clase/lesson-catalog.js').lessons.some(l=>l.file===url.split('?')[0])?data:copyData}),crypto,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},URLSearchParams,console,setTimeout,confirm:()=>true};
+  for(const file of ['lesson-catalog.js','kit-visuals.js','scene-visuals.js','vocabulary-practice.js'])vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../clase/'+file),'utf8'),context);
   await vm.runInNewContext(lessonSource,context);
   return {root,storage,saved,account,key,switchUser(next){account.user=next;subscriber()}};
 }
@@ -244,4 +245,32 @@ test('champion banner requires completed core tasks, review and own sentences, n
  const records={...state.records,'k2-q0':{picked:'roja',ok:false,last:{ok:true},resolved:false}};
  const review=await lessonSetup({...state,records},'football-kit-a1');assert(!review.root.innerHTML.includes('lesson-celebration'));
  const words=await lessonSetup({...state,stage:1},'football-kit-a1');assert(words.root.innerHTML.includes('Найди пары'));assert(words.root.innerHTML.includes('Карточки'));
+});
+
+test('third lesson accepts short location and hay answers but rejects wrong forms and wrong places',async()=>{
+ const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-location.json')));
+ for(const [stage,items] of Object.entries(data.groups))for(const [index,item] of items.entries()){
+  if(item.type!=='input')continue;
+  for(const answer of [item.a,...(item.accepted||[])]){
+   const state={...completedState(),stage:Number(stage),modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:{},tokens:{}};
+   const s=await lessonSetup(state,'football-location-a1');s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();
+   assert.equal(JSON.parse(s.storage.get(s.key)).records[item.id].ok,true,answer);
+  }
+ }
+ for(const [index,answer] of [[0,'Están en el campo.'],[0,'Está en el banquillo.'],[1,'Está en el banquillo.'],[3,'Están un portero.']]){
+  const state={...completedState(),stage:5,modelSeen:true,positions:{3:0,4:0,5:index,6:0},records:{},drafts:{},tokens:{}};
+  const s=await lessonSetup(state,'football-location-a1');s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();
+  assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,answer);
+ }
+ const state={...completedState(),stage:5,positions:{3:0,4:0,5:2,6:0},modelSeen:true,records:{},drafts:{},tokens:{'fl1-b0':[0,1,2,3,4,5,6]}};
+ const built=await lessonSetup(state,'football-location-a1');built.root.querySelector('#ep-check').onclick();assert.equal(JSON.parse(built.storage.get(built.key)).records['fl1-b0'].ok,true);
+});
+test('third lesson uses its own progress, localized rule, scene and complete result',async()=>{
+ const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-location.json')));
+ const state={...completedState(),own:['Messi está en el campo.','Neuer está en la portería.','En el banquillo hay jugadores.'],records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
+ const s=await lessonSetup(state,'football-location-a1');assert(s.key.startsWith('esprofe_football_location_v1:'));assert(s.root.innerHTML.includes('Ты — чемпион!'));assert(s.root.innerHTML.includes('9 / 9'));
+ for(const lang of ['ru','uk','en']){
+  const rule=await lessonSetup({...state,lang,stage:2},'football-location-a1');assert(rule.root.innerHTML.includes('Messi está en el campo.'));assert(!rule.root.innerHTML.includes('La camiseta es roja.'));
+  const scene=await lessonSetup({...state,lang,stage:5,modelSeen:true,records:{}},'football-location-a1');assert(scene.root.innerHTML.includes('pitch-map'));assert(scene.root.innerHTML.includes(data.scenes.training.title[lang]));
+ }
 });

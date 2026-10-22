@@ -49,3 +49,9 @@ test('saved kit reports restore only into the matching lesson',()=>{
  const old={...row,lesson_id:'football-adjectives-a1'};
  assert.throws(()=>model.restore(old,'football-kit-a1'),/invalid_report/);
 });
+
+test('third lesson reports restore without mixing lessons or completed answer evidence',()=>{
+ const row={id:'location-attempt',lesson_id:'football-location-a1',language:'ru',version:1,snapshot:build()};
+ assert.equal(model.restore(row,'football-location-a1').runId,'location-attempt');
+ assert.throws(()=>model.restore(row,'football-kit-a1'),/invalid_report/);
+});

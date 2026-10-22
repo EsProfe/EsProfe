@@ -1,0 +1,44 @@
+#esprofe-football .location-scene{flex:1;min-height:0;display:flex;flex-direction:column;width:100%;max-width:1000px;gap:5px;margin:0 auto}
+#esprofe-football .scene-title{font-size:13px;color:#416476;text-align:left;flex:none}
+#esprofe-football .pitch-map{flex:1;min-height:160px;display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:9px;padding:12px;border-radius:18px;background:#d4e9dd;max-height:540px;position:relative}
+#esprofe-football .pitch-zone{position:relative;min-height:0;overflow:hidden;border:2px solid #a7cfb5;border-radius:13px;background:repeating-linear-gradient(90deg,#368358 0,#368358 44px,#3f9164 44px,#3f9164 88px);padding:7px;display:flex;flex-direction:column;gap:5px;justify-content:center;align-items:center;box-sizing:border-box}
+#esprofe-football .zone-goal{grid-column:1;grid-row:1}
+#esprofe-football .zone-field{grid-column:1;grid-row:2}
+#esprofe-football .zone-bench{grid-column:2;grid-row:1/3;background:linear-gradient(135deg,#526c88,#324e6a);border-color:#899eb3}
+#esprofe-football .zone-focus{outline:4px solid #f0bf42;outline-offset:-1px;border-color:#f0bf42}
+#esprofe-football .zone-muted{opacity:.55}
+#esprofe-football .place-symbol{position:absolute;inset:8% 4%;width:92%;height:84%;color:#fff;opacity:.23;pointer-events:none}
+#esprofe-football .place-name{position:relative;font-size:19px;color:white;line-height:1.15;text-shadow:0 1px 3px #1d5132;flex:none}
+#esprofe-football .scene-players{display:flex;gap:12px;align-items:center;justify-content:center;position:relative;flex:none}
+#esprofe-football .scene-player{display:flex;flex-direction:column;gap:3px;align-items:center}
+#esprofe-football .scene-player img{width:clamp(48px,11vh,95px);height:clamp(48px,11vh,95px);border-radius:50%;border:3px solid white;object-fit:cover;object-position:50% 16%;box-shadow:0 2px 5px #163a3540}
+#esprofe-football .scene-player span{font-size:14px;line-height:1.2;color:white;font-weight:600;background:#173c50b8;padding:2px 7px;border-radius:10px}
+#esprofe-football .location-scene figcaption{font-size:12px;line-height:1.3;font-weight:400;color:#4c697b;flex:none}
+#esprofe-football .location-scene figcaption a{color:#285974}
+#esprofe-football.photo-words .kit-word .location-scene{flex:1;min-height:0}
+#esprofe-football .kit-word .location-scene .pitch-map{min-height:95px;gap:3px;padding:4px;border-radius:8px}
+#esprofe-football .kit-word .location-scene .pitch-zone{padding:3px;gap:2px;border-radius:5px}
+#esprofe-football .kit-word .location-scene .scene-player img{width:25px;height:25px;border-width:1px}
+#esprofe-football .kit-word .location-scene .scene-player span{display:none}
+#esprofe-football .kit-word .location-scene .scene-players{gap:3px}
+#esprofe-football .kit-word .location-scene .place-name{font-size:10px}
+#esprofe-football .kit-word .location-scene .scene-title,#esprofe-football .kit-word .location-scene figcaption{display:none}
+#esprofe-football .vp-card .location-scene .scene-player img{width:clamp(42px,7vh,68px);height:clamp(42px,7vh,68px)}
+#esprofe-football .vp-card .location-scene .pitch-map{min-height:160px}
+#esprofe-football .scene-rule-examples{display:grid;grid-template-columns:1fr;gap:6px;padding:8px}
+#esprofe-football .scene-rule-examples>div{display:flex;align-items:center;justify-content:space-between;gap:8px}
+#esprofe-football .scene-rule-examples .model{margin:0;font-size:19px}
+#esprofe-football .scene-rule-examples button{font-size:14px;padding:4px 8px;min-height:32px}
+#esprofe-football .scene-intro{max-width:750px;margin:0 auto 8px;height:clamp(170px,30vh,260px)}
+@media(max-width:650px),(max-height:650px){
+ #esprofe-football .pitch-map{gap:6px;padding:7px;min-height:170px}
+ #esprofe-football .place-name{font-size:15px}
+ #esprofe-football .scene-player img{width:clamp(38px,7vh,65px);height:clamp(38px,7vh,65px);border-width:2px}
+ #esprofe-football .scene-players{gap:5px}
+ #esprofe-football .scene-player span{font-size:12px;padding:2px 4px}
+ #esprofe-football .scene-rule-examples .model{font-size:17px}
+}
+@media(max-height:500px){#esprofe-football .photo-task .location-scene{min-height:120px}#esprofe-football .photo-task .pitch-map{min-height:110px}#esprofe-football .photo-task .scene-player img{width:32px;height:32px}#esprofe-football .photo-task .scene-title,#esprofe-football .photo-task .location-scene figcaption{display:none}}
+#esprofe-football .vp-place-thumb{display:flex;align-items:center;justify-content:center;background:#d5eadc;border-radius:8px;color:#286442;width:66px;height:58px;flex:none;padding:4px;box-sizing:border-box}
+#esprofe-football .vp-place-thumb svg{width:100%;height:100%}
+@media(max-width:650px),(max-height:650px){#esprofe-football .vp-place-thumb{width:42px;height:42px}}

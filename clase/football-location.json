@@ -1,0 +1,894 @@
+{
+  "lessonId": "football-location-a1",
+  "version": 1,
+  "D": {
+    "ru": {
+      "lang": "Язык",
+      "preview": "Уроки с преподавателем",
+      "names": [
+        "Начало",
+        "Слова: места и игроки",
+        "Где? Есть?",
+        "Разминка",
+        "Первый тайм",
+        "Второй тайм",
+        "Разбор ошибок",
+        "Ты — тренер!",
+        "Итоги матча"
+      ],
+      "title": "Футбол 3. Где игроки?",
+      "intro": "Найди игроков на схеме, спроси, где они находятся, и расскажи, кто есть на поле. Два коротких тайма — до 9 голов!",
+      "goal": "Начальный уровень · 15–20 минут практики; с разговором — до 30–40 минут",
+      "start": "Начать урок",
+      "next": "Далее",
+      "back": "Назад",
+      "check": "Проверить",
+      "continue": "Следующее задание",
+      "ready": "Готово — дальше",
+      "task": "Задание",
+      "of": "из",
+      "goals": "Голы",
+      "pick": "Выбери ответ.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Пока неверно. Правильный ответ:",
+      "why": "Один человек — está; несколько — están; «есть / имеются» — hay.",
+      "read": "Прочитай предложение вслух.",
+      "words": "Три новых места и два знакомых слова. Рассмотри схему; карточки и пары — по желанию.",
+      "rule": "¿Dónde? — Где? Для местонахождения используем estar: один — está, несколько — están. Hay — «есть / имеется», одинаково для одного и нескольких.",
+      "one": "Один",
+      "many": "Несколько",
+      "masc": "Мужской род",
+      "fem": "Женский род",
+      "unchanged": "¿Dónde está Messi? — Está en el campo. ¿Qué hay en la portería? — Hay un portero. Hay знакомит с тем, что есть; está / están показывают, где находится уже названный человек.",
+      "warm": "Повтори знакомые вопросы и назови новые места.",
+      "match": "Выбери форму по схеме. Подсказка: один, несколько или «есть»?",
+      "newintro": "Теперь отвечай по схеме сам. Можно коротко или полным предложением; в сборке нужны все слова.",
+      "formula": "¿Dónde está…? → Está… · ¿Dónde están…? → Están… · ¿Qué hay…? → Hay…",
+      "note": "Ответь по учебной схеме, а не по настоящему составу команды.",
+      "selectType": "Выбери форму",
+      "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
+      "write": "Ответь по схеме: коротко или полным предложением.",
+      "fix": "Исправь форму: está, están или hay. Можно словом или предложением.",
+      "answer": "Твой ответ",
+      "own": "Составь три короткие фразы по схеме: где Месси, где Нойер и кто есть на скамейке.",
+      "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
+      "finish": "Завершить урок",
+      "result": "Матч завершён!",
+      "first": "Верно с первой попытки",
+      "attempts": "Проверено заданий",
+      "review": "Повторить ошибки",
+      "allright": "Все проверенные задания выполнены правильно!",
+      "pending": "Не все задания пройдены. Можно вернуться к любому этапу.",
+      "home": "Домашнее задание",
+      "hw": "На следующем занятии назови три места без подсказки. Спроси преподавателя, где игроки, и ответь на его вопросы.",
+      "saved": "Прогресс и ошибки сохраняются в этом браузере на этом устройстве.",
+      "repeat": "Повторение ошибок",
+      "reviewdone": "Ошибки разобраны!",
+      "empty": "Сначала введи ответ.",
+      "ownempty": "Напиши три предложения перед завершением.",
+      "viewown": "Твои предложения",
+      "reset": "Пройти заново",
+      "resetask": "Начать заново и очистить ответы?",
+      "reveal": "Перевод",
+      "scorehint": "Голы считаются за первый правильный ответ в блоке «Матч».",
+      "speech": "Скажи вслух",
+      "practice": "Практика",
+      "modelstart": "Перейти к упражнениям",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Dónde está Messi? — Está en el campo.",
+        "¿Dónde están Salah y Carvajal? — Están en el banquillo.",
+        "¿Qué hay en la portería? — Hay un portero."
+      ],
+      "ownRule": "Используй está и hay. Повторять новые слова можно."
+    },
+    "uk": {
+      "lang": "Мова",
+      "preview": "Уроки з викладачем",
+      "names": [
+        "Початок",
+        "Слова: місця та гравці",
+        "Де? Є?",
+        "Розминка",
+        "Перший тайм",
+        "Другий тайм",
+        "Розбір помилок",
+        "Ти — тренер!",
+        "Підсумки матчу"
+      ],
+      "title": "Футбол 3. Де гравці?",
+      "intro": "Знайди гравців на схемі, запитай, де вони перебувають, і розкажи, хто є на полі. Два короткі тайми — до 9 голів!",
+      "goal": "Початковий рівень · 15–20 хвилин практики; з розмовою — до 30–40 хвилин",
+      "start": "Почати урок",
+      "next": "Далі",
+      "back": "Назад",
+      "check": "Перевірити",
+      "continue": "Наступне завдання",
+      "ready": "Готово — далі",
+      "task": "Завдання",
+      "of": "із",
+      "goals": "Голи",
+      "pick": "Обери відповідь.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Поки неправильно. Правильна відповідь:",
+      "why": "Одна людина — está; кілька — están; «є» — hay.",
+      "read": "Прочитай речення вголос.",
+      "words": "Три нові місця та два знайомі слова. Розглянь схему; картки й пари — за бажанням.",
+      "rule": "¿Dónde? — Де? Для місцеперебування використовуємо estar: один — está, кілька — están. Hay — «є», однаково для одного та кількох.",
+      "one": "Один",
+      "many": "Кілька",
+      "masc": "Чоловічий рід",
+      "fem": "Жіночий рід",
+      "unchanged": "¿Dónde está Messi? — Está en el campo. ¿Qué hay en la portería? — Hay un portero. Hay повідомляє, що є; está / están показують, де перебуває вже названа людина.",
+      "warm": "Повтори знайомі питання та назви нові місця.",
+      "match": "Обери форму за схемою. Підказка: один, кілька чи «є»?",
+      "newintro": "Тепер відповідай за схемою сам. Можна коротко або повним реченням; у складанні потрібні всі слова.",
+      "formula": "¿Dónde está…? → Está… · ¿Dónde están…? → Están… · ¿Qué hay…? → Hay…",
+      "note": "Відповідай за навчальною схемою, а не за справжнім складом команди.",
+      "selectType": "Обери форму",
+      "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
+      "write": "Дай відповідь за схемою: коротко або повним реченням.",
+      "fix": "Виправ форму: está, están або hay. Можна словом або реченням.",
+      "answer": "Твоя відповідь",
+      "own": "Склади три короткі фрази за схемою: де Мессі, де Ноєр і хто є на лаві запасних.",
+      "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
+      "finish": "Завершити урок",
+      "result": "Матч завершено!",
+      "first": "Правильно з першої спроби",
+      "attempts": "Перевірено завдань",
+      "review": "Повторити помилки",
+      "allright": "Усі перевірені завдання виконано правильно!",
+      "pending": "Пройдено не всі завдання. Можна повернутися до будь-якого етапу.",
+      "home": "Домашнє завдання",
+      "hw": "На наступному занятті назви три місця без підказки. Запитай викладача, де гравці, та дай відповіді на його питання.",
+      "saved": "Прогрес і помилки зберігаються в цьому браузері на цьому пристрої.",
+      "repeat": "Повторення помилок",
+      "reviewdone": "Помилки опрацьовано!",
+      "empty": "Спочатку введи відповідь.",
+      "ownempty": "Напиши три речення перед завершенням.",
+      "viewown": "Твої речення",
+      "reset": "Пройти ще раз",
+      "resetask": "Почати знову та очистити відповіді?",
+      "reveal": "Переклад",
+      "scorehint": "Голи нараховуються за першу правильну відповідь у блоці «Матч».",
+      "speech": "Скажи вголос",
+      "practice": "Практика",
+      "modelstart": "Перейти до вправ",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Dónde está Messi? — Está en el campo.",
+        "¿Dónde están Salah y Carvajal? — Están en el banquillo.",
+        "¿Qué hay en la portería? — Hay un portero."
+      ],
+      "ownRule": "Використовуй está та hay. Нові слова можна повторювати."
+    },
+    "en": {
+      "lang": "Language",
+      "preview": "Teacher-led lessons",
+      "names": [
+        "Kick-off",
+        "Words: places and players",
+        "Where? What is there?",
+        "Warm-up",
+        "First half",
+        "Second half",
+        "Review mistakes",
+        "You are the coach!",
+        "Match results"
+      ],
+      "title": "Football 3. Where are the players?",
+      "intro": "Find the players in the scene, ask where they are and say who is on the pitch. Two short halves — up to 9 goals!",
+      "goal": "Beginner · 15–20 minutes of practice; with conversation — up to 30–40 minutes",
+      "start": "Start lesson",
+      "next": "Next",
+      "back": "Back",
+      "check": "Check answer",
+      "continue": "Next question",
+      "ready": "Ready — continue",
+      "task": "Question",
+      "of": "of",
+      "goals": "Goals",
+      "pick": "Choose an answer.",
+      "correct": "Goal! Correct.",
+      "wrong": "Not quite. The correct answer is:",
+      "why": "One person — está; more than one — están; there is / are — hay.",
+      "read": "Read the sentence aloud.",
+      "words": "Three new places and two familiar words. Explore the scene; flashcards and pairs are optional.",
+      "rule": "¿Dónde? means Where? For location use estar: one — está, more than one — están. Hay means there is / there are; the form stays the same.",
+      "one": "One",
+      "many": "More than one",
+      "masc": "Masculine",
+      "fem": "Feminine",
+      "unchanged": "¿Dónde está Messi? — Está en el campo. ¿Qué hay en la portería? — Hay un portero. Hay introduces what is there; está / están locate a person already identified.",
+      "warm": "Review familiar questions and name the new places.",
+      "match": "Choose a form using the scene: one, more than one, or there is / are?",
+      "newintro": "Now answer using the scene. Short and full answers are welcome; use every token in the sentence-building task.",
+      "formula": "¿Dónde está…? → Está… · ¿Dónde están…? → Están… · ¿Qué hay…? → Hay…",
+      "note": "Use the practice scene, rather than a real team line-up.",
+      "selectType": "Choose the form",
+      "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
+      "write": "Answer using the scene: a short answer or a full sentence.",
+      "fix": "Correct the form: está, están or hay. A word or a sentence is fine.",
+      "answer": "Your answer",
+      "own": "Write three short sentences using the scene: where Messi is, where Neuer is and who is on the bench.",
+      "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
+      "finish": "Finish lesson",
+      "result": "Full time!",
+      "first": "Correct on the first try",
+      "attempts": "Questions checked",
+      "review": "Practise mistakes",
+      "allright": "All checked questions were answered correctly!",
+      "pending": "Some questions are still unfinished. You can return to any stage.",
+      "home": "Homework",
+      "hw": "Next lesson, name the three places without hints. Ask your teacher where the players are and answer their questions.",
+      "saved": "Progress and mistakes are saved in this browser on this device.",
+      "repeat": "Mistake practice",
+      "reviewdone": "Mistake practice complete!",
+      "empty": "Enter an answer first.",
+      "ownempty": "Write three sentences before finishing.",
+      "viewown": "Your sentences",
+      "reset": "Start again",
+      "resetask": "Restart and clear all answers?",
+      "reveal": "Translation",
+      "scorehint": "Goals count first-attempt correct answers in the Match section.",
+      "speech": "Say it aloud",
+      "practice": "Practice",
+      "modelstart": "Start the exercises",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Dónde está Messi? — Está en el campo.",
+        "¿Dónde están Salah y Carvajal? — Están en el banquillo.",
+        "¿Qué hay en la portería? — Hay un portero."
+      ],
+      "ownRule": "Use está and hay. You may repeat the new words."
+    }
+  },
+  "vocab": [
+    [
+      "el campo",
+      "поле",
+      "pitch",
+      "поле"
+    ],
+    [
+      "la portería",
+      "ворота",
+      "goal",
+      "ворота"
+    ],
+    [
+      "el banquillo",
+      "лава запасних",
+      "bench",
+      "скамейка запасных"
+    ],
+    [
+      "el portero",
+      "воротар",
+      "goalkeeper",
+      "вратарь"
+    ],
+    [
+      "los jugadores",
+      "гравці",
+      "players",
+      "игроки"
+    ]
+  ],
+  "football": [
+    [
+      "el campo",
+      "поле",
+      "pitch",
+      "поле"
+    ],
+    [
+      "la portería",
+      "ворота",
+      "goal",
+      "ворота"
+    ],
+    [
+      "el banquillo",
+      "лава запасних",
+      "bench",
+      "скамейка запасных"
+    ],
+    [
+      "el portero",
+      "воротар",
+      "goalkeeper",
+      "вратарь"
+    ],
+    [
+      "los jugadores",
+      "гравці",
+      "players",
+      "игроки"
+    ]
+  ],
+  "groups": {
+    "3": [
+      {
+        "id": "fl1-w0",
+        "p": "¿Quién es?",
+        "a": "Es el portero.",
+        "type": "choice",
+        "o": [
+          "Es el portero.",
+          "Es el árbitro."
+        ],
+        "visual": {
+          "photo": "neuer"
+        },
+        "meaning": {
+          "ru": "Это вратарь.",
+          "uk": "Це воротар.",
+          "en": "It is the goalkeeper."
+        }
+      },
+      {
+        "id": "fl1-w1",
+        "p": "¿Cómo es la camiseta de Neymar?",
+        "a": "Es amarilla.",
+        "type": "choice",
+        "o": [
+          "Es amarilla.",
+          "Es blanca."
+        ],
+        "visual": {
+          "photo": "neymar"
+        },
+        "meaning": {
+          "ru": "Она жёлтая.",
+          "uk": "Вона жовта.",
+          "en": "It is yellow."
+        }
+      },
+      {
+        "id": "fl1-w2",
+        "p": "¿Qué es?",
+        "a": "Es la portería.",
+        "type": "choice",
+        "o": [
+          "Es la portería.",
+          "Es el banquillo."
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "goal",
+          "hideLabels": true
+        },
+        "meaning": {
+          "ru": "Это ворота.",
+          "uk": "Це ворота.",
+          "en": "It is the goal."
+        }
+      },
+      {
+        "id": "fl1-w3",
+        "p": "¿Qué es?",
+        "a": "Es el banquillo.",
+        "type": "choice",
+        "o": [
+          "Es el banquillo.",
+          "Es el campo."
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "bench",
+          "hideLabels": true
+        },
+        "meaning": {
+          "ru": "Это скамейка запасных.",
+          "uk": "Це лава запасних.",
+          "en": "It is the bench."
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "fl1-m0",
+        "p": "Messi ___ en el campo. (estar)",
+        "a": "está",
+        "type": "choice",
+        "o": [
+          "está",
+          "están",
+          "hay"
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "field"
+        },
+        "meaning": {
+          "ru": "Месси находится на поле.",
+          "uk": "Мессі перебуває на полі.",
+          "en": "Messi is on the pitch."
+        },
+        "sentence": "Messi está en el campo."
+      },
+      {
+        "id": "fl1-m1",
+        "p": "Messi y Modrić ___ en el campo. (estar)",
+        "a": "están",
+        "type": "choice",
+        "o": [
+          "está",
+          "están",
+          "hay"
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "field"
+        },
+        "meaning": {
+          "ru": "Месси и Модрич находятся на поле.",
+          "uk": "Мессі та Модрич перебувають на полі.",
+          "en": "Messi and Modrić are on the pitch."
+        },
+        "sentence": "Messi y Modrić están en el campo."
+      },
+      {
+        "id": "fl1-m2",
+        "p": "Neuer ___ en la portería. (estar)",
+        "a": "está",
+        "type": "choice",
+        "o": [
+          "está",
+          "están",
+          "hay"
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "goal"
+        },
+        "meaning": {
+          "ru": "Нойер находится в воротах.",
+          "uk": "Ноєр перебуває у воротах.",
+          "en": "Neuer is in goal."
+        },
+        "sentence": "Neuer está en la portería."
+      },
+      {
+        "id": "fl1-m3",
+        "p": "En la portería ___ un portero. (haber)",
+        "a": "hay",
+        "type": "choice",
+        "o": [
+          "hay",
+          "está",
+          "están"
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "goal"
+        },
+        "meaning": {
+          "ru": "В воротах есть вратарь.",
+          "uk": "У воротах є воротар.",
+          "en": "There is a goalkeeper in goal."
+        },
+        "sentence": "En la portería hay un portero."
+      },
+      {
+        "id": "fl1-m4",
+        "p": "En el banquillo ___ jugadores. (haber)",
+        "a": "hay",
+        "type": "choice",
+        "o": [
+          "hay",
+          "está",
+          "están"
+        ],
+        "visual": {
+          "scene": "training",
+          "focus": "bench"
+        },
+        "meaning": {
+          "ru": "На скамейке есть игроки.",
+          "uk": "На лаві є гравці.",
+          "en": "There are players on the bench."
+        },
+        "sentence": "En el banquillo hay jugadores."
+      }
+    ],
+    "5": [
+      {
+        "id": "fl1-q0",
+        "p": "¿Dónde está Messi?",
+        "a": "Está en el campo.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "Он находится на поле.",
+          "uk": "Він перебуває на полі.",
+          "en": "He is on the pitch."
+        },
+        "accepted": [
+          "En el campo.",
+          "Messi está en el campo.",
+          "El jugador está en el campo."
+        ]
+      },
+      {
+        "id": "fl1-q1",
+        "p": "¿Dónde están Salah y Carvajal?",
+        "a": "Están en el banquillo.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "Они находятся на скамейке запасных.",
+          "uk": "Вони перебувають на лаві запасних.",
+          "en": "They are on the bench."
+        },
+        "accepted": [
+          "En el banquillo.",
+          "Salah y Carvajal están en el banquillo.",
+          "Carvajal y Salah están en el banquillo.",
+          "Los jugadores están en el banquillo."
+        ]
+      },
+      {
+        "id": "fl1-b0",
+        "p": "Messi y Modrić → el campo",
+        "a": "Messi y Modrić están en el campo.",
+        "type": "build",
+        "o": [
+          "Messi",
+          "y",
+          "Modrić",
+          "están",
+          "en",
+          "el",
+          "campo."
+        ],
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "Месси и Модрич находятся на поле.",
+          "uk": "Мессі та Модрич перебувають на полі.",
+          "en": "Messi and Modrić are on the pitch."
+        }
+      },
+      {
+        "id": "fl1-q2",
+        "p": "¿Qué hay en la portería?",
+        "a": "Hay un portero.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "Там есть вратарь.",
+          "uk": "Там є воротар.",
+          "en": "There is a goalkeeper."
+        },
+        "accepted": [
+          "Un portero.",
+          "Portero.",
+          "Hay un portero en la portería.",
+          "En la portería hay un portero."
+        ]
+      }
+    ],
+    "6": [
+      {
+        "id": "fl1-f0",
+        "p": "El portero están en la portería.",
+        "a": "El portero está en la portería.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "Вратарь находится в воротах.",
+          "uk": "Воротар перебуває у воротах.",
+          "en": "The goalkeeper is in goal."
+        },
+        "accepted": [
+          "Está.",
+          "Está en la portería."
+        ]
+      },
+      {
+        "id": "fl1-f1",
+        "p": "Messi y Modrić está en el campo.",
+        "a": "Messi y Modrić están en el campo.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "Месси и Модрич находятся на поле.",
+          "uk": "Мессі та Модрич перебувають на полі.",
+          "en": "Messi and Modrić are on the pitch."
+        },
+        "accepted": [
+          "Están.",
+          "Están en el campo."
+        ]
+      },
+      {
+        "id": "fl1-f2",
+        "p": "¿Qué hay en la portería? — Están un portero.",
+        "a": "En la portería hay un portero.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "scene": "training"
+        },
+        "meaning": {
+          "ru": "В воротах есть вратарь.",
+          "uk": "У воротах є воротар.",
+          "en": "There is a goalkeeper in goal."
+        },
+        "accepted": [
+          "Hay.",
+          "Hay un portero.",
+          "Hay un portero en la portería."
+        ],
+        "instruction": {
+          "ru": "Исправь ответ на ¿Qué hay…?: используй hay.",
+          "uk": "Виправ відповідь на ¿Qué hay…?: використай hay.",
+          "en": "Correct the answer to ¿Qué hay…?: use hay."
+        }
+      }
+    ]
+  },
+  "X": {
+    "ru": {
+      "goal": "Ворота",
+      "drag": "Перетащи слово в ворота. На телефоне: нажми слово, затем ворота.",
+      "dropdown": "Или выбери из списка",
+      "choose": "— выбери —",
+      "selected": "В воротах",
+      "your": "Твой вариант",
+      "literal": "Буквально, с сохранением ошибки",
+      "right": "Правильное предложение",
+      "meaning": "Перевод",
+      "contrast": "Слова новые, цвета знакомые. Скажи название и цвет вслух.",
+      "explain": "В английском переводе род прилагательного не виден; сравни испанские окончания.",
+      "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
+    },
+    "uk": {
+      "goal": "Ворота",
+      "drag": "Перетягни слово у ворота. На телефоні: натисни слово, потім ворота.",
+      "dropdown": "Або обери зі списку",
+      "choose": "— обери —",
+      "selected": "У воротах",
+      "your": "Твій варіант",
+      "literal": "Буквально, зі збереженням помилки",
+      "right": "Правильне речення",
+      "meaning": "Переклад",
+      "contrast": "Слова нові, кольори знайомі. Назви предмет і колір уголос.",
+      "explain": "В англійському перекладі рід прикметника не видно; порівняй іспанські закінчення.",
+      "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
+    },
+    "en": {
+      "goal": "Goal",
+      "drag": "Drag a word into the goal. On a phone: tap a word, then the goal.",
+      "dropdown": "Or choose from the list",
+      "choose": "— choose —",
+      "selected": "In the goal",
+      "your": "Your answer",
+      "literal": "Literal meaning, retaining the error where possible",
+      "right": "Correct sentence",
+      "meaning": "Translation",
+      "contrast": "New kit words, familiar colours. Say the item and its colour aloud.",
+      "explain": "English adjectives do not show gender or number. Compare the Spanish endings.",
+      "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
+    }
+  },
+  "A": {
+    "ru": {
+      "listen": "Прослушать ещё раз",
+      "missing": "Испанский голос недоступен в этом браузере.",
+      "failed": "Не удалось воспроизвести. Нажмите «Прослушать ещё раз»."
+    },
+    "uk": {
+      "listen": "Прослухати ще раз",
+      "missing": "Іспанський голос недоступний у цьому браузері.",
+      "failed": "Не вдалося відтворити. Натисніть «Прослухати ще раз»."
+    },
+    "en": {
+      "listen": "Listen again",
+      "missing": "A Spanish voice is unavailable in this browser.",
+      "failed": "Playback failed. Press “Listen again”."
+    }
+  },
+  "subjects": {},
+  "adjectiveData": {},
+  "colors": [],
+  "ownPrompts": [
+    "Messi …",
+    "Neuer …",
+    "En el banquillo hay …"
+  ],
+  "photos": {
+    "messi": {
+      "label": "Messi",
+      "author": "Hossein Zohrevand / Tasnim",
+      "license": "by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lionel-Messi-Argentina-2022-FIFA-World-Cup.jpg"
+    },
+    "neymar": {
+      "label": "Neymar",
+      "author": "Granada",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Neymar_850_1705.jpg"
+    },
+    "neuer": {
+      "label": "Manuel Neuer",
+      "author": "Steindy",
+      "license": "by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Manuel_Neuer,_Germany_national_football_team_(03).jpg"
+    },
+    "mary": {
+      "label": "Mary Earps",
+      "author": "Sven Beyrich / EL Loko Foto",
+      "license": "by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mary_Earps_20181118.jpg"
+    },
+    "team": {
+      "label": "Brasil",
+      "author": "Granada",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Gruppenfoto_Brasilien_850_0016.jpg"
+    },
+    "referee": {
+      "label": "El árbitro",
+      "author": "SounderBruce",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Baldomero_Toledo_checks_VAR_-_Seattle_Sounders_vs._Sporting_Kansas_City.jpg"
+    },
+    "salah": {
+      "label": "Mohamed Salah",
+      "author": "Дмитрий Голубович / soccer.ru",
+      "license": "by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_2017.jpg"
+    },
+    "modric": {
+      "label": "Luka Modrić",
+      "author": "Богдан Заяц / Football.ua",
+      "license": "by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Luka_Modric_2015.jpg"
+    },
+    "carvajal": {
+      "label": "Dani Carvajal",
+      "author": "Rolandhino1",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Dani_Carvajal_10_(cropped).jpg"
+    }
+  },
+  "vocabVisuals": [
+    {
+      "scene": "training",
+      "focus": "field"
+    },
+    {
+      "scene": "training",
+      "focus": "goal"
+    },
+    {
+      "scene": "training",
+      "focus": "bench"
+    },
+    {
+      "photo": "neuer"
+    },
+    {
+      "scene": "training",
+      "focus": "field"
+    }
+  ],
+  "vocabIds": [
+    "pitch",
+    "goal",
+    "bench",
+    "goalkeeper",
+    "players"
+  ],
+  "completion": {
+    "ru": {
+      "title": "Урок завершён! Ты — чемпион!",
+      "text": "Ты научился спрашивать, где игроки, и использовать está, están и hay. Отличная работа!"
+    },
+    "uk": {
+      "title": "Урок завершено! Ти — чемпіон!",
+      "text": "Ти навчився запитувати, де гравці, та використовувати está, están і hay. Чудова робота!"
+    },
+    "en": {
+      "title": "Lesson complete! You are a champion!",
+      "text": "You practised asking where players are and using está, están and hay. Great work!"
+    }
+  },
+  "layout": "visual",
+  "startWords": [
+    "¿Dónde?",
+    "está",
+    "están",
+    "hay"
+  ],
+  "scenes": {
+    "training": {
+      "title": {
+        "ru": "Наша учебная сцена",
+        "uk": "Наша навчальна сцена",
+        "en": "Our practice scene"
+      },
+      "note": {
+        "ru": "Расположение игроков условное: отвечаем по этой схеме.",
+        "uk": "Розташування гравців умовне: відповідаємо за цією схемою.",
+        "en": "An imagined line-up: answer using this scene."
+      },
+      "places": [
+        {
+          "id": "goal",
+          "word": "la portería",
+          "actors": [
+            {
+              "name": "Neuer",
+              "photo": "neuer"
+            }
+          ]
+        },
+        {
+          "id": "field",
+          "word": "el campo",
+          "actors": [
+            {
+              "name": "Messi",
+              "photo": "messi"
+            },
+            {
+              "name": "Modrić",
+              "photo": "modric"
+            }
+          ]
+        },
+        {
+          "id": "bench",
+          "word": "el banquillo",
+          "actors": [
+            {
+              "name": "Salah",
+              "photo": "salah"
+            },
+            {
+              "name": "Carvajal",
+              "photo": "carvajal"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "ruleExamples": [
+    "Messi está en el campo.",
+    "Salah y Carvajal están en el banquillo.",
+    "En la portería hay un portero."
+  ]
+}
