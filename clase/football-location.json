@@ -43,7 +43,7 @@
       "warm": "Повтори знакомые вопросы и назови новые места.",
       "match": "Выбери форму по схеме. Подсказка: один, несколько или «есть»?",
       "newintro": "Теперь отвечай по схеме сам. Можно коротко или полным предложением; в сборке нужны все слова.",
-      "formula": "¿Dónde está…? → Está… · ¿Dónde están…? → Están… · ¿Qué hay…? → Hay…",
+      "formula": "¿Dónde está / están…? → Está / Están… · ¿Quién está…? · ¿Hay…? → Sí, hay…",
       "note": "Ответь по учебной схеме, а не по настоящему составу команды.",
       "selectType": "Выбери форму",
       "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
@@ -82,7 +82,8 @@
       "modelQuestions": [
         "¿Dónde está Messi? — Está en el campo.",
         "¿Dónde están Salah y Carvajal? — Están en el banquillo.",
-        "¿Qué hay en la portería? — Hay un portero."
+        "¿Quién está en la portería? — El portero.",
+        "¿Hay un portero en la portería? — Sí, hay un portero."
       ],
       "ownRule": "Используй está и hay. Повторять новые слова можно."
     },
@@ -127,7 +128,7 @@
       "warm": "Повтори знайомі питання та назви нові місця.",
       "match": "Обери форму за схемою. Підказка: один, кілька чи «є»?",
       "newintro": "Тепер відповідай за схемою сам. Можна коротко або повним реченням; у складанні потрібні всі слова.",
-      "formula": "¿Dónde está…? → Está… · ¿Dónde están…? → Están… · ¿Qué hay…? → Hay…",
+      "formula": "¿Dónde está / están…? → Está / Están… · ¿Quién está…? · ¿Hay…? → Sí, hay…",
       "note": "Відповідай за навчальною схемою, а не за справжнім складом команди.",
       "selectType": "Обери форму",
       "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
@@ -166,7 +167,8 @@
       "modelQuestions": [
         "¿Dónde está Messi? — Está en el campo.",
         "¿Dónde están Salah y Carvajal? — Están en el banquillo.",
-        "¿Qué hay en la portería? — Hay un portero."
+        "¿Quién está en la portería? — El portero.",
+        "¿Hay un portero en la portería? — Sí, hay un portero."
       ],
       "ownRule": "Використовуй está та hay. Нові слова можна повторювати."
     },
@@ -211,7 +213,7 @@
       "warm": "Review familiar questions and name the new places.",
       "match": "Choose a form using the scene: one, more than one, or there is / are?",
       "newintro": "Now answer using the scene. Short and full answers are welcome; use every token in the sentence-building task.",
-      "formula": "¿Dónde está…? → Está… · ¿Dónde están…? → Están… · ¿Qué hay…? → Hay…",
+      "formula": "¿Dónde está / están…? → Está / Están… · ¿Quién está…? · ¿Hay…? → Sí, hay…",
       "note": "Use the practice scene, rather than a real team line-up.",
       "selectType": "Choose the form",
       "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
@@ -250,7 +252,8 @@
       "modelQuestions": [
         "¿Dónde está Messi? — Está en el campo.",
         "¿Dónde están Salah y Carvajal? — Están en el banquillo.",
-        "¿Qué hay en la portería? — Hay un portero."
+        "¿Quién está en la portería? — El portero.",
+        "¿Hay un portero en la portería? — Sí, hay un portero."
       ],
       "ownRule": "Use está and hay. You may repeat the new words."
     }
@@ -576,24 +579,36 @@
       },
       {
         "id": "fl1-q2",
-        "p": "¿Qué hay en la portería?",
-        "a": "Hay un portero.",
+        "p": "¿Quién está en la portería?",
+        "a": "El portero.",
         "type": "input",
         "o": null,
         "visual": {
           "scene": "training"
         },
         "meaning": {
-          "ru": "Там есть вратарь.",
-          "uk": "Там є воротар.",
-          "en": "There is a goalkeeper."
+          "ru": "Вратарь находится в воротах.",
+          "uk": "Воротар перебуває у воротах.",
+          "en": "The goalkeeper is in goal."
         },
         "accepted": [
+          "Hay un portero.",
           "Un portero.",
           "Portero.",
           "Hay un portero en la portería.",
-          "En la portería hay un portero."
-        ]
+          "En la portería hay un portero.",
+          "Neuer.",
+          "Manuel Neuer.",
+          "Es Neuer.",
+          "Es Manuel Neuer.",
+          "Es el portero.",
+          "Es un portero.",
+          "El portero está en la portería.",
+          "Neuer está en la portería.",
+          "En la portería está Neuer.",
+          "En la portería está el portero."
+        ],
+        "sentence": "El portero está en la portería."
       }
     ],
     "6": [
@@ -639,27 +654,29 @@
       },
       {
         "id": "fl1-f2",
-        "p": "¿Qué hay en la portería? — Están un portero.",
-        "a": "En la portería hay un portero.",
+        "p": "¿Hay un portero en la portería? — Sí, están un portero.",
+        "a": "Sí, hay un portero.",
         "type": "input",
         "o": null,
         "visual": {
           "scene": "training"
         },
         "meaning": {
-          "ru": "В воротах есть вратарь.",
-          "uk": "У воротах є воротар.",
-          "en": "There is a goalkeeper in goal."
+          "ru": "Да, есть вратарь.",
+          "uk": "Так, є воротар.",
+          "en": "Yes, there is a goalkeeper."
         },
         "accepted": [
+          "En la portería hay un portero.",
           "Hay.",
           "Hay un portero.",
-          "Hay un portero en la portería."
+          "Hay un portero en la portería.",
+          "Sí, hay."
         ],
         "instruction": {
-          "ru": "Исправь ответ на ¿Qué hay…?: используй hay.",
-          "uk": "Виправ відповідь на ¿Qué hay…?: використай hay.",
-          "en": "Correct the answer to ¿Qué hay…?: use hay."
+          "ru": "Исправь ответ на ¿Hay…?: используй hay.",
+          "uk": "Виправ відповідь на ¿Hay…?: використай hay.",
+          "en": "Correct the answer to ¿Hay…?: use hay."
         }
       }
     ]
