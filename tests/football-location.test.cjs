@@ -6,7 +6,7 @@ test('short third lesson covers three places, singular/plural location and invar
  for(const place of ['el campo','la portería','el banquillo'])assert(data.vocab.some(w=>w[0]===place));
  for(const verb of ['está','están','hay'])assert(tasks.some(q=>q.a===verb));
  for(const q of tasks){for(const lang of ['ru','uk','en'])assert(q.meaning[lang]);if(q.visual.photo)assert(data.photos[q.visual.photo]);else assert(data.scenes[q.visual.scene]);if(q.p.includes('___'))assert(/\((estar|haber)\)/.test(q.p));}
- assert.deepEqual(data.scenes.training.places.map(p=>p.actors.map(a=>a.name)),[['Neuer'],['Messi','Modrić'],['Salah','Carvajal']]);
+ assert.deepEqual(data.scenes.training.places.map(p=>p.actors.map(a=>a.name)),[['Neuer'],['Messi','Modrich'],['Salah','Carvajal']]);
  for(const p of data.scenes.training.places)for(const actor of p.actors)assert(fs.existsSync(path.join(__dirname,'../clase/images',actor.photo+'.webp')));
 });
 test('scene vocabulary hides Spanish place labels until reverse flashcard is revealed',()=>{

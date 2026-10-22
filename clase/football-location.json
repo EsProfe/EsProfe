@@ -422,7 +422,7 @@
       },
       {
         "id": "fl1-m1",
-        "p": "Messi y Modrić ___ en el campo. (estar)",
+        "p": "Messi y Modrich ___ en el campo. (estar)",
         "a": "están",
         "type": "choice",
         "o": [
@@ -437,9 +437,9 @@
         "meaning": {
           "ru": "Месси и Модрич находятся на поле.",
           "uk": "Мессі та Модрич перебувають на полі.",
-          "en": "Messi and Modrić are on the pitch."
+          "en": "Messi and Modrich are on the pitch."
         },
-        "sentence": "Messi y Modrić están en el campo."
+        "sentence": "Messi y Modrich están en el campo."
       },
       {
         "id": "fl1-m2",
@@ -549,13 +549,13 @@
       },
       {
         "id": "fl1-b0",
-        "p": "Messi y Modrić → el campo",
-        "a": "Messi y Modrić están en el campo.",
+        "p": "Messi y Modrich → el campo",
+        "a": "Messi y Modrich están en el campo.",
         "type": "build",
         "o": [
           "Messi",
           "y",
-          "Modrić",
+          "Modrich",
           "están",
           "en",
           "el",
@@ -567,8 +567,12 @@
         "meaning": {
           "ru": "Месси и Модрич находятся на поле.",
           "uk": "Мессі та Модрич перебувають на полі.",
-          "en": "Messi and Modrić are on the pitch."
-        }
+          "en": "Messi and Modrich are on the pitch."
+        },
+        "accepted": [
+          "Messi y Modrić están en el campo.",
+          "Messi y Modric están en el campo."
+        ]
       },
       {
         "id": "fl1-q2",
@@ -614,8 +618,8 @@
       },
       {
         "id": "fl1-f1",
-        "p": "Messi y Modrić está en el campo.",
-        "a": "Messi y Modrić están en el campo.",
+        "p": "Messi y Modrich está en el campo.",
+        "a": "Messi y Modrich están en el campo.",
         "type": "input",
         "o": null,
         "visual": {
@@ -624,11 +628,13 @@
         "meaning": {
           "ru": "Месси и Модрич находятся на поле.",
           "uk": "Мессі та Модрич перебувають на полі.",
-          "en": "Messi and Modrić are on the pitch."
+          "en": "Messi and Modrich are on the pitch."
         },
         "accepted": [
           "Están.",
-          "Están en el campo."
+          "Están en el campo.",
+          "Messi y Modrić están en el campo.",
+          "Messi y Modric están en el campo."
         ]
       },
       {
@@ -771,7 +777,7 @@
       "source": "https://commons.wikimedia.org/wiki/File:Mohamed_Salah_2017.jpg"
     },
     "modric": {
-      "label": "Luka Modrić",
+      "label": "Luka Modrich",
       "author": "Богдан Заяц / Football.ua",
       "license": "by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Luka_Modric_2015.jpg"
@@ -864,7 +870,7 @@
               "photo": "messi"
             },
             {
-              "name": "Modrić",
+              "name": "Modrich",
               "photo": "modric"
             }
           ]
