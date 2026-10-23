@@ -8,7 +8,7 @@
   function file(url){if(!filePromises.has(url))filePromises.set(url,json(url));return filePromises.get(url)}
   async function entry(id){const c=await catalog();return c.lessons?.[id]||null}
   async function lessons(){if(lessonsPromise)return lessonsPromise;lessonsPromise=(async()=>{const c=await catalog(),files=[...new Set(Object.values(c.lessons||{}).filter(x=>x.status==="ready").map(x=>x.file))],parts=await Promise.all(files.map(file));return Object.assign({},...parts)})();return lessonsPromise}
-  async function lesson(id){const meta=await entry(id);if(!meta||meta.status!=="ready")return null;const data=await file(meta.file),x=data?.[id]||null;if(x&&!x.id)x.id=id;return x}
+  async function lesson(id){const meta=await entry(id);if(!meta||meta.status!=="ready")return null;const data=await file(meta.file),x=data?.[id]||null;if(x&&!x.id)x.id=id;if(x&&meta.illustration&&!x.illustration)x.illustration=meta.illustration;return x}
   async function ready(id){const meta=await entry(id);return meta?.status==="ready"}
   async function card(id,language="ru"){const m=await entry(id);return m?{icon:m.icon||"📘",text:m[language]||m.ru||[id,""]}:null}
   async function moduleTitle(id,language="ru",fallback=id){const c=await catalog(),m=c.modules?.[id];return m?.[language]||m?.ru||fallback}
