@@ -39,7 +39,7 @@ test('every catalog lesson loads from its registered file; shared files load onc
   env.context.fetch=async url=>{const path=url.split('?')[0];calls.set(path,(calls.get(path)||0)+1);return {ok:true,json:async()=>JSON.parse(await source(path))};};
   let order;
   env.context.setA1LessonCatalog=value=>{order=Object.keys(value.lessons);};
-  await load(env,'js/a1-catalog.js');
+  await load(env,'js/course-lesson-catalog.js','js/a1-catalog.js');
   const ids=Object.keys(catalog.lessons),api=env.context.EsProfeA1Catalog;
   const loaded=await Promise.all(ids.map(id=>api.lesson(id)));
   assert.deepEqual(Array.from(order),ids);
