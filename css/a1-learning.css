@@ -1663,8 +1663,8 @@
 }
 .grammar-section {
   max-width: 980px;
-  margin: 28px auto 36px;
-  padding: 26px;
+  margin: 22px auto 28px;
+  padding: 21px;
   border: 1px solid #e5edf7;
   border-radius: 22px;
   box-shadow: 0 12px 30px rgb(33 65 110 / 7%);
@@ -1684,8 +1684,8 @@
   margin: 0 0 14px;
 }
 .a1-lesson-navigation button {
-  min-height: 40px;
-  padding: 9px 13px;
+  min-height: 37px;
+  padding: 7px 11px;
   border: 1px solid #bfd3f2;
   border-radius: 11px;
   background: var(--a1-surface);
@@ -1707,13 +1707,13 @@
 .a1-stepper-seven {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 7px;
-  margin: 0 0 20px;
+  gap: 6px;
+  margin: 0 0 14px;
 }
 .a1-stepper button {
   min-width: 0;
-  min-height: 38px;
-  padding: 7px 8px;
+  min-height: 34px;
+  padding: 6px 7px;
   border: 1px solid #dce6f3;
   border-radius: 10px;
   background: #f3f6fa;
@@ -1743,20 +1743,20 @@
 .a1-lesson > h2 {
   max-width: 760px;
   margin: 0 0 8px;
-  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  font-size: clamp(1.42rem, 2.6vw, 1.86rem);
   line-height: 1.18;
   letter-spacing: -.015em;
 }
 .a1-lesson > p:not(.a1-goal) {
   max-width: 820px;
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   color: var(--a1-ink);
-  font-size: 1rem;
-  line-height: 1.52;
+  font-size: .94rem;
+  line-height: 1.45;
 }
 .a1-goal {
-  margin: 12px 0 10px;
-  padding: 13px 15px;
+  margin: 9px 0 8px;
+  padding: 10px 12px;
   border: 1px solid #cfe0f7;
   border-left: 4px solid var(--a1-blue);
   border-radius: 12px;
@@ -1766,45 +1766,45 @@
   line-height: 1.42;
 }
 .a1-rule-grid {
-  gap: 14px;
-  margin: 20px 0;
+  gap: 10px;
+  margin: 14px 0;
 }
 .a1-rule-grid article,
 .a1-review-card {
   display: flex;
-  min-height: 132px;
+  min-height: 112px;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 17px;
+  padding: 13px;
   border-color: var(--a1-line);
   border-radius: var(--a1-radius);
   box-shadow: 0 2px 6px rgb(28 62 105 / 3%);
 }
 .a1-rule-grid h3,
 .a1-review-card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 5px;
   color: var(--a1-ink);
-  font-size: 1.12rem;
+  font-size: 1.03rem;
   line-height: 1.22;
 }
 .a1-rule-grid p,
 .a1-review-card p {
   color: var(--a1-ink);
-  font-size: 1rem;
-  line-height: 1.45;
+  font-size: .94rem;
+  line-height: 1.4;
 }
 .a1-question-card,
 .a1-result {
   max-width: 820px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 18px;
   border-color: var(--a1-line);
   border-radius: 20px;
   box-shadow: 0 4px 14px rgb(28 62 105 / 4%);
 }
 .a1-question-card h2 {
   margin: 8px 0 2px;
-  font-size: clamp(1.42rem, 2.5vw, 1.82rem);
+  font-size: clamp(1.28rem, 2.2vw, 1.65rem);
   line-height: 1.22;
 }
 .a1-task-hint {
@@ -1818,13 +1818,13 @@
   font-variant-numeric: tabular-nums;
 }
 .a1-options {
-  gap: 9px;
-  margin: 20px 0 12px;
+  gap: 7px;
+  margin: 14px 0 10px;
 }
 .a1-options button,
 .a1-options .a1-option {
-  min-height: 52px;
-  padding: 13px 15px;
+  min-height: 46px;
+  padding: 10px 12px;
   border-color: #cbd9ec;
   border-radius: 12px;
   background: var(--a1-surface);
@@ -1837,9 +1837,9 @@
   background: #f8fbff;
 }
 .a1-main {
-  min-height: 46px;
-  margin-top: 18px;
-  padding: 11px 17px;
+  min-height: 42px;
+  margin-top: 13px;
+  padding: 9px 14px;
   border-radius: 12px;
   font-weight: 750;
 }
@@ -2063,6 +2063,6 @@
 
 /* Data-driven lesson artwork: one responsive, optional illustration per lesson. */
 .a1-lesson-illustration{margin:16px 0 18px;border:1px solid #d5e4f4;border-radius:18px;overflow:hidden;background:#f7fbff;box-shadow:0 8px 22px rgba(20,66,112,.10)}
-.a1-lesson-illustration img{display:block;width:100%;aspect-ratio:16/6;object-fit:cover;object-position:center;}
+.a1-lesson-illustration img{display:block;width:100%;aspect-ratio:16/5;object-fit:cover;object-position:center;}
 .a1-lesson-illustration figcaption{padding:9px 13px;color:#315579;font-size:.88rem;line-height:1.35;background:linear-gradient(90deg,#f8fcff,#fffaf0)}
-@media (max-width:640px){.a1-lesson-illustration{margin:12px 0 14px;border-radius:14px}.a1-lesson-illustration img{aspect-ratio:16/8}.a1-lesson-illustration figcaption{padding:8px 11px;font-size:.82rem}}
+@media (max-width:640px){.a1-lesson-illustration{margin:10px 0 12px;border-radius:14px}.a1-lesson-illustration img{aspect-ratio:16/6}.a1-lesson-illustration figcaption{padding:8px 11px;font-size:.82rem}}
