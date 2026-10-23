@@ -143,7 +143,22 @@
       "es": [
         "Saludos y despedidas",
         "Hola · buenos días · ¿qué tal? · hasta luego"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/greetings-farewells.webp",
+        "alt": {
+          "ru": "Два человека приветствуют друг друга на испанской площади",
+          "uk": "Двоє людей вітають одне одного на іспанській площі",
+          "en": "Two people greeting each other in a Spanish square",
+          "es": "Dos personas se saludan en una plaza española"
+        },
+        "caption": {
+          "ru": "Сначала услышь ситуацию — затем выбери естественное приветствие или прощание.",
+          "uk": "Спочатку почуй ситуацію — потім обери природне привітання або прощання.",
+          "en": "First hear the situation, then choose a natural greeting or farewell.",
+          "es": "Primero escucha la situación y después elige un saludo o una despedida natural."
+        }
+      }
     },
     "introductions-personal-data": {
       "file": "data/a1-lessons-foundations.json",
@@ -164,7 +179,22 @@
       "es": [
         "Presentaciones y datos personales",
         "Nombre · edad · procedencia · información personal básica"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/introductions-personal-data.webp",
+        "alt": {
+          "ru": "Ученица готовится рассказать о себе в испанском кафе",
+          "uk": "Учениця готується розповісти про себе в іспанському кафе",
+          "en": "A learner preparing to introduce herself in a Spanish café",
+          "es": "Una estudiante se prepara para presentarse en un café español"
+        },
+        "caption": {
+          "ru": "Собери короткое представление: имя, страна, возраст и профессия.",
+          "uk": "Склади коротке представлення: ім’я, країна, вік і професія.",
+          "en": "Build a short introduction: name, country, age and profession.",
+          "es": "Prepara una presentación breve: nombre, país, edad y profesión."
+        }
+      }
     },
     "numbers": {
       "file": "data/a1-numbers.json",
@@ -206,7 +236,22 @@
       "es": [
         "Fecha y hora",
         "Días · meses · fechas · la hora"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/date-time.webp",
+        "alt": {
+          "ru": "Часы и календарь на фоне испанского побережья",
+          "uk": "Годинник і календар на тлі іспанського узбережжя",
+          "en": "A clock and calendar by the Spanish coast",
+          "es": "Un reloj y un calendario junto a la costa española"
+        },
+        "caption": {
+          "ru": "Связывай слова с реальной ситуацией: день, дата и время встречи.",
+          "uk": "Пов’язуй слова з реальною ситуацією: день, дата й час зустрічі.",
+          "en": "Connect the words with a real situation: day, date and meeting time.",
+          "es": "Relaciona las palabras con una situación real: día, fecha y hora de la cita."
+        }
+      }
     },
     "countries-nationalities": {
       "file": "data/a1-countries-nationalities.json",
