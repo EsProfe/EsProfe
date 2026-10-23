@@ -215,7 +215,22 @@
       "es": [
         "Números",
         "0–100 · edad · precios · teléfono"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/date-time.webp",
+        "alt": {
+          "ru": "Часы и календарь на фоне испанского побережья",
+          "uk": "Годинник і календар на тлі іспанського узбережжя",
+          "en": "A clock and calendar by the Spanish coast",
+          "es": "Un reloj y un calendario junto a la costa española"
+        },
+        "caption": {
+          "ru": "Связывай слова с реальной ситуацией: день, дата и время встречи.",
+          "uk": "Пов’язуй слова з реальною ситуацією: день, дата й час зустрічі.",
+          "en": "Connect the words with a real situation: day, date and meeting time.",
+          "es": "Relaciona las palabras con una situación real: día, fecha y hora de la cita."
+        }
+      }
     },
     "date-time": {
       "file": "data/a1-date-time.json",
@@ -272,7 +287,22 @@
       "es": [
         "Países y nacionalidades",
         "Países · nacionalidades · de dónde eres"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "definite-articles": {
       "file": "data/a1-articles.json",
@@ -293,7 +323,22 @@
       "es": [
         "Artículos determinados",
         "el · la · los · las · género y número"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "indefinite-articles": {
       "file": "data/a1-indefinite-articles.json",
@@ -314,7 +359,22 @@
       "es": [
         "Artículos indeterminados",
         "un · una · unos · unas · primera mención"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "noun-gender": {
       "file": "data/a1-noun-gender.json",
@@ -335,7 +395,22 @@
       "es": [
         "Género de los sustantivos",
         "-o / -a · terminaciones · excepciones · profesiones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "noun-plural": {
       "file": "data/a1-noun-plural.json",
@@ -356,7 +431,22 @@
       "es": [
         "Plural de los sustantivos",
         "-s · -es · z → ces · acentuación"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "article-noun-agreement": {
       "file": "data/a1-article-noun-agreement.json",
@@ -377,7 +467,22 @@
       "es": [
         "Concordancia entre artículo y sustantivo",
         "el/la/los/las · un/una/unos/unas · género + número"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "subject-pronouns": {
       "file": "data/a1-subject-pronouns.json",
@@ -398,7 +503,22 @@
       "es": [
         "Pronombres personales sujeto",
         "yo · tú · él/ella · usted · nosotros/as · vosotros/as · ellos/ellas · ustedes"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "basic-word-order": {
       "file": "data/a1-basic-word-order.json",
@@ -419,7 +539,22 @@
       "es": [
         "Orden básico de palabras",
         "sujeto · verbo · complemento · lugar y tiempo"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "negation-no": {
       "file": "data/a1-negation-no.json",
@@ -440,7 +575,22 @@
       "es": [
         "Negación con no",
         "no + verbo · posición de no · negación simple"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "basic-questions": {
       "file": "data/a1-basic-questions.json",
@@ -461,7 +611,22 @@
       "es": [
         "Preguntas básicas",
         "¿...? · preguntas de sí/no · entonación · respuestas breves"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "question-words": {
       "file": "data/a1-question-words.json",
@@ -482,7 +647,22 @@
       "es": [
         "Palabras interrogativas",
         "qué · quién · dónde · cuándo · cómo · cuánto/a/os/as · cuál/cuáles"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "ser-present": {
       "file": "data/a1-ser-estar-hay.json",
@@ -503,7 +683,22 @@
       "es": [
         "Ser: formas del presente",
         "soy · eres · es · somos · sois · son"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "ser-basic-uses": {
       "file": "data/a1-ser-estar-hay.json",
@@ -524,7 +719,22 @@
       "es": [
         "Ser: usos básicos",
         "identidad · procedencia · profesión · hora"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "estar-present": {
       "file": "data/a1-ser-estar-hay.json",
@@ -545,7 +755,22 @@
       "es": [
         "Estar: formas del presente",
         "estoy · estás · está · estamos · estáis · están"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "estar-basic-uses": {
       "file": "data/a1-ser-estar-hay.json",
@@ -566,7 +791,22 @@
       "es": [
         "Estar: lugar y estado",
         "localización · estado · bienestar"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "hay": {
       "file": "data/a1-ser-estar-hay.json",
@@ -587,7 +827,22 @@
       "es": [
         "Hay: existencia",
         "existencia · ¿Hay...? · No hay"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "ser-estar-hay": {
       "file": "data/a1-ser-estar-hay.json",
@@ -608,7 +863,22 @@
       "es": [
         "¿Ser, estar o hay?",
         "identidad · lugar · estado · existencia"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "present-ar": {
       "file": "data/a1-regular-present.json",
@@ -629,7 +899,22 @@
       "es": [
         "Presente: verbos regulares en -AR",
         "raíz · -o/-as/-a/-amos/-áis/-an"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "present-er": {
       "file": "data/a1-regular-present.json",
@@ -650,7 +935,22 @@
       "es": [
         "Presente: verbos regulares en -ER",
         "raíz · -o/-es/-e/-emos/-éis/-en"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "present-ir": {
       "file": "data/a1-regular-present.json",
@@ -671,7 +971,22 @@
       "es": [
         "Presente: verbos regulares en -IR",
         "raíz · -o/-es/-e/-imos/-ís/-en"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "present-mixed-regular": {
       "file": "data/a1-regular-present.json",
@@ -692,7 +1007,22 @@
       "es": [
         "¿-AR, -ER o -IR?",
         "comparación de modelos · práctica mixta"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "present-regular-trainer": {
       "file": "data/a1-regular-present.json",
@@ -713,7 +1043,22 @@
       "es": [
         "Entrenador de verbos regulares",
         "tres modelos · elegir la forma · autoevaluación"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "tener": {
       "file": "data/a1-irregular-present.json",
@@ -734,7 +1079,22 @@
       "es": [
         "Tener",
         "formas · edad · sensaciones · tener que"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "ir": {
       "file": "data/a1-irregular-present.json",
@@ -755,7 +1115,22 @@
       "es": [
         "Ir",
         "voy/vas/va · destino · ir a + infinitivo"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "hacer": {
       "file": "data/a1-irregular-present.json",
@@ -776,7 +1151,22 @@
       "es": [
         "Hacer",
         "hago · actividades · tiempo · expresiones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "venir": {
       "file": "data/a1-irregular-present.json",
@@ -797,7 +1187,22 @@
       "es": [
         "Venir",
         "vengo · e→ie · venir de · movimiento hacia aquí"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "querer": {
       "file": "data/a1-irregular-present.json",
@@ -818,7 +1223,22 @@
       "es": [
         "Querer",
         "e→ie · deseos · querer + infinitivo"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "poder": {
       "file": "data/a1-irregular-present.json",
@@ -839,7 +1259,22 @@
       "es": [
         "Poder",
         "o→ue · capacidad · permiso · peticiones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "decir": {
       "file": "data/a1-irregular-present.json",
@@ -860,7 +1295,22 @@
       "es": [
         "Decir",
         "digo · e→i · decir que · destinatario"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "irregular-present-mixed": {
       "file": "data/a1-irregular-present.json",
@@ -881,7 +1331,22 @@
       "es": [
         "Verbos irregulares: práctica mixta",
         "7 verbos · formas · estructuras · contexto"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "reflexive-pronouns": {
       "file": "data/a1-reflexive-verbs.json",
@@ -902,7 +1367,22 @@
       "es": [
         "Pronombres reflexivos",
         "me · te · se · nos · os · se"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "reflexive-present": {
       "file": "data/a1-reflexive-verbs.json",
@@ -923,7 +1403,22 @@
       "es": [
         "Verbos reflexivos en presente",
         "me levanto · te levantas · se levanta"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "daily-routine": {
       "file": "data/a1-reflexive-verbs.json",
@@ -944,7 +1439,22 @@
       "es": [
         "Rutina diaria",
         "hora · secuencia · acciones diarias"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "reflexive-practice": {
       "file": "data/a1-reflexive-verbs.json",
@@ -965,7 +1475,22 @@
       "es": [
         "Práctica de verbos reflexivos",
         "persona · infinitivo · forma · rutina diaria"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "adjectives": {
       "file": "data/a1-adjectives.json",
@@ -986,7 +1511,22 @@
       "es": [
         "Adjetivos: modelos básicos",
         "significado · posición tras el sustantivo · descripción"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "adjective-agreement": {
       "file": "data/a1-adjectives.json",
@@ -1007,7 +1547,22 @@
       "es": [
         "Concordancia de adjetivos",
         "género · número · -o/-a/-os/-as"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "possessives": {
       "file": "data/a1-possessives.json",
@@ -1028,7 +1583,22 @@
       "es": [
         "Posesivos: mi, tu, su…",
         "propietario · número de cosas · su / sus"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "demonstratives": {
       "file": "data/a1-demonstratives.json",
@@ -1049,7 +1619,22 @@
       "es": [
         "Demostrativos: este, ese, aquel",
         "distancia · género · número"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "comparisons-basic": {
       "file": "data/a1-comparisons.json",
@@ -1070,7 +1655,22 @@
       "es": [
         "Comparaciones básicas",
         "más / menos / tan · que / como"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/articles.webp",
+        "alt": {
+          "ru": "Книга, стул, чашки и апельсины на испанской террасе",
+          "uk": "Книга, стілець, чашки й апельсини на іспанській терасі",
+          "en": "A book, chair, cups and oranges on a Spanish terrace",
+          "es": "Un libro, una silla, tazas y naranjas en una terraza española"
+        },
+        "caption": {
+          "ru": "Замечай предметы и количество: так грамматическая форма связывается со смыслом.",
+          "uk": "Помічай предмети й кількість: так граматична форма пов’язується зі змістом.",
+          "en": "Notice the objects and quantity: connect grammar with meaning.",
+          "es": "Observa los objetos y la cantidad: relaciona la gramática con el significado."
+        }
+      }
     },
     "prepositions-basic": {
       "file": "data/a1-prepositions.json",
@@ -1091,7 +1691,22 @@
       "es": [
         "Preposiciones básicas",
         "lugar · dirección · origen · relación"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "location-prepositions": {
       "file": "data/a1-location-prepositions.json",
@@ -1112,7 +1727,22 @@
       "es": [
         "Preposiciones de lugar",
         "delante · detrás · debajo · entre · al lado · lejos"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "a-de-contractions": {
       "file": "data/a1-contractions.json",
@@ -1133,7 +1763,22 @@
       "es": [
         "A / de y al / del",
         "a + el = al · de + el = del · a él / de él"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "city-directions": {
       "file": "data/a1-city-directions.json",
@@ -1154,7 +1799,22 @@
       "es": [
         "La ciudad y las direcciones",
         "pedir indicaciones · recto · derecha · izquierda"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/city-directions.webp",
+        "alt": {
+          "ru": "Ученица с картой на улице испанского города",
+          "uk": "Учениця з мапою на вулиці іспанського міста",
+          "en": "A learner with a map on a Spanish city street",
+          "es": "Una estudiante con un mapa en una calle española"
+        },
+        "caption": {
+          "ru": "Используй городскую ситуацию: место, направление, транспорт и план.",
+          "uk": "Використовуй міську ситуацію: місце, напрямок, транспорт і план.",
+          "en": "Use a city situation: place, direction, transport and a plan.",
+          "es": "Usa una situación urbana: lugar, dirección, transporte y plan."
+        }
+      }
     },
     "gustar": {
       "file": "data/a1-gustar.json",
@@ -1175,7 +1835,22 @@
       "es": [
         "Gustar",
         "me gusta / me gustan · preferencias"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "encantar-interesar": {
       "file": "data/a1-encantar-interesar.json",
@@ -1196,7 +1871,22 @@
       "es": [
         "Encantar / interesar",
         "encantar · interesar"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "ir-a-infinitive": {
       "file": "data/a1-ir-a-infinitive.json",
@@ -1217,7 +1907,22 @@
       "es": [
         "Ir a + infinitivo",
         "planes próximos · intenciones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "tener-que": {
       "file": "data/a1-tener-que.json",
@@ -1238,7 +1943,22 @@
       "es": [
         "Tener que + infinitivo",
         "necesidad · obligaciones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "querer-infinitive": {
       "file": "data/a1-querer-infinitive.json",
@@ -1259,7 +1979,22 @@
       "es": [
         "Querer + infinitivo",
         "deseos · planes · pregunta · negación"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "poder-infinitive": {
       "file": "data/a1-poder-infinitive.json",
@@ -1280,7 +2015,22 @@
       "es": [
         "Poder + infinitivo",
         "capacidad · posibilidad · permiso"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "family": {
       "file": "data/a1-family.json",
@@ -1301,7 +2051,22 @@
       "es": [
         "La familia",
         "miembros · mi / mis · hablar de la familia"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/family.webp",
+        "alt": {
+          "ru": "Семья за общим обедом на испанской террасе",
+          "uk": "Сім’я за спільним обідом на іспанській терасі",
+          "en": "A family sharing a meal on a Spanish patio",
+          "es": "Una familia comparte una comida en un patio español"
+        },
+        "caption": {
+          "ru": "Назови людей и расскажи, кто они друг другу.",
+          "uk": "Назви людей і розкажи, ким вони є одне одному.",
+          "en": "Name the people and say how they are related.",
+          "es": "Nombra a las personas y di qué relación tienen."
+        }
+      }
     },
     "home": {
       "file": "data/a1-home.json",
@@ -1322,7 +2087,22 @@
       "es": [
         "La casa",
         "habitaciones · objetos · dónde está"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/location.webp",
+        "alt": {
+          "ru": "Рюкзак на стуле, книга на столе и кот под столом",
+          "uk": "Рюкзак на стільці, книга на столі та кіт під столом",
+          "en": "A backpack on a chair, a book on a table and a cat under it",
+          "es": "Una mochila en una silla, un libro sobre una mesa y un gato debajo"
+        },
+        "caption": {
+          "ru": "Опиши, где находятся люди и предметы.",
+          "uk": "Опиши, де перебувають люди та предмети.",
+          "en": "Describe where people and objects are.",
+          "es": "Describe dónde están las personas y los objetos."
+        }
+      }
     },
     "food-drinks": {
       "file": "data/a1-food-drinks.json",
@@ -1343,7 +2123,22 @@
       "es": [
         "Comida y bebidas",
         "alimentos · cantidad · pedir"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/food-market.webp",
+        "alt": {
+          "ru": "Покупатель и продавец на испанском рынке",
+          "uk": "Покупець і продавець на іспанському ринку",
+          "en": "A customer and vendor at a Spanish market",
+          "es": "Una clienta y un vendedor en un mercado español"
+        },
+        "caption": {
+          "ru": "Привяжи слово к ситуации: выбрать, попросить, купить и поблагодарить.",
+          "uk": "Пов’яжи слово із ситуацією: вибрати, попросити, купити й подякувати.",
+          "en": "Connect the word with a situation: choose, ask for, buy and thank.",
+          "es": "Relaciona la palabra con una situación: elegir, pedir, comprar y agradecer."
+        }
+      }
     },
     "shopping": {
       "file": "data/a1-shopping.json",
@@ -1364,7 +2159,22 @@
       "es": [
         "Compras y precios",
         "productos · precio · talla · compra cortés"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/food-market.webp",
+        "alt": {
+          "ru": "Покупатель и продавец на испанском рынке",
+          "uk": "Покупець і продавець на іспанському ринку",
+          "en": "A customer and vendor at a Spanish market",
+          "es": "Una clienta y un vendedor en un mercado español"
+        },
+        "caption": {
+          "ru": "Привяжи слово к ситуации: выбрать, попросить, купить и поблагодарить.",
+          "uk": "Пов’яжи слово із ситуацією: вибрати, попросити, купити й подякувати.",
+          "en": "Connect the word with a situation: choose, ask for, buy and thank.",
+          "es": "Relaciona la palabra con una situación: elegir, pedir, comprar y agradecer."
+        }
+      }
     },
     "city-places": {
       "file": "data/a1-city-places.json",
@@ -1385,7 +2195,22 @@
       "es": [
         "La ciudad y los lugares",
         "lugares · ubicación · pedir indicaciones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/city-directions.webp",
+        "alt": {
+          "ru": "Ученица с картой на улице испанского города",
+          "uk": "Учениця з мапою на вулиці іспанського міста",
+          "en": "A learner with a map on a Spanish city street",
+          "es": "Una estudiante con un mapa en una calle española"
+        },
+        "caption": {
+          "ru": "Используй городскую ситуацию: место, направление, транспорт и план.",
+          "uk": "Використовуй міську ситуацію: місце, напрямок, транспорт і план.",
+          "en": "Use a city situation: place, direction, transport and a plan.",
+          "es": "Usa una situación urbana: lugar, dirección, transporte y plan."
+        }
+      }
     },
     "transport": {
       "file": "data/a1-transport.json",
@@ -1406,7 +2231,22 @@
       "es": [
         "El transporte",
         "medios · billete · ruta"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/city-directions.webp",
+        "alt": {
+          "ru": "Ученица с картой на улице испанского города",
+          "uk": "Учениця з мапою на вулиці іспанського міста",
+          "en": "A learner with a map on a Spanish city street",
+          "es": "Una estudiante con un mapa en una calle española"
+        },
+        "caption": {
+          "ru": "Используй городскую ситуацию: место, направление, транспорт и план.",
+          "uk": "Використовуй міську ситуацію: місце, напрямок, транспорт і план.",
+          "en": "Use a city situation: place, direction, transport and a plan.",
+          "es": "Usa una situación urbana: lugar, dirección, transporte y plan."
+        }
+      }
     },
     "daily-routine-vocab": {
       "file": "data/a1-daily-routine-vocab.json",
@@ -1427,7 +2267,22 @@
       "es": [
         "Las actividades diarias",
         "rutina · tiempo · secuencia"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "jobs": {
       "file": "data/a1-jobs.json",
@@ -1448,7 +2303,22 @@
       "es": [
         "Las profesiones",
         "nombres · ser sin artículo · lugar de trabajo"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "weather-seasons": {
       "file": "data/a1-weather-seasons.json",
@@ -1469,7 +2339,22 @@
       "es": [
         "El tiempo y las estaciones",
         "tiempo · temperatura · estaciones"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/city-directions.webp",
+        "alt": {
+          "ru": "Ученица с картой на улице испанского города",
+          "uk": "Учениця з мапою на вулиці іспанського міста",
+          "en": "A learner with a map on a Spanish city street",
+          "es": "Una estudiante con un mapa en una calle española"
+        },
+        "caption": {
+          "ru": "Используй городскую ситуацию: место, направление, транспорт и план.",
+          "uk": "Використовуй міську ситуацію: місце, напрямок, транспорт і план.",
+          "en": "Use a city situation: place, direction, transport and a plan.",
+          "es": "Usa una situación urbana: lugar, dirección, transporte y plan."
+        }
+      }
     },
     "free-time": {
       "file": "data/a1-free-time.json",
@@ -1490,7 +2375,22 @@
       "es": [
         "El tiempo libre y las aficiones",
         "aficiones · gustar · planes"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "introduce-yourself": {
       "file": "data/a1-introduce-yourself.json",
@@ -1511,7 +2411,22 @@
       "es": [
         "Presentarse y hablar de uno mismo",
         "saludo · nombre · origen"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "ask-personal-info": {
       "file": "data/a1-ask-personal-info.json",
@@ -1532,7 +2447,22 @@
       "es": [
         "Pedir información personal",
         "nombre · edad · contacto"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "order-food": {
       "file": "data/a1-order-food.json",
@@ -1553,7 +2483,22 @@
       "es": [
         "Pedir comida y bebida",
         "cafetería · pedido cortés · cuenta"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/food-market.webp",
+        "alt": {
+          "ru": "Покупатель и продавец на испанском рынке",
+          "uk": "Покупець і продавець на іспанському ринку",
+          "en": "A customer and vendor at a Spanish market",
+          "es": "Una clienta y un vendedor en un mercado español"
+        },
+        "caption": {
+          "ru": "Привяжи слово к ситуации: выбрать, попросить, купить и поблагодарить.",
+          "uk": "Пов’яжи слово із ситуацією: вибрати, попросити, купити й подякувати.",
+          "en": "Connect the word with a situation: choose, ask for, buy and thank.",
+          "es": "Relaciona la palabra con una situación: elegir, pedir, comprar y agradecer."
+        }
+      }
     },
     "shopping-dialogue": {
       "file": "data/a1-shopping-dialogue.json",
@@ -1574,7 +2519,22 @@
       "es": [
         "Diálogo en una tienda",
         "artículo · talla · precio · pago"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/food-market.webp",
+        "alt": {
+          "ru": "Покупатель и продавец на испанском рынке",
+          "uk": "Покупець і продавець на іспанському ринку",
+          "en": "A customer and vendor at a Spanish market",
+          "es": "Una clienta y un vendedor en un mercado español"
+        },
+        "caption": {
+          "ru": "Привяжи слово к ситуации: выбрать, попросить, купить и поблагодарить.",
+          "uk": "Пов’яжи слово із ситуацією: вибрати, попросити, купити й подякувати.",
+          "en": "Connect the word with a situation: choose, ask for, buy and thank.",
+          "es": "Relaciona la palabra con una situación: elegir, pedir, comprar y agradecer."
+        }
+      }
     },
     "ask-directions": {
       "file": "data/a1-ask-directions.json",
@@ -1595,7 +2555,22 @@
       "es": [
         "Pedir indicaciones",
         "ubicación · dirección · distancia"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/city-directions.webp",
+        "alt": {
+          "ru": "Ученица с картой на улице испанского города",
+          "uk": "Учениця з мапою на вулиці іспанського міста",
+          "en": "A learner with a map on a Spanish city street",
+          "es": "Una estudiante con un mapa en una calle española"
+        },
+        "caption": {
+          "ru": "Используй городскую ситуацию: место, направление, транспорт и план.",
+          "uk": "Використовуй міську ситуацію: місце, напрямок, транспорт і план.",
+          "en": "Use a city situation: place, direction, transport and a plan.",
+          "es": "Usa una situación urbana: lugar, dirección, transporte y plan."
+        }
+      }
     },
     "talk-routine": {
       "file": "data/a1-talk-routine.json",
@@ -1616,7 +2591,22 @@
       "es": [
         "Hablar de la rutina diaria",
         "tiempo · secuencia · día habitual"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "make-simple-plans": {
       "file": "data/a1-make-simple-plans.json",
@@ -1637,7 +2627,22 @@
       "es": [
         "Planes y acuerdos sencillos",
         "proponer · hora · aceptar · cambiar"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "reading": {
       "file": "data/a1-reading.json",
@@ -1658,7 +2663,22 @@
       "es": [
         "Comprensión lectora: mensajes breves",
         "anuncios · tiempo · lugar · sentido"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "listening": {
       "file": "data/a1-listening.json",
@@ -1679,7 +2699,22 @@
       "es": [
         "Comprensión auditiva: frases breves",
         "quién · dónde · cuándo · planes"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     },
     "writing": {
       "file": "data/a1-writing.json",
@@ -1700,7 +2735,22 @@
       "es": [
         "Expresión escrita: mensaje breve",
         "saludo · noticia · pregunta · despedida"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "speaking": {
       "file": "data/a1-speaking.json",
@@ -1721,7 +2771,22 @@
       "es": [
         "Expresión oral: diálogos breves",
         "saludo · petición · planes · despedida"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "mixed-review": {
       "file": "data/a1-mixed-review.json",
@@ -1742,7 +2807,22 @@
       "es": [
         "Repaso mixto A1",
         "gramática · vocabulario · situaciones · destrezas"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "grammar-check": {
       "file": "data/a1-grammar-check.json",
@@ -1763,7 +2843,22 @@
       "es": [
         "Control de gramática A1",
         "ser / estar / hay · artículos · presente · estructuras"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "vocabulary-check": {
       "file": "data/a1-vocabulary-check.json",
@@ -1784,7 +2879,22 @@
       "es": [
         "Control de vocabulario A1",
         "familia · casa · comida · ciudad · vida diaria"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "skills-check": {
       "file": "data/a1-skills-check.json",
@@ -1805,7 +2915,22 @@
       "es": [
         "Control de destrezas A1",
         "lectura · audición · expresión oral · escrita"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "final-test": {
       "file": "data/a1-final-test.json",
@@ -1826,7 +2951,22 @@
       "es": [
         "Prueba final A1",
         "gramática · vocabulario · comunicación · destrezas"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     },
     "weak-spots": {
       "file": "data/a1-weak-spots.json",
@@ -1847,7 +2987,22 @@
       "es": [
         "Puntos débiles: repaso A1",
         "formas · situaciones · lugar · comprensión"
-      ]
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/identity.webp",
+        "alt": {
+          "ru": "Художница у мастерской в испанском городе",
+          "uk": "Художниця біля майстерні в іспанському місті",
+          "en": "An artist outside a studio in a Spanish town",
+          "es": "Una artista junto a un estudio en una ciudad española"
+        },
+        "caption": {
+          "ru": "Связывай форму с человеком, происхождением и профессией.",
+          "uk": "Пов’язуй форму з людиною, походженням і професією.",
+          "en": "Connect the form with a person, origin and profession.",
+          "es": "Relaciona la forma con la persona, el origen y la profesión."
+        }
+      }
     }
   }
 }
