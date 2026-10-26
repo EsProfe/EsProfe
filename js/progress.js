@@ -35,7 +35,15 @@ const progressLabels = {
 const A1_ROUTE_CITIES = ["A Coruña","Santiago","Vigo","Lugo","Ourense","Oviedo","Gijón","Santander","Bilbao","San Sebastián","Vitoria","Pamplona","Logroño","León","Burgos","Valladolid","Zamora","Salamanca","Segovia","Ávila","Madrid","Toledo","Guadalajara","Cuenca","Soria","Zaragoza","Huesca","Teruel","Lleida","Girona","Barcelona","Tarragona","Castellón","Valencia","Alicante","Murcia","Albacete","Ciudad Real","Córdoba","Jaén","Granada","Almería","Málaga","Cádiz","Sevilla","Huelva","Badajoz","Cáceres","Mérida","Plasencia","Alcalá de Henares","Getafe","Aranjuez","Alcázar de San Juan","Requena","Xàtiva","Gandia","Dénia","Elche","Cartagena","Lorca","Vera","Motril","Ronda","Jerez","Sanlúcar de Barrameda","Écija","Antequera","Úbeda","Baeza","Linares","Adra","Águilas","Torrevieja","Benidorm","Altea","Sagunto","Peñíscola","Tortosa","Reus","Sitges"];
 const A1_ROUTE_POINTS = [[92,87],[112,102],[117,126],[126,87],[132,119],[174,75],[183,72],[218,79],[256,86],[279,87],[255,103],[291,110],[263,120],[198,120],[228,126],[203,145],[178,151],[181,170],[220,164],[206,180],[239,194],[227,215],[257,190],[279,213],[261,145],[299,151],[315,133],[310,190],[354,157],[403,134],[384,164],[366,181],[378,203],[369,224],[363,251],[344,269],[300,245],[251,245],[235,277],[266,276],[290,299],[329,303],[267,321],[201,332],[213,304],[188,309],[163,244],[172,218],[161,232],[180,196],[246,188],[236,202],[243,215],[266,242],[327,224],[345,237],[356,232],[371,241],[362,262],[350,278],[326,280],[337,290],[300,313],[255,313],[215,326],[210,321],[231,294],[253,303],[273,266],[276,270],[268,275],[322,309],[341,285],[363,271],[369,252],[373,246],[373,215],[377,194],[363,176],[373,178],[381,171]];
 
-const A1_ROUTE_LANDMARKS=[{index:1,city:"Santiago",x:112,y:102,labelX:112,labelY:88},{index:5,city:"Oviedo",x:174,y:75,labelX:174,labelY:60},{index:8,city:"Bilbao",x:256,y:86,labelX:256,labelY:71},{index:17,city:"Salamanca",x:181,y:170,labelX:172,labelY:156},{index:20,city:"Madrid",x:239,y:194,labelX:239,labelY:180},{index:30,city:"Barcelona",x:384,y:164,labelX:396,labelY:150},{index:33,city:"Valencia",x:369,y:224,labelX:384,labelY:216},{index:40,city:"Granada",x:290,y:299,labelX:304,labelY:313},{index:42,city:"Málaga",x:267,y:321,labelX:252,labelY:337},{index:44,city:"Sevilla",x:213,y:304,labelX:203,labelY:320},{index:48,city:"Mérida",x:161,y:232,labelX:148,labelY:244}];
+const A1_ROUTE_LANDMARKS=[
+  {index:1,city:"Santiago",x:74,y:148,icon:"✦"},
+  {index:5,city:"Oviedo",x:166,y:91,icon:"✦"},
+  {index:8,city:"Bilbao",x:263,y:112,icon:"✦"},
+  {index:20,city:"Madrid",x:354,y:151,icon:"✦"},
+  {index:33,city:"Valencia",x:466,y:128,icon:"✦"},
+  {index:40,city:"Granada",x:560,y:178,icon:"✦"},
+  {index:44,city:"Sevilla",x:649,y:138,icon:"✦"}
+];
 const weakNames = {
   "alphabet-pronunciation": {
     vowels:{ru:"Гласные",uk:"Голосні",en:"Vowels",es:"Vocales"},
@@ -220,7 +228,32 @@ function journeyStopState(id, index, data, currentId) {
   return "locked";
 }
 
-function renderA1Journey(data,code,labels,currentId){const cities=A1_LESSON_ORDER.map((_,i)=>A1_ROUTE_CITIES[i]||`A1 · ${i+1}`),currentIndex=Math.max(0,A1_LESSON_ORDER.indexOf(currentId)),currentCity=cities[currentIndex],fullRoute=A1_ROUTE_LANDMARKS.map(p=>`${p.x},${p.y}`).join(" "),reachedRoute=A1_ROUTE_LANDMARKS.filter(p=>p.index<=currentIndex).map(p=>`${p.x},${p.y}`).join(" "),stops=A1_ROUTE_LANDMARKS.map(p=>{const id=A1_LESSON_ORDER[p.index],state=journeyStopState(id,p.index,data,currentId),lesson=localizedLessonName(id,code),action=state!=="locked"?`data-journey-lesson="${id}" tabindex="0" role="button"`:"";return `<g class="a1-map-stop is-${state}" ${action} aria-label="${p.city} · ${lesson} · ${labels[`${state}Stop`]}"><title>${p.city} · ${lesson}</title><circle class="a1-map-stop-halo" cx="${p.x}" cy="${p.y}" r="10"></circle><circle class="a1-map-stop-core" cx="${p.x}" cy="${p.y}" r="${state==="current"?7.2:5.4}"></circle><text class="a1-map-city" x="${p.labelX}" y="${p.labelY}" text-anchor="middle">${p.city}</text><text class="a1-map-number" x="${p.x}" y="${p.y+2.4}" text-anchor="middle">${p.index+1}</text></g>`}).join("");return `<section class="a1-journey a1-journey--illustrated" aria-label="${labels.journey}"><div class="a1-journey-head"><div><strong>🧭 ${labels.journey}</strong><small>${labels.journeyHint}</small></div><span>🇪🇸 A1 · ${A1_LESSON_ORDER.length}</span></div><div class="a1-map-focus"><span>📍</span><div><small>${labels.currentStop}</small><strong>${currentCity}</strong></div><b>${currentIndex+1} / ${A1_LESSON_ORDER.length}</b></div><svg class="a1-spain-map a1-spain-map--journey" viewBox="0 0 480 360" role="img" aria-label="${labels.journey}"><defs><linearGradient id="a1Sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9f2ff"/><stop offset=".55" stop-color="#effaff"/><stop offset="1" stop-color="#cfe9f6"/></linearGradient><linearGradient id="a1Land" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf2"/><stop offset="1" stop-color="#f7edcf"/></linearGradient></defs><rect width="480" height="360" rx="20" fill="url(#a1Sea)"></rect><circle class="a1-map-sun" cx="412" cy="55" r="19"></circle><path class="a1-map-cloud" d="M54 56c8-17 30-12 33 0 18-8 30 13 17 22H47c-13-8-5-22 7-22z"></path><path class="a1-spain-land" d="M71 90 L116 67 L177 62 L233 74 L287 64 L348 92 L418 124 L423 176 L397 207 L383 245 L352 278 L335 316 L292 335 L239 340 L199 331 L166 309 L143 273 L128 229 L103 190 L77 148 Z"></path><path class="a1-map-hills" d="M118 170l28-28 26 25 34-42 38 40 43-29 42 34 30-19v68H118z"></path><path class="a1-map-hills a1-map-hills--far" d="M140 195l26-23 24 17 29-27 32 25 38-20 42 31 21-14v60H140z"></path><path class="a1-map-coast" d="M352 278l-17 38-43 19-53 5"></path><path class="a1-island" d="M422 262l15-3 13 8-9 8-16-2z"></path><path class="a1-island a1-canary" d="M86 330l12-3 10 6-8 7-14-2z"></path><text class="a1-map-water-label" x="77" y="233">ATLÁNTICO</text><text class="a1-map-water-label" x="390" y="286">MEDITERRÁNEO</text><polyline class="a1-spain-route a1-spain-route--future" points="${fullRoute}"></polyline><polyline class="a1-spain-route a1-spain-route--done" points="${reachedRoute}"></polyline>${stops}</svg><div class="a1-journey-legend"><span class="is-done">● ${labels.completedStop}</span><span class="is-current">● ${labels.currentStop}</span><span class="is-review">● ${labels.reviewStop}</span><span class="is-locked">● ${labels.lockedStop}</span></div></section>`}
+function renderA1Journey(data,code,labels,currentId){
+  const cities=A1_LESSON_ORDER.map((_,i)=>A1_ROUTE_CITIES[i]||`A1 · ${i+1}`);
+  const currentIndex=Math.max(0,A1_LESSON_ORDER.indexOf(currentId)),currentCity=cities[currentIndex];
+  const route=A1_ROUTE_LANDMARKS.map(stop=>`${stop.x},${stop.y}`).join(" ");
+  const passed=A1_ROUTE_LANDMARKS.filter(stop=>stop.index<=currentIndex).map(stop=>`${stop.x},${stop.y}`).join(" ");
+  const stops=A1_ROUTE_LANDMARKS.map(stop=>{
+    const id=A1_LESSON_ORDER[stop.index],state=journeyStopState(id,stop.index,data,currentId),lesson=localizedLessonName(id,code);
+    const action=state!=="locked"?`data-journey-lesson="${id}" tabindex="0" role="button"`:"";
+    return `<g class="a1-landscape-stop is-${state}" ${action} aria-label="${stop.city} · ${lesson}"><title>${stop.city} · ${lesson}</title><circle class="a1-landscape-stop-shadow" cx="${stop.x}" cy="${stop.y}" r="23"></circle><circle class="a1-landscape-stop-ring" cx="${stop.x}" cy="${stop.y}" r="18"></circle><circle class="a1-landscape-stop-core" cx="${stop.x}" cy="${stop.y}" r="14"></circle><text class="a1-landscape-stop-icon" x="${stop.x}" y="${stop.y+4}" text-anchor="middle">${stop.icon}</text><text class="a1-landscape-stop-label" x="${stop.x}" y="${stop.y+35}" text-anchor="middle">${stop.city}</text></g>`;
+  }).join("");
+  return `<section class="a1-journey a1-journey--landscape" aria-label="${labels.journey}">
+    <div class="a1-journey-head"><div><strong>🧭 ${labels.journey}</strong><small>${labels.journeyHint}</small></div><span>🇪🇸 A1 · ${A1_LESSON_ORDER.length}</span></div>
+    <div class="a1-map-focus"><span>📍</span><div><small>${labels.currentStop}</small><strong>${currentCity}</strong></div><b>${currentIndex+1} / ${A1_LESSON_ORDER.length}</b></div>
+    <svg class="a1-landscape-route" viewBox="0 0 720 250" role="img" aria-label="${labels.journey}">
+      <defs><linearGradient id="a1Sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e5f6ff"/><stop offset=".72" stop-color="#fbfdff"/><stop offset="1" stop-color="#f7fbeb"/></linearGradient><linearGradient id="a1Route" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5ebd9a"/><stop offset=".48" stop-color="#5b9fe5"/><stop offset="1" stop-color="#e2ab43"/></linearGradient></defs>
+      <rect width="720" height="250" rx="22" fill="url(#a1Sky)"></rect>
+      <path class="a1-landscape-spain" d="M38 106l66-42 84 3 75-13 93 20 100-9 94 33 104-3 39 32-20 43-50 24-72-3-58 26-77-10-83 18-89-10-79 17-77-23-52-40z"></path>
+      <path class="a1-landscape-mountains a1-landscape-mountains--far" d="M0 183l92-36 58 24 80-46 61 39 77-31 80 39 75-29 74 32 72-25 75 41v59H0z"></path>
+      <path class="a1-landscape-mountains" d="M0 206l78-31 78 34 92-43 75 40 87-27 79 36 90-29 73 30 68-22v56H0z"></path>
+      <circle class="a1-landscape-sun" cx="666" cy="43" r="17"></circle><path class="a1-landscape-cloud" d="M87 47c9-16 29-11 33 1 18-7 30 13 17 21H78c-13-9-5-22 9-22z"></path>
+      <path class="a1-landscape-sea" d="M0 220q40-10 80 0t80 0 80 0 80 0 80 0 80 0 80 0 80 0 80 0v30H0z"></path>
+      <polyline class="a1-landscape-route-line a1-landscape-route-line--future" points="${route}"></polyline><polyline class="a1-landscape-route-line a1-landscape-route-line--passed" points="${passed}"></polyline>${stops}
+    </svg>
+    <div class="a1-journey-legend"><span class="is-done">● ${labels.completedStop}</span><span class="is-current">● ${labels.currentStop}</span><span class="is-review">● ${labels.reviewStop}</span><span class="is-locked">● ${labels.lockedStop}</span></div>
+  </section>`;
+}
 
 function renderProgress() {
   const panel = document.getElementById("progressPanel");
