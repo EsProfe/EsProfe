@@ -2066,21 +2066,3 @@
 .a1-lesson-illustration img{display:block;width:100%;aspect-ratio:16/5;object-fit:cover;object-position:center;}
 .a1-lesson-illustration figcaption{padding:9px 13px;color:#315579;font-size:.88rem;line-height:1.35;background:linear-gradient(90deg,#f8fcff,#fffaf0)}
 @media (max-width:640px){.a1-lesson-illustration{margin:10px 0 12px;border-radius:14px}.a1-lesson-illustration img{aspect-ratio:16/6}.a1-lesson-illustration figcaption{padding:8px 11px;font-size:.82rem}}
-
-/* Personal A1 route: geographic progress map of Spain. */
-.a1-spain-route{margin:14px 0 18px;padding:14px;border:1px solid #c8dff0;border-radius:18px;background:linear-gradient(135deg,#f7fcff 0%,#fffdf5 100%);box-shadow:0 8px 22px rgba(22,75,120,.08)}
-.a1-spain-route-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:6px}
-.a1-spain-route h3{margin:0;color:#183b63;font-size:1.05rem}
-.a1-spain-route p{margin:4px 0 0;color:#41617d;font-size:.88rem;line-height:1.35}
-.a1-spain-route-legend{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:5px 9px;max-width:330px;font-size:.73rem;font-weight:700;color:#4b6075}
-.a1-spain-route-legend .done{color:#168b67}.a1-spain-route-legend .current{color:#216cc2}.a1-spain-route-legend .review{color:#bb6d12}.a1-spain-route-legend .locked{color:#98a7b6}
-.a1-spain-map-frame{overflow:hidden;border-radius:14px;background:linear-gradient(180deg,#cfeeff 0%,#ecf8ff 65%,#f9fbf4 65%)}
-.a1-spain-map{display:block;width:100%;max-height:390px;min-height:285px}
-.a1-spain-shape{fill:#fff7df;stroke:#c99e4c;stroke-width:1;filter:drop-shadow(0 6px 8px rgba(36,76,104,.16))}
-.a1-spain-route-line{fill:none;stroke:#87b2df;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:2.2 1.4}
-.a1-map-stop{cursor:pointer;outline:none}.a1-map-stop circle:first-child{fill:#aab8c4;stroke:#fff;stroke-width:1.05;transition:transform .18s ease,fill .18s ease}.a1-map-stop-pulse{display:none;fill:none;stroke-width:.8}.a1-map-stop text{fill:#31516d;font-size:3.1px;font-weight:750;paint-order:stroke;stroke:#fffdf4;stroke-width:1.1px;stroke-linejoin:round;pointer-events:none}
-.a1-map-stop.done circle:first-child{fill:#14946d}.a1-map-stop.current circle:first-child{fill:#1769c4}.a1-map-stop.current .a1-map-stop-pulse{display:block;stroke:#1769c4;opacity:.42;animation:a1MapPulse 1.8s ease-out infinite}.a1-map-stop.review circle:first-child{fill:#e08a1c}.a1-map-stop:hover circle:first-child,.a1-map-stop:focus circle:first-child{transform:scale(1.38);filter:brightness(1.05)}.a1-map-stop:focus{outline:none}.a1-map-stop:focus circle:first-child{stroke:#173f6b;stroke-width:1.5}
-.a1-spain-islands{fill:#d4a953;opacity:.9}
-@keyframes a1MapPulse{0%{opacity:.58;transform:scale(.72);transform-origin:center}100%{opacity:0;transform:scale(1.45);transform-origin:center}}
-@media(max-width:700px){.a1-spain-route{margin:11px 0 14px;padding:11px;border-radius:15px}.a1-spain-route-head{display:block}.a1-spain-route-legend{justify-content:flex-start;margin-top:8px;max-width:none}.a1-spain-map{min-height:230px;max-height:310px}.a1-map-stop text{font-size:3.4px}.a1-spain-route p{font-size:.82rem}}
-@media(max-width:420px){.a1-spain-route{padding:9px}.a1-spain-map{min-height:205px}.a1-map-stop text{font-size:3.65px}.a1-spain-route-legend{gap:3px 6px;font-size:.67rem}}
