@@ -249,7 +249,7 @@
   function speak(word, { syllable = false } = {}) {
     if (!window.speechSynthesis) return;
     window.speechSynthesis.cancel();
-    const teachingSyllables = { ca: "cá", co: "có", cu: "cú" };
+    const teachingSyllables = { ca: "cá", co: "có", cu: "cú", que: "qué", qui: "quí", ce: "cé", ci: "cí" };
     // Windows can interpret "sale" as English, including inside a Spanish phrase.
     // The accent is a TTS-only Spanish phonetic cue; text shown to the learner is never changed.
     const rawText = String(word ?? "").trim();
@@ -705,7 +705,7 @@
       s = lesson.supplements.stress,
       st = s?.i18n?.[lang()] || s?.i18n?.ru;
     if (!t || !st) return "";
-    return `<section class="a1-special a1-k-sound"><h2>${esc(t.title)}</h2><div class="a1-memory"><strong>${esc(t.memoryTitle)}</strong><p>${esc(t.memoryText)}</p><div class="a1-syllables">${["ca", "co", "cu"].map((x) => `<button type="button" data-speak="${x}"><b>${x}</b><small>🔊</small></button>`).join("")}</div></div><div class="a1-rule-grid">${t.rules.map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div><h3>${esc(t.exerciseTitle)}</h3><p>${esc(t.exerciseText)}</p><div id="kExercise"></div></section><section class="a1-special a1-stress"><h2>${esc(st.title)}</h2><p>${esc(st.intro)}</p><div class="a1-stress-rules">${st.rules.map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div><div class="a1-tilde-warning"><h3>⚠️ ${esc(st.warningTitle)}</h3><p>${esc(st.warning)}</p><div class="a1-pairs">${st.pairs.map((p) => `<article><div><b>${esc(p[0])}</b><small>${esc(p[1])}</small></div><span>↔</span><div><b>${esc(p[2])}</b><small>${esc(p[3])}</small></div></article>`).join("")}</div></div></section>`;
+    return `<section class="a1-special a1-k-sound"><h2>${esc(t.title)}</h2><div class="a1-memory"><strong>${esc(t.memoryTitle)}</strong><p>${esc(t.memoryText)}</p><div class="a1-syllables">${["ca", "co", "cu"].map((x) => `<button type="button" data-speak="${x}"><b>${x}</b><small>🔊</small></button>`).join("")}</div></div><div class="a1-rule-grid">${t.rules.map(([h, p], index) => { const syllables = index === 1 ? ["que", "qui"] : index === 2 ? ["ce", "ci"] : []; return `<article><h3>${esc(h)}</h3><p>${esc(p)}</p>${syllables.length ? `<div class="a1-syllables a1-syllables-inline">${syllables.map((x) => `<button type="button" data-speak="${x}"><b>${x}</b><small>🔊</small></button>`).join("")}</div>` : ""}</article>`; }).join("")}</div><h3>${esc(t.exerciseTitle)}</h3><p>${esc(t.exerciseText)}</p><div id="kExercise"></div></section><section class="a1-special a1-stress"><h2>${esc(st.title)}</h2><p>${esc(st.intro)}</p><div class="a1-stress-rules">${st.rules.map(([h, p]) => `<article><h3>${esc(h)}</h3><p>${esc(p)}</p></article>`).join("")}</div><div class="a1-tilde-warning"><h3>⚠️ ${esc(st.warningTitle)}</h3><p>${esc(st.warning)}</p><div class="a1-pairs">${st.pairs.map((p) => `<article><div><b>${esc(p[0])}</b><small>${esc(p[1])}</small></div><span>↔</span><div><b>${esc(p[2])}</b><small>${esc(p[3])}</small></div></article>`).join("")}</div></div></section>`;
   }
   function initSupplements() {
     root()
