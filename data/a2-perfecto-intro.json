@@ -1,0 +1,443 @@
+{
+  "a2-perfecto-intro": {
+    "level": "A2",
+    "moduleId": "a2-past-01",
+    "nextLessonId": "a2-participios",
+    "ruleTags": {
+      "haber": 0,
+      "regular-ar": 1,
+      "regular-er": 1,
+      "regular-ir": 1
+    },
+    "i18n": {
+      "ru": {
+        "title": "Pretérito perfecto: что произошло сегодня",
+        "goal": "Научиться рассказывать о действиях в ещё продолжающемся периоде: сегодня или на этой неделе.",
+        "intro": "В распространённом употреблении в Испании pretérito perfecto связывает прошедшее действие с периодом, который ещё продолжается: hoy, esta semana, este mes. Употребление в разных регионах может отличаться.",
+        "rules": [
+          [
+            "Как образуется",
+            "Личная форма haber + participio: he, has, ha, hemos, habéis, han + trabajado."
+          ],
+          [
+            "Что такое participio?",
+            "Participio — причастие. Чтобы образовать правильную форму, убираем окончание инфинитива и добавляем -ado для -ar или -ido для -er и -ir: hablar → hablado, comer → comido, vivir → vivido."
+          ],
+          [
+            "Примеры",
+            "Hoy he trabajado. Эта форма говорит о действии сегодня. Esta semana hemos comido en casa. Период esta semana ещё продолжается."
+          ],
+          [
+            "Важно",
+            "После haber причастие не меняется по роду и числу: he trabajado, hemos trabajado. Неправильные формы изучим в следующем уроке."
+          ]
+        ],
+        "examplesTitle": "Послушай и прочитай",
+        "practiceTitle": "Попробуй",
+        "trainerTitle": "Потренируйся",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: причастия"
+      },
+      "uk": {
+        "title": "Pretérito perfecto: що сталося сьогодні",
+        "goal": "Навчитися розповідати про дії в періоді, який ще триває: сьогодні або цього тижня.",
+        "intro": "У поширеному в Іспанії вживанні pretérito perfecto пов’язує минулу дію з періодом, який ще триває: hoy, esta semana, este mes. У різних регіонах уживання може відрізнятися.",
+        "rules": [
+          [
+            "Як утворюється",
+            "Особова форма haber + participio: he, has, ha, hemos, habéis, han + trabajado."
+          ],
+          [
+            "Що таке participio?",
+            "Participio — дієприкметник. Щоб утворити правильну форму, прибираємо закінчення інфінітива й додаємо -ado для -ar або -ido для -er та -ir: hablar → hablado, comer → comido, vivir → vivido."
+          ],
+          [
+            "Приклади",
+            "Hoy he trabajado. Форма розповідає про дію сьогодні. Esta semana hemos comido en casa. Період esta semana ще триває."
+          ],
+          [
+            "Важливо",
+            "Після haber дієприкметник не змінюється за родом і числом: he trabajado, hemos trabajado. Неправильні форми вивчимо в наступному уроці."
+          ]
+        ],
+        "examplesTitle": "Послухай і прочитай",
+        "practiceTitle": "Спробуй",
+        "trainerTitle": "Потренуйся",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: дієприкметники"
+      },
+      "en": {
+        "title": "Pretérito perfecto: what has happened today",
+        "goal": "Talk about actions in a period that is still ongoing, such as today or this week.",
+        "intro": "In a common use in Spain, pretérito perfecto connects a past action with a period that is still ongoing: hoy, esta semana, este mes. Usage varies across regions.",
+        "rules": [
+          [
+            "How it is formed",
+            "A personal form of haber + participio: he, has, ha, hemos, habéis, han + trabajado."
+          ],
+          [
+            "What is a participio?",
+            "The participio is the past participle. For regular verbs, remove the infinitive ending and add -ado for -ar or -ido for -er and -ir: hablar → hablado, comer → comido, vivir → vivido."
+          ],
+          [
+            "Examples",
+            "Hoy he trabajado. The action happened today. Esta semana hemos comido en casa. The period esta semana is still ongoing."
+          ],
+          [
+            "Remember",
+            "After haber the participle does not change for gender or number: he trabajado, hemos trabajado. Irregular forms come in the next lesson."
+          ]
+        ],
+        "examplesTitle": "Listen and read",
+        "practiceTitle": "Try it",
+        "trainerTitle": "Practise",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: participles"
+      },
+      "es": {
+        "title": "Pretérito perfecto: lo que ha pasado hoy",
+        "goal": "Hablar de acciones en un período que todavía continúa: hoy o esta semana.",
+        "intro": "En un uso frecuente en España, el pretérito perfecto relaciona una acción pasada con un período que todavía continúa: hoy, esta semana, este mes. El uso puede variar según la región.",
+        "rules": [
+          [
+            "Cómo se forma",
+            "Una forma personal de haber + participio: he, has, ha, hemos, habéis, han + trabajado."
+          ],
+          [
+            "¿Qué es el participio?",
+            "El participio es una forma del verbo. Para formar el participio regular, quitamos la terminación del infinitivo y añadimos -ado a los verbos en -ar o -ido a los verbos en -er e -ir: hablar → hablado, comer → comido, vivir → vivido."
+          ],
+          [
+            "Ejemplos",
+            "Hoy he trabajado. La acción ha ocurrido hoy. Esta semana hemos comido en casa. El período esta semana todavía continúa."
+          ],
+          [
+            "Importante",
+            "Después de haber, el participio no cambia de género ni de número: he trabajado, hemos trabajado. Veremos las formas irregulares en la siguiente lección."
+          ]
+        ],
+        "examplesTitle": "Escucha y lee",
+        "practiceTitle": "Inténtalo",
+        "trainerTitle": "Practica",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: participios"
+      }
+    },
+    "examples": [
+      {
+        "word": "Hoy he trabajado desde casa.",
+        "tag": "haber"
+      },
+      {
+        "word": "Esta semana hemos comido en casa.",
+        "tag": "regular-er"
+      },
+      {
+        "word": "¿Has visitado Valencia este mes?",
+        "tag": "regular-ar"
+      },
+      {
+        "word": "Hoy han vivido una experiencia nueva.",
+        "tag": "regular-ir"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "a2-01-hoy-01",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Hoy (yo) ___ (trabajar) desde casa.",
+          "uk": "Hoy (yo) ___ (trabajar) desde casa.",
+          "en": "Hoy (yo) ___ (trabajar) desde casa.",
+          "es": "Hoy (yo) ___ (trabajar) desde casa."
+        },
+        "options": [
+          "he trabajado",
+          "has trabajado",
+          "he trabajar"
+        ],
+        "answer": "he trabajado"
+      },
+      {
+        "id": "a2-01-hoy-02",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Hoy (tú) ___ (estudiar) español.",
+          "uk": "Hoy (tú) ___ (estudiar) español.",
+          "en": "Hoy (tú) ___ (estudiar) español.",
+          "es": "Hoy (tú) ___ (estudiar) español."
+        },
+        "options": [
+          "has estudiado",
+          "ha estudiado",
+          "has estudió"
+        ],
+        "answer": "has estudiado"
+      },
+      {
+        "id": "a2-01-semana-03",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Esta semana Marta ___ (visitar) a su abuela.",
+          "uk": "Esta semana Marta ___ (visitar) a su abuela.",
+          "en": "Esta semana Marta ___ (visitar) a su abuela.",
+          "es": "Esta semana Marta ___ (visitar) a su abuela."
+        },
+        "options": [
+          "ha visitado",
+          "han visitado",
+          "ha visitar"
+        ],
+        "answer": "ha visitado"
+      },
+      {
+        "id": "a2-01-semana-04",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Esta semana (nosotros) ___ (comer) en casa.",
+          "uk": "Esta semana (nosotros) ___ (comer) en casa.",
+          "en": "Esta semana (nosotros) ___ (comer) en casa.",
+          "es": "Esta semana (nosotros) ___ (comer) en casa."
+        },
+        "options": [
+          "hemos comido",
+          "han comido",
+          "hemos comer"
+        ],
+        "answer": "hemos comido"
+      },
+      {
+        "id": "a2-01-hoy-05",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Hoy (vosotros) ___ (cocinar) pasta.",
+          "uk": "Hoy (vosotros) ___ (cocinar) pasta.",
+          "en": "Hoy (vosotros) ___ (cocinar) pasta.",
+          "es": "Hoy (vosotros) ___ (cocinar) pasta."
+        },
+        "options": [
+          "habéis cocinado",
+          "hemos cocinado",
+          "habéis cocináis"
+        ],
+        "answer": "habéis cocinado"
+      },
+      {
+        "id": "a2-01-mes-06",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Este mes Ana y Luis ___ (viajar) a Granada.",
+          "uk": "Este mes Ana y Luis ___ (viajar) a Granada.",
+          "en": "Este mes Ana y Luis ___ (viajar) a Granada.",
+          "es": "Este mes Ana y Luis ___ (viajar) a Granada."
+        },
+        "options": [
+          "han viajado",
+          "ha viajado",
+          "han viajar"
+        ],
+        "answer": "han viajado"
+      },
+      {
+        "id": "a2-01-ar-07",
+        "tag": "regular-ar",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (caminar) por el centro.",
+          "uk": "Hoy (yo) he ___ (caminar) por el centro.",
+          "en": "Hoy (yo) he ___ (caminar) por el centro.",
+          "es": "Hoy (yo) he ___ (caminar) por el centro."
+        },
+        "options": [
+          "caminado",
+          "caminar",
+          "caminido"
+        ],
+        "answer": "caminado"
+      },
+      {
+        "id": "a2-01-ar-08",
+        "tag": "regular-ar",
+        "prompt": {
+          "ru": "Esta semana (tú) has ___ (comprar) fruta.",
+          "uk": "Esta semana (tú) has ___ (comprar) fruta.",
+          "en": "Esta semana (tú) has ___ (comprar) fruta.",
+          "es": "Esta semana (tú) has ___ (comprar) fruta."
+        },
+        "options": [
+          "comprado",
+          "comprido",
+          "comprar"
+        ],
+        "answer": "comprado"
+      },
+      {
+        "id": "a2-01-er-09",
+        "tag": "regular-er",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (beber) agua.",
+          "uk": "Hoy (yo) he ___ (beber) agua.",
+          "en": "Hoy (yo) he ___ (beber) agua.",
+          "es": "Hoy (yo) he ___ (beber) agua."
+        },
+        "options": [
+          "bebido",
+          "bebado",
+          "beber"
+        ],
+        "answer": "bebido"
+      },
+      {
+        "id": "a2-01-er-10",
+        "tag": "regular-er",
+        "prompt": {
+          "ru": "Esta semana (nosotros) hemos ___ (aprender) mucho.",
+          "uk": "Esta semana (nosotros) hemos ___ (aprender) mucho.",
+          "en": "Esta semana (nosotros) hemos ___ (aprender) mucho.",
+          "es": "Esta semana (nosotros) hemos ___ (aprender) mucho."
+        },
+        "options": [
+          "aprendido",
+          "aprendado",
+          "aprender"
+        ],
+        "answer": "aprendido"
+      },
+      {
+        "id": "a2-01-ir-11",
+        "tag": "regular-ir",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (compartir) una foto.",
+          "uk": "Hoy (yo) he ___ (compartir) una foto.",
+          "en": "Hoy (yo) he ___ (compartir) una foto.",
+          "es": "Hoy (yo) he ___ (compartir) una foto."
+        },
+        "options": [
+          "compartido",
+          "compartado",
+          "compartir"
+        ],
+        "answer": "compartido"
+      },
+      {
+        "id": "a2-01-ir-12",
+        "tag": "regular-ir",
+        "prompt": {
+          "ru": "Esta semana (ellas) han ___ (vivir) en casa de su tía.",
+          "uk": "Esta semana (ellas) han ___ (vivir) en casa de su tía.",
+          "en": "Esta semana (ellas) han ___ (vivir) en casa de su tía.",
+          "es": "Esta semana (ellas) han ___ (vivir) en casa de su tía."
+        },
+        "options": [
+          "vivido",
+          "vivado",
+          "vivir"
+        ],
+        "answer": "vivido"
+      },
+      {
+        "id": "a2-01-hoy-13",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Hoy (usted) ___ (terminar) el informe.",
+          "uk": "Hoy (usted) ___ (terminar) el informe.",
+          "en": "Hoy (usted) ___ (terminar) el informe.",
+          "es": "Hoy (usted) ___ (terminar) el informe."
+        },
+        "options": [
+          "ha terminado",
+          "has terminado",
+          "han terminado"
+        ],
+        "answer": "ha terminado"
+      },
+      {
+        "id": "a2-01-semana-14",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Esta semana (yo) ___ (llamar) a Clara.",
+          "uk": "Esta semana (yo) ___ (llamar) a Clara.",
+          "en": "Esta semana (yo) ___ (llamar) a Clara.",
+          "es": "Esta semana (yo) ___ (llamar) a Clara."
+        },
+        "options": [
+          "he llamado",
+          "ha llamado",
+          "he llamo"
+        ],
+        "answer": "he llamado"
+      },
+      {
+        "id": "a2-01-hoy-15",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Hoy (ellos) ___ (vender) entradas.",
+          "uk": "Hoy (ellos) ___ (vender) entradas.",
+          "en": "Hoy (ellos) ___ (vender) entradas.",
+          "es": "Hoy (ellos) ___ (vender) entradas."
+        },
+        "options": [
+          "han vendido",
+          "hemos vendido",
+          "han vender"
+        ],
+        "answer": "han vendido"
+      },
+      {
+        "id": "a2-01-mes-16",
+        "tag": "haber",
+        "prompt": {
+          "ru": "Este mes (vosotras) ___ (recibir) cartas.",
+          "uk": "Este mes (vosotras) ___ (recibir) cartas.",
+          "en": "Este mes (vosotras) ___ (recibir) cartas.",
+          "es": "Este mes (vosotras) ___ (recibir) cartas."
+        },
+        "options": [
+          "habéis recibido",
+          "habéis recibáis",
+          "han recibido"
+        ],
+        "answer": "habéis recibido"
+      },
+      {
+        "id": "a2-01-ar-17",
+        "tag": "regular-ar",
+        "prompt": {
+          "ru": "Hoy (ella) ha ___ (preparar) el desayuno.",
+          "uk": "Hoy (ella) ha ___ (preparar) el desayuno.",
+          "en": "Hoy (ella) ha ___ (preparar) el desayuno.",
+          "es": "Hoy (ella) ha ___ (preparar) el desayuno."
+        },
+        "options": [
+          "preparado",
+          "preparido",
+          "preparar"
+        ],
+        "answer": "preparado"
+      },
+      {
+        "id": "a2-01-er-18",
+        "tag": "regular-er",
+        "prompt": {
+          "ru": "Esta semana (tú) has ___ (vender) dos libros.",
+          "uk": "Esta semana (tú) has ___ (vender) dos libros.",
+          "en": "Esta semana (tú) has ___ (vender) dos libros.",
+          "es": "Esta semana (tú) has ___ (vender) dos libros."
+        },
+        "options": [
+          "vendido",
+          "vendado",
+          "vender"
+        ],
+        "answer": "vendido"
+      }
+    ]
+  }
+}
