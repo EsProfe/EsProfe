@@ -170,9 +170,9 @@
         "id": "a2-03-02",
         "tag": "ya",
         "prompt": {
-          "ru": "La compra está hecha: ___ he hecho la compra.",
-          "uk": "La compra está hecha: ___ he hecho la compra.",
-          "en": "La compra está hecha: ___ he hecho la compra.",
+          "ru": "Покупки уже сделаны: ___ he hecho la compra.",
+          "uk": "Покупки вже зроблено: ___ he hecho la compra.",
+          "en": "The shopping is done: ___ he hecho la compra.",
           "es": "La compra está hecha: ___ he hecho la compra."
         },
         "options": [
@@ -186,9 +186,9 @@
         "id": "a2-03-03",
         "tag": "ya",
         "prompt": {
-          "ru": "La puerta está abierta: ___ he abierto la puerta.",
-          "uk": "La puerta está abierta: ___ he abierto la puerta.",
-          "en": "La puerta está abierta: ___ he abierto la puerta.",
+          "ru": "Дверь уже открыта: ___ he abierto la puerta.",
+          "uk": "Двері вже відчинено: ___ he abierto la puerta.",
+          "en": "The door is open: ___ he abierto la puerta.",
           "es": "La puerta está abierta: ___ he abierto la puerta."
         },
         "options": [
@@ -202,9 +202,9 @@
         "id": "a2-03-04",
         "tag": "ya",
         "prompt": {
-          "ru": "El correo está enviado: ___ he enviado el correo.",
-          "uk": "El correo está enviado: ___ he enviado el correo.",
-          "en": "El correo está enviado: ___ he enviado el correo.",
+          "ru": "Письмо уже отправлено: ___ he enviado el correo.",
+          "uk": "Листа вже надіслано: ___ he enviado el correo.",
+          "en": "The email has been sent: ___ he enviado el correo.",
           "es": "El correo está enviado: ___ he enviado el correo."
         },
         "options": [
@@ -218,9 +218,9 @@
         "id": "a2-03-05",
         "tag": "todavia",
         "prompt": {
-          "ru": "La mesa no está reservada por ahora: ___ he reservado la mesa.",
-          "uk": "La mesa no está reservada por ahora: ___ he reservado la mesa.",
-          "en": "La mesa no está reservada por ahora: ___ he reservado la mesa.",
+          "ru": "Столик пока не забронирован: ___ he reservado la mesa.",
+          "uk": "Столик поки не заброньовано: ___ he reservado la mesa.",
+          "en": "The table has not been booked yet: ___ he reservado la mesa.",
           "es": "La mesa no está reservada por ahora: ___ he reservado la mesa."
         },
         "options": [
@@ -234,9 +234,9 @@
         "id": "a2-03-06",
         "tag": "todavia",
         "prompt": {
-          "ru": "La comida no está lista por ahora: ___ he preparado la comida.",
-          "uk": "La comida no está lista por ahora: ___ he preparado la comida.",
-          "en": "La comida no está lista por ahora: ___ he preparado la comida.",
+          "ru": "Еда пока не приготовлена: ___ he preparado la comida.",
+          "uk": "Їжу поки не приготовлено: ___ he preparado la comida.",
+          "en": "The food is not ready yet: ___ he preparado la comida.",
           "es": "La comida no está lista por ahora: ___ he preparado la comida."
         },
         "options": [
@@ -250,9 +250,9 @@
         "id": "a2-03-07",
         "tag": "todavia",
         "prompt": {
-          "ru": "El correo no está enviado por ahora: ___ he enviado el correo.",
-          "uk": "El correo no está enviado por ahora: ___ he enviado el correo.",
-          "en": "El correo no está enviado por ahora: ___ he enviado el correo.",
+          "ru": "Письмо пока не отправлено: ___ he enviado el correo.",
+          "uk": "Листа поки не надіслано: ___ he enviado el correo.",
+          "en": "The email has not been sent yet: ___ he enviado el correo.",
           "es": "El correo no está enviado por ahora: ___ he enviado el correo."
         },
         "options": [
@@ -266,9 +266,9 @@
         "id": "a2-03-08",
         "tag": "todavia",
         "prompt": {
-          "ru": "La película está pendiente: ___ he visto la película.",
-          "uk": "La película está pendiente: ___ he visto la película.",
-          "en": "La película está pendiente: ___ he visto la película.",
+          "ru": "Фильм ещё предстоит посмотреть: ___ he visto la película.",
+          "uk": "Фільм ще треба подивитися: ___ he visto la película.",
+          "en": "The film has not been watched yet: ___ he visto la película.",
           "es": "La película está pendiente: ___ he visto la película."
         },
         "options": [
@@ -282,9 +282,9 @@
         "id": "a2-03-09",
         "tag": "experiencia",
         "prompt": {
-          "ru": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia.",
-          "uk": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia.",
-          "en": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia.",
+          "ru": "Спроси об опыте: ¿Has estado en Sevilla ___?",
+          "uk": "Запитай про досвід: ¿Has estado en Sevilla ___?",
+          "en": "Ask about an experience: ¿Has estado en Sevilla ___?",
           "es": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia."
         },
         "options": [
@@ -298,9 +298,9 @@
         "id": "a2-03-10",
         "tag": "experiencia",
         "prompt": {
-          "ru": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida.",
-          "uk": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida.",
-          "en": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida.",
+          "ru": "Спроси, пробовал ли человек паэлью когда-нибудь: ¿Has probado la paella ___?",
+          "uk": "Запитай, чи куштувала людина паелью коли-небудь: ¿Has probado la paella ___?",
+          "en": "Ask whether someone has ever tried paella: ¿Has probado la paella ___?",
           "es": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida."
         },
         "options": [
@@ -314,9 +314,9 @@
         "id": "a2-03-11",
         "tag": "experiencia",
         "prompt": {
-          "ru": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia.",
-          "uk": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia.",
-          "en": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia.",
+          "ru": "Спроси об опыте поездок: ¿Habéis viajado a México ___?",
+          "uk": "Запитай про досвід подорожей: ¿Habéis viajado a México ___?",
+          "en": "Ask about travel experience: ¿Habéis viajado a México ___?",
           "es": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia."
         },
         "options": [
@@ -330,9 +330,9 @@
         "id": "a2-03-12",
         "tag": "experiencia",
         "prompt": {
-          "ru": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia.",
-          "uk": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia.",
-          "en": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia.",
+          "ru": "Спроси, было ли это когда-нибудь: ¿Has hablado con ella ___?",
+          "uk": "Запитай, чи було це коли-небудь: ¿Has hablado con ella ___?",
+          "en": "Ask whether this has ever happened: ¿Has hablado con ella ___?",
           "es": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia."
         },
         "options": [
@@ -346,9 +346,9 @@
         "id": "a2-03-13",
         "tag": "nunca",
         "prompt": {
-          "ru": "No he viajado a Japón en mi vida: ___ he viajado a Japón.",
-          "uk": "No he viajado a Japón en mi vida: ___ he viajado a Japón.",
-          "en": "No he viajado a Japón en mi vida: ___ he viajado a Japón.",
+          "ru": "Я никогда не ездил(а) в Японию: ___ he viajado a Japón.",
+          "uk": "Я ніколи не їздив(ла) до Японії: ___ he viajado a Japón.",
+          "en": "I have never travelled to Japan: ___ he viajado a Japón.",
           "es": "No he viajado a Japón en mi vida: ___ he viajado a Japón."
         },
         "options": [
@@ -362,9 +362,9 @@
         "id": "a2-03-14",
         "tag": "nunca",
         "prompt": {
-          "ru": "En mi vida no he probado sushi: ___ he probado sushi.",
-          "uk": "En mi vida no he probado sushi: ___ he probado sushi.",
-          "en": "En mi vida no he probado sushi: ___ he probado sushi.",
+          "ru": "Я никогда не пробовал(а) суши: ___ he probado sushi.",
+          "uk": "Я ніколи не куштував(ла) суші: ___ he probado sushi.",
+          "en": "I have never tried sushi: ___ he probado sushi.",
           "es": "En mi vida no he probado sushi: ___ he probado sushi."
         },
         "options": [
@@ -378,9 +378,9 @@
         "id": "a2-03-15",
         "tag": "nunca",
         "prompt": {
-          "ru": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa.",
-          "uk": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa.",
-          "en": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa.",
+          "ru": "Я никогда не был(а) в Лиссабоне: ___ he estado en Lisboa.",
+          "uk": "Я ніколи не був(ла) у Лісабоні: ___ he estado en Lisboa.",
+          "en": "I have never been to Lisbon: ___ he estado en Lisboa.",
           "es": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa."
         },
         "options": [
@@ -394,9 +394,9 @@
         "id": "a2-03-16",
         "tag": "nunca",
         "prompt": {
-          "ru": "Antes del verbo, elige la forma correcta:",
-          "uk": "Antes del verbo, elige la forma correcta:",
-          "en": "Antes del verbo, elige la forma correcta:",
+          "ru": "Выбери правильную форму, где nunca стоит перед глаголом.",
+          "uk": "Обери правильну форму, де nunca стоїть перед дієсловом.",
+          "en": "Choose the correct sentence with nunca before the verb.",
           "es": "Antes del verbo, elige la forma correcta:"
         },
         "options": [
@@ -410,9 +410,9 @@
         "id": "a2-03-17",
         "tag": "nunca",
         "prompt": {
-          "ru": "Después del verbo, elige la forma correcta:",
-          "uk": "Después del verbo, elige la forma correcta:",
-          "en": "Después del verbo, elige la forma correcta:",
+          "ru": "Выбери правильную форму, где nunca стоит после глагола.",
+          "uk": "Обери правильну форму, де nunca стоїть після дієслова.",
+          "en": "Choose the correct sentence with nunca after the verb.",
           "es": "Después del verbo, elige la forma correcta:"
         },
         "options": [
@@ -442,9 +442,9 @@
         "id": "a2-03-19",
         "tag": "ya",
         "prompt": {
-          "ru": "Elige la frase que indica que la reserva está hecha:",
-          "uk": "Elige la frase que indica que la reserva está hecha:",
-          "en": "Elige la frase que indica que la reserva está hecha:",
+          "ru": "Выбери фразу, которая говорит, что столик уже забронирован.",
+          "uk": "Обери фразу, яка означає, що столик уже заброньовано.",
+          "en": "Choose the sentence indicating the table has already been booked.",
           "es": "Elige la frase que indica que la reserva está hecha:"
         },
         "options": [
@@ -458,9 +458,9 @@
         "id": "a2-03-20",
         "tag": "experiencia",
         "prompt": {
-          "ru": "Elige la pregunta por una experiencia hasta ahora:",
-          "uk": "Elige la pregunta por una experiencia hasta ahora:",
-          "en": "Elige la pregunta por una experiencia hasta ahora:",
+          "ru": "Выбери вопрос о жизненном опыте до настоящего момента.",
+          "uk": "Обери запитання про життєвий досвід до теперішнього моменту.",
+          "en": "Choose the question about experience up to now.",
           "es": "Elige la pregunta por una experiencia hasta ahora:"
         },
         "options": [
