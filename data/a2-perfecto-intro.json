@@ -7,7 +7,8 @@
       "haber": 0,
       "regular-ar": 1,
       "regular-er": 1,
-      "regular-ir": 1
+      "regular-ir": 1,
+      "experiencia": 4
     },
     "i18n": {
       "ru": {
@@ -34,6 +35,10 @@
           [
             "Важно",
             "После haber причастие не меняется по роду и числу: he trabajado, hemos trabajado. Неправильные формы изучим в следующем уроке."
+          ],
+          [
+            "Жизненный опыт",
+            "Pretérito perfecto также используют, чтобы говорить об опыте до настоящего момента без указания конкретной даты: Nunca he estado en Cuba. — Я никогда не был(а) на Кубе."
           ]
         ],
         "examplesTitle": "Послушай и прочитай",
@@ -68,6 +73,10 @@
           [
             "Важливо",
             "Після haber дієприкметник не змінюється за родом і числом: he trabajado, hemos trabajado. Неправильні форми вивчимо в наступному уроці."
+          ],
+          [
+            "Життєвий досвід",
+            "Pretérito perfecto також уживають, щоб говорити про досвід до теперішнього моменту без зазначення конкретної дати: Nunca he estado en Cuba. — Я ніколи не був(ла) на Кубі."
           ]
         ],
         "examplesTitle": "Послухай і прочитай",
@@ -102,6 +111,10 @@
           [
             "Remember",
             "After haber the participle does not change for gender or number: he trabajado, hemos trabajado. Irregular forms come in the next lesson."
+          ],
+          [
+            "Life experience",
+            "Pretérito perfecto can also describe experience up to now without specifying a particular date: Nunca he estado en Cuba. — I have never been to Cuba."
           ]
         ],
         "examplesTitle": "Listen and read",
@@ -136,6 +149,10 @@
           [
             "Importante",
             "Después de haber, el participio no cambia de género ni de número: he trabajado, hemos trabajado. Veremos las formas irregulares en la siguiente lección."
+          ],
+          [
+            "Experiencias",
+            "El pretérito perfecto también se usa para hablar de experiencias hasta el presente sin señalar una fecha concreta: Nunca he estado en Cuba."
           ]
         ],
         "examplesTitle": "Escucha y lee",
@@ -163,6 +180,10 @@
       {
         "word": "Hoy han vivido una experiencia nueva.",
         "tag": "regular-ir"
+      },
+      {
+        "word": "Nunca he estado en Cuba.",
+        "tag": "experiencia"
       }
     ],
     "questionBank": [
