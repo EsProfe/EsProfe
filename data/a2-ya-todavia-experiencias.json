@@ -1,0 +1,475 @@
+{
+  "a2-ya-todavia-experiencias": {
+    "level": "A2",
+    "moduleId": "a2-past-01",
+    "nextLessonId": "a2-perfecto-tiempo",
+    "ruleTags": {
+      "ya": 0,
+      "todavia": 1,
+      "experiencia": 2,
+      "nunca": 3
+    },
+    "i18n": {
+      "ru": {
+        "title": "Уже, ещё не и жизненный опыт",
+        "goal": "Спросить об опыте и сказать, что уже сделано или ещё не сделано.",
+        "intro": "Используем pretérito perfecto, чтобы спросить об опыте до настоящего момента или рассказать о результате сейчас. Слова-подсказки помогают выразить нужный смысл.",
+        "rules": [
+          [
+            "Ya — уже",
+            "Ya he reservado la mesa. — Я уже забронировал(а) столик."
+          ],
+          [
+            "Todavía no — ещё не",
+            "Todavía no he probado la tortilla. — Я ещё не пробовал(а) тортилью. Перед глаголом используется отрицание no."
+          ],
+          [
+            "¿Alguna vez...? — когда-нибудь?",
+            "¿Has visitado Madrid alguna vez? — Ты когда-нибудь был(а) в Мадриде? Вопрос об опыте без указания конкретного завершённого времени."
+          ],
+          [
+            "Nunca — никогда",
+            "Nunca he estado allí. — Я никогда там не был(а). Перед глаголом nunca выражает отрицание без дополнительного no: Nunca he estado; после глагола: No he estado nunca."
+          ]
+        ],
+        "examplesTitle": "Послушай и прочитай",
+        "practiceTitle": "Выбери подходящий смысл",
+        "trainerTitle": "Потренируй выражения",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: периоды времени"
+      },
+      "uk": {
+        "title": "Уже, ще не та життєвий досвід",
+        "goal": "Запитати про досвід і сказати, що вже зроблено або ще не зроблено.",
+        "intro": "Використовуємо pretérito perfecto, щоб запитати про досвід до теперішнього моменту або розповісти про результат зараз. Слова-підказки допомагають передати потрібний зміст.",
+        "rules": [
+          [
+            "Ya — уже",
+            "Ya he reservado la mesa. — Я вже забронював(ла) столик."
+          ],
+          [
+            "Todavía no — ще не",
+            "Todavía no he probado la tortilla. — Я ще не куштував(ла) тортилью. Перед дієсловом вживаємо заперечення no."
+          ],
+          [
+            "¿Alguna vez...? — коли-небудь?",
+            "¿Has visitado Madrid alguna vez? — Ти коли-небудь був(ла) в Мадриді? Це запитання про досвід без зазначення конкретного завершеного часу."
+          ],
+          [
+            "Nunca — ніколи",
+            "Nunca he estado allí. — Я ніколи там не був(ла). Перед дієсловом nunca виражає заперечення без додаткового no: Nunca he estado; після дієслова: No he estado nunca."
+          ]
+        ],
+        "examplesTitle": "Послухай і прочитай",
+        "practiceTitle": "Обери потрібний зміст",
+        "trainerTitle": "Потренуй вирази",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: періоди часу"
+      },
+      "en": {
+        "title": "Already, not yet and life experience",
+        "goal": "Ask about experience and say what has or has not happened yet.",
+        "intro": "Use pretérito perfecto to ask about experience up to now or describe a present result. These expressions help communicate the intended meaning.",
+        "rules": [
+          [
+            "Ya — already",
+            "Ya he reservado la mesa. — I have already booked the table."
+          ],
+          [
+            "Todavía no — not yet",
+            "Todavía no he probado la tortilla. — I have not tried tortilla yet. The negative no comes before the verb."
+          ],
+          [
+            "¿Alguna vez...? — ever?",
+            "¿Has visitado Madrid alguna vez? — Have you ever visited Madrid? The question concerns experience without naming a specific finished time."
+          ],
+          [
+            "Nunca — never",
+            "Nunca he estado allí. — I have never been there. Before the verb, nunca expresses negation without an extra no: Nunca he estado; after the verb: No he estado nunca."
+          ]
+        ],
+        "examplesTitle": "Listen and read",
+        "practiceTitle": "Choose the intended meaning",
+        "trainerTitle": "Practise the expressions",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: time periods"
+      },
+      "es": {
+        "title": "Ya, todavía no y experiencias",
+        "goal": "Preguntar por experiencias y decir qué se ha hecho ya o todavía no.",
+        "intro": "Usamos el pretérito perfecto para preguntar por experiencias hasta el momento actual o hablar de un resultado presente. Estas expresiones ayudan a comunicar el significado que buscamos.",
+        "rules": [
+          [
+            "Ya",
+            "Ya he reservado la mesa: la reserva está hecha."
+          ],
+          [
+            "Todavía no",
+            "Todavía no he probado la tortilla: hasta ahora no la he probado. La negación no precede al verbo."
+          ],
+          [
+            "¿Alguna vez...?",
+            "¿Has visitado Madrid alguna vez? Preguntamos por una experiencia sin mencionar un momento concreto terminado."
+          ],
+          [
+            "Nunca",
+            "Nunca he estado allí. Antes del verbo, nunca expresa la negación sin añadir no: Nunca he estado. Después del verbo: No he estado nunca."
+          ]
+        ],
+        "examplesTitle": "Escucha y lee",
+        "practiceTitle": "Elige el significado",
+        "trainerTitle": "Practica las expresiones",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: períodos de tiempo"
+      }
+    },
+    "examples": [
+      {
+        "word": "Ya he reservado la mesa.",
+        "tag": "ya"
+      },
+      {
+        "word": "Todavía no he probado la tortilla.",
+        "tag": "todavia"
+      },
+      {
+        "word": "¿Has visitado Madrid alguna vez?",
+        "tag": "experiencia"
+      },
+      {
+        "word": "Nunca he estado allí.",
+        "tag": "nunca"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "a2-03-01",
+        "tag": "ya",
+        "prompt": {
+          "ru": "Выбери перевод «уже»: ___ he reservado la mesa.",
+          "uk": "Обери переклад «уже»: ___ he reservado la mesa.",
+          "en": "Choose the translation of “already”: ___ he reservado la mesa.",
+          "es": "Elige la traducción de «already»: ___ he reservado la mesa."
+        },
+        "options": [
+          "Ya",
+          "Nunca",
+          "Todavía no"
+        ],
+        "answer": "Ya"
+      },
+      {
+        "id": "a2-03-02",
+        "tag": "ya",
+        "prompt": {
+          "ru": "La compra está hecha: ___ he hecho la compra.",
+          "uk": "La compra está hecha: ___ he hecho la compra.",
+          "en": "La compra está hecha: ___ he hecho la compra.",
+          "es": "La compra está hecha: ___ he hecho la compra."
+        },
+        "options": [
+          "Ya",
+          "Todavía no",
+          "Nunca"
+        ],
+        "answer": "Ya"
+      },
+      {
+        "id": "a2-03-03",
+        "tag": "ya",
+        "prompt": {
+          "ru": "La puerta está abierta: ___ he abierto la puerta.",
+          "uk": "La puerta está abierta: ___ he abierto la puerta.",
+          "en": "La puerta está abierta: ___ he abierto la puerta.",
+          "es": "La puerta está abierta: ___ he abierto la puerta."
+        },
+        "options": [
+          "Ya",
+          "Nunca",
+          "Todavía no"
+        ],
+        "answer": "Ya"
+      },
+      {
+        "id": "a2-03-04",
+        "tag": "ya",
+        "prompt": {
+          "ru": "El correo está enviado: ___ he enviado el correo.",
+          "uk": "El correo está enviado: ___ he enviado el correo.",
+          "en": "El correo está enviado: ___ he enviado el correo.",
+          "es": "El correo está enviado: ___ he enviado el correo."
+        },
+        "options": [
+          "Ya",
+          "Nunca",
+          "Todavía no"
+        ],
+        "answer": "Ya"
+      },
+      {
+        "id": "a2-03-05",
+        "tag": "todavia",
+        "prompt": {
+          "ru": "La mesa no está reservada por ahora: ___ he reservado la mesa.",
+          "uk": "La mesa no está reservada por ahora: ___ he reservado la mesa.",
+          "en": "La mesa no está reservada por ahora: ___ he reservado la mesa.",
+          "es": "La mesa no está reservada por ahora: ___ he reservado la mesa."
+        },
+        "options": [
+          "Todavía no",
+          "Ya",
+          "Alguna vez"
+        ],
+        "answer": "Todavía no"
+      },
+      {
+        "id": "a2-03-06",
+        "tag": "todavia",
+        "prompt": {
+          "ru": "La comida no está lista por ahora: ___ he preparado la comida.",
+          "uk": "La comida no está lista por ahora: ___ he preparado la comida.",
+          "en": "La comida no está lista por ahora: ___ he preparado la comida.",
+          "es": "La comida no está lista por ahora: ___ he preparado la comida."
+        },
+        "options": [
+          "Todavía no",
+          "Ya",
+          "Alguna vez"
+        ],
+        "answer": "Todavía no"
+      },
+      {
+        "id": "a2-03-07",
+        "tag": "todavia",
+        "prompt": {
+          "ru": "El correo no está enviado por ahora: ___ he enviado el correo.",
+          "uk": "El correo no está enviado por ahora: ___ he enviado el correo.",
+          "en": "El correo no está enviado por ahora: ___ he enviado el correo.",
+          "es": "El correo no está enviado por ahora: ___ he enviado el correo."
+        },
+        "options": [
+          "Todavía no",
+          "Ya",
+          "Alguna vez"
+        ],
+        "answer": "Todavía no"
+      },
+      {
+        "id": "a2-03-08",
+        "tag": "todavia",
+        "prompt": {
+          "ru": "La película está pendiente: ___ he visto la película.",
+          "uk": "La película está pendiente: ___ he visto la película.",
+          "en": "La película está pendiente: ___ he visto la película.",
+          "es": "La película está pendiente: ___ he visto la película."
+        },
+        "options": [
+          "Todavía no",
+          "Ya",
+          "Alguna vez"
+        ],
+        "answer": "Todavía no"
+      },
+      {
+        "id": "a2-03-09",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia.",
+          "uk": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia.",
+          "en": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia.",
+          "es": "¿Has estado en Sevilla ___? — pregunto si has tenido esa experiencia."
+        },
+        "options": [
+          "alguna vez",
+          "todavía no",
+          "ya no"
+        ],
+        "answer": "alguna vez"
+      },
+      {
+        "id": "a2-03-10",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida.",
+          "uk": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida.",
+          "en": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida.",
+          "es": "¿Has probado la paella ___? — pregunto si lo has hecho alguna vez en tu vida."
+        },
+        "options": [
+          "alguna vez",
+          "todavía no",
+          "nunca no"
+        ],
+        "answer": "alguna vez"
+      },
+      {
+        "id": "a2-03-11",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia.",
+          "uk": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia.",
+          "en": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia.",
+          "es": "¿Habéis viajado a México ___? — pregunto por vuestra experiencia."
+        },
+        "options": [
+          "alguna vez",
+          "todavía no",
+          "nunca no"
+        ],
+        "answer": "alguna vez"
+      },
+      {
+        "id": "a2-03-12",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia.",
+          "uk": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia.",
+          "en": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia.",
+          "es": "¿Has hablado con ella ___? — pregunto si has tenido esa experiencia."
+        },
+        "options": [
+          "alguna vez",
+          "todavía no",
+          "nunca no"
+        ],
+        "answer": "alguna vez"
+      },
+      {
+        "id": "a2-03-13",
+        "tag": "nunca",
+        "prompt": {
+          "ru": "No he viajado a Japón en mi vida: ___ he viajado a Japón.",
+          "uk": "No he viajado a Japón en mi vida: ___ he viajado a Japón.",
+          "en": "No he viajado a Japón en mi vida: ___ he viajado a Japón.",
+          "es": "No he viajado a Japón en mi vida: ___ he viajado a Japón."
+        },
+        "options": [
+          "Nunca",
+          "Ya",
+          "Siempre no"
+        ],
+        "answer": "Nunca"
+      },
+      {
+        "id": "a2-03-14",
+        "tag": "nunca",
+        "prompt": {
+          "ru": "En mi vida no he probado sushi: ___ he probado sushi.",
+          "uk": "En mi vida no he probado sushi: ___ he probado sushi.",
+          "en": "En mi vida no he probado sushi: ___ he probado sushi.",
+          "es": "En mi vida no he probado sushi: ___ he probado sushi."
+        },
+        "options": [
+          "Nunca",
+          "Ya",
+          "Todavía sí"
+        ],
+        "answer": "Nunca"
+      },
+      {
+        "id": "a2-03-15",
+        "tag": "nunca",
+        "prompt": {
+          "ru": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa.",
+          "uk": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa.",
+          "en": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa.",
+          "es": "En mi vida no he estado en Lisboa: ___ he estado en Lisboa."
+        },
+        "options": [
+          "Nunca",
+          "Ya",
+          "Siempre no"
+        ],
+        "answer": "Nunca"
+      },
+      {
+        "id": "a2-03-16",
+        "tag": "nunca",
+        "prompt": {
+          "ru": "Antes del verbo, elige la forma correcta:",
+          "uk": "Antes del verbo, elige la forma correcta:",
+          "en": "Antes del verbo, elige la forma correcta:",
+          "es": "Antes del verbo, elige la forma correcta:"
+        },
+        "options": [
+          "Nunca he viajado a Cuba.",
+          "No nunca he viajado a Cuba.",
+          "Nunca no he viajado a Cuba."
+        ],
+        "answer": "Nunca he viajado a Cuba."
+      },
+      {
+        "id": "a2-03-17",
+        "tag": "nunca",
+        "prompt": {
+          "ru": "Después del verbo, elige la forma correcta:",
+          "uk": "Después del verbo, elige la forma correcta:",
+          "en": "Después del verbo, elige la forma correcta:",
+          "es": "Después del verbo, elige la forma correcta:"
+        },
+        "options": [
+          "No he estado nunca en Perú.",
+          "He estado nunca en Perú.",
+          "No he estado no nunca en Perú."
+        ],
+        "answer": "No he estado nunca en Perú."
+      },
+      {
+        "id": "a2-03-18",
+        "tag": "todavia",
+        "prompt": {
+          "ru": "Выбери фразу со значением «ещё не».",
+          "uk": "Обери фразу зі значенням «ще не».",
+          "en": "Choose the sentence meaning “not yet”.",
+          "es": "Elige la frase que significa «not yet»."
+        },
+        "options": [
+          "Todavía no he terminado.",
+          "Ya he terminado.",
+          "Nunca no he terminado."
+        ],
+        "answer": "Todavía no he terminado."
+      },
+      {
+        "id": "a2-03-19",
+        "tag": "ya",
+        "prompt": {
+          "ru": "Elige la frase que indica que la reserva está hecha:",
+          "uk": "Elige la frase que indica que la reserva está hecha:",
+          "en": "Elige la frase que indica que la reserva está hecha:",
+          "es": "Elige la frase que indica que la reserva está hecha:"
+        },
+        "options": [
+          "Ya he reservado la mesa.",
+          "Todavía no he reservado la mesa.",
+          "Nunca he reservado la mesa."
+        ],
+        "answer": "Ya he reservado la mesa."
+      },
+      {
+        "id": "a2-03-20",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "Elige la pregunta por una experiencia hasta ahora:",
+          "uk": "Elige la pregunta por una experiencia hasta ahora:",
+          "en": "Elige la pregunta por una experiencia hasta ahora:",
+          "es": "Elige la pregunta por una experiencia hasta ahora:"
+        },
+        "options": [
+          "¿Has estado alguna vez en Granada?",
+          "¿Estás alguna vez no en Granada?",
+          "¿Alguna vez no has estado todavía Granada?"
+        ],
+        "answer": "¿Has estado alguna vez en Granada?"
+      }
+    ]
+  }
+}
