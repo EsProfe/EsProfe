@@ -474,6 +474,38 @@
           "vender"
         ],
         "answer": "vendido"
+      },
+      {
+        "id": "a2-01-experiencia-19",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "Как сказать «Я никогда не был(а) на Кубе»?",
+          "uk": "Як сказати «Я ніколи не був(ла) на Кубі»?",
+          "en": "How do you say “I have never been to Cuba”?",
+          "es": "Elige la frase que expresa no haber visitado Cuba hasta ahora."
+        },
+        "options": [
+          "Nunca he estado en Cuba.",
+          "Nunca he visto en Cuba.",
+          "Nunca he está en Cuba."
+        ],
+        "answer": "Nunca he estado en Cuba."
+      },
+      {
+        "id": "a2-01-experiencia-20",
+        "tag": "experiencia",
+        "prompt": {
+          "ru": "Как спросить «Ты когда-нибудь был(а) в Мексике»?",
+          "uk": "Як запитати «Ти коли-небудь був(ла) в Мексиці»?",
+          "en": "How do you ask “Have you ever been to Mexico”?",
+          "es": "Elige la pregunta por una experiencia hasta ahora."
+        },
+        "options": [
+          "¿Has estado alguna vez en México?",
+          "¿Has estar alguna vez en México?",
+          "¿Ha estado alguna vez tú en México?"
+        ],
+        "answer": "¿Has estado alguna vez en México?"
       }
     ]
   }
