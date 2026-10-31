@@ -6,21 +6,25 @@
     "ruleTags": {
       "regular": 0,
       "irregular": 1,
-      "accent": 2
+      "accent": 3
     },
     "i18n": {
       "ru": {
-        "title": "Причастия: правильные и неправильные формы",
-        "goal": "Научиться образовывать причастия и узнавать частые неправильные формы в pretérito perfecto.",
-        "intro": "Вспомни: форма haber + причастие помогает рассказать о событии в продолжающемся периоде. Причастие в этой конструкции не меняется по роду и числу.",
+        "title": "Pretérito perfecto · Часть 2: неправильные причастия",
+        "goal": "Научиться использовать основные неправильные причастия с haber в pretérito perfecto.",
+        "intro": "Это продолжение первого урока. Форма времени остаётся той же: haber + participio. Некоторые причастия образуются не по обычному правилу: их нужно запомнить.",
         "rules": [
           [
             "Правильные формы",
             "У глаголов на -ar заменяем окончание на -ado: trabajar → trabajado. У глаголов на -er и -ir заменяем его на -ido: comer → comido, vivir → vivido."
           ],
           [
-            "Частые неправильные формы",
-            "hacer → hecho; ver → visto; escribir → escrito; poner → puesto; abrir → abierto; volver → vuelto; decir → dicho."
+            "Основные формы · 1",
+            "hacer (делать) → hecho; decir (говорить) → dicho; ver (видеть) → visto; escribir (писать) → escrito; abrir (открывать) → abierto; poner (класть) → puesto; volver (возвращаться) → vuelto."
+          ],
+          [
+            "Основные формы · 2",
+            "romper (ломать) → roto; morir (умирать) → muerto; cubrir (покрывать) → cubierto; descubrir (открывать, обнаруживать) → descubierto; devolver (возвращать что-то) → devuelto; resolver (решать) → resuelto."
           ],
           [
             "Ударение в -ído",
@@ -40,17 +44,21 @@
         "nextTitle": "Следующий урок: уже, ещё не и жизненный опыт"
       },
       "uk": {
-        "title": "Дієприкметники: правильні та неправильні форми",
-        "goal": "Навчитися утворювати дієприкметники та впізнавати часті неправильні форми у pretérito perfecto.",
-        "intro": "Пригадай: форма haber + дієприкметник допомагає розповісти про подію в періоді, який ще триває. У цій конструкції дієприкметник не змінюється за родом і числом.",
+        "title": "Pretérito perfecto · Частина 2: неправильні дієприкметники",
+        "goal": "Навчитися вживати основні неправильні дієприкметники з haber у pretérito perfecto.",
+        "intro": "Це продовження першого уроку. Форма часу залишається такою самою: haber + participio. Деякі дієприкметники утворюються не за звичайним правилом: їх потрібно запам’ятати.",
         "rules": [
           [
             "Правильні форми",
             "У дієсловах на -ar замінюємо закінчення на -ado: trabajar → trabajado. У дієсловах на -er та -ir замінюємо його на -ido: comer → comido, vivir → vivido."
           ],
           [
-            "Часті неправильні форми",
-            "hacer → hecho; ver → visto; escribir → escrito; poner → puesto; abrir → abierto; volver → vuelto; decir → dicho."
+            "Основні форми · 1",
+            "hacer (робити) → hecho; decir (казати) → dicho; ver (бачити) → visto; escribir (писати) → escrito; abrir (відчиняти) → abierto; poner (класти) → puesto; volver (повертатися) → vuelto."
+          ],
+          [
+            "Основні форми · 2",
+            "romper (ламати) → roto; morir (помирати) → muerto; cubrir (покривати) → cubierto; descubrir (відкривати, виявляти) → descubierto; devolver (повертати щось) → devuelto; resolver (вирішувати) → resuelto."
           ],
           [
             "Наголос у -ído",
@@ -70,17 +78,21 @@
         "nextTitle": "Наступний урок: уже, ще не та життєвий досвід"
       },
       "en": {
-        "title": "Participles: regular and irregular forms",
-        "goal": "Form participles and recognise common irregular forms in the pretérito perfecto.",
-        "intro": "Remember: a form of haber + a past participle helps describe an event in an ongoing period. The participle does not change for gender or number in this construction.",
+        "title": "Pretérito perfecto · Part 2: irregular participles",
+        "goal": "Use the main irregular participles with haber in the pretérito perfecto.",
+        "intro": "This continues the first lesson. The structure is still haber + participle. Some participles do not follow the regular pattern and need to be learned.",
         "rules": [
           [
             "Regular forms",
             "Replace -ar with -ado: trabajar → trabajado. Replace -er and -ir with -ido: comer → comido, vivir → vivido."
           ],
           [
-            "Common irregular forms",
-            "hacer → hecho; ver → visto; escribir → escrito; poner → puesto; abrir → abierto; volver → vuelto; decir → dicho."
+            "Common forms · 1",
+            "hacer (do, make) → hecho; decir (say) → dicho; ver (see) → visto; escribir (write) → escrito; abrir (open) → abierto; poner (put) → puesto; volver (return) → vuelto."
+          ],
+          [
+            "Common forms · 2",
+            "romper (break) → roto; morir (die) → muerto; cubrir (cover) → cubierto; descubrir (discover) → descubierto; devolver (return something) → devuelto; resolver (solve) → resuelto."
           ],
           [
             "The accent in -ído",
@@ -100,17 +112,21 @@
         "nextTitle": "Next lesson: already, not yet and experiences"
       },
       "es": {
-        "title": "Participios: formas regulares e irregulares",
-        "goal": "Formar participios y reconocer formas irregulares frecuentes en el pretérito perfecto.",
-        "intro": "Recuerda: una forma de haber + participio ayuda a hablar de un hecho en un período que todavía continúa. En esta construcción, el participio no cambia de género ni de número.",
+        "title": "Pretérito perfecto · Parte 2: participios irregulares",
+        "goal": "Utilizar los principales participios irregulares con haber en el pretérito perfecto.",
+        "intro": "Esta es la continuación de la primera lección. La estructura sigue siendo haber + participio. Algunos participios no siguen la regla general y hay que aprenderlos.",
         "rules": [
           [
             "Formas regulares",
             "Sustituimos -ar por -ado: trabajar → trabajado. Sustituimos -er y -ir por -ido: comer → comido, vivir → vivido."
           ],
           [
-            "Formas irregulares frecuentes",
-            "hacer → hecho; ver → visto; escribir → escrito; poner → puesto; abrir → abierto; volver → vuelto; decir → dicho."
+            "Formas frecuentes · 1",
+            "hacer → hecho; decir → dicho; ver → visto; escribir → escrito; abrir → abierto; poner → puesto; volver → vuelto."
+          ],
+          [
+            "Formas frecuentes · 2",
+            "romper → roto; morir → muerto; cubrir → cubierto; descubrir → descubierto; devolver → devuelto; resolver → resuelto."
           ],
           [
             "La tilde en -ído",
@@ -468,6 +484,102 @@
           "dicha"
         ],
         "answer": "dicho"
+      },
+      {
+        "id": "a2-02-21",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (romper) un vaso.",
+          "uk": "Hoy (yo) he ___ (romper) un vaso.",
+          "en": "Hoy (yo) he ___ (romper) un vaso.",
+          "es": "Hoy (yo) he ___ (romper) un vaso."
+        },
+        "options": [
+          "roto",
+          "rompido",
+          "rota"
+        ],
+        "answer": "roto"
+      },
+      {
+        "id": "a2-02-22",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Este año (ella) ha ___ (morir) en la novela que leemos.",
+          "uk": "Este año (ella) ha ___ (morir) en la novela que leemos.",
+          "en": "Este año (ella) ha ___ (morir) en la novela que leemos.",
+          "es": "Este año (ella) ha ___ (morir) en la novela que leemos."
+        },
+        "options": [
+          "muerto",
+          "morido",
+          "muerta"
+        ],
+        "answer": "muerto"
+      },
+      {
+        "id": "a2-02-23",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel.",
+          "uk": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel.",
+          "en": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel.",
+          "es": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel."
+        },
+        "options": [
+          "cubierto",
+          "cubrido",
+          "cubierta"
+        ],
+        "answer": "cubierto"
+      },
+      {
+        "id": "a2-02-24",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta semana (yo) he ___ (descubrir) un lugar nuevo.",
+          "uk": "Esta semana (yo) he ___ (descubrir) un lugar nuevo.",
+          "en": "Esta semana (yo) he ___ (descubrir) un lugar nuevo.",
+          "es": "Esta semana (yo) he ___ (descubrir) un lugar nuevo."
+        },
+        "options": [
+          "descubierto",
+          "descubrido",
+          "descubierta"
+        ],
+        "answer": "descubierto"
+      },
+      {
+        "id": "a2-02-25",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (tú) has ___ (devolver) el libro a la biblioteca.",
+          "uk": "Hoy (tú) has ___ (devolver) el libro a la biblioteca.",
+          "en": "Hoy (tú) has ___ (devolver) el libro a la biblioteca.",
+          "es": "Hoy (tú) has ___ (devolver) el libro a la biblioteca."
+        },
+        "options": [
+          "devuelto",
+          "devolvido",
+          "devuelta"
+        ],
+        "answer": "devuelto"
+      },
+      {
+        "id": "a2-02-26",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta mañana (ellos) han ___ (resolver) el problema.",
+          "uk": "Esta mañana (ellos) han ___ (resolver) el problema.",
+          "en": "Esta mañana (ellos) han ___ (resolver) el problema.",
+          "es": "Esta mañana (ellos) han ___ (resolver) el problema."
+        },
+        "options": [
+          "resuelto",
+          "resolvido",
+          "resuelta"
+        ],
+        "answer": "resuelto"
       }
     ]
   }
