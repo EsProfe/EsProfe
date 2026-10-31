@@ -505,10 +505,10 @@
         "id": "a2-02-22",
         "tag": "irregular",
         "prompt": {
-          "ru": "Este año (ella) ha ___ (morir) en la novela que leemos.",
-          "uk": "Este año (ella) ha ___ (morir) en la novela que leemos.",
-          "en": "Este año (ella) ha ___ (morir) en la novela que leemos.",
-          "es": "Este año (ella) ha ___ (morir) en la novela que leemos."
+          "ru": "En la historia, el personaje ya ha ___ (morir).",
+          "uk": "En la historia, el personaje ya ha ___ (morir).",
+          "en": "En la historia, el personaje ya ha ___ (morir).",
+          "es": "En la historia, el personaje ya ha ___ (morir)."
         },
         "options": [
           "muerto",
