@@ -1,0 +1,586 @@
+{
+  "a2-participios": {
+    "level": "A2",
+    "moduleId": "a2-past-01",
+    "nextLessonId": "a2-ya-todavia-experiencias",
+    "ruleTags": {
+      "regular": 0,
+      "irregular": 1,
+      "accent": 3
+    },
+    "i18n": {
+      "ru": {
+        "title": "Pretérito perfecto · Часть 2: неправильные причастия",
+        "goal": "Научиться использовать основные неправильные причастия с haber в pretérito perfecto.",
+        "intro": "Это продолжение первого урока. Форма времени остаётся той же: haber + participio. Некоторые причастия образуются не по обычному правилу: их нужно запомнить.",
+        "rules": [
+          [
+            "Правильные формы",
+            "У глаголов на -ar заменяем окончание на -ado: trabajar → trabajado. У глаголов на -er и -ir заменяем его на -ido: comer → comido, vivir → vivido."
+          ],
+          [
+            "Основные формы · 1",
+            "hacer (делать) → hecho; decir (говорить) → dicho; ver (видеть) → visto; escribir (писать) → escrito; abrir (открывать) → abierto; poner (класть) → puesto; volver (возвращаться) → vuelto."
+          ],
+          [
+            "Основные формы · 2",
+            "romper (ломать) → roto; morir (умирать) → muerto; cubrir (покрывать) → cubierto; descubrir (открывать, обнаруживать) → descubierto; devolver (возвращать что-то) → devuelto; resolver (решать) → resuelto."
+          ],
+          [
+            "Ударение в -ído",
+            "После гласной у некоторых глаголов перед -ído ставится знак ударения: leer → leído, traer → traído, oír → oído."
+          ],
+          [
+            "В предложении",
+            "Hoy he hecho la compra. Esta semana hemos visto una película. В форме perfecto причастие не согласуется с лицом: he visto, han visto."
+          ]
+        ],
+        "examplesTitle": "Послушай и прочитай",
+        "practiceTitle": "Выбери причастие",
+        "trainerTitle": "Закрепи формы",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: уже, ещё не и жизненный опыт"
+      },
+      "uk": {
+        "title": "Pretérito perfecto · Частина 2: неправильні дієприкметники",
+        "goal": "Навчитися вживати основні неправильні дієприкметники з haber у pretérito perfecto.",
+        "intro": "Це продовження першого уроку. Форма часу залишається такою самою: haber + participio. Деякі дієприкметники утворюються не за звичайним правилом: їх потрібно запам’ятати.",
+        "rules": [
+          [
+            "Правильні форми",
+            "У дієсловах на -ar замінюємо закінчення на -ado: trabajar → trabajado. У дієсловах на -er та -ir замінюємо його на -ido: comer → comido, vivir → vivido."
+          ],
+          [
+            "Основні форми · 1",
+            "hacer (робити) → hecho; decir (казати) → dicho; ver (бачити) → visto; escribir (писати) → escrito; abrir (відчиняти) → abierto; poner (класти) → puesto; volver (повертатися) → vuelto."
+          ],
+          [
+            "Основні форми · 2",
+            "romper (ламати) → roto; morir (помирати) → muerto; cubrir (покривати) → cubierto; descubrir (відкривати, виявляти) → descubierto; devolver (повертати щось) → devuelto; resolver (вирішувати) → resuelto."
+          ],
+          [
+            "Наголос у -ído",
+            "Після голосної в деяких дієсловах перед -ído ставимо знак наголосу: leer → leído, traer → traído, oír → oído."
+          ],
+          [
+            "У реченні",
+            "Hoy he hecho la compra. Esta semana hemos visto una película. У формі perfecto дієприкметник не узгоджується з особою: he visto, han visto."
+          ]
+        ],
+        "examplesTitle": "Послухай і прочитай",
+        "practiceTitle": "Обери дієприкметник",
+        "trainerTitle": "Закріпи форми",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: уже, ще не та життєвий досвід"
+      },
+      "en": {
+        "title": "Pretérito perfecto · Part 2: irregular participles",
+        "goal": "Use the main irregular participles with haber in the pretérito perfecto.",
+        "intro": "This continues the first lesson. The structure is still haber + participle. Some participles do not follow the regular pattern and need to be learned.",
+        "rules": [
+          [
+            "Regular forms",
+            "Replace -ar with -ado: trabajar → trabajado. Replace -er and -ir with -ido: comer → comido, vivir → vivido."
+          ],
+          [
+            "Common forms · 1",
+            "hacer (do, make) → hecho; decir (say) → dicho; ver (see) → visto; escribir (write) → escrito; abrir (open) → abierto; poner (put) → puesto; volver (return) → vuelto."
+          ],
+          [
+            "Common forms · 2",
+            "romper (break) → roto; morir (die) → muerto; cubrir (cover) → cubierto; descubrir (discover) → descubierto; devolver (return something) → devuelto; resolver (solve) → resuelto."
+          ],
+          [
+            "The accent in -ído",
+            "Some verbs whose stem ends in a vowel have an accent on -ído: leer → leído, traer → traído, oír → oído."
+          ],
+          [
+            "In a sentence",
+            "Hoy he hecho la compra. Esta semana hemos visto una película. The participle stays unchanged for each person: he visto, han visto."
+          ]
+        ],
+        "examplesTitle": "Listen and read",
+        "practiceTitle": "Choose the participle",
+        "trainerTitle": "Practise the forms",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: already, not yet and experiences"
+      },
+      "es": {
+        "title": "Pretérito perfecto · Parte 2: participios irregulares",
+        "goal": "Utilizar los principales participios irregulares con haber en el pretérito perfecto.",
+        "intro": "Esta es la continuación de la primera lección. La estructura sigue siendo haber + participio. Algunos participios no siguen la regla general y hay que aprenderlos.",
+        "rules": [
+          [
+            "Formas regulares",
+            "Sustituimos -ar por -ado: trabajar → trabajado. Sustituimos -er y -ir por -ido: comer → comido, vivir → vivido."
+          ],
+          [
+            "Formas frecuentes · 1",
+            "hacer → hecho; decir → dicho; ver → visto; escribir → escrito; abrir → abierto; poner → puesto; volver → vuelto."
+          ],
+          [
+            "Formas frecuentes · 2",
+            "romper → roto; morir → muerto; cubrir → cubierto; descubrir → descubierto; devolver → devuelto; resolver → resuelto."
+          ],
+          [
+            "La tilde en -ído",
+            "Algunos verbos cuya raíz termina en vocal llevan tilde en -ído: leer → leído, traer → traído, oír → oído."
+          ],
+          [
+            "En una frase",
+            "Hoy he hecho la compra. Esta semana hemos visto una película. El participio no cambia según la persona: he visto, han visto."
+          ]
+        ],
+        "examplesTitle": "Escucha y lee",
+        "practiceTitle": "Elige el participio",
+        "trainerTitle": "Practica las formas",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: ya, todavía no y experiencias"
+      }
+    },
+    "examples": [
+      {
+        "word": "Hoy he hecho la compra.",
+        "tag": "irregular"
+      },
+      {
+        "word": "Esta semana hemos visto una película.",
+        "tag": "irregular"
+      },
+      {
+        "word": "He leído dos libros este mes.",
+        "tag": "accent"
+      },
+      {
+        "word": "Hoy han trabajado en casa.",
+        "tag": "regular"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "a2-02-01",
+        "tag": "regular",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (trabajar) en casa.",
+          "uk": "Hoy (yo) he ___ (trabajar) en casa.",
+          "en": "Hoy (yo) he ___ (trabajar) en casa.",
+          "es": "Hoy (yo) he ___ (trabajar) en casa."
+        },
+        "options": [
+          "trabajado",
+          "trabajido",
+          "trabajar"
+        ],
+        "answer": "trabajado"
+      },
+      {
+        "id": "a2-02-02",
+        "tag": "regular",
+        "prompt": {
+          "ru": "Esta semana (tú) has ___ (comer) aquí.",
+          "uk": "Esta semana (tú) has ___ (comer) aquí.",
+          "en": "Esta semana (tú) has ___ (comer) aquí.",
+          "es": "Esta semana (tú) has ___ (comer) aquí."
+        },
+        "options": [
+          "comido",
+          "comado",
+          "comer"
+        ],
+        "answer": "comido"
+      },
+      {
+        "id": "a2-02-03",
+        "tag": "regular",
+        "prompt": {
+          "ru": "Este mes (ella) ha ___ (vivir) en Alicante.",
+          "uk": "Este mes (ella) ha ___ (vivir) en Alicante.",
+          "en": "Este mes (ella) ha ___ (vivir) en Alicante.",
+          "es": "Este mes (ella) ha ___ (vivir) en Alicante."
+        },
+        "options": [
+          "vivido",
+          "vivado",
+          "vivir"
+        ],
+        "answer": "vivido"
+      },
+      {
+        "id": "a2-02-04",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (hacer) la compra.",
+          "uk": "Hoy (yo) he ___ (hacer) la compra.",
+          "en": "Hoy (yo) he ___ (hacer) la compra.",
+          "es": "Hoy (yo) he ___ (hacer) la compra."
+        },
+        "options": [
+          "hecho",
+          "hacido",
+          "hacer"
+        ],
+        "answer": "hecho"
+      },
+      {
+        "id": "a2-02-05",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta semana (nosotros) hemos ___ (ver) una película.",
+          "uk": "Esta semana (nosotros) hemos ___ (ver) una película.",
+          "en": "Esta semana (nosotros) hemos ___ (ver) una película.",
+          "es": "Esta semana (nosotros) hemos ___ (ver) una película."
+        },
+        "options": [
+          "visto",
+          "veído",
+          "ver"
+        ],
+        "answer": "visto"
+      },
+      {
+        "id": "a2-02-06",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (tú) has ___ (escribir) un correo.",
+          "uk": "Hoy (tú) has ___ (escribir) un correo.",
+          "en": "Hoy (tú) has ___ (escribir) un correo.",
+          "es": "Hoy (tú) has ___ (escribir) un correo."
+        },
+        "options": [
+          "escrito",
+          "escribido",
+          "escribir"
+        ],
+        "answer": "escrito"
+      },
+      {
+        "id": "a2-02-07",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta mañana (él) ha ___ (poner) la mesa.",
+          "uk": "Esta mañana (él) ha ___ (poner) la mesa.",
+          "en": "Esta mañana (él) ha ___ (poner) la mesa.",
+          "es": "Esta mañana (él) ha ___ (poner) la mesa."
+        },
+        "options": [
+          "puesto",
+          "ponido",
+          "poner"
+        ],
+        "answer": "puesto"
+      },
+      {
+        "id": "a2-02-08",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (nosotras) hemos ___ (abrir) las ventanas.",
+          "uk": "Hoy (nosotras) hemos ___ (abrir) las ventanas.",
+          "en": "Hoy (nosotras) hemos ___ (abrir) las ventanas.",
+          "es": "Hoy (nosotras) hemos ___ (abrir) las ventanas."
+        },
+        "options": [
+          "abierto",
+          "abrido",
+          "abrir"
+        ],
+        "answer": "abierto"
+      },
+      {
+        "id": "a2-02-09",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Este mes (ellos) han ___ (volver) de viaje.",
+          "uk": "Este mes (ellos) han ___ (volver) de viaje.",
+          "en": "Este mes (ellos) han ___ (volver) de viaje.",
+          "es": "Este mes (ellos) han ___ (volver) de viaje."
+        },
+        "options": [
+          "vuelto",
+          "volvido",
+          "volver"
+        ],
+        "answer": "vuelto"
+      },
+      {
+        "id": "a2-02-10",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (tú) has ___ (decir) la verdad.",
+          "uk": "Hoy (tú) has ___ (decir) la verdad.",
+          "en": "Hoy (tú) has ___ (decir) la verdad.",
+          "es": "Hoy (tú) has ___ (decir) la verdad."
+        },
+        "options": [
+          "dicho",
+          "decido",
+          "decir"
+        ],
+        "answer": "dicho"
+      },
+      {
+        "id": "a2-02-11",
+        "tag": "accent",
+        "prompt": {
+          "ru": "Esta semana (yo) he ___ (leer) dos libros.",
+          "uk": "Esta semana (yo) he ___ (leer) dos libros.",
+          "en": "Esta semana (yo) he ___ (leer) dos libros.",
+          "es": "Esta semana (yo) he ___ (leer) dos libros."
+        },
+        "options": [
+          "leído",
+          "leido",
+          "leado"
+        ],
+        "answer": "leído"
+      },
+      {
+        "id": "a2-02-12",
+        "tag": "accent",
+        "prompt": {
+          "ru": "Hoy (ella) ha ___ (traer) fruta.",
+          "uk": "Hoy (ella) ha ___ (traer) fruta.",
+          "en": "Hoy (ella) ha ___ (traer) fruta.",
+          "es": "Hoy (ella) ha ___ (traer) fruta."
+        },
+        "options": [
+          "traído",
+          "traido",
+          "traedo"
+        ],
+        "answer": "traído"
+      },
+      {
+        "id": "a2-02-13",
+        "tag": "accent",
+        "prompt": {
+          "ru": "Hoy (vosotros) habéis ___ (oír) esta canción.",
+          "uk": "Hoy (vosotros) habéis ___ (oír) esta canción.",
+          "en": "Hoy (vosotros) habéis ___ (oír) esta canción.",
+          "es": "Hoy (vosotros) habéis ___ (oír) esta canción."
+        },
+        "options": [
+          "oído",
+          "oido",
+          "oed"
+        ],
+        "answer": "oído"
+      },
+      {
+        "id": "a2-02-14",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (ellas) han ___ (hacer) una excursión.",
+          "uk": "Hoy (ellas) han ___ (hacer) una excursión.",
+          "en": "Hoy (ellas) han ___ (hacer) una excursión.",
+          "es": "Hoy (ellas) han ___ (hacer) una excursión."
+        },
+        "options": [
+          "hecho",
+          "hacido",
+          "hecha"
+        ],
+        "answer": "hecho"
+      },
+      {
+        "id": "a2-02-15",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Este mes (yo) he ___ (ver) a Lucía.",
+          "uk": "Este mes (yo) he ___ (ver) a Lucía.",
+          "en": "Este mes (yo) he ___ (ver) a Lucía.",
+          "es": "Este mes (yo) he ___ (ver) a Lucía."
+        },
+        "options": [
+          "visto",
+          "veído",
+          "vista"
+        ],
+        "answer": "visto"
+      },
+      {
+        "id": "a2-02-16",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta semana (nosotros) hemos ___ (escribir) tres mensajes.",
+          "uk": "Esta semana (nosotros) hemos ___ (escribir) tres mensajes.",
+          "en": "Esta semana (nosotros) hemos ___ (escribir) tres mensajes.",
+          "es": "Esta semana (nosotros) hemos ___ (escribir) tres mensajes."
+        },
+        "options": [
+          "escrito",
+          "escribido",
+          "escritos"
+        ],
+        "answer": "escrito"
+      },
+      {
+        "id": "a2-02-17",
+        "tag": "regular",
+        "prompt": {
+          "ru": "Hoy (ustedes) han ___ (preparar) la comida.",
+          "uk": "Hoy (ustedes) han ___ (preparar) la comida.",
+          "en": "Hoy (ustedes) han ___ (preparar) la comida.",
+          "es": "Hoy (ustedes) han ___ (preparar) la comida."
+        },
+        "options": [
+          "preparado",
+          "preparada",
+          "preparido"
+        ],
+        "answer": "preparado"
+      },
+      {
+        "id": "a2-02-18",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta mañana (tú) has ___ (abrir) la puerta.",
+          "uk": "Esta mañana (tú) has ___ (abrir) la puerta.",
+          "en": "Esta mañana (tú) has ___ (abrir) la puerta.",
+          "es": "Esta mañana (tú) has ___ (abrir) la puerta."
+        },
+        "options": [
+          "abierto",
+          "abierta",
+          "abrido"
+        ],
+        "answer": "abierto"
+      },
+      {
+        "id": "a2-02-19",
+        "tag": "regular",
+        "prompt": {
+          "ru": "Esta semana (yo) he ___ (recibir) dos cartas.",
+          "uk": "Esta semana (yo) he ___ (recibir) dos cartas.",
+          "en": "Esta semana (yo) he ___ (recibir) dos cartas.",
+          "es": "Esta semana (yo) he ___ (recibir) dos cartas."
+        },
+        "options": [
+          "recibido",
+          "recibida",
+          "recibado"
+        ],
+        "answer": "recibido"
+      },
+      {
+        "id": "a2-02-20",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (él) ha ___ (decir) que sí.",
+          "uk": "Hoy (él) ha ___ (decir) que sí.",
+          "en": "Hoy (él) ha ___ (decir) que sí.",
+          "es": "Hoy (él) ha ___ (decir) que sí."
+        },
+        "options": [
+          "dicho",
+          "decido",
+          "dicha"
+        ],
+        "answer": "dicho"
+      },
+      {
+        "id": "a2-02-21",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (yo) he ___ (romper) un vaso.",
+          "uk": "Hoy (yo) he ___ (romper) un vaso.",
+          "en": "Hoy (yo) he ___ (romper) un vaso.",
+          "es": "Hoy (yo) he ___ (romper) un vaso."
+        },
+        "options": [
+          "roto",
+          "rompido",
+          "rota"
+        ],
+        "answer": "roto"
+      },
+      {
+        "id": "a2-02-22",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "En la historia, el personaje ya ha ___ (morir).",
+          "uk": "En la historia, el personaje ya ha ___ (morir).",
+          "en": "En la historia, el personaje ya ha ___ (morir).",
+          "es": "En la historia, el personaje ya ha ___ (morir)."
+        },
+        "options": [
+          "muerto",
+          "morido",
+          "muerta"
+        ],
+        "answer": "muerto"
+      },
+      {
+        "id": "a2-02-23",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel.",
+          "uk": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel.",
+          "en": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel.",
+          "es": "Hoy (nosotros) hemos ___ (cubrir) la mesa con un mantel."
+        },
+        "options": [
+          "cubierto",
+          "cubrido",
+          "cubierta"
+        ],
+        "answer": "cubierto"
+      },
+      {
+        "id": "a2-02-24",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta semana (yo) he ___ (descubrir) un lugar nuevo.",
+          "uk": "Esta semana (yo) he ___ (descubrir) un lugar nuevo.",
+          "en": "Esta semana (yo) he ___ (descubrir) un lugar nuevo.",
+          "es": "Esta semana (yo) he ___ (descubrir) un lugar nuevo."
+        },
+        "options": [
+          "descubierto",
+          "descubrido",
+          "descubierta"
+        ],
+        "answer": "descubierto"
+      },
+      {
+        "id": "a2-02-25",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Hoy (tú) has ___ (devolver) el libro a la biblioteca.",
+          "uk": "Hoy (tú) has ___ (devolver) el libro a la biblioteca.",
+          "en": "Hoy (tú) has ___ (devolver) el libro a la biblioteca.",
+          "es": "Hoy (tú) has ___ (devolver) el libro a la biblioteca."
+        },
+        "options": [
+          "devuelto",
+          "devolvido",
+          "devuelta"
+        ],
+        "answer": "devuelto"
+      },
+      {
+        "id": "a2-02-26",
+        "tag": "irregular",
+        "prompt": {
+          "ru": "Esta mañana (ellos) han ___ (resolver) el problema.",
+          "uk": "Esta mañana (ellos) han ___ (resolver) el problema.",
+          "en": "Esta mañana (ellos) han ___ (resolver) el problema.",
+          "es": "Esta mañana (ellos) han ___ (resolver) el problema."
+        },
+        "options": [
+          "resuelto",
+          "resolvido",
+          "resuelta"
+        ],
+        "answer": "resuelto"
+      }
+    ]
+  }
+}
