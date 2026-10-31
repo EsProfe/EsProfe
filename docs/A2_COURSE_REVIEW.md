@@ -19,7 +19,7 @@
 | Урок | Ситуация и речевая цель | Язык | Визуальная сцена |
 | --- | --- | --- | --- |
 | A2-01 | Встреча после выходных: рассказать, что уже произошло | Pretérito perfecto: he/has/ha + participio | Терраса в Valencia после выходных |
-| A2-02 | Не потерять вещи в поездке: назвать результат действия | Participios regulares e irregulares: hecho, visto, dicho, escrito, puesto, abierto, vuelto | Чемодан, билеты и список дел |
+| A2-02 | Продолжение A2-01: использовать неправильные причастия с haber | 13 частых форм: hecho, dicho, visto, escrito, abierto, puesto, vuelto, roto, muerto, cubierto, descubierto, devuelto, resuelto; leer → leído и другие формы с ударением | Чемодан, билеты и список дел |
 | A2-03 | Обмен впечатлениями: спросить об опыте | ya, todavía no, alguna vez, nunca | Тапас-бар в Madrid |
 | A2-04 | Дневник недели: связать событие со временем | hoy, esta semana, este mes, últimamente | Календарь и городская прогулка |
 
