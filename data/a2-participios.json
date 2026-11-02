@@ -716,6 +716,45 @@
           "He romper el vaso."
         ],
         "answer": "He roto el vaso."
+      },
+      {
+        "id": "a2-02-order01",
+        "tag": "irregular",
+        "type": "ordering",
+        "prompt": {
+          "ru": "Собери фразу: Я не видел(а) фильм.",
+          "uk": "Склади фразу: Я не бачив(ла) фільм.",
+          "en": "Build: I have not seen the film.",
+          "es": "Ordena: I have not seen the film."
+        },
+        "tokens": [
+          "No",
+          "he",
+          "visto",
+          "la",
+          "película."
+        ],
+        "answer": "No he visto la película."
+      },
+      {
+        "id": "a2-02-order02",
+        "tag": "irregular",
+        "type": "ordering",
+        "prompt": {
+          "ru": "Собери фразу: Мы ещё не открыли дверь.",
+          "uk": "Склади фразу: Ми ще не відчинили двері.",
+          "en": "Build: We have not opened the door yet.",
+          "es": "Ordena: We have not opened the door yet."
+        },
+        "tokens": [
+          "Todavía",
+          "no",
+          "hemos",
+          "abierto",
+          "la",
+          "puerta."
+        ],
+        "answer": "Todavía no hemos abierto la puerta."
       }
     ]
   }
