@@ -1,0 +1,8 @@
+#esprofe-football .illustration-images{display:flex;flex:1;min-height:0;gap:8px;width:100%;align-items:stretch;justify-content:center}
+#esprofe-football .kit-photo.illustration .illustration-images img{flex:1;min-width:0;min-height:0;width:0;height:100%;object-fit:contain;border-radius:12px;background:#dcf0fb}
+#esprofe-football .kit-photo.illustration{background:#dcf0fb;border-radius:14px;overflow:hidden}
+#esprofe-football .kit-photo.illustration figcaption{background:#eff8fc;padding:2px;font-size:11px;line-height:15px}
+#esprofe-football .kit-word .kit-photo.illustration .illustration-images img{height:100%}
+#esprofe-football .vp-card .kit-photo.illustration .illustration-images img{height:100%}
+#esprofe-football .photo-task .kit-photo.illustration .illustration-images img{height:100%}
+@media(max-width:650px){#esprofe-football .illustration-images{gap:4px}}

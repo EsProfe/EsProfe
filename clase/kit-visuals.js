@@ -3,6 +3,8 @@
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function picture(v){
   if(!v)return '';
+  if(v.illustration){const meta=root.EsProfeLessonIllustrations?.[v.illustration];if(!meta)return '';const copies=v.repeat===2?2:1;return `<figure class="kit-picture kit-photo illustration"><div class="illustration-images">${Array.from({length:copies},()=>`<img src="images/${esc(meta.file)}" alt="${esc(meta.alt?.[root.EsProfeLessonLanguage]||meta.alt?.en||'')}" decoding="async">`).join('')}</div><figcaption>${esc(root.EsProfeIllustrationLabel||'EsProfe')}</figcaption></figure>`;}
+
   if(v.photo){const photo=root.EsProfeKitPhotos?.[v.photo];if(!photo)return '';return `<figure class="kit-picture kit-photo"><img src="images/${esc(v.photo)}.webp" alt="${esc(photo.label)}${v.focus?' — '+esc(v.focus):''}" decoding="async"><figcaption>${esc(photo.label)}${v.focus?' · '+esc(v.focus):''} <a href="photo-credits.html#${esc(v.photo)}" target="_blank" rel="noopener" aria-label="Photo credits">©</a></figcaption></figure>`;}
   const color=/^#[0-9a-f]{6}$/i.test(v.color)?v.color:'#ffffff';
   const shirt='<path d="M70 35 40 50 18 93 47 110 65 85 65 185 175 185 175 85 193 110 222 93 200 50 170 35 145 27Q120 55 95 27Z"/>';
@@ -15,5 +17,6 @@
   const capacity=columns*rows;
   return {columns,rows,capacity,pages:Math.ceil(count/capacity)+extraPages};
  }
- root.EsProfeKitVisuals={picture,vocabularyLayout};
+ function illustrationThumbnail(v){const m=root.EsProfeLessonIllustrations?.[v?.illustration];return m?`<img class="vp-thumb" src="images/${esc(m.file)}" alt="" loading="lazy" decoding="async">`:''}
+ root.EsProfeKitVisuals={picture,vocabularyLayout,illustrationThumbnail};
 })(window);

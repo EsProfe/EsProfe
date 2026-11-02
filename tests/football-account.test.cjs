@@ -295,3 +295,23 @@ test('goalkeeper identity accepts role, name and full sentences; hay stays in a 
   assert.equal(JSON.parse(s.storage.get(s.key)).records['fl1-q2'].ok,true,answer);
  }
 });
+
+test('short lessons four and five grade every supported response and keep independent completion',async()=>{
+ for(const lessonId of ['football-training-a1','football-stadium-a1']){
+  const meta=require('../clase/lesson-catalog.js').get(lessonId),data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase',meta.file)));
+  for(const [stage,items] of Object.entries(data.groups))for(const [index,item] of items.entries())for(const answer of [item.a,...(item.accepted||[])]){
+   const state={...completedState(),stage:Number(stage),modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:item.type==='choice'?{[item.id]:answer}:{},tokens:item.type==='build'?{[item.id]:item.o.map((_,i)=>i)}:{}};
+   const s=await lessonSetup(state,lessonId);const input=s.root.querySelector('#ep-answer');if(input)input.value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(JSON.parse(s.storage.get(s.key)).records[item.id].ok,true,item.id+': '+answer);
+  }
+  const state={...completedState(),records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
+  const s=await lessonSetup(state,lessonId);assert(s.key.startsWith(meta.key+':'));assert(s.root.innerHTML.includes('Ты — чемпион!'));assert(s.root.innerHTML.includes('6 / 6'));assert(s.root.innerHTML.includes('12 / 12'));
+ }
+});
+test('new lessons reject wrong agreement and provide a localized World Cup question',async()=>{
+ for(const [lessonId,group,index,answer] of [['football-training-a1',5,1,'Es azules.'],['football-training-a1',6,1,'está'],['football-stadium-a1',5,0,'el asiento'],['football-stadium-a1',6,0,'es']]){
+  const state={...completedState(),stage:group,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[group]:index},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,lessonId);s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,answer);
+ }
+ for(const lang of ['ru','uk','en']){
+  const state={...completedState(),lang,stage:5,modelSeen:true,positions:{3:0,4:0,5:0,6:0},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,'football-stadium-a1');const d=require('../clase/football-stadium.json');assert(s.root.innerHTML.includes(d.groups[5][0].pByLanguage[lang]));
+ }
+});
