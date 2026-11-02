@@ -1,0 +1,703 @@
+{
+  "lessonId": "football-training-a1",
+  "version": 1,
+  "D": {
+    "ru": {
+      "lang": "Язык",
+      "preview": "Уроки с преподавателем",
+      "names": [
+        "Начало",
+        "Слова с картинками",
+        "Вспоминаем модель",
+        "Разминка",
+        "Первый тайм",
+        "Второй тайм",
+        "Разбор ошибок",
+        "Ты — тренер!",
+        "Итоги матча"
+      ],
+      "title": "Футбол 4. На тренировке",
+      "intro": "Четыре новых слова, знакомые вопросы и два коротких тайма. Назови предметы, составь фразы и забей до 6 голов!",
+      "goal": "Короткий урок · 4 новых слова · ориентир: 10–15 минут практики",
+      "start": "Начать урок",
+      "next": "Далее",
+      "back": "Назад",
+      "check": "Проверить",
+      "continue": "Следующее задание",
+      "ready": "Готово — дальше",
+      "task": "Задание",
+      "of": "из",
+      "goals": "Голы",
+      "pick": "Выбери ответ.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Пока неверно. Правильный ответ:",
+      "why": "Проверь род, число и форму: es / son, está / están или hay.",
+      "read": "Прочитай предложение вслух.",
+      "words": "Сначала рассмотри слово, перевод и картинку. Затем потренируйся с карточками или найди пары.",
+      "rule": "Es / son описывают предмет. Está / están показывают, где он находится. Hay сообщает, что есть. Новых форм глаголов нет.",
+      "one": "Один",
+      "many": "Несколько",
+      "masc": "Мужской род",
+      "fem": "Женский род",
+      "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
+      "warm": "Назови предмет на картинке.",
+      "match": "Выбери форму: один предмет, несколько или «есть».",
+      "newintro": "Ответь по картинке, затем собери одно предложение из слов.",
+      "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
+      "note": "Если предметов несколько, используй son или están; hay не меняется.",
+      "selectType": "Выбери форму",
+      "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
+      "write": "Ответь коротко или полным предложением.",
+      "fix": "Исправь форму. Можно написать исправленное слово или предложение.",
+      "answer": "Твой ответ",
+      "own": "Напиши о мяче, бутылке и том, что есть на поле.",
+      "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
+      "finish": "Завершить урок",
+      "result": "Матч завершён!",
+      "first": "Верно с первой попытки",
+      "attempts": "Проверено заданий",
+      "review": "Повторить ошибки",
+      "allright": "Все проверенные задания выполнены правильно!",
+      "pending": "Не все задания пройдены. Можно вернуться к любому этапу.",
+      "home": "Домашнее задание",
+      "hw": "Перед следующим уроком назови четыре слова без перевода и составь две фразы.",
+      "saved": "Прогресс и ошибки сохраняются в этом браузере на этом устройстве.",
+      "repeat": "Повторение ошибок",
+      "reviewdone": "Ошибки разобраны!",
+      "empty": "Сначала введи ответ.",
+      "ownempty": "Напиши три предложения перед завершением.",
+      "viewown": "Твои предложения",
+      "reset": "Пройти заново",
+      "resetask": "Начать заново и очистить ответы?",
+      "reveal": "Перевод",
+      "scorehint": "Голы считаются за первый правильный ответ в блоке «Матч».",
+      "speech": "Скажи вслух",
+      "practice": "Практика",
+      "modelstart": "Перейти к упражнениям",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué es? — Es un silbato.",
+        "¿Cómo es la botella? — Es azul."
+      ],
+      "ownRule": "Три короткие фразы. Можно повторять знакомые слова."
+    },
+    "uk": {
+      "lang": "Мова",
+      "preview": "Уроки з викладачем",
+      "names": [
+        "Початок",
+        "Слова з малюнками",
+        "Згадуємо модель",
+        "Розминка",
+        "Перший тайм",
+        "Другий тайм",
+        "Розбір помилок",
+        "Ти — тренер!",
+        "Підсумки матчу"
+      ],
+      "title": "Футбол 4. На тренуванні",
+      "intro": "Чотири нові слова, знайомі питання та два короткі тайми. Назви предмети, склади фрази й забий до 6 голів!",
+      "goal": "Короткий урок · 4 нові слова · орієнтир: 10–15 хвилин практики",
+      "start": "Почати урок",
+      "next": "Далі",
+      "back": "Назад",
+      "check": "Перевірити",
+      "continue": "Наступне завдання",
+      "ready": "Готово — далі",
+      "task": "Завдання",
+      "of": "із",
+      "goals": "Голи",
+      "pick": "Обери відповідь.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Поки неправильно. Правильна відповідь:",
+      "why": "Перевір рід, число та форму: es / son, está / están або hay.",
+      "read": "Прочитай речення вголос.",
+      "words": "Спочатку розглянь слово, переклад і малюнок. Потім потренуйся з картками або знайди пари.",
+      "rule": "Es / son описують предмет. Está / están показують, де він перебуває. Hay повідомляє, що є. Нових форм дієслів немає.",
+      "one": "Один",
+      "many": "Кілька",
+      "masc": "Чоловічий рід",
+      "fem": "Жіночий рід",
+      "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
+      "warm": "Назви предмет на малюнку.",
+      "match": "Обери форму: один предмет, кілька чи «є».",
+      "newintro": "Дай відповідь за малюнком, потім склади одне речення зі слів.",
+      "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
+      "note": "Якщо предметів кілька, використовуй son або están; hay не змінюється.",
+      "selectType": "Обери форму",
+      "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
+      "write": "Дай коротку відповідь або повне речення.",
+      "fix": "Виправ форму. Можна написати виправлене слово або речення.",
+      "answer": "Твоя відповідь",
+      "own": "Напиши про м’яч, пляшку й те, що є на полі.",
+      "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
+      "finish": "Завершити урок",
+      "result": "Матч завершено!",
+      "first": "Правильно з першої спроби",
+      "attempts": "Перевірено завдань",
+      "review": "Повторити помилки",
+      "allright": "Усі перевірені завдання виконано правильно!",
+      "pending": "Пройдено не всі завдання. Можна повернутися до будь-якого етапу.",
+      "home": "Домашнє завдання",
+      "hw": "Перед наступним уроком назви чотири слова без перекладу та склади дві фрази.",
+      "saved": "Прогрес і помилки зберігаються в цьому браузері на цьому пристрої.",
+      "repeat": "Повторення помилок",
+      "reviewdone": "Помилки опрацьовано!",
+      "empty": "Спочатку введи відповідь.",
+      "ownempty": "Напиши три речення перед завершенням.",
+      "viewown": "Твої речення",
+      "reset": "Пройти ще раз",
+      "resetask": "Почати знову та очистити відповіді?",
+      "reveal": "Переклад",
+      "scorehint": "Голи нараховуються за першу правильну відповідь у блоці «Матч».",
+      "speech": "Скажи вголос",
+      "practice": "Практика",
+      "modelstart": "Перейти до вправ",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué es? — Es un silbato.",
+        "¿Cómo es la botella? — Es azul."
+      ],
+      "ownRule": "Три короткі фрази. Знайомі слова можна повторювати."
+    },
+    "en": {
+      "lang": "Language",
+      "preview": "Teacher-led lessons",
+      "names": [
+        "Kick-off",
+        "Picture vocabulary",
+        "Review the pattern",
+        "Warm-up",
+        "First half",
+        "Second half",
+        "Review mistakes",
+        "You are the coach!",
+        "Match results"
+      ],
+      "title": "Football 4. At training",
+      "intro": "Four new words, familiar questions and two short halves. Name the objects, build sentences and score up to 6 goals!",
+      "goal": "Short lesson · 4 new words · allow about 10–15 minutes of practice",
+      "start": "Start lesson",
+      "next": "Next",
+      "back": "Back",
+      "check": "Check answer",
+      "continue": "Next question",
+      "ready": "Ready — continue",
+      "task": "Question",
+      "of": "of",
+      "goals": "Goals",
+      "pick": "Choose an answer.",
+      "correct": "Goal! Correct.",
+      "wrong": "Not quite. The correct answer is:",
+      "why": "Check gender, number and the verb form: es / son, está / están or hay.",
+      "read": "Read the sentence aloud.",
+      "words": "First explore each word, translation and picture. Then practise with flashcards or match pairs.",
+      "rule": "Es / son describe an object. Está / están locate it. Hay says what is there. No new verb forms.",
+      "one": "One",
+      "many": "More than one",
+      "masc": "Masculine",
+      "fem": "Feminine",
+      "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
+      "warm": "Name the object in the picture.",
+      "match": "Choose a form: one object, more than one, or there is / are.",
+      "newintro": "Answer using the picture, then build one sentence from tokens.",
+      "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
+      "note": "For more than one object use son or están; hay stays the same.",
+      "selectType": "Choose the form",
+      "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
+      "write": "Use a short answer or a full sentence.",
+      "fix": "Correct the form. Write the corrected word or sentence.",
+      "answer": "Your answer",
+      "own": "Write about the ball, the bottle and what is on the pitch.",
+      "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
+      "finish": "Finish lesson",
+      "result": "Full time!",
+      "first": "Correct on the first try",
+      "attempts": "Questions checked",
+      "review": "Practise mistakes",
+      "allright": "All checked questions were answered correctly!",
+      "pending": "Some questions are still unfinished. You can return to any stage.",
+      "home": "Homework",
+      "hw": "Before the next lesson, recall the four words and make two sentences.",
+      "saved": "Progress and mistakes are saved in this browser on this device.",
+      "repeat": "Mistake practice",
+      "reviewdone": "Mistake practice complete!",
+      "empty": "Enter an answer first.",
+      "ownempty": "Write three sentences before finishing.",
+      "viewown": "Your sentences",
+      "reset": "Start again",
+      "resetask": "Restart and clear all answers?",
+      "reveal": "Translation",
+      "scorehint": "Goals count first-attempt correct answers in the Match section.",
+      "speech": "Say it aloud",
+      "practice": "Practice",
+      "modelstart": "Start the exercises",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué es? — Es un silbato.",
+        "¿Cómo es la botella? — Es azul."
+      ],
+      "ownRule": "Three short sentences. You may reuse familiar words."
+    }
+  },
+  "vocab": [
+    [
+      "el balón",
+      "м’яч",
+      "ball",
+      "мяч"
+    ],
+    [
+      "el cono",
+      "тренувальний конус",
+      "training cone",
+      "тренировочный конус"
+    ],
+    [
+      "el silbato",
+      "свисток",
+      "whistle",
+      "свисток"
+    ],
+    [
+      "la botella",
+      "пляшка",
+      "bottle",
+      "бутылка"
+    ]
+  ],
+  "football": [
+    [
+      "el balón",
+      "м’яч",
+      "ball",
+      "мяч"
+    ],
+    [
+      "el cono",
+      "тренувальний конус",
+      "training cone",
+      "тренировочный конус"
+    ],
+    [
+      "el silbato",
+      "свисток",
+      "whistle",
+      "свисток"
+    ],
+    [
+      "la botella",
+      "пляшка",
+      "bottle",
+      "бутылка"
+    ]
+  ],
+  "groups": {
+    "3": [
+      {
+        "id": "ft1-w0",
+        "p": "¿Qué es?",
+        "a": "Es un balón.",
+        "type": "choice",
+        "o": [
+          "Es un balón.",
+          "Es un cono."
+        ],
+        "visual": {
+          "illustration": "training-ball"
+        },
+        "meaning": {
+          "ru": "Это мяч.",
+          "uk": "Це м’яч.",
+          "en": "It is a ball."
+        }
+      },
+      {
+        "id": "ft1-w1",
+        "p": "¿Qué es?",
+        "a": "Es un cono.",
+        "type": "choice",
+        "o": [
+          "Es un cono.",
+          "Es un silbato."
+        ],
+        "visual": {
+          "illustration": "training-cone"
+        },
+        "meaning": {
+          "ru": "Это тренировочный конус.",
+          "uk": "Це тренувальний конус.",
+          "en": "It is a training cone."
+        }
+      },
+      {
+        "id": "ft1-w2",
+        "p": "¿Qué es?",
+        "a": "Es un silbato.",
+        "type": "choice",
+        "o": [
+          "Es un silbato.",
+          "Es una botella."
+        ],
+        "visual": {
+          "illustration": "training-whistle"
+        },
+        "meaning": {
+          "ru": "Это свисток.",
+          "uk": "Це свисток.",
+          "en": "It is a whistle."
+        }
+      },
+      {
+        "id": "ft1-w3",
+        "p": "¿Qué es?",
+        "a": "Es una botella.",
+        "type": "choice",
+        "o": [
+          "Es una botella.",
+          "Es un balón."
+        ],
+        "visual": {
+          "illustration": "training-bottle"
+        },
+        "meaning": {
+          "ru": "Это бутылка.",
+          "uk": "Це пляшка.",
+          "en": "It is a bottle."
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "ft1-m0",
+        "p": "El balón es ___.",
+        "a": "rojo",
+        "type": "choice",
+        "o": [
+          "rojo",
+          "roja"
+        ],
+        "visual": {
+          "illustration": "training-ball"
+        },
+        "meaning": {
+          "ru": "Мяч красный.",
+          "uk": "М’яч червоний.",
+          "en": "The ball is red."
+        },
+        "sentence": "El balón es rojo."
+      },
+      {
+        "id": "ft1-m1",
+        "p": "Las botellas ___ en el campo. (estar)",
+        "a": "están",
+        "type": "choice",
+        "o": [
+          "está",
+          "están"
+        ],
+        "visual": {
+          "illustration": "training-bottle",
+          "repeat": 2
+        },
+        "meaning": {
+          "ru": "Бутылки находятся на поле.",
+          "uk": "Пляшки перебувають на полі.",
+          "en": "The bottles are on the pitch."
+        },
+        "sentence": "Las botellas están en el campo."
+      },
+      {
+        "id": "ft1-m2",
+        "p": "En el campo ___ un cono. (haber)",
+        "a": "hay",
+        "type": "choice",
+        "o": [
+          "hay",
+          "son"
+        ],
+        "visual": {
+          "illustration": "training-cone"
+        },
+        "meaning": {
+          "ru": "На поле есть конус.",
+          "uk": "На полі є конус.",
+          "en": "There is a cone on the pitch."
+        },
+        "sentence": "En el campo hay un cono."
+      }
+    ],
+    "5": [
+      {
+        "id": "ft1-q0",
+        "p": "¿Qué es?",
+        "a": "Es un silbato.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "training-whistle"
+        },
+        "meaning": {
+          "ru": "Это свисток.",
+          "uk": "Це свисток.",
+          "en": "It is a whistle."
+        },
+        "accepted": [
+          "silbato",
+          "un silbato",
+          "el silbato",
+          "Es el silbato."
+        ]
+      },
+      {
+        "id": "ft1-q1",
+        "p": "¿Cómo es la botella?",
+        "a": "Es azul.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "training-bottle"
+        },
+        "meaning": {
+          "ru": "Бутылка синяя.",
+          "uk": "Пляшка синя.",
+          "en": "The bottle is blue."
+        },
+        "accepted": [
+          "azul",
+          "La botella es azul."
+        ],
+        "sentence": "La botella es azul."
+      },
+      {
+        "id": "ft1-b0",
+        "p": "Los conos → amarillos",
+        "a": "Los conos son amarillos.",
+        "type": "build",
+        "o": [
+          "Los",
+          "conos",
+          "son",
+          "amarillos."
+        ],
+        "visual": {
+          "illustration": "training-cone",
+          "repeat": 2
+        },
+        "meaning": {
+          "ru": "Конусы жёлтые.",
+          "uk": "Конуси жовті.",
+          "en": "The cones are yellow."
+        }
+      }
+    ],
+    "6": [
+      {
+        "id": "ft1-f0",
+        "p": "El balón es roja.",
+        "a": "El balón es rojo.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "training-ball"
+        },
+        "meaning": {
+          "ru": "Мяч красный.",
+          "uk": "М’яч червоний.",
+          "en": "The ball is red."
+        },
+        "accepted": [
+          "rojo",
+          "Es rojo."
+        ]
+      },
+      {
+        "id": "ft1-f1",
+        "p": "Las botellas está en el campo.",
+        "a": "Las botellas están en el campo.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "training-bottle",
+          "repeat": 2
+        },
+        "meaning": {
+          "ru": "Бутылки находятся на поле.",
+          "uk": "Пляшки перебувають на полі.",
+          "en": "The bottles are on the pitch."
+        },
+        "accepted": [
+          "están",
+          "Están en el campo."
+        ]
+      }
+    ]
+  },
+  "X": {
+    "ru": {
+      "goal": "Ворота",
+      "drag": "Перетащи слово в ворота. На телефоне: нажми слово, затем ворота.",
+      "dropdown": "Или выбери из списка",
+      "choose": "— выбери —",
+      "selected": "В воротах",
+      "your": "Твой вариант",
+      "literal": "Буквально, с сохранением ошибки",
+      "right": "Правильное предложение",
+      "meaning": "Перевод",
+      "contrast": "Слова новые, цвета знакомые. Скажи название и цвет вслух.",
+      "explain": "В английском переводе род прилагательного не виден; сравни испанские окончания.",
+      "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
+    },
+    "uk": {
+      "goal": "Ворота",
+      "drag": "Перетягни слово у ворота. На телефоні: натисни слово, потім ворота.",
+      "dropdown": "Або обери зі списку",
+      "choose": "— обери —",
+      "selected": "У воротах",
+      "your": "Твій варіант",
+      "literal": "Буквально, зі збереженням помилки",
+      "right": "Правильне речення",
+      "meaning": "Переклад",
+      "contrast": "Слова нові, кольори знайомі. Назви предмет і колір уголос.",
+      "explain": "В англійському перекладі рід прикметника не видно; порівняй іспанські закінчення.",
+      "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
+    },
+    "en": {
+      "goal": "Goal",
+      "drag": "Drag a word into the goal. On a phone: tap a word, then the goal.",
+      "dropdown": "Or choose from the list",
+      "choose": "— choose —",
+      "selected": "In the goal",
+      "your": "Your answer",
+      "literal": "Literal meaning, retaining the error where possible",
+      "right": "Correct sentence",
+      "meaning": "Translation",
+      "contrast": "New kit words, familiar colours. Say the item and its colour aloud.",
+      "explain": "English adjectives do not show gender or number. Compare the Spanish endings.",
+      "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
+    }
+  },
+  "A": {
+    "ru": {
+      "listen": "Прослушать ещё раз",
+      "missing": "Испанский голос недоступен в этом браузере.",
+      "failed": "Не удалось воспроизвести. Нажмите «Прослушать ещё раз»."
+    },
+    "uk": {
+      "listen": "Прослухати ще раз",
+      "missing": "Іспанський голос недоступний у цьому браузері.",
+      "failed": "Не вдалося відтворити. Натисніть «Прослухати ще раз»."
+    },
+    "en": {
+      "listen": "Listen again",
+      "missing": "A Spanish voice is unavailable in this browser.",
+      "failed": "Playback failed. Press “Listen again”."
+    }
+  },
+  "subjects": {},
+  "adjectiveData": {},
+  "colors": [],
+  "ownPrompts": [
+    "El balón …",
+    "La botella …",
+    "En el campo hay …"
+  ],
+  "photos": {},
+  "vocabVisuals": [
+    {
+      "illustration": "training-ball"
+    },
+    {
+      "illustration": "training-cone"
+    },
+    {
+      "illustration": "training-whistle"
+    },
+    {
+      "illustration": "training-bottle"
+    }
+  ],
+  "vocabIds": [
+    "training-ball",
+    "training-cone",
+    "training-whistle",
+    "training-bottle"
+  ],
+  "completion": {
+    "ru": {
+      "title": "Урок завершён! Ты — чемпион!",
+      "text": "Ты выучил новые слова и использовал их в своих фразах. Отличная работа!"
+    },
+    "uk": {
+      "title": "Урок завершено! Ти — чемпіон!",
+      "text": "Ти вивчив нові слова й використав їх у власних фразах. Чудова робота!"
+    },
+    "en": {
+      "title": "Lesson complete! You are a champion!",
+      "text": "You practised new words and used them in your own sentences. Great work!"
+    }
+  },
+  "layout": "visual",
+  "startWords": [
+    "balón",
+    "cono",
+    "silbato",
+    "botella"
+  ],
+  "scenes": {},
+  "ruleExamples": [
+    "El balón es rojo.",
+    "Las botellas están en el campo.",
+    "En el campo hay un cono."
+  ],
+  "illustrations": {
+    "training-ball": {
+      "file": "training-ball.webp",
+      "alt": {
+        "ru": "мяч",
+        "uk": "м’яч",
+        "en": "ball"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-02"
+    },
+    "training-cone": {
+      "file": "training-cone.webp",
+      "alt": {
+        "ru": "тренировочный конус",
+        "uk": "тренувальний конус",
+        "en": "training cone"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-02"
+    },
+    "training-whistle": {
+      "file": "training-whistle.webp",
+      "alt": {
+        "ru": "свисток",
+        "uk": "свисток",
+        "en": "whistle"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-02"
+    },
+    "training-bottle": {
+      "file": "training-bottle.webp",
+      "alt": {
+        "ru": "бутылка",
+        "uk": "пляшка",
+        "en": "bottle"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-02"
+    }
+  }
+}

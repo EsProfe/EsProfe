@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-02",
+  "mode": "Built-in imagegen",
+  "preparation": "Original PNG retained; resized to 720 px and encoded as WebP quality 86 for the site.",
+  "assets": [
+    {
+      "id": "training-ball",
+      "path": "clase/images/training-ball.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single bright red association football (soccer ball), clearly spherical with subtle red-on-red pentagon stitching. Entire ball is red, not basketball or rugby. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "training-cone",
+      "path": "clase/images/training-cone.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single bright yellow football training cone, recognizable short conical marker with a broad circular base, entire cone yellow. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "training-whistle",
+      "path": "clase/images/training-whistle.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single silver-grey metal referee whistle, large close-up, short mouthpiece and round sound chamber. No strap and no other equipment. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "training-bottle",
+      "path": "clase/images/training-bottle.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single reusable blue sports water bottle, blue cap and blue body. No writing or logos. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "stadium-ticket",
+      "path": "clase/images/stadium-ticket.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single yellow paper admission ticket to a football match, perforated stub and small football emblem. No readable text, no numbers or barcodes. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "stadium-seat",
+      "path": "clase/images/stadium-seat.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single blue molded plastic stadium seat with backrest, viewed at three-quarter angle, freestanding short metal support. Only one seat. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "stadium-scoreboard",
+      "path": "clase/images/stadium-scoreboard.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single freestanding dark charcoal electronic football stadium scoreboard on two supports, simple display showing 0 : 0, with a small football symbol. No team names, no advertising. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "stadium-trophy",
+      "path": "clase/images/stadium-trophy.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square vocabulary illustration for a beginner child's Spanish football lesson. Primary subject: A single golden football trophy: elegant cup with two handles and a small soccer ball ornament above it on a dark base. No lettering. Style: polished friendly realistic 3D studio render, beautiful and clean, detailed materials, rounded friendly forms, soft daylight and gentle shadow, subtle pale sky-blue seamless background, centered isolated single object, all parts visible with generous margins. No people, no hands, no border, no watermark. All eight illustrations in this series should have matching lighting and pale sky-blue background. The object must be immediately recognizable and visually unambiguous."
+    },
+    {
+      "id": "stadium-worldcup",
+      "path": "clase/images/stadium-worldcup.webp",
+      "prompt": "Use case: stylized-concept. Asset type: square picture for a child's Spanish vocabulary card, el Mundial = the football World Cup tournament. Create one cohesive polished 3D emblem scene: a beautiful small globe with blue oceans and green continents, a black-and-white soccer ball in front, and a tasteful semicircle of small colourful generic pennants behind them suggesting an international football tournament. Pale sky-blue seamless studio background, soft daylight, elegant friendly materials, centered with margins, matching a series of isolated football objects. No cup or trophy, no people, no text, no numbers, no logos, no official FIFA branding, no dates. It must represent the global football competition rather than an individual trophy."
+    }
+  ]
+}
