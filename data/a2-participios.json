@@ -580,6 +580,142 @@
           "resuelta"
         ],
         "answer": "resuelto"
+      },
+      {
+        "id": "a2-02-tr01",
+        "tag": "irregular",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: Сегодня я открыл(а) окно.",
+          "uk": "Переклади: Сьогодні я відчинив(ла) вікно.",
+          "en": "Translate: Today I have opened the window.",
+          "es": "Traduce: Today I have opened the window."
+        },
+        "options": [
+          "Hoy he abierto la ventana.",
+          "Hoy he abrido la ventana.",
+          "Hoy ha abierto la ventana."
+        ],
+        "answer": "Hoy he abierto la ventana."
+      },
+      {
+        "id": "a2-02-tr02",
+        "tag": "irregular",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: На этой неделе мы посмотрели фильм.",
+          "uk": "Переклади: Цього тижня ми подивилися фільм.",
+          "en": "Translate: We have watched a film this week.",
+          "es": "Traduce: We have watched a film this week."
+        },
+        "options": [
+          "Esta semana hemos visto una película.",
+          "Esta semana hemos veído una película.",
+          "Esta semana he visto una película."
+        ],
+        "answer": "Esta semana hemos visto una película."
+      },
+      {
+        "id": "a2-02-tr03",
+        "tag": "irregular",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: Сегодня она написала письмо.",
+          "uk": "Переклади: Сьогодні вона написала листа.",
+          "en": "Translate: She has written a letter today.",
+          "es": "Traduce: She has written a letter today."
+        },
+        "options": [
+          "Hoy ella ha escrito una carta.",
+          "Hoy ella ha escribido una carta.",
+          "Hoy ella han escrito una carta."
+        ],
+        "answer": "Hoy ella ha escrito una carta."
+      },
+      {
+        "id": "a2-02-tr04",
+        "tag": "irregular",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: Ты уже вернул книгу?",
+          "uk": "Переклади: Ти вже повернув книжку?",
+          "en": "Translate: Have you already returned the book?",
+          "es": "Traduce: Have you already returned the book?"
+        },
+        "options": [
+          "¿Ya has devuelto el libro?",
+          "¿Ya has devolvido el libro?",
+          "¿Ya hemos devuelto el libro?"
+        ],
+        "answer": "¿Ya has devuelto el libro?"
+      },
+      {
+        "id": "a2-02-fix01",
+        "tag": "irregular",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: He hacido la compra.",
+          "uk": "Виправ помилку: He hacido la compra.",
+          "en": "Correct the mistake: He hacido la compra.",
+          "es": "Corrige el error: He hacido la compra."
+        },
+        "options": [
+          "He hecho la compra.",
+          "He hacido la compra.",
+          "He hacer la compra."
+        ],
+        "answer": "He hecho la compra."
+      },
+      {
+        "id": "a2-02-fix02",
+        "tag": "irregular",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: Hemos ponido la mesa.",
+          "uk": "Виправ помилку: Hemos ponido la mesa.",
+          "en": "Correct the mistake: Hemos ponido la mesa.",
+          "es": "Corrige el error: Hemos ponido la mesa."
+        },
+        "options": [
+          "Hemos puesto la mesa.",
+          "Hemos ponido la mesa.",
+          "Hemos poner la mesa."
+        ],
+        "answer": "Hemos puesto la mesa."
+      },
+      {
+        "id": "a2-02-fix03",
+        "tag": "irregular",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: Han escribido un mensaje.",
+          "uk": "Виправ помилку: Han escribido un mensaje.",
+          "en": "Correct the mistake: Han escribido un mensaje.",
+          "es": "Corrige el error: Han escribido un mensaje."
+        },
+        "options": [
+          "Han escrito un mensaje.",
+          "Han escribido un mensaje.",
+          "Han escribir un mensaje."
+        ],
+        "answer": "Han escrito un mensaje."
+      },
+      {
+        "id": "a2-02-fix04",
+        "tag": "irregular",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: He rompido el vaso.",
+          "uk": "Виправ помилку: He rompido el vaso.",
+          "en": "Correct the mistake: He rompido el vaso.",
+          "es": "Corrige el error: He rompido el vaso."
+        },
+        "options": [
+          "He roto el vaso.",
+          "He rompido el vaso.",
+          "He romper el vaso."
+        ],
+        "answer": "He roto el vaso."
       }
     ]
   }
