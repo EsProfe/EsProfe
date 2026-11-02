@@ -642,6 +642,42 @@
           "Ellos han vivir aquí."
         ],
         "answer": "Ellos han vivido aquí."
+      },
+      {
+        "id": "a2-01-order01",
+        "tag": "haber",
+        "type": "ordering",
+        "prompt": {
+          "ru": "Собери фразу: Я сегодня не работал(а).",
+          "uk": "Склади фразу: Я сьогодні не працював(ла).",
+          "en": "Build: I have not worked today.",
+          "es": "Ordena: I have not worked today."
+        },
+        "tokens": [
+          "Hoy",
+          "no",
+          "he",
+          "trabajado."
+        ],
+        "answer": "Hoy no he trabajado."
+      },
+      {
+        "id": "a2-01-order02",
+        "tag": "haber",
+        "type": "ordering",
+        "prompt": {
+          "ru": "Собери фразу: Мы ещё не ели.",
+          "uk": "Склади фразу: Ми ще не їли.",
+          "en": "Build: We have not eaten yet.",
+          "es": "Ordena: We have not eaten yet."
+        },
+        "tokens": [
+          "Todavía",
+          "no",
+          "hemos",
+          "comido."
+        ],
+        "answer": "Todavía no hemos comido."
       }
     ]
   }
