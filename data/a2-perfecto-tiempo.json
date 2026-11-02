@@ -1,0 +1,441 @@
+{
+  "a2-perfecto-tiempo": {
+    "level": "A2",
+    "moduleId": "a2-past-01",
+    "nextLessonId": "a2-indefinido-regular",
+    "ruleTags": {
+      "esta": 1,
+      "este": 1
+    },
+    "i18n": {
+      "ru": {
+        "title": "Эта неделя, этот месяц: говорим о времени",
+        "goal": "Использовать временные выражения с pretérito perfecto в понятном контексте.",
+        "intro": "В распространённом в Испании употреблении pretérito perfecto часто связывают с периодом, который ещё продолжается: hoy, esta semana, este mes, este año. Выбор времени зависит от контекста и региона.",
+        "rules": [
+          [
+            "Hoy — сегодня",
+            "Hoy he hablado con Ana. — Сегодня я поговорил(а) с Аной. День ещё продолжается."
+          ],
+          [
+            "Esta semana / este mes",
+            "Esta semana hemos trabajado mucho. Este mes he visitado Madrid. Semana — слово женского рода: esta; mes — мужского: este."
+          ],
+          [
+            "Este año",
+            "Este año he viajado a Valencia. — В этом году я ездил(а) в Валенсию. Год ещё продолжается."
+          ],
+          [
+            "Контекст важен",
+            "Esta mañana означает «сегодня утром». Говорящий может воспринимать утро как продолжающийся или завершённый период; употребление зависит от ситуации и региона."
+          ]
+        ],
+        "examplesTitle": "Прочитай примеры",
+        "practiceTitle": "Выбери выражение",
+        "trainerTitle": "Потренируйся",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить",
+        "nextTitle": "Следующий урок: завершённые события"
+      },
+      "uk": {
+        "title": "Цей тиждень, цей місяць: говоримо про час",
+        "goal": "Вживати часові вирази з pretérito perfecto у зрозумілому контексті.",
+        "intro": "У поширеному в Іспанії вживанні pretérito perfecto часто пов’язують із періодом, що ще триває: hoy, esta semana, este mes, este año. Вибір часу залежить від контексту та регіону.",
+        "rules": [
+          [
+            "Hoy — сьогодні",
+            "Hoy he hablado con Ana. — Сьогодні я поговорив(ла) з Аною. День ще триває."
+          ],
+          [
+            "Esta semana / este mes",
+            "Esta semana hemos trabajado mucho. Este mes he visitado Madrid. Semana — слово жіночого роду: esta; mes — чоловічого: este."
+          ],
+          [
+            "Este año",
+            "Este año he viajado a Valencia. — Цього року я їздив(ла) до Валенсії. Рік ще триває."
+          ],
+          [
+            "Контекст важливий",
+            "Esta mañana означає «сьогодні вранці». Мовець може сприймати ранок як період, що триває, або як завершений; уживання залежить від ситуації та регіону."
+          ]
+        ],
+        "examplesTitle": "Прочитай приклади",
+        "practiceTitle": "Обери вираз",
+        "trainerTitle": "Потренуйся",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити",
+        "nextTitle": "Наступний урок: завершені події"
+      },
+      "en": {
+        "title": "This week, this month: talking about time",
+        "goal": "Use time expressions with pretérito perfecto in a clear context.",
+        "intro": "In a common usage in Spain, pretérito perfecto is often linked to an ongoing period: hoy, esta semana, este mes, este año. The choice of tense depends on context and region.",
+        "rules": [
+          [
+            "Hoy — today",
+            "Hoy he hablado con Ana. — I have spoken with Ana today. The day is still ongoing."
+          ],
+          [
+            "Esta semana / este mes",
+            "Esta semana hemos trabajado mucho. Este mes he visitado Madrid. Semana is feminine: esta; mes is masculine: este."
+          ],
+          [
+            "Este año",
+            "Este año he viajado a Valencia. — I have travelled to Valencia this year. The year is still ongoing."
+          ],
+          [
+            "Context matters",
+            "Esta mañana means “this morning”. The speaker may view the morning as ongoing or finished; usage depends on the situation and region."
+          ]
+        ],
+        "examplesTitle": "Read the examples",
+        "practiceTitle": "Choose an expression",
+        "trainerTitle": "Practise",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review",
+        "nextTitle": "Next lesson: completed events"
+      },
+      "es": {
+        "title": "Esta semana, este mes: hablamos del tiempo",
+        "goal": "Usar expresiones temporales con el pretérito perfecto en un contexto claro.",
+        "intro": "En un uso frecuente en España, el pretérito perfecto se relaciona con un período que aún continúa: hoy, esta semana, este mes, este año. La elección del tiempo depende del contexto y de la región.",
+        "rules": [
+          [
+            "Hoy",
+            "Hoy he hablado con Ana. El día todavía continúa."
+          ],
+          [
+            "Esta semana / este mes",
+            "Esta semana hemos trabajado mucho. Este mes he visitado Madrid. Semana es femenino: esta; mes es masculino: este."
+          ],
+          [
+            "Este año",
+            "Este año he viajado a Valencia. El año todavía continúa."
+          ],
+          [
+            "El contexto importa",
+            "Esta mañana se puede interpretar como un período aún abierto o terminado. El uso depende de la situación y de la región."
+          ]
+        ],
+        "examplesTitle": "Lee los ejemplos",
+        "practiceTitle": "Elige la expresión",
+        "trainerTitle": "Practica",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar",
+        "nextTitle": "Siguiente lección: hechos terminados"
+      }
+    },
+    "examples": [
+      {
+        "word": "Hoy he hablado con Ana.",
+        "tag": "esta"
+      },
+      {
+        "word": "Esta semana hemos trabajado mucho.",
+        "tag": "esta"
+      },
+      {
+        "word": "Este mes he visitado Madrid.",
+        "tag": "este"
+      },
+      {
+        "word": "Este año he viajado a Valencia.",
+        "tag": "este"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "a2-04-01",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ semana he trabajado mucho.",
+          "uk": "___ semana he trabajado mucho.",
+          "en": "___ semana he trabajado mucho.",
+          "es": "___ semana he trabajado mucho."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-02",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ mes he visitado Valencia.",
+          "uk": "___ mes he visitado Valencia.",
+          "en": "___ mes he visitado Valencia.",
+          "es": "___ mes he visitado Valencia."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-03",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ año hemos viajado juntos.",
+          "uk": "___ año hemos viajado juntos.",
+          "en": "___ año hemos viajado juntos.",
+          "es": "___ año hemos viajado juntos."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-04",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ mañana he llamado a Marta.",
+          "uk": "___ mañana he llamado a Marta.",
+          "en": "___ mañana he llamado a Marta.",
+          "es": "___ mañana he llamado a Marta."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-05",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ tarde he hablado con Ana.",
+          "uk": "___ tarde he hablado con Ana.",
+          "en": "___ tarde he hablado con Ana.",
+          "es": "___ tarde he hablado con Ana."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-06",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ fin de semana hemos cocinado en casa.",
+          "uk": "___ fin de semana hemos cocinado en casa.",
+          "en": "___ fin de semana hemos cocinado en casa.",
+          "es": "___ fin de semana hemos cocinado en casa."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-07",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ semana han estudiado español.",
+          "uk": "___ semana han estudiado español.",
+          "en": "___ semana han estudiado español.",
+          "es": "___ semana han estudiado español."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-08",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ mes has comido muchas frutas.",
+          "uk": "___ mes has comido muchas frutas.",
+          "en": "___ mes has comido muchas frutas.",
+          "es": "___ mes has comido muchas frutas."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-09",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ año he aprendido mucho.",
+          "uk": "___ año he aprendido mucho.",
+          "en": "___ año he aprendido mucho.",
+          "es": "___ año he aprendido mucho."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-10",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ mañana hemos preparado el desayuno.",
+          "uk": "___ mañana hemos preparado el desayuno.",
+          "en": "___ mañana hemos preparado el desayuno.",
+          "es": "___ mañana hemos preparado el desayuno."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-11",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ tarde has practicado español.",
+          "uk": "___ tarde has practicado español.",
+          "en": "___ tarde has practicado español.",
+          "es": "___ tarde has practicado español."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-12",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ fin de semana he descansado.",
+          "uk": "___ fin de semana he descansado.",
+          "en": "___ fin de semana he descansado.",
+          "es": "___ fin de semana he descansado."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-13",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ semana he llamado a mi familia.",
+          "uk": "___ semana he llamado a mi familia.",
+          "en": "___ semana he llamado a mi familia.",
+          "es": "___ semana he llamado a mi familia."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-14",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ mes hemos conocido a Pablo.",
+          "uk": "___ mes hemos conocido a Pablo.",
+          "en": "___ mes hemos conocido a Pablo.",
+          "es": "___ mes hemos conocido a Pablo."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-15",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ año has vivido en Alicante.",
+          "uk": "___ año has vivido en Alicante.",
+          "en": "___ año has vivido en Alicante.",
+          "es": "___ año has vivido en Alicante."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      },
+      {
+        "id": "a2-04-16",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ mañana han abierto la tienda.",
+          "uk": "___ mañana han abierto la tienda.",
+          "en": "___ mañana han abierto la tienda.",
+          "es": "___ mañana han abierto la tienda."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-17",
+        "tag": "esta",
+        "prompt": {
+          "ru": "___ tarde he comprado pan.",
+          "uk": "___ tarde he comprado pan.",
+          "en": "___ tarde he comprado pan.",
+          "es": "___ tarde he comprado pan."
+        },
+        "options": [
+          "Esta",
+          "Este",
+          "Estos"
+        ],
+        "answer": "Esta"
+      },
+      {
+        "id": "a2-04-18",
+        "tag": "este",
+        "prompt": {
+          "ru": "___ fin de semana has visitado a Luis.",
+          "uk": "___ fin de semana has visitado a Luis.",
+          "en": "___ fin de semana has visitado a Luis.",
+          "es": "___ fin de semana has visitado a Luis."
+        },
+        "options": [
+          "Este",
+          "Esta",
+          "Estas"
+        ],
+        "answer": "Este"
+      }
+    ]
+  }
+}
