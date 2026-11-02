@@ -506,6 +506,142 @@
           "¿Ha estado alguna vez tú en México?"
         ],
         "answer": "¿Has estado alguna vez en México?"
+      },
+      {
+        "id": "a2-01-tr01",
+        "tag": "regular-ar",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: Сегодня я работал(а) дома.",
+          "uk": "Переклади: Сьогодні я працював(ла) вдома.",
+          "en": "Translate: Today I have worked at home.",
+          "es": "Traduce: Today I have worked at home."
+        },
+        "options": [
+          "Hoy he trabajado en casa.",
+          "Hoy he trabajido en casa.",
+          "Hoy has trabajado en casa."
+        ],
+        "answer": "Hoy he trabajado en casa."
+      },
+      {
+        "id": "a2-01-tr02",
+        "tag": "regular-er",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: На этой неделе мы ели дома.",
+          "uk": "Переклади: Цього тижня ми їли вдома.",
+          "en": "Translate: We have eaten at home this week.",
+          "es": "Traduce: We have eaten at home this week."
+        },
+        "options": [
+          "Esta semana hemos comido en casa.",
+          "Esta semana hemos comado en casa.",
+          "Esta semana he comido en casa."
+        ],
+        "answer": "Esta semana hemos comido en casa."
+      },
+      {
+        "id": "a2-01-tr03",
+        "tag": "regular-ar",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: Сегодня ты изучал(а) испанский.",
+          "uk": "Переклади: Сьогодні ти вивчав(ла) іспанську.",
+          "en": "Translate: You have studied Spanish today.",
+          "es": "Traduce: You have studied Spanish today. (tú)"
+        },
+        "options": [
+          "Hoy has estudiado español.",
+          "Hoy has estudido español.",
+          "Hoy hemos estudiado español."
+        ],
+        "answer": "Hoy has estudiado español."
+      },
+      {
+        "id": "a2-01-tr04",
+        "tag": "regular-ir",
+        "type": "translation",
+        "prompt": {
+          "ru": "Переведи: В этом месяце они жили в Аликанте.",
+          "uk": "Переклади: Цього місяця вони жили в Аліканте.",
+          "en": "Translate: They have lived in Alicante this month.",
+          "es": "Traduce: They have lived in Alicante this month."
+        },
+        "options": [
+          "Este mes han vivido en Alicante.",
+          "Este mes han vivado en Alicante.",
+          "Este mes ha vivido en Alicante."
+        ],
+        "answer": "Este mes han vivido en Alicante."
+      },
+      {
+        "id": "a2-01-fix01",
+        "tag": "haber",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: Yo has trabajado hoy.",
+          "uk": "Виправ помилку: Yo has trabajado hoy.",
+          "en": "Correct the mistake: Yo has trabajado hoy.",
+          "es": "Corrige el error: Yo has trabajado hoy."
+        },
+        "options": [
+          "Yo he trabajado hoy.",
+          "Yo has trabajado hoy.",
+          "Yo han trabajado hoy."
+        ],
+        "answer": "Yo he trabajado hoy."
+      },
+      {
+        "id": "a2-01-fix02",
+        "tag": "regular-er",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: Hemos comado en casa.",
+          "uk": "Виправ помилку: Hemos comado en casa.",
+          "en": "Correct the mistake: Hemos comado en casa.",
+          "es": "Corrige el error: Hemos comado en casa."
+        },
+        "options": [
+          "Hemos comido en casa.",
+          "Hemos comado en casa.",
+          "Hemos comer en casa."
+        ],
+        "answer": "Hemos comido en casa."
+      },
+      {
+        "id": "a2-01-fix03",
+        "tag": "regular-ar",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: Ella ha visitido Madrid.",
+          "uk": "Виправ помилку: Ella ha visitido Madrid.",
+          "en": "Correct the mistake: Ella ha visitido Madrid.",
+          "es": "Corrige el error: Ella ha visitido Madrid."
+        },
+        "options": [
+          "Ella ha visitado Madrid.",
+          "Ella ha visitido Madrid.",
+          "Ella ha visitar Madrid."
+        ],
+        "answer": "Ella ha visitado Madrid."
+      },
+      {
+        "id": "a2-01-fix04",
+        "tag": "regular-ir",
+        "type": "correction",
+        "prompt": {
+          "ru": "Исправь ошибку: Ellos han vivado aquí.",
+          "uk": "Виправ помилку: Ellos han vivado aquí.",
+          "en": "Correct the mistake: Ellos han vivado aquí.",
+          "es": "Corrige el error: Ellos han vivado aquí."
+        },
+        "options": [
+          "Ellos han vivido aquí.",
+          "Ellos han vivado aquí.",
+          "Ellos han vivir aquí."
+        ],
+        "answer": "Ellos han vivido aquí."
       }
     ]
   }
