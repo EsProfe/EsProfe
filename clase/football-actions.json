@@ -44,7 +44,7 @@
       "match": "Дополни короткую фразу по картинке.",
       "newintro": "Ответь о действии и о человеке. Затем собери фразу.",
       "formula": "¿Qué hace? · ¿Quién…?",
-      "note": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. El balón, но un gol.",
+      "note": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. Balón и gol — мужского рода: el balón, un gol.",
       "selectType": "Выбери форму",
       "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
       "write": "Ответь коротко или полным предложением.",
@@ -127,7 +127,7 @@
       "match": "Доповни коротку фразу за малюнком.",
       "newintro": "Дай відповідь про дію та людину. Потім склади фразу.",
       "formula": "¿Qué hace? · ¿Quién…?",
-      "note": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. El balón, але un gol.",
+      "note": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. Balón і gol — чоловічого роду: el balón, un gol.",
       "selectType": "Обери форму",
       "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
       "write": "Дай коротку відповідь або повне речення.",
@@ -210,7 +210,7 @@
       "match": "Complete the short sentence using the picture.",
       "newintro": "Answer about the action and the person. Then build a sentence.",
       "formula": "¿Qué hace? · ¿Quién…?",
-      "note": "Chuta means shoots; marca un gol means scores. No conjugation table yet. El balón, but un gol.",
+      "note": "Chuta means shoots; marca un gol means scores. No conjugation table yet. Balón and gol are masculine: el balón, un gol.",
       "selectType": "Choose the form",
       "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
       "write": "Use a short answer or a full sentence.",
@@ -558,7 +558,7 @@
       "right": "Правильное предложение",
       "meaning": "Перевод",
       "contrast": "¿Qué hace? — Что делает? Запоминаем четыре готовые фразы об одном игроке: pasa el balón, chuta, marca un gol, para el balón.",
-      "explain": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. El balón, но un gol.",
+      "explain": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. Balón и gol — мужского рода: el balón, un gol.",
       "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
     },
     "uk": {
@@ -572,7 +572,7 @@
       "right": "Правильне речення",
       "meaning": "Переклад",
       "contrast": "¿Qué hace? — Що робить? Запам’ятовуємо чотири готові фрази про одного гравця: pasa el balón, chuta, marca un gol, para el balón.",
-      "explain": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. El balón, але un gol.",
+      "explain": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. Balón і gol — чоловічого роду: el balón, un gol.",
       "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
     },
     "en": {
@@ -586,7 +586,7 @@
       "right": "Correct sentence",
       "meaning": "Translation",
       "contrast": "¿Qué hace? — What does he/she do? Learn four ready-made phrases about one player: pasa el balón, chuta, marca un gol, para el balón.",
-      "explain": "Chuta means shoots; marca un gol means scores. No conjugation table yet. El balón, but un gol.",
+      "explain": "Chuta means shoots; marca un gol means scores. No conjugation table yet. Balón and gol are masculine: el balón, un gol.",
       "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
     }
   },
