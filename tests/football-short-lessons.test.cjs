@@ -1,6 +1,6 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const lessons=['football-training','football-stadium'].map(name=>require('../clase/'+name+'.json'));
-test('two short lessons cover their vocabulary with unique tasks and local optimized assets',()=>{
+const lessons=['football-training','football-stadium','football-actions','football-feelings'].map(name=>require('../clase/'+name+'.json'));
+test('short lessons cover their vocabulary with unique tasks and local optimized assets',()=>{
  const ids=new Set();for(const d of lessons){const qs=Object.values(d.groups).flat();assert.equal(qs.length,12);assert.equal(d.groups[4].length+d.groups[5].length,6);assert(d.vocab.length>=4&&d.vocab.length<=5);assert.equal(d.vocab.length,d.vocabVisuals.length);
   for(const q of qs){assert(!ids.has(q.id));ids.add(q.id);assert(d.illustrations[q.visual.illustration]);if(q.type==='choice')assert(q.o.includes(q.a));for(const lang of ['ru','uk','en'])assert(q.meaning[lang]);}
   for(const key of d.vocabIds){assert(qs.some(q=>q.visual.illustration===key),'missing practice: '+key);const f=path.join(__dirname,'../clase/images',d.illustrations[key].file);assert(fs.existsSync(f));assert(fs.statSync(f).size<100000,'oversized image: '+f);}

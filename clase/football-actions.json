@@ -1,0 +1,705 @@
+{
+  "lessonId": "football-actions-a1",
+  "version": 1,
+  "D": {
+    "ru": {
+      "lang": "Язык",
+      "preview": "Уроки с преподавателем",
+      "names": [
+        "Начало",
+        "Слова с картинками",
+        "Вспоминаем модель",
+        "Разминка",
+        "Первый тайм",
+        "Второй тайм",
+        "Разбор ошибок",
+        "Ты — тренер!",
+        "Итоги матча"
+      ],
+      "title": "Футбол 6. Что делает игрок?",
+      "intro": "Четыре действия на поле. Смотри, отвечай и забивай до 6 голов!",
+      "goal": "Короткий урок · 4 новые фразы · 10–15 минут практики",
+      "start": "Начать урок",
+      "next": "Далее",
+      "back": "Назад",
+      "check": "Проверить",
+      "continue": "Следующее задание",
+      "ready": "Готово — дальше",
+      "task": "Задание",
+      "of": "из",
+      "goals": "Голы",
+      "pick": "Выбери ответ.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Пока неверно. Правильный ответ:",
+      "why": "Проверь действие на картинке и артикль: el balón / un gol.",
+      "read": "Прочитай предложение вслух.",
+      "words": "Сначала рассмотри слово, перевод и картинку. Затем потренируйся с карточками или найди пары.",
+      "rule": "¿Qué hace? — Что делает? Запоминаем четыре готовые фразы об одном игроке: pasa el balón, chuta, marca un gol, para el balón.",
+      "one": "Один",
+      "many": "Несколько",
+      "masc": "Мужской род",
+      "fem": "Женский род",
+      "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
+      "warm": "Выбери действие по картинке.",
+      "match": "Дополни короткую фразу по картинке.",
+      "newintro": "Ответь о действии и о человеке. Затем собери фразу.",
+      "formula": "¿Qué hace? · ¿Quién…?",
+      "note": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. El balón, но un gol.",
+      "selectType": "Выбери форму",
+      "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
+      "write": "Ответь коротко или полным предложением.",
+      "fix": "Исправь форму. Можно написать исправленное слово или предложение.",
+      "answer": "Твой ответ",
+      "own": "Напиши три короткие фразы о действиях игрока и вратаря.",
+      "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
+      "finish": "Завершить урок",
+      "result": "Матч завершён!",
+      "first": "Верно с первой попытки",
+      "attempts": "Проверено заданий",
+      "review": "Повторить ошибки",
+      "allright": "Все проверенные задания выполнены правильно!",
+      "pending": "Не все задания пройдены. Можно вернуться к любому этапу.",
+      "home": "Домашнее задание",
+      "hw": "Перед следующим занятием назови четыре действия и задай вопрос ¿Qué hace?",
+      "saved": "Прогресс и ошибки сохраняются в этом браузере на этом устройстве.",
+      "repeat": "Повторение ошибок",
+      "reviewdone": "Ошибки разобраны!",
+      "empty": "Сначала введи ответ.",
+      "ownempty": "Напиши три предложения перед завершением.",
+      "viewown": "Твои предложения",
+      "reset": "Пройти заново",
+      "resetask": "Начать заново и очистить ответы?",
+      "reveal": "Перевод",
+      "scorehint": "Голы считаются за первый правильный ответ в блоке «Матч».",
+      "speech": "Скажи вслух",
+      "practice": "Практика",
+      "modelstart": "Перейти к упражнениям",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué hace el jugador? — Pasa el balón.",
+        "¿Quién para el balón? — El portero."
+      ],
+      "ownRule": "Три короткие фразы. Можно повторять знакомые слова."
+    },
+    "uk": {
+      "lang": "Мова",
+      "preview": "Уроки з викладачем",
+      "names": [
+        "Початок",
+        "Слова з малюнками",
+        "Згадуємо модель",
+        "Розминка",
+        "Перший тайм",
+        "Другий тайм",
+        "Розбір помилок",
+        "Ти — тренер!",
+        "Підсумки матчу"
+      ],
+      "title": "Футбол 6. Що робить гравець?",
+      "intro": "Чотири дії на полі. Дивись, відповідай і забивай до 6 голів!",
+      "goal": "Короткий урок · 4 нові фрази · 10–15 хвилин практики",
+      "start": "Почати урок",
+      "next": "Далі",
+      "back": "Назад",
+      "check": "Перевірити",
+      "continue": "Наступне завдання",
+      "ready": "Готово — далі",
+      "task": "Завдання",
+      "of": "із",
+      "goals": "Голи",
+      "pick": "Обери відповідь.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Поки неправильно. Правильна відповідь:",
+      "why": "Перевір дію на малюнку й артикль: el balón / un gol.",
+      "read": "Прочитай речення вголос.",
+      "words": "Спочатку розглянь слово, переклад і малюнок. Потім потренуйся з картками або знайди пари.",
+      "rule": "¿Qué hace? — Що робить? Запам’ятовуємо чотири готові фрази про одного гравця: pasa el balón, chuta, marca un gol, para el balón.",
+      "one": "Один",
+      "many": "Кілька",
+      "masc": "Чоловічий рід",
+      "fem": "Жіночий рід",
+      "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
+      "warm": "Обери дію за малюнком.",
+      "match": "Доповни коротку фразу за малюнком.",
+      "newintro": "Дай відповідь про дію та людину. Потім склади фразу.",
+      "formula": "¿Qué hace? · ¿Quién…?",
+      "note": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. El balón, але un gol.",
+      "selectType": "Обери форму",
+      "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
+      "write": "Дай коротку відповідь або повне речення.",
+      "fix": "Виправ форму. Можна написати виправлене слово або речення.",
+      "answer": "Твоя відповідь",
+      "own": "Напиши три короткі фрази про дії гравця й воротаря.",
+      "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
+      "finish": "Завершити урок",
+      "result": "Матч завершено!",
+      "first": "Правильно з першої спроби",
+      "attempts": "Перевірено завдань",
+      "review": "Повторити помилки",
+      "allright": "Усі перевірені завдання виконано правильно!",
+      "pending": "Пройдено не всі завдання. Можна повернутися до будь-якого етапу.",
+      "home": "Домашнє завдання",
+      "hw": "Перед наступним заняттям назви чотири дії та постав запитання ¿Qué hace?",
+      "saved": "Прогрес і помилки зберігаються в цьому браузері на цьому пристрої.",
+      "repeat": "Повторення помилок",
+      "reviewdone": "Помилки опрацьовано!",
+      "empty": "Спочатку введи відповідь.",
+      "ownempty": "Напиши три речення перед завершенням.",
+      "viewown": "Твої речення",
+      "reset": "Пройти ще раз",
+      "resetask": "Почати знову та очистити відповіді?",
+      "reveal": "Переклад",
+      "scorehint": "Голи нараховуються за першу правильну відповідь у блоці «Матч».",
+      "speech": "Скажи вголос",
+      "practice": "Практика",
+      "modelstart": "Перейти до вправ",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué hace el jugador? — Pasa el balón.",
+        "¿Quién para el balón? — El portero."
+      ],
+      "ownRule": "Три короткі фрази. Знайомі слова можна повторювати."
+    },
+    "en": {
+      "lang": "Language",
+      "preview": "Teacher-led lessons",
+      "names": [
+        "Kick-off",
+        "Picture vocabulary",
+        "Review the pattern",
+        "Warm-up",
+        "First half",
+        "Second half",
+        "Review mistakes",
+        "You are the coach!",
+        "Match results"
+      ],
+      "title": "Football 6. What does the player do?",
+      "intro": "Four actions on the pitch. Look, answer and score up to 6 goals!",
+      "goal": "Short lesson · 4 new phrases · 10–15 minutes of practice",
+      "start": "Start lesson",
+      "next": "Next",
+      "back": "Back",
+      "check": "Check answer",
+      "continue": "Next question",
+      "ready": "Ready — continue",
+      "task": "Question",
+      "of": "of",
+      "goals": "Goals",
+      "pick": "Choose an answer.",
+      "correct": "Goal! Correct.",
+      "wrong": "Not quite. The correct answer is:",
+      "why": "Check the action and article: el balón / un gol.",
+      "read": "Read the sentence aloud.",
+      "words": "First explore each word, translation and picture. Then practise with flashcards or match pairs.",
+      "rule": "¿Qué hace? — What does he/she do? Learn four ready-made phrases about one player: pasa el balón, chuta, marca un gol, para el balón.",
+      "one": "One",
+      "many": "More than one",
+      "masc": "Masculine",
+      "fem": "Feminine",
+      "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
+      "warm": "Choose the action shown.",
+      "match": "Complete the short sentence using the picture.",
+      "newintro": "Answer about the action and the person. Then build a sentence.",
+      "formula": "¿Qué hace? · ¿Quién…?",
+      "note": "Chuta means shoots; marca un gol means scores. No conjugation table yet. El balón, but un gol.",
+      "selectType": "Choose the form",
+      "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
+      "write": "Use a short answer or a full sentence.",
+      "fix": "Correct the form. Write the corrected word or sentence.",
+      "answer": "Your answer",
+      "own": "Write three short sentences about the player’s and goalkeeper’s actions.",
+      "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
+      "finish": "Finish lesson",
+      "result": "Full time!",
+      "first": "Correct on the first try",
+      "attempts": "Questions checked",
+      "review": "Practise mistakes",
+      "allright": "All checked questions were answered correctly!",
+      "pending": "Some questions are still unfinished. You can return to any stage.",
+      "home": "Homework",
+      "hw": "Before the next lesson, recall four actions and ask ¿Qué hace?",
+      "saved": "Progress and mistakes are saved in this browser on this device.",
+      "repeat": "Mistake practice",
+      "reviewdone": "Mistake practice complete!",
+      "empty": "Enter an answer first.",
+      "ownempty": "Write three sentences before finishing.",
+      "viewown": "Your sentences",
+      "reset": "Start again",
+      "resetask": "Restart and clear all answers?",
+      "reveal": "Translation",
+      "scorehint": "Goals count first-attempt correct answers in the Match section.",
+      "speech": "Say it aloud",
+      "practice": "Practice",
+      "modelstart": "Start the exercises",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué hace el jugador? — Pasa el balón.",
+        "¿Quién para el balón? — El portero."
+      ],
+      "ownRule": "Three short sentences. You may reuse familiar words."
+    }
+  },
+  "vocab": [
+    [
+      "pasa el balón",
+      "передає м’яч",
+      "passes the ball",
+      "передаёт мяч"
+    ],
+    [
+      "chuta",
+      "б’є по м’ячу",
+      "shoots",
+      "бьёт по мячу"
+    ],
+    [
+      "marca un gol",
+      "забиває гол",
+      "scores a goal",
+      "забивает гол"
+    ],
+    [
+      "para el balón",
+      "зупиняє м’яч",
+      "stops the ball",
+      "останавливает мяч"
+    ]
+  ],
+  "football": [
+    [
+      "pasa el balón",
+      "передає м’яч",
+      "passes the ball",
+      "передаёт мяч"
+    ],
+    [
+      "chuta",
+      "б’є по м’ячу",
+      "shoots",
+      "бьёт по мячу"
+    ],
+    [
+      "marca un gol",
+      "забиває гол",
+      "scores a goal",
+      "забивает гол"
+    ],
+    [
+      "para el balón",
+      "зупиняє м’яч",
+      "stops the ball",
+      "останавливает мяч"
+    ]
+  ],
+  "groups": {
+    "3": [
+      {
+        "id": "fa1-w0",
+        "p": "¿Qué hace el jugador de rojo?",
+        "a": "Pasa el balón.",
+        "type": "choice",
+        "o": [
+          "Pasa el balón.",
+          "Marca un gol."
+        ],
+        "visual": {
+          "illustration": "action-pass"
+        },
+        "meaning": {
+          "ru": "Игрок передаёт мяч.",
+          "uk": "Гравець передає м’яч.",
+          "en": "The player passes the ball."
+        }
+      },
+      {
+        "id": "fa1-w1",
+        "p": "¿Qué hace el jugador de rojo?",
+        "a": "Chuta.",
+        "type": "choice",
+        "o": [
+          "Chuta.",
+          "Pasa el balón."
+        ],
+        "visual": {
+          "illustration": "action-shoot"
+        },
+        "meaning": {
+          "ru": "Игрок бьёт по мячу.",
+          "uk": "Гравець б’є по м’ячу.",
+          "en": "The player shoots."
+        }
+      },
+      {
+        "id": "fa1-w2",
+        "p": "¿Qué hace el jugador de rojo?",
+        "a": "Marca un gol.",
+        "type": "choice",
+        "o": [
+          "Marca un gol.",
+          "Para el balón."
+        ],
+        "visual": {
+          "illustration": "action-score"
+        },
+        "meaning": {
+          "ru": "Игрок забивает гол.",
+          "uk": "Гравець забиває гол.",
+          "en": "The player scores a goal."
+        }
+      },
+      {
+        "id": "fa1-w3",
+        "p": "¿Qué hace el portero?",
+        "a": "Para el balón.",
+        "type": "choice",
+        "o": [
+          "Para el balón.",
+          "Chuta."
+        ],
+        "visual": {
+          "illustration": "action-save"
+        },
+        "meaning": {
+          "ru": "Вратарь останавливает мяч.",
+          "uk": "Воротар зупиняє м’яч.",
+          "en": "The goalkeeper stops the ball."
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "fa1-m0",
+        "p": "El jugador de rojo ___ el balón.",
+        "a": "pasa",
+        "type": "choice",
+        "o": [
+          "pasa",
+          "para"
+        ],
+        "visual": {
+          "illustration": "action-pass"
+        },
+        "meaning": {
+          "ru": "Игрок передаёт мяч.",
+          "uk": "Гравець передає м’яч.",
+          "en": "The player passes the ball."
+        },
+        "sentence": "El jugador de rojo pasa el balón."
+      },
+      {
+        "id": "fa1-m1",
+        "p": "El portero ___ el balón.",
+        "a": "para",
+        "type": "choice",
+        "o": [
+          "para",
+          "marca"
+        ],
+        "visual": {
+          "illustration": "action-save"
+        },
+        "meaning": {
+          "ru": "Вратарь останавливает мяч.",
+          "uk": "Воротар зупиняє м’яч.",
+          "en": "The goalkeeper stops the ball."
+        },
+        "sentence": "El portero para el balón."
+      },
+      {
+        "id": "fa1-m2",
+        "p": "El jugador marca ___ gol.",
+        "a": "un",
+        "type": "choice",
+        "o": [
+          "un",
+          "una"
+        ],
+        "visual": {
+          "illustration": "action-score"
+        },
+        "meaning": {
+          "ru": "Игрок забивает гол.",
+          "uk": "Гравець забиває гол.",
+          "en": "The player scores a goal."
+        },
+        "sentence": "El jugador marca un gol."
+      }
+    ],
+    "5": [
+      {
+        "id": "fa1-q0",
+        "p": "¿Qué hace el jugador de rojo?",
+        "a": "Pasa el balón.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "action-pass"
+        },
+        "meaning": {
+          "ru": "Игрок передаёт мяч.",
+          "uk": "Гравець передає м’яч.",
+          "en": "The player passes the ball."
+        },
+        "accepted": [
+          "pasa",
+          "El jugador pasa el balón.",
+          "El jugador de rojo pasa el balón."
+        ]
+      },
+      {
+        "id": "fa1-q1",
+        "p": "¿Quién para el balón?",
+        "a": "El portero.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "action-save"
+        },
+        "meaning": {
+          "ru": "Вратарь.",
+          "uk": "Воротар.",
+          "en": "The goalkeeper."
+        },
+        "accepted": [
+          "portero",
+          "un portero",
+          "Es el portero.",
+          "Es un portero.",
+          "El portero para el balón."
+        ]
+      },
+      {
+        "id": "fa1-b0",
+        "p": "El jugador → marca un gol",
+        "a": "El jugador marca un gol.",
+        "type": "build",
+        "o": [
+          "El",
+          "jugador",
+          "marca",
+          "un",
+          "gol."
+        ],
+        "visual": {
+          "illustration": "action-score"
+        },
+        "meaning": {
+          "ru": "Игрок забивает гол.",
+          "uk": "Гравець забиває гол.",
+          "en": "The player scores a goal."
+        }
+      }
+    ],
+    "6": [
+      {
+        "id": "fa1-f0",
+        "p": "El jugador pasa la balón.",
+        "a": "El jugador pasa el balón.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "action-pass"
+        },
+        "meaning": {
+          "ru": "Игрок передаёт мяч.",
+          "uk": "Гравець передає м’яч.",
+          "en": "The player passes the ball."
+        },
+        "accepted": [
+          "el",
+          "el balón",
+          "Pasa el balón."
+        ]
+      },
+      {
+        "id": "fa1-f1",
+        "p": "El portero para una balón.",
+        "a": "El portero para un balón.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "action-save"
+        },
+        "meaning": {
+          "ru": "Вратарь останавливает мяч.",
+          "uk": "Воротар зупиняє м’яч.",
+          "en": "The goalkeeper stops the ball."
+        },
+        "accepted": [
+          "un",
+          "un balón",
+          "Para un balón."
+        ]
+      }
+    ]
+  },
+  "X": {
+    "ru": {
+      "goal": "Ворота",
+      "drag": "Перетащи слово в ворота. На телефоне: нажми слово, затем ворота.",
+      "dropdown": "Или выбери из списка",
+      "choose": "— выбери —",
+      "selected": "В воротах",
+      "your": "Твой вариант",
+      "literal": "Буквально, с сохранением ошибки",
+      "right": "Правильное предложение",
+      "meaning": "Перевод",
+      "contrast": "¿Qué hace? — Что делает? Запоминаем четыре готовые фразы об одном игроке: pasa el balón, chuta, marca un gol, para el balón.",
+      "explain": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. El balón, но un gol.",
+      "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
+    },
+    "uk": {
+      "goal": "Ворота",
+      "drag": "Перетягни слово у ворота. На телефоні: натисни слово, потім ворота.",
+      "dropdown": "Або обери зі списку",
+      "choose": "— обери —",
+      "selected": "У воротах",
+      "your": "Твій варіант",
+      "literal": "Буквально, зі збереженням помилки",
+      "right": "Правильне речення",
+      "meaning": "Переклад",
+      "contrast": "¿Qué hace? — Що робить? Запам’ятовуємо чотири готові фрази про одного гравця: pasa el balón, chuta, marca un gol, para el balón.",
+      "explain": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. El balón, але un gol.",
+      "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
+    },
+    "en": {
+      "goal": "Goal",
+      "drag": "Drag a word into the goal. On a phone: tap a word, then the goal.",
+      "dropdown": "Or choose from the list",
+      "choose": "— choose —",
+      "selected": "In the goal",
+      "your": "Your answer",
+      "literal": "Literal meaning, retaining the error where possible",
+      "right": "Correct sentence",
+      "meaning": "Translation",
+      "contrast": "¿Qué hace? — What does he/she do? Learn four ready-made phrases about one player: pasa el balón, chuta, marca un gol, para el balón.",
+      "explain": "Chuta means shoots; marca un gol means scores. No conjugation table yet. El balón, but un gol.",
+      "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
+    }
+  },
+  "A": {
+    "ru": {
+      "listen": "Прослушать ещё раз",
+      "missing": "Испанский голос недоступен в этом браузере.",
+      "failed": "Не удалось воспроизвести. Нажмите «Прослушать ещё раз»."
+    },
+    "uk": {
+      "listen": "Прослухати ще раз",
+      "missing": "Іспанський голос недоступний у цьому браузері.",
+      "failed": "Не вдалося відтворити. Натисніть «Прослухати ще раз»."
+    },
+    "en": {
+      "listen": "Listen again",
+      "missing": "A Spanish voice is unavailable in this browser.",
+      "failed": "Playback failed. Press “Listen again”."
+    }
+  },
+  "subjects": {},
+  "adjectiveData": {},
+  "colors": [],
+  "ownPrompts": [
+    "El jugador …",
+    "El portero …",
+    "El jugador de rojo …"
+  ],
+  "photos": {},
+  "vocabVisuals": [
+    {
+      "illustration": "action-pass"
+    },
+    {
+      "illustration": "action-shoot"
+    },
+    {
+      "illustration": "action-score"
+    },
+    {
+      "illustration": "action-save"
+    }
+  ],
+  "vocabIds": [
+    "action-pass",
+    "action-shoot",
+    "action-score",
+    "action-save"
+  ],
+  "completion": {
+    "ru": {
+      "title": "Урок завершён! Ты — чемпион!",
+      "text": "Ты выучил новые слова и использовал их в своих фразах. Отличная работа!"
+    },
+    "uk": {
+      "title": "Урок завершено! Ти — чемпіон!",
+      "text": "Ти вивчив нові слова й використав їх у власних фразах. Чудова робота!"
+    },
+    "en": {
+      "title": "Lesson complete! You are a champion!",
+      "text": "You practised new words and used them in your own sentences. Great work!"
+    }
+  },
+  "layout": "visual",
+  "startWords": [
+    "pasa el balón",
+    "chuta",
+    "marca un gol",
+    "para el balón"
+  ],
+  "scenes": {},
+  "ruleExamples": [
+    "El jugador pasa el balón.",
+    "El jugador chuta.",
+    "El jugador marca un gol.",
+    "El portero para el balón."
+  ],
+  "illustrations": {
+    "action-pass": {
+      "file": "action-pass.webp",
+      "alt": {
+        "ru": "передаёт мяч",
+        "uk": "передає м’яч",
+        "en": "passes the ball"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-03"
+    },
+    "action-shoot": {
+      "file": "action-shoot.webp",
+      "alt": {
+        "ru": "бьёт по мячу",
+        "uk": "б’є по м’ячу",
+        "en": "shoots"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-03"
+    },
+    "action-score": {
+      "file": "action-score.webp",
+      "alt": {
+        "ru": "забивает гол",
+        "uk": "забиває гол",
+        "en": "scores a goal"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-03"
+    },
+    "action-save": {
+      "file": "action-save.webp",
+      "alt": {
+        "ru": "останавливает мяч",
+        "uk": "зупиняє м’яч",
+        "en": "stops the ball"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-03"
+    }
+  }
+}
