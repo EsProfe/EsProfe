@@ -296,8 +296,8 @@ test('goalkeeper identity accepts role, name and full sentences; hay stays in a 
  }
 });
 
-test('short lessons four and five grade every supported response and keep independent completion',async()=>{
- for(const lessonId of ['football-training-a1','football-stadium-a1']){
+test('short lessons four through seven grade every supported response and keep independent completion',async()=>{
+ for(const lessonId of ['football-training-a1','football-stadium-a1','football-actions-a1','football-feelings-a1']){
   const meta=require('../clase/lesson-catalog.js').get(lessonId),data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase',meta.file)));
   for(const [stage,items] of Object.entries(data.groups))for(const [index,item] of items.entries())for(const answer of [item.a,...(item.accepted||[])]){
    const state={...completedState(),stage:Number(stage),modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:item.type==='choice'?{[item.id]:answer}:{},tokens:item.type==='build'?{[item.id]:item.o.map((_,i)=>i)}:{}};
@@ -313,5 +313,11 @@ test('new lessons reject wrong agreement and provide a localized World Cup quest
  }
  for(const lang of ['ru','uk','en']){
   const state={...completedState(),lang,stage:5,modelSeen:true,positions:{3:0,4:0,5:0,6:0},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,'football-stadium-a1');const d=require('../clase/football-stadium.json');assert(s.root.innerHTML.includes(d.groups[5][0].pByLanguage[lang]));
+ }
+});
+
+test('actions and feelings reject a different action or incorrect agreement',async()=>{
+ for(const [lessonId,stage,index,answer] of [['football-actions-a1',5,0,'Para el balón.'],['football-actions-a1',6,0,'la'],['football-feelings-a1',5,0,'contenta'],['football-feelings-a1',5,1,'cansado'],['football-feelings-a1',6,1,'está']]){
+ const state={...completedState(),stage,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,lessonId);s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,lessonId+': '+answer);
  }
 });

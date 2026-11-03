@@ -1,0 +1,47 @@
+{
+  "mode": "Built-in imagegen",
+  "date": "2026-11-03",
+  "preparation": "Resized to at most 720×720 and compressed to WebP quality 86; no creative editing.",
+  "assets": [
+    {
+      "id": "action-pass",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. Two full-body football players. The main player in red kit gently passes a football along the ground sideways toward a teammate in blue kit several metres away. Main player's inside foot follows through low. Small subtle curved motion trail connects ball and teammate. No goal anywhere. This is a pass, not a shot.",
+      "file": "clase/images/action-pass.webp"
+    },
+    {
+      "id": "action-shoot",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. One full-body player in red kit powerfully kicks a football toward a distant EMPTY goal. Dynamic shooting follow-through, ball airborne midway toward goal and clearly OUTSIDE net, no goalkeeper, no goal celebration. Emphasize the kick, not a scored goal.",
+      "file": "clase/images/action-shoot.webp"
+    },
+    {
+      "id": "action-score",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. A clearly scored goal: football settled INSIDE the goal net, visibly behind the goal line; fictional player in red kit beside goal celebrates with both arms raised. No second ball, no keeper, no kicking pose. Happy decisive celebration.",
+      "file": "clase/images/action-score.webp"
+    },
+    {
+      "id": "action-save",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. One fictional goalkeeper wearing yellow jersey, dark shorts and gloves kneels in front of goal and firmly holds a football safely in both gloves at chest height. Ball securely caught, calm focused smile, no other players, no second ball. Successful save.",
+      "file": "clase/images/action-save.webp"
+    },
+    {
+      "id": "mood-happy",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. Waist-up portrait of one fictional male footballer in red shirt, short brown hair, broad joyful smile and raised celebratory fists. Clearly happy/contented, looking at viewer. Pale blue plain background, no ball, no other objects.",
+      "file": "clase/images/mood-happy.webp"
+    },
+    {
+      "id": "mood-sad",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. Waist-up portrait of one fictional male footballer in red shirt, short brown hair, unmistakably sad downturned mouth, lowered eyebrows and drooping shoulders, looking down. Sad, not exhausted or anxious. Pale blue plain background, no props.",
+      "file": "clase/images/mood-sad.webp"
+    },
+    {
+      "id": "mood-tired",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. Waist-up portrait of one fictional FEMALE goalkeeper with brown ponytail wearing yellow goalkeeper jersey and gloves, visibly exhausted after exercise, half-closed eyes, slumped posture, wiping sweat from forehead with one glove. Tired, not crying/sad. Pale blue plain background, no props.",
+      "file": "clase/images/mood-tired.webp"
+    },
+    {
+      "id": "mood-nervous",
+      "prompt": "Use case: illustration-story. Asset: square vocabulary illustration for EsProfe beginner Spanish football lessons for a young student. Polished friendly 3D animation-film illustration, clear anatomy, appealing proportions, bright blue/red/yellow palette, pale sky blue backdrop and simple green turf where relevant, soft lighting, high readability at small size. Fictional players, no celebrity likeness, no logos, no letters, no captions, no watermark. One unmistakable teaching concept. Waist-up portrait of one fictional FEMALE goalkeeper with brown ponytail wearing yellow goalkeeper jersey and gloves, visibly nervous before a match, wide worried eyes and raised tense shoulders, gloved hands clasped near chest, small anxious smile. Nervous, not sad or tired. Pale blue plain background, no props.",
+      "file": "clase/images/mood-nervous.webp"
+    }
+  ]
+}
