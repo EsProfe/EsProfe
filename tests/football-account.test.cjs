@@ -297,7 +297,7 @@ test('goalkeeper identity accepts role, name and full sentences; hay stays in a 
 });
 
 test('short lessons four through seven grade every supported response and keep independent completion',async()=>{
- for(const lessonId of ['football-training-a1','football-stadium-a1','football-actions-a1','football-feelings-a1']){
+ for(const lessonId of ['football-training-a1','football-stadium-a1','football-actions-a1','football-feelings-a1','football-numbers-a1']){
   const meta=require('../clase/lesson-catalog.js').get(lessonId),data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase',meta.file)));
   for(const [stage,items] of Object.entries(data.groups))for(const [index,item] of items.entries())for(const answer of [item.a,...(item.accepted||[])]){
    const state={...completedState(),stage:Number(stage),modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:item.type==='choice'?{[item.id]:answer}:{},tokens:item.type==='build'?{[item.id]:item.o.map((_,i)=>i)}:{}};
@@ -327,4 +327,10 @@ test('all teacher speech replaces slash separators with pauses and preserves les
  const source=lessonSource.slice(lessonSource.indexOf('function speakSpanish('),lessonSource.indexOf('function feedback('));
  vm.runInNewContext("let audioStatus='',audioRequest=0;"+source,ctx);
  for(const [written,heard] of [['el balón / la pelota','el balón. la pelota'],['contento/contenta','contento. contenta'],['el jugador ／ la jugadora','el jugador. la jugadora'],['un/una','un. una'],['Messi y Modrich están en el campo.','Messi y Modrich están en el campo.']]){ctx.written=written;vm.runInNewContext('speakSpanish(written)',ctx);assert.equal(spoken.at(-1),heard);assert.equal(ctx.written,written);assert(!spoken.at(-1).includes('/'));}
+});
+
+test('shirt number questions reject a different number and singular tener rejects tienen',async()=>{
+ for(const [stage,index,answer] of [[5,0,'11'],[5,1,'10'],[6,0,'diez'],[4,0,'tienen']]){
+ const state={...completedState(),stage,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:{},tokens:{}};if(stage===4)state.drafts={'fn1-m0':answer};const s=await lessonSetup(state,'football-numbers-a1');if(stage!==4)s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,answer);
+ }
 });

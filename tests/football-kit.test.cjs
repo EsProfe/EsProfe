@@ -2,8 +2,8 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const catalog=require('../clase/lesson-catalog.js');
 test('teaching catalog keeps old links and isolates each lesson, file and storage key',()=>{
  assert.equal(catalog.current().id,'football-adjectives-a1');
- assert.equal(catalog.lessons.length,7);
- for(const field of ['id','file','key'])assert.equal(new Set(catalog.lessons.map(l=>l[field])).size,7);
+ assert.equal(catalog.lessons.length,8);
+ for(const field of ['id','file','key'])assert.equal(new Set(catalog.lessons.map(l=>l[field])).size,8);
  assert(catalog.href('football-kit-a1','uk').includes('lesson=football-kit-a1&lang=uk'));
  const ids=new Set();
  for(const lesson of catalog.lessons){const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase',lesson.file)));
