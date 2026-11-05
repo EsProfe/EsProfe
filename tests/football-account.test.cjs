@@ -321,3 +321,10 @@ test('actions and feelings reject a different action or incorrect agreement',asy
  const state={...completedState(),stage,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,lessonId);s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,lessonId+': '+answer);
  }
 });
+
+test('all teacher speech replaces slash separators with pauses and preserves lesson text',()=>{
+ const spoken=[],ctx={window:{speechSynthesis:{cancel(){},getVoices:()=>[{lang:'es-ES'}],speak:u=>spoken.push(u.text)}},SpeechSynthesisUtterance:function(text){this.text=text},setTimeout};
+ const source=lessonSource.slice(lessonSource.indexOf('function speakSpanish('),lessonSource.indexOf('function feedback('));
+ vm.runInNewContext("let audioStatus='',audioRequest=0;"+source,ctx);
+ for(const [written,heard] of [['el balón / la pelota','el balón. la pelota'],['contento/contenta','contento. contenta'],['el jugador ／ la jugadora','el jugador. la jugadora'],['un/una','un. una'],['Messi y Modrich están en el campo.','Messi y Modrich están en el campo.']]){ctx.written=written;vm.runInNewContext('speakSpanish(written)',ctx);assert.equal(spoken.at(-1),heard);assert.equal(ctx.written,written);assert(!spoken.at(-1).includes('/'));}
+});

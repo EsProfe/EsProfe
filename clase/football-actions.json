@@ -670,9 +670,9 @@
   ],
   "scenes": {},
   "ruleExamples": [
-    "El jugador pasa el balón.",
-    "El jugador chuta.",
-    "El jugador marca un gol.",
+    "El centrocampista pasa el balón.",
+    "El defensor chuta.",
+    "El delantero marca un gol.",
     "El portero para la pelota."
   ],
   "illustrations": {

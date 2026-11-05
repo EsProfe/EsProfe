@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261105-stadium6');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261105-positions');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
@@ -79,6 +79,7 @@ const gloss={es:['есть','є','is'],son:['есть','є','are'],un:['один
 }
 let audioStatus='',audioRequest=0;
 function speakSpanish(text){
+text=String(text??'').replace(/\s*[\/／⁄∕]+\s*/g,'. ').replace(/\s+/g,' ').trim();
 const request=++audioRequest;audioStatus='';
 if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined'){audioStatus=A[lang].missing;render();return}
 const synth=window.speechSynthesis;synth.cancel();
