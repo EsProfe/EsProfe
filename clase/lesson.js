@@ -2,7 +2,7 @@
 (async()=>{
 const root=document.getElementById('esprofe-football');
 const lesson=window.EsProfeLessonCatalog.current();
-const response=await fetch(lesson.file+'?v=20261105-pelota');if(!response.ok)throw new Error('Lesson data unavailable');
+const response=await fetch(lesson.file+'?v=20261105-stadium6');if(!response.ok)throw new Error('Lesson data unavailable');
 const data=await response.json();
 const {D,vocab,football,groups,X,A,subjects,adjectiveData}=data;
 document.title=(D[new URLSearchParams(window.location.search).get('lang')]||D.ru).title+' — EsProfe';
@@ -163,14 +163,14 @@ function legacyKitVocabulary(){return `<p>${t().words}</p><div class="vocab">${v
 function kitVocabulary(){
  if(!photoLesson)return legacyKitVocabulary();
  if(vocabularyPractice?.active)return vocabularyPractice.render();
- return `<section class="photo-vocabulary">${vocabularyPractice?.render()||''}<p class="vocabulary-intro">${t().words}</p><div class="kit-vocab-grid">${vocab.map((w,i)=>`<article class="word kit-word">${picture(data.vocabVisuals[i])}<button type="button" data-word="${i}" aria-label="${esc(w[0]+' — '+t().reveal)}"><b>${esc(w[0])}</b><span>${hiddenWords.has(i)?'…':esc(tr(w))}</span></button></article>`).join('')}</div><div class="vocab color-vocab" data-empty="${!data.colors?.length}">${(data.colors||[]).map(c=>`<div class="word"><span class="color-chip" style="background:${c.hex}"></span><b>${esc(c.word)}</b><span>${esc(c[lang])}</span></div>`).join('')}</div></section>`;
+ return `<section class="photo-vocabulary">${vocabularyPractice?.render()||''}<p class="vocabulary-intro">${t().words}</p><div class="kit-vocab-grid${data.vocabularyOverview?.fitAll?' fit-all':''}">${vocab.map((w,i)=>`<article class="word kit-word">${picture(data.vocabVisuals[i])}<button type="button" data-word="${i}" aria-label="${esc(w[0]+' — '+t().reveal)}"><b>${esc(w[0])}</b><span>${hiddenWords.has(i)?'…':esc(tr(w))}</span></button></article>`).join('')}</div><div class="vocab color-vocab" data-empty="${!data.colors?.length}">${(data.colors||[]).map(c=>`<div class="word"><span class="color-chip" style="background:${c.hex}"></span><b>${esc(c.word)}</b><span>${esc(c[lang])}</span></div>`).join('')}</div></section>`;
 }
-function fitVocabulary(inner,pager){
+function fitVocabulary(inner,pager,overview={}){
  inner.style.flex='1';pager.hidden=false;
  const section=inner.querySelector('.photo-vocabulary'),grid=section.querySelector('.kit-vocab-grid'),colors=section.querySelector('.color-vocab');
  const cards=[...grid.children],intro=section.querySelector('.vocabulary-intro');
  const height=section.clientHeight-intro.getBoundingClientRect().height-(section.querySelector('.vocab-modes')?.getBoundingClientRect().height||0)-16;
- const layout=window.EsProfeKitVisuals.vocabularyLayout(section.clientWidth,height,cards.length,colors?.dataset?.empty==='true'?0:1);
+ const layout=window.EsProfeKitVisuals.vocabularyLayout(section.clientWidth,height,cards.length,colors?.dataset?.empty==='true'?0:1,overview);
  screenPage=Math.min(screenPage,layout.pages-1);
  const hasColors=colors?.dataset?.empty!=='true',lastPage=screenPage===layout.pages-1,colourPage=hasColors&&lastPage;
  grid.hidden=colourPage;colors.hidden=!colourPage;
@@ -207,7 +207,7 @@ function fit(){
 const main=root.querySelector('main'),inner=main?.querySelector('.fit-content'),pager=main?.querySelector('.screen-pager');
 if(!inner||!pager)return;
 if(inner.querySelector('.vocabulary-practice')){inner.style.flex='1';pager.hidden=true;return;}
-if(photoLesson&&inner.querySelector('.photo-vocabulary')){fitVocabulary(inner,pager);return;}
+if(photoLesson&&inner.querySelector('.photo-vocabulary')){fitVocabulary(inner,pager,data.vocabularyOverview);return;}
 if(photoLesson&&inner.querySelector('.photo-task')){screenPage=0;pager.hidden=true;inner.style.flex='1';return;}
 const style=getComputedStyle(main);
 const fullHeight=main.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);

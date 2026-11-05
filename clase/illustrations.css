@@ -6,3 +6,5 @@
 #esprofe-football .vp-card .kit-photo.illustration .illustration-images img{height:100%}
 #esprofe-football .photo-task .kit-photo.illustration .illustration-images img{height:100%}
 @media(max-width:650px){#esprofe-football .illustration-images{gap:4px}}
+
+@media(max-width:650px){#esprofe-football .kit-vocab-grid.fit-all .kit-photo.illustration figcaption{display:none}}

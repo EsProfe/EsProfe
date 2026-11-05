@@ -33,7 +33,7 @@
       "wrong": "Пока неверно. Правильный ответ:",
       "why": "Проверь род, число и форму: es / son, está / están или hay.",
       "read": "Прочитай предложение вслух.",
-      "words": "Сначала рассмотри слово, перевод и картинку. Затем потренируйся с карточками или найди пары.",
+      "words": "Сначала рассмотри слово, перевод и картинку. Затем потренируйся с карточками или найди пары. Ещё повторим el balón / la pelota — мяч.",
       "rule": "Es / son описывают предмет. Está / están показывают, где он находится. Hay сообщает, что есть. Новых форм глаголов нет.",
       "one": "Один",
       "many": "Несколько",
@@ -117,7 +117,7 @@
       "wrong": "Поки неправильно. Правильна відповідь:",
       "why": "Перевір рід, число та форму: es / son, está / están або hay.",
       "read": "Прочитай речення вголос.",
-      "words": "Спочатку розглянь слово, переклад і малюнок. Потім потренуйся з картками або знайди пари.",
+      "words": "Спочатку розглянь слово, переклад і малюнок. Потім потренуйся з картками або знайди пари. Також повторимо el balón / la pelota — м’яч.",
       "rule": "Es / son описують предмет. Está / están показують, де він перебуває. Hay повідомляє, що є. Нових форм дієслів немає.",
       "one": "Один",
       "many": "Кілька",
@@ -201,7 +201,7 @@
       "wrong": "Not quite. The correct answer is:",
       "why": "Check gender, number and the verb form: es / son, está / están or hay.",
       "read": "Read the sentence aloud.",
-      "words": "First explore each word, translation and picture. Then practise with flashcards or match pairs.",
+      "words": "First explore each word, translation and picture. Then practise with flashcards or match pairs. Also review el balón / la pelota — ball.",
       "rule": "Es / son describe an object. Está / están locate it. Hay says what is there. No new verb forms.",
       "one": "One",
       "many": "More than one",
@@ -285,6 +285,12 @@
       "чемпіонат світу",
       "World Cup tournament",
       "чемпионат мира"
+    ],
+    [
+      "el balón / la pelota",
+      "м’яч",
+      "ball",
+      "мяч"
     ]
   ],
   "football": [
@@ -317,6 +323,12 @@
       "чемпіонат світу",
       "World Cup tournament",
       "чемпионат мира"
+    ],
+    [
+      "el balón / la pelota",
+      "м’яч",
+      "ball",
+      "мяч"
     ]
   ],
   "groups": {
@@ -655,6 +667,9 @@
     },
     {
       "illustration": "stadium-worldcup"
+    },
+    {
+      "illustration": "stadium-ball"
     }
   ],
   "vocabIds": [
@@ -662,7 +677,8 @@
     "stadium-seat",
     "stadium-scoreboard",
     "stadium-trophy",
-    "stadium-worldcup"
+    "stadium-worldcup",
+    "stadium-ball"
   ],
   "completion": {
     "ru": {
@@ -737,6 +753,21 @@
         "en": "Global football tournament symbol"
       },
       "source": "Generated for EsProfe with imagegen, 2026-11-02"
+    },
+    "stadium-ball": {
+      "file": "training-ball.webp",
+      "alt": {
+        "ru": "мяч",
+        "uk": "м’яч",
+        "en": "ball"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-02"
     }
+  },
+  "reviewVocabIds": [
+    "stadium-ball"
+  ],
+  "vocabularyOverview": {
+    "fitAll": true
   }
 }
