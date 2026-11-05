@@ -44,7 +44,7 @@
       "match": "Выбери форму: один предмет, несколько или «есть».",
       "newintro": "Ответь по картинке, затем собери одно предложение из слов.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
-      "note": "Если предметов несколько, используй son или están; hay не меняется.",
+      "note": "El balón = la pelota — мяч. Balón — мужского рода, pelota — женского: el balón es rojo; la pelota es roja.",
       "selectType": "Выбери форму",
       "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
       "write": "Ответь коротко или полным предложением.",
@@ -127,7 +127,7 @@
       "match": "Обери форму: один предмет, кілька чи «є».",
       "newintro": "Дай відповідь за малюнком, потім склади одне речення зі слів.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
-      "note": "Якщо предметів кілька, використовуй son або están; hay не змінюється.",
+      "note": "El balón = la pelota — м’яч. Balón — чоловічого роду, pelota — жіночого: el balón es rojo; la pelota es roja.",
       "selectType": "Обери форму",
       "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
       "write": "Дай коротку відповідь або повне речення.",
@@ -210,7 +210,7 @@
       "match": "Choose a form: one object, more than one, or there is / are.",
       "newintro": "Answer using the picture, then build one sentence from tokens.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
-      "note": "For more than one object use son or están; hay stays the same.",
+      "note": "El balón = la pelota — ball. Balón is masculine; pelota is feminine: el balón es rojo; la pelota es roja.",
       "selectType": "Choose the form",
       "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
       "write": "Use a short answer or a full sentence.",
@@ -254,7 +254,7 @@
   },
   "vocab": [
     [
-      "el balón",
+      "el balón / la pelota",
       "м’яч",
       "ball",
       "мяч"
@@ -280,7 +280,7 @@
   ],
   "football": [
     [
-      "el balón",
+      "el balón / la pelota",
       "м’яч",
       "ball",
       "мяч"
@@ -520,7 +520,8 @@
         },
         "accepted": [
           "rojo",
-          "Es rojo."
+          "Es rojo.",
+          "La pelota es roja."
         ]
       },
       {
@@ -651,14 +652,14 @@
   },
   "layout": "visual",
   "startWords": [
-    "balón",
+    "balón / pelota",
     "cono",
     "silbato",
     "botella"
   ],
   "scenes": {},
   "ruleExamples": [
-    "El balón es rojo.",
+    "La pelota es roja.",
     "Las botellas están en el campo.",
     "En el campo hay un cono."
   ],

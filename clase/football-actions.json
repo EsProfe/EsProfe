@@ -44,7 +44,7 @@
       "match": "Дополни короткую фразу по картинке.",
       "newintro": "Ответь о действии и о человеке. Затем собери фразу.",
       "formula": "¿Qué hace? · ¿Quién…?",
-      "note": "Chuta — бьёт по мячу; marca un gol — уже забивает гол. Таблицу спряжения пока не учим. Balón и gol — мужского рода: el balón, un gol.",
+      "note": "El balón = la pelota — мяч. Balón — мужского рода, pelota — женского: el balón es rojo; la pelota es roja. Chuta — бьёт по мячу; marca un gol — забивает гол.",
       "selectType": "Выбери форму",
       "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
       "write": "Ответь коротко или полным предложением.",
@@ -127,7 +127,7 @@
       "match": "Доповни коротку фразу за малюнком.",
       "newintro": "Дай відповідь про дію та людину. Потім склади фразу.",
       "formula": "¿Qué hace? · ¿Quién…?",
-      "note": "Chuta — б’є по м’ячу; marca un gol — уже забиває гол. Таблицю дієвідмінювання поки не вчимо. Balón і gol — чоловічого роду: el balón, un gol.",
+      "note": "El balón = la pelota — м’яч. Balón — чоловічого роду, pelota — жіночого: el balón es rojo; la pelota es roja. Chuta — б’є по м’ячу; marca un gol — забиває гол.",
       "selectType": "Обери форму",
       "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
       "write": "Дай коротку відповідь або повне речення.",
@@ -210,7 +210,7 @@
       "match": "Complete the short sentence using the picture.",
       "newintro": "Answer about the action and the person. Then build a sentence.",
       "formula": "¿Qué hace? · ¿Quién…?",
-      "note": "Chuta means shoots; marca un gol means scores. No conjugation table yet. Balón and gol are masculine: el balón, un gol.",
+      "note": "El balón = la pelota — ball. Balón is masculine; pelota is feminine: el balón es rojo; la pelota es roja. Chuta means shoots; marca un gol means scores.",
       "selectType": "Choose the form",
       "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
       "write": "Use a short answer or a full sentence.",
@@ -254,7 +254,7 @@
   },
   "vocab": [
     [
-      "pasa el balón",
+      "pasa el balón / pasa la pelota",
       "передає м’яч",
       "passes the ball",
       "передаёт мяч"
@@ -272,7 +272,7 @@
       "забивает гол"
     ],
     [
-      "para el balón",
+      "para el balón / para la pelota",
       "зупиняє м’яч",
       "stops the ball",
       "останавливает мяч"
@@ -280,7 +280,7 @@
   ],
   "football": [
     [
-      "pasa el balón",
+      "pasa el balón / pasa la pelota",
       "передає м’яч",
       "passes the ball",
       "передаёт мяч"
@@ -298,7 +298,7 @@
       "забивает гол"
     ],
     [
-      "para el balón",
+      "para el balón / para la pelota",
       "зупиняє м’яч",
       "stops the ball",
       "останавливает мяч"
@@ -456,7 +456,10 @@
         "accepted": [
           "pasa",
           "El jugador pasa el balón.",
-          "El jugador de rojo pasa el balón."
+          "El jugador de rojo pasa el balón.",
+          "Pasa la pelota.",
+          "El jugador pasa la pelota.",
+          "El jugador de rojo pasa la pelota."
         ]
       },
       {
@@ -478,7 +481,8 @@
           "un portero",
           "Es el portero.",
           "Es un portero.",
-          "El portero para el balón."
+          "El portero para el balón.",
+          "El portero para la pelota."
         ]
       },
       {
@@ -521,7 +525,10 @@
         "accepted": [
           "el",
           "el balón",
-          "Pasa el balón."
+          "Pasa el balón.",
+          "la pelota",
+          "Pasa la pelota.",
+          "El jugador pasa la pelota."
         ]
       },
       {
@@ -541,7 +548,11 @@
         "accepted": [
           "un",
           "un balón",
-          "Para un balón."
+          "Para un balón.",
+          "una pelota",
+          "Para una pelota.",
+          "El portero para una pelota.",
+          "El portero para la pelota."
         ]
       }
     ]
@@ -662,7 +673,7 @@
     "El jugador pasa el balón.",
     "El jugador chuta.",
     "El jugador marca un gol.",
-    "El portero para el balón."
+    "El portero para la pelota."
   ],
   "illustrations": {
     "action-pass": {
