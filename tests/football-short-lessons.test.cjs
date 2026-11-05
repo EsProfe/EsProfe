@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const lessons=['football-training','football-stadium','football-actions','football-feelings'].map(name=>require('../clase/'+name+'.json'));
+const lessons=['football-training','football-stadium','football-actions','football-feelings','football-numbers'].map(name=>require('../clase/'+name+'.json'));
 test('short lessons cover their vocabulary with unique tasks and local optimized assets',()=>{
  const ids=new Set();for(const d of lessons){const qs=Object.values(d.groups).flat();assert.equal(qs.length,12);assert.equal(d.groups[4].length+d.groups[5].length,6);assert(d.vocab.length>=4&&d.vocab.length<=6);assert.equal(d.vocab.length,d.vocabVisuals.length);
   for(const q of qs){assert(!ids.has(q.id));ids.add(q.id);assert(d.illustrations[q.visual.illustration]);if(q.type==='choice')assert(q.o.includes(q.a));for(const lang of ['ru','uk','en'])assert(q.meaning[lang]);}

@@ -1,0 +1,22 @@
+{
+  "mode": "Built-in imagegen",
+  "date": "2026-11-05",
+  "preparation": "Resized to 720×720 and compressed to WebP quality 86; shirt digits visually checked.",
+  "assets": [
+    {
+      "id": "number-nine",
+      "prompt": "Use case: illustration-story. Asset: square teaching picture for beginner Spanish football lesson EsProfe. A polished friendly 3D animated-film style fictional young footballer, full body facing camera, arms relaxed at sides away from chest, wearing clean football shirt, shorts, socks and boots. Large clear shirt number centered on front at chest/stomach, unobstructed. Simple green turf and pale sky blue background, soft daylight, attractive red-blue-yellow palette, anatomically coherent. No ball, no other people, no props, no logos, no watermark, no letters or other numbers. The sole visible text must be the specified shirt number in large bold plain digits. This is an invented player, no celebrity likeness. Red shirt and red shorts with gold trim; ONLY the number \"9\" in white on front of shirt.",
+      "file": "clase/images/number-nine.webp"
+    },
+    {
+      "id": "number-ten",
+      "prompt": "Use case: illustration-story. Asset: square teaching picture for beginner Spanish football lesson EsProfe. A polished friendly 3D animated-film style fictional young footballer, full body facing camera, arms relaxed at sides away from chest, wearing clean football shirt, shorts, socks and boots. Large clear shirt number centered on front at chest/stomach, unobstructed. Simple green turf and pale sky blue background, soft daylight, attractive red-blue-yellow palette, anatomically coherent. No ball, no other people, no props, no logos, no watermark, no letters or other numbers. The sole visible text must be the specified shirt number in large bold plain digits. This is an invented player, no celebrity likeness. Blue shirt and blue shorts with gold trim; ONLY the number \"10\" in white on front of shirt.",
+      "file": "clase/images/number-ten.webp"
+    },
+    {
+      "id": "number-eleven",
+      "prompt": "Use case: illustration-story. Asset: square teaching picture for beginner Spanish football lesson EsProfe. A polished friendly 3D animated-film style fictional young footballer, full body facing camera, arms relaxed at sides away from chest, wearing clean football shirt, shorts, socks and boots. Large clear shirt number centered on front at chest/stomach, unobstructed. Simple green turf and pale sky blue background, soft daylight, attractive red-blue-yellow palette, anatomically coherent. No ball, no other people, no props, no logos, no watermark, no letters or other numbers. The sole visible text must be the specified shirt number in large bold plain digits. This is an invented player, no celebrity likeness. Yellow shirt and dark shorts; ONLY the number \"11\" in dark navy on front of shirt.",
+      "file": "clase/images/number-eleven.webp"
+    }
+  ]
+}

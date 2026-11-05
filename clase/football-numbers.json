@@ -1,0 +1,765 @@
+{
+  "lessonId": "football-numbers-a1",
+  "version": 1,
+  "D": {
+    "ru": {
+      "lang": "Язык",
+      "preview": "Уроки с преподавателем",
+      "names": [
+        "Начало",
+        "Слова с картинками",
+        "Вспоминаем модель",
+        "Разминка",
+        "Первый тайм",
+        "Второй тайм",
+        "Разбор ошибок",
+        "Ты — тренер!",
+        "Итоги матча"
+      ],
+      "title": "Футбол 8. Номер игрока",
+      "intro": "Номера 9, 10 и 11, знакомые цвета и один новый вопрос. Назови номер, собери фразу и забей до 6 голов!",
+      "goal": "Короткий урок · 3 числа и готовая фраза · 10–15 минут практики",
+      "start": "Начать урок",
+      "next": "Далее",
+      "back": "Назад",
+      "check": "Проверить",
+      "continue": "Следующее задание",
+      "ready": "Готово — дальше",
+      "task": "Задание",
+      "of": "из",
+      "goals": "Голы",
+      "pick": "Выбери ответ.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Пока неверно. Правильный ответ:",
+      "why": "Проверь номер на футболке. Об одном человеке говорим tiene.",
+      "read": "Прочитай предложение вслух.",
+      "words": "Посмотри на номер на футболке. Затем потренируйся с карточками и парами.",
+      "rule": "¿Qué número tiene? — Какой у него/неё номер? Tiene el número… — У него/неё номер… Учим эту фразу целиком об одном человеке.",
+      "one": "Один",
+      "many": "Несколько",
+      "masc": "Мужской род",
+      "fem": "Женский род",
+      "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
+      "warm": "Выбери подходящую фразу по картинке.",
+      "match": "Выбери tiene, номер или правильный цвет.",
+      "newintro": "Ответь на вопрос о номере. Затем собери одно предложение.",
+      "formula": "¿Qué número tiene…? — Tiene el número…",
+      "note": "В учебном составе: нападающий — 9, полузащитник — 10, защитник — 11. 9 = nueve; 10 = diez; 11 = once. В свободном ответе подходят цифра, слово или полная фраза.",
+      "selectType": "Выбери форму",
+      "build": "Собери предложение: нажимай слова по порядку. Чтобы убрать слово, нажми его в ответе.",
+      "write": "Ответь коротко или полным предложением.",
+      "fix": "Исправь фразу по картинке. Можно написать исправленное слово, номер или предложение.",
+      "answer": "Твой ответ",
+      "own": "Напиши три фразы о нападающем, полузащитнике и защитнике. Используй номера или знакомые цвета.",
+      "ownnote": "Эти ответы проверяет преподаватель: автоматическая проверка свободных примеров не выполняется.",
+      "finish": "Завершить урок",
+      "result": "Матч завершён!",
+      "first": "Верно с первой попытки",
+      "attempts": "Проверено заданий",
+      "review": "Повторить ошибки",
+      "allright": "Все проверенные задания выполнены правильно!",
+      "pending": "Не все задания пройдены. Можно вернуться к любому этапу.",
+      "home": "Домашнее задание",
+      "hw": "Назови номера 9, 10 и 11 без подсказки и задай вопрос ¿Qué número tiene?",
+      "saved": "Прогресс и ошибки сохраняются в этом браузере на этом устройстве.",
+      "repeat": "Повторение ошибок",
+      "reviewdone": "Ошибки разобраны!",
+      "empty": "Сначала введи ответ.",
+      "ownempty": "Напиши три предложения перед завершением.",
+      "viewown": "Твои предложения",
+      "reset": "Пройти заново",
+      "resetask": "Начать заново и очистить ответы?",
+      "reveal": "Перевод",
+      "scorehint": "Голы считаются за первый правильный ответ в блоке «Матч».",
+      "speech": "Скажи вслух",
+      "practice": "Практика",
+      "modelstart": "Перейти к упражнениям",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué número tiene el centrocampista? — Diez.",
+        "¿Qué número tiene el defensor? — Tiene el número once."
+      ],
+      "ownRule": "Три короткие фразы. Можно повторять знакомые слова."
+    },
+    "uk": {
+      "lang": "Мова",
+      "preview": "Уроки з викладачем",
+      "names": [
+        "Початок",
+        "Слова з малюнками",
+        "Згадуємо модель",
+        "Розминка",
+        "Перший тайм",
+        "Другий тайм",
+        "Розбір помилок",
+        "Ти — тренер!",
+        "Підсумки матчу"
+      ],
+      "title": "Футбол 8. Номер гравця",
+      "intro": "Номери 9, 10 і 11, знайомі кольори та одне нове запитання. Назви номер, склади фразу й забий до 6 голів!",
+      "goal": "Короткий урок · 3 числа й готова фраза · 10–15 хвилин практики",
+      "start": "Почати урок",
+      "next": "Далі",
+      "back": "Назад",
+      "check": "Перевірити",
+      "continue": "Наступне завдання",
+      "ready": "Готово — далі",
+      "task": "Завдання",
+      "of": "із",
+      "goals": "Голи",
+      "pick": "Обери відповідь.",
+      "correct": "Гол! Правильно.",
+      "wrong": "Поки неправильно. Правильна відповідь:",
+      "why": "Перевір номер на футболці. Про одну людину кажемо tiene.",
+      "read": "Прочитай речення вголос.",
+      "words": "Подивись на номер на футболці. Потім потренуйся з картками й парами.",
+      "rule": "¿Qué número tiene? — Який у нього/неї номер? Tiene el número… — У нього/неї номер… Вчимо цю фразу цілком про одну людину.",
+      "one": "Один",
+      "many": "Кілька",
+      "masc": "Чоловічий рід",
+      "fem": "Жіночий рід",
+      "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
+      "warm": "Обери відповідну фразу за малюнком.",
+      "match": "Обери tiene, номер або правильний колір.",
+      "newintro": "Дай відповідь на запитання про номер. Потім склади одне речення.",
+      "formula": "¿Qué número tiene…? — Tiene el número…",
+      "note": "У навчальному складі: нападник — 9, півзахисник — 10, захисник — 11. 9 = nueve; 10 = diez; 11 = once. У вільній відповіді підходять цифра, слово або повна фраза.",
+      "selectType": "Обери форму",
+      "build": "Склади речення: натискай слова по порядку. Щоб прибрати слово, натисни його у відповіді.",
+      "write": "Дай коротку відповідь або повне речення.",
+      "fix": "Виправ фразу за малюнком. Можна написати виправлене слово, номер або речення.",
+      "answer": "Твоя відповідь",
+      "own": "Напиши три фрази про нападника, півзахисника й захисника. Використовуй номери або знайомі кольори.",
+      "ownnote": "Ці відповіді перевіряє викладач: автоматичної перевірки власних прикладів немає.",
+      "finish": "Завершити урок",
+      "result": "Матч завершено!",
+      "first": "Правильно з першої спроби",
+      "attempts": "Перевірено завдань",
+      "review": "Повторити помилки",
+      "allright": "Усі перевірені завдання виконано правильно!",
+      "pending": "Пройдено не всі завдання. Можна повернутися до будь-якого етапу.",
+      "home": "Домашнє завдання",
+      "hw": "Назви номери 9, 10 і 11 без підказки та постав запитання ¿Qué número tiene?",
+      "saved": "Прогрес і помилки зберігаються в цьому браузері на цьому пристрої.",
+      "repeat": "Повторення помилок",
+      "reviewdone": "Помилки опрацьовано!",
+      "empty": "Спочатку введи відповідь.",
+      "ownempty": "Напиши три речення перед завершенням.",
+      "viewown": "Твої речення",
+      "reset": "Пройти ще раз",
+      "resetask": "Почати знову та очистити відповіді?",
+      "reveal": "Переклад",
+      "scorehint": "Голи нараховуються за першу правильну відповідь у блоці «Матч».",
+      "speech": "Скажи вголос",
+      "practice": "Практика",
+      "modelstart": "Перейти до вправ",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué número tiene el centrocampista? — Diez.",
+        "¿Qué número tiene el defensor? — Tiene el número once."
+      ],
+      "ownRule": "Три короткі фрази. Знайомі слова можна повторювати."
+    },
+    "en": {
+      "lang": "Language",
+      "preview": "Teacher-led lessons",
+      "names": [
+        "Kick-off",
+        "Picture vocabulary",
+        "Review the pattern",
+        "Warm-up",
+        "First half",
+        "Second half",
+        "Review mistakes",
+        "You are the coach!",
+        "Match results"
+      ],
+      "title": "Football 8. Shirt numbers",
+      "intro": "Numbers 9, 10 and 11, familiar colours and one new question. Name the number, build a sentence and score up to 6 goals!",
+      "goal": "Short lesson · 3 numbers and a ready-made phrase · 10–15 minutes of practice",
+      "start": "Start lesson",
+      "next": "Next",
+      "back": "Back",
+      "check": "Check answer",
+      "continue": "Next question",
+      "ready": "Ready — continue",
+      "task": "Question",
+      "of": "of",
+      "goals": "Goals",
+      "pick": "Choose an answer.",
+      "correct": "Goal! Correct.",
+      "wrong": "Not quite. The correct answer is:",
+      "why": "Check the shirt number. Use tiene for one person.",
+      "read": "Read the sentence aloud.",
+      "words": "Look at the shirt number. Then practise with flashcards and pairs.",
+      "rule": "¿Qué número tiene? — What number does he/she have? Tiene el número… — He/she has number… Learn this phrase as a whole for one person.",
+      "one": "One",
+      "many": "More than one",
+      "masc": "Masculine",
+      "fem": "Feminine",
+      "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
+      "warm": "Choose the phrase that matches the picture.",
+      "match": "Choose tiene, the number or the correct colour.",
+      "newintro": "Answer the question about the number. Then build one sentence.",
+      "formula": "¿Qué número tiene…? — Tiene el número…",
+      "note": "In this fictional line-up: forward — 9, midfielder — 10, defender — 11. 9 = nueve; 10 = diez; 11 = once. Free answers may use digits, a word or a full sentence.",
+      "selectType": "Choose the form",
+      "build": "Build the sentence: click the words in order. Click a word in your answer to remove it.",
+      "write": "Use a short answer or a full sentence.",
+      "fix": "Correct the sentence using the picture. You may write the corrected word, number or sentence.",
+      "answer": "Your answer",
+      "own": "Write three sentences about the forward, midfielder and defender. Use numbers or familiar colours.",
+      "ownnote": "Your teacher checks these answers. Original sentences are not graded automatically.",
+      "finish": "Finish lesson",
+      "result": "Full time!",
+      "first": "Correct on the first try",
+      "attempts": "Questions checked",
+      "review": "Practise mistakes",
+      "allright": "All checked questions were answered correctly!",
+      "pending": "Some questions are still unfinished. You can return to any stage.",
+      "home": "Homework",
+      "hw": "Recall numbers 9, 10 and 11 without hints and ask ¿Qué número tiene?",
+      "saved": "Progress and mistakes are saved in this browser on this device.",
+      "repeat": "Mistake practice",
+      "reviewdone": "Mistake practice complete!",
+      "empty": "Enter an answer first.",
+      "ownempty": "Write three sentences before finishing.",
+      "viewown": "Your sentences",
+      "reset": "Start again",
+      "resetask": "Restart and clear all answers?",
+      "reveal": "Translation",
+      "scorehint": "Goals count first-attempt correct answers in the Match section.",
+      "speech": "Say it aloud",
+      "practice": "Practice",
+      "modelstart": "Start the exercises",
+      "newmeaning": [
+        "",
+        "",
+        ""
+      ],
+      "modelQuestions": [
+        "¿Qué número tiene el centrocampista? — Diez.",
+        "¿Qué número tiene el defensor? — Tiene el número once."
+      ],
+      "ownRule": "Three short sentences. You may reuse familiar words."
+    }
+  },
+  "vocab": [
+    [
+      "el número",
+      "номер",
+      "number",
+      "номер"
+    ],
+    [
+      "nueve",
+      "дев’ять",
+      "nine",
+      "девять"
+    ],
+    [
+      "diez",
+      "десять",
+      "ten",
+      "десять"
+    ],
+    [
+      "once",
+      "одинадцять",
+      "eleven",
+      "одиннадцать"
+    ],
+    [
+      "tiene el número…",
+      "у нього/неї номер…",
+      "has number…",
+      "у него/неё номер…"
+    ]
+  ],
+  "football": [
+    [
+      "el número",
+      "номер",
+      "number",
+      "номер"
+    ],
+    [
+      "nueve",
+      "дев’ять",
+      "nine",
+      "девять"
+    ],
+    [
+      "diez",
+      "десять",
+      "ten",
+      "десять"
+    ],
+    [
+      "once",
+      "одинадцять",
+      "eleven",
+      "одиннадцать"
+    ],
+    [
+      "tiene el número…",
+      "у нього/неї номер…",
+      "has number…",
+      "у него/неё номер…"
+    ]
+  ],
+  "groups": {
+    "3": [
+      {
+        "id": "fn1-w0",
+        "p": "¿Qué hay en la camiseta?",
+        "a": "Hay un número.",
+        "type": "choice",
+        "o": [
+          "Hay un número.",
+          "Hay un cono."
+        ],
+        "visual": {
+          "illustration": "number-label"
+        },
+        "meaning": {
+          "ru": "На футболке есть номер.",
+          "uk": "На футболці є номер.",
+          "en": "There is a number on the shirt."
+        }
+      },
+      {
+        "id": "fn1-w1",
+        "p": "¿Qué número tiene el delantero?",
+        "a": "Tiene el número nueve.",
+        "type": "choice",
+        "o": [
+          "Tiene el número nueve.",
+          "Tiene el número diez."
+        ],
+        "visual": {
+          "illustration": "number-nine"
+        },
+        "meaning": {
+          "ru": "У нападающего номер девять.",
+          "uk": "У нападника номер дев’ять.",
+          "en": "The forward has number nine."
+        }
+      },
+      {
+        "id": "fn1-w2",
+        "p": "¿Qué número tiene el centrocampista?",
+        "a": "Tiene el número diez.",
+        "type": "choice",
+        "o": [
+          "Tiene el número diez.",
+          "Tiene el número once."
+        ],
+        "visual": {
+          "illustration": "number-ten"
+        },
+        "meaning": {
+          "ru": "У полузащитника номер десять.",
+          "uk": "У півзахисника номер десять.",
+          "en": "The midfielder has number ten."
+        }
+      },
+      {
+        "id": "fn1-w3",
+        "p": "¿Qué número tiene el defensor?",
+        "a": "Tiene el número once.",
+        "type": "choice",
+        "o": [
+          "Tiene el número once.",
+          "Tiene el número nueve."
+        ],
+        "visual": {
+          "illustration": "number-eleven"
+        },
+        "meaning": {
+          "ru": "У защитника номер одиннадцать.",
+          "uk": "У захисника номер одинадцять.",
+          "en": "The defender has number eleven."
+        }
+      }
+    ],
+    "4": [
+      {
+        "id": "fn1-m0",
+        "p": "El centrocampista ___ el número diez. (tener)",
+        "a": "tiene",
+        "type": "choice",
+        "o": [
+          "tiene",
+          "tienen"
+        ],
+        "visual": {
+          "illustration": "number-has"
+        },
+        "meaning": {
+          "ru": "У полузащитника номер десять.",
+          "uk": "У півзахисника номер десять.",
+          "en": "The midfielder has number ten."
+        },
+        "sentence": "El centrocampista tiene el número diez."
+      },
+      {
+        "id": "fn1-m1",
+        "p": "El delantero tiene el número ___.",
+        "a": "nueve",
+        "type": "choice",
+        "o": [
+          "nueve",
+          "once"
+        ],
+        "visual": {
+          "illustration": "number-nine"
+        },
+        "meaning": {
+          "ru": "У нападающего номер девять.",
+          "uk": "У нападника номер дев’ять.",
+          "en": "The forward has number nine."
+        },
+        "sentence": "El delantero tiene el número nueve."
+      },
+      {
+        "id": "fn1-m2",
+        "p": "La camiseta del defensor es ___.",
+        "a": "amarilla",
+        "type": "choice",
+        "o": [
+          "amarillo",
+          "amarilla"
+        ],
+        "visual": {
+          "illustration": "number-eleven"
+        },
+        "meaning": {
+          "ru": "Футболка защитника жёлтая.",
+          "uk": "Футболка захисника жовта.",
+          "en": "The defender’s shirt is yellow."
+        },
+        "sentence": "La camiseta del defensor es amarilla."
+      }
+    ],
+    "5": [
+      {
+        "id": "fn1-q0",
+        "p": "¿Qué número tiene el centrocampista?",
+        "a": "Tiene el número diez.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "number-ten"
+        },
+        "meaning": {
+          "ru": "У полузащитника номер десять.",
+          "uk": "У півзахисника номер десять.",
+          "en": "The midfielder has number ten."
+        },
+        "accepted": [
+          "10",
+          "diez",
+          "el 10",
+          "el diez",
+          "el número diez",
+          "el número 10",
+          "Tiene el número 10.",
+          "Tiene el diez.",
+          "Es el número diez.",
+          "Es el diez.",
+          "El centrocampista tiene el número diez.",
+          "El centrocampista tiene el número 10.",
+          "El jugador tiene el número diez.",
+          "El jugador tiene el número 10."
+        ]
+      },
+      {
+        "id": "fn1-q1",
+        "p": "¿Qué número tiene el defensor?",
+        "a": "Tiene el número once.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "number-eleven"
+        },
+        "meaning": {
+          "ru": "У защитника номер одиннадцать.",
+          "uk": "У захисника номер одинадцять.",
+          "en": "The defender has number eleven."
+        },
+        "accepted": [
+          "11",
+          "once",
+          "el 11",
+          "el once",
+          "el número once",
+          "el número 11",
+          "Tiene el número 11.",
+          "Tiene el once.",
+          "Es el número once.",
+          "Es el once.",
+          "El defensor tiene el número once.",
+          "El defensor tiene el número 11.",
+          "El jugador tiene el número once.",
+          "El jugador tiene el número 11."
+        ]
+      },
+      {
+        "id": "fn1-b0",
+        "p": "El delantero → número nueve",
+        "a": "El delantero tiene el número nueve.",
+        "type": "build",
+        "o": [
+          "El",
+          "delantero",
+          "tiene",
+          "el",
+          "número",
+          "nueve."
+        ],
+        "visual": {
+          "illustration": "number-nine"
+        },
+        "meaning": {
+          "ru": "У нападающего номер девять.",
+          "uk": "У нападника номер дев’ять.",
+          "en": "The forward has number nine."
+        }
+      }
+    ],
+    "6": [
+      {
+        "id": "fn1-f0",
+        "p": "El delantero tiene el número diez.",
+        "a": "El delantero tiene el número nueve.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "number-nine"
+        },
+        "meaning": {
+          "ru": "У нападающего номер девять.",
+          "uk": "У нападника номер дев’ять.",
+          "en": "The forward has number nine."
+        },
+        "accepted": [
+          "9",
+          "nueve",
+          "el 9",
+          "el nueve",
+          "el número nueve",
+          "el número 9",
+          "Tiene el número 9.",
+          "Tiene el nueve.",
+          "Es el número nueve.",
+          "Es el nueve.",
+          "El delantero tiene el número nueve.",
+          "El delantero tiene el número 9.",
+          "El jugador tiene el número nueve.",
+          "El jugador tiene el número 9.",
+          "Tiene el número nueve."
+        ]
+      },
+      {
+        "id": "fn1-f1",
+        "p": "La camiseta del defensor es amarillo.",
+        "a": "La camiseta del defensor es amarilla.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "illustration": "number-eleven"
+        },
+        "meaning": {
+          "ru": "Футболка защитника жёлтая.",
+          "uk": "Футболка захисника жовта.",
+          "en": "The defender’s shirt is yellow."
+        },
+        "accepted": [
+          "amarilla",
+          "Es amarilla."
+        ]
+      }
+    ]
+  },
+  "X": {
+    "ru": {
+      "goal": "Ворота",
+      "drag": "Перетащи слово в ворота. На телефоне: нажми слово, затем ворота.",
+      "dropdown": "Или выбери из списка",
+      "choose": "— выбери —",
+      "selected": "В воротах",
+      "your": "Твой вариант",
+      "literal": "Буквально, с сохранением ошибки",
+      "right": "Правильное предложение",
+      "meaning": "Перевод",
+      "contrast": "¿Qué número tiene? — Какой у него/неё номер? Tiene el número… — У него/неё номер… Учим эту фразу целиком об одном человеке.",
+      "explain": "В учебном составе: нападающий — 9, полузащитник — 10, защитник — 11. 9 = nueve; 10 = diez; 11 = once. В свободном ответе подходят цифра, слово или полная фраза.",
+      "hint": "За правильную первую попытку в матче и упражнениях новой модели — 1 гол."
+    },
+    "uk": {
+      "goal": "Ворота",
+      "drag": "Перетягни слово у ворота. На телефоні: натисни слово, потім ворота.",
+      "dropdown": "Або обери зі списку",
+      "choose": "— обери —",
+      "selected": "У воротах",
+      "your": "Твій варіант",
+      "literal": "Буквально, зі збереженням помилки",
+      "right": "Правильне речення",
+      "meaning": "Переклад",
+      "contrast": "¿Qué número tiene? — Який у нього/неї номер? Tiene el número… — У нього/неї номер… Вчимо цю фразу цілком про одну людину.",
+      "explain": "У навчальному складі: нападник — 9, півзахисник — 10, захисник — 11. 9 = nueve; 10 = diez; 11 = once. У вільній відповіді підходять цифра, слово або повна фраза.",
+      "hint": "За правильну першу спробу в матчі та вправах нової моделі — 1 гол."
+    },
+    "en": {
+      "goal": "Goal",
+      "drag": "Drag a word into the goal. On a phone: tap a word, then the goal.",
+      "dropdown": "Or choose from the list",
+      "choose": "— choose —",
+      "selected": "In the goal",
+      "your": "Your answer",
+      "literal": "Literal meaning, retaining the error where possible",
+      "right": "Correct sentence",
+      "meaning": "Translation",
+      "contrast": "¿Qué número tiene? — What number does he/she have? Tiene el número… — He/she has number… Learn this phrase as a whole for one person.",
+      "explain": "In this fictional line-up: forward — 9, midfielder — 10, defender — 11. 9 = nueve; 10 = diez; 11 = once. Free answers may use digits, a word or a full sentence.",
+      "hint": "Score 1 goal for a correct first attempt in Match and New pattern exercises."
+    }
+  },
+  "A": {
+    "ru": {
+      "listen": "Прослушать ещё раз",
+      "missing": "Испанский голос недоступен в этом браузере.",
+      "failed": "Не удалось воспроизвести. Нажмите «Прослушать ещё раз»."
+    },
+    "uk": {
+      "listen": "Прослухати ще раз",
+      "missing": "Іспанський голос недоступний у цьому браузері.",
+      "failed": "Не вдалося відтворити. Натисніть «Прослухати ще раз»."
+    },
+    "en": {
+      "listen": "Listen again",
+      "missing": "A Spanish voice is unavailable in this browser.",
+      "failed": "Playback failed. Press “Listen again”."
+    }
+  },
+  "subjects": {},
+  "adjectiveData": {},
+  "colors": [],
+  "ownPrompts": [
+    "El delantero …",
+    "El centrocampista …",
+    "El defensor …"
+  ],
+  "photos": {},
+  "vocabVisuals": [
+    {
+      "illustration": "number-label"
+    },
+    {
+      "illustration": "number-nine"
+    },
+    {
+      "illustration": "number-ten"
+    },
+    {
+      "illustration": "number-eleven"
+    },
+    {
+      "illustration": "number-has"
+    }
+  ],
+  "vocabIds": [
+    "number-label",
+    "number-nine",
+    "number-ten",
+    "number-eleven",
+    "number-has"
+  ],
+  "completion": {
+    "ru": {
+      "title": "Урок завершён! Ты — чемпион!",
+      "text": "Ты выучил новые слова и использовал их в своих фразах. Отличная работа!"
+    },
+    "uk": {
+      "title": "Урок завершено! Ти — чемпіон!",
+      "text": "Ти вивчив нові слова й використав їх у власних фразах. Чудова робота!"
+    },
+    "en": {
+      "title": "Lesson complete! You are a champion!",
+      "text": "You practised new words and used them in your own sentences. Great work!"
+    }
+  },
+  "layout": "visual",
+  "startWords": [
+    "número",
+    "nueve",
+    "diez",
+    "once",
+    "tiene"
+  ],
+  "scenes": {},
+  "ruleExamples": [
+    "El delantero tiene el número nueve.",
+    "El centrocampista tiene el número diez.",
+    "El defensor tiene el número once."
+  ],
+  "illustrations": {
+    "number-label": {
+      "file": "number-nine.webp",
+      "alt": {
+        "ru": "Условный футболист в форме",
+        "uk": "Умовний футболіст у формі",
+        "en": "Fictional footballer in kit"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-05"
+    },
+    "number-nine": {
+      "file": "number-nine.webp",
+      "alt": {
+        "ru": "Условный футболист в форме",
+        "uk": "Умовний футболіст у формі",
+        "en": "Fictional footballer in kit"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-05"
+    },
+    "number-ten": {
+      "file": "number-ten.webp",
+      "alt": {
+        "ru": "Условный футболист в форме",
+        "uk": "Умовний футболіст у формі",
+        "en": "Fictional footballer in kit"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-05"
+    },
+    "number-eleven": {
+      "file": "number-eleven.webp",
+      "alt": {
+        "ru": "Условный футболист в форме",
+        "uk": "Умовний футболіст у формі",
+        "en": "Fictional footballer in kit"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-05"
+    },
+    "number-has": {
+      "file": "number-ten.webp",
+      "alt": {
+        "ru": "Условный футболист в форме",
+        "uk": "Умовний футболіст у формі",
+        "en": "Fictional footballer in kit"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-05"
+    }
+  },
+  "vocabularyOverview": {
+    "fitAll": true
+  }
+}
