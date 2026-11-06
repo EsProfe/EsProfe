@@ -17,7 +17,7 @@
         "Итоги матча"
       ],
       "title": "Футбол 5. На стадионе",
-      "intro": "Пять новых слов, знакомые вопросы и два коротких тайма. Назови предметы, составь фразы и забей до 6 голов!",
+      "intro": "Пять новых слов и немного повторения: вратарь, судья и команда. Назови предметы и людей, составь фразы и забей до 7 голов!",
       "goal": "Короткий урок · 5 новых слов · ориентир: 10–15 минут практики",
       "start": "Начать урок",
       "next": "Далее",
@@ -40,7 +40,7 @@
       "masc": "Мужской род",
       "fem": "Женский род",
       "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
-      "warm": "Назови предмет на картинке.",
+      "warm": "Выбери подходящую фразу по картинке.",
       "match": "Выбери форму: один предмет, несколько или «есть».",
       "newintro": "Ответь по картинке, затем собери одно предложение из слов.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
@@ -101,7 +101,7 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 5. На стадіоні",
-      "intro": "П’ять нових слів, знайомі питання та два короткі тайми. Назви предмети, склади фрази й забий до 6 голів!",
+      "intro": "П’ять нових слів і трохи повторення: воротар, арбітр і команда. Назви предмети й людей, склади фрази та забий до 7 голів!",
       "goal": "Короткий урок · 5 нових слів · орієнтир: 10–15 хвилин практики",
       "start": "Почати урок",
       "next": "Далі",
@@ -124,7 +124,7 @@
       "masc": "Чоловічий рід",
       "fem": "Жіночий рід",
       "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
-      "warm": "Назви предмет на малюнку.",
+      "warm": "Обери відповідну фразу за малюнком.",
       "match": "Обери форму: один предмет, кілька чи «є».",
       "newintro": "Дай відповідь за малюнком, потім склади одне речення зі слів.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
@@ -185,7 +185,7 @@
         "Match results"
       ],
       "title": "Football 5. At the stadium",
-      "intro": "Five new words, familiar questions and two short halves. Name the objects, build sentences and score up to 6 goals!",
+      "intro": "Five new words with a little review: goalkeeper, referee and team. Name objects and people, build sentences and score up to 7 goals!",
       "goal": "Short lesson · 5 new words · allow about 10–15 minutes of practice",
       "start": "Start lesson",
       "next": "Next",
@@ -208,7 +208,7 @@
       "masc": "Masculine",
       "fem": "Feminine",
       "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
-      "warm": "Name the object in the picture.",
+      "warm": "Choose the phrase that matches the picture.",
       "match": "Choose a form: one object, more than one, or there is / are.",
       "newintro": "Answer using the picture, then build one sentence from tokens.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
@@ -404,6 +404,24 @@
           "uk": "Це кубок.",
           "en": "It is a trophy."
         }
+      },
+      {
+        "id": "fs1-review-portero",
+        "p": "¿Quién es?",
+        "a": "Es un portero.",
+        "type": "choice",
+        "o": [
+          "Es un portero.",
+          "Es el árbitro."
+        ],
+        "visual": {
+          "illustration": "review-keeper"
+        },
+        "meaning": {
+          "ru": "Это вратарь.",
+          "uk": "Це воротар.",
+          "en": "He is a goalkeeper."
+        }
       }
     ],
     "4": [
@@ -538,6 +556,27 @@
           "uk": "Є кубок.",
           "en": "There is a trophy."
         }
+      },
+      {
+        "id": "fs1-review-equipo",
+        "p": "¿Qué es?",
+        "a": "Es un equipo.",
+        "type": "input",
+        "o": null,
+        "visual": {
+          "photo": "team"
+        },
+        "meaning": {
+          "ru": "Это команда.",
+          "uk": "Це команда.",
+          "en": "It is a team."
+        },
+        "accepted": [
+          "equipo",
+          "el equipo",
+          "un equipo",
+          "Es el equipo."
+        ]
       }
     ],
     "6": [
@@ -651,7 +690,14 @@
     "Las entradas …",
     "En el estadio hay …"
   ],
-  "photos": {},
+  "photos": {
+    "team": {
+      "label": "Brasil",
+      "author": "Granada",
+      "license": "by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Gruppenfoto_Brasilien_850_0016.jpg"
+    }
+  },
   "vocabVisuals": [
     {
       "illustration": "stadium-ticket"
@@ -762,6 +808,15 @@
         "en": "ball"
       },
       "source": "Generated for EsProfe with imagegen, 2026-11-02"
+    },
+    "review-keeper": {
+      "file": "action-save.webp",
+      "alt": {
+        "ru": "останавливает мяч",
+        "uk": "зупиняє м’яч",
+        "en": "stops the ball"
+      },
+      "source": "Generated for EsProfe with imagegen, 2026-11-03"
     }
   },
   "reviewVocabIds": [

@@ -304,7 +304,7 @@ test('short lessons four through seven grade every supported response and keep i
    const s=await lessonSetup(state,lessonId);const input=s.root.querySelector('#ep-answer');if(input)input.value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(JSON.parse(s.storage.get(s.key)).records[item.id].ok,true,item.id+': '+answer);
   }
   const state={...completedState(),records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
-  const s=await lessonSetup(state,lessonId);assert(s.key.startsWith(meta.key+':'));assert(s.root.innerHTML.includes('Ты — чемпион!'));assert(s.root.innerHTML.includes('6 / 6'));assert(s.root.innerHTML.includes('12 / 12'));
+  const s=await lessonSetup(state,lessonId);assert(s.key.startsWith(meta.key+':'));assert(s.root.innerHTML.includes('Ты — чемпион!'));const scoring=data.groups[4].length+data.groups[5].length,total=Object.values(data.groups).flat().length;assert(s.root.innerHTML.includes(scoring+' / '+scoring));assert(s.root.innerHTML.includes(total+' / '+total));
  }
 });
 test('new lessons reject wrong agreement and provide a localized World Cup question',async()=>{
