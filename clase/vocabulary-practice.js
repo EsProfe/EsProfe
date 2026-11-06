@@ -18,8 +18,8 @@ function rate(session,known){
  else if(!session.deferred.includes(id))session.deferred.push(id);
  return id;
 }
-function create({entries,storage,key,language,picture,thumbnail=()=>'',credits=()=>'',speak,change,overview,rule,rng=Math.random}){
- const byId=new Map(entries.map(e=>[e.id,e]));let saved={},mode='overview',direction='forward',sessions={},stats={},pair=null;
+function create({entries,storage,key,language,picture,speak,change,overview,rule,rng=Math.random}){
+ const byId=new Map(entries.map(e=>[e.id,e]));let saved={},mode='overview',direction='reverse',sessions={},stats={},pair=null;
  function fresh(dir=direction){const priority=id=>{const s=stats[id+':'+dir];return s?.needsReview?0:!s?1:2};return {queue:shuffle(entries.map(e=>e.id),rng).sort((a,b)=>priority(a)-priority(b)).slice(0,5),recalled:0,deferred:[],attempts:{},flipped:false}}
  function read(){
   saved={};try{saved=JSON.parse(storage.getItem(key())||'{}')||{}}catch(_){}
@@ -28,7 +28,7 @@ function create({entries,storage,key,language,picture,thumbnail=()=>'',credits=(
    const s=saved.version===1?saved.sessions?.[dir]:null;
    sessions[dir]=s&&Array.isArray(s.queue)&&Array.isArray(s.deferred)?{queue:s.queue.filter(id=>byId.has(id)),deferred:s.deferred.filter(id=>byId.has(id)),recalled:Number.isInteger(s.recalled)?s.recalled:0,attempts:s.attempts&&typeof s.attempts==='object'?s.attempts:{},flipped:false}:fresh(dir);
   }
-  pair=null;mode='overview';direction='forward';
+  pair=null;mode='overview';direction='reverse';
  }
  function persist(){try{storage.setItem(key(),JSON.stringify({version:1,sessions,stats}))}catch(_){} }
  function beginPairs(){pair={ids:shuffle(entries.map(e=>e.id),rng),at:0,matched:[],selected:null,message:''};pair.order=shuffle(pair.ids.slice(0,4),rng)}
@@ -49,11 +49,11 @@ function create({entries,storage,key,language,picture,thumbnail=()=>'',credits=(
    body=`<label class="vp-direction">${c.language} <select id="vp-direction"><option value="forward" ${direction==='forward'?'selected':''}>${c.forward}</option><option value="reverse" ${direction==='reverse'?'selected':''}>${c.reverse}</option></select></label>`;
    if(entry){
     const front=direction==='forward'?entry.word:entry[lang],back=direction==='forward'?entry[lang]:entry.word;
-    body+=`<p class="vp-instruction">${c.think}</p><div class="vp-card ${s.flipped?'is-flipped':''}">${picture(entry.visual,direction==='reverse'&&!s.flipped)}<button type="button" id="vp-flip" aria-expanded="${s.flipped}"><span class="vp-prompt" ${direction==='forward'?'lang="es"':''}>${esc(front)}</span><span class="vp-answer" ${direction==='reverse'?'lang="es"':''}>${s.flipped?esc(back):c.flip+' ↻'}</span></button></div><div class="vp-actions">${s.flipped?`<button type="button" id="vp-again">${c.again}</button><button type="button" id="vp-know" class="primary">${c.know}</button><button type="button" id="vp-listen">🔊 ${c.listen}</button>`:''}</div><p class="vp-status" role="status">${c.left}: ${s.queue.length}${s.deferred.length?' · '+c.again+': '+s.deferred.length:''}</p>`;
+    body+=`<p class="vp-instruction">${c.think}</p><div class="vp-card ${s.flipped?'is-flipped':''}">${direction==='reverse'&&!s.flipped?'':picture(entry.visual,false)}<button type="button" id="vp-flip" aria-expanded="${s.flipped}"><span class="vp-prompt" ${direction==='forward'?'lang="es"':''}>${esc(front)}</span><span class="vp-answer" ${direction==='reverse'?'lang="es"':''}>${s.flipped?esc(back):c.flip+' ↻'}</span></button></div><div class="vp-actions">${s.flipped?`<button type="button" id="vp-again">${c.again}</button><button type="button" id="vp-know" class="primary">${c.know}</button><button type="button" id="vp-listen">🔊 ${c.listen}</button>`:''}</div><p class="vp-status" role="status">${c.left}: ${s.queue.length}${s.deferred.length?' · '+c.again+': '+s.deferred.length:''}</p>`;
    }else body+=`<div class="vp-finished"><h2>${c.done}</h2><p>${c.doneNote}</p>${s.deferred.length?`<p>${c.again}: ${s.deferred.map(id=>esc(byId.get(id).word)).join(', ')}</p>`:''}<button type="button" id="vp-restart">${c.restart}</button></div>`;
   }else{
    const ids=pair.ids.slice(pair.at,pair.at+4),complete=ids.every(id=>pair.matched.includes(id));
-   body=`<p class="vp-instruction">${c.pairHint}</p><div class="vp-pairs"><div>${ids.map(id=>`<button type="button" lang="es" draggable="${!pair.matched.includes(id)}" data-vp-word="${id}" aria-pressed="${pair.selected===id}" ${pair.matched.includes(id)?'disabled':''}>${thumbnail(byId.get(id).visual)}<span>${pair.matched.includes(id)?'✓ ':''}${esc(byId.get(id).word)}</span></button>`).join('')}</div><div>${pair.order.map(id=>`<button type="button" data-vp-target="${id}" ${pair.matched.includes(id)?'disabled':''}>${pair.matched.includes(id)?'✓ ':''}${esc(byId.get(id)[lang])}</button>`).join('')}</div></div><p class="vp-status" role="status">${pair.message?c[pair.message]+' ':''}${c.matched}: ${pair.matched.length} / ${entries.length}</p>${credits()}${complete?(pair.at+4<entries.length?`<button type="button" id="vp-next-pairs" class="primary">${c.next} →</button>`:`<p>${c.done}</p>`):''}`;
+   body=`<p class="vp-instruction">${c.pairHint}</p><div class="vp-pairs"><div>${ids.map(id=>`<button type="button" lang="es" draggable="${!pair.matched.includes(id)}" data-vp-word="${id}" aria-pressed="${pair.selected===id}" ${pair.matched.includes(id)?'disabled':''}><span>${pair.matched.includes(id)?'✓ ':''}${esc(byId.get(id).word)}</span></button>`).join('')}</div><div>${pair.order.map(id=>`<button type="button" data-vp-target="${id}" ${pair.matched.includes(id)?'disabled':''}>${pair.matched.includes(id)?'✓ ':''}${esc(byId.get(id)[lang])}</button>`).join('')}</div></div><p class="vp-status" role="status">${pair.message?c[pair.message]+' ':''}${c.matched}: ${pair.matched.length} / ${entries.length}</p>${complete?(pair.at+4<entries.length?`<button type="button" id="vp-next-pairs" class="primary">${c.next} →</button>`:`<p>${c.done}</p>`):''}`;
   }
   return `<section class="vocabulary-practice">${toolbar(c)}<small>${c.self}</small><div class="vp-content">${body}</div><div class="vp-footer"><button type="button" id="vp-overview">← ${c.overview}</button><button type="button" id="vp-rule" class="primary">${c.rule}</button></div></section>`;
  }

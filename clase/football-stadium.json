@@ -487,6 +487,8 @@
     "5": [
       {
         "id": "fs1-q0",
+        "translation": true,
+        "instruction": {"ru": "Переведи на испанский.", "uk": "Переклади іспанською.", "en": "Translate into Spanish."},
         "p": "El campeonato del mundo de fútbol → …",
         "a": "Es el Mundial.",
         "type": "input",

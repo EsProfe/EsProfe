@@ -312,7 +312,7 @@ test('new lessons reject wrong agreement and provide a localized World Cup quest
   const state={...completedState(),stage:group,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[group]:index},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,lessonId);s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,answer);
  }
  for(const lang of ['ru','uk','en']){
-  const state={...completedState(),lang,stage:5,modelSeen:true,positions:{3:0,4:0,5:0,6:0},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,'football-stadium-a1');const d=require('../clase/football-stadium.json');assert(s.root.innerHTML.includes(d.groups[5][0].pByLanguage[lang]));
+  const state={...completedState(),lang,stage:5,modelSeen:true,positions:{3:0,4:0,5:0,6:0},records:{},drafts:{},tokens:{}};const s=await lessonSetup(state,'football-stadium-a1');const d=require('../clase/football-stadium.json');assert(s.root.innerHTML.includes(d.groups[5][0].pByLanguage[lang]));assert(s.root.innerHTML.includes(d.groups[5][0].instruction[lang]));assert(!s.root.innerHTML.match(/<section class="photo-task">([\s\S]*?)<\/section>/)?.[1].includes('<img'),'translation must not reveal the answer through an image');
  }
 });
 

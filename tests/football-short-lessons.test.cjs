@@ -23,3 +23,9 @@ test('stadium adds only two review questions while preserving the original asses
  assert.equal(d.groups[3].at(-1).a,'Es un portero.');assert.equal(d.groups[5].at(-1).a,'Es un equipo.');assert(d.groups[5].at(-1).accepted.includes('el equipo'));
  const photo=d.photos.team;assert(photo.author&&photo.source&&photo.license);assert(fs.existsSync(path.join(__dirname,'../clase/images/team.webp')));
 });
+
+test('World Cup translation uses a localized source prompt and hides its picture',()=>{
+ const q=lessons[1].groups[5].find(q=>q.id==='fs1-q0');assert.equal(q.translation,true);
+ assert(q.pByLanguage.uk.includes('чемпіонат світу з футболу'));for(const lang of ['ru','uk','en'])assert(q.pByLanguage[lang]);
+ const engine=fs.readFileSync(path.join(__dirname,'../clase/lesson.js'),'utf8');assert(engine.includes("item.translation?'':picture(item.visual)"));
+});
