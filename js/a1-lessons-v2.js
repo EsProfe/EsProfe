@@ -774,7 +774,7 @@
       `<article class="a1-question-words-table a1-question-words-${kind}"><h3>${esc(title)}</h3><div>${rows
         .map(([left, right]) => `<p><b>${esc(left)}</b><span>${esc(right)}</span></p>`)
         .join("")}</div></article>`;
-    return `<div class="a1-question-words-grid">${table(
+    return `<a class="grammar-primary a1-question-flashcards" href="question-trainer/questions.html?lang=${encodeURIComponent(lang())}" target="_blank" rel="noopener">${esc(t.flashcardsLink)}</a><div class="a1-question-words-grid">${table(
       t.rules?.[0]?.[0] || "",
       layout.words || [],
       "words",

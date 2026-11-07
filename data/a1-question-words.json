@@ -92,7 +92,8 @@
               "человек"
             ]
           ]
-        }
+        },
+        "flashcardsLink": "Карточки: вопросительные слова →"
       },
       "uk": {
         "title": "Питальні слова",
@@ -176,7 +177,8 @@
               "людина"
             ]
           ]
-        }
+        },
+        "flashcardsLink": "Картки: питальні слова →"
       },
       "en": {
         "title": "Question words",
@@ -260,7 +262,8 @@
               "person"
             ]
           ]
-        }
+        },
+        "flashcardsLink": "Question word flashcards →"
       },
       "es": {
         "title": "Palabras interrogativas",
@@ -344,7 +347,8 @@
               "persona"
             ]
           ]
-        }
+        },
+        "flashcardsLink": "Tarjetas: palabras interrogativas →"
       }
     },
     "examples": [
