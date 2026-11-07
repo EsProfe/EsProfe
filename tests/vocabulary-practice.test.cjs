@@ -16,15 +16,15 @@ test('failed cards return after three intervening cards and cannot create an end
  s.flipped=true;api.rate(s,false);assert(s.deferred.includes('a'));assert(!s.queue.includes('a'));
  s.flipped=true;api.rate(s,true);assert.equal(s.queue.length,0);
 });
-test('translation cards start with the source language, hide pictures and answers until flip, and preserve both queues',()=>{
- const s=setup();s.practice.setMode('cards');assert(s.html().includes('пример 0'));assert(!s.html().includes('el ejemplo 0'));assert(!s.html().includes('<figure'));assert(s.html().includes('Осталось: 5'));
- s.language('uk');assert(s.html().includes('приклад 0'));assert(!s.html().includes('пример 0'));assert(!s.html().includes('el ejemplo 0'));assert(!s.html().includes('<figure'));
+test('translation cards start with the source language, keep pictures but hide Spanish answers until flip, and preserve both queues',()=>{
+ const s=setup();s.practice.setMode('cards');assert(s.html().includes('пример 0'));assert(!s.html().includes('el ejemplo 0'));assert(s.html().includes('Neutral photo caption'));assert(s.html().includes('Осталось: 5'));
+ s.language('uk');assert(s.html().includes('приклад 0'));assert(!s.html().includes('пример 0'));assert(!s.html().includes('el ejemplo 0'));assert(s.html().includes('Neutral photo caption'));
  s.host.querySelector('#vp-flip').onclick();assert(s.html().includes('el ejemplo 0'));assert(s.html().includes('<figure'));s.host.querySelector('#vp-know').onclick();assert.equal(s.session().reverse.queue.length,4);
  s.host.querySelector('#vp-direction').onchange({target:{value:'forward'}});assert(s.html().includes('el ejemplo 0'));assert(!s.html().includes('приклад 0'));assert(s.html().includes('Photo'));
  s.host.querySelector('#vp-flip').onclick();assert(s.html().includes('приклад 0'));s.host.querySelector('#vp-again').onclick();assert.equal(s.session().forward.queue[3],'v0');
  s.switchUser('student');s.practice.setMode('cards');assert(s.html().includes('Залишилося: 5'));
  s.switchUser('guest');s.practice.setMode('cards');assert(s.html().includes('Залишилося: 4'));assert(s.html().includes('приклад 1'));assert(!s.html().includes('el ejemplo 1'));
- s.language('en');assert(s.html().includes('example 1'));assert(!s.html().includes('el ejemplo 1'));assert(!s.html().includes('<figure'));
+ s.language('en');assert(s.html().includes('example 1'));assert(!s.html().includes('el ejemplo 1'));assert(s.html().includes('Neutral photo caption'));
 });
 test('pairs support tap and drag, reject mismatches, and preserve selected and matched items',()=>{
  const s=setup();s.practice.setMode('pairs');assert(!s.html().includes('<img'));assert(!s.html().includes('<figure'));
