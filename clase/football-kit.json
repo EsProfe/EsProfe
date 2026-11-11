@@ -17,7 +17,7 @@
         "Итоги матча"
       ],
       "title": "Футбол 2. Форма команды",
-      "intro": "Рассмотри форму, назови предметы и опиши их цвет. В двух таймах забей до 11 голов! Работай спокойно: преподаватель поможет обсудить каждый ответ.",
+      "intro": "Рассмотри форму, назови предметы и опиши их цвет. В двух таймах забей до 12 голов! Работай спокойно: преподаватель поможет обсудить каждый ответ.",
       "goal": "Начальный уровень · 15–20 минут; с беседой и разбором — до 30–40 минут",
       "start": "Начать урок",
       "next": "Далее",
@@ -42,7 +42,7 @@
       "unchanged": "Rojo → roja → rojos → rojas; azul → azules; gris → grises; marrón → marrones. Verde не меняется по роду. Для rosa, naranja, violeta здесь используем единственное число.",
       "warm": "Посмотри на рисунок и выбери ответ.",
       "match": "Выбери правильную форму, затем прочитай предложение вслух.",
-      "newintro": "Ответь по рисунку: словом, коротким или полным предложением.",
+      "newintro": "Ответь на вопросы, собери фразы или переведи на испанский.",
       "formula": "¿De qué color es…? → Es… · ¿De qué color son…? → Son…",
       "note": "¿Cómo es…? — общий вопрос об описании. Здесь отвечаем о цвете. Форма на картинках условная: это учебные иллюстрации, а не каталог текущих комплектов сборных.",
       "selectType": "Выбери форму",
@@ -101,7 +101,7 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 2. Форма команди",
-      "intro": "Розглянь форму, назви предмети та опиши їхній колір. У двох таймах забий до 11 голів! Працюй спокійно: викладач допоможе обговорити кожну відповідь.",
+      "intro": "Розглянь форму, назви предмети та опиши їхній колір. У двох таймах забий до 12 голів! Працюй спокійно: викладач допоможе обговорити кожну відповідь.",
       "goal": "Початковий рівень · 15–20 хвилин; з бесідою та розбором — до 30–40 хвилин",
       "start": "Почати урок",
       "next": "Далі",
@@ -126,7 +126,7 @@
       "unchanged": "Rojo → roja → rojos → rojas; azul → azules; gris → grises; marrón → marrones. Verde не змінюється за родом. Для rosa, naranja, violeta тут використовуємо однину.",
       "warm": "Подивись на малюнок і вибери відповідь.",
       "match": "Обери правильну форму, потім прочитай речення вголос.",
-      "newintro": "Дай відповідь за фото: словом, коротким або повним реченням.",
+      "newintro": "Дай відповіді на запитання, склади фрази або переклади іспанською.",
       "formula": "¿De qué color es…? → Es… · ¿De qué color son…? → Son…",
       "note": "¿Cómo es…? — загальне питання про опис. Тут відповідаємо про колір. Форма на малюнках умовна: це навчальні ілюстрації, а не каталог актуальних комплектів збірних.",
       "selectType": "Обери форму",
@@ -185,7 +185,7 @@
         "Match results"
       ],
       "title": "Football 2. Team kit",
-      "intro": "Look at the kits, name the items and describe their colours. Score up to 11 goals across two halves! Take your time: your teacher will help you discuss each answer.",
+      "intro": "Look at the kits, name the items and describe their colours. Score up to 12 goals across two halves! Take your time: your teacher will help you discuss each answer.",
       "goal": "Beginner · 15–20 minutes; up to 30–40 minutes with discussion and review",
       "start": "Start lesson",
       "next": "Next",
@@ -210,7 +210,7 @@
       "unchanged": "Rojo → roja → rojos → rojas; azul → azules; gris → grises; marrón → marrones. Verde does not change with gender. Use rosa, naranja and violeta in the singular here.",
       "warm": "Look at the picture and choose the answer.",
       "match": "Choose the correct form, then read the sentence aloud.",
-      "newintro": "Answer from the picture: a word, a short sentence or a full sentence.",
+      "newintro": "Answer the questions, build sentences or translate into Spanish.",
       "formula": "¿De qué color es…? → Es… · ¿De qué color son…? → Son…",
       "note": "¿Cómo es…? asks for a description. Here, describe the colour. The kits are simplified teaching illustrations, not a catalogue of current national team kits.",
       "selectType": "Choose the form",
@@ -747,6 +747,32 @@
           "El equipo.",
           "Es el equipo."
         ]
+      },
+      {
+        "id": "k2-tr1",
+        "p": "Футболки жёлтые.",
+        "a": "Las camisetas son amarillas.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "Футболки жёлтые.",
+          "uk": "Футболки жовті.",
+          "en": "The shirts are yellow."
+        },
+        "accepted": [
+          "Las camisetas son de color amarillo."
+        ],
+        "translation": true,
+        "pByLanguage": {
+          "ru": "Футболки жёлтые.",
+          "uk": "Футболки жовті.",
+          "en": "The shirts are yellow."
+        },
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
+        }
       }
     ],
     "6": [

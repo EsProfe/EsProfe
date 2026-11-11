@@ -17,8 +17,8 @@
         "Итоги матча"
       ],
       "title": "Футбол 7. После матча",
-      "intro": "После матча игроки бывают довольными, грустными и уставшими. Четыре новых слова и знакомый estar — до 6 голов!",
-      "goal": "Короткий урок · 4 состояния · 10–15 минут практики",
+      "intro": "После матча игроки бывают довольными, грустными и уставшими. Четыре новых слова и знакомый estar — до 12 голов!",
+      "goal": "Короткий урок · 4 состояния · 15–20 минут практики",
       "start": "Начать урок",
       "next": "Далее",
       "back": "Назад",
@@ -42,7 +42,7 @@
       "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
       "warm": "Выбери состояние по выражению лица.",
       "match": "Выбери está / están или правильное окончание.",
-      "newintro": "Ответь, как чувствует себя игрок. Затем собери фразу.",
+      "newintro": "Ответь на вопросы, собери фразы или переведи на испанский.",
       "formula": "¿Cómo está…? · ¿Cómo están…?",
       "note": "El jugador está contento. La portera está contenta. Triste подходит для обоих родов; во множественном числе — tristes. Это состояние сейчас.",
       "selectType": "Выбери форму",
@@ -100,8 +100,8 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 7. Після матчу",
-      "intro": "Після матчу гравці бувають задоволеними, сумними й утомленими. Чотири нові слова та знайомий estar — до 6 голів!",
-      "goal": "Короткий урок · 4 стани · 10–15 хвилин практики",
+      "intro": "Після матчу гравці бувають задоволеними, сумними й утомленими. Чотири нові слова та знайомий estar — до 12 голів!",
+      "goal": "Короткий урок · 4 стани · 15–20 хвилин практики",
       "start": "Почати урок",
       "next": "Далі",
       "back": "Назад",
@@ -125,7 +125,7 @@
       "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
       "warm": "Обери стан за виразом обличчя.",
       "match": "Обери está / están або правильне закінчення.",
-      "newintro": "Скажи, як почувається гравець. Потім склади фразу.",
+      "newintro": "Дай відповіді на запитання, склади фрази або переклади іспанською.",
       "formula": "¿Cómo está…? · ¿Cómo están…?",
       "note": "El jugador está contento. La portera está contenta. Triste підходить для обох родів; у множині — tristes. Це стан зараз.",
       "selectType": "Обери форму",
@@ -183,8 +183,8 @@
         "Match results"
       ],
       "title": "Football 7. After the match",
-      "intro": "After a match, players can feel happy, sad or tired. Four new words with familiar estar — up to 6 goals!",
-      "goal": "Short lesson · 4 feelings · 10–15 minutes of practice",
+      "intro": "After a match, players can feel happy, sad or tired. Four new words with familiar estar — up to 12 goals!",
+      "goal": "Short lesson · 4 feelings · 15–20 minutes of practice",
       "start": "Start lesson",
       "next": "Next",
       "back": "Back",
@@ -208,7 +208,7 @@
       "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
       "warm": "Choose the feeling shown by the face.",
       "match": "Choose está / están or the correct ending.",
-      "newintro": "Say how the player feels. Then build a sentence.",
+      "newintro": "Answer the questions, build sentences or translate into Spanish.",
       "formula": "¿Cómo está…? · ¿Cómo están…?",
       "note": "El jugador está contento. La portera está contenta. Triste works for both genders; its plural is tristes. These are current states.",
       "selectType": "Choose the form",
@@ -437,6 +437,76 @@
           "en": "The goalkeeper is nervous."
         },
         "sentence": "La portera está nerviosa."
+      },
+      {
+        "id": "fm1-m3",
+        "p": "Los jugadores están ___.",
+        "a": "tristes",
+        "type": "choice",
+        "o": [
+          "tristes",
+          "triste"
+        ],
+        "meaning": {
+          "ru": "Игроки грустят.",
+          "uk": "Гравці сумні.",
+          "en": "The players are sad."
+        },
+        "sentence": "Los jugadores están tristes.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "mood-sad",
+          "repeat": 2
+        }
+      },
+      {
+        "id": "fm1-m4",
+        "p": "Las porteras ___ cansadas. (estar)",
+        "a": "están",
+        "type": "choice",
+        "o": [
+          "están",
+          "está"
+        ],
+        "meaning": {
+          "ru": "Вратари устали.",
+          "uk": "Воротарки втомилися.",
+          "en": "The female goalkeepers are tired."
+        },
+        "sentence": "Las porteras están cansadas.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        }
+      },
+      {
+        "id": "fm1-m5",
+        "p": "El jugador está ___.",
+        "a": "contento",
+        "type": "choice",
+        "o": [
+          "contento",
+          "contentos"
+        ],
+        "meaning": {
+          "ru": "Игрок доволен.",
+          "uk": "Гравець задоволений.",
+          "en": "The player is happy."
+        },
+        "sentence": "El jugador está contento.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "mood-happy"
+        }
       }
     ],
     "5": [
@@ -504,6 +574,69 @@
           "ru": "Игроки грустят.",
           "uk": "Гравці сумні.",
           "en": "The players are sad."
+        }
+      },
+      {
+        "id": "fm1-q2",
+        "p": "¿Cómo está la portera?",
+        "a": "Está nerviosa.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "Она нервничает.",
+          "uk": "Вона нервує.",
+          "en": "She is nervous."
+        },
+        "accepted": [
+          "nerviosa",
+          "La portera está nerviosa.",
+          "Ella está nerviosa."
+        ],
+        "visual": {
+          "illustration": "mood-nervous"
+        }
+      },
+      {
+        "id": "fm1-b1",
+        "p": "Las porteras → cansadas",
+        "a": "Las porteras están cansadas.",
+        "type": "build",
+        "o": [
+          "Las",
+          "porteras",
+          "están",
+          "cansadas."
+        ],
+        "meaning": {
+          "ru": "Вратари устали.",
+          "uk": "Воротарки втомилися.",
+          "en": "The female goalkeepers are tired."
+        }
+      },
+      {
+        "id": "fm1-tr1",
+        "p": "Игроки довольны.",
+        "a": "Los jugadores están contentos.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "Игроки довольны.",
+          "uk": "Гравці задоволені.",
+          "en": "The players are happy."
+        },
+        "accepted": [
+          "Los jugadores están felices."
+        ],
+        "translation": true,
+        "pByLanguage": {
+          "ru": "Игроки довольны.",
+          "uk": "Гравці задоволені.",
+          "en": "The players are happy."
+        },
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
         }
       }
     ],

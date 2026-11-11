@@ -17,8 +17,8 @@
         "Итоги матча"
       ],
       "title": "Футбол 5. На стадионе",
-      "intro": "Пять новых слов и немного повторения: вратарь, судья и команда. Назови предметы и людей, составь фразы и забей до 7 голов!",
-      "goal": "Короткий урок · 5 новых слов · ориентир: 10–15 минут практики",
+      "intro": "Пять новых слов и немного повторения: вратарь, судья и команда. Назови предметы и людей, составь фразы и забей до 12 голов!",
+      "goal": "Короткий урок · 5 новых слов · ориентир: 15–20 минут практики",
       "start": "Начать урок",
       "next": "Далее",
       "back": "Назад",
@@ -42,7 +42,7 @@
       "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
       "warm": "Выбери подходящую фразу по картинке.",
       "match": "Выбери форму: один предмет, несколько или «есть».",
-      "newintro": "Ответь по картинке, затем собери одно предложение из слов.",
+      "newintro": "Ответь на вопросы, собери фразы или переведи на испанский.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
       "note": "El Mundial и la Copa del Mundo — названия чемпионата мира. La copa — сам кубок. Запоминаем выражение целиком.",
       "selectType": "Выбери форму",
@@ -101,8 +101,8 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 5. На стадіоні",
-      "intro": "П’ять нових слів і трохи повторення: воротар, арбітр і команда. Назви предмети й людей, склади фрази та забий до 7 голів!",
-      "goal": "Короткий урок · 5 нових слів · орієнтир: 10–15 хвилин практики",
+      "intro": "П’ять нових слів і трохи повторення: воротар, арбітр і команда. Назви предмети й людей, склади фрази та забий до 12 голів!",
+      "goal": "Короткий урок · 5 нових слів · орієнтир: 15–20 хвилин практики",
       "start": "Почати урок",
       "next": "Далі",
       "back": "Назад",
@@ -126,7 +126,7 @@
       "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
       "warm": "Обери відповідну фразу за малюнком.",
       "match": "Обери форму: один предмет, кілька чи «є».",
-      "newintro": "Дай відповідь за малюнком, потім склади одне речення зі слів.",
+      "newintro": "Дай відповіді на запитання, склади фрази або переклади іспанською.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
       "note": "El Mundial і la Copa del Mundo — назви чемпіонату світу. La copa — сам кубок. Запам’ятовуємо вираз цілком.",
       "selectType": "Обери форму",
@@ -185,8 +185,8 @@
         "Match results"
       ],
       "title": "Football 5. At the stadium",
-      "intro": "Five new words with a little review: goalkeeper, referee and team. Name objects and people, build sentences and score up to 7 goals!",
-      "goal": "Short lesson · 5 new words · allow about 10–15 minutes of practice",
+      "intro": "Five new words with a little review: goalkeeper, referee and team. Name objects and people, build sentences and score up to 12 goals!",
+      "goal": "Short lesson · 5 new words · allow about 15–20 minutes of practice",
       "start": "Start lesson",
       "next": "Next",
       "back": "Back",
@@ -210,7 +210,7 @@
       "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
       "warm": "Choose the phrase that matches the picture.",
       "match": "Choose a form: one object, more than one, or there is / are.",
-      "newintro": "Answer using the picture, then build one sentence from tokens.",
+      "newintro": "Answer the questions, build sentences or translate into Spanish.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
       "note": "El Mundial and la Copa del Mundo name the World Cup competition. La copa is the cup itself. Learn the expression as a whole.",
       "selectType": "Choose the form",
@@ -482,13 +482,88 @@
           "en": "There is a trophy at the stadium."
         },
         "sentence": "En el estadio hay una copa."
+      },
+      {
+        "id": "fs1-m3",
+        "p": "Los asientos son ___.",
+        "a": "azules",
+        "type": "choice",
+        "o": [
+          "azules",
+          "azul"
+        ],
+        "meaning": {
+          "ru": "Сиденья синие.",
+          "uk": "Сидіння сині.",
+          "en": "The seats are blue."
+        },
+        "sentence": "Los asientos son azules.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "stadium-seat",
+          "repeat": 2
+        }
+      },
+      {
+        "id": "fs1-m4",
+        "p": "El marcador ___ en el estadio. (estar)",
+        "a": "está",
+        "type": "choice",
+        "o": [
+          "está",
+          "están"
+        ],
+        "meaning": {
+          "ru": "Табло находится на стадионе.",
+          "uk": "Табло розташоване на стадіоні.",
+          "en": "The scoreboard is in the stadium."
+        },
+        "sentence": "El marcador está en el estadio.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        }
+      },
+      {
+        "id": "fs1-m5",
+        "p": "En el estadio hay dos ___.",
+        "a": "balones",
+        "type": "choice",
+        "o": [
+          "balones",
+          "balón"
+        ],
+        "meaning": {
+          "ru": "На стадионе есть два мяча.",
+          "uk": "На стадіоні є два м’ячі.",
+          "en": "There are two balls in the stadium."
+        },
+        "sentence": "En el estadio hay dos balones.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "stadium-ball",
+          "repeat": 2
+        }
       }
     ],
     "5": [
       {
         "id": "fs1-q0",
         "translation": true,
-        "instruction": {"ru": "Переведи на испанский.", "uk": "Переклади іспанською.", "en": "Translate into Spanish."},
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
+        },
         "p": "El campeonato del mundo de fútbol → …",
         "a": "Es el Mundial.",
         "type": "input",
@@ -579,6 +654,53 @@
           "un equipo",
           "Es el equipo."
         ]
+      },
+      {
+        "id": "fs1-b1",
+        "p": "Las entradas → amarillas",
+        "a": "Las entradas son amarillas.",
+        "type": "build",
+        "o": [
+          "Las",
+          "entradas",
+          "son",
+          "amarillas."
+        ],
+        "meaning": {
+          "ru": "Билеты жёлтые.",
+          "uk": "Квитки жовті.",
+          "en": "The tickets are yellow."
+        },
+        "visual": {
+          "illustration": "stadium-ticket",
+          "repeat": 2
+        }
+      },
+      {
+        "id": "fs1-tr1",
+        "p": "На стадионе есть табло.",
+        "a": "En el estadio hay un marcador.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "На стадионе есть табло.",
+          "uk": "На стадіоні є табло.",
+          "en": "There is a scoreboard in the stadium."
+        },
+        "accepted": [
+          "Hay un marcador en el estadio."
+        ],
+        "translation": true,
+        "pByLanguage": {
+          "ru": "На стадионе есть табло.",
+          "uk": "На стадіоні є табло.",
+          "en": "There is a scoreboard in the stadium."
+        },
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
+        }
       }
     ],
     "6": [

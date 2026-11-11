@@ -17,8 +17,8 @@
         "Итоги матча"
       ],
       "title": "Футбол 4. На тренировке",
-      "intro": "Четыре новых слова, знакомые вопросы и два коротких тайма. Назови предметы, составь фразы и забей до 6 голов!",
-      "goal": "Короткий урок · 4 новых слова · ориентир: 10–15 минут практики",
+      "intro": "Четыре новых слова, знакомые вопросы и два коротких тайма. Назови предметы, составь фразы и забей до 12 голов!",
+      "goal": "Короткий урок · 4 новых слова · ориентир: 15–20 минут практики",
       "start": "Начать урок",
       "next": "Далее",
       "back": "Назад",
@@ -42,7 +42,7 @@
       "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
       "warm": "Назови предмет на картинке.",
       "match": "Выбери форму: один предмет, несколько или «есть».",
-      "newintro": "Ответь по картинке, затем собери одно предложение из слов.",
+      "newintro": "Ответь на вопросы, собери фразы или переведи на испанский.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
       "note": "El balón = la pelota — мяч. Balón — мужского рода, pelota — женского: el balón es rojo; la pelota es roja.",
       "selectType": "Выбери форму",
@@ -100,8 +100,8 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 4. На тренуванні",
-      "intro": "Чотири нові слова, знайомі питання та два короткі тайми. Назви предмети, склади фрази й забий до 6 голів!",
-      "goal": "Короткий урок · 4 нові слова · орієнтир: 10–15 хвилин практики",
+      "intro": "Чотири нові слова, знайомі питання та два короткі тайми. Назви предмети, склади фрази й забий до 12 голів!",
+      "goal": "Короткий урок · 4 нові слова · орієнтир: 15–20 хвилин практики",
       "start": "Почати урок",
       "next": "Далі",
       "back": "Назад",
@@ -125,7 +125,7 @@
       "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
       "warm": "Назви предмет на малюнку.",
       "match": "Обери форму: один предмет, кілька чи «є».",
-      "newintro": "Дай відповідь за малюнком, потім склади одне речення зі слів.",
+      "newintro": "Дай відповіді на запитання, склади фрази або переклади іспанською.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
       "note": "El balón = la pelota — м’яч. Balón — чоловічого роду, pelota — жіночого: el balón es rojo; la pelota es roja.",
       "selectType": "Обери форму",
@@ -183,8 +183,8 @@
         "Match results"
       ],
       "title": "Football 4. At training",
-      "intro": "Four new words, familiar questions and two short halves. Name the objects, build sentences and score up to 6 goals!",
-      "goal": "Short lesson · 4 new words · allow about 10–15 minutes of practice",
+      "intro": "Four new words, familiar questions and two short halves. Name the objects, build sentences and score up to 12 goals!",
+      "goal": "Short lesson · 4 new words · allow about 15–20 minutes of practice",
       "start": "Start lesson",
       "next": "Next",
       "back": "Back",
@@ -208,7 +208,7 @@
       "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
       "warm": "Name the object in the picture.",
       "match": "Choose a form: one object, more than one, or there is / are.",
-      "newintro": "Answer using the picture, then build one sentence from tokens.",
+      "newintro": "Answer the questions, build sentences or translate into Spanish.",
       "formula": "¿Qué es? · ¿Qué son? · ¿Cómo es…?",
       "note": "El balón = la pelota — ball. Balón is masculine; pelota is feminine: el balón es rojo; la pelota es roja.",
       "selectType": "Choose the form",
@@ -437,6 +437,77 @@
           "en": "There is a cone on the pitch."
         },
         "sentence": "En el campo hay un cono."
+      },
+      {
+        "id": "ft1-m3",
+        "p": "Los conos son ___.",
+        "a": "amarillos",
+        "type": "choice",
+        "o": [
+          "amarillos",
+          "amarillo"
+        ],
+        "meaning": {
+          "ru": "Конусы жёлтые.",
+          "uk": "Конуси жовті.",
+          "en": "The cones are yellow."
+        },
+        "sentence": "Los conos son amarillos.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "training-cone",
+          "repeat": 2
+        }
+      },
+      {
+        "id": "ft1-m4",
+        "p": "La botella ___ en el campo. (estar)",
+        "a": "está",
+        "type": "choice",
+        "o": [
+          "está",
+          "están"
+        ],
+        "meaning": {
+          "ru": "Бутылка на поле.",
+          "uk": "Пляшка на полі.",
+          "en": "The bottle is on the pitch."
+        },
+        "sentence": "La botella está en el campo.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        }
+      },
+      {
+        "id": "ft1-m5",
+        "p": "En el campo hay dos ___.",
+        "a": "balones",
+        "type": "choice",
+        "o": [
+          "balones",
+          "balón"
+        ],
+        "meaning": {
+          "ru": "На поле есть два мяча.",
+          "uk": "На полі є два м’ячі.",
+          "en": "There are two balls on the pitch."
+        },
+        "sentence": "En el campo hay dos balones.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "training-ball",
+          "repeat": 2
+        }
       }
     ],
     "5": [
@@ -500,6 +571,71 @@
           "ru": "Конусы жёлтые.",
           "uk": "Конуси жовті.",
           "en": "The cones are yellow."
+        }
+      },
+      {
+        "id": "ft1-q2",
+        "p": "¿Qué son?",
+        "a": "Son botellas.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "Это бутылки.",
+          "uk": "Це пляшки.",
+          "en": "They are bottles."
+        },
+        "accepted": [
+          "botellas",
+          "las botellas"
+        ],
+        "visual": {
+          "illustration": "training-bottle",
+          "repeat": 2
+        }
+      },
+      {
+        "id": "ft1-b1",
+        "p": "Las botellas → el campo",
+        "a": "Las botellas están en el campo.",
+        "type": "build",
+        "o": [
+          "Las",
+          "botellas",
+          "están",
+          "en",
+          "el",
+          "campo."
+        ],
+        "meaning": {
+          "ru": "Бутылки на поле.",
+          "uk": "Пляшки на полі.",
+          "en": "The bottles are on the pitch."
+        }
+      },
+      {
+        "id": "ft1-tr1",
+        "p": "На поле есть два конуса.",
+        "a": "Hay dos conos en el campo.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "На поле есть два конуса.",
+          "uk": "На полі є два конуси.",
+          "en": "There are two cones on the pitch."
+        },
+        "accepted": [
+          "En el campo hay dos conos."
+        ],
+        "translation": true,
+        "pByLanguage": {
+          "ru": "На поле есть два конуса.",
+          "uk": "На полі є два конуси.",
+          "en": "There are two cones on the pitch."
+        },
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
         }
       }
     ],

@@ -16,9 +16,9 @@ test('teaching catalog keeps old links and isolates each lesson, file and storag
 });
 test('kit lesson includes eleven familiar colours, kit and goalkeeper without estar',()=>{
  const data=require('../clase/football-kit.json');assert.equal(data.colors.length,11);
- assert.equal(Object.values(data.groups).flat().length,21);
+ assert.equal(Object.values(data.groups).flat().length,22);
  for(const q of Object.values(data.groups).flat()){
-  assert(q.visual);assert(data.photos[q.visual.photo]);assert(fs.existsSync(path.join(__dirname,'../clase/images',q.visual.photo+'.webp')));
+  if(q.translation)assert(!q.visual);else{assert(data.photos[q.visual.photo]);assert(fs.existsSync(path.join(__dirname,'../clase/images',q.visual.photo+'.webp')));}
   for(const lang of ['ru','uk','en'])assert(q.meaning[lang]);
   assert(!/\best[aá]n?\b/i.test(q.p+' '+q.a));
  }

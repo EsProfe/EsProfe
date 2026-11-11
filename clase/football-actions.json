@@ -17,8 +17,8 @@
         "Итоги матча"
       ],
       "title": "Футбол 6. Что делает игрок?",
-      "intro": "Четыре действия на поле. Смотри, отвечай и забивай до 6 голов!",
-      "goal": "Короткий урок · 4 новые фразы · 10–15 минут практики",
+      "intro": "Четыре действия на поле. Смотри, отвечай и забивай до 12 голов!",
+      "goal": "Короткий урок · 4 новые фразы · 15–20 минут практики",
       "start": "Начать урок",
       "next": "Далее",
       "back": "Назад",
@@ -34,7 +34,7 @@
       "why": "Проверь действие на картинке и артикль: el balón / un gol.",
       "read": "Прочитай предложение вслух.",
       "words": "Сначала рассмотри слово, перевод и картинку. Затем потренируйся с карточками или найди пары.",
-      "rule": "¿Qué hace? — Что делает? Запоминаем четыре готовые фразы об одном игроке: pasa el balón, chuta, marca un gol, para el balón.",
+      "rule": "¿Qué hace? — Что делает? Запоминаем четыре готовые фразы об одном игроке: pasa el balón, chuta, marca un gol, para el balón. Об одном игроке: pasa. О нескольких: pasan.",
       "one": "Один",
       "many": "Несколько",
       "masc": "Мужской род",
@@ -42,7 +42,7 @@
       "unchanged": "В ответе по картинке достаточно слова, короткой фразы или полного предложения. В сборке используй все слова.",
       "warm": "Выбери действие по картинке.",
       "match": "Дополни короткую фразу по картинке.",
-      "newintro": "Ответь о действии и о человеке. Затем собери фразу.",
+      "newintro": "Ответь на вопросы, собери фразы или переведи на испанский.",
       "formula": "¿Qué hace? · ¿Quién…?",
       "note": "El balón = la pelota — мяч. Balón — мужского рода, pelota — женского: el balón es rojo; la pelota es roja. Chuta — бьёт по мячу; marca un gol — забивает гол.",
       "selectType": "Выбери форму",
@@ -100,8 +100,8 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 6. Що робить гравець?",
-      "intro": "Чотири дії на полі. Дивись, відповідай і забивай до 6 голів!",
-      "goal": "Короткий урок · 4 нові фрази · 10–15 хвилин практики",
+      "intro": "Чотири дії на полі. Дивись, відповідай і забивай до 12 голів!",
+      "goal": "Короткий урок · 4 нові фрази · 15–20 хвилин практики",
       "start": "Почати урок",
       "next": "Далі",
       "back": "Назад",
@@ -117,7 +117,7 @@
       "why": "Перевір дію на малюнку й артикль: el balón / un gol.",
       "read": "Прочитай речення вголос.",
       "words": "Спочатку розглянь слово, переклад і малюнок. Потім потренуйся з картками або знайди пари.",
-      "rule": "¿Qué hace? — Що робить? Запам’ятовуємо чотири готові фрази про одного гравця: pasa el balón, chuta, marca un gol, para el balón.",
+      "rule": "¿Qué hace? — Що робить? Запам’ятовуємо чотири готові фрази про одного гравця: pasa el balón, chuta, marca un gol, para el balón. Про одного гравця: pasa. Про кількох: pasan.",
       "one": "Один",
       "many": "Кілька",
       "masc": "Чоловічий рід",
@@ -125,7 +125,7 @@
       "unchanged": "У відповіді за малюнком достатньо слова, короткої фрази або повного речення. У складанні використовуй усі слова.",
       "warm": "Обери дію за малюнком.",
       "match": "Доповни коротку фразу за малюнком.",
-      "newintro": "Дай відповідь про дію та людину. Потім склади фразу.",
+      "newintro": "Дай відповіді на запитання, склади фрази або переклади іспанською.",
       "formula": "¿Qué hace? · ¿Quién…?",
       "note": "El balón = la pelota — м’яч. Balón — чоловічого роду, pelota — жіночого: el balón es rojo; la pelota es roja. Chuta — б’є по м’ячу; marca un gol — забиває гол.",
       "selectType": "Обери форму",
@@ -183,8 +183,8 @@
         "Match results"
       ],
       "title": "Football 6. What does the player do?",
-      "intro": "Four actions on the pitch. Look, answer and score up to 6 goals!",
-      "goal": "Short lesson · 4 new phrases · 10–15 minutes of practice",
+      "intro": "Four actions on the pitch. Look, answer and score up to 12 goals!",
+      "goal": "Short lesson · 4 new phrases · 15–20 minutes of practice",
       "start": "Start lesson",
       "next": "Next",
       "back": "Back",
@@ -200,7 +200,7 @@
       "why": "Check the action and article: el balón / un gol.",
       "read": "Read the sentence aloud.",
       "words": "First explore each word, translation and picture. Then practise with flashcards or match pairs.",
-      "rule": "¿Qué hace? — What does he/she do? Learn four ready-made phrases about one player: pasa el balón, chuta, marca un gol, para el balón.",
+      "rule": "¿Qué hace? — What does he/she do? Learn four ready-made phrases about one player: pasa el balón, chuta, marca un gol, para el balón. Use pasa for one player and pasan for more than one.",
       "one": "One",
       "many": "More than one",
       "masc": "Masculine",
@@ -208,7 +208,7 @@
       "unchanged": "A word, a short phrase or a full sentence is fine for picture answers. Use every token in sentence building.",
       "warm": "Choose the action shown.",
       "match": "Complete the short sentence using the picture.",
-      "newintro": "Answer about the action and the person. Then build a sentence.",
+      "newintro": "Answer the questions, build sentences or translate into Spanish.",
       "formula": "¿Qué hace? · ¿Quién…?",
       "note": "El balón = la pelota — ball. Balón is masculine; pelota is feminine: el balón es rojo; la pelota es roja. Chuta means shoots; marca un gol means scores.",
       "selectType": "Choose the form",
@@ -436,6 +436,75 @@
           "en": "The player scores a goal."
         },
         "sentence": "El jugador marca un gol."
+      },
+      {
+        "id": "fa1-m3",
+        "p": "El jugador ___ hacia la portería. (chutar)",
+        "a": "chuta",
+        "type": "choice",
+        "o": [
+          "chuta",
+          "chutan"
+        ],
+        "meaning": {
+          "ru": "Игрок бьёт по воротам.",
+          "uk": "Гравець б’є по воротах.",
+          "en": "The player shoots towards goal."
+        },
+        "sentence": "El jugador chuta hacia la portería.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "action-shoot"
+        }
+      },
+      {
+        "id": "fa1-m4",
+        "p": "El portero para la ___.",
+        "a": "pelota",
+        "type": "choice",
+        "o": [
+          "pelota",
+          "pelotas"
+        ],
+        "meaning": {
+          "ru": "Вратарь останавливает мяч.",
+          "uk": "Воротар зупиняє м’яч.",
+          "en": "The goalkeeper stops the ball."
+        },
+        "sentence": "El portero para la pelota.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "illustration": "action-save"
+        }
+      },
+      {
+        "id": "fa1-m5",
+        "p": "Los jugadores ___ el balón. (pasar)",
+        "a": "pasan",
+        "type": "choice",
+        "o": [
+          "pasan",
+          "pasa"
+        ],
+        "meaning": {
+          "ru": "Игроки пасуют мяч.",
+          "uk": "Гравці пасують м’яч.",
+          "en": "The players pass the ball."
+        },
+        "sentence": "Los jugadores pasan el balón.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        }
       }
     ],
     "5": [
@@ -504,6 +573,75 @@
           "ru": "Игрок забивает гол.",
           "uk": "Гравець забиває гол.",
           "en": "The player scores a goal."
+        }
+      },
+      {
+        "id": "fa1-q2",
+        "p": "¿Qué hace el jugador?",
+        "a": "Chuta.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "Он бьёт по мячу.",
+          "uk": "Він б’є по м’ячу.",
+          "en": "He shoots."
+        },
+        "accepted": [
+          "El jugador chuta.",
+          "Chuta el balón.",
+          "Chuta la pelota.",
+          "Chuta a portería.",
+          "Chuta hacia la portería.",
+          "El jugador chuta el balón.",
+          "El jugador chuta la pelota."
+        ],
+        "visual": {
+          "illustration": "action-shoot"
+        }
+      },
+      {
+        "id": "fa1-b1",
+        "p": "Los jugadores → pasar → el balón",
+        "a": "Los jugadores pasan el balón.",
+        "type": "build",
+        "o": [
+          "Los",
+          "jugadores",
+          "pasan",
+          "el",
+          "balón."
+        ],
+        "meaning": {
+          "ru": "Игроки пасуют мяч.",
+          "uk": "Гравці пасують м’яч.",
+          "en": "The players pass the ball."
+        }
+      },
+      {
+        "id": "fa1-tr1",
+        "p": "Игрок пасует мяч.",
+        "a": "El jugador pasa el balón.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "Игрок пасует мяч.",
+          "uk": "Гравець пасує м’яч.",
+          "en": "The player passes the ball."
+        },
+        "accepted": [
+          "El jugador pasa la pelota.",
+          "El jugador da un pase."
+        ],
+        "translation": true,
+        "pByLanguage": {
+          "ru": "Игрок пасует мяч.",
+          "uk": "Гравець пасує м’яч.",
+          "en": "The player passes the ball."
+        },
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
         }
       }
     ],
@@ -673,7 +811,8 @@
     "El centrocampista pasa el balón.",
     "El defensor chuta.",
     "El delantero marca un gol.",
-    "El portero para la pelota."
+    "El portero para la pelota.",
+    "Los jugadores pasan el balón."
   ],
   "illustrations": {
     "action-pass": {

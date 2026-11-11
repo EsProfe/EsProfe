@@ -17,7 +17,7 @@
         "Итоги матча"
       ],
       "title": "Футбол 3. Где игроки?",
-      "intro": "Найди игроков на схеме, спроси, где они находятся, и расскажи, кто есть на поле. Два коротких тайма — до 9 голов!",
+      "intro": "Найди игроков на схеме, спроси, где они находятся, и расскажи, кто есть на поле. Два коротких тайма — до 12 голов!",
       "goal": "Начальный уровень · 15–20 минут практики; с разговором — до 30–40 минут",
       "start": "Начать урок",
       "next": "Далее",
@@ -42,7 +42,7 @@
       "unchanged": "Hay сообщает, кто или что есть. Está / están показывают, где находится уже названный человек или группа. Hay — форма глагола haber; здесь она не меняется.",
       "warm": "Повтори знакомые вопросы и назови новые места.",
       "match": "Выбери форму по схеме. Подсказка: один, несколько или «есть»?",
-      "newintro": "Теперь отвечай по схеме сам. Можно коротко или полным предложением; в сборке нужны все слова.",
+      "newintro": "Ответь на вопросы, собери фразы или переведи на испанский.",
       "formula": "¿Dónde está / están…? → Está / Están… · ¿Quién está…? · ¿Hay…? → Sí, hay…",
       "note": "Ответь по учебной схеме, а не по настоящему составу команды.",
       "selectType": "Выбери форму",
@@ -102,7 +102,7 @@
         "Підсумки матчу"
       ],
       "title": "Футбол 3. Де гравці?",
-      "intro": "Знайди гравців на схемі, запитай, де вони перебувають, і розкажи, хто є на полі. Два короткі тайми — до 9 голів!",
+      "intro": "Знайди гравців на схемі, запитай, де вони перебувають, і розкажи, хто є на полі. Два короткі тайми — до 12 голів!",
       "goal": "Початковий рівень · 15–20 хвилин практики; з розмовою — до 30–40 хвилин",
       "start": "Почати урок",
       "next": "Далі",
@@ -127,7 +127,7 @@
       "unchanged": "Hay повідомляє, хто або що є. Está / están показують, де перебуває вже названа людина чи група. Hay — форма дієслова haber; тут вона не змінюється.",
       "warm": "Повтори знайомі питання та назви нові місця.",
       "match": "Обери форму за схемою. Підказка: один, кілька чи «є»?",
-      "newintro": "Тепер відповідай за схемою сам. Можна коротко або повним реченням; у складанні потрібні всі слова.",
+      "newintro": "Дай відповіді на запитання, склади фрази або переклади іспанською.",
       "formula": "¿Dónde está / están…? → Está / Están… · ¿Quién está…? · ¿Hay…? → Sí, hay…",
       "note": "Відповідай за навчальною схемою, а не за справжнім складом команди.",
       "selectType": "Обери форму",
@@ -187,7 +187,7 @@
         "Match results"
       ],
       "title": "Football 3. Where are the players?",
-      "intro": "Find the players in the scene, ask where they are and say who is on the pitch. Two short halves — up to 9 goals!",
+      "intro": "Find the players in the scene, ask where they are and say who is on the pitch. Two short halves — up to 12 goals!",
       "goal": "Beginner · 15–20 minutes of practice; with conversation — up to 30–40 minutes",
       "start": "Start lesson",
       "next": "Next",
@@ -212,7 +212,7 @@
       "unchanged": "Hay introduces who or what is there. Está / están locate a person or group already identified. Hay is a form of haber; here it stays the same.",
       "warm": "Review familiar questions and name the new places.",
       "match": "Choose a form using the scene: one, more than one, or there is / are?",
-      "newintro": "Now answer using the scene. Short and full answers are welcome; use every token in the sentence-building task.",
+      "newintro": "Answer the questions, build sentences or translate into Spanish.",
       "formula": "¿Dónde está / están…? → Está / Están… · ¿Quién está…? · ¿Hay…? → Sí, hay…",
       "note": "Use the practice scene, rather than a real team line-up.",
       "selectType": "Choose the form",
@@ -506,6 +506,31 @@
           "en": "There are players on the bench."
         },
         "sentence": "En el banquillo hay jugadores."
+      },
+      {
+        "id": "fl1-m5",
+        "p": "En el campo ___ dos jugadores. (haber)",
+        "a": "hay",
+        "type": "choice",
+        "o": [
+          "hay",
+          "están"
+        ],
+        "meaning": {
+          "ru": "На поле есть два игрока.",
+          "uk": "На полі є два гравці.",
+          "en": "There are two players on the pitch."
+        },
+        "sentence": "En el campo hay dos jugadores.",
+        "instruction": {
+          "ru": "Выбери правильную форму.",
+          "uk": "Обери правильну форму.",
+          "en": "Choose the correct form."
+        },
+        "visual": {
+          "scene": "training",
+          "focus": "field"
+        }
       }
     ],
     "5": [
@@ -609,6 +634,56 @@
           "En la portería está el portero."
         ],
         "sentence": "El portero está en la portería."
+      },
+      {
+        "id": "fl1-b1",
+        "p": "Salah y Carvajal → el banquillo",
+        "a": "Salah y Carvajal están en el banquillo.",
+        "type": "build",
+        "o": [
+          "Salah",
+          "y",
+          "Carvajal",
+          "están",
+          "en",
+          "el",
+          "banquillo."
+        ],
+        "meaning": {
+          "ru": "Салах и Карвахаль на скамейке запасных.",
+          "uk": "Салах і Карвахаль на лаві запасних.",
+          "en": "Salah and Carvajal are on the bench."
+        },
+        "visual": {
+          "scene": "training",
+          "focus": "bench"
+        }
+      },
+      {
+        "id": "fl1-tr1",
+        "p": "В воротах есть вратарь.",
+        "a": "En la portería hay un portero.",
+        "type": "input",
+        "o": null,
+        "meaning": {
+          "ru": "В воротах есть вратарь.",
+          "uk": "У воротах є воротар.",
+          "en": "There is a goalkeeper in goal."
+        },
+        "accepted": [
+          "Hay un portero en la portería."
+        ],
+        "translation": true,
+        "pByLanguage": {
+          "ru": "В воротах есть вратарь.",
+          "uk": "У воротах є воротар.",
+          "en": "There is a goalkeeper in goal."
+        },
+        "instruction": {
+          "ru": "Переведи на испанский.",
+          "uk": "Переклади іспанською.",
+          "en": "Translate into Spanish."
+        }
       }
     ],
     "6": [

@@ -181,7 +181,7 @@ test('second lesson permits repeated colours in free examples and reports its ow
  const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-kit.json')));
  const state={...completedState(),own:['La camiseta es roja.','Los pantalones cortos son rojos.','Los guantes son rojos.'],records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
  const s=await lessonSetup(state,'football-kit-a1');assert.equal(s.root.querySelector('#ep-cloud-save').disabled,false);
- await s.root.querySelector('#ep-cloud-save').onclick();assert.equal(s.saved[0].total,21);
+ await s.root.querySelector('#ep-cloud-save').onclick();assert.equal(s.saved[0].total,22);
 });
 
 test('team question accepts el and un with or without Es and repairs a false error on reload',async()=>{
@@ -269,7 +269,7 @@ test('third lesson accepts short location and hay answers but rejects wrong form
 test('third lesson uses its own progress, localized rule, scene and complete result',async()=>{
  const data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase/football-location.json')));
  const state={...completedState(),own:['Messi está en el campo.','Neuer está en la portería.','En el banquillo hay jugadores.'],records:Object.fromEntries(Object.values(data.groups).flat().map(q=>[q.id,{ok:true,last:{ok:true},resolved:true}]))};
- const s=await lessonSetup(state,'football-location-a1');assert(s.key.startsWith('esprofe_football_location_v1:'));assert(s.root.innerHTML.includes('Ты — чемпион!'));assert(s.root.innerHTML.includes('9 / 9'));
+ const s=await lessonSetup(state,'football-location-a1');assert(s.key.startsWith('esprofe_football_location_v1:'));assert(s.root.innerHTML.includes('Ты — чемпион!'));assert(s.root.innerHTML.includes('12 / 12'));
  for(const lang of ['ru','uk','en']){
   const rule=await lessonSetup({...state,lang,stage:2},'football-location-a1');assert(rule.root.innerHTML.includes('Messi está en el campo.'));assert(!rule.root.innerHTML.includes('La camiseta es roja.'));
   const scene=await lessonSetup({...state,lang,stage:5,modelSeen:true,records:{}},'football-location-a1');assert(scene.root.innerHTML.includes('pitch-map'));assert(scene.root.innerHTML.includes(data.scenes.training.title[lang]));
@@ -296,8 +296,8 @@ test('goalkeeper identity accepts role, name and full sentences; hay stays in a 
  }
 });
 
-test('short lessons four through seven grade every supported response and keep independent completion',async()=>{
- for(const lessonId of ['football-training-a1','football-stadium-a1','football-actions-a1','football-feelings-a1','football-numbers-a1']){
+test('current illustrated lessons grade every supported response and keep independent completion',async()=>{
+ for(const lessonId of ['football-kit-a1','football-location-a1','football-training-a1','football-stadium-a1','football-actions-a1','football-feelings-a1','football-numbers-a1']){
   const meta=require('../clase/lesson-catalog.js').get(lessonId),data=JSON.parse(fs.readFileSync(path.join(__dirname,'../clase',meta.file)));
   for(const [stage,items] of Object.entries(data.groups))for(const [index,item] of items.entries())for(const answer of [item.a,...(item.accepted||[])]){
    const state={...completedState(),stage:Number(stage),modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:item.type==='choice'?{[item.id]:answer}:{},tokens:item.type==='build'?{[item.id]:item.o.map((_,i)=>i)}:{}};
@@ -332,5 +332,14 @@ test('all teacher speech replaces slash separators with pauses and preserves les
 test('shirt number questions reject a different number and singular tener rejects tienen',async()=>{
  for(const [stage,index,answer] of [[5,0,'11'],[5,1,'10'],[6,0,'diez'],[4,0,'tienen']]){
  const state={...completedState(),stage,modelSeen:true,positions:{3:0,4:0,5:0,6:0,[stage]:index},records:{},drafts:{},tokens:{}};if(stage===4)state.drafts={'fn1-m0':answer};const s=await lessonSetup(state,'football-numbers-a1');if(stage!==4)s.root.querySelector('#ep-answer').value=answer;s.root.querySelector('#ep-check').onclick();assert.equal(Object.values(JSON.parse(s.storage.get(s.key)).records)[0].ok,false,answer);
+ }
+});
+
+test('plural football practice rejects singular verbs and mismatched shirt endings',async()=>{
+ for(const [lessonId,id,wrong] of [['football-numbers-a1','fn1-m3','tiene'],['football-numbers-a1','fn1-m4','amarilla'],['football-numbers-a1','fn1-m5','camiseta'],['football-actions-a1','fa1-m5','pasa']]){
+  const meta=require('../clase/lesson-catalog.js').get(lessonId),data=require('../clase/'+meta.file);
+  const state={...completedState(),stage:4,modelSeen:true,positions:{3:0,4:data.groups[4].findIndex(q=>q.id===id),5:0,6:0},records:{},drafts:{[id]:wrong}};
+  const s=await lessonSetup(state,lessonId);s.root.querySelector('#ep-check').onclick();
+  assert.equal(JSON.parse(s.storage.get(s.key)).records[id].ok,false,id);
  }
 });
