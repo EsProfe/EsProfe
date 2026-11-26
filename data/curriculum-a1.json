@@ -437,6 +437,11 @@
           "id": "make-simple-plans",
           "title": "Простые планы и договорённости",
           "status": "ready"
+        },
+        {
+          "id": "tambien-tampoco-nunca",
+          "title": "También, tampoco и nunca",
+          "status": "ready"
         }
       ]
     },
