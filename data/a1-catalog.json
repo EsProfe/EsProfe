@@ -3003,6 +3003,42 @@
           "es": "Relaciona la forma con la persona, el origen y la profesión."
         }
       }
+    },
+    "tambien-tampoco-nunca": {
+      "file": "data/a1-tambien-tampoco-nunca.json",
+      "status": "ready",
+      "icon": "💬",
+      "ru": [
+        "También, tampoco и nunca",
+        "тоже · тоже не · никогда · порядок слов"
+      ],
+      "uk": [
+        "También, tampoco і nunca",
+        "теж · теж не · ніколи · порядок слів"
+      ],
+      "en": [
+        "También, tampoco and nunca",
+        "too · neither · never · word order"
+      ],
+      "es": [
+        "También, tampoco y nunca",
+        "acuerdo · negación · orden de palabras"
+      ],
+      "illustration": {
+        "src": "assets/lessons/a1/routine.webp",
+        "alt": {
+          "ru": "Утренние сборы и велосипед у двери",
+          "uk": "Ранкові збори й велосипед біля дверей",
+          "en": "Morning preparations and a bicycle by the door",
+          "es": "Preparativos de la mañana y una bicicleta junto a la puerta"
+        },
+        "caption": {
+          "ru": "Представь действие в реальной последовательности дня.",
+          "uk": "Уяви дію в реальній послідовності дня.",
+          "en": "Picture the action in a real sequence of the day.",
+          "es": "Imagina la acción en una secuencia real del día."
+        }
+      }
     }
   }
 }
