@@ -501,6 +501,17 @@
           "status": "ready"
         }
       ]
+    },
+    {
+      "id": "a1-agreement",
+      "title": "Согласие и отрицание",
+      "topics": [
+        {
+          "id": "tambien-tampoco-nunca",
+          "title": "También, tampoco и nunca",
+          "status": "ready"
+        }
+      ]
     }
   ]
 }

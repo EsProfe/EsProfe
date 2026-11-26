@@ -7,7 +7,7 @@
     verbs: new Set(["ser-present","ser-basic-uses","estar-present","estar-basic-uses","hay","ser-estar-hay","present-ar","present-er","present-ir","present-mixed-regular","present-regular-trainer","tener","ir","hacer","venir","querer","poder","decir","irregular-present-mixed","reflexive-pronouns","reflexive-present","daily-routine","reflexive-practice","ir-a-infinitive","tener-que","querer-infinitive","poder-infinitive"]),
     grammar: new Set(["definite-articles","indefinite-articles","noun-gender","noun-plural","article-noun-agreement","subject-pronouns","basic-word-order","negation-no","basic-questions","question-words","adjectives","adjective-agreement","possessives","demonstratives","comparisons-basic","prepositions-basic","location-prepositions","a-de-contractions","city-directions","gustar","encantar-interesar"]),
     vocabulary: new Set(["numbers","date-time","countries-nationalities","family","home","food-drinks","shopping","city-places","transport","daily-routine-vocab","jobs","weather-seasons","free-time"]),
-    communication: new Set(["greetings-farewells","introductions-personal-data","introduce-yourself","ask-personal-info","order-food","shopping-dialogue","ask-directions","talk-routine","make-simple-plans"]),
+    communication: new Set(["greetings-farewells","introductions-personal-data","introduce-yourself","ask-personal-info","order-food","shopping-dialogue","ask-directions","talk-routine","make-simple-plans","tambien-tampoco-nunca"]),
     skills: new Set(["alphabet-pronunciation","reading","listening","writing","speaking"]),
     exams: new Set(["mixed-review","grammar-check","vocabulary-check","skills-check","final-test","weak-spots"])
   };
