@@ -1,0 +1,461 @@
+{
+  "tambien-tampoco-nunca": {
+    "level": "A1",
+    "moduleId": "a1-communication",
+    "ruleTags": {
+      "also": 0,
+      "neither": 1,
+      "never-before": 2,
+      "never-after": 3,
+      "contrast": 4
+    },
+    "i18n": {
+      "ru": {
+        "title": "También, tampoco и nunca",
+        "goal": "Цель: соглашаться с утверждением или отрицанием и говорить «никогда».",
+        "intro": "Сначала научимся говорить «я тоже» и «я тоже нет», затем разберём, где стоит nunca.",
+        "rules": [
+          [
+            "También — тоже",
+            "После утверждения: «Trabajo aquí». — «Yo también». Мне тоже нравится: «Me gusta el café». — «A mí también»."
+          ],
+          [
+            "Tampoco — тоже не",
+            "После отрицания: «No trabajo aquí». — «Yo tampoco». «No me gusta el café». — «A mí tampoco»."
+          ],
+          [
+            "Nunca перед глаголом",
+            "Nunca vivo aquí. Nunca como carne. Перед глаголом nunca само выражает отрицание: дополнительное no в обычном отрицательном предложении не ставится."
+          ],
+          [
+            "Nunca после глагола",
+            "Если nunca стоит после глагола, перед ним нужно no: No como carne nunca. Оба варианта — Nunca como carne и No como carne nunca — означают «Я никогда не ем мясо»."
+          ],
+          [
+            "Если мнения разные",
+            "Me gusta el té. — A mí no. / No me gusta el té. — A mí sí. También и tampoco выражают совпадение, а не противоположное мнение."
+          ]
+        ],
+        "examplesTitle": "Послушай и повтори",
+        "practiceTitle": "Выбери ответ",
+        "trainerTitle": "Закрепи правило",
+        "assessmentTitle": "Проверь себя",
+        "resultTitle": "Результат",
+        "reviewTitle": "Что повторить"
+      },
+      "uk": {
+        "title": "También, tampoco і nunca",
+        "goal": "Мета: погоджуватися зі ствердженням або запереченням та казати «ніколи».",
+        "intro": "Спочатку навчимося казати «я теж» і «я теж ні», потім розберемо місце nunca.",
+        "rules": [
+          [
+            "También — теж",
+            "Після ствердження: «Trabajo aquí». — «Yo también». «Me gusta el café». — «A mí también»."
+          ],
+          [
+            "Tampoco — теж не",
+            "Після заперечення: «No trabajo aquí». — «Yo tampoco». «No me gusta el café». — «A mí tampoco»."
+          ],
+          [
+            "Nunca перед дієсловом",
+            "Nunca vivo aquí. Nunca como carne. Перед дієсловом nunca саме виражає заперечення: додаткове no у звичайному заперечному реченні не ставимо."
+          ],
+          [
+            "Nunca після дієслова",
+            "Якщо nunca стоїть після дієслова, перед ним потрібне no: No como carne nunca. Обидва варіанти — Nunca como carne і No como carne nunca — означають «Я ніколи не їм м’яса»."
+          ],
+          [
+            "Якщо думки різні",
+            "Me gusta el té. — A mí no. / No me gusta el té. — A mí sí. También і tampoco виражають збіг думок."
+          ]
+        ],
+        "examplesTitle": "Послухай і повтори",
+        "practiceTitle": "Обери відповідь",
+        "trainerTitle": "Закріпи правило",
+        "assessmentTitle": "Перевір себе",
+        "resultTitle": "Результат",
+        "reviewTitle": "Що повторити"
+      },
+      "en": {
+        "title": "También, tampoco and nunca",
+        "goal": "Goal: agree with positive or negative statements and say “never”.",
+        "intro": "First learn to say “me too” and “me neither”, then learn where to place nunca.",
+        "rules": [
+          [
+            "También — too",
+            "After a positive statement: “Trabajo aquí”. — “Yo también”. With gustar: “Me gusta el café”. — “A mí también”."
+          ],
+          [
+            "Tampoco — neither",
+            "After a negative statement: “No trabajo aquí”. — “Yo tampoco”. “No me gusta el café”. — “A mí tampoco”."
+          ],
+          [
+            "Nunca before the verb",
+            "Nunca vivo aquí. Nunca como carne. Before the verb, nunca itself expresses negation: an extra no is not used in a normal negative statement."
+          ],
+          [
+            "Nunca after the verb",
+            "When nunca follows the verb, put no before it: No como carne nunca. Both Nunca como carne and No como carne nunca mean “I never eat meat”."
+          ],
+          [
+            "When opinions differ",
+            "Me gusta el té. — A mí no. / No me gusta el té. — A mí sí. También and tampoco express agreement, not an opposite opinion."
+          ]
+        ],
+        "examplesTitle": "Listen and repeat",
+        "practiceTitle": "Choose the response",
+        "trainerTitle": "Practise the rule",
+        "assessmentTitle": "Check yourself",
+        "resultTitle": "Result",
+        "reviewTitle": "What to review"
+      },
+      "es": {
+        "title": "También, tampoco y nunca",
+        "goal": "Objetivo: mostrar acuerdo con una afirmación o una negación y expresar que algo no ocurre nunca.",
+        "intro": "Primero aprenderás a expresar acuerdo; después verás dónde se coloca nunca.",
+        "rules": [
+          [
+            "También — acuerdo afirmativo",
+            "Tras una afirmación: «Trabajo aquí». — «Yo también». Con gustar: «Me gusta el café». — «A mí también»."
+          ],
+          [
+            "Tampoco — acuerdo negativo",
+            "Tras una negación: «No trabajo aquí». — «Yo tampoco». «No me gusta el café». — «A mí tampoco»."
+          ],
+          [
+            "Nunca antes del verbo",
+            "Nunca vivo aquí. Nunca como carne. Antepuesto al verbo, nunca expresa la negación sin añadir no en una oración negativa normal."
+          ],
+          [
+            "Nunca después del verbo",
+            "Si nunca va después del verbo, se usa no antes de este: No como carne nunca. Nunca como carne y No como carne nunca expresan la misma idea."
+          ],
+          [
+            "Si no hay acuerdo",
+            "Me gusta el té. — A mí no. / No me gusta el té. — A mí sí. También y tampoco expresan acuerdo."
+          ]
+        ],
+        "examplesTitle": "Escucha y repite",
+        "practiceTitle": "Elige la respuesta",
+        "trainerTitle": "Practica la regla",
+        "assessmentTitle": "Compruébalo",
+        "resultTitle": "Resultado",
+        "reviewTitle": "Qué repasar"
+      }
+    },
+    "examples": [
+      {
+        "word": "Trabajo aquí. Yo también.",
+        "translation": {
+          "ru": "Я работаю здесь. Я тоже.",
+          "uk": "Я працюю тут. Я теж.",
+          "en": "I work here. Me too."
+        },
+        "tag": "also"
+      },
+      {
+        "word": "No trabajo aquí. Yo tampoco.",
+        "translation": {
+          "ru": "Я здесь не работаю. Я тоже нет.",
+          "uk": "Я тут не працюю. Я теж ні.",
+          "en": "I do not work here. Me neither."
+        },
+        "tag": "neither"
+      },
+      {
+        "word": "Me gusta el café. A mí también.",
+        "translation": {
+          "ru": "Мне нравится кофе. Мне тоже.",
+          "uk": "Мені подобається кава. Мені теж.",
+          "en": "I like coffee. Me too."
+        },
+        "tag": "also"
+      },
+      {
+        "word": "No me gusta el café. A mí tampoco.",
+        "translation": {
+          "ru": "Мне не нравится кофе. Мне тоже не нравится.",
+          "uk": "Мені не подобається кава. Мені теж не подобається.",
+          "en": "I do not like coffee. Me neither."
+        },
+        "tag": "neither"
+      },
+      {
+        "word": "Nunca como carne.",
+        "translation": {
+          "ru": "Я никогда не ем мясо.",
+          "uk": "Я ніколи не їм м’яса.",
+          "en": "I never eat meat."
+        },
+        "tag": "never-before"
+      },
+      {
+        "word": "No como carne nunca.",
+        "translation": {
+          "ru": "Я никогда не ем мясо.",
+          "uk": "Я ніколи не їм м’яса.",
+          "en": "I never eat meat."
+        },
+        "tag": "never-after"
+      }
+    ],
+    "questionBank": [
+      {
+        "id": "ttn01",
+        "tag": "also",
+        "prompt": {
+          "ru": "«Trabajo aquí». Ты тоже здесь работаешь. Ответь: Yo ___.",
+          "uk": "«Trabajo aquí». Ти теж тут працюєш. Відповідай: Yo ___.",
+          "en": "“Trabajo aquí.” You work here too. Complete: Yo ___.",
+          "es": "«Trabajo aquí». Tú trabajas aquí también. Completa: Yo ___."
+        },
+        "options": [
+          "también",
+          "tampoco",
+          "nunca"
+        ],
+        "answer": "también"
+      },
+      {
+        "id": "ttn02",
+        "tag": "neither",
+        "prompt": {
+          "ru": "«No trabajo aquí». Ты тоже здесь не работаешь. Ответь: Yo ___.",
+          "uk": "«No trabajo aquí». Ти теж тут не працюєш. Відповідай: Yo ___.",
+          "en": "“No trabajo aquí.” You do not work here either. Complete: Yo ___.",
+          "es": "«No trabajo aquí». Tú no trabajas aquí. Completa expresando acuerdo: Yo ___."
+        },
+        "options": [
+          "tampoco",
+          "también",
+          "sí"
+        ],
+        "answer": "tampoco"
+      },
+      {
+        "id": "ttn03",
+        "tag": "also",
+        "prompt": {
+          "ru": "«Me gusta el té». Тебе чай тоже нравится. Дополни: A mí ___ me gusta.",
+          "uk": "«Me gusta el té». Тобі чай теж подобається. Доповни: A mí ___ me gusta.",
+          "en": "“Me gusta el té.” You like tea too. Complete: A mí ___ me gusta.",
+          "es": "«Me gusta el té». A ti te gusta el té. Completa expresando acuerdo: A mí ___ me gusta."
+        },
+        "options": [
+          "también",
+          "tampoco",
+          "nunca"
+        ],
+        "answer": "también"
+      },
+      {
+        "id": "ttn04",
+        "tag": "neither",
+        "prompt": {
+          "ru": "«No me gusta el café». Тебе кофе тоже не нравится. Дополни: A mí ___ me gusta.",
+          "uk": "«No me gusta el café». Тобі кава теж не подобається. Доповни: A mí ___ me gusta.",
+          "en": "“No me gusta el café.” You do not like coffee either. Complete: A mí ___ me gusta.",
+          "es": "«No me gusta el café». A ti no te gusta el café. Completa expresando acuerdo: A mí ___ me gusta."
+        },
+        "options": [
+          "tampoco",
+          "también",
+          "sí"
+        ],
+        "answer": "tampoco"
+      },
+      {
+        "id": "ttn05",
+        "tag": "never-before",
+        "prompt": {
+          "ru": "Как сказать «Я никогда не ем мясо»? ___ como carne.",
+          "uk": "Як сказати «Я ніколи не їм м’яса»? ___ como carne.",
+          "en": "How do you say “I never eat meat”? ___ como carne.",
+          "es": "¿Qué frase expresa que no como carne en ningún momento? ___ como carne."
+        },
+        "options": [
+          "Nunca",
+          "No nunca",
+          "También"
+        ],
+        "answer": "Nunca"
+      },
+      {
+        "id": "ttn06",
+        "tag": "never-after",
+        "prompt": {
+          "ru": "Вырази «Я никогда не ем мясо»: No como carne ___.",
+          "uk": "Вислови «Я ніколи не їм м’яса»: No como carne ___.",
+          "en": "Express “I never eat meat”: No como carne ___.",
+          "es": "Expresa que no como carne en ningún momento: No como carne ___."
+        },
+        "options": [
+          "nunca",
+          "también",
+          "sí"
+        ],
+        "answer": "nunca"
+      },
+      {
+        "id": "ttn07",
+        "tag": "never-before",
+        "prompt": {
+          "ru": "Вырази «Я никогда не работаю по воскресеньям»: ___ trabajo los domingos.",
+          "uk": "Вислови «Я ніколи не працюю в неділю»: ___ trabajo los domingos.",
+          "en": "Express “I never work on Sundays”: ___ trabajo los domingos.",
+          "es": "Expresa que no trabajo ningún domingo: ___ trabajo los domingos."
+        },
+        "options": [
+          "Nunca",
+          "Nunca no",
+          "También"
+        ],
+        "answer": "Nunca"
+      },
+      {
+        "id": "ttn08",
+        "tag": "never-after",
+        "prompt": {
+          "ru": "Вырази «Я никогда не работаю по воскресеньям»: No trabajo ___ los domingos.",
+          "uk": "Вислови «Я ніколи не працюю в неділю»: No trabajo ___ los domingos.",
+          "en": "Express “I never work on Sundays”: No trabajo ___ los domingos.",
+          "es": "Expresa que no trabajo ningún domingo: No trabajo ___ los domingos."
+        },
+        "options": [
+          "nunca",
+          "también",
+          "sí"
+        ],
+        "answer": "nunca"
+      },
+      {
+        "id": "ttn09",
+        "tag": "contrast",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: «Me gusta el té». A mí no me gusta. Responde:",
+          "uk": "Обери відповідну відповідь: «Me gusta el té». A mí no me gusta. Responde:",
+          "en": "Choose the appropriate answer: «Me gusta el té». A mí no me gusta. Responde:",
+          "es": "Elige la respuesta adecuada: «Me gusta el té». A mí no me gusta. Responde:"
+        },
+        "options": [
+          "A mí no.",
+          "A mí también.",
+          "A mí tampoco."
+        ],
+        "answer": "A mí no."
+      },
+      {
+        "id": "ttn10",
+        "tag": "contrast",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: «No me gusta el té». A mí me gusta. Responde:",
+          "uk": "Обери відповідну відповідь: «No me gusta el té». A mí me gusta. Responde:",
+          "en": "Choose the appropriate answer: «No me gusta el té». A mí me gusta. Responde:",
+          "es": "Elige la respuesta adecuada: «No me gusta el té». A mí me gusta. Responde:"
+        },
+        "options": [
+          "A mí sí.",
+          "A mí tampoco.",
+          "A mí no."
+        ],
+        "answer": "A mí sí."
+      },
+      {
+        "id": "ttn11",
+        "tag": "also",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: «Estudio español». Yo estudio español. Responde:",
+          "uk": "Обери відповідну відповідь: «Estudio español». Yo estudio español. Responde:",
+          "en": "Choose the appropriate answer: «Estudio español». Yo estudio español. Responde:",
+          "es": "Elige la respuesta adecuada: «Estudio español». Yo estudio español. Responde:"
+        },
+        "options": [
+          "Yo también.",
+          "Yo tampoco.",
+          "Yo no."
+        ],
+        "answer": "Yo también."
+      },
+      {
+        "id": "ttn12",
+        "tag": "neither",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: «No vivo en Madrid». Yo no vivo allí. Responde:",
+          "uk": "Обери відповідну відповідь: «No vivo en Madrid». Yo no vivo allí. Responde:",
+          "en": "Choose the appropriate answer: «No vivo en Madrid». Yo no vivo allí. Responde:",
+          "es": "Elige la respuesta adecuada: «No vivo en Madrid». Yo no vivo allí. Responde:"
+        },
+        "options": [
+          "Yo tampoco.",
+          "Yo también.",
+          "Yo sí."
+        ],
+        "answer": "Yo tampoco."
+      },
+      {
+        "id": "ttn13",
+        "tag": "never-before",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: Elige la frase correcta:",
+          "uk": "Обери відповідну відповідь: Elige la frase correcta:",
+          "en": "Choose the appropriate answer: Elige la frase correcta:",
+          "es": "Elige la respuesta adecuada: Elige la frase correcta:"
+        },
+        "options": [
+          "Nunca estudio de noche.",
+          "Nunca no estudio de noche.",
+          "No nunca estudio de noche."
+        ],
+        "answer": "Nunca estudio de noche."
+      },
+      {
+        "id": "ttn14",
+        "tag": "never-after",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: Elige la frase correcta:",
+          "uk": "Обери відповідну відповідь: Elige la frase correcta:",
+          "en": "Choose the appropriate answer: Elige la frase correcta:",
+          "es": "Elige la respuesta adecuada: Elige la frase correcta:"
+        },
+        "options": [
+          "No estudio nunca de noche.",
+          "No estudio también de noche.",
+          "Estudio nunca de noche."
+        ],
+        "answer": "No estudio nunca de noche."
+      },
+      {
+        "id": "ttn15",
+        "tag": "also",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: «Me gustan los libros». A mí me gustan. Responde:",
+          "uk": "Обери відповідну відповідь: «Me gustan los libros». A mí me gustan. Responde:",
+          "en": "Choose the appropriate answer: «Me gustan los libros». A mí me gustan. Responde:",
+          "es": "Elige la respuesta adecuada: «Me gustan los libros». A mí me gustan. Responde:"
+        },
+        "options": [
+          "A mí también.",
+          "A mí tampoco.",
+          "A mí no."
+        ],
+        "answer": "A mí también."
+      },
+      {
+        "id": "ttn16",
+        "tag": "neither",
+        "prompt": {
+          "ru": "Выбери подходящий ответ: «No me gustan los gatos». A mí no me gustan. Responde:",
+          "uk": "Обери відповідну відповідь: «No me gustan los gatos». A mí no me gustan. Responde:",
+          "en": "Choose the appropriate answer: «No me gustan los gatos». A mí no me gustan. Responde:",
+          "es": "Elige la respuesta adecuada: «No me gustan los gatos». A mí no me gustan. Responde:"
+        },
+        "options": [
+          "A mí tampoco.",
+          "A mí también.",
+          "A mí sí."
+        ],
+        "answer": "A mí tampoco."
+      }
+    ]
+  }
+}
