@@ -437,11 +437,6 @@
           "id": "make-simple-plans",
           "title": "Простые планы и договорённости",
           "status": "ready"
-        },
-        {
-          "id": "tambien-tampoco-nunca",
-          "title": "También, tampoco и nunca",
-          "status": "ready"
         }
       ]
     },
@@ -503,6 +498,17 @@
         {
           "id": "weak-spots",
           "title": "Слабые места и повторение",
+          "status": "ready"
+        }
+      ]
+    },
+    {
+      "id": "a1-agreement",
+      "title": "Согласие и отрицание",
+      "topics": [
+        {
+          "id": "tambien-tampoco-nunca",
+          "title": "También, tampoco и nunca",
           "status": "ready"
         }
       ]
