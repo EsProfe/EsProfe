@@ -85,6 +85,12 @@
       "uk": "Контроль A1",
       "en": "A1 assessment",
       "es": "Evaluación A1"
+    },
+    "a1-agreement": {
+      "ru": "Согласие и отрицание",
+      "uk": "Згода і заперечення",
+      "en": "Agreement and negation",
+      "es": "Acuerdo y negación"
     }
   },
   "lessons": {
